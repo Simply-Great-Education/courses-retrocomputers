@@ -1,0 +1,45 @@
+UltimateTerm V2.6
+
+
+Quick Start Guide
+
+Step 1: select "RunMeFirst.cfg" and select Load Settings, then select Ok.
+
+Step 2: select "UltimateTerm.d64" and select Run Disk.
+
+Step 3: Launch the Client Press 1 to select and launch the BBS client.
+
+Step 4: Choose Your Connection Once the client loads, you have two options:
+
+Use a Bookmark: Select one of the pre-configured BBS bookmarks for instant connection
+Manual Entry: Choose "Manual Entry" to connect to a specific BBS by entering its address and port number
+
+Step 5: Start exploring you're now connected!
+
+
+
+Need Help?
+Press F1 at any time to access the built-in help screen for detailed assistance and troubleshooting.
+
+Tip: If you're new to BBSs, try starting with one of the bookmarked systems to get familiar with the interface before manually connecting to other boards.
+
+
+
+Function key commands:
+- F1: HELP screen
+- F3: Download with Xmodem
+- F5: DOS Wedge: send DOS commands to drive(s)
+- F6: Switch PETSCII/ASCII
+- F7: Disconnect from currently running BBS
+
+
+Note: For the configuration, you have to turn on UCI (Ultimate Command Interface). If you don't, a warning message will guide you.
+
+How to navigate a C*Base BBS and more: https://atlantis-prophecy.org/recollection/?load=bbs_scene
+Full list of boards: https://sites.google.com/view/microtownc64bbslist/home
+
+
+
+https://patreon.com/FrancescoSblendorio
+
+Distributed with the Commodore 64 Ultimate with permission from Francesco Sblendorio.        

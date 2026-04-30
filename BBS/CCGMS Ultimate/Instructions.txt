@@ -1,0 +1,183 @@
+Commodore Color Graphics Manipulation System Terminal
+by Craig Smith (1985-1988), alwyz (2017-2020)
+
+
+Quick Start Guide
+
+Step 1: select "RunMeFirst.cfg" and select Load Settings, then select Ok.
+
+Step 2: select "CCGMS.d64" and select Run Disk.
+
+
+1. Connect using Bookmarks
+
+Press F7 from the main terminal screen
+Press L to load phonebook (filename must match what is on the disk)
+Press A to enter the auto-dialler. Select BBS and press A to dial
+
+Or:
+
+2. Manual Connection from main terminal screen
+Use ATDT command with hostname:port
+
+Example:
+ATDT dzbbs.hopto.org:64128
+
+
+Connection Troubleshooting:
+Test your modem connection by typing "AT" at the terminal screen - you should receive an "OK" response. If not, check your configuration settings in the Ultimate menu.
+
+- Remove all cartridges before connecting
+- Disconnect GeoRAM (standard REU modules are compatible)
+- Modem Interface should be ACIA / SwiftLink
+- ACIA (6551) Mapping should be $DE00/NMI
+
+- In CCGMS, press F7 from the main terminal screen for the Dialler/Params menu and ensure that the modem type is Swift / Turbo DE and that the baud rate is 38400. Note: the options Duplex (Full) and Firmware (Standard) should never need to be changed. The others can be changed to suit your needs.  
+
+Upload/Download Troubleshooting: Xmodem and Xmodem-CRC are the most popular protocols and modern BBS systems are extremely reliable when using Xmodem. Punter can be unreliable depending on the board and connection speed.
+
+
+
+Some quick instructions:
+
+Terminal Mode
+
+F1: Upload file
+F2: Send/Read file
+F3: Download file
+F4: Buffer commands
+F5: Disk command
+F6: Directory
+F7: Settings/Dialler
+F8: Cycle terminal mode (ASCii/ANSi or C/G PETSCII)
+
+C= F1: Multi-Upload
+C= F3: Multi-Download
+C= F5: Send directory
+C= F7: Screen to buffer
+
+CTRL F1/F3: Send Macro Text
+CTRL F5/F7: Send User ID/Password
+
+C= CTRL [1-4]: Take screen snapshot
+SHFT CTRL [1-4]: Recall screen snapshot
+
+C= STOP: Disconnect
+
+
+Upload File
+
+F1 will upload a single file from current drive to the BBS. It will ask for the source filename.
+
+Send/Read File
+
+F2 will ask whether you want to send (S) or read (R) a file. This menu refers to SEQ files only.
+
+* "Send" reads a SEQ file from the current drive and sends it to the BBS, byte by byte, as if it has been typed in. This is meant for text-only data, and does not do any error detection/correction.
+* "Read" reads a SEQ file from the current drive and prints it to the screen. No data is sent to the BBS.
+
+
+Download File
+
+F3 will download a single file from the BBS to the current drive. First, it will ask for the destination filename.  If the [protocol](#protocol) is XMODEM, it will also ask what file type the new file should be: PRG, SEQ or USR.
+
+Buffer Commands
+
+F4 will show the buffer menu with following options:
+
+Open  Close  Erase  Transfer
+Load  Save   Print  View
+
+* Open: Open the buffer. If the buffer is open, all text received from the BBS in terminal mode will be appended to the buffer.
+* Close: Close the buffer. This stops appending text to the buffer.
+* Erase: Erase the buffer. This clears the buffer.
+* Load: This loads an SEQ file from the current drive into the buffer.
+* Save: This saves the buffer into an SEQ file on the current drive.
+* Print: This sends the buffer to the printer. It will ask for the device number and the secondary address. By convention, secondary address 0 will pick the upper/graphics character set, and 7 will pick the upper/lower character set.
+* View: This prints the buffer contents to the screen. During printing, STOP cancels, and any other key pauses/unpauses.
+
+In addition, < and > will move the buffer pointer.
+
+The RETURN key will exit the buffer menu.
+
+Note: If you have a 17xx type Ram Expansion Unit enabled, the first 64k of RAM will automatically be enabled for a 64k buffer.
+
+Disk Command
+
+F5 allows sending a command to the current drive, like S:FOO,S or CD/FOO/CD:â† (sd2iec).
+
+* #8, #9 etc. changes the current drive globally.
+* An empty command will print the drive status.
+
+
+Directory
+
+F6 will show the directory of the current drive. STOP cancels, and any other key pauses/unpauses.
+
+
+
+Settings/Dialler
+
+F7 will show the following menu:
+
+Auto-Dialler/Phonebook
+Baud Rate   - 38400
+Duplex      - Full
+Modem Type  - Swift / Turbo DE
+Firmware    - Standard
+Protocol    - Punter
+Theme       - Classic CCGMS v5.5
+Edit Macros
+Load/Save Phone Book and Config.
+View Instructions
+
+The first character of each option will invoke it.
+
+
+
+Auto-Dialler/Phonebook
+
+CCGMS can auto-dial phonebook entries. It will send the ATDT command and parse the status returned by the modem (e.g. CONNECT or NO ANSWER). After connecting to the BBS, the key combinations Ctrl+F5 and Ctrl+F7 will send the username and password of the current phonebook entry.
+
+The phonebook has 30 entries, consisting of
+
+* name: name in the phone book
+* ip: DNS name or IP address
+* port: IP port
+* id: username
+* pw: password
+
+Use the cursor keys to navigate the entries. SPACE or RETURN selects/deselects an entry, which allows any subset of the entries to be selected.
+
+Dial Unlisted # (D)
+This allows connecting to a BBS that is not listed in the phonebook. CCGMS will ask for the DNS name or IP and the port.
+
+Edit Current # (E)
+This allows editing the currently highlighted entry.
+
+Call Current # (C)
+This dials the currently highlighted entry.
+
+Dial Selected (A)
+This dials the currently selected entries, one by one, until one answers.
+
+Reverse Call (R)
+Invert the current selection of entries.
+
+Return To Menu (X)
+This will return to the settings menu.
+
+
+
+
+
+Further information on Michael Steil's repo:
+https://github.com/mist64/ccgmsterm
+
+How to navigate a C*Base BBS and more: https://atlantis-prophecy.org/recollection/?load=bbs_scene
+
+Full list of boards: https://sites.google.com/view/microtownc64bbslist/home
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from alwyz.
