@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>SPEEDRACER-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ca46bd2885cca2c3478a46e1bf6cd84f6ca9e28f</DumpFileSHA1>
+  <SimplifiedName>Speed Racer</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Speed Racer (Version 1).d64</SourceFile>
+  <SourceFileSHA1>82a1dfb233ed93478a8efc597074cab4a794d558</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "SPEEDRACER-1000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Speed Racer.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $4001. Therefore an init routine has been added at $1000 which:
+  1. Sets up the correct VICII settings and necessary BASIC pointers.
+  2. Executes the RUN command to start the game program.
+  
+  Note: to dump, simply set a breakpoint on $A7AE after the loading screen is displayed.</Notes>
+</Metadata>

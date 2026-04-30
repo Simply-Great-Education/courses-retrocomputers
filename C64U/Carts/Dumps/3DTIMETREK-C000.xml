@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>3DTIMETREK-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5d3d1a4af78b352b4764c0e7a7614a7123bc2270</DumpFileSHA1>
+  <SimplifiedName>3D Time Trek</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>3D Time Trek (Anirog).tap</SourceFile>
+  <SourceFileSHA1>03dcca2900269dce8ee94a6f06823134b161443d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "3DTIMETREK-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "3D Time Trek.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $0801. Therefore an init routine has been added at $C000 which:
+  1. Sets up the correct VICII settings and necessary BASIC pointers.
+  2. Disables the RUN/STOP key by modifying the STOP vector by setting $FE at $0328 (it doesn't use $E1 like some other games, as that causes the value of the TI variable at $A0-$A2 to be incorrectly modified, which this game relies on being correct).
+  3. Executes the RUN command to start the command to start the game program.
+  
+  Note: The IF C=1 THEN LOAD "GR",1,1 on line 7 and IF C=2 THEN LOAD "CODE",1,1 on line 8 were REM'd out to stop the program trying to load the game files from tape as they are already in memory.</Notes>
+</Metadata>

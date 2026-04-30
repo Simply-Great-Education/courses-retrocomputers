@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>NINJAMASTER-0400-8FC4</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>06848079f8082931b180975a151773b5f64a5181</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$8FC4</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Ninja Master.tap</SourceFile>
+  <SourceFileSHA1>8b80ce4dfdfc95f68dd2b04ca7c21aad73e62b44</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8FC4 "NINJAMASTER-0400-8FC4" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "Ninja Master.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0400 to copy the colour RAM data from $1000 (where it was present in the original game) and display the loading screen. It then waits for any key or the fire button on either joystick to enter the game.
+  Just before it starts the game, it also sets the execution address of the NMI service routine at $0318 to $095A just like the original game code.</Notes>
+</Metadata>

@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>BALLOONING-2000-C72B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d2493b64759afa954bf5eba44c4b68bbb1e76227</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2000</Address>
+    <Address>$C72B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Ballooning.tap</SourceFile>
+  <SourceFileSHA1>30018cdcabc32889f2944b9c711f92ffef2cf535</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC72B "BALLOONING-2000-C72B" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $2000 dec $d030" -x "inc $d020" -o "Ballooning.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $2000 which generates a random number by setting the noise waveform for the voice 3 oscillator of the SID chip. This number is written to $A1 (the second byte of the TI variable) in order to generate a new map each time the game is run.
+  
+  Also added an initialising message on startup to let the user know the map is being generated instead of just having a blank screen. This is achieved by placing the correct screen RAM data at $0400 and bitmap data at $2000.
+  
+  The loading screen is based on the Spectrum version.</Notes>
+</Metadata>

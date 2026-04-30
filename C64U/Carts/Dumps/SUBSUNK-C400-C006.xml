@@ -1,0 +1,26 @@
+﻿<Metadata>
+  <DumpFile>SUBSUNK-C400-C006</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4c9b4f5f8e7fbfe82e0a04c4bff52d48a79dc4a0</DumpFileSHA1>
+  <SimplifiedName>Subsunk</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C400</Address>
+    <Address>$C006</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>SUBSUNK-CRAM-C500</ColourRAMFile>
+  <ColourRAMStartAddress>$C500</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>Subsunk (Version 1).tap</SourceFile>
+  <SourceFileSHA1>675ebe4fc340d4b4efeea90733f5f309d127cf9e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC006 "AlternativeFormats\PRGs\Uncrunched\Subsunk.prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c500 lda #$37 sta $01 jsr $c400 dec $d030" -x "inc $d020" -o "Subsunk.prg"</ExomizerCommand>
+  <Notes>Added a routine at $C400 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  
+  Also zeroed out the following memory ranges as they contained an unnecessary repeating memory block:
+  
+  $A000 - $BFFF
+  $C200 - $CFFF</Notes>
+</Metadata>

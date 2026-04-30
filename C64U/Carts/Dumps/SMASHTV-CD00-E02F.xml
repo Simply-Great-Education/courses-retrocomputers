@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>SMASHTV-CD00-E02F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>926bfceb91ba3781b17ec7ca1e91cf3044b630f0</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CD00</Address>
+    <Address>$E02F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Smash TV.tap</SourceFile>
+  <SourceFileSHA1>f63e77499fd65662a1db9eaf2e54316785ed28f1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xE02F "SMASHTV-CD00-E02F" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $cd00 dec $d030" -x "inc $d020" -o "Smash TV.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $CD00 which copies 512 bytes of data from $CD20 down to $0200 so that the dump can start at $0400.
+  It then jumps to the entry point at $E02F (it couldn't use RTS because of the copy overwriting the boot code).</Notes>
+</Metadata>

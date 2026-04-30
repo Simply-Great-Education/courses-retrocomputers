@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>THROUGHTHETRAPDOOR-0900-6052</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0a030ac0528eb78d39656c7bed84dde580b875ab</DumpFileSHA1>
+  <SimplifiedName>Through the Trapdoor</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0900</Address>
+    <Address>$6052</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Through the Trapdoor (Version 2).tap</SourceFile>
+  <SourceFileSHA1>b63d34fe76f54b2b64bb08c3f958ea17da8a6399</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6052 "THROUGHTHETRAPDOOR-0900-6052" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0900 dec $d030" -x "inc $d020" -o "Through the Trapdoor.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0900 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

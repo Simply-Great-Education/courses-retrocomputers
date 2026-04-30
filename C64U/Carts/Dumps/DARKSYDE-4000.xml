@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>DARKSYDE-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>81acde85ad941f41948eb77efd5708f6d4629dac</DumpFileSHA1>
+  <SimplifiedName>DarkSyde</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>DarkSyde - Four Great Games 3 (MicroValue - Side 2).g64</SourceFile>
+  <SourceFileSHA1>3f102d4effb96f315182b516577df0414d357e79</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "DARKSYDE-4000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "DarkSyde.prg"</ExomizerCommand>
+  <Notes>Note: As this game is actually frozen, the game starts at $8167. However the true start address is $4000.</Notes>
+</Metadata>

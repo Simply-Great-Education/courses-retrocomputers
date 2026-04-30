@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>RINGMASTER-0801</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>261963c05756d955dfbb3348a1c0f374baac7a29</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0801</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Ring Master.tap</SourceFile>
+  <SourceFileSHA1>89790b78164c5adfec1055593708815aaa4c8dcc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0801 "RINGMASTER-0801" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ring Master.prg"</ExomizerCommand>
+</Metadata>

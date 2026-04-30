@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>SNACKS4SNAKES-2001</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fbf4dc64ed5131a90f1b7def11a6c2f0fa2e5b84</DumpFileSHA1>
+  <SimplifiedName>Snacks 4 Snakes (Protovison - 2022)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2001</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>192</SidLength>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Snacks 4 Snakes.tap</SourceFile>
+  <SourceFileSHA1>d94edcd94dd88bb1684bcdea76b0095def161d0a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2001 "SNACKS4SNAKES-2001" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Snacks 4 Snakes (Protovison - 2022) (J1).prg"</ExomizerCommand>
+</Metadata>

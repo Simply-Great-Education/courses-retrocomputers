@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>TELENGARD-9000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>432e452d586a16e55963abff5e2e84815e414310</DumpFileSHA1>
+  <SimplifiedName>Telengard</SimplifiedName>
+  <JumpAddresses>
+    <Address>$9000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Telengard (Version a).d64</SourceFile>
+  <SourceFileSHA1>9ad633c282306b73e50b92702403a23afa551fd0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9000 "TELENGARD-9000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Telengard.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $0801.
+  Therefore an init routine has been added at $9000 to setup the correct VICII settings, the necessary BASIC pointers and execute the RUN command to start the game program.
+  Note: to dump, simply wait until the title screen is displayed, then dump with the monitor.</Notes>
+</Metadata>

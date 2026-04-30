@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>POSTMANPATII-08BB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7de96dca40bb866d424bde292f5b5b71d5ffcbf4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$08BB</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Postman Pat II.tap</SourceFile>
+  <SourceFileSHA1>50c7f398a91bebab27fd978409b1cda955030ab3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x08BB "POSTMANPATII-08BB" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Postman Pat II (J1).prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,28 @@
+﻿<Metadata>
+  <DumpFile>BLACKMAGIC-4000-05E1</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>65ee46156f2a1a502f1f03d976d7d52f4c24597a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+    <Address>$05E1</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <ColourRAMFile>BLACKMAGIC-CRAM-4460</ColourRAMFile>
+  <ColourRAMStartAddress>$4460</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Black Magic.tap</SourceFile>
+  <SourceFileSHA1>dfccefd0ea92bdc5860c9bd03695eaccd154cabe</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x05E1 "AlternativeFormats\PRGs\Uncrunched\Black Magic (J1).prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $4460 lda #$35 sta $01 jsr $4000 dec $d030" -x "inc $d020" -o "Black Magic (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $4000 which:
+  1. Turns off interrupts from the two CIA chips and acks any pending CIA interrupts
+  2. Copies 1024 bytes of data from $4050 down to $0000 so that the dump can start at $0400
+  3. Sets the correct bitmap settings
+  4. Sets the correct border, screen and sprite colours by copying data from $4450 to $D020-$D02E (colour RAM is restored separately)
+  5. And finally jumps to the entry point at $05E1 (it couldn't use RTS because of the stack being cleared)
+  
+  Note: the space used at $4000 overwrites the left over loading screen.</Notes>
+</Metadata>

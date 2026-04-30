@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SPELLSEEKER-7C75</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>76a95a96b47aec2d95dc2bbac9fcc120da704a10</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7C75</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Spellseeker.tap</SourceFile>
+  <SourceFileSHA1>3e55134b5d58e82f5dd5ea532d37875a48fb0da7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7C75 "SPELLSEEKER-7C75" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Spellseeker.prg"</ExomizerCommand>
+</Metadata>

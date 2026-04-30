@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>PANCHO-8009</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>af6267a1c022bfb2113b9516753461f02ac6084f</DumpFileSHA1>
+  <SimplifiedName>Pancho</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8009</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Pancho (Rug Rider and Pancho - Side 2 - Tri Micro).g64</SourceFile>
+  <SourceFileSHA1>26d229e1b9b6f6927ad20e95c631889578a34ffe</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8009 "PANCHO-8009" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Pancho.prg"</ExomizerCommand>
+  <Notes>Made the following changes to allow the space bar or the joystick button in port two to skip the title screen:
+  1. Patched the LDA $1682 instruction at $9508 to be JSR $C000 instead
+  2. Added a small routine at $C000 to check the space bar and the fire button in port 2 - if either is pressed, then it balances the stack and jumps to the routine at $9072 to start the game. If not pressed, the routine then executes the LDA $1682 instruction and returns to carry on the normal code flow.</Notes>
+</Metadata>

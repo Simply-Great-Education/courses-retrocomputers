@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>TITANS-C354-8100</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7b295a54b6adced1c9dde23eac3766a69123179d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C354</Address>
+    <Address>$8100</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Titans.tap</SourceFile>
+  <SourceFileSHA1>c193cf89de2a628be4a60a857ba7c04359620289</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8100 "TITANS-C354-8100" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c354 dec $d030" -x "inc $d020" -o "Titans.prg"</ExomizerCommand>
+  <Notes>The original routine at $C354 displays the loading screen. The final jump instruction has been changed from JMP $C000 to JMP $8100 as the game is already fully loaded into memory.</Notes>
+</Metadata>

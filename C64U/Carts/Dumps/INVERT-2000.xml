@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>INVERT-2000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fe4345c336f5f5fa09c88b55399e7e9bf7848e76</DumpFileSHA1>
+  <SimplifiedName>Invert (TND - 2013)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>170</SidLength>
+  <SourceFile>Invert.tap</SourceFile>
+  <SourceFileSHA1>37bec77764753884314bcd06960977045d10cd72</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2000 "INVERT-2000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Invert (TND - 2013).prg"</ExomizerCommand>
+</Metadata>

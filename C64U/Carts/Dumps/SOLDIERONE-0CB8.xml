@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SOLDIERONE-0CB8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>85a899858cb3c75eaff1ecb2556b11dbf85a8975</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0CB8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Soldier One.tap</SourceFile>
+  <SourceFileSHA1>4effb93536b3f882d55e93b02e76d80cd9f7be15</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0CB8 "SOLDIERONE-0CB8" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Soldier One.prg"</ExomizerCommand>
+</Metadata>

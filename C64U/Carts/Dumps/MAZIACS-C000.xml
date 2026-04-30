@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>MAZIACS-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7f6a6543c34177355ad3e6aad44c1e2010a9dc8f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Maziacs.tap</SourceFile>
+  <SourceFileSHA1>4c36d930d5557b00803d95fc9f8341831fd42a26</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "MAZIACS-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Maziacs.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $0801.
+  Therefore an init routine has been added at $C000 to setup the correct VICII settings, the necessary BASIC pointers and execute the RUN command to start the game program. The BASIC start pointer ($2B/$2C) is set to $0819 to skip the loading of the game file from tape (which will already have been loaded when the dump is taken).
+  
+  Note: to dump, simply wait until the title screen is displayed after the loading screen, then dump with the monitor.
+  
+  The loading screen was converted from the Spectrum version by Andy Green (https://www.facebook.com/AndyGreenPixelArt).</Notes>
+</Metadata>

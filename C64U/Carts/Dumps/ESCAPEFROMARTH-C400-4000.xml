@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>ESCAPEFROMARTH-C400-4000</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>f1c2581f6615fbeddea92aef5d6076f4b061b656</DumpFileSHA1>
+  <SimplifiedName>Escape from Arth</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C400</Address>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>234</SidLength>
+  <SourceFile>Escape from Arth (Commodore Free).tap</SourceFile>
+  <SourceFileSHA1>ac0e26599fba1a9b3da70b937878e8a4a44d7d60</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "ESCAPEFROMARTH-C400-4000" -Di_table_addr=0x02 -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c400 dec $d030" -x "inc $d020" -o "Escape from Arth.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C400 which sets the execution address of the interrupt service routine (at $0314) to $0340. This allows the game to run correctly.
+  
+  Note: As this game is actually frozen, the game starts at $49E0. However the true start address is $4000.</Notes>
+</Metadata>

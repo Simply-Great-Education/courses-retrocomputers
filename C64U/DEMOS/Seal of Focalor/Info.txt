@@ -1,0 +1,14 @@
+Seal of Focalor was released in February 1993.
+
+
+Megastyle was founded in September 1988.
+
+Check out more of their releases at https://csdb.dk/group/?id=473
+
+
+Distributed with the Commodore 64 Ultimate with permission from Cycleburner/Megastyle.
+
+
+Trivia: try loading the following files separately:
+side 1 "- data file 1 -" 
+side 2 "- data file 2 -"

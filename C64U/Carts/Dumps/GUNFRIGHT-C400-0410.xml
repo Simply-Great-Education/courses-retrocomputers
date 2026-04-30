@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>GUNFRIGHT-C400-0410</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1fad865ef258931e3cdd12432fe01786787f70f0</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C400</Address>
+    <Address>$0410</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Gunfright v1.10 (Rod &amp; Emu - 2017).d64</SourceFile>
+  <SourceFileSHA1>e0be3068d56d4f9c7afcdd623d332b45cd07cb3a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0410 "GUNFRIGHT-C400-0410" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c400 dec $d030" -x "inc $d020" -o "Gunfright v1.10 (Rod &amp; Emu - 2017).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C400 which copies 256 bytes of data from $C410 down to $0300 so that the dump can start at $0400.
+  It then jumps to the entry point at $0410 (it couldn't use RTS because of the copy overwriting the boot code).</Notes>
+</Metadata>

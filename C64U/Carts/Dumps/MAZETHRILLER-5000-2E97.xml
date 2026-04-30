@@ -1,0 +1,24 @@
+﻿<Metadata>
+  <DumpFile>MAZETHRILLER-5000-2E97</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b29677c47e47e7ca90266f83ea65be3ad56c16c9</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5000</Address>
+    <Address>$2E97</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Maze Thriller.tap</SourceFile>
+  <SourceFileSHA1>fc71668852e2fb8d87396e8d677db6e79cdb463b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "MAZETHRILLER-5000-2E97" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $5000 dec $d030" -x "inc $d020" -o "Maze Thriller (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $5000 which:
+  1. Turns off interrupts from the two CIA chips and acks any pending CIA interrupts.
+  2. Copies 256 bytes of data from $5030 down to $0300 so that the dump can start at $0400. This allows the game to run correctly.
+  3. Sets the device number of the current file ($BA) to $01 (tape) to circumvent a copy protection mechanism at $0CCE (check fails if running from disk drive 8).
+  4. Re-enables raster interrupts and timer NMIs.
+  5. Jumps to the entry point at $2E97 (it couldn't use RTS because of the copy above overwriting the boot code).
+  
+  The game is actually dumped when a breakpoint at $2EA4 is hit. This then allows the JSR $0830 at $2EA1 to be NOP'd out and start at the original starting address of $2E97, allowing for quicker startup.</Notes>
+</Metadata>

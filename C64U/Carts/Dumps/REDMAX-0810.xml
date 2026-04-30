@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>REDMAX-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a026c475ba3b460f7ae266c38926c78a4c603932</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Red Max.tap</SourceFile>
+  <SourceFileSHA1>e0417002b013ad9c959b114f66595a9e2f619743</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "REDMAX-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Red Max (J1).prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MISSILEEVADE-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9fc791e499f8edcd6a53a8f845a82a6dcaf497ec</DumpFileSHA1>
+  <SimplifiedName>Missile Evade (Goatscrote - 2022)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Missile Evade (GoatScrote - 2022).d64</SourceFile>
+  <SourceFileSHA1>f9c9708c68e68769a7c27960855d92477cc2fa2d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "MISSILEEVADE-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Missile Evade (Goatscrote - 2022).prg"</ExomizerCommand>
+</Metadata>

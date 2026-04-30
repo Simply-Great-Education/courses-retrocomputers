@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>NAVYMOVES-PART2-1BB0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5b4c16882cc7ef6b37637273d7fafd996ba9f5be</DumpFileSHA1>
+  <SimplifiedName>Navy Moves (Part 2)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1BB0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Navy Moves (Side 2).tap</SourceFile>
+  <SourceFileSHA1>98028a80144d1ce277780dbbc0c8734843df3400</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1BB0 "NAVYMOVES-PART2-1BB0" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Navy Moves (Part 2).prg"</ExomizerCommand>
+  <Notes>Set $FF65 to $01 in the dump file to remove the access code protection.</Notes>
+</Metadata>

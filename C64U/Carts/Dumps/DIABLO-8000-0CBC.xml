@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>DIABLO-8000-0CBC</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>548a87cc4eee4bcd84e38f4852723de953736dd7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8000</Address>
+    <Address>$0CBC</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>DIABLO-CRAM-8100</ColourRAMFile>
+  <ColourRAMStartAddress>$8100</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Diablo.d64</SourceFile>
+  <SourceFileSHA1>dc71a33f325a6215c8909565ebc824c2e0e48f2f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0CBC "AlternativeFormats\PRGs\Uncrunched\Diablo.prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $8100 lda #$37 sta $01 jsr $8000 dec $d030" -x "inc $d020" -o "Diablo.prg"</ExomizerCommand>
+  <Notes>Added a routine at $8000 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  
+  Also changed the LDA #$0F instruction at $4496 to RTS instead to remove highscore loading and saving to disk.</Notes>
+</Metadata>

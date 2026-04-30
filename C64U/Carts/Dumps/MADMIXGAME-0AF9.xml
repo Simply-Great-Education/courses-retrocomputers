@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>MADMIXGAME-0AF9</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7e83db1fa26cb20c6b12edb062a3e12f9a1ec2d7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0AF9</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Mad Mix Game - The Pepsi Challenge.tap</SourceFile>
+  <SourceFileSHA1>f6e4303a5267d5705a757d5ce94ec8b0ff34a26e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0AF9 "MADMIXGAME-0AF9" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mad Mix Game - The Pepsi Challenge.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

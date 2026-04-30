@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>CITYFIGHTER-3F40</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>24c1d184e6f672d98ad1ae78d09d0782045580c0</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3F40</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>City Fighter.tap</SourceFile>
+  <SourceFileSHA1>4692bd80d3d9b0622eb536e48e8cbdd8cd37ecf7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3F40 "CITYFIGHTER-3F40" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "City Fighter.prg"</ExomizerCommand>
+  <Notes>Made the following changes to allow the fire button in port 2 to start the game (with the original code you must press S):
+  
+  1. Patched the JSR $8CD6 instruction at $8EC0 to be JSR $5000 instead
+  2. Added a small routine at $5000 which first executes the JSR $8CD6 instruction to maintain the original code flow. It then checks the fire button in port 2 - if pressed, then it sets $C5 to $0D and returns, which causes the game to start just as if S was pressed.</Notes>
+</Metadata>

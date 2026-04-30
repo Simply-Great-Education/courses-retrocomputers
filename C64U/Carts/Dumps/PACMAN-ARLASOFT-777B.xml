@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>PACMAN-ARLASOFT-777B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3607b69b15780972dabc02c6aa22466f69ca3369</DumpFileSHA1>
+  <SimplifiedName>Pacman v1.0 (Arlasoft - 2022)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$777B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Pacman v1.0 (Arlasoft 2022).d64</SourceFile>
+  <SourceFileSHA1>565a4929d469ee700cf57e8880428d4810957e5a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x777B "PACMAN-ARLASOFT-777B" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Pacman v1.0 (Arlasoft - 2022).prg"</ExomizerCommand>
+  <Notes>Removed the calls at $77B1 (JSR $768E) and $7A0C (JSR $75AD) to remove disk access from the game (for high score loading and saving).</Notes>
+</Metadata>

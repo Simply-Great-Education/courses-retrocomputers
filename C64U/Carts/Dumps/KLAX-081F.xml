@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>KLAX-081F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>66c7930eebf1d4207c97b550d2fb387caac09e78</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$081F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Klax.tap</SourceFile>
+  <SourceFileSHA1>eae2a19935d74235ba5208360fd1fca4e3327c4f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x081F "KLAX-081F" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Klax.prg"</ExomizerCommand>
+  <Notes>The following modifications were made:
+  1. Patched the JSR $7074 instruction at $7047 to be JSR $0400 instead.
+  2. Added a small routine at $0400 to set $7A to $01 so that the game defaults to joystick. The routine then JSRs to $7074 and then returns to carry on the normal code flow.
+  3. Changed the two CMP #$FF instructions at $6DB6 and $6DC8 to CMP #$EF instead, which is used to compare the value in $D012. This fixes a potential hang as the raster IRQ was also set to fire on line #$FF, meaning that sometimes it would fire first and cause the busy waits to loop forever.
+  
+  The loading screen is from the Spectrum version</Notes>
+</Metadata>

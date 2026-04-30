@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>MAGICMADNESS-C100-1003</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b2c31dc2ee66efb23fbe013fa8beefdd8b4beeb6</DumpFileSHA1>
+  <SimplifiedName>Magic Madness</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C100</Address>
+    <Address>$1003</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Magic Madness (Master Date 1987-10-12).tap</SourceFile>
+  <SourceFileSHA1>0b99927358243d561a1ee2923225e1d22a48e34d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1003 "MAGICMADNESS-C100-1003" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c100 dec $d030" -x "inc $d020" -o "Magic Madness.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C100 which:
+  1. Turns off interrupts from the two CIA chips and acks any pending CIA interrupts.
+  2. Copies 1024 bytes of data from $C140 down to $0000 so that the dump can start at $0400.
+  3. Re-enables raster interrupts and timer NMIs.
+  4. And finally jumps to the entry point at $1003 (it couldn't use RTS because of the stack being cleared).</Notes>
+</Metadata>

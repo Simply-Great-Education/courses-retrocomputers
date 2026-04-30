@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>INFERNALRUNNER-81B0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d163736521ec402ab201d4aabbfd4bcd1378c6f3</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$81B0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Infernal Runner.tap</SourceFile>
+  <SourceFileSHA1>5835c74c20ec636bb01c6ac628d595af1be3e065</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x81B0 "INFERNALRUNNER-81B0" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Infernal Runner.prg"</ExomizerCommand>
+</Metadata>

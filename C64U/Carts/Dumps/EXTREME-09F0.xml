@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>EXTREME-09F0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>737d562725685da66ce1b7c950626b0ef71d06a4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$09F0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <ColourRAMFile>EXTREME-CRAM-8000</ColourRAMFile>
+  <ColourRAMStartAddress>$8000</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>1</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Extreme.tap</SourceFile>
+  <SourceFileSHA1>67b451a591c19bafc9f3f94cdb0d73e756073052</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x09F0 "AlternativeFormats\PRGs\Uncrunched\Extreme.prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $8000 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Extreme.prg"</ExomizerCommand>
+  <Notes>As this game is actually frozen, the game starts at $0AAC. However the true start address is $09F0.</Notes>
+</Metadata>

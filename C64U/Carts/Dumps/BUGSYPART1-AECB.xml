@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BUGSYPART1-AECB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5f7b4e4ce569c94c93d6df41fc591e42d4248555</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$AECB</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Bugsy - Part 1.tap</SourceFile>
+  <SourceFileSHA1>491ee8542649bb07f7636e6a6775801ad96bebeb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xAECB "BUGSYPART1-AECB" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Bugsy - Part 1.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MANIAX-7D50</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9f01634555ac421f4074dd6c2b00fc2dc746e59c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7D50</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Maniax.tap</SourceFile>
+  <SourceFileSHA1>12f8836f6c91d882a029357c6f0644b8c28b77eb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7D50 "MANIAX-7D50" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Maniax.prg"</ExomizerCommand>
+  <Notes>Note: as the original game is frozen, the breakpoint to use for dumping is actually $5C37</Notes>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BUBBLEBOBBLE-4460</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>91d3710076b86d31c727391ee4e8ce6586095520</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4460</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Bubble Bobble.tap</SourceFile>
+  <SourceFileSHA1>b25504a699788c90e101ced3425cc69bde41f079</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4460 "BUBBLEBOBBLE-4460" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Bubble Bobble.prg"</ExomizerCommand>
+</Metadata>

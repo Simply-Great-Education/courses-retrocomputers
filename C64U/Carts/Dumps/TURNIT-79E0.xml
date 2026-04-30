@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>TURNIT-79E0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0e8179cda7f473f9ac6d17ab0a3246bbd3926806</DumpFileSHA1>
+  <SimplifiedName>Turn It</SimplifiedName>
+  <JumpAddresses>
+    <Address>$79E0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Turn It [PAL].d64</SourceFile>
+  <SourceFileSHA1>4d01a8ea3c60eaee829586859b0bcdbf33a0aad1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x79E0 "TURNIT-79E0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Turn It.prg"</ExomizerCommand>
+  <Notes>Removed the call to the kernal save routine ($FFD8) at $16EC to remove disk access from the game (for high score saving).
+  
+  To skip the useless startup screen (copy protection?), the JMP $7680 instruction at $755C was changed to JMP $76DC instead.</Notes>
+</Metadata>

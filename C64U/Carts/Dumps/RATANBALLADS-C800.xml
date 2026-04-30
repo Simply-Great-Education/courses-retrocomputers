@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>RATANBALLADS-C800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e51e24b948347a70ac86ef9b15ae99d27577201d</DumpFileSHA1>
+  <SimplifiedName>Ratan Ballads</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Ratan Ballads (Loadstar #151 - Side 3).d64</SourceFile>
+  <SourceFileSHA1>8e39204c6ff834419f9ca00bc85cc6d84e329a46</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC800 "RATANBALLADS-C800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ratan Ballads.prg"</ExomizerCommand>
+</Metadata>

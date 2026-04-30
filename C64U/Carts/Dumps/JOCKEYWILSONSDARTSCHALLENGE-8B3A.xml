@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>JOCKEYWILSONSDARTSCHALLENGE-8B3A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0e68ce93a3f1a7d987aa9fd22ea1bae8940765b0</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8B3A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Jocky Wilson's Darts Challenge.tap</SourceFile>
+  <SourceFileSHA1>cc2ee54ced28859a57d9b4576355ba1e57b532cb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8B3A "JOCKEYWILSONSDARTSCHALLENGE-8B3A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Jocky Wilson's Darts Challenge.prg"</ExomizerCommand>
+</Metadata>

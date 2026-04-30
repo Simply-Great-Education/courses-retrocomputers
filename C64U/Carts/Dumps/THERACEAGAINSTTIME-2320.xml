@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>THERACEAGAINSTTIME-2320</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e350f20b50e3d3d0b0fa6073dac1e212a01fbf4c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2320</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Race Against Time, The.tap</SourceFile>
+  <SourceFileSHA1>0a475e3b13f4297b2d19208ca0c11079ebfc648e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2320 "THERACEAGAINSTTIME-2320" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Race Against Time, The.prg"</ExomizerCommand>
+</Metadata>

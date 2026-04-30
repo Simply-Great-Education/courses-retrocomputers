@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>SUBSONIC-2D12</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>38cb0a003b2dc8379005dc711734efd91c9b83a3</DumpFileSHA1>
+  <SimplifiedName>Subsonic</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2D12</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Subsonic (Zzap!64 Megatape #30).tap</SourceFile>
+  <SourceFileSHA1>d4435d3a0f25c67f0039ac2d879e6e01d9155a68</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2D12 "SUBSONIC-2D12" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Subsonic.prg"</ExomizerCommand>
+  <Notes>As the original game is frozen, the breakpoint to use for dumping is actually $2E18.
+  However, before you can actually dump after hitting this breakpoint, you must first set the program counter to $2D77 and execute the code from $2D77 until you return from the JSR $3BF7 at $2D8B.
+  This is important as this subroutine swaps the data in display memory, placing the sprite data in the correct starting position for the entry point at $2D12.</Notes>
+</Metadata>

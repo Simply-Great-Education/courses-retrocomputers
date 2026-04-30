@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SHIRLEYMULDOWNEYSTOPFUELCHALLENGE-0C00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ce65ac4cae705c0e97b0b1fd4ce00a6303a1b936</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0C00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Shirley Muldowney's Top Fuel Challenge.tap</SourceFile>
+  <SourceFileSHA1>a47c440ec85251d0f71e36b0e6c9eb9be9d263cf</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0C00 "SHIRLEYMULDOWNEYSTOPFUELCHALLENGE-0C00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Shirley Muldowney's Top Fuel Challenge.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the disk version</Notes>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>TANK-100C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>57052d84e78c0f087960cf2fcca443b604cb8a55</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$100C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>253</SidLength>
+  <SourceFile>Tank (Ocean).tap</SourceFile>
+  <SourceFileSHA1>8ab90391fc96090df5964cddc9693ab9e6d30dac</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x100C "TANK-100C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Tank (Ocean).prg"</ExomizerCommand>
+</Metadata>

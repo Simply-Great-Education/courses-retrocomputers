@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>DANDAREII-077E-189A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7c9eaca9b10a4c1c96ef005d47c69427854dfdb7</DumpFileSHA1>
+  <SimplifiedName>Dan Dare II - Mekon's Revenge</SimplifiedName>
+  <JumpAddresses>
+    <Address>$077E</Address>
+    <Address>$189A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Dan Dare II.tap</SourceFile>
+  <SourceFileSHA1>d6c92a89c0d792ff68fb3c7615148278f9f68ec5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x189A "DANDAREII-077E-189A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $077e dec $d030" -x "inc $d020" -o "Dan Dare II - Mekon's Revenge.prg"</ExomizerCommand>
+  <Notes>Added a routine at $077E to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

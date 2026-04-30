@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>TOBRUK-3F40-CB94</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>422137138a0c86c1241ef354cdc1bdbd140ef3cd</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3F40</Address>
+    <Address>$CB94</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>TOBRUK-CRAM-D000</ColourRAMFile>
+  <ColourRAMStartAddress>$D000</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Tobruk - The Clash of Armour.d64</SourceFile>
+  <SourceFileSHA1>015b04b7da4b4ea7248707d3349a9db04ceb734f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCB94 "AlternativeFormats\PRGs\Uncrunched\Tobruk - The Clash of Armour.prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$34 sta $01 jsr $d000 lda #$37 sta $01 jsr $3f40 dec $d030" -x "inc $d020" -o "Tobruk - The Clash of Armour.prg"</ExomizerCommand>
+  <Notes>Added a routine at $3F40 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+
+  Note: the space used at $3F40 partly contained some assembly statements left over from the dev process, so could be safely overwritten.</Notes>
+</Metadata>

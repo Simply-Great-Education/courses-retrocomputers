@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>CHOLO-4461</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0b02cb56c3d3515a57424e7f79a9c149b5ce08cb</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4461</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Cholo.tap</SourceFile>
+  <SourceFileSHA1>948bb8a71582c995baa98b7793dbe519ca2aa322</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4461 "CHOLO-4461" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Cholo.prg"</ExomizerCommand>
+</Metadata>

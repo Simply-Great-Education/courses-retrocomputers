@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>ZIX-2000-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cf0744c2578c87556c602de9598d46755fc5dbe4</DumpFileSHA1>
+  <SimplifiedName>Zix</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2000</Address>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Zix (COMPUTE!'s Gazette - 1993-11).d64</SourceFile>
+  <SourceFileSHA1>d2d3d2d3f313e8a7dd56c92bc866337e8f74630e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "ZIX-2000-080D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $2000 dec $d030" -x "inc $d020" -o "Zix.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $2000 to zero out the tape buffer to allow the game sounds to work.</Notes>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>HEAVENBOUND-8000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e3317f8e143e12cd164cdfbc563fdf0666623433</DumpFileSHA1>
+  <SimplifiedName>Heavenbound</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Heavenbound (EBES) [PAL].d64</SourceFile>
+  <SourceFileSHA1>038ca5627203236d89f1c6f06707170bbab43002</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8000 "HEAVENBOUND-8000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Heavenbound.prg"</ExomizerCommand>
+</Metadata>

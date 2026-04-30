@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>HARDHATMACK-0400-2000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c9f00906b252e0b46d94f62dad14dd44b0c23853</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$2000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Hard Hat Mack.tap</SourceFile>
+  <SourceFileSHA1>82848938c71c62e97bd0e6a0ad28e9833bcbfcbc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2000 "HARDHATMACK-0400-2000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Hard Hat Mack.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 which zeroes out the tape buffer to allow the game to run correctly.
+  It then jumps to the entry point at $2000 (it couldn't use RTS because of the zeroing overwriting the boot code).</Notes>
+</Metadata>

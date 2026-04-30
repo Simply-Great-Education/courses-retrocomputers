@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>LETSINVADE-0D00-0C67</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>025397c678c7c294b8f22af47ac3f02b4338819e</DumpFileSHA1>
+  <SimplifiedName>Let's Invade! (TND - 2016)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0D00</Address>
+    <Address>$0C67</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>176</SidLength>
+  <SourceFile>Let's Invade!.tap</SourceFile>
+  <SourceFileSHA1>fee072dd7f18ae1ff87e3c2d73885b543709a793</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0C67 "LETSINVADE-0D00-0C67" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0d00 dec $d030" -x "inc $d020" -o "Let's Invade! (TND - 2016).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0D00 to set the current device number ($BA) to $01 (tape) before starting the game to disable highscore loading and saving to disk.</Notes>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>LONELYRIDER-0C00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a08a5ffaedd4f5bc1407ade1fbec5ce95637fe78</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0C00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Lonely Rider.g64</SourceFile>
+  <SourceFileSHA1>39f30404081640d2890994043bd3fb354a52857c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0C00 "LONELYRIDER-0C00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Lonely Rider (J1).prg"</ExomizerCommand>
+</Metadata>

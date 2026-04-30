@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>RESCUESQUAD-4365</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>02ea27beeae8db3f9a45d52bba371013accdca62</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4365</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Rescue Squad.d64</SourceFile>
+  <SourceFileSHA1>6cf5d71cf3f0b53a3d3f1bff87937249f81c554a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4365 "RESCUESQUAD-4365" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Rescue Squad.prg"</ExomizerCommand>
+  <Notes>NOP'd out the calls to the kernal load routine ($FFD5) at $47C5 and $47E2, plus the kernal save routine ($FFD8) at $4A93 to remove disk access from the game.
+  
+  Note: to dump the game, just load it and enter the monitor when the title screen is displayed. This ensures the final data is loaded from disk before dumping.</Notes>
+</Metadata>

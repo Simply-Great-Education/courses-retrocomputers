@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MRDOSCASTLE-0400-1325</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>bce314c26be1140450b1444c79d77b546784becc</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$1325</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Mr Do's Castle.d64</SourceFile>
+  <SourceFileSHA1>8b81fd0b1886605ba949304ec7a7647d754f15c8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1325 "MRDOSCASTLE-0400-1325" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "Mr Do's Castle (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to start correctly.</Notes>
+</Metadata>

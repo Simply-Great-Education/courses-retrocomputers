@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>STARCRASH-1000-1800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>383d6c88bed339c59f99dda370ddfd5d98f6114c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+    <Address>$1800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Star Crash.tap</SourceFile>
+  <SourceFileSHA1>75335545fd568eb2c99c6fd76cf3ffc0f9c4bea7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1800 "STARCRASH-1000-1800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $1000 dec $d030" -x "inc $d020" -o "Star Crash.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $1000 to set $02A8 to the magic value of $25 in order to allow the game to start without crashing.</Notes>
+</Metadata>

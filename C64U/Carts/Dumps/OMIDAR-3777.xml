@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>OMIDAR-3777</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>05fee9c9fb04cfba38f1baabe90fcef4533cf21c</DumpFileSHA1>
+  <SimplifiedName>Omidar</SimplifiedName>
+  <JumpAddresses>
+    <Address>$3777</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Omidar (64'er Spielesammlung - Band 4).d64</SourceFile>
+  <SourceFileSHA1>72cd16f5c8b1566bb9892ccd3c0910ccd05741ae</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "OMIDAR-3777" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Omidar (J1).prg"</ExomizerCommand>
+</Metadata>

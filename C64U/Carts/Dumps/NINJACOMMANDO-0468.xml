@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>NINJACOMMANDO-0468</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9452b3658ebadeb908bd9f815c8927b370d5685e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0468</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Ninja Commando.tap</SourceFile>
+  <SourceFileSHA1>7005711d8a4ee250ceb5da9c9e6d0c23af8a7342</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0468 "NINJACOMMANDO-0468" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ninja Commando.prg"</ExomizerCommand>
+</Metadata>

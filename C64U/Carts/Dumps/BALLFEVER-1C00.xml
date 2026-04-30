@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BALLFEVER-1C00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>43032eadf0f58a04bb660e68d205ce10f2a6c701</DumpFileSHA1>
+  <SimplifiedName>Ball Fever</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1C00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Ball Fever (Magic Disk 64 - 1993-12 - Side 2).d64</SourceFile>
+  <SourceFileSHA1>ab3da64d2ab1893c0c7045482d109d8cfc55fa99</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1C00 "BALLFEVER-1C00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ball Fever.prg"</ExomizerCommand>
+</Metadata>

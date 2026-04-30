@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>RESCUEONFRACTALUS-1929</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>39e437f16faa48ecb44e2eeb90733b573c6b9052</DumpFileSHA1>
+  <SimplifiedName>Rescue on Fractalus</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1929</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Rescue on Fractalus (Version 2).tap</SourceFile>
+  <SourceFileSHA1>2bb4e793a6f68f0bd1455e21d223ab2d948497e9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1929 "RESCUEONFRACTALUS-1929" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Rescue on Fractalus.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the disk version</Notes>
+</Metadata>

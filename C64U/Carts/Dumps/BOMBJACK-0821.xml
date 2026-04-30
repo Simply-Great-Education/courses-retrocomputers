@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>BOMBJACK-0821</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6275859fff4dfe445ea378e698cef2ab639a63bf</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0821</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>65</SidLength>
+  <SourceFile>Bomb Jack.tap</SourceFile>
+  <SourceFileSHA1>b14e911d6635c67e8c08c7c38abcdc83eeccedf8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0821 "BOMBJACK-0821" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bomb Jack.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

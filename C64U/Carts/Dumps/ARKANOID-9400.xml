@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>ARKANOID-9400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>98ea1c5e2417ee445ff4ec206b2d0d9c09d4535b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>253</SidLength>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Arkanoid.tap</SourceFile>
+  <SourceFileSHA1>9d85fe379c5cebd8501a06e099933c70c3a290ea</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9400 "ARKANOID-9400" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Arkanoid (J1).prg"</ExomizerCommand>
+  <Notes>Patched the $03 at $093F to $01 to default to joystick control.</Notes>
+</Metadata>

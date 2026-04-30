@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>TASKF-6680</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>084b7d412d720f424e93442823aab994c5fa4421</DumpFileSHA1>
+  <SimplifiedName>Task-F</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6680</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Task-F (ECP).tap</SourceFile>
+  <SourceFileSHA1>a4e056a01176ee4b984d50f0e63e365fdf08d538</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6680 "TASKF-6680" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Task-F.prg"</ExomizerCommand>
+  <Notes>As the original game is frozen, the breakpoint to use for dumping is actually $6712.</Notes>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>WIZARDPLUS-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>66c1523c773b831e4745d9336a1ea6b98fbcc76a</DumpFileSHA1>
+  <SimplifiedName>Wizard Plus</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Crillion &amp; Wizard Plus (Happy Computer - LH 8901 - 20901).d64</SourceFile>
+  <SourceFileSHA1>86ef4a63f9ebd83cfd662a2e990a0859520c95fc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "WIZARDPLUS-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Wizard Plus.prg"</ExomizerCommand>
+  <Notes>To remove the high score loading and saving to disk, NOP'd out the JSR call to the kernal save routine ($F5ED) at $242A and replaced the JMP to the kernal load routine ($F4A5) at $2451 with an RTS.</Notes>
+</Metadata>

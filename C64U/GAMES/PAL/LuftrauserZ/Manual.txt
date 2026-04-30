@@ -1,0 +1,199 @@
+LUFTRAUSERZ
+
+An official Commodore 64 demake of Vlambeer/Devolver Digital's indie-hit LUFTRAUSERS. Converted to the Commodore 64 home computer by Paul Koller over the course of three years, published by RGCD in 2017.
+
+
+LUFTRAUSERS BACKGROUND
+
+LUFTRAUSERS was Vlambeer's 16th release as a game studio since they started back in September 2010. It's a game inspired by the period between the 1900's and the 1980's - a period in which military intelligence was capable to tell us our enemies were up to something, but not quite capable to figure out whether that 'something' was a submarine aeroplane or weaponised dolphins. It's a game that draws inspiration from the Thunderbirds and the visual style of early video cameras.
+
+It's a game with a story about pilots on suicide missions into enemy territory, about endless clones of The Best Pilot In The World and fantastical feats of engineering. It's about gravity and gravitas, about momentum and style. It's a game in which you can personalise your aircraft, but also a game in which the end result will always be to see it destroyed. It's a game that, more than anything else, is angry.
+
+LUFTRAUSERS remains a very special game to Vlambeer. It's the last game they started working on before their life-changing iOS game Ridiculous Fishing was released, and in that regard it's also the last game of a certain aesthetic within their work. In a way, it's a closing chapter to the first three years of Vlambeer.
+
+When they started work on LUFTRAUSERS, things were looking quite grim; Vlambeer's fishing game had been cloned, they'd spent a year doing interviews just about how terrible getting cloned felt and they were at the end of their ability to keep going. Vlambeer's designer, J.W., managed to create this tiny prototype based on a Flash game they'd made before. The original Flash title was called LUFTRAUSER, and the intent was to allow people to build their own super weapon dog fighting plane. LUFTRAUSERS was born.
+
+As Vlambeer struggled through the tail end of a rough time, LUFTRAUSERS took shape. Many decisions J.W. and Rami made in the game no longer feel as genuine to them as they once did. Where they like to think of their games as comfortable, Vlambeer think of LUFTRAUSERS as being aggressive. They coped with their anger by making an angry game.
+
+
+LUFTRAUSERZ BACKGROUND
+
+Work on LUFTRAUSERZ started somewhere at the beginning of 2014, which was even before the original LUFTRAUSERS came out! Paul started on his conversion because he wanted to try his hands on a full-screen fast scrolling game engine, and this game looked like it would translate well to the C64 platform. However, similar to the original, LUFTRAUSERZ saw some significant delays before being released. Nevertheless, in the end everything came together, and the finished product is now in your hands!
+
+
+ABOUT THE GAME
+
+LUFTRAUSERZ is a 2D dogfighting game where you are deep behind enemy territory and are charged with doing as much damage as possible with an experimental airship. Enemies range from Fighters and Jets to Battleships, rival Aces and Blimps. As you rack up more points during each high pace round, more enemies spawn, making the skies more crowded and making it difficult not to succumb to damage.
+
+Your ship can take a lot of damage, but it still needs to recharge. The experimental Rauser heals itself while not firing. When damaged, you'll see the colour of the screen borders change in hue from black to white. As it becomes brighter, the more damaged your Rauser and the more necessary it becomes to recharge. There's a delicate balance between firing and healing to ensure victory.
+
+There are 125 different Rausers you can fly by unlocking the different engines, bodies and weapons. Will you find the perfect combination to clear the skies for good?
+
+
+LOADING LUFTRAUSERZ
+
+To load the LUFTRAUSERZ cartridge, turn off your C64/128, insert the cartridge and turn the computer back on. The game will load automatically.
+
+If you are presented with a blank screen or graphic garbage, please try turning off the C64 and re-inserting the cartridge again. Issues like this are most likely due to an oxidised cartridge port (after all, we are talking about 30 year old technology here), so please check and clean the port - or even try the game on another C64 - before contacting us for a replacement.
+
+NOTE: If your save data becomes corrupt, you can hard-reset the save slot but holding DOWN on a joystick in port one whilst the Vlambeer logo is shown on screen (during unpacking/loading).
+
+
+NTSC/PAL & SID COMPATIBILITY
+
+LUFTRAUSERZ is a PAL only game and works on the C64, C128 and C64GS. Note that the music was composed for the more recent 8580 SID chip.
+
+
+PLAYING THE GAME
+
+LUFTRAUSERZ is played by using a joystick or joypad plugged into port two. When the game has completed loading, the title screen will be displayed. Press fire to start the game. After an initial cut-scene you'll see the RAUSER launching platform emerge from the ocean. This screen also displays the status of your current missions. From this point you have three options:
+
+Push UP to LAUNCH
+Push DOWN to access the HANGAR
+Press FIRE to access the OPTIONS screen
+
+
+CONTROLS
+
+Push UP to accelerate
+Push LEFT to rotate anti-clockwise
+Push RIGHT to rotate clockwise
+Press/hold FIRE to shoot
+
+NOTE: Your RAUSER only recharges its shields when NOT firing.
+
+
+HANGAR
+
+The HANGAR is where the Allied engineers and scientists can outfit your RAUSER with upgrades as you unlock new components. In total there are 125 different RAUSER combinations!
+
+Press FIRE to access the adjustment panel, then:
+
+Push LEFT or RIGHT to select the different upgrades, and use UP and DOWN to swap between WEAPONS, BODIES and ENGINES. When you are finished, press FIRE to CONFIRM.
+
+From this screen you can also push LEFT to access the RESULTS screen, or push UP to LAUNCH.
+
+
+RESULTS/STATS
+
+These screens show your overall progress through the game, including your best scores and confirmed enemy kill counts.
+
+NOTE: Your progress is automatically saved to the cartridge after each game over.
+
+
+OPTIONS
+
+RETURN TO GAME - Exits the menu and returns to the LAUNCH screen.
+SAVE TO DISK - Select this if you'd prefer to save the game data to a floppy disk instead of the cartridge.
+LOAD FROM DISK - Hold down FIRE for three seconds to load a previously saved game from disk.
+VIEW CUTSCENE - View cutscenes unlocked through the completion of special missions. LEFT or RIGHT to select the relevant scene, FIRE to view.
+SHOW TITLESCREEN - Return to the title screen.
+MUSIC - Use LEFT or RIGHT to toggle ON or OFF.
+SFX - Use LEFT or RIGHT to toggle ON or OFF.
+RESET GAME - Hold down FIRE for three seconds to erase the save data from the cartridge.
+
+
+UPGRADES
+
+Before each launch, the screen displays your current missions and their progress towards completion. Successfully completing missions or levelling up eventually unlocks new RAUSER parts in the hangar. These modular components consist of WEAPONS, BODIES and ENGINES.
+
+
+WEAPONS
+
+ORIGINAL - The standard issue, versatile machine-gun. High fire-rate, but low damage.
+LASER - Fires in one continuous beam that pierces through enemies. Causes slow turning whilst firing.
+SPREAD - Fires five bullets at a time with moderate fire-rate but low damage. Heavy kick-back.
+MISSILES - Fires up to four self-guiding high damage missiles.
+CANNON - Fires one big, very high damage shot that explodes into projectiles. Insane damage, but a low fire-rate.
+
+
+BODIES
+
+ORIGINAL - The standard-issue RAUSER frame. A good all round body.
+ARMOR - Increases number of hit points, but decreases RAUSER speed.
+MELEE - No impact damage from hitting enemies, but lowers overall RAUSER health.
+NUKE - Detonates a nuke that causes massive damage upon death. Also provides higher impact damage.
+BOMB - Drops a high damage bomb upon firing the main gun, but has the side effect of slower health regen.
+
+
+ENGINES
+
+ORIGINAL - The standard-issue RAUSER engine. Well balanced.
+SUPERBOOST - Gives a massive boost of speed, but slows turning speed.
+GUNGINE - Propels your RAUSER forward by firing bullets from the rear.
+UNDERWATER - No damage is taken from water. Slower rate of acceleration than the standard engine.
+HOVER - Removes the effect of gravity. Slower rate of acceleration than the standard engine.
+
+
+ENEMIES
+
+BOAT - Fires three shots at a time.
+BATTLESHIP - Fires streams of bullets at the player.
+JET - Fly extremely fast, but don't shoot.
+FIGHTER - Trails the player and occasionally fires single shots.
+ACE - Fires a stream of shots and takes several hits to destroy.
+BLIMP - The largest and most powerful enemy in the game.
+
+TRIVIA
+
+Did you know that:
+
+- LUFTRAUSERZ actually runs smoother than the original, which runs at only 30fps!
+- Three other SID musicians tried to convert the original tracks, but failed due to lacking motivation.
+- Four thousand unique player sprite frames are included in the game!
+- All in-game background graphics are build-up of only 54 different 8x8 pixel character definitions!
+- James Monkman is credited as tester for both LUFTRAUSERS and LUFTRAUSERZ.
+- While showcasing the game at GamesCom2016, people asked whether we made a generic GameMaker-to-C64 converter...
+
+CREDITS
+
+LUFTRAUSERS was developed by Vlambeer. Copyright 2014. Published on Windows, OSX, Linux, Android, Sony Playstation 3 and Vita by Devolver Digital.
+
+Business & Development: Rami Ismail
+Game Designer: Jan Willem Nijman
+Artist: Paul 'Pietepiet' Veer
+Artist: Roy Nathan de Groot
+Music: Jukio 'Kozilek' Kallio
+Box/Poster Art: JunkBoy
+
+LUFTRAUSERZ was developed by Paul Koller, with music and sound effects by Stein Pedersen. Copyright 2017. Published on 64KB C64 cartridge by RGCD, 2017.
+
+Code, Design & Graphics: Paul Koller
+Music & Sound Effects: Stein Pedersen
+Box/Poster Adaptation & Design: Ilija 'iLKke' Melentjevic
+Manual Design & Layout: Chris Mantil
+Dr. Martin Wendt & Siem Appelman: Technical Support
+Manual Text & Testing: James Monkman
+Testing: Bieno Marti
+Cartridge Hardware: Jens Schönfeld
+
+Special thanks to Rami Ismail, Jan Willem Nijman and Nigel Lowrie for giving us their kind permission to release this as an official Commodore 64 demake!
+
+
+LINKS
+
+For more information on the team involved in this C64 release, visit: rgcd.co.uk (RGCD homepage)
+
+https://rgcddev.itch.io/luftrauserz
+
+
+
+
+Note:
+Here you will find the cartridge rom of LUFTRAUSERZ, together with a blank d64 file for you to use for saving/loading your progress through the game. If using VICE, you'll need to attach the disk image file first, and then attach the cartridge image.
+
+Currently the Ultimate 1541-II does not support saving to GMOD2, which is the hardware that this game was developed for. To maintain compatibility, the version of LUFTRAUSERZ supplied digitally here is an Ocean style cartridge, so score saving and loading is MANUALLY done to the provided disk image.
+
+To save/load your scores, from the launch screen press FIRE to access the menu. Select LOAD or SAVE from disk there. 
+
+
+
+
+Easter Egg!
+
+Hold the joystick in port two in the DOWN direction whilst performing the "reset game" option in the menu. If you have the joystick downwards at the 3 sec moment, the eeprom will NOT be reset, but instead a music demo will start!
+
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Paul Koller.

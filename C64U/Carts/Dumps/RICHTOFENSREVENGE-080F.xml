@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>RICHTOFENSREVENGE-080F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c909208f0ee65f815898f997c776b684fa228e23</DumpFileSHA1>
+  <SimplifiedName>Richtofen's Revenge</SimplifiedName>
+  <JumpAddresses>
+    <Address>$080F</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Richtofen's Revenge (Courbois Software #6424).tap</SourceFile>
+  <SourceFileSHA1>0113a522f268083848a170854e404b24aebdb28c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "RICHTOFENSREVENGE-080F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Richtofen's Revenge.prg"</ExomizerCommand>
+  <Notes>Made the following modifications to display all text correctly in white on the title screen:
+  1. Changed the JSR $1083 instruction at $0A44 to JSR $1700 instead
+  2. Added a routine at $1700 which sets the appropriate colour RAM locations to $01 (white) and then jumps to $1083 to carry on the normal code flow</Notes>
+</Metadata>

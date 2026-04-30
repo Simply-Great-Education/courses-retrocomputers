@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SLURPY-4017</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ecf8a6d59bac10be8abe6263e8db0387881b544b</DumpFileSHA1>
+  <SimplifiedName>Slurpy</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4017</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Slurpy (Version 2).tap</SourceFile>
+  <SourceFileSHA1>3792fb32026c8dc54d23e736981b14d00951f9b7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4017 "SLURPY-4017" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Slurpy (J1).prg"</ExomizerCommand>
+</Metadata>

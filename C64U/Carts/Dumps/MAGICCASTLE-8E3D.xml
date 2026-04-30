@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MAGICCASTLE-8E3D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>23063dd1b4d6420c697b7757c061eb719b582293</DumpFileSHA1>
+  <SimplifiedName>Magic Castle</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8E3D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Magic Castle (Gilsoft).tap</SourceFile>
+  <SourceFileSHA1>01daaf19188fc9771dc6849388d00bf1b47b2295</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8E3D "MAGICCASTLE-8E3D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Magic Castle.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>BREAKTHRU-331A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c7f9cfd90a0b696ccefb4dab614b69988e25d959</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$331A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Breakthru.tap</SourceFile>
+  <SourceFileSHA1>508b13546d46cfded2e7d4aed1525881159c76ff</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x331A "BREAKTHRU-331A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Breakthru.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

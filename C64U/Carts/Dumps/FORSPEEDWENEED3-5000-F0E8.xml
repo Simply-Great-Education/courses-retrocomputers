@@ -1,0 +1,25 @@
+﻿<Metadata>
+  <DumpFile>FORSPEEDWENEED3-5000-F0E8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>551f0ba3cae9732966b3041a471bd5a7580a89d7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5000</Address>
+    <Address>$F0E8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <ColourRAMFile>FORSPEEDWENEED3-CRAM-5100</ColourRAMFile>
+  <ColourRAMStartAddress>$5100</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>For Speed We Need 3 (TND+Blazon - 2023).tap</SourceFile>
+  <SourceFileSHA1>197aec8457ee4422fc515ee61796d5f441c603c7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xF0E8 "AlternativeFormats\PRGs\Uncrunched\For Speed We Need 3 (TND+Blazon - 2023).prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $5100 lda #$35 sta $01 jsr $5000 dec $d030" -x "inc $d020" -o "For Speed We Need 3 (TND+Blazon - 2023).prg"</ExomizerCommand>
+  <Notes>Added a routine at $5000 which:
+  
+  1. Sets up the correct VICII settings to display the loading screen
+  2. Initialises the loading music by calling the routine at $E000
+  
+  Also patched the LDA $CE00 instruction at $0486 to LDA #$01, NOP in order to set the current device number ($BA) to $01 (tape) to disable highscore loading and saving to disk</Notes>
+</Metadata>

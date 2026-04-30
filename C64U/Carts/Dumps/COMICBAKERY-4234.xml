@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>COMICBAKERY-4234</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>dc841706649486dd258134a59d91866dda6cdeb3</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4234</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>253</SidLength>
+  <SourceFile>Comic Bakery.tap</SourceFile>
+  <SourceFileSHA1>3b1a394d149280edb28e4ec7f7d7ab7d56c3488f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4234 "COMICBAKERY-4234" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Comic Bakery.prg"</ExomizerCommand>
+</Metadata>

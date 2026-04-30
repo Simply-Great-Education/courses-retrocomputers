@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>TITANICBLINKY-4500</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>824ab74d873c19d3b1ac7b81a1c04c2f99713a74</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4500</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Titanic Blinky.tap</SourceFile>
+  <SourceFileSHA1>beb215b0b62366d81950f9e3e2d1ddbfa90fe2ef</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4500 "TITANICBLINKY-4500" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Titanic Blinky.prg"</ExomizerCommand>
+  <Notes>Inserted the instructions LDA #$20, STA $FF (which sets $FF = $20) at $4526 to ensure the game runs correctly (without this, the character cannot shoot anything or lose any energy).</Notes>
+</Metadata>

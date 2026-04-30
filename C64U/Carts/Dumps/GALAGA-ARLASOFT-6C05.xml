@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>GALAGA-ARLASOFT-6C05</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5bb269d2117fc19bf550a721682d8955bd5851b8</DumpFileSHA1>
+  <SimplifiedName>Galaga (Arlasoft - 2021)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6C05</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Galaga v1.05 (Arlasoft 2021).d64</SourceFile>
+  <SourceFileSHA1>c3dfcf774dde439bdd7821a9e729ec52c71fa710</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6C05 "GALAGA-ARLASOFT-6C05" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Galaga (Arlasoft - 2021).prg"</ExomizerCommand>
+  <Notes>Removed the calls to the kernal load routine ($FFD5) at $810F and the kernal save routine ($FFD8) at $804A to remove disk access from the game (for high score loading and saving).</Notes>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>FOOTBALLMANAGER-2267</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>95746cdc3693026b0afe44f7de357fc3c41e7d8e</DumpFileSHA1>
+  <SimplifiedName>Football Manager</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2267</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Football Manager (Version 2).tap</SourceFile>
+  <SourceFileSHA1>10b9c877391496135dbcf0b36f81b97c7c7b0216</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2267 "FOOTBALLMANAGER-2267" -Di_table_addr=0x02 -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Football Manager.prg"</ExomizerCommand>
+  <Notes>The loading screen was converted from the Spectrum version by Andy Green (https://www.facebook.com/AndyGreenPixelArt).</Notes>
+</Metadata>

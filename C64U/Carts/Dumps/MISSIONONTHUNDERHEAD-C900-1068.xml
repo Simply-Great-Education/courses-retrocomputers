@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>MISSIONONTHUNDERHEAD-C900-1068</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>11fa9a93055353dea105e7b7239ac682264031d0</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C900</Address>
+    <Address>$1068</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>MISSIONONTHUNDERHEAD-CRAM-C990</ColourRAMFile>
+  <ColourRAMStartAddress>$C990</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Mission on Thunderhead.g64</SourceFile>
+  <SourceFileSHA1>53df66cb553d49eb254314e838185457ab42e666</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1068 "AlternativeFormats\PRGs\Uncrunched\Mission on Thunderhead (J1).prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c990 lda #$37 sta $01 jsr $c900 dec $d030" -x "inc $d020" -o "Mission on Thunderhead (J1).prg"</ExomizerCommand>
+  <Notes>Added a routine at $C900 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  Because of its use of the raster IRQ, this game is particularly sensitive to timing when starting up. Therefore, this routine also syncs itself to a number of VBLANKS before calling IOINIT ($FDA3). This prevents the game from sometimes locking up during startup on a PAL machine.</Notes>
+</Metadata>

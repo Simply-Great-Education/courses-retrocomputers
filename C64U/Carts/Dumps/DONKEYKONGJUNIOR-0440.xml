@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>DONKEYKONGJUNIOR-0440</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c96adbf16082d5614faa2cca6c72d19d061492af</DumpFileSHA1>
+  <SimplifiedName>Donkey Kong Junior (Mr. SID - 2014)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0440</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>125</SidLength>
+  <SourceFile>Donkey Kong Junior [PAL].tap</SourceFile>
+  <SourceFileSHA1>9dcb4d31a74f4c131fb795fb0fc48bb95e8d46ef</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0440 "DONKEYKONGJUNIOR-0440" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Donkey Kong Junior (Mr. SID - 2014).prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>SPACEDOUBT-7600-5F00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f5acd4c1ac962e8c3da87c67b36b6602ac66905d</DumpFileSHA1>
+  <SimplifiedName>Space Doubt</SimplifiedName>
+  <JumpAddresses>
+    <Address>$7600</Address>
+    <Address>$5F00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <ColourRAMFile>SPACEDOUBT-CRAM-7700</ColourRAMFile>
+  <ColourRAMStartAddress>$7700</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>1</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Space Doubt (Version a).tap</SourceFile>
+  <SourceFileSHA1>fce799d2458ff283ca6c362205cb7c5b0291de50</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5F00 "AlternativeFormats\PRGs\Uncrunched\Space Doubt.prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $7700 lda #$36 sta $01 jsr $7600 dec $d030" -x "inc $d020" -o "Space Doubt.prg"</ExomizerCommand>
+  <Notes>Added a routine at $7600 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  
+  Once the loading screen has been displayed, the routine then sets the screen control register #2 ($D016) to $C8 for the game itself.</Notes>
+</Metadata>

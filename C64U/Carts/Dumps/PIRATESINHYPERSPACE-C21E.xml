@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>PIRATESINHYPERSPACE-C21E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a150dfb17a7ca8dc376989a3c7891afb36ee106a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C21E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>11</LoadingScreenBorderColour>
+  <RasterBarType>None</RasterBarType>
+  <SidLength>144</SidLength>
+  <SourceFile>Pirates in Hyperspace.tap</SourceFile>
+  <SourceFileSHA1>237b71828290affc515db029629cb3226dd9dc84</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC21E "PIRATESINHYPERSPACE-C21E" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Pirates in Hyperspace.prg"</ExomizerCommand>
+</Metadata>

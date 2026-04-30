@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>WEATHERWARII-3000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5901cd87349bc693db7bbfd43a4368dd8d940231</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Weatherwar II.d64</SourceFile>
+  <SourceFileSHA1>ef29f42432f2cce58cc4c1ed21738c0c905b7d29</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3000 "WEATHERWARII-3000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Weatherwar II.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $087F. Therefore the following changes were made:
+  1. Removed the SYS 900 ($0384) instruction at the beginning of line 4. This is because this is not only is below $0400, but it also contains a protection check to ensure the game was loaded from tape.
+  2. An init routine has been added at $3000 which sets up the correct VICII settings and necessary BASIC pointers, so the execution can start at the point the loader has finished and start the game.
+  3. This routine also contains the init code originally found at $0388.
+  4. It then executes the RUN command to start the game program.
+  
+  Note: to dump, simply set a breakpoint on $A7AE after the first part of the game has loaded.</Notes>
+</Metadata>

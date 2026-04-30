@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>JARSREVENGE-2470-2B50</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>342843a9076be050d68fc0df94456c2e1646066e</DumpFileSHA1>
+  <SimplifiedName>Jars' Revenge (TRSI - 2011)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2470</Address>
+    <Address>$2B50</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>92</SidLength>
+  <SourceFile>Jars' Revenge.tap</SourceFile>
+  <SourceFileSHA1>cd71382a31efeb34ca538da2c7f112e351dd7742</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2B50 "JARSREVENGE-2470-2B50" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $2470 dec $d030" -x "inc $d020" -o "Jars' Revenge (TRSI - 2011).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $2470 which combines code originally found between $0259-$026C and $0210-$0255. Copying this code to the new location allows the game to be dumped from $0400.</Notes>
+</Metadata>

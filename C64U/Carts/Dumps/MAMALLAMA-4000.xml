@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MAMALLAMA-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e34761790bebc8382770bc450f4d5d770964af02</DumpFileSHA1>
+  <SimplifiedName>Mama Llama</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Mama Llama (Version 1).tap</SourceFile>
+  <SourceFileSHA1>380e216b696cb4da9d055dcc5e1a798ad66b6879</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "MAMALLAMA-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mama Llama.prg"</ExomizerCommand>
+</Metadata>

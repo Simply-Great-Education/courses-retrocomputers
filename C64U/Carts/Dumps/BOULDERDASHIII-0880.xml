@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>BOULDERDASHIII-0880</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c8d87d42a8875e9b4ea8489fdea89daf44d3add1</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0880</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Boulder Dash III.tap</SourceFile>
+  <SourceFileSHA1>669e5ad8b1254f54bae8864de120207d8c1bdece</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "BOULDERDASHIII-0880" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Boulder Dash III (J1).prg"</ExomizerCommand>
+</Metadata>

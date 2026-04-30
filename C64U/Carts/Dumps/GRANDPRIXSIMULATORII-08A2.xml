@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>GRANDPRIXSIMULATORII-08A2</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>248fedded72a6153233f9d6f5e9352bc91e4f135</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$08A2</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Grand Prix Simulator II.tap</SourceFile>
+  <SourceFileSHA1>abb062402ee349928bf59a85708201532456d0f7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x08A2 "GRANDPRIXSIMULATORII-08A2" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Grand Prix Simulator II.prg"</ExomizerCommand>
+</Metadata>

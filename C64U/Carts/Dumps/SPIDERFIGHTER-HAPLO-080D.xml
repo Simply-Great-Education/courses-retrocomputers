@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SPIDERFIGHTER-HAPLO-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f06039683d25ae9f46a75ce9b5efd5116b7893b8</DumpFileSHA1>
+  <SimplifiedName>Spider Fighter (Haplo - 2022)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Spider Fighter (Haplo 2022).d64</SourceFile>
+  <SourceFileSHA1>2124b012d1e3be13264bdaeab29d635365b3bc1a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x080D "SPIDERFIGHTER-HAPLO-080D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Spider Fighter (Haplo - 2022).prg"</ExomizerCommand>
+</Metadata>

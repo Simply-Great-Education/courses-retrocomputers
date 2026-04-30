@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>TAGTEAMWRESTLING-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0e6e071474828cdee3bcc75b3add25f1ab43c4dd</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Tag Team Wrestling.tap</SourceFile>
+  <SourceFileSHA1>6ad77a5e5432b38c13d12845e9dc3cce0929323c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "TAGTEAMWRESTLING-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Tag Team Wrestling (J1).prg"</ExomizerCommand>
+</Metadata>

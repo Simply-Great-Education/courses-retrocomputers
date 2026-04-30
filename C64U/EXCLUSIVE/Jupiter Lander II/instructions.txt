@@ -1,0 +1,106 @@
+COMMODORE SOFTWARE PRESENTS 
+
+-= JUPITER LANDER 2: JUPITER
+FRACT/URE =- 
+
+The official sequel to the first ever
+Commodore 64 game! 
+
+
+
+-= WELCOME, COMMANDER =- 
+
+On 29th April 1994, something strange
+shook the skies. 
+
+*** A bLiNdInG FlAsH! *** 
+
+Then Jupiter was gone. 
+
+Splintered. 
+
+Shattered. 
+
+Ripped from reality itself. 
+
+What remains is a maze of floating
+islands - Titanic chunks of the
+once-mighty gas and ice planet
+drifting through a storm of vapor and
+lightning. The world calls the event
+"The Blip". Science offers no
+answers. But humanity rushed in,
+building ships to explore the broken
+planet. 
+
+You are the last surviving pilot. The
+answers lie with you. Navigate the
+chaos. Dock on fragments. Survive the
+storms. Collect as much data as you
+can to unlock the mystery. The legacy
+is yours to fly. 
+
+Welcome to Jupiter Lander 2: Jupiter
+Fract/ure. 
+
+
+
+
+-= SETTINGS =- 
+
+- PAL only (for now) 
+- 8580 SID preferred 
+- Set the addresses for your SID
+chips or UltiSIDs as follows: 
+SID1 at $d400 
+SID2 at $df00 
+
+If using the "RunMeFirst.cfg" file
+(recommended!), the SID settings will
+be set automatically. 
+
+Note: this config will use UltiSid
+and disable real SID. If you have one
+or two real SIDs installed, manually
+configure as per above settings and
+do not use the config file. 
+
+
+
+-= CONTROLS =- 
+
+Joystick Port 2 
+
+Keyboard 
+W - Thrust 
+A - Left 
+D - Right 
+Return - Thrust 
+Space - Pause 
+
+Splash screen: 
+Fire/Return/Space to exit 
+
+Main menu: 
+Fire/Return to start 
+F1 for help 
+
+
+
+
+-= CREDITS =- 
+
+Programming: Jani Parviainen 
+Graphics: Ari Seppa 
+Music: Tufan Uysal 
+Splash screen code: Copyfault 
+Testing: Mika Penttinen 
+Story & Concept: Peri Fractic 
+Producer: David Simmons 
+
+
+Copyright (C)2025 Commodore
+International Corporation. All Rights
+Reserved. 
+
+Visit commodore.net

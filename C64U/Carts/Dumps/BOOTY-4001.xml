@@ -1,0 +1,24 @@
+﻿<Metadata>
+  <DumpFile>BOOTY-4001</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1b040f73613635c2567c7ae7a91d3f415d658721</DumpFileSHA1>
+  <SimplifiedName>Booty</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4001</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Booty (Version 1).tap</SourceFile>
+  <SourceFileSHA1>d28b52d7dd6b41bae239cc4bb8537eab53e0c29b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "BOOTY-4001" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Booty.prg"</ExomizerCommand>
+  <Notes>Forced this to use the BASIC RUN command so that the loading screen is displayed.
+  To add the routine which waits for any key or the fire button on either joystick before entering the game, 256 bytes between $0A57 and $0B56 were zeroed out. This is fine, because the original dump contains a repeating 256 block of random data starting at $0A57 (the pattern repeats until the meaningful data starts at $6E00).
+  Then added the key waiting routine at $0B00. And finally, altered the BASIC program to call our new routine at $0B00 (2816) after displaying the loading screen by changing line 100 from:
+  100 F=1:LOAD
+  to:
+  100 SYS2816
+  
+  The graphical loading screen was converted from the Spectrum version by Andy Green (https://www.facebook.com/AndyGreenPixelArt).</Notes>
+</Metadata>

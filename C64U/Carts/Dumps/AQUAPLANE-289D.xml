@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>AQUAPLANE-289D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4a8c504ffd1f1f1471cc3fd100fadb1c9048c1c7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$289D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Aquaplane.tap</SourceFile>
+  <SourceFileSHA1>ffa913384d36e42362b51adc8577d66e2e5432cd</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x289D "AQUAPLANE-289D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Aquaplane.prg"</ExomizerCommand>
+  <Notes>Made the following changes to allow the fire button in port 2 start the game, not just the space bar:
+  
+  1. Patched the LDA $DC01 instruction at $2ED2 to be JSR $1100 instead
+  2. Added a small routine at $1100 to check the fire button in port 2 - if pressed, then it sets $800D to $37 (which enables control with the joystick in port 2), the accumulator to $EF and returns, which causes the game to start just as if the space bar was pressed. If not pressed, the routine then executes the LDA $DC01 instruction to carry on the normal code flow.</Notes>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>AVIATORARCADE-1D3A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>533b444456f2fdd21bfd051e04fb13f4189ef55f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1D3A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Aviator Arcade (Hindsbosoft - 2014).crt</SourceFile>
+  <SourceFileSHA1>29d2510617e9bd819a1d9fae23f9776d8c86cf99</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1D3A "AVIATORARCADE-1D3A" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Aviator Arcade (Hindsbosoft - 2014).prg"</ExomizerCommand>
+  <Notes>Even though this was released as a 16kb cartridge, it takes way too long to boot, so we have now converted it to a quicker booting version.</Notes>
+</Metadata>

@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>SWORDOFFARGOAL-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ee0c7434d1370c433e4dd823be0283e951f36644</DumpFileSHA1>
+  <SimplifiedName>Sword of Fargoal, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Sword of Fargoal The.d64</SourceFile>
+  <SourceFileSHA1>19d1f23ec689b80eae0f0f193ab241bf001411ca</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "SWORDOFFARGOAL-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Sword of Fargoal, The.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $2801.
+  Therefore an init routine has been added at $C000 to setup the correct VICII settings, the necessary BASIC pointers and execute the RUN command to start the game program. The BASIC start pointer ($2B/$2C) is set to $2858 to skip the loading of two files from disk (which will already have been loaded when the dump is taken).
+  Note: to dump, simply wait until the title screen is displayed after the loading screen, then dump with the monitor.</Notes>
+</Metadata>

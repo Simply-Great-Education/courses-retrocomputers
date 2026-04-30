@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>WALLIEGOESTORHYMELAND-8010</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>33f33a86d6446b82eb8037969b48621b08f5eb94</DumpFileSHA1>
+  <SimplifiedName>Wallie goes to Rhymeland</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8010</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Wallie Goes to Rhymeland.tap</SourceFile>
+  <SourceFileSHA1>c0a2d147e19af2b6596f3ef891185203473ba131</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8010 "WALLIEGOESTORHYMELAND-8010" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Wallie goes to Rhymeland.prg"</ExomizerCommand>
+</Metadata>

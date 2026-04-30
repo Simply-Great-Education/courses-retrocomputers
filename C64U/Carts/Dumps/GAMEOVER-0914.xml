@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>GAMEOVER-0914</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cb05234a3fd7c746d832ed5e5a8b4551fe24ddad</DumpFileSHA1>
+  <SimplifiedName>Game Over</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0914</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>Classic</RasterBarType>
+  <SidLength>253</SidLength>
+  <SourceFile>Game Over (Alternative Software).tap</SourceFile>
+  <SourceFileSHA1>a5012742f48a735a18df7575be390bd671ab1821</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0914 "GAMEOVER-0914" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Game Over.prg"</ExomizerCommand>
+  <Notes>Although the TAP dump file used does not include loading music, the version later released by Imagine does, so it has been used here (Ocean Loader #2 by Martin Galway).
+  
+  The reason the dump of the Imagine version was not used is because the loading screen on this version is better (yay for the nipple!), even though it does not have the animated sparkle effect.</Notes>
+</Metadata>

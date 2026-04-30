@@ -1,0 +1,28 @@
+BluREU was released on 4 April 2010.
+
+
+
+Crest was founded in July 1988.
+
+Check out more of their releases at https://csdb.dk/group/?id=238
+
+
+Distributed with the Commodore 64 Ultimate with permission from DeeKay/Crest.
+
+
+Quick steps:
+Step 1: select "RunMeFirst.cfg" and select Load Settings, then select Ok.
+Step 2: select "blu.reu" and load it into memory, then select Ok.
+Step 3: select "BluREU_Crest.prg" and select Run.
+
+
+This demo requires a 16MB REU.
+
+Legal:
+Scenes from Rick Astley's "Never gonna Give you up" video Copyright 1987 RCA Records
+Scenes from "Starstruck" by The Black Lotus, "fr025 - The Popular Demo" by Farbrausch, and "Lifeforce" by Andromeda Software Development. You guys rock!
+
+DeeKay/Crest, Apr 3rd 2010
+
+
+p.s. Press S to activate the hidden jumping Crestman =)

@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>SHANGHAI-0D00-1045</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>dae06e6d70052d4aa00ac4d5a4815cfa0ff062aa</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0D00</Address>
+    <Address>$1045</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Shanghai.tap</SourceFile>
+  <SourceFileSHA1>acad3f819c99958372f7ca7529635a1edaa081e0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1045 "SHANGHAI-0D00-1045" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0d00 dec $d030" -x "inc $d020" -o "Shanghai (J1).prg"</ExomizerCommand>
+  <Notes>Added a routine at $0D00 to display the title screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

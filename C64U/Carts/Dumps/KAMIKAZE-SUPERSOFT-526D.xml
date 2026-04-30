@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>KAMIKAZE-SUPERSOFT-526D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9ef44218d298aecf0ed77f4ff8091c7002fde2bb</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$526D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Kami-Kaze (Supersoft).tap</SourceFile>
+  <SourceFileSHA1>76348b309224c4e21b6d7e0ea0f3061ba2c0e14d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x526D "KAMIKAZE-SUPERSOFT-526D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Kami-Kaze (Supersoft).prg"</ExomizerCommand>
+</Metadata>

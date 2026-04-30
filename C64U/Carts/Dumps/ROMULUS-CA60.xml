@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ROMULUS-CA60</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4210a320141d77cb3e87aa8eb2b4663caf53655e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CA60</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Romulus.tap</SourceFile>
+  <SourceFileSHA1>c94aa34983290f85e72eb5fd74d806ca9720fad6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCA60 "ROMULUS-CA60" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Romulus.prg"</ExomizerCommand>
+</Metadata>

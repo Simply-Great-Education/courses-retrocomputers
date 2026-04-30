@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>PRISONRIOT-C000-0D1D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3d58d735d7cff9df13b88b302907640af96ad776</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$0D1D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Prison Riot.tap</SourceFile>
+  <SourceFileSHA1>2c74f6fea697aacd7db540840c959b523584ac0d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0D1D "PRISONRIOT-C000-0D1D" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Prison Riot.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C000 which copies 512 bytes of data from $C020 down to $0200 so that the dump can start at $0400.
+  It then jumps to the entry point at $0D1D (it couldn't use RTS because of the copy overwriting the boot code).
+  
+  The loading screen is based on the Spectrum version</Notes>
+</Metadata>

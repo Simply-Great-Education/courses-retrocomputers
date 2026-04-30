@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>PROMOUNTAINBIKESIMULATOR-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f8af415dbc388d0348d4fbe098277f69cc352bec</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Pro Mountain Bike Simulator.tap</SourceFile>
+  <SourceFileSHA1>685e13203a99d3bb95b822b38dd770b1c7fb2c96</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0900 "PROMOUNTAINBIKESIMULATOR-0900" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Pro Mountain Bike Simulator.prg"</ExomizerCommand>
+</Metadata>

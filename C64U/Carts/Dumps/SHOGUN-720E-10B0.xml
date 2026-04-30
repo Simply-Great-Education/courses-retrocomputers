@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>SHOGUN-720E-10B0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>bd50a866d7a89999ce524bad4f4c30441f5e39ca</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$720E</Address>
+    <Address>$10B0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Shogun.tap</SourceFile>
+  <SourceFileSHA1>823435aaa6be788c83456fcc1642bb78e2d5f744</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x10B0 "SHOGUN-720E-10B0" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $720e dec $d030" -x "inc $d020" -o "Shogun (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $720E to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to run correctly.</Notes>
+</Metadata>

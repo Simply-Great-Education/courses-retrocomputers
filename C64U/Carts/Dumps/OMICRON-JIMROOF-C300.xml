@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>OMICRON-JIMROOF-C300</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>27b1d6e6523771354597f5d83321b4d05cf624c1</DumpFileSHA1>
+  <SimplifiedName>Omicron (Jim Roof)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C300</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Omicron (1984)(Jim Roof).d64</SourceFile>
+  <SourceFileSHA1>8eeef12afcc8135f0215995a74a08497efa789bc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC300 "OMICRON-JIMROOF-C300" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Omicron (Jim Roof).prg"</ExomizerCommand>
+  <Notes>The actual entry point to set a breakpoint is $C111. However, when the title screen is redisplayed after a game is finished, the routine at $C300 is called which sets up various IO registers before jumping to $C111. Therefore, this address is used instead.
+  
+  Additionally, the routine at $C300 has also been modified to set the screen colour to black (at $C319) to ensure the title screen is displayed correctly.</Notes>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>PULL-5280</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9393c3f0e34763b53b7b659456ed6232470eaa9f</DumpFileSHA1>
+  <SimplifiedName>Pull</SimplifiedName>
+  <JumpAddresses>
+    <Address>$5280</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Pull (Game On - 1990-09 - Side 2).d64</SourceFile>
+  <SourceFileSHA1>cbcba6b7977ec7b1eb6b1f0901d64129672b4144</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5280 "PULL-5280" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Pull.prg"</ExomizerCommand>
+</Metadata>

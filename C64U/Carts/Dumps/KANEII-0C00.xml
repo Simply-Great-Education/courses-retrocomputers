@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>KANEII-0C00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>00ae5bddb588b2831c7dd0cc29cde0ab6fb13060</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0C00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Kane II.tap</SourceFile>
+  <SourceFileSHA1>1926cac1d0a93be88f9b98725efd2caa9869bf09</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0C00 "KANEII-0C00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Kane II.prg"</ExomizerCommand>
+</Metadata>

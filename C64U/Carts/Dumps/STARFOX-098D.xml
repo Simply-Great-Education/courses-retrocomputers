@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>STARFOX-098D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>69d7abf978c69e7233a86580ee0411bfb0067a9e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$098D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Starfox.tap</SourceFile>
+  <SourceFileSHA1>ddd71e1de616490bf54b3c524b57d52dc819a4a5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x098D "STARFOX-098D" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Starfox.prg"</ExomizerCommand>
+</Metadata>

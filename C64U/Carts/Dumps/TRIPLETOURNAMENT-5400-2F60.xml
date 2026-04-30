@@ -1,0 +1,27 @@
+﻿<Metadata>
+  <DumpFile>TRIPLETOURNAMENT-5400-2F60</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>198594bcd784021706753e90669871a9c0c17428</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5400</Address>
+    <Address>$2F60</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Triple Tournament.tap</SourceFile>
+  <SourceFileSHA1>b6cbe1abbf105e2f419abeeef49c503db55aebfe</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2F60 "TRIPLETOURNAMENT-5400-2F60" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $5400 dec $d030" -x "inc $d020" -o "Triple Tournament.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC intro program before the main game loads. However, as the main game code overwrites the intro and custom charmap when loaded, the following steps were taken to retain the intro:
+  
+  1. A breakpoint at $0807 was set to break when the intro had loaded (this is based on the SYS 2055 instruction on line 3)
+  2. The BASIC intro was dumped from $0801 to $0BEB
+  3. The first 584 ($0248) bytes of the custom charmap used in the intro at $3000 were dumped (this includes the characters for the Terminal software logo)
+  4. Line 3 was deleted and line 5 was commented out from the basic program
+  5. Line 96 was replaced with a SYS 21760 ($5500) instruction and line 99 was deleted
+  6. A breakpoint at $2F60 was set to break when the main game had loaded
+  7. The custom charmap data was copied to $5800
+  8. The modified BASIC intro was then placed at some free memory at $5001 and relinked with the BASIC subroutine at $A533
+  9. A routine was added at $5400 which sets the correct VICII and BASIC pointer values before executing the BASIC RUN command, which runs the modified intro program (now at $5001)
+  10. Once the intro has finished, the new SYS call on line 96 jumps to a new routine at $5500, which sets the correct VICII pointer values for the game itself and jumps to the entry point at $2F60</Notes>
+</Metadata>

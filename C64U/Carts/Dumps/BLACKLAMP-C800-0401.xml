@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>BLACKLAMP-C800-0401</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9ba44872a04469749121f10a59b10d214668b2f5</DumpFileSHA1>
+  <SimplifiedName>Black Lamp</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C800</Address>
+    <Address>$0401</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Black Lamp (Firebird).g64</SourceFile>
+  <SourceFileSHA1>0b3d6d06996b5f180233d944c8a32d3446ff0729</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0401 "BLACKLAMP-C800-0401" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c800 dec $d030" -x "inc $d020" -o "Black Lamp.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C800 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to start correctly.
+  Note: the G64 of this game was used rather than the tape version, as that seems to have a bug which has an odd main character sprite corruption on the first go.</Notes>
+</Metadata>

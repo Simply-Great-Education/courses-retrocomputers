@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>THECAVESOFOBERON-0A00-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a6d55d6cc3cc59130e2afdea8441b78ae3d1acaa</DumpFileSHA1>
+  <SimplifiedName>Caves of Oberon, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0A00</Address>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>THECAVESOFOBERON-CRAM-D000</ColourRAMFile>
+  <ColourRAMStartAddress>$D000</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Caves of Oberon, The (Version a).tap</SourceFile>
+  <SourceFileSHA1>eda3ce0360dd80433772cd16017ba744a1067465</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "AlternativeFormats\PRGs\Uncrunched\Caves of Oberon, The.prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$34 sta $01 jsr $d000 lda #$37 sta $01 jsr $0a00 dec $d030" -x "inc $d020" -o "Caves of Oberon, The.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0A00 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

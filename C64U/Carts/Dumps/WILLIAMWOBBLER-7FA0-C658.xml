@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>WILLIAMWOBBLER-7FA0-C658</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>15fbbfce7740b3b8072cac4f98b54050b1a6300d</DumpFileSHA1>
+  <SimplifiedName>William Wobbler</SimplifiedName>
+  <JumpAddresses>
+    <Address>$7FA0</Address>
+    <Address>$C658</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>William Wobbler (Wizard Developments).tap</SourceFile>
+  <SourceFileSHA1>384b0eb5becf9767b6bd34c1507f0507bb66abc3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC658 "WILLIAMWOBBLER-7FA0-C658" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $7fa0 dec $d030" -x "inc $d020" -o "William Wobbler.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $7FA0 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to run correctly.</Notes>
+</Metadata>

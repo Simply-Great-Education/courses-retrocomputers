@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SLEEPWALKER-5300</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>33c44ca3178e883b5f83c2e3bc6100177cd81c8a</DumpFileSHA1>
+  <SimplifiedName>Sleepwalker</SimplifiedName>
+  <JumpAddresses>
+    <Address>$5300</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Sleepwalker (Zeppelin Games).tap</SourceFile>
+  <SourceFileSHA1>4efa52351bf08b7d04fef2c3ea589443599d1f0e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5300 "SLEEPWALKER-5300" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Sleepwalker.prg"</ExomizerCommand>
+</Metadata>

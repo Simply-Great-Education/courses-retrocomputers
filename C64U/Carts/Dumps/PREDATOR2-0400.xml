@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>PREDATOR2-0400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>72a8d5cee362db7806ad9439b8c5284f5684c127</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Predator 2.tap</SourceFile>
+  <SourceFileSHA1>1a9e6f9df47a42fe04990917ad95271570774a7e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0400 "PREDATOR2-0400" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Predator 2.prg"</ExomizerCommand>
+</Metadata>

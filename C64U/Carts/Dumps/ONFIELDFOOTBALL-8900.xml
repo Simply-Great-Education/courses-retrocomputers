@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ONFIELDFOOTBALL-8900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>67724d93cce2b6782914d4f58bf3bcff54c9105b</DumpFileSHA1>
+  <SimplifiedName>On Field Football</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>On Field Football (Activision) [no1541].tap</SourceFile>
+  <SourceFileSHA1>fa0982a74a9d02fc62c94cfeb72c1a314e0f82c2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8900 "ONFIELDFOOTBALL-8900" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "On Field Football.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>ADIDASCHAMPIONSHIPTIEBREAK-801E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>820351487af5ad9e79a9b4ce387ad19b40a19877</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$801E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>189</SidLength>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>adidas Championship Tie Break.tap</SourceFile>
+  <SourceFileSHA1>56a0a2cc4731702655cdd69a76b6f28b6c4bb1e2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x801E "ADIDASCHAMPIONSHIPTIEBREAK-801E" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "adidas Championship Tie Break (J1).prg"</ExomizerCommand>
+</Metadata>

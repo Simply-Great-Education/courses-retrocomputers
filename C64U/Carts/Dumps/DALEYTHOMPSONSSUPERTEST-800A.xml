@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>DALEYTHOMPSONSSUPERTEST-800A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>328d55e1ee3206bafd37f570556bdd2129178453</DumpFileSHA1>
+  <SimplifiedName>Daley Thompson's Super-Test</SimplifiedName>
+  <JumpAddresses>
+    <Address>$800A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>169</SidLength>
+  <SourceFile>Daley Thompson's Super-Test (Game Set and Match).tap</SourceFile>
+  <SourceFileSHA1>ebf267f7ec37174f73afd3ec9af222a68e4a5e03</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x800A "DALEYTHOMPSONSSUPERTEST-800A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Daley Thompson's Super-Test.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

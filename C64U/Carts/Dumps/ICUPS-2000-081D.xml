@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>ICUPS-2000-081D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7f0c3cbeb6bd8bca27030fb9f1efc730ffcbb77f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2000</Address>
+    <Address>$081D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>I.C.U.P.S.tap</SourceFile>
+  <SourceFileSHA1>fa979759cbd94f55dcd8f8964d0adef05fa111ed</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x081D "ICUPS-2000-081D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $2000 dec $d030" -x "inc $d020" -o "I.C.U.P.S.prg"</ExomizerCommand>
+  <Notes>Added an init routine which sets $72, $73 and $74 to $00, $FA and $00 respectively. This allows the game to be started at $081D instead of the actual start address at $0810. This is because the code at $0810 relies on the state of two bytes in the tape buffer and the last byte on the stack at the end of tape loading to set these instead.</Notes>
+</Metadata>

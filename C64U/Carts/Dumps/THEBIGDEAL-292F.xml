@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>THEBIGDEAL-292F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>36fc59b56ce468e717110ec9cc5ee3ad5d2d1966</DumpFileSHA1>
+  <SimplifiedName>Big Deal, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$292F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Big Deal The (Version a).tap</SourceFile>
+  <SourceFileSHA1>e4b9d8199ad397565eeaf274032522cd784f9ee8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x292F "THEBIGDEAL-292F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Big Deal, The.prg"</ExomizerCommand>
+</Metadata>

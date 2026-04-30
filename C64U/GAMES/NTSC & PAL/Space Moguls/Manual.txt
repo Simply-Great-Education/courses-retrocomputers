@@ -1,0 +1,174 @@
+Welcome to Space Moguls
+
+Receiving this information means that you are one of the participants in the Space Moguls show. Congratulations on winning a ticket to space on this wonderful journey!
+
+You and three other participants will travel to a distant planet where you will compete for wealth in a new world. Each journey is unique. The best players will adapt to the circumstances and reap the highest value possible from the land.
+
+Diving in Head First
+The fastest way to learn the game is probably to study the computer players in attract mode. Press fire and select the option in the main menu. You can also keep reading the manual a bit further before digging in.
+
+Before Playing the Game
+The game can be played with up to 4 joysticks and/or a keyboard.
+
+When all players each have a joystick, the keyboard is not necessary. Conversely, the game also works when played entirely on a keyboard.
+
+In order to connect 4 joysticks, our 4 player adapter, Inception or Superpad is required. There is no setup required.
+
+The game will recognise connected joysticks automatically.
+
+
+Setting Up the Game
+Before starting, make sure there is enough room for text at the top and bottom of the screen and the preferred keyboard layout is selected. The default keyboard layout enables a joystick in port 1, but is harder to use than the alternate keyboard layout. Look at the bottom of the screen to make a choice.
+
+Choose the number of rounds, from 4 up to 18.
+
+Main Menu Options:
+- Start Game
+- Attract Mode
+- Story
+- Game Rounds: 12
+- Keyboard Layout
+- Credits and Stuff
+- Input Hints: On
+- In-Game Music: On
+- Border Text Size: 8
+- Directional Trading: And Select
+
+Player Controls:
+- Player 1 2 3 4
+- Keyboard: Q W E R T Y U I O P
+- Select which enables joystick in port 1
+
+Choosing a Planet
+Each planet has a slightly different distribution of land types, and each land type produces different amounts of resources per round.
+
+Alia Terra is a good starting place for new players.
+
+Choosing Your Character
+There is just one more step before taking off! You must choose who you are. Press fire to select a player or follow the on-screen instructions to select a keyboard player. When using a joystick, simply press left or right to change the order of the player.
+
+Each player menu has a grey cursor. Move the cursor down to change the color and the character, move it up to start and press fire to finish or joystick/keyboard to cancel. When all players are ready, the journey will begin.
+
+Land Grant
+The land grant is your chance to get one free land cell each round. When the moving hexagon is over a land cell you want, simply press fire or the key indicated at the bottom of the screen. A good type of land cell to start with would be a river cell (ideally on plains), or a lake cell. Both are ideal for food production.
+
+The Development Phase
+All joysticks are active during the development phase, so a keyboard player can borrow any connected joystick if preferred. To start your turn, press fire or keyboard equivalent. This will also start the timer.
+
+The first thing to do is visit the stores in town. Walk to the town cell in the centre of the map and press fire to enter.
+
+Entering the Town
+You have arrived in town and you're ready to spend some cash on a new droid and its equipment. To enter a store, walk up to the door and press fire.
+
+The pub and the land office are special locations.
+
+Browsing the Stores
+You have received a land cell from the land grant phase and now it is time to put it to work. First purchase a droid, then take it to one of the stores to equip it for work. Your droid's equipment should be suited to the type of land cell you're developing. If you have a river cell, for example, it would be a good idea to produce food on that land.
+
+Note that there are only a few droids for sale. Additional droids will require ore and cash to build. In case a droid is sold back to the depot, the next player will be able to buy it. Once the droid is ready, it is time to leave town by walking to either side of the screen.
+
+Choosing What to Produce
+Each land type can produce a certain amount of resources. Check out the land types page later in the manual.
+
+To summarise:
+- Cells with a river will improve food production
+- Forest cells are good for materials
+- Mountain cells are good for ore
+- Plains, marshes and steppes are of lesser value but better for energy
+
+The amount of resources that can be harvested from a land cell is random. The only way to know for sure is to place a suitable droid there and wait for production, or visit the land office.
+
+Land Office
+If you want to get detailed information about a land cell, you can visit the land office in town where the management bureaucrat will inform you. The highest yield in terms of resources and cash value will be revealed.
+
+Installing a Droid
+With the droid now equipped and in tow, walk to the land cell where you want to install it and press fire. If desired, you can modify previously installed droids. Simply walk to an installed droid and press fire to grab it. Walk into town and change the equipment before you return to the land cell with your newly equipped droid. When you are done with the current round, return to town and enter the pub to trade in your remaining time for cash. If you run out of time before entering the pub, there is no cash reward but any equipped droid currently in tow will be refunded in cash.
+
+Grumpling Hunting
+When a droid is installed, there is a chance to spot a wild grumpling walking around the map. Walk up to it carefully so that it doesn't run away, and press fire to encounter it. If successful, you may receive helpful items. You will have one chance to spot a grumpling each round.
+
+Production Phase
+When all players have completed their development phase, the production begins. Each droid (except for energy-producing droids) consume one energy unit per round. Make sure you have enough for the next round! During production, global events may occur that have a variety of effects on production or players. Pay attention to the effects of the global event once it occurs. It may prevent store trading or change the productivity of specific types of droids.
+
+During production, each resource produced is indicated to the left of the droid. Keep an eye out for droids that produce less than the desired amount. It may be a good idea to try producing something else in that cell.
+
+For detailed information about a land cell, consult the land office.
+
+Trading Phase
+In the trading phase, you have a chance to trade resources with other players and the store. The controls are up and down and keyboard players need to share the keyboard at the same time. Before trading, the resource usage, production and spoilage are shown, and also how much will be needed for the next round. Select to be a seller or buyer by pushing up or down. When the timer runs out, the trading will begin.
+
+Players can move up to increase the price and down to decrease it. When the sale and purchase prices line up, a transaction is carried out. The store will buy resources only at the lowest price, and sell them only at the highest. Watch the timer!
+
+Round Update
+The end of the round brings up the round update table that shows the current rankings. The value of assets is the average price in the store. To get ahead in the rankings, consider buying assets in the trading phase at 50% of the store price or lower!
+
+Avoid selling resources to other players below the average price unless you need the cash.
+
+Turn Update:
+1. Player 1 (100)
+2. Player 2 (95)
+3. Player 3 (90)
+4. Player 4 (85)
+
+Land Reveal
+Before the next round, a few more land cells will clear up and become available for land grant. Each player now has a chance to study the map and decide on the best action for the next round. Watch out for other players having the same thought.
+
+It is a good idea to keep a backup land cell in mind before pressing the button to start land grant!
+
+Land Types
+
+Plains: Are good for energy and ok for food
+
+Forests: Are good for materials and ok for food
+
+Deserts: Are good for energy and ok for ore
+
+Mountains: Are good for ore and ok for materials and energy
+
+Steppes: Are ok for ore and energy
+
+Lakes: Are good for energy and food, ok for ore
+
+The Town: Is where you get your droid and equip it
+
+Marshes: Are ok for energy, food and materials
+
+River Cells: Increases food production and reduces all other types
+
+Fog: Covers land cells that are not yet available
+
+Town Stores
+
+Droid: Purchase a basic droid at the droid depot, then take it to one of the stores to be equipped. Ore and cash are needed to build droids if the depot runs out.
+
+Mining: Mining equipment is required for ore production. Look for mountain land cells for ideal ore production.
+
+Farming: Farming or fishing equipment is required to produce food. Look for land cells with a river for higher food yields! You need 3 or 4 units of food per round.
+
+Materials: Materials are needed both for droids and equipment. Forest land cells are ideal for material production.
+
+Energy: Energy extraction equipment is needed for energy production. Deserts and lakes are good environments for energy.
+
+Rare: Rare materials extraction equipment is needed for producing rare. But it is not known where it is most likely to be found. The land office may be able to help.
+
+Pub: After your hard work, the pub is a great place to end the day. A cash reward awaits you based on the remaining time.
+
+Land Office: Visit the land office to get detailed information about land cells and suggestions.
+
+
+
+
+Credits
+
+Game by Carl-Henrik Skarstedt
+Music and Sound by Stein Pedersen & Ole-Marius Pellersen
+Physical Production by Tim Jakob Chen-Voos
+
+Distribution by Protovision (https://protovision.games)
+
+Manual Design/Illustrations by: Lobo (https://spitoufs.com)
+
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Protovision.

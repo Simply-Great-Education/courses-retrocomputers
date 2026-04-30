@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>AVENGERTHEWAYOFTHETIGER-2E94</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1aa6b68d47877021d6f089ad2cf3411aee235378</DumpFileSHA1>
+  <SimplifiedName>Avenger - The Way of the Tiger</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2E94</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Avenger (Version 2a).tap</SourceFile>
+  <SourceFileSHA1>dfe9c22c525f53b7fa64a16581e8cf9d580bc202</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2E94 "AVENGERTHEWAYOFTHETIGER-2E94" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Avenger - The Way of the Tiger.prg"</ExomizerCommand>
+  <Notes>As the original did not have a loading screen, the one included was converted from the Spectrum version by DATA-LAND of Technische Maschinenfabrik (https://csdb.dk/scener/?id=4845).</Notes>
+</Metadata>

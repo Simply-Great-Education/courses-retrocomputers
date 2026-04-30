@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>ANKH-8944</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>76cc18ea9cbee310640da9b1c876434b784050aa</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8944</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Ankh.tap</SourceFile>
+  <SourceFileSHA1>afed4f941ab2ad40427d87e3a4cb6596852e275a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8944 "ANKH-8944" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ankh.prg"</ExomizerCommand>
+</Metadata>

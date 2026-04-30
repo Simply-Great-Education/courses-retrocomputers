@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SERPENTINE-0A52</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a0526ff4ee5bb014ba4bf94f330425d8c9d38c97</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0A52</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Serpentine.d64</SourceFile>
+  <SourceFileSHA1>139210a0c9cea31a40509abb93dd51fac9877777</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0A52 "SERPENTINE-0A52" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Serpentine.prg"</ExomizerCommand>
+</Metadata>

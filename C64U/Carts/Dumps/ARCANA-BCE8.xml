@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ARCANA-BCE8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>90fdbd9a59328597c54617ec55e74c5a7341fbf8</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$BCE8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Arcana.tap</SourceFile>
+  <SourceFileSHA1>c73b1f173487f7fd7c22a06d0463144f6d6cddfc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xBCE8 "ARCANA-BCE8" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Arcana.prg"</ExomizerCommand>
+</Metadata>

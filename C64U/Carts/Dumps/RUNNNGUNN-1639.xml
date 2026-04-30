@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>RUNNNGUNN-1639</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>862105c62919ba5b996b1c8e72c68a945b252796</DumpFileSHA1>
+  <SimplifiedName>Runn 'n' Gunn (Carleton Handley - 2021)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1639</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Runn 'n' Gunn.d64</SourceFile>
+  <SourceFileSHA1>1501c39967f0f6811bc58327160ece98a4e0c947</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "RUNNNGUNN-1639" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Runn 'n' Gunn (Carleton Handley - 2021).prg"</ExomizerCommand>
+</Metadata>

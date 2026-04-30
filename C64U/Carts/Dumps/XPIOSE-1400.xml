@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>XPIOSE-1400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>78ae721a8a899602e31468d83f0a5e464cad7e91</DumpFileSHA1>
+  <SimplifiedName>Xpiose</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Xpiose (Magic Disk 64 - 1993-04 - Side 2).d64</SourceFile>
+  <SourceFileSHA1>17a259e54fd62a479704fd0ce94afa09d2d480c2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1400 "XPIOSE-1400" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Xpiose.prg"</ExomizerCommand>
+</Metadata>

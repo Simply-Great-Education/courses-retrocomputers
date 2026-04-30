@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>BUGBLITZ-8A00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>19a0c98a892925ba8220ab971b0d5d7edb23ce8c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8A00</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Bug Blitz.tap</SourceFile>
+  <SourceFileSHA1>70cb1b0189027a962151f225e46a6de3178b97cb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "BUGBLITZ-8A00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bug Blitz.prg"</ExomizerCommand>
+</Metadata>

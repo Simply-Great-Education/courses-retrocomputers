@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>TRANCESECTORULTIMATE-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7e64f14ba885ca08edae09afdbcf38b0b175d42c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Trance Sector Ultimate (TND - 2015).tap</SourceFile>
+  <SourceFileSHA1>d1d7f11859f22ee8a333fd29330e9ea5161fa3f8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x080D "TRANCESECTORULTIMATE-080D" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Trance Sector Ultimate (TND - 2015).prg"</ExomizerCommand>
+</Metadata>

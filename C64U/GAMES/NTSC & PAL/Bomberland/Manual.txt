@@ -1,0 +1,293 @@
+INTRODUCTION
+
+Welcome to Bomberland, the land whose residents have a passion for explosive events. Unfortunately, the global crisis has also reached the treasury of this once peaceful and democratic country.
+
+After recent elections, the dissolving living conditions have resulted in the political power of an extreme national party, lead by the evil Lord Bomber. He and his crew have long waited for this day to come, with plans to drive innocent residents of Bomberland to the ground and shift the state into totalitarianism - forcing the good people of the land into slavery.
+
+You, as the leader of the opposition movement, have been considered the number one enemy of Lord Bomber. You have to quickly find and defeat Lord B. You are the only hope... SAVE BOMBERLAND!
+
+
+Bomberland has been tested on both PAL and NTSC machines, and works on the C64, C128 and C64GS. GS owners are limited to two player mode only due to the lack of a User Port or keyboard. The game also supports the Commodore 128 in 64 mode, using its extended hardware registers for acceleration.
+
+Although the game runs on NTSC hardware, it does play fractionally faster and will be harder as a direct result of this. As such, Bomberland is labelled as NTSC compatible, but designed for PAL systems. After loading, the machine type is displayed in the lower left corner of the main menu.
+
+It should be noted that, for simplicity, the game has a storage system for settings and current scores of the game on an external drive. So if you want to keep your setup and the results (both in multiplayer and single), connect a disk drive to your C64 prior to loading Bomberland. Your disk does not have to be blank, and the size of the saved file consists of 1 block, using very little space. If you want to restore the settings and the results, make sure that your disk is inserted before loading the game. The settings will automatically upload when the file is detected.
+
+
+
+CONTROLS
+
+As well as offering players a full 36 level single player campaign, Bomberland and also includes an awesome multiplayer deathmatch mode that supports up to five players at a time. The game is controlled by the joystick (in either port), but can also be played from the keyboard on your C64. The keyboard controls are shown below:
+
+Move Up   @
+Move Down  /
+Move Left  :
+Move Right  =
+Fire/Select C=
+Pause    RUN/STOP
+
+As Bomberland supports up to 5 players, in addition to the joysticks connected to ports 1 and 2, another two joysticks can be plugged via hardware connected to the User Port on your C64. The joystick algorithm is based on the use of a CGA (Protovision) adaptor, or can be switched to a HIT adaptor (by Excess and Hitmen). By default, the CGA adaptor driver will be used. To switch to the HIT adaptor driver, hold down the RUN/STOP key when you start up the cartridge, until you come to the menu screen. Once this hardware is plugged in and configured, you can press the fire button on all joysticks to set up the first 4 players in multiplayer mode, followed by the keyboard to set up the fifth player.
+
+All options and text entry are supported by any type of interface (with or without the keyboard), so the game can be successfully run on machines such as the Commodore GS. The information is clear and always suggests what options to choose from. The only exception is the PAUSE button in the game (RUN/STOP key), which is assigned to the second GS joystick button (Cheetah Annililator). In addition, whilst the game is in PAUSE mode you can exit the current game and return to the main menu by pressing the Q key (or left on the joystick) and confirming the operation by selecting Y (Yes) or N (No).
+
+
+MENU STRUCTURE
+
+Upon starting the game you are presented with the following menu:
+
+SINGLE GAME
+DEATHMATCH
+SETUP
+CREDITS
+
+SINGLE GAME and DEATHMATCH are self explanatory, starting the game in single player and multiplayer respectively. The SETUP option takes you to the setup menu. The CREDITS option displays some brief information about the authors of the game. 
+
+Selecting the SETUP option displays the following menu:
+
+PASSWORD
+MUSIC ON/OFF
+MULTISETUP
+BACK
+
+The BACK option takes you back to the first menu list. The PASSWORD option refers to the password system and, when selected, will enter into password entry mode. The MUSIC option is used to turn on or shut down the music during in-game, by pressing fire when the option is highlighted. When you exclude the music, the speakers will only emit sound effects in the game.
+
+Selecting the MULTISETUP option displays the following menu with default values:
+
+WINS   (3)
+FIELD    (CLASSIC)
+HURRY UP   (1:10)
+MONSTERS   (YES)
+SKULLS    (YES)
+BACK
+
+These are the options to adjust the difficulty levels of multiplayer games. The WINS option determines the number of wins that will end the game and win the tournament, with possible values from 1 to 5. The FIELD option selects the multiplayer board, with the options of Classic (with regular scenery and size), or Various. The HURRY UP option configures the amount of time when the Hurry Up sequence starts during a multiplayer game, with time ranging from 30 seconds to 140 seconds. You also have the option to switch it off completely. The MONSTERS and SKULLS options reflect the occurrence of in-game monsters (for additional difficulty) and Skull-Surprises. If, for example, you chose to abandon Skulls, then bricks can only contain Power-Ups.
+
+
+PLAYING BOMBERLAND
+
+Our hero is the leader of the opposition movement of Bomberland, but he is not your typical everyday politician. The population of this country loves only one type of sport; "boombastic" tournaments, and people who sit in the government of the country are also required to be distinguished players, nominated the best of the best. Our hero, one of the elite, is famous for his performance and ability to operate more than one bomb and pull off many tricks. Unfortunately, due to budget cut-backs his combat suit has been supplied without shield boosters, and can not endure even a single bomb explosion.
+
+Your mission is to guide our hero through Bomberland, fighting against hordes of enemies that loyally protect your main objective - the Lord Bomber. It will not be an easy task; there are a total of 36 levels to master, starting from "0" and finishing on "Z", where Lord Bomber awaits in his chamber.  The world is divided into six stages with different themes: Brick Factory, The Swamps, The Rockies, Snowy Foothills, Laboratory and the dreaded Castle of Lord B. Each stage climaxes with a boss encounter, concluding in a face-off with Lord Bomber himself.
+
+The objective on each level is to kill all the existing enemies. Accomplishing this will open the EXIT portal, leading to the next level. The EXIT portal will be hidden under a destructible brick wall. When all the enemies are killed some bricks may flash purple, showing the location of any special power-ups left on the map. 
+
+Avoid planting a bomb next or close to the EXIT portal. If the fire from an explosion hits the EXIT, it will spawn some really nasty monsters that you will have to kill before continuing.
+
+
+BOMBS (AND FIRE)
+
+BOMBS are your only weapon in Bomberland, so collect as many of them as possible to become more powerful against your opponents. Another parameter that increases your destructive power is the range emitted from a single bomb explosion. Collecting EXTRA FIRE bonuses will help to increase range in all four directions by 1 tile. To place a bomb, press the joystick button (or the "C=" key). After placing the bomb, you will need to run away before it explodes, which takes about two seconds. It is not possible to go back and defuse the bomb once planted, so always keep out of its way until the explosion has subsided. When the right power-ups are collected, you will have the ability to create a pattern of explosive fire across the board, giving a greater chance of killing enemies and destroying bricks all at once.
+
+
+BRICK WALLS
+
+These act as natural barriers in the corridors of each level. Unlike border walls and stone columns, these brick walls can be destroyed by an explosion. Although these affect your pathway, they are useful as protection against an explosion and in acting as a barrier between you and enemies. Brick walls occasionally conceal bonuses such as POWER-UPs, and also conceal the EXIT portal to the next level.
+
+Note that clearing all the brick walls in the entire level will reward you with an additional bonus.
+
+
+MONSTERS
+
+In the game, you will come across many different types of monster, each with its own unique stats and behaviour. Some of these are slow and quiet, others are aggressive and fast. Some have special characteristics, including the ability to fly over destructible brick walls. You will be introduced to more sophisticated enemies as you progress through each stage - including those that are intelligent enough to either escape from, or chase you. Check out the included monster sheet on the reverse of the Bomberland poster for more details!
+
+
+BONUSES & POWER-UPs
+
+In order to defeat these enemies with ease, you will need to find and use a variety of BONUSES and POWER-UPs.
+
+
+SKULL-SURPRISE (Skull logo)
+
+These are mysterious boxes that hold either unwanted, useful, or even life-saving contents. They temporarily change the player's behaviour for around 10 seconds, during which time the player's body will flash white. During the last 3 seconds, the flashing will increase, telling you that the effect is soon to fade off and that you will return to normal. If you are playing in multiplayer, some Skull-Surprises can be used to affect your opponent players - although this depends on what type of surprise you receive.
+
+The following types of Skull-Surprises, in both single and multiplayer modes, are:
+
+SHIFT TO GARGOYLE - This will turn your player into a GARGOYLE. Your movement will become slower and you will not be able to plant any bombs. You do, however, gain the ability to fly over brick walls and other monsters can not kill you.
+
+SLOW MOTION - This slows your movement down to about 5 levels, making escape from bombs, enemies and players a real struggle.
+
+FAST MOTION - This gives your player seven-league boots, allowing you to move at breakneck speed. Remember to concentrate on what is in your way when running around that fast.
+
+NO BOMBS - You temporarily cannot plant any bombs.
+
+WEAK FIRERANGE - Your fire range for each bomb will shrink to its minimum, making it harder to kill enemies and players.
+
+NONSTOP BOMBS - Causes you to automatically drop bombs, so you will have to keep running as fast as you can! The more bombs you have the more chance you could be killed.
+
+POWERANGE - This gives your bombs unlimited range of fire, giving you the ability to take out monsters and opponents on the other side of the field.
+
+FAST DETONATION - This halves the amount of time your bomb detonates once planted. In this mode, your player colour changes to ORANGE.
+
+SHIFT DIRECTIONS - You have drunk a bottle of potion, and now you find that your directions have gone completely reversed! Go careful until you sober up. 
+
+NON-STOP WALKING - Your legs start bouncing to the music, keeping you on the move. Look out for enemies and bombs in your pathway!
+
+The following occur only in single player mode:
+
+FREEZE MONSTERS - All creatures on the level stop moving for a short period of time. Be warned that they are still fatal to touch!
+
+FREEZE TIME - The clock stops for a moment, giving you some more time to obliterate the entire level.
+
+SHOW EXIT - No need to go looking for the exit. Collecting this Power-up will help you find it.
+
+SHOW ALL BONUSES - Shows the location of all the hidden Power-ups, but remember to be aware of the Skull-Surprises - some of them could be nasty.
+
+KILL ALL MONSTERS - Finish the level quickly with this useful little Power-up.
+
+FIRE SAFETY - This will give your player temporary protection against fire. Additionally, you can kill the monsters by touching them. In this mode, your player colour changes to CYAN.
+
+Finally, these Power-Ups occur only in multiplayer mode:
+
+MAGNETIC WALL - One of the bordering walls becomes a giant magnet, pulling all players towards it. Execution of even simple actions can become extremely difficult.
+
+LIGHTS OUT - A power shortage causes the entire room to go dark, making it very difficult to take out your opponent players. Explosions from your bombs can help light up the place.
+
+SPEED MADNESS - Seven-league speed boots for all!
+
+WEAKNESS FOR OPPONENTS - This forces your opponent players to walk very slow and only fire one bomb at a time with a minimal explosion. Unlucky for them and very handy for you.
+
+FIVE BRICKS MORE - Suddenly an additional 5 brick walls appear, each containing Skull-Surprises. Watch where you're going!
+
+ELECTRICAL BODY - For a moment, you turn into a power source. Your touch will hurt all creatures and opponents, at the cost of reduced player movement speed. Avoid other electrical bodies or else you'll short circuit! In this mode, your player flashes.
+
+
+PERMANENT POWER-UPS
+
+These are a family of bonuses that increase your abilities permanently in most cases, but there are some that only last within the current level. The only requirement needed to maintain a Power-up forever is to complete the level where it was picked up. If a player dies beforehand, the level will restart and your state will return to the state it was at that initial point. If a player dies in multiplayer mode, their collected Power-ups are spread across the board. The following Power-ups are:
+
+EXTRA FIRE (Smiling flame)
+
+This bonus increases the explosion range of your bombs, and will be very useful in defeating stage bosses. Looking out for these will help you complete the game.
+
+EXTRA BOMB (Bomb)
+
+This bonus increases your bomb counter by one, making you increasingly dangerous.
+
+EXTRA MOVE (Fast forward symbol)
+
+With each bonus, your movement will become faster.
+
+OVER BOMB (Bomb with arrow inside)
+
+This ability allows you to pass a bomb you have planted.
+
+OVER WALL (Wall with arrow inside)
+
+This gives you the ability to pass over brick walls.
+
+KICK BOMB (Right arrow pointing at bomb)
+
+When you pick up this bonus, you will receive the ability to kick bombs over long distance. You give the direction of the bomb's movement by pushing it from the corresponding side.
+
+JUMP BOMB - (Up/right arrow pointing at bomb)
+
+This ability allows you to flip bombs over obstacles. If this reaches the outer wall, it will bounce back towards you.
+
+
+The following single player mode Power-Ups only last for short period of time, but are very effective:
+
+REMOTE BOMB (Remote control)
+
+Your bombs are remote controlled by a trigger. Plant them as normal, briefly pressing the fire button to drop, and holding the fire button down to detonate. Note that all dropped bombs detonate simultaneously, irrespective of the order that the bombs are placed.
+
+FIRE PROTECT (Flame within shield)
+
+This Power-up gives you complete immunity to explosions during the current level. Note that enemies are still fatal to touch. 
+
+
+Other, rarer bonuses that you will come across are:
+
+EXTRA LIFE (Bomberman face)
+
+Awards the player with an extra life.
+
+DROP-ALL (Boxes dropping)
+
+This bonus will drop all of your collected bonuses and scatter them across the stage. You can still go back and collect them up again, as long as your opponent player doesn't get there first. Although it is generally an unwanted pick-up, it can help you rid of any negative Skull-Surprise effects.
+
+
+THE CLOCK 
+
+In the upper left corner of the screen is a count-down clock that shows the amount of time you have left to complete the level. When there are only 10 seconds of time left, the message as 'Out of Time' is displayed. Once the counter reaches zero, TIME GUARDS - dreaded enforcers who show no mercy to their prey - will enter the level and hunt you down. Escaping from the TIME GUARDS is extremely difficult; they will attack from all sides and slowly advance towards you, but fortunately, they are not immortal. You can destroy the TIME GUARDS with your bombs, although it will be extremely difficult and time consuming.
+
+Note that on the final levels, when the timer runs out the TIME GUARDS will not be summoned - instead you will die instantly.
+
+
+SCORING
+
+The overall goal in Bomberland is to be the best of the best, and take top rank on the Bomberland high score charts. After all, this is the primary gauge to show off your skill level and value.
+
+There are many ways to earn points. Firstly, killing enemies reflect on what points you receive. The tougher the enemy is, the more points you will get for killing it. Killing two enemies with one bomb explosion will double your points, while killing three at once will treble your points, and so on.
+
+You can also achieve a total of 10,000 bonus points for clearing all of the destructible brick walls on the level before entering the exit portal. The message, "Brick Bonus", will flash when this is achieved.
+
+There is also a special time-based bonus, which requires you to keep patient and stand still. If you can keep your player still and alive for 40 seconds, a "Time Bonus" item will appear. Collecting these items will award you with 20,000 points each.
+
+Each time you have received 100,000 points, you will be awarded with an extra life.
+
+
+SPECIAL EVENTS 
+
+In the game there are other events that may strongly nuisance the player.
+
+HURRY UP - In this mode indestructible blocks fall onto the level continuously, destroying anything they land on and reducing the size of the play area. When this happens, you must hurry up and get to the exit portal or you will eventually be trapped and killed.
+
+POWER CUT - The lights go out, making the game much more difficult. Use light from explosions to help navigate the level.
+
+STRONG WIND - This event occurs during the snow stages and acts in the same way as a Magnetic Wall in multiplayer mode.
+
+You will also find other special features such as burning corridors and teleports. These are particular to certain levels in the game and are obstacles you will need to learn how to overcome.
+
+
+PASSWORDS
+
+Bomberland features a password system, saving your progress through the game. Passwords are generated automatically and have the ability to remember all of the power-ups the player has picked up so far, as well as remembering your score. Passwords are only available after completing a particular stage, usually after every third level you have completed. They appear in 16 alphabetical characters, which you should take note if you want to continue play.
+
+To enter a password you have received, go to the Menu screen and select SETUP. From there, select PASSWORD. The game will then require you to enter the password using the keyboard or joystick on your C64. If your password is correct then your game will continue where you left off, otherwise it will start at very the beginning.
+
+
+TRIVIA
+
+The game was created (including periods of rest) between the years of 2005-2013. Its roots however go as far back as 1995, when sceners Raspi, Gutted, Lobo and Skull (Michal) worked on a prototype named "Boombastic Benny", but this version of the game was sadly never completed.
+
+In the beginning of 2007 came a rebuilt release called "Bomberman C64". From that point onward, the project was expanded until it eventually became "Bomberland". The project consists of thousands of lines of code, and involved many hours of work on the C64.
+
+Conrad (Owen) was asked to write the music for the final game and began composing the music in early 2008, basing it on the 1991 Dynablaster (Amiga/PC) tracks by Eike Steffen (Romeo Knight). The music was finally completed in 2010, ready to be embedded in the game project. However, there were issues with embedding the music files within the game, so Conrad began to write a customised music routine and converted the original music data into a format readable by this routine. This helped save a lot of graphical resources in the final 64k cartridge build, sustaining the exceptional quality of the entire game.
+
+Although it has taken some time for this game to be released, the work has paid off very well and the cooperation has been fun and challenging for everyone involved. We (Skull and Conrad) hope that you will enjoy this production as much as we have in developing it.
+
+
+Troubleshooting:
+If DolphinDOS is enabled, please disable for the game to operate correctly.
+
+
+
+CREDITS
+
+Bomberland is a Samar Productions release, Copyright 2013. Published on 64KB C64 cartridge by RGCD, 2013.
+
+Programming, Design & Graphics
+Michal Okowicki (Skull)
+
+Music, Player & Sound effects
+Owen Crowley (Conrad)
+
+Main testing and NTSC testing
+David Simmons (Jazzcat)
+
+PAL testing & Documentation 
+James Monkman, Michal Okowicki, Owen Crowley
+
+Hardware Support 
+Dr. Martin Wendt (Enthusi)
+
+
+LINKS
+
+http://www.rgcd.co.uk
+https://rgcddev.itch.io/bomberland
+
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Owen Crowley.

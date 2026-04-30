@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>HOLLYWOODORBUST-7E17</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4593e47260d6b959ecfe5e315e0a48554607da30</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7E17</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Hollywood or Bust.tap</SourceFile>
+  <SourceFileSHA1>47d0952a01f1e22e551c3c23ea59e0d9b73edd52</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7E17 "HOLLYWOODORBUST-7E17" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Hollywood or Bust.prg"</ExomizerCommand>
+</Metadata>

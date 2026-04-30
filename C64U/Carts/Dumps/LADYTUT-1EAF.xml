@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>LADYTUT-1EAF</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f3fd2a1c990e50e6de46fa7d97a0308daad0f0fc</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1EAF</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Lady Tut.g64</SourceFile>
+  <SourceFileSHA1>d0cfcad6a06fcc947bd37a847aa0bc54d39672af</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1EAF "LADYTUT-1EAF" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Lady Tut.prg"</ExomizerCommand>
+</Metadata>

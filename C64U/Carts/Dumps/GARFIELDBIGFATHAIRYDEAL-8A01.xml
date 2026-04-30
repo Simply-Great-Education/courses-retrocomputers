@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>GARFIELDBIGFATHAIRYDEAL-8A01</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5f0dc1c3110e12a034e613ef0d2b5b5b1760068a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8A01</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Garfield - Big Fat Hairy Deal.tap</SourceFile>
+  <SourceFileSHA1>6611f8ffc2e0466b0b351674d6a783be37605710</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8A01 "GARFIELDBIGFATHAIRYDEAL-8A01" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Garfield - Big Fat Hairy Deal.prg"</ExomizerCommand>
+</Metadata>

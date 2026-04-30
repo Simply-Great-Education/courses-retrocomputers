@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>FROSTYTHESNOWMAN2-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d99e16dd7cb616a6185dadc9cc345163ad74a8f4</DumpFileSHA1>
+  <SimplifiedName>Frosty the Snowman 2 - Turbo (Beyond Reproach - 2009)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>105</SidLength>
+  <SourceFile>Frosty the Snowman 2 - Turbo.tap</SourceFile>
+  <SourceFileSHA1>ca6a0ae46ab1dc839f18549aedca260aa6169338</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "FROSTYTHESNOWMAN2-0900" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Frosty the Snowman 2 - Turbo (Beyond Reproach - 2009).prg"</ExomizerCommand>
+</Metadata>

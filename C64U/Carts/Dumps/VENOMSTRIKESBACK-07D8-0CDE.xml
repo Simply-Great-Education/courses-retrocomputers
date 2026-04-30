@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>VENOMSTRIKESBACK-07D8-0CDE</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fa0fff2fa52c7dd83d1d3b524490c5568b711bd8</DumpFileSHA1>
+  <SimplifiedName>Venom Strikes Back</SimplifiedName>
+  <JumpAddresses>
+    <Address>$07D8</Address>
+    <Address>$0CDE</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Venom Strikes Back (Version a).tap</SourceFile>
+  <SourceFileSHA1>7afa0f17618e9fec0179af7727a9885e28086830</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0CDE "VENOMSTRIKESBACK-07D8-0CDE" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $07d8 dec $d030" -x "inc $d020" -o "Venom Strikes Back.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $07D8 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to start correctly.
+  As the original did not have a loading screen, the one included was converted from the Spectrum version by DATA-LAND of Technische Maschinenfabrik (https://csdb.dk/scener/?id=4845).</Notes>
+</Metadata>

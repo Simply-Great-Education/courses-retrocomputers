@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>NOVA-4D00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>115c3d660c93eed927760b1ee3ac5c0b8df5359b</DumpFileSHA1>
+  <SimplifiedName>Nova</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4D00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Nova - (Game On - 1993-12 - Side 2).d64</SourceFile>
+  <SourceFileSHA1>f5e3c7b23a5d16364457cc17bcb64433769eabc6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4D00 "NOVA-4D00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Nova.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>TRAILBLAZER-6480</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f84c0dc403e623849f4c7660b0de56160e7030db</DumpFileSHA1>
+  <SimplifiedName>Trailblazer</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6480</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Trailblazer (Mr Chip Software).tap</SourceFile>
+  <SourceFileSHA1>fe1bd8cea1a823cbc1040a0e0626814f5b4924a2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6480 "TRAILBLAZER-6480" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Trailblazer (J1).prg"</ExomizerCommand>
+</Metadata>

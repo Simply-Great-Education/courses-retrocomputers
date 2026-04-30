@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>OLDTOWER-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6c34df4c0b98807d6eb09333de5fced81e430d0f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>102</SidLength>
+  <SourceFile>Old Tower (Retrosouls - 2020).tap</SourceFile>
+  <SourceFileSHA1>7087340736532a8446d75608219445ffdec93edb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "OLDTOWER-1000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Old Tower (Retrosouls - 2020).prg"</ExomizerCommand>
+</Metadata>

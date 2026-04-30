@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>DROPZONE-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6d457f10ba3215782702a8677d5a0527c5442d1f</DumpFileSHA1>
+  <SimplifiedName>Dropzone</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Dropzone (US Gold).tap</SourceFile>
+  <SourceFileSHA1>1b2f8594b6a0f4cadbcfd88709481b02bcba8c3c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "DROPZONE-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Dropzone.prg"</ExomizerCommand>
+  <Notes>This game has an issue on some real C64s whereby the fire button in port 2 is constantly in autofire mode without the button actually being pressed. Therefore, the following fix has been applied:
+  
+  1. Changed the LDA #$0F instruction at $9B26 to be LDA #$7F instead
+  2. Changed the LDA #$10 instruction at $9B33 to be LDA #$7F instead
+  
+  The loading screen by Steve Day (STE'86) was obtained from CSDb.</Notes>
+</Metadata>

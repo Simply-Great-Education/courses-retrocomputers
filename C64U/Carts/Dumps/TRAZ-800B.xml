@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>TRAZ-800B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>14d06bd1685570aad86e6a3d8b63b2e36dae6579</DumpFileSHA1>
+  <SimplifiedName>TRAZ - Transformable Arcade Zone</SimplifiedName>
+  <JumpAddresses>
+    <Address>$800B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>7</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>TRAZ.tap</SourceFile>
+  <SourceFileSHA1>c487b9022b477927a003bf757a231706675d3eb5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x800B "TRAZ-800B" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "TRAZ - Transformable Arcade Zone.prg"</ExomizerCommand>
+</Metadata>

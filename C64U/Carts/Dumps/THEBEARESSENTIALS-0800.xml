@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>THEBEARESSENTIALS-0800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a10049da8714e39ff79f644c202da5a21e040ee1</DumpFileSHA1>
+  <SimplifiedName>Bear Essentials, The (Pond Software - 2019)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>193</SidLength>
+  <SourceFile>Bear Essentials, The (Pond Software 2019).tap</SourceFile>
+  <SourceFileSHA1>35ce9b50b933d5f952189c1002db209c6418440f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0800 "THEBEARESSENTIALS-0800" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Bear Essentials, The (Pond Software - 2019).prg"</ExomizerCommand>
+</Metadata>

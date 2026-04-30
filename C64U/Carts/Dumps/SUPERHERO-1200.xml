@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SUPERHERO-1200</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>16f11187bde55478ba521f34816738a8443eb852</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1200</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Superhero.tap</SourceFile>
+  <SourceFileSHA1>792f09beb03ec9d4befd195c05b55d6ae57a1546</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1200 "SUPERHERO-1200" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Superhero.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

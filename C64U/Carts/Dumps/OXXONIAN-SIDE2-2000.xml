@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>OXXONIAN-SIDE2-2000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>89769475fea2cd5d1a5ed0df9a4504621b82a743</DumpFileSHA1>
+  <SimplifiedName>Oxxonian - Strategy (Side 2)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Oxxonian (Side 2).tap</SourceFile>
+  <SourceFileSHA1>b1b913f9b384dfc36c68211e66f312ea3fd79cc9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2000 "OXXONIAN-SIDE2-2000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Oxxonian - Strategy (Side 2).prg"</ExomizerCommand>
+</Metadata>

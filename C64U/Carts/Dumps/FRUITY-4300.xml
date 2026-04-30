@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>FRUITY-4300</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8f4056fc9ba2db26fc8178506a0801bfd9e3b6d4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4300</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Fruity.tap</SourceFile>
+  <SourceFileSHA1>9932566491775aad42fe5001ce8338f496f43819</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4300 "FRUITY-4300" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Fruity.prg"</ExomizerCommand>
+</Metadata>

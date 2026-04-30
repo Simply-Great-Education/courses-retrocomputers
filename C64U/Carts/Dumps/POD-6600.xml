@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>POD-6600</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>deb102443c721c984b035ad40db22a0d7c8d46cd</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$6600</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>POD.tap</SourceFile>
+  <SourceFileSHA1>6e2cc4408b4f8b3b8993d428f3d798611a61b60d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6600 "POD-6600" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "POD (J1).prg"</ExomizerCommand>
+</Metadata>

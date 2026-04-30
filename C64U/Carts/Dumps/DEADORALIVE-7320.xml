@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>DEADORALIVE-7320</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1f35361fb258b3586c7286840e9b022e57f2d650</DumpFileSHA1>
+  <SimplifiedName>Dead or Alive</SimplifiedName>
+  <JumpAddresses>
+    <Address>$7320</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Dead or Alive (Alternative Software) (Version a).tap</SourceFile>
+  <SourceFileSHA1>b339b3b66c4d03eb79782bca03fecf87538cb5da</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7320 "DEADORALIVE-7320" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Dead or Alive.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

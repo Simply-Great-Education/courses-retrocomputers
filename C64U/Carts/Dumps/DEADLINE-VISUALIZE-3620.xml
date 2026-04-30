@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>DEADLINE-VISUALIZE-3620</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>34c2cf0d677ad20a3dbe5880aeaadefcf10f4880</DumpFileSHA1>
+  <SimplifiedName>Deadline (Visualize Software - 1995)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$3620</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Deadline (Visualize Software - 1995) (Loadstar #142 - Side 3).d64</SourceFile>
+  <SourceFileSHA1>07ad28e560f58a4b177c124e8aae936ae1ba8b84</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3620 "DEADLINE-VISUALIZE-3620" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Deadline (Visualize Software - 1995).prg"</ExomizerCommand>
+</Metadata>

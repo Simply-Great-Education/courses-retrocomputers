@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>ICEPALACE-KTEL-C000-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6dffab1f7d751de1d4c4405dee9c8c6f0bea4f9a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Ice Palace (K-tel).g64</SourceFile>
+  <SourceFileSHA1>b8f4e5ec2fa6242ef1b982d284b838abbe16ab50</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0900 "ICEPALACE-KTEL-C000-0900" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c000 dec $d030" -x "inc $d020" -o "Ice Palace (K-tel) (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C000 to setup the correct VICII display settings before starting the game
+  
+  Note: to dump the game, use an NTSC setup</Notes>
+</Metadata>

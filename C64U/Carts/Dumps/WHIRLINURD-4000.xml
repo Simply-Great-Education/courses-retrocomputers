@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>WHIRLINURD-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>baf21990889ce490423622d53c81909ffa0a0ac3</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <RasterBarType>None</RasterBarType>
+  <SidLength>95</SidLength>
+  <SourceFile>Whirlinurd.tap</SourceFile>
+  <SourceFileSHA1>f1fc08605003a4baf26a797c14a3b3180c62840f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "WHIRLINURD-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Whirlinurd.prg"</ExomizerCommand>
+</Metadata>

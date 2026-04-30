@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>BIFF-0700</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>72dd290efc213af95d62f60a4252022f572631f4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0700</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Biff.tap</SourceFile>
+  <SourceFileSHA1>7adcfc92219bac7277a3aa5a74d4e0cc5025b486</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0700 "BIFF-0700" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Biff.prg"</ExomizerCommand>
+  <Notes>The loading screen is based on the Spectrum version</Notes>
+</Metadata>

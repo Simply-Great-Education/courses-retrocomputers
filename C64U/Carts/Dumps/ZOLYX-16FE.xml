@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ZOLYX-16FE</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a33c5584175a1e98caee59dbb392fbfad303d563</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$16FE</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Zolyx.tap</SourceFile>
+  <SourceFileSHA1>4b27d9d68c6e6237950b2f23b28b26043112c7f4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x16FE "ZOLYX-16FE" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Zolyx.prg"</ExomizerCommand>
+</Metadata>

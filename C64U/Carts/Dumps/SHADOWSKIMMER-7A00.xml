@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SHADOWSKIMMER-7A00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6a741540a7f61a4ce7cea251d7d4b912b11ca875</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7A00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Shadow Skimmer.tap</SourceFile>
+  <SourceFileSHA1>40b7aa48f7f4cb793cf9dab2c66989dab0ba4f7e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7A00 "SHADOWSKIMMER-7A00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Shadow Skimmer.prg"</ExomizerCommand>
+</Metadata>

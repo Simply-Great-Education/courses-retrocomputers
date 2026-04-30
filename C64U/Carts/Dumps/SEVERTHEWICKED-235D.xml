@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SEVERTHEWICKED-235D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>44ed962453cb49a4d22f2de1095fc26893aa05b4</DumpFileSHA1>
+  <SimplifiedName>Sever the Wicked (Haplo - 2022)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$235D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Sever the Wicked (Haplo 2022).d64</SourceFile>
+  <SourceFileSHA1>7b24576374a348c6b9ed0d69d37eeb69f1739fc2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x235D "SEVERTHEWICKED-235D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Sever the Wicked (Haplo - 2022).prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>STAREGGS-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5c7b1630216e5e0af4bb58dbe45d918a77a6a7a2</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Star Eggs.tap</SourceFile>
+  <SourceFileSHA1>2c616e8887475d9329e8333abf9245cdf13c8436</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "STAREGGS-1000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Star Eggs.prg"</ExomizerCommand>
+</Metadata>

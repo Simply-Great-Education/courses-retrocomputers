@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>CESTLAVIE-1000-7B1F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9930623ce508cbbb4bdde7679bf70a849e2676ec</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+    <Address>$7B1F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>C'est la Vie.g64</SourceFile>
+  <SourceFileSHA1>18a3391c616d7568706edb1822a0a5dd5d6c096d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7B1F "CESTLAVIE-1000-7B1F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $1000 dec $d030" -x "inc $d020" -o "C'est la Vie.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC loading screen which uses a SYS command to start the game when it has finished loading. Therefore the following steps were taken to use this:
+  1. The PRINT:PRINT:PRINT:PRINT:PRINT"  {white}LOADING, PLEASE ALLOW 90 SECONDS..."; instruction on line 30 was changed to SYS 4532 ($1100).
+  2. A new routine was placed at $1000 which sets up the correct VICII settings and necessary BASIC pointers and runs the loading screen program.
+  3. A new routine was placed at $1100 which waits for any key or the fire button on either joystick to enter the game by jumping to $7B1F.</Notes>
+</Metadata>

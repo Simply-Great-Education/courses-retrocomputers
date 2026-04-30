@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>DEMONSKISS-096E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0f9ef527678d1c5605a740f130b11d260ea70033</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$096E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Demon's Kiss.tap</SourceFile>
+  <SourceFileSHA1>1b0c67bfccae79d1b9465f761dc5b303c59e3eb1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x096E "DEMONSKISS-096E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Demon's Kiss.prg"</ExomizerCommand>
+</Metadata>

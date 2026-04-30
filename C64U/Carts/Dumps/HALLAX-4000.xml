@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>HALLAX-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>410cf266e49e08bd26eb609d206d3dde498085a4</DumpFileSHA1>
+  <SimplifiedName>Hallax</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Hallax (Commodore Format PowerPack #35 - Side 2).tap</SourceFile>
+  <SourceFileSHA1>a86d7df319f969cf22cd72478948ccff1ad7505e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "HALLAX-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Hallax.prg"</ExomizerCommand>
+</Metadata>

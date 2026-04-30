@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>CJSELEPHANTANTICS-1806</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5e4b4f9eb4f72e881ed7a931d4a0a2c90f855391</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1806</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>CJ's Elephant Antics.tap</SourceFile>
+  <SourceFileSHA1>005f527e4e6a8c8e2b81ad50796e0b7ec6951e28</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1806 "CJSELEPHANTANTICS-1806" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "CJ's Elephant Antics.prg"</ExomizerCommand>
+</Metadata>

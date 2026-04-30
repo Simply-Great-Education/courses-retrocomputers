@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>JETSETWILLY-0FA0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d3d4aa0ebb276078cc4f7599566334a8acf0907c</DumpFileSHA1>
+  <SimplifiedName>Jet Set Willy</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0FA0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Jet Set Willy (Software Projects) [fixed] [patched].tap</SourceFile>
+  <SourceFileSHA1>53d926fcb6d8904333caa0d59f9c255974dcf95e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0FA0 "JETSETWILLY-0FA0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Jet Set Willy.prg"</ExomizerCommand>
+</Metadata>

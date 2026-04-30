@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>ROUNDABOUT-4055</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fa2cc5ad6bee178424cd417b4897fc51da719adc</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4055</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Round About.tap</SourceFile>
+  <SourceFileSHA1>f61d84281569c12e7cd294a401cfbe2e6e0eb270</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4055 "ROUNDABOUT-4055" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Round About.prg"</ExomizerCommand>
+</Metadata>

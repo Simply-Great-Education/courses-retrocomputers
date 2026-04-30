@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SUPERRIDER-0805</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>de14a0731ae58b008fc5008bc00fa1ce5ee6f72e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0805</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Super Rider.tap</SourceFile>
+  <SourceFileSHA1>b66561b2e33e4d687a84ed7509045126f15751bb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0805 "SUPERRIDER-0805" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Super Rider.prg"</ExomizerCommand>
+</Metadata>

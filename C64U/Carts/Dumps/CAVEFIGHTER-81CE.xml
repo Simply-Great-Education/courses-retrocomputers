@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>CAVEFIGHTER-81CE</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8ad41bbbd67a4d0333414804a42e791e571eeff7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$81CE</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Cave Fighter.tap</SourceFile>
+  <SourceFileSHA1>86eca958d68e058c03f0c5fe9db5220cef51d4ed</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x81CE "CAVEFIGHTER-81CE" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Cave Fighter.prg"</ExomizerCommand>
+</Metadata>

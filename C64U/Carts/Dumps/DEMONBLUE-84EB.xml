@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>DEMONBLUE-84EB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1ddfa08b55fbeec084f88b8f520771ed2ba87777</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$84EB</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Demon Blue.tap</SourceFile>
+  <SourceFileSHA1>c6b048db28eb0dc8b00f354647a03dfc9a114763</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x84EB "DEMONBLUE-84EB" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Demon Blue.prg"</ExomizerCommand>
+</Metadata>

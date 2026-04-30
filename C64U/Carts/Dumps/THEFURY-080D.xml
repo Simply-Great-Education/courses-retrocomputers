@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>THEFURY-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>70c7d9a22254b7ae15597492b375d1e06961fa4a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Fury, The.tap</SourceFile>
+  <SourceFileSHA1>423e4cde28de5e9c4332ead06b0eaabcf67102d3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "THEFURY-080D" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Fury, The.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>FROGGER93-1800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>eadc7ca5ac897a9c33a899fd074ca7e4520f411a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Frogger '93.d64</SourceFile>
+  <SourceFileSHA1>d7d6d53043a42548a6daa298d10b10865de0b448</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1800 "FROGGER93-1800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Frogger '93.prg"</ExomizerCommand>
+  <Notes>Breakpoint to use for dumping is $1228. However, jumping to $1800 to start the game skips the high score loading from disk.
+  Also removed the call to the kernal save routine ($FFD8) at $1A6A by replacing with an RTS instruction, which removes the high score saving to disk.</Notes>
+</Metadata>

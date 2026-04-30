@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>720-04D7</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6f023fa61b13b7c9469189f4b951a4f3a8fcdc10</DumpFileSHA1>
+  <SimplifiedName>720 Degrees</SimplifiedName>
+  <JumpAddresses>
+    <Address>$04D7</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>720 Degrees (ERBE).tap</SourceFile>
+  <SourceFileSHA1>4c16dfe74cffb2d128132aefa65297792793e0f7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x04D7 "720-04D7" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "720 Degrees.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>OGRE-C500-9B93</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5ec85652be3699888ecdd8521b9b933246bd831b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C500</Address>
+    <Address>$9B93</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Ogre.d64</SourceFile>
+  <SourceFileSHA1>61f543cae8c6d85dcd030ac0591b7e3bc46950ba</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9B93 "OGRE-C500-9B93" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $c500 dec $d030" -x "inc $d020" -o "Ogre (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C500 which:
+  1. Turn off interrupts from the two CIA chips and acks any pending CIA interrupts
+  2. Sets the correct border and screen colours
+  3. Initialises colour RAM for the loading screen to display correctly
+  4. Displays the loading screen and waits for any key or the fire button on either joystick to enter the game</Notes>
+</Metadata>

@@ -1,0 +1,36 @@
+LIONS OF THE UNIVERSE
+
+
+The Story...
+
+Once upon a time in a far away galaxy, there existed an elite team of starfighters sworn to protect all planets in their sector of the galaxy against marauding space pirates and aliens. Things had quiet in the Omacron sector for many years now, and the Lions hadn't seen any action in ages-until now! Without warning, alien forces began their attack from neighbouring systems. As the leader of the Lions, YOU must head up a frontal assault against the attackers.
+
+Playing the Game...
+
+You can lead the attack alone in your trusty twin-engine starfighter using single-player mode, or take an added advantage of battling with your second in command by your side using two-player mode. Regardless of which mode you use, you'll have to fight your way through the corridors of death to eventually face off against the Mega Guardians.
+As you battle for your life, you'll come across glowing weapon icons which change as you shoot them to indicate the availability of different weapon types. Add the Indicated weapon type by flying into the weapon icons. Collect all the possible weapon types, and you'll be nearly Invincible!
+
+Controls...
+
+Joystick Port 2 Joystick Port 1
+Left, right, up, down
+Fire Button
+Run/Stop
+Player 1 (press button to start single-player game) Player 2 (press button to start two-player game)
+
+Move Starfighter In Indicated direction
+Single press to fire laser, press and hold for Mega-laser Pause game
+
+Loading the Game...
+Remove all external cartridges from your computer before loading the game. Type LOAD"*",8,1 then press RETURN. The game will begin to load. If the load pauses, press the SPACE BAR, and the game will continue to load and run automatically.
+
+
+Code: Hannes Sommer
+Graphic: Arnold Blueml, Hannes Sommer, Bernd Buchegger
+Music: Karl Sommer
+
+https://cosmos-c64.com
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Hannes Sommer.

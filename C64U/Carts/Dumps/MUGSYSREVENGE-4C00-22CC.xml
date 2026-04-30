@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MUGSYSREVENGE-4C00-22CC</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>12582565ec5e02289e99728056427770f9f516f2</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4C00</Address>
+    <Address>$22CC</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Mugsy's Revenge!.tap</SourceFile>
+  <SourceFileSHA1>5eb7f8b5736292daf57907b30414911e8499ac24</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x22CC "MUGSYSREVENGE-4C00-22CC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $4c00 dec $d030" -x "inc $d020" -o "Mugsy's Revenge!.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $4C00 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to start correctly.</Notes>
+</Metadata>

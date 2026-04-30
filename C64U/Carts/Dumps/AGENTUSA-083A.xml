@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>AGENTUSA-083A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>aa370dfb79aa8094606263dae7d708191c7f21c5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$083A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Agent USA.tap</SourceFile>
+  <SourceFileSHA1>eef0d608dfe97320bb552bb316649b7ef68eb038</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x083A "AGENTUSA-083A" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Agent USA.prg"</ExomizerCommand>
+</Metadata>

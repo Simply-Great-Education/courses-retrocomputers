@@ -1,0 +1,11 @@
+This game looks for a Joystick in Port 1 or 2. If you don't have one, you can still en"joy" it. You'll simply turn on the Commodore 64 Ultimate's handy dandy keyboard joystick emulation!
+
+a) Tap the Multi-Function switch to enter the Main Menu
+
+b) Select JOYSTICKS & CONTROLLERS
+
+c) Set Joystick Input to WASD Port 1 or Port 2 (most games use Port 2, but some like to be different)
+
+d) Back out of the menu and choose to save changes to flash
+
+That's it! Now grab your joyst-- erm, keyboard, and get waggli-- erm, tapping.

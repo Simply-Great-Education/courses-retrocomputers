@@ -1,0 +1,25 @@
+﻿<Metadata>
+  <DumpFile>SPYDERS-3000-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>680ede0dd4dda75856efd2c516f2817ce0e7f264</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3000</Address>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>Classic</RasterBarType>
+  <SidLength>146</SidLength>
+  <SourceFile>Spyders (Mr. NOP - 2017).tap</SourceFile>
+  <SourceFileSHA1>303126f85e17cf4e008c294f5e92b1954fd68e31</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "SPYDERS-3000-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $3000 dec $d030" -x "inc $d020" -o "Spyders (Mr. NOP - 2017).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $3000 which sets the pointer to beginning of the BASIC variable area ($2D/$2E) to allow the game to run correctly.
+  
+  Also changed the CMP $D015 instruction at $9537 to be RTS instead to remove a checksum protection.
+  
+  The following changes were made to allow for the fire button in port 2 to simulate the space bar being pressed to allow for skipping of the intro docs and game over screen:
+  
+  1. Changed the JSR $FFE4 instructions at $92A6 and $C0A4 to be JSR $3100 instead.
+  2. Added a small routine at $3100 to check the fire button in port 2 - if pressed, then it sets the accumulator to $20 and returns, which causes the game to behave as if the space bar was pressed. If not pressed, the routine then JSRs to $FFE4 to carry on the normal code flow.</Notes>
+</Metadata>

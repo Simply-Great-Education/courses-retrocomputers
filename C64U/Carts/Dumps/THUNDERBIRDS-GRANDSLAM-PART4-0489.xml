@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>THUNDERBIRDS-GRANDSLAM-PART4-0489</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a6ec0385d1efc29331d8c94c60c89d9f4e08e85f</DumpFileSHA1>
+  <SimplifiedName>Thunderbirds (Mission 4 - Countdown to Terror) (Grandslam)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0489</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Thunderbirds (Grandslam) (Part 4).tap</SourceFile>
+  <SourceFileSHA1>1ab77ac11252384295ccbe8be33ac22797e0054e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0489 "THUNDERBIRDS-GRANDSLAM-PART4-0489" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Thunderbirds (Mission 4 - Countdown to Terror) (Grandslam) (J1).prg"</ExomizerCommand>
+  <Notes>NOP'd out the JSR $BCBC at $B7F1 to remove the password protection.
+  The loading screen is from the Spectrum version.</Notes>
+</Metadata>

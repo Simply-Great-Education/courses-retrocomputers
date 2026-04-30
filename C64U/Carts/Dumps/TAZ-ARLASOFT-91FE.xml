@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>TAZ-ARLASOFT-91FE</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e3d5f0095b0c2a05af42e950f5f18e51c4a07bf2</DumpFileSHA1>
+  <SimplifiedName>Taz (Arlasoft - 2021)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$91FE</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Taz (Arlasoft 2021).prg</SourceFile>
+  <SourceFileSHA1>1bb7f601a2204635f5233aee093fa26a5c43e46d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x91FE "TAZ-ARLASOFT-91FE" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Taz (Arlasoft - 2021).prg"</ExomizerCommand>
+</Metadata>

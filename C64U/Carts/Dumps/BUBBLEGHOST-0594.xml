@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BUBBLEGHOST-0594</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>99b9bbb88b72a58dabb35d9772e6155483ef98ee</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0594</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Bubble Ghost.tap</SourceFile>
+  <SourceFileSHA1>8cfae728506fa177ebbff237679f0bf92a142898</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0594 "BUBBLEGHOST-0594" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Bubble Ghost.prg"</ExomizerCommand>
+</Metadata>

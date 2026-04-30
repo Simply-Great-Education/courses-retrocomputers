@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>MRMEPHISTO-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8feca09f89551a31d2898d2508a971a6193bec9a</DumpFileSHA1>
+  <SimplifiedName>Mr Mephisto</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Mr Mephisto (Euro-Byte).tap</SourceFile>
+  <SourceFileSHA1>cf2431d9a108871299b30bd3f7912173fd2f0791</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "MRMEPHISTO-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mr Mephisto.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC program to display the title screen, so the following steps were taken to retain this:
+  1. A new routine was placed at $C000 which sets up the correct VICII settings and necessary BASIC pointers and runs the title screen program. 
+  2. This routine also disables the RUN/STOP key by modifying the STOP vector by setting $E1 at $0328.</Notes>
+</Metadata>

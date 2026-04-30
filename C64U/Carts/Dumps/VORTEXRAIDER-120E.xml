@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>VORTEXRAIDER-120E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9f142446b956980a77ddae1ee539e867f8a4645d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$120E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Vortex Raider.tap</SourceFile>
+  <SourceFileSHA1>2606c39f0aad6769620eb09b74de39705a3e0f61</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x120E "VORTEXRAIDER-120E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Vortex Raider (J1).prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SLAPSHOT-0A90</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a5bf1c80393ce1d73cb2d1d047fc9265103b53c4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0A90</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Slapshot.tap</SourceFile>
+  <SourceFileSHA1>8ed784cc404c31f5fb2c1ff7d16bc324ace58cf8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0A90 "SLAPSHOT-0A90" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Slapshot.prg"</ExomizerCommand>
+</Metadata>

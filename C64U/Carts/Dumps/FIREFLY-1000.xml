@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>FIREFLY-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d2bb54d0492f47a8661cadcf1891198c66c917c9</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>169</SidLength>
+  <SourceFile>Firefly.tap</SourceFile>
+  <SourceFileSHA1>d092d15317b183020eea10140f3d7dad91d52f61</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "FIREFLY-1000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Firefly.prg"</ExomizerCommand>
+</Metadata>

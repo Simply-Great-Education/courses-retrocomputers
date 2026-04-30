@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>NETHERWORLD-CC60</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ce5ede930b80d8ed778a04008b0416f1dd888c19</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CC60</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Netherworld.tap</SourceFile>
+  <SourceFileSHA1>ddee4a0efefa0410cbfbef679a5b16f35b70a8aa</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCC60 "NETHERWORLD-CC60" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Netherworld.prg"</ExomizerCommand>
+</Metadata>

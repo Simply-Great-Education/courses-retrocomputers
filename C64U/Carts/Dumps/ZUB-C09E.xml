@@ -1,0 +1,26 @@
+﻿<Metadata>
+  <DumpFile>ZUB-C09E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5955538aa94b5218e8111322e709fac2345eaf70</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C09E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Zub.tap</SourceFile>
+  <SourceFileSHA1>cae1524ff9dd60e635bce2cf32fab3c6d12430ec</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC09E "ZUB-C09E" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Zub.prg"</ExomizerCommand>
+  <Notes>Made the following changes to default to joystick control:
+  
+  1. Patched the LDA #$A3 at $0BCF to be LDA #$CB instead
+  2. Patched the LDX #$01 at $5D93 to be LDX #$00 instead
+  3. Patched the STA $0837 at $5D98 to be STX $0837 instead
+  4. NOP'd out the DEX at $5D9B
+
+  Also made the following changes to allow the joystick button in port two to skip the long intro:
+  
+  1. Patched the LDA $#F5, TAX at $4820 to be JMP $6600 instead
+  2. Added a routine at $6600 which extends the original pause routine at $4820 to also check the port 2 fire button, which if detected, balances the stack and jumps to $091E to start the game</Notes>
+</Metadata>

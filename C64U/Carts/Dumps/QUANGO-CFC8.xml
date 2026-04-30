@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>QUANGO-CFC8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>522b1e561c6056bbc0dda2c7bde7f686826b0068</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CFC8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Quango.tap</SourceFile>
+  <SourceFileSHA1>43a2fe3c17ae16c25be6a052171c6ee355fb6c74</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCFC8 "QUANGO-CFC8" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Quango.prg"</ExomizerCommand>
+</Metadata>

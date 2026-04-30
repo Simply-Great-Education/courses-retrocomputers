@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>JOURNEYCOE-081E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f2e1f7d64dbc9a26817accef00afc4d7108d18b3</DumpFileSHA1>
+  <SimplifiedName>Journey to the Centre of the Earth</SimplifiedName>
+  <JumpAddresses>
+    <Address>$081E</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Journey to the Centre of the Earth (Ozisoft).d64</SourceFile>
+  <SourceFileSHA1>2dfc760acd996d2fce62d74f498212786c6ff364</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "JOURNEYCOE-081E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Journey to the Centre of the Earth.prg"</ExomizerCommand>
+</Metadata>

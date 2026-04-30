@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>SKYJET-1000-72A6</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d631fdabd50239938982220ea23d1c28eed3f411</DumpFileSHA1>
+  <SimplifiedName>Skyjet</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1000</Address>
+    <Address>$72A6</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>SKYJET-CRAM-1100</ColourRAMFile>
+  <ColourRAMStartAddress>$1100</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Skyjet (Version 1).tap</SourceFile>
+  <SourceFileSHA1>c0b37b9993f26416f2243ff1c957c715b3dd8c21</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x72A6 "AlternativeFormats\PRGs\Uncrunched\Skyjet.prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $1100 lda #$37 sta $01 jsr $1000 dec $d030" -x "inc $d020" -o "Skyjet.prg"</ExomizerCommand>
+  <Notes>Added a routine at $1000 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  
+  Once the loading screen has been displayed, the routine then sets up the correct VICII settings for the game itself.</Notes>
+</Metadata>

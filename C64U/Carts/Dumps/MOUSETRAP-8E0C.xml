@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MOUSETRAP-8E0C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>bd0a4c4488f9161937acd86fa842c8f0803a11d1</DumpFileSHA1>
+  <SimplifiedName>Mouse Trap</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8E0C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Mouse Trap - Four Great Games 3 (MicroValue - Side 1).g64</SourceFile>
+  <SourceFileSHA1>742afb0fed89e3aee754a0455eeb72d3e2e3a7fe</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8E0C "MOUSETRAP-8E0C" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mouse Trap.prg"</ExomizerCommand>
+</Metadata>

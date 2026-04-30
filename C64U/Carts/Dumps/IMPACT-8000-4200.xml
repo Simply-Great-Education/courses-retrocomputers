@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>IMPACT-8000-4200</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9a9015629dba2f1126d1a4bf7252080a69e008e4</DumpFileSHA1>
+  <SimplifiedName>Impact</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8000</Address>
+    <Address>$4200</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Impact (Side 1) - Game.tap</SourceFile>
+  <SourceFileSHA1>fc71e7c7408518ae092a2870965c1fa5817c2478</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4200 "IMPACT-8000-4200" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $8000 dec $d030" -x "inc $d020" -o "Impact.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $8000 which copies 256 bytes of data from $8020 down to $0000 so that the dump can start at $0400. This allows the game to run correctly.
+  
+  Also patched the JSR $FFE4 instruction at $424E to be JMP $4384 instead to skip the question asking about loading predefined screens.</Notes>
+</Metadata>

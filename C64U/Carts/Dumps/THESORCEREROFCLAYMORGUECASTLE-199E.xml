@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>THESORCEREROFCLAYMORGUECASTLE-199E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0ed000cf4e25f741bdf3d919b1e14e9a6566d7e4</DumpFileSHA1>
+  <SimplifiedName>Sorcerer of Claymorgue Castle, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$199E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Sorcerer of Claymorgue Castle, The (Adventure International).tap</SourceFile>
+  <SourceFileSHA1>6d22d6fadcd5cef9fff60d09b350e03f2d2f080a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x199E "THESORCEREROFCLAYMORGUECASTLE-199E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Sorcerer of Claymorgue Castle, The.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

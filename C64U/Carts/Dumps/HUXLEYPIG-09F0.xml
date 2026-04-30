@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>HUXLEYPIG-09F0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c6c18325130a2ace48afffda5ce8d20d0ff7caa5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$09F0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Huxley Pig.tap</SourceFile>
+  <SourceFileSHA1>8fe20fbcf67742eb648a8c92df94f8e27685fa59</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x09F0 "HUXLEYPIG-09F0" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Huxley Pig.prg"</ExomizerCommand>
+</Metadata>

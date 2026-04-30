@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>THELEGENDOFTHEKNUCKERHOLE-1510</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d67e38696f80b0e86125ad1104d4c4dbbcf32365</DumpFileSHA1>
+  <SimplifiedName>Legend of the Knucker-Hole, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1510</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$3F</MemoryConfig>
+  <SourceFile>Legend of the Knucker-Hole The (Version 1).tap</SourceFile>
+  <SourceFileSHA1>a3a519ba967cf949c8932dde4dbf3977c42adf0e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1510 "THELEGENDOFTHEKNUCKERHOLE-1510" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3f sta $01 dec $d030" -x "inc $d020" -o "Legend of the Knucker-Hole, The.prg"</ExomizerCommand>
+</Metadata>

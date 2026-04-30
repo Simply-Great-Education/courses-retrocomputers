@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MICROMOUSE-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a12c26893598c81db88e410c7babf958a4309b99</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Micro Mouse.tap</SourceFile>
+  <SourceFileSHA1>8e5f2ff30841823793c81f561b3c76e6454a1428</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0900 "MICROMOUSE-0900" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Micro Mouse.prg"</ExomizerCommand>
+</Metadata>

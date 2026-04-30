@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>CHAOSINSPACE-1000-702E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>24adb556a8bbc157133d6c95f87075beb13d95dc</DumpFileSHA1>
+  <SimplifiedName>Chaos in Space</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1000</Address>
+    <Address>$702E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>Chaos in Space (Commdore Disk User - Volume 1 Number 3 - 1988).d64</SourceFile>
+  <SourceFileSHA1>01348f44ac8c362091a04e1d8de0a8fcfb243ee6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x702E "CHAOSINSPACE-1000-702E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $1000 dec $d030" -x "inc $d020" -o "Chaos in Space.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC loading screen which uses a SYS command to start the game when it has finished loading. Therefore the following steps were taken to use this:
+  1. The POKE147,0 instruction on line 1000 was changed to SYS 4532 ($1100).
+  2. A new routine was placed at $1000 which sets up the correct VICII settings and necessary BASIC pointers and runs the loading screen program.
+  3. A new routine was placed at $1100 which waits for any key or the fire button on either joystick to enter the game by jumping to $702E.</Notes>
+</Metadata>

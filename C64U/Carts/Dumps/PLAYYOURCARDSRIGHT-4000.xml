@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>PLAYYOURCARDSRIGHT-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>57d89a2b3a0220d667ec9c980670d15dafc5ec7e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Play Your Cards Right.tap</SourceFile>
+  <SourceFileSHA1>80acdd84884ac6f5f4a8784408c93383083ed8f9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "PLAYYOURCARDSRIGHT-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Play Your Cards Right.prg"</ExomizerCommand>
+</Metadata>

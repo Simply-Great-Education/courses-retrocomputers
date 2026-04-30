@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>ROLANDSRATRACE-8000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>410c11bcef45e524084b5d185c30a7031db2864c</DumpFileSHA1>
+  <SimplifiedName>Roland's Ratrace</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Roland's Ratrace [no1541].tap</SourceFile>
+  <SourceFileSHA1>8753e7ed7ffb4b40adda73a7d3556c5787f19bc8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8000 "ROLANDSRATRACE-8000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Roland's Ratrace.prg"</ExomizerCommand>
+  <Notes>Removed the disk drive protection checks which caused the game to crash if a drive was detected:
+  1. NOP'd out 3 bytes at $5903 (thus removing BIT $DD00 instruction)
+  2. Replaced BMI $9393 instruction ($30, $08) at $9389 with RTS, NOP ($60, $EA)</Notes>
+</Metadata>

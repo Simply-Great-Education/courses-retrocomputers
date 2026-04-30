@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>TALESOFTHEARABIANNIGHTS-5098</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6c4680e95519d3cf8785f6369e3738bf1da75b35</DumpFileSHA1>
+  <SimplifiedName>Tales of the Arabian Nights</SimplifiedName>
+  <JumpAddresses>
+    <Address>$5098</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Tales of the Arabian Nights (Version 1).tap</SourceFile>
+  <SourceFileSHA1>8820accd56904a16fc0b303e2b2347f1dd02fb0f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5098 "TALESOFTHEARABIANNIGHTS-5098" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Tales of the Arabian Nights.prg"</ExomizerCommand>
+</Metadata>

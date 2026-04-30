@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>3DSPEEDDUEL-3F6F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>86740592995590bf76d7a26e45d2c1c4280eb787</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3F6F</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>3D Speed Duel.tap</SourceFile>
+  <SourceFileSHA1>7251544722edd7301eaca2dbbaca43dda12750cf</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "3DSPEEDDUEL-3F6F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "3D Speed Duel (J1).prg"</ExomizerCommand>
+  <Notes>The loading screen is based on the Spectrum version</Notes>
+</Metadata>

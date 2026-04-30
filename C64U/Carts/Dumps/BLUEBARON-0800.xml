@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BLUEBARON-0800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5c3933a32ab4d62c25edc5894c6c5a4014e19706</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Blue Baron.tap</SourceFile>
+  <SourceFileSHA1>a9d0ac22b88471d461c6aa49de02188226c10307</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0800 "BLUEBARON-0800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Blue Baron.prg"</ExomizerCommand>
+</Metadata>

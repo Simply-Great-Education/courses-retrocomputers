@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MONTYMOLE-8400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e65c22f24c585d3378c5ef6a802dd411d1ead1e7</DumpFileSHA1>
+  <SimplifiedName>Monty Mole</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Monty Mole (Ten Games Superpack).tap</SourceFile>
+  <SourceFileSHA1>f2e539271b3553ce87b61f19065edbfb1e9c7277</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8400 "MONTYMOLE-8400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Monty Mole.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

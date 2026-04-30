@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>MOONFALL-84AD</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fb2e79d9f08a73bb0e4b143901e1ad8a184b1cdd</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$84AD</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Moonfall.tap</SourceFile>
+  <SourceFileSHA1>bc43d66b899136089b8f2f9d341e0c27528de5d2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x84AD "MOONFALL-84AD" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Moonfall.prg"</ExomizerCommand>
+</Metadata>

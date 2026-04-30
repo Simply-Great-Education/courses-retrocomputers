@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>MICRODOT-9000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>db29f36dde74e9cf9ef26b106d323bd14edc5974</DumpFileSHA1>
+  <SimplifiedName>Microdot</SimplifiedName>
+  <JumpAddresses>
+    <Address>$9000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Microdot (Your Commodore).tap</SourceFile>
+  <SourceFileSHA1>18def3206c50d3618f94c97322e40879dcc7d61b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9000 "MICRODOT-9000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Microdot.prg"</ExomizerCommand>
+  <Notes>The game does not hit $9000 when run because the game was actually frozen using a Trilogic Expert cartridge. Therefore, you must set the breakpoint on $A747 for dumping.</Notes>
+</Metadata>

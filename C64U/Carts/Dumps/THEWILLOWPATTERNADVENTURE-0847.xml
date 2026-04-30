@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>THEWILLOWPATTERNADVENTURE-0847</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a242206567643732f545b951371cffefc0b3b01c</DumpFileSHA1>
+  <SimplifiedName>Willow Pattern Adventure, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0847</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Willow Pattern Adventure The.tap</SourceFile>
+  <SourceFileSHA1>165b43f16db0af0b78268e9bfd021e09f8dac36a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0847 "THEWILLOWPATTERNADVENTURE-0847" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Willow Pattern Adventure, The.prg"</ExomizerCommand>
+</Metadata>

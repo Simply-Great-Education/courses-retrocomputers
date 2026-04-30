@@ -1,0 +1,26 @@
+﻿<Metadata>
+  <DumpFile>MONEYMINEFIELD-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>50d4c950bca94fb16bd80239da9b8d2649133ffd</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Money Minefield (Luna Software).tap</SourceFile>
+  <SourceFileSHA1>8f05fd4b716e3703e53c4f70033cc578592b40c6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "MONEYMINEFIELD-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Money Minefield (Luna Software).prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $0801. Therefore an init routine has been added at $C000 which:
+  1. Sets up the correct VICII settings and necessary BASIC pointers.
+  2. Disables the RUN/STOP key by modifying the STOP vector by setting $FE at $0328.
+  3. Executes the RUN command to start the command to start the game program.
+  
+  Note: To remove the long delay caused by the initialisation code on lines 102 to 110 when starting the game, the following steps were used:
+  
+  1. Once the game was fully loaded, the C1=59 statement at the start of line 112 was changed to the STOP command
+  2. The game program is then run, which breaks after the init code on lines 102 to 110 are executed
+  3. The STOP statement at the start of line 112 was changed back to C1=59
+  4. A GOTO 112 statement was added to the end of line 100 so that the init code is skipped when the program is run
+  5. Now the memory dump was taken as normal</Notes>
+</Metadata>

@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>APPLECIDERSPIDER-8009</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>192a127904a0a0c00880d163715eb9d42542a9d6</DumpFileSHA1>
+  <SimplifiedName>Apple Cider Spider</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8009</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Apple Cider Spider (1984 Sierra Online).d64</SourceFile>
+  <SourceFileSHA1>dbfa2ce90b5f4d1e173109c67baba05fc56152bb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8009 "APPLECIDERSPIDER-8009" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Apple Cider Spider (J1).prg"</ExomizerCommand>
+  <Notes>Removed the calls to the kernal load routine ($FFD5) at $C147 and the kernal save routine ($FFD8) at $C13B to remove disk access from the game (for high score loading and saving).
+  Also reset the highscore table at $7A89 (80 bytes) and restored the original copyright message at $C3C9.
+  The D64 image used for this is the modified Desperado (ASS) release from GameBase64. It is hoped this can be replaced with a dump of the original disk in the future.</Notes>
+</Metadata>

@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>STUNTMANSEYMOUR-0400-C6CA</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>bdac761e7b18600db691dcc2e5ef605f3e03f98f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$C6CA</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Stuntman Seymour.tap</SourceFile>
+  <SourceFileSHA1>63ea0429d6aae89d940ff0ede6558106e25b06fc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC6CA "STUNTMANSEYMOUR-0400-C6CA" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Stuntman Seymour.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 which copies 512 bytes of data from $0430 down to $0000 so that the dump can start at $0400 (this is the state the memory was in after the depacker from the original game had finished - this allows us to skip this slow step).
+  It then jumps to the entry point at $C6CA (it couldn't use RTS because of the copy overwriting the stack).
+  
+  Note: as the original game is frozen, the breakpoint to use for dumping is actually $BF00.</Notes>
+</Metadata>

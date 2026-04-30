@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>BCIIGROGSREVENGE-8A2A</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>145d0eb3ccc5259cd265bcdfb07f661e684684da</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8A2A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>BC II - Grog's Revenge.tap</SourceFile>
+  <SourceFileSHA1>39889700e08abc84b8e2818b2c42a803b3434c75</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8A2A "BCIIGROGSREVENGE-8A2A" -Di_table_addr=0x02 -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "BC II - Grog's Revenge.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the disk version</Notes>
+</Metadata>

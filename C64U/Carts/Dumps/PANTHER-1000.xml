@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>PANTHER-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>dfec3c2a32baf09ffefc49fa15924a681b8d26bf</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Panther.tap</SourceFile>
+  <SourceFileSHA1>d0b3120850308d7cae6306d68c304ddedacdcbab</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "PANTHER-1000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Panther.prg"</ExomizerCommand>
+</Metadata>

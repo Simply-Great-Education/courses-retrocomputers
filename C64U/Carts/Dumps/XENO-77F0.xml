@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>XENO-77F0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b45ee90807742b956b628937809da98876bb5425</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$77F0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Xeno.tap</SourceFile>
+  <SourceFileSHA1>ba9d5f1c618cc0996165fe0cab4d2704f2b1ccc5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x77F0 "XENO-77F0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Xeno.prg"</ExomizerCommand>
+  <Notes>The following changes were made to default to joystick control:
+  1. Changed the JMP ($40CE) instruction at $4049 to be JMP $0B00 instead
+  2. Added a routine at $0B00 which sets $4114 and $4115 to $01 (joystick for player 1 and 2)
+  3. The routine then performs the JMP ($40CE) instruction as per the original code to carry on the normal code flow</Notes>
+</Metadata>

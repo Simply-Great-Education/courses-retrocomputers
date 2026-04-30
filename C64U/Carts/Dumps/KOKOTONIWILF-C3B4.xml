@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>KOKOTONIWILF-C3B4</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>365ede80086aa6b866c3f830a2ed108136b52ef1</DumpFileSHA1>
+  <SimplifiedName>Kokotoni Wilf</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C3B4</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Kokotoni Wilf (Version 2a).tap</SourceFile>
+  <SourceFileSHA1>d5eedf2106c9a75567aecf6a6b7d33251c72ddad</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC3B4 "KOKOTONIWILF-C3B4" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Kokotoni Wilf (J1).prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

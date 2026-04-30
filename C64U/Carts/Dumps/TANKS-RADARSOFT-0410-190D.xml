@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>TANKS-RADARSOFT-0410-190D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8f9979225518b26d08e78ce5d3d73b99af3b5b28</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0410</Address>
+    <Address>$190D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Tanks (Radarsoft).tap</SourceFile>
+  <SourceFileSHA1>d6741ff584699ff6c148154894acc2c2df7dff88</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "TANKS-RADARSOFT-0410-190D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0410 dec $d030" -x "inc $d020" -o "Tanks (Radarsoft).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0410 to set $BA = $01 and $0341 = $1D to allow the game to run.</Notes>
+</Metadata>

@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>SAMSJAM-1300-90FB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>38337e700860e3996514df6852c15324977ddfa7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1300</Address>
+    <Address>$90FB</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Sam's Jam.tap</SourceFile>
+  <SourceFileSHA1>b0eb893ee563f1157d1bef30ca90e217de99d032</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x90FB "SAMSJAM-1300-90FB" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $1300 dec $d030" -x "inc $d020" -o "Sam's Jam.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC program to provide instructions before the main game loads. Therefore an init routine has been added at $1300 which:
+  1. Sets up the correct VICII settings and necessary BASIC pointers.
+  2. Executes the RUN command to start the command to start the intro program.
+  
+  Note: The SYS 4200 statement on line number 150 of the BASIC intro program has been changed to SYS 4608 so as to jump to $1200 once the intro has finished, where a JMP $90FB instruction has been added to jump to the entry point of $90FB.</Notes>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MURRAYMOUSESUPERCOP-0400-10F2</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5c5da8e71cfe599ce843567d06cb922085f9908b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$10F2</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Murray Mouse Super Cop.tap</SourceFile>
+  <SourceFileSHA1>8bdee53b53e3c8da594253e29ab36692c5abd931</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x10F2 "MURRAYMOUSESUPERCOP-0400-10F2" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Murray Mouse Super Cop.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0400 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

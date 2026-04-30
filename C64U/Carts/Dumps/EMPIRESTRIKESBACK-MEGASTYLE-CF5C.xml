@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>EMPIRESTRIKESBACK-MEGASTYLE-CF5C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0acf93fb2c482f718dd0f03de41f571e0fd0163c</DumpFileSHA1>
+  <SimplifiedName>Empire Strikes Back (Megastyle - 2022)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$CF5C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>69</SidLength>
+  <SourceFile>Empire Strikes Back (Megastyle 2022).tap</SourceFile>
+  <SourceFileSHA1>e7950c6a7e7f910d4a79e2d032bb51b1a8e736e6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCF5C "EMPIRESTRIKESBACK-MEGASTYLE-CF5C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Empire Strikes Back (Megastyle - 2022).prg"</ExomizerCommand>
+</Metadata>

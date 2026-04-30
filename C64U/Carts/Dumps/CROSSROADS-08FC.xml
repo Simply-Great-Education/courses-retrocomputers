@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>CROSSROADS-08FC</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>60b0b76f7ec9e9c6eacc432764dcceab17142c9c</DumpFileSHA1>
+  <SimplifiedName>Crossroads</SimplifiedName>
+  <JumpAddresses>
+    <Address>$08FC</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Crossroads (Compute! Gazette - 1987-12).d64</SourceFile>
+  <SourceFileSHA1>5b327832fb3b39436aa4a374b6612412f39b31e9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "CROSSROADS-08FC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Crossroads.prg"</ExomizerCommand>
+</Metadata>

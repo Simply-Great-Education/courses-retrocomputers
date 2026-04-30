@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>PROWLER-CF00-05E5</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f0a9f0667f97a74d83cf94dd92b8e03159b7fa54</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CF00</Address>
+    <Address>$05E5</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Prowler.tap</SourceFile>
+  <SourceFileSHA1>d4fcdb6bc7e4951fd64a19a52c9652387881b698</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x05E5 "PROWLER-CF00-05E5" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $cf00 dec $d030" -x "inc $d020" -o "Prowler.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $CF00 which:
+  1. Sets up the correct VICII settings
+  2. Sets $DA to $00 and $DB to $02 to avoid text display errors in the options menu
+  
+  The loading screen is from the Spectrum version</Notes>
+</Metadata>

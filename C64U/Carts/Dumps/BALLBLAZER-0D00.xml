@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>BALLBLAZER-0D00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8e27ee0cb3e745cde2034d9ee9240c345f12d4e1</DumpFileSHA1>
+  <SimplifiedName>Ballblazer</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0D00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Ballblazer (Prestige Collection).tap</SourceFile>
+  <SourceFileSHA1>8400682fc7010882d165039ad5edb0dc913ba607</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0D00 "BALLBLAZER-0D00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ballblazer.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the disk version</Notes>
+</Metadata>

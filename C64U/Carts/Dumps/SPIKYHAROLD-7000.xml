@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>SPIKYHAROLD-7000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c2ab07f50e5b402b94465ff81a11eb10e12c423b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Spiky Harold.tap</SourceFile>
+  <SourceFileSHA1>7c080fa9df69d7b2100bf2e90a6dbabfb5570de4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7000 "SPIKYHAROLD-7000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Spiky Harold (J1).prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

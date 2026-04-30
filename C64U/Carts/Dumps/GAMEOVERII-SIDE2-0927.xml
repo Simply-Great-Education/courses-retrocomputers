@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>GAMEOVERII-SIDE2-0927</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b009e5c09d56ecb1adc8cf9782d99b6a3baf259d</DumpFileSHA1>
+  <SimplifiedName>Game Over II (Side 2)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0927</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Game Over II (Side B).tap</SourceFile>
+  <SourceFileSHA1>88206c3b736e595773ab7a369fd7dc7a28e99d73</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0927 "GAMEOVERII-SIDE2-0927" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Game Over II (Side 2).prg"</ExomizerCommand>
+  <Notes>The following modifications were made:
+  1. Zeroed out an unnecessary repeated byte pattern from $45C0 - $5FC0.
+  2. Patched the JSR $AC23 instruction at $A6BD to be JSR $5000 instead.
+  3. Added a small routine at $5000 which checks the fire button in port 2 - if pressed, then the game will behave as if 2 is pressed and start the game in joystick control mode. It then calls the subroutine at $AC23 to carry on the normal code flow.
+  4. Changed $A610 from $01 to $00 to remove the need to enter the access code to start the game.</Notes>
+</Metadata>

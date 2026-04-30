@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>THEARCOFYESOD-720C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>39d36ccefb909ed080280c77b9e70d8bbadb217d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$720C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Arc of Yesod, The.tap</SourceFile>
+  <SourceFileSHA1>4b5ad79902fcdf96ab1e6d82a5ee63a4eb5574cc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x720C "THEARCOFYESOD-720C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Arc of Yesod, The.prg"</ExomizerCommand>
+  <Notes>The following modifications were made:
+  1. Patched the JSR $BD71 instruction at $8A7E to be JSR $7800 instead.
+  2. Added a small routine at $7800 to set $3A to $C1 so that the game defaults to joystick. The routine then jumps to $BD71 to carry on the normal code flow.
+  3. Patched the JSR $8B14 instruction at $8A81 to be JSR $7900 instead.
+  4. Added a small routine at $7900 to check the fire button in port 2 - if pressed, then it sets $3A to $03 and returns, causing the game to start. If not pressed, the routine then jumps to $8B14 to carry on the normal code flow.</Notes>
+</Metadata>

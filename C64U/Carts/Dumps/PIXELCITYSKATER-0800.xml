@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>PIXELCITYSKATER-0800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6f019c78b76491c252f8e2af029882cc459fd8ac</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>178</SidLength>
+  <SourceFile>Pixel City Skater (Digital Monastery - 2014).tap</SourceFile>
+  <SourceFileSHA1>1a535ac0320785c1f0a432164c08399467a487df</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0800 "PIXELCITYSKATER-0800" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Pixel City Skater (Digital Monastery - 2014).prg"</ExomizerCommand>
+  <Notes>Changed the JSR $F1CA instruction at $088C to JMP $08D3 to skip the trainer.</Notes>
+</Metadata>

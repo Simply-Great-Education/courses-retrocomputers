@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MADSPRINGS-8009</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ff4dababcdeb3ed28094405ca2f9cac69d1c7dda</DumpFileSHA1>
+  <SimplifiedName>Mad Springs</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8009</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Mad Springs (Magic Disk 64 - 1991-03 - Side 2).d64</SourceFile>
+  <SourceFileSHA1>201819be40eeb449e43950116fe91621bd53cc15</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8009 "MADSPRINGS-8009" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mad Springs (J1).prg"</ExomizerCommand>
+  <Notes>Removed the call to the kernal save routine ($F5ED) at $8867 to remove disk access from the game (for high score saving).</Notes>
+</Metadata>

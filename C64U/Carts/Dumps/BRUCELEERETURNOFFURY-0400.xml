@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>BRUCELEERETURNOFFURY-0400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>21f02e53fcbe501049aec0e1e7969473c7d71ba8</DumpFileSHA1>
+  <SimplifiedName>Bruce Lee - Return Of Fury (Megastyle - 2019)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>116</SidLength>
+  <SourceFile>Bruce Lee - Duology.d64</SourceFile>
+  <SourceFileSHA1>320efd27b53aa540d747e5dd9d76731c250fa33e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0400 "BRUCELEERETURNOFFURY-0400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bruce Lee - Return Of Fury (Megastyle - 2019).prg"</ExomizerCommand>
+</Metadata>

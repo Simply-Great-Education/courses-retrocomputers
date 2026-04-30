@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>KWAH-0400-441D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7a0ef783ee455bdadb4c8129f70baf09d130bbb1</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$441D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3F</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Kwah.tap</SourceFile>
+  <SourceFileSHA1>159bccd887560a10146ec693921002ba8de1e240</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x441D "KWAH-0400-441D" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3f sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "Kwah.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0400 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

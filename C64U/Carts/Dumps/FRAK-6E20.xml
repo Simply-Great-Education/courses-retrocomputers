@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>FRAK-6E20</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d3db014206b245b984220e11485ca736f049eb28</DumpFileSHA1>
+  <SimplifiedName>Frak!</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6E20</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Frak! (Version a).tap</SourceFile>
+  <SourceFileSHA1>a3dd4c79880ed27309a9fd7f80d2bb9c76857f66</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6E20 "FRAK-6E20" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Frak!.prg"</ExomizerCommand>
+</Metadata>

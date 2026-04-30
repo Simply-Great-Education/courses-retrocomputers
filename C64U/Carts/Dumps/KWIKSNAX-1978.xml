@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>KWIKSNAX-1978</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>ef8dffead8c7081dce2dc1424c5505fba695bf63</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1978</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Kwik Snax.tap</SourceFile>
+  <SourceFileSHA1>259f9ef801beab94b8971c8f2edc9d6c56f1a55d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1978 "KWIKSNAX-1978" -Di_table_addr=0x02 -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Kwik Snax.prg"</ExomizerCommand>
+  <Notes>The loading screen is based on the Spectrum version</Notes>
+</Metadata>

@@ -1,0 +1,27 @@
+﻿<Metadata>
+  <DumpFile>FLOYDOFTHEJUNGLE-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>08775fd1f378ad13aad50e84a490d8b45e12eb63</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Floyd of the Jungle.d64</SourceFile>
+  <SourceFileSHA1>13d443983c443276d7ebcb184074dfe275e97474</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "FLOYDOFTHEJUNGLE-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Floyd of the Jungle.prg"</ExomizerCommand>
+  <Notes>Made the following changes to one-file the game:
+  
+  1. Modified the original BASIC program to remove the initial file loading, high score file loading and saving, as well as various disk drive error checks which were used as copy protection.
+  2. Concatenated the 5 map files (F0.MAP - F4.MAP) each padded to 1024 bytes and placed the resulting data between $A000 and $B400 in the dump.
+  3. Overrode the machine code routine at $85AB so that it now jumps to a customised routine added at $C100, which loads the map data from memory instead of disk.
+  4. Removed a copy protection routine at $9D92 by having it immediately return (RTS) without performing any checks.  
+  
+  Also added an init routine at $C000 which:
+  
+  1. Sets up the correct VICII settings and necessary BASIC pointers.
+  2. Executes the RUN command to start the game program.
+  
+  Note: to dump the game, just wait for the title screen to appear - also ensure that $81E4 is zero so that the music is played the first time the title screen is displayed.</Notes>
+</Metadata>

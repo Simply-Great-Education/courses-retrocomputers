@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SUBTERRANEA-C3F6</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2f46c28c30b7e001323863eca7beb93d995a8fb9</DumpFileSHA1>
+  <SimplifiedName>Subterranea</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C3F6</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Subterranea (Rack It).tap</SourceFile>
+  <SourceFileSHA1>15c14aa4a530d8fd9ba5b9081268384418ab0c8b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC3F6 "SUBTERRANEA-C3F6" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Subterranea.prg"</ExomizerCommand>
+</Metadata>

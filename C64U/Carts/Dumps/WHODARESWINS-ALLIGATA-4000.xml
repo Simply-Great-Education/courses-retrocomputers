@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>WHODARESWINS-ALLIGATA-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>98350436848269be9ae7666fab77363b5756fd4f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Who Dares Wins (Alligata).tap</SourceFile>
+  <SourceFileSHA1>9111ae09f925652aea775c2b4f0a0d69b3588029</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "WHODARESWINS-ALLIGATA-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Who Dares Wins (Alligata).prg"</ExomizerCommand>
+</Metadata>

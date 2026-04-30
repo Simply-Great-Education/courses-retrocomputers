@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>CRACKUP-5000-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>bbfcdb64fa4ab9a4282c34bd7c77aed6110bd121</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5000</Address>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>Crack-Up.tap</SourceFile>
+  <SourceFileSHA1>64239c344212523cc1305be49d049ea1e5b02c12</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0900 "CRACKUP-5000-0900" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $5000 dec $d030" -x "inc $d020" -o "Crack-Up.prg"</ExomizerCommand>
+  <Notes>Added a routine at $5000 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

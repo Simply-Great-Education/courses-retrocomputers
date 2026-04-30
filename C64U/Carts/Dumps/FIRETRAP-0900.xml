@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>FIRETRAP-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>44ef055f4e63cb95c4ef5b4f51778d9243b1a862</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>FireTrap.tap</SourceFile>
+  <SourceFileSHA1>3e13bf656b518df29c3d547f4a1c00252a2bf58e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0900 "FIRETRAP-0900" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "FireTrap.prg"</ExomizerCommand>
+</Metadata>

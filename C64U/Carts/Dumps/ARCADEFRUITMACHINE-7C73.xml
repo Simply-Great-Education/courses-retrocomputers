@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>ARCADEFRUITMACHINE-7C73</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e57088dbb460339004ae14fcd4ccd56755065f25</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7C73</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Arcade Fruit Machine.tap</SourceFile>
+  <SourceFileSHA1>e8f5d1568558ad133a6dd9071b08fb47af3ebda5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7C73 "ARCADEFRUITMACHINE-7C73" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Arcade Fruit Machine (J1).prg"</ExomizerCommand>
+</Metadata>

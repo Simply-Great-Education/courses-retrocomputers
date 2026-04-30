@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>BAGMANSTRIKESBACK-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>42f277816c7da8029a61b72e74054fdfe0e06c67</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Bagman Strikes Back v1.0.2 (LC-Games - 2022).d64</SourceFile>
+  <SourceFileSHA1>e3f8b55abef2ae6b5d7a7a7fb6bdf63835aa412b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "BAGMANSTRIKESBACK-080D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bagman Strikes Back v1.0.2 (LC-Games - 2022).prg"</ExomizerCommand>
+  <Notes>The following changes were made to remove highscore loading and saving to disk:
+  1. Changed the JSR $FFBD instruction at $09A7 to RTS
+  2. Changed the JSR $FFBD instruction at $09C4 to RTS
+  3. Changed the JSR $FFBD instruction at $09EB to RTS</Notes>
+</Metadata>

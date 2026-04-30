@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>GALACTICGARDENER-CC80</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>db34f446ff8720ddb2d81da232760a3fbb02a333</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CC80</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Galactic Gardener.tap</SourceFile>
+  <SourceFileSHA1>aa0c6b1772683165d7ac360002a4ae703764c64b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCC80 "GALACTICGARDENER-CC80" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Galactic Gardener.prg"</ExomizerCommand>
+  <Notes>To dump, set breakpoint at $8164. Then using $CC80 as the entry point skips the manual protection.</Notes>
+</Metadata>

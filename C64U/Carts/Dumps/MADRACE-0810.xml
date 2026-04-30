@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MADRACE-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>52c0166c5ddb81675911eabda7c60068e5f2e840</DumpFileSHA1>
+  <SimplifiedName>Mad Race (Sputnik World - 2018)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Mad Race.d64</SourceFile>
+  <SourceFileSHA1>56d8d86b9c87eb1111c2c19cdd3700c1fa4adb0f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "MADRACE-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mad Race (Sputnik World - 2018).prg"</ExomizerCommand>
+</Metadata>

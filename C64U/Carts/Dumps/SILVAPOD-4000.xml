@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SILVAPOD-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>43cfc53011c5ddab08b085cb38de74a2ff6a9d14</DumpFileSHA1>
+  <SimplifiedName>Silva Pod</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Silva Pod (Magic Disk 64 - 1996-01 - Side 1).d64</SourceFile>
+  <SourceFileSHA1>2000ca8783462a7d80e19251d473e4e4ed100ff1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "SILVAPOD-4000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Silva Pod.prg"</ExomizerCommand>
+</Metadata>

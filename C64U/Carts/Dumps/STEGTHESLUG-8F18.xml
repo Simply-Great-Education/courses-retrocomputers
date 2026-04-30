@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>STEGTHESLUG-8F18</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0de757687b50a35cae40982b44fcede9a767e180</DumpFileSHA1>
+  <SimplifiedName>Steg the Slug</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8F18</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Steg the Slug (Codemasters).tap</SourceFile>
+  <SourceFileSHA1>97317d865a98c8f05f565764ef10550e2662c96c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8F18 "STEGTHESLUG-8F18" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Steg the Slug.prg"</ExomizerCommand>
+</Metadata>

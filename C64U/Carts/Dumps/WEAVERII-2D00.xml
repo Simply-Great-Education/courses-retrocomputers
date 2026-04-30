@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>WEAVERII-2D00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d83aa4569c4d3bdc83929a01d52ac24e6b1ccf3f</DumpFileSHA1>
+  <SimplifiedName>Weaver II</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2D00</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Weaver II (64'er Sonderheft 61 - Side A).d64</SourceFile>
+  <SourceFileSHA1>798eed9c03dfd730d8ea2600e653bf43f91ff69e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "WEAVERII-2D00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Weaver II.prg"</ExomizerCommand>
+  <Notes>Removed the calls to the kernal load routine ($FFD5) at $37EE and the kernal save routine ($FFD8) at $37FE to remove disk access from the game (for high score loading and saving).
+  
+  The default highscore data which was originally loaded from disk has been placed at $C900 in the dump. Furthermore, the JSR $378A instruction at $2D12 has been NOP'd out to remove the call to the routine which zeroes out the high score table on startup.</Notes>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>REPTON-A000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>dfe2bf68f42ce74abb70a807ecc34ac3c55c0f0c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$A000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Repton.d64</SourceFile>
+  <SourceFileSHA1>0d147ea7b7fd83b7984c4359852e617ab9080d8d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xA000 "REPTON-A000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Repton.prg"</ExomizerCommand>
+</Metadata>

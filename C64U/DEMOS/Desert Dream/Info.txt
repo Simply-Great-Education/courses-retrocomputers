@@ -1,0 +1,9 @@
+Desert Dream was released on 8 April 2007 by Chorus and Resource.
+
+This is the C64 remake of the original Amiga demo by Kefrens.
+
+
+Distributed with the Commodore 64 Ultimate with permission from Oswald/Resource.
+
+
+Trivia: When the demo asks you to insert 'Part II', a 5.25" disk appears on screen. On a 1084-monitor, it is exactly the size of a real physical disk.

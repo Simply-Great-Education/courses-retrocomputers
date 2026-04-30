@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>GRIDTRAP-5E00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0ce8318ac1cc8431621d105f536f6ec24094f77a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5E00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Gridtrap.tap</SourceFile>
+  <SourceFileSHA1>72d4858cf090370130b79e2a1effbe0e64db99d2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5E00 "GRIDTRAP-5E00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Gridtrap.prg"</ExomizerCommand>
+  <Notes>The loading screen is based on the Spectrum version</Notes>
+</Metadata>

@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>ROCKFORD-0900-CF00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>02e90dd6f24b02c2f3713b2cb9492467bb1c3971</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0900</Address>
+    <Address>$CF00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Rockford.tap</SourceFile>
+  <SourceFileSHA1>521a3388249c44f81021022ed5efbb4a32c2d87f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCF00 "ROCKFORD-0900-CF00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0900 dec $d030" -x "inc $d020" -o "Rockford.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0900 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to start correctly.
+  
+  The loading screen is from the Spectrum version</Notes>
+</Metadata>

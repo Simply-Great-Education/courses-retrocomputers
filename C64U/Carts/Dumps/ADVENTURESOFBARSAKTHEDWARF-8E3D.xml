@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>ADVENTURESOFBARSAKTHEDWARF-8E3D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c8e931d50febc83f7c56409cb76f1f546e392b01</DumpFileSHA1>
+  <SimplifiedName>Adventures of Barsak the Dwarf</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8E3D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Adventures of Barsak the Dwarf (Gilsoft).tap</SourceFile>
+  <SourceFileSHA1>1cb5e6648d28ad5784dfc0337789672af823f98d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8E3D "ADVENTURESOFBARSAKTHEDWARF-8E3D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Adventures of Barsak the Dwarf.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

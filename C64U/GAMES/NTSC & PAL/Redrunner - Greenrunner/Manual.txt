@@ -1,0 +1,68 @@
+INTRODUCTION
+
+RGCD are incredibly honoured to present to you two of the finest arcade games available for the Commodore 64 on a single game cartridge, Aleksi Eeben's acclaimed Greenrunner and Redrunner - both upgraded and optimised to run on both PAL and NTSC machines.  Not only that, but Aleksi has also managed to squeeze in an updated (and also NTSC fixed) version of Retroskoi+, converting your C64 computer into a two-oscillator monophonic synthesizer.
+
+
+LOADING THE CARTRIDGE
+
+To load the Greenrunner / Redrunner cartridge, turn off your C64/128, insert the cartridge and turn the computer back on.  You will be presented with a menu from which you can play the games, run Retroskoi+ or exit to basic.  This menu system can be controlled by the keyboard or joystick connected to port two.
+
+If you are presented with a blank screen or graphic garbage, please try turning off the C64 and re-inserting the cartridge again.  Issues like this are most likely due to an oxidised cartridge port (after all, we are talking about 30 year old technology here), so please check and clean the port - or even try the game on another C64 - before contacting us for a replacement.
+
+Greenrunner, Redrunner and Retroskoi+ have been tested on both PAL and NTSC machines, and work on the C64, C128 and C64GS (there is no keyboard input required to play the games, although one is necessary for Retroskoi+).
+
+
+"THIS IS THE VOICE OF THE GREENRUNNER..."
+
+Released back in 2006 at the Game Over(view) Freestyle Jam, Greenrunner literally blew the competition away with it's frantic arcade gameplay and amazing mix of sampled speech and high quality soundtrack.  It's a game so hardcore and visually intense that it's probable that even Jeff Minter would beg for mercy at the thought of having to beat all 100 levels.
+
+Grab a friend (or take on the challenge solo), jump into your Cyanitizer and Yellowizer battle craft, buckle up and warm up the four-directional bug-blasting pesticide cannons.  This is going to be one hell of a trip.
+
+
+PLAYING GREENRUNNER
+
+Greenrunner is a one or two player (co-operative) arcade style single-screen shoot 'em up.  You control a small round battle craft that fires in four directions simultaneously and will have to face 100 waves of bug-infested mayhem to beat the game.  It won't be easy.
+
+Player one (Cyanitizer) uses the joystick connected to port 2, and player two (Yellowizer) uses port 1.  Information on the various enemies, hazards, scoring and power-ups is helpfully provided on the title screen.
+
+
+"THIS IS THE VOICE OF THE REDRUNNER..."
+
+One year on, the bugs are back, and this time they are in full colour!  Improving on the high-res character based graphics of the original, 2007's Redrunner challenges the player with an all new and improved 100 waves of chaos.  Lock 'n' load!
+
+
+PLAYING REDRUNNER
+
+Conveniently, the game rules and controls are the same as in Greenrunner - and again the instructions are displayed on the title screen.
+
+
+RETROSKOI+
+
+Retroskoi Plus is a 2-oscillator monophonic synth for Commodore 64. This enhanced Plus version exclusive to the RGCD Redrunner & Greenrunner cartridge comes with additional preset sounds, a wider keyboard range and full PAL/NTSC compatibility.
+
+The information provided on the following pages is also available on a user reference sheet downloadable from the games page at www.rgcd.co.uk, and should have been included as an additional printout with the cartridge.
+
+
+
+CREDITS
+
+Greenrunner, Redrunner and Retroskoi+ are Copyright Aleksi Eeben 2006-2012.
+Published on 64KB C64 cartridge by RGCD, 2012.
+
+Code: Aleksi Eeben
+Graphics: Aleksi Eeben / Twoflower (Greenrunner Logo)
+Music: Aleksi Eeben / 6R6 (Redrunner Title Music)
+Speech: Elaine Walker (Greenrunner) / Antti Hukkanen (Redrunner)
+Cover Artwork: Miha Rinne
+Cartridge: Tim Harris / Warlock
+NTSC Testing: Warlock
+
+
+LINKS
+
+www.cncd.fi/aeeben
+www.rgcd.co.uk
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Aleksi Eeben.

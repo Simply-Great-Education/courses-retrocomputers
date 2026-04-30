@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>AGENTUOP-C5F3</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c8240ee092eb12b3b4e61fbde132a3017553245f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C5F3</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Agent UOP.tap</SourceFile>
+  <SourceFileSHA1>ce36545043c833580d4432af29596b2396d251ff</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC5F3 "AGENTUOP-C5F3" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Agent UOP.prg"</ExomizerCommand>
+</Metadata>

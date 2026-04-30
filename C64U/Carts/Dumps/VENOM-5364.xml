@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>VENOM-5364</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5d2fdd33dabe4f16a59d4d61d380be5c79b75563</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5364</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>Venom.tap</SourceFile>
+  <SourceFileSHA1>05b3c9c1c3d716a9e8268d73b498cb8e94e64710</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5364 "VENOM-5364" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Venom.prg"</ExomizerCommand>
+  <Notes>Made the following changes:
+  1. Changed the JMP $63D8 instruction at $6074 to be JMP $0600 instead
+  2. Added a new routine at $0600 which first calls $63D8 as per the original code. It then waits for any key or the fire button on either joystick to enter the game, thus causing the title screen to be shown for longer, instead of just briefly flashing up.
+  
+  Note: it seems either the developers or the publisher may have decided to skip the title screen for some reason.</Notes>
+</Metadata>

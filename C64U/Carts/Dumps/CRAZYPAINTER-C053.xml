@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>CRAZYPAINTER-C053</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a8867e76f6cb0464288b809df46d3873a87c41e5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C053</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Crazy Painter.tap</SourceFile>
+  <SourceFileSHA1>363c7879c2c6a41d5064a71a73fd0bec598522e4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC053 "CRAZYPAINTER-C053" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Crazy Painter (J1).prg"</ExomizerCommand>
+</Metadata>

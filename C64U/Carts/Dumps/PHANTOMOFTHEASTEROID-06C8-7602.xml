@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>PHANTOMOFTHEASTEROID-06C8-7602</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e1023f11055d994f2d5ea64d6056655adaa0317f</DumpFileSHA1>
+  <SimplifiedName>Phantom of the Asteroid</SimplifiedName>
+  <JumpAddresses>
+    <Address>$06C8</Address>
+    <Address>$7602</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Phantom of the Asteroid (Version a).tap</SourceFile>
+  <SourceFileSHA1>655dd23bd35db9fc871fa8aa1221f2cf529647c4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7602 "PHANTOMOFTHEASTEROID-06C8-7602" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $06c8 dec $d030" -x "inc $d020" -o "Phantom of the Asteroid (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $06C8 which copies 256 bytes of data from $06E8 down to $0100 so that the dump can start at $0400.
+  It then jumps to the entry point at $7602 (it couldn't use RTS because of the copy overwriting the stack).</Notes>
+</Metadata>

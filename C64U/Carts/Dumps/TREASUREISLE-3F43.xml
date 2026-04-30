@@ -1,0 +1,24 @@
+﻿<Metadata>
+  <DumpFile>TREASUREISLE-3F43</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f845a623c6a4b1197c527f77aed35170fe821e08</DumpFileSHA1>
+  <SimplifiedName>Treasure Isle</SimplifiedName>
+  <JumpAddresses>
+    <Address>$3F43</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>Treasure Isle (Commodore Zone #01 - Side B).d64</SourceFile>
+  <SourceFileSHA1>5db9f580f676bb6077239ddae49842ee61991368</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3F43 "TREASUREISLE-3F43" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Treasure Isle.prg"</ExomizerCommand>
+  <Notes>The following changes were made to allow the game to run correctly from the Magic Desk cartridge:
+  
+  1. Changed the LDA #$20 instruction at $F267 to LDA #$80 instead
+  2. Changed the STX $DE00 instruction at $F271 to STA $DE00 instead (i.e. keeps $DE00 = $80 as already set by the STA $DE00 instruction at $F26B)
+
+  These changes make sure $DE00 = $80 so that a ROM bank from the Magic cartridge is not banked in from $8000-$9FFF instead of RAM, as otherwise the game will crash.
+  
+  Note: As this game is actually frozen, the game starts at $3FEB. However the true start address is $3F43.</Notes>
+</Metadata>

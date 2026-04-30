@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>APECRAZE-3000-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>df9ceba6a87909d467569ba35b775c84e13d5b98</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3000</Address>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Ape Craze.tap</SourceFile>
+  <SourceFileSHA1>c20898711f02011e77ad98d522b78de54baa6ee5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "APECRAZE-3000-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $3000 dec $d030" -x "inc $d020" -o "Ape Craze.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $3000 which:
+  1. Copies 256 bytes of data from $3020 down to $0300 so that the dump can start at $0400 (the game checks for the value $14 at $0342 within the tape buffer as a simple copy protection)
+  2. Zeroes out $FB-$FE to ensure the in-game music starts when the game begins
+  3. Jumps to the entry point at $0810 (it couldn't use RTS because of the copy overwriting the boot code)</Notes>
+</Metadata>

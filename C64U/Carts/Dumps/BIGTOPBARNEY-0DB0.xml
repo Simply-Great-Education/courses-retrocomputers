@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BIGTOPBARNEY-0DB0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8e38dc340efb6178dc882277da1541900ec8feab</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0DB0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Bigtop Barney.tap</SourceFile>
+  <SourceFileSHA1>73ac10766bf67e262f0d8e8acd74eedf3cb682ea</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0DB0 "BIGTOPBARNEY-0DB0" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bigtop Barney.prg"</ExomizerCommand>
+</Metadata>

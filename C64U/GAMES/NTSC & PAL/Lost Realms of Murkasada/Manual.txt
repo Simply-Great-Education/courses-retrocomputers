@@ -1,0 +1,210 @@
+LOST REALMS of MURKASADA
+
+Game Instructions
+
+Note: Running this game with anything other than Drive #8 attached to system will cause the game to fail to load.  Disable Drive B, Software IEC, and any externally attached drives.
+
+
+
+
+Aim
+
+The game is played over a series of short episodes, with the objective of each episode revealed in the corresponding chapter of the accompanying novella.
+
+
+Control
+
+You move you character (knight, ship) around the screen using the keyboard or joystick in Port 2.
+'I' or 'joystick up' moves your character north, 'K' or 'down' moves south, 'J' or 'left' moves left and 'L' or 'right' moves east.
+
+During play, you may be required to press other keys such as 'Space' to continue or 'Y' for 'yes' or 'N' for 'no' to answer questions. If using a joystick, the 'fire button' acts as 'Space', while 'left' answers 'no' and 'right' answers 'yes'.
+
+Watch the message box at the bottom of the screen for message prompts.
+
+
+Status
+
+Throughout play, the information 'status' panel to the right of the main game area is updated based on your interactions in the game. Using text and icons, it displays:
+
+1) Current location (purple arrow).
+2) Your strength (red heart).
+3) Your wealth (gold coins).
+4) Current weapon being used (grey sword).
+5) Current armour being used (grey chainmail armour).
+6) Current object being held (grey scroll).
+
+
+Search
+
+Moving onto wooden barrels and chests automatically searches them and may reveal hidden wealth. Moving over stone wells searches for water which may boost health. Moving over wooden logs, tree stumps and crates searches for food which may boost your health or poison you!
+
+The contents of all the above searchable background items change for each game.
+
+Standing in front of signs automatically reads them and reveals clues. You can only read each sign once, so take note of the information in the message box!
+
+
+Collect
+
+During play, some items can be walked on and collected. For example, coins and treasure increase your wealth. Food items such as apples, chicken and berries boost your health, as do other items such as potions.
+As you explore, watch out for and collect other items such as keys and 'majik' objects. These are needed later in each episode and your progress may be blocked without them!
+
+
+Shops
+
+Walking into open doorways of buildings may reveal shops such as blacksmiths, armourers and healers. Other buildings include taverns, brothels and gypsies. Follow the instructions in the message box to make purchases if anything is offered for sale.
+
+
+Enemies
+
+Move alongside enemies to engage in combat.
+Messages in the message box describe the battle; you give and take 'hits' until your character or the enemy is killed.
+Buy better weapons to increase your hit strength on enemies and buy better armour to protect your health. Both improve your chances at winning a battle.
+
+
+Hazards
+
+The game environment contains many hazards such as poisonous mushrooms and water whirlpools, which drain your strength on contact. They may block short-cuts, but can be passed. Just watch your health!
+Some hazards may cause instant death. For example, walking on flowing lava will burn you, while moving onto empty voids/chasms will result in a fatal fall.
+
+
+Switches / Levers
+
+Walking over wooden switches/levers operates them. Each does something different in each episode, so explore their effects.
+
+
+Steps
+
+Some locations can only be accessed by using steps up or down. Just walk on the steps to access these locations.
+
+
+Special Locations
+
+Some parts of the environment may contain special areas that, when walked on, activates or changes an object, causes 'majik' to happen or has some other effect.
+
+Explore all parts of the environment, because missing these special areas may hinder your progress somehow!
+
+End
+
+
+
+Each episode ends when you either run out of strength and die, or you complete the required task or quest, as described in the novella, such as finding and collecting and object or item.
+
+Good luck in your quest!
+
+Updated March 2023
+
+
+
+
+
+
+
+LOST REALMS of MURKASADA
+The Quests of Helfarch
+by Andrew Vaisey
+
+Novella
+
+
+DEDICATION
+
+This modest novella is dedicated to...
+
+Mike Singleton, Dave Lebling, Richard Garriott, Andrew E. Bailey, Dene Carter, John P. Flynn, John & Ste Pickford, Derek Brewster, Andrew Braybrook, Steve Turner, Steve Meretzky, Russell Grahame, Ian Bell, David Braben, Robert Holdstock, Peter F. Hamilton, Martin Walker, Jason Kelk (R.I.P.), John Twiddy, John & Steve Rowlands, Manfred Trenz, Steve Wahid, Paul Hughes, John Meegan, David Collier, Robin Levy, Paul Docherty, Hugh Riley, Jeff Minter, Archer Maclean (R.I.P.), James Herbert (R.I.P.) and anyone else who has over the years affected my computer experiences in positive way to make me who I am today...
+
+And of course, Chantelle xxx
+
+
+Copyright © 2021 Arkanix Labs
+
+All rights reserved.
+
+
+
+
+PROLOGUE
+
+For almost fifty years, Queen Elin Eyrien reigned over Allorona, a peaceful and welcoming land populated by a vast array of peoples from across the realm. Aided by her Council of Elders, Elin ensured all the villages and towns she ruled were thriving and prosperous.
+
+There were rumors of ordinary looking objects created by the great wizard Mawdach that helped Elin guide the destiny of Allorona, powerful objects that were used for the greater good of all and never with malevolence or malice.
+
+Then the day came when a prodigious threat appeared in the form of a great army lead by Eaedred, accompanied by the evil sorcerer Skeskris. A great conflict ensued, more cataclysmic than anyone could have imagined. Large regions of the realm were reduced to useless wasteland, covered with permanent ice or ripped apart to form enormous canyons and mountains.
+
+Elin and Mawdach were defeated and Eaedred became King, the unpredictable, hostile and callous monarch of the now devastated Allorona.
+
+Prior to the conquest, Elin tasked her Council of Elders with hiding the most powerful of Mawdach's objects across the realm, lest they fall into possession of Eaedred and Skeskris for them to learn the secrets of these mystical objects.
+
+That was just over two hundred years ago. Still Eaedred rules Allorona with a reign of terror, having extended his life by locating one of the magic objects, the 'Cloak of Life'. But Eaedred longs for total supremacy by pursuing more of the objects.
+
+The cloak was found by a bounty hunter, a fearless and courageous knight who now questions his service to the King...
+
+
+
+1. THE GOLDEN CHALICE
+
+Helfarch was stood on the hoarding of the castle's main tower gazing at the nearby Cottlepar Forest, contemplating the quest recently bestowed on him by King Eaedred. He was mentally plotting the most efficient route to the nearby village, using his knowledge of the dense trees and bushes that did their utmost to obscure the paths that meandered across the realm of Allorona. His brow was furrowed, but his eyes were wider than they had ever been.
+
+"Something troubles you, Master?" It was Aled, the squire of Helfarch. Aled had been in the service of Helfarch for five years now and was very much attuned to his master's moods.
+
+"Indeed," replied Helfarch jadedly, "this latest commandment from the King bothers me indeed. Or rather, what it could mean once I have successfully found the chalice he so desperately desires."
+
+"It is only a golden chalice is it not?" queried Aled.
+
+Helfarch sighed more loudly than he had intended. "Aled, if what the Assembly of Seniors has stated is true then this chalice is no ordinary golden drinking vessel. It purportedly once belonged to a great wizard called Mawdach and it is so told that anyone who drinks from it is temporarily granted the power of invincibility. The King already rules resolutely and such power would undoubtedly help him further his grip over Allorona and beyond."
+
+Aled stood staring at his master. Helfarch could feel the intense stare as though he was being struck by fiery arrows. "Surely," said Aled eventually, "the King has every right to wield such power? He is the King after all? Surely it is better our King possesses such a powerful object?"
+
+Helfarch managed to suppress another loud sigh. "I don't believe any one person should hold that much power, particularly if it is not to be used for the good of many!"
+
+Aled continued to stare, his eyes showing signs of suspicion. Helfarch realised he needed to choose his words more wisely. Aled was loyal to him, but would ultimately prove to be more loyal to the King if pushed too far. At this point in time, Helfarch had no desire to test the faithfulness of his squire, at least not until the Golden Chalice had been found.
+
+
+
+2. THE SCROLLS OF AVALON
+
+"I want the scrolls, not excuses!"
+
+Helfarch could hear King Eaedred screaming at a large assemblage of knights, even through the large, heavy wooden door that led to the King's chamber. The guards eyed Helfarch carefully before allowing entry. Cautiously, he crossed the threshold into the chamber...
+
+"Ahh! Helfarch! Come in, come in! I can no longer listen to these babbling fools who tell me that the scrolls I desire are unobtainable." Eaedred was randomly pointing to the knights that surrounded him. The knights were looking at each other, terrified for their own lives.
+
+Helfarch moved forward. "My King, stories suggest that the scrolls are hidden beneath the castle of Lord Owain, beyond caves of lava and deadly crypts. They are well guarded."
+
+"Then this sounds like a quest for my most loyal and courageous subject, Helfarch," replied the King with an almost contemptuous tone. The other knights stood staring at Helfarch, secretly glad he had arrived.
+Helfarch nodded. "Very well, my Lord, the scrolls shall be in your possession within the next few sunrises." Helfarch bowed and took his leave...
+
+The low but purposeful clearing of a throat startled Helfarch as he walked the long passageway back to his quarters. "Who is there?" demanded Helfarch, ready to draw his dagger.
+
+"It is I, Morgan," whispered a shadowy figure. The youngest of the Assembly of Seniors moved into the light offered by the flame of the wall mounted torch. "I have heard about the undertaking set you by the King."
+
+Helfarch eyed the Assembly Member suspiciously. "So speedily? I have only just been charged with obtaining the scrolls."
+
+Morgan countered, "The King has already consulted the Assembly as to the content of the scrolls. It was fairly evident as to who he would ask to retrieve them..."
+
+Helfarch interrupted sharply, "And WHAT exactly do the scrolls contain that is of such importance to the King?"
+
+Morgan's brow furrowed. He exhibited clear signs of both concern and anxiety. "Maps. Maps and information about places not of this realm... weapons, armors and objects that were created by... by power, creatures... not of this place..."
+
+Morgan shook his head at the mere thought of King Eaedred taking ownership of such materials. "Helfarch, please consider not retrieving the scrolls. The very existence of Allorona could be at stake. At the very least, recover the scrolls but bring them before the Assembly of Seniors first."
+
+Helfarch trusted the Assembly more than the King. He pondered for a minute. "If I find the Scrolls of Avalon, I shall consider your request," he finally replied...
+
+
+
+
+ACKNOWLEDGMENTS
+
+Huge thanks must be doled out to Jason 'T.M.R' Kelk (R.I.P. my friend) and Jon 'Moloch' Mines, without whom I would have never learned 6502, would never have written the 'Lost Realms of Murkasada' Commodore 64 game and in turn would never have written this (very) humble novella.
+
+An extremely large portion of additional thanks must also go to Ray 'Warlock' Lejuez for his continued positive support and for allowing me (did you really have a choice?) to steal a small idea that eventually led to the 'Lost Realms of Murkasada' game on the Commodore 64.
+
+A thank you must go to Vinny Mainolfi of FREEZE64.com 'zine and Andrew 'Merman' Fisher for taking the time to playtest Episode 1 in its early stages and for offering comments and suggestions that were implemented in later episodes.
+
+Thanks also to the kind people who played and offered suggestions on social media and various forums. If your contributions were useful or substantial, you are named in the disk version credits file.
+
+And finally, thanks for testing my w0rm!
+
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Andrew Vaisey.

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ONEMANANDHISDROID-4CE2</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f5bc807fcaa13f035a265c9db97acb611ff6170b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4CE2</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>One Man and his Droid.tap</SourceFile>
+  <SourceFileSHA1>7c3f606bdf027c823ef92a587b3564df4d676452</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4CE2 "ONEMANANDHISDROID-4CE2" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "One Man and his Droid.prg"</ExomizerCommand>
+</Metadata>

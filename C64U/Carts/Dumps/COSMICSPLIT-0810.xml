@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>COSMICSPLIT-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4b5188426cf20fb686786884ab6c8b2040f039c5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Cosmic Split.tap</SourceFile>
+  <SourceFileSHA1>6e7b27feca77bddea1f81c7680ac17ce92e39258</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "COSMICSPLIT-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Cosmic Split.prg"</ExomizerCommand>
+</Metadata>

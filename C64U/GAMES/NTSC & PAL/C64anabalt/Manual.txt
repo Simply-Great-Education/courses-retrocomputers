@@ -1,0 +1,92 @@
+INTRODUCTION
+
+"This morning was just like every other morning.  Then, it happened.  No one knows where they came from, or what they are.  But we all know that nothing will ever be the same.
+
+Now your only chance for survival is to outrun the destruction of your city... with just one button.
+
+CANABALT travels decades into the past to become C64ANABALT on your Commodore 64 computer system!" 
+
+
+CANABALT BACKGROUND
+
+Canabalt began as a 5-day experimental game for the Kyles' Experimental Gameplay Project. Adam Atomic spent two weekends designing the gameplay, writing the code, drawing the artwork, and recording and designing the sound effects. Danny Baranowsky wrote the music in one night and Adam released it into the wild. It was slightly more popular than expected.
+
+The original Flash game is available for free online at http://www.adamatomic.com/canabalt/
+
+Eric ported Canabalt to the iPhone the following week. Canabalt was developed and published independently for the iPhone by Eric and Adam Atomic under their Semi Secret imprint.
+
+(Adam Saltsman)
+
+
+C64ANABALT BACKGROUND
+
+The Commodore conversion of Canabalt started as an exercise in porting one of the recent indie games without getting bogged down with converting large amounts of content. When the RGCD 16KB cartridge competition came along, I knew that Canabalt was a perfect candidate for this size. 
+
+Although Adam open-sourced the iOS version of Canabalt, the Commodore conversion is actually based on the decompiled source of the original flash version, which has some subtle differences. Due to the narrower screen on the C64 version and the lack of vertical scrolling, some of the procedural parameters relating to the building generation and jump height needed to be slightly adapted. In the end I think C64anabalt turned out as close as you can get to the original flash version on the Commodore 64!
+
+(Paul Koller)
+
+
+
+
+
+
+
+PLAYING C64ANABALT
+
+Like the original, C64anabalt is a simple one-button game. The anonymous game character automatically runs onward at an ever increasing speed, and the only control open to the player is to make him jump by pressing fire on the joystick attached to port 2. Whilst you attempt your daring escape over the rooftops (and through the buildings) of the war-torn cityscape you'll encounter a variety of hazards and different ways to die.
+
+Hitting boxes and furniture slows you down and should be used to control your speed. However, slow down too much however and you may not make your next jump.
+
+Collapsing buildings (recognisable by their cracked exterior) will steadily drop down off the bottom of the screen. Make sure you don't go down with them.
+
+Bombs fall from the sky and explode upon contact. Avoid.
+
+You'll also encounter sheet glass windows to dramatically leap through, doves that take flight as you approach and the occasional enemy jet that screams past. None of these are hazardous (so don't panic).
+
+Death is inevitable. Your goal is simply to survive as long as possible and cover a greater distance than your previous attempt.
+
+
+The game is compatible with NTSC C64's, but lacks the static parallax background cityscape (the background scrolls instead) and it stutters slightly at high running speeds (due to the NTSC machine having less CPU time available). The game also runs fractionally faster than the PAL version. None of these issues severely affect the play of the game, but it should be noted that the game was coded specifically for PAL machines.
+
+
+
+
+CREDITS
+
+The following people made this game possible.
+
+Design & Concept
+Adam Saltsman (Semi Secret Software)
+
+C64 Conversion
+Paul Koller
+
+Original Music Score
+Danny Baranowsky
+
+SID Music
+Mikkel Hastrup (Undone)
+Andreas Slotte (Umlautgames)
+
+Playtesting
+James Monkman (RGCD)
+
+NTSC Testing
+Raymond Lejuez
+
+Cartridge Hardware
+Tim Harris (Shareware Plus)
+
+Cartridge version of C64anabalt published by RGCD, 2011. Special thanks go out to Andreas Varga for giving permission to share the excellent soundtrack from his unofficial version of the game.
+
+
+LINKS
+ 
+www.rgcd.co.uk 
+www.semisecretsoftware.com
+sharewareplus.blogspot.com
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Paul Koller.

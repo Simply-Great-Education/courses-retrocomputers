@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>WIZ-7000-6418</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fee86a7d0e70f2e7572251c9a8b37519ed0d880f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7000</Address>
+    <Address>$6418</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Wiz.tap</SourceFile>
+  <SourceFileSHA1>c7d54ddd490912cbd6478f0067bc73fbee6da1c6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6418 "WIZ-7000-6418" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $7000 dec $d030" -x "inc $d020" -o "Wiz.prg"</ExomizerCommand>
+  <Notes>Added a routine at $7000 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.
+  
+  Note: the routine also sets all of the nibbles in colour RAM to $07 to allow the loading screen to be displayed correctly.</Notes>
+</Metadata>

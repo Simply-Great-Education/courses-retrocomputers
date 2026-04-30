@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>AREX-7000-12BF</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3302458293bb667ccff3886f51b1dcf52868688e</DumpFileSHA1>
+  <SimplifiedName>AREX</SimplifiedName>
+  <JumpAddresses>
+    <Address>$7000</Address>
+    <Address>$12BF</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>AREX (Adventure International).g64</SourceFile>
+  <SourceFileSHA1>362aa41105f7d0011d78c3ec5760a29c9319fd7a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x12BF "AREX-7000-12BF" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $7000 dec $d030" -x "inc $d020" -o "AREX.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $7000 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to start correctly.</Notes>
+</Metadata>

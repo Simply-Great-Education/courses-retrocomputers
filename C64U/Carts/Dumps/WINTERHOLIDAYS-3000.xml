@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>WINTERHOLIDAYS-3000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ff85732fccce487642296634966019a86c287c67</DumpFileSHA1>
+  <SimplifiedName>Winter-Holidays</SimplifiedName>
+  <JumpAddresses>
+    <Address>$3000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Winter-Holidays (Systems Editoriale s.r.l. - Software Club #19).tap</SourceFile>
+  <SourceFileSHA1>a8a51c1da7dd6e7cc52622fa9865ff764d10963b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3000 "WINTERHOLIDAYS-3000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Winter-Holidays.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $0801. Therefore an init routine has been added at $3000 which:
+  1. Sets up the correct VICII settings and necessary BASIC pointers.
+  2. Executes the RUN command to start the game program.
+  
+  Note: to dump, simply set a breakpoint on $A7AE.</Notes>
+</Metadata>

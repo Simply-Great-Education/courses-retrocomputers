@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>GREENRUNNER-0800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7931837e2ac221af6ad4822dfcccfd21ae9166fa</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>129</SidLength>
+  <SourceFile>Greenrunner (Psytronik - 2012).tap</SourceFile>
+  <SourceFileSHA1>10db2bb704eed2044249371ddbd4bf71e73a29fe</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0800 "GREENRUNNER-0800" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Greenrunner (Psytronik - 2012).prg"</ExomizerCommand>
+</Metadata>

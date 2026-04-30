@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>JOEGUNNGOLD-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d3558b07942cee44134470d4095dd1c1852b5414</DumpFileSHA1>
+  <SimplifiedName>Joe Gunn - Gold (Psytronik - 2009)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>178</SidLength>
+  <SourceFile>Joe Gunn - Gold.tap</SourceFile>
+  <SourceFileSHA1>658bfeb787040ea9fa23a80194fcb9b4c4f78779</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0810 "JOEGUNNGOLD-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Joe Gunn - Gold (Psytronik - 2009).prg"</ExomizerCommand>
+</Metadata>

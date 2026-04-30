@@ -1,0 +1,34 @@
+﻿<Metadata>
+  <DumpFile>MIGALLEYACE-4000-A89A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8ab21da3f6477bb606451ed45aa71d40479f91c7</DumpFileSHA1>
+  <SimplifiedName>Mig Alley Ace</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4000</Address>
+    <Address>$A89A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Mig Alley Ace [no1541].tap</SourceFile>
+  <SourceFileSHA1>51c0b0397e694a69a9401912e5155ee274832d94</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xA89A "MIGALLEYACE-4000-A89A" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $4000 dec $d030" -x "inc $d020" -o "Mig Alley Ace (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $4000 which:
+  1. Turns off raster interrupts
+  2. Sets the correct border and screen colours
+  3. Sets the correct bitmap settings
+  4. Copies 1024 bytes of data from $4050 down to $0000 so that the dump can start at $0400
+  5. Sets the pointer to the current byte in the BASIC program ($7A/$7B) to $3D/$25 (the start of the title screen code)
+  6. Sets the stack pointer to $E2
+  7. And finally jumps to the entry point at $A89A (it couldn't use RTS because of the stack being modified)
+  
+  Additionally, the following patches are applied to the dump:
+  
+  1. $2ACB is set to $81 to disable the manual protection
+  2. $29A5/$29A6 are set to $80/$81 to give the full level of ammo
+  3. $1190, $1591, $1F8C, $1FA6 and $2876 are all set to $06 to remove disk drive check protection
+  
+  Note: to dump the game, you should wait until the loading screen is hidden, followed by one short and six long flashes of the loading screen, then set a breakpoint at $A89A. This is because the game essentially implements it's own partial BASIC interpreter, presumably as an obfuscation tactic, so setting a simple breakpoint becomes harder.</Notes>
+</Metadata>

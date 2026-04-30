@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>SKIRUN-2000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fe14350c3b2b7746f68102667ca5797d582a4289</DumpFileSHA1>
+  <SimplifiedName>Ski Run</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Ski Run (Commodore Disk User - Issue #1 - Side A).d64</SourceFile>
+  <SourceFileSHA1>08a14ecff7b6546be7066d4bba6c10141f18551b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2000 "SKIRUN-2000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ski Run.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC title program loaded at $0801. Therefore an init routine has been added at $2000 which:
+  1. Sets up the correct VICII settings and necessary BASIC pointers.
+  2. Disables the RUN/STOP key by modifying the STOP vector by setting $FE at $0328.
+  3. Executes the RUN command to start the command to start the game program.
+  
+  As the original game is frozen, the breakpoint to use for dumping is actually $A7AE.
+  
+  Note: The FOR loop on line 43 has been reduced from 100 loops to 20 in order to decrease the delay on the title screen.</Notes>
+</Metadata>

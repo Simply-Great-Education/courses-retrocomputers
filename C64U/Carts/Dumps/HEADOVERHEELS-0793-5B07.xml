@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>HEADOVERHEELS-0793-5B07</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>30eeb6145131459994d3013a509b350bc0eb2de4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0793</Address>
+    <Address>$5B07</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>253</SidLength>
+  <SourceFile>Head Over Heels.tap</SourceFile>
+  <SourceFileSHA1>5c2f79adfe84cf998cfe31bf5e295ad2b3d03632</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5B07 "HEADOVERHEELS-0793-5B07" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0793 dec $d030" -x "inc $d020" -o "Head Over Heels.prg"</ExomizerCommand>
+  <Notes>Moved some init code from $0103 to $0793 to ensure it was above the dump start address of $0400.</Notes>
+</Metadata>

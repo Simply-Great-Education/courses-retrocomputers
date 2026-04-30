@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>PARAASSAULTCOURSE-9300-8000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4ad4331e53d33856ec2e83b540dac0af60e2d09b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9300</Address>
+    <Address>$8000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Para Assault Course.tap</SourceFile>
+  <SourceFileSHA1>24222cf91687e0d0ac84fa013e88485d62b9c70b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8000 "PARAASSAULTCOURSE-9300-8000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $9300 dec $d030" -x "inc $d020" -o "Para Assault Course.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $9300 which copies 512 bytes of data from $9320 down to $0200 so that the dump can start at $0400.
+  It then jumps to the entry point at $8000 (it couldn't use RTS because of the copy overwriting the boot code).
+  
+  Note: As this game is actually frozen, the game starts at $91CD. However the true start address is $8000.</Notes>
+</Metadata>

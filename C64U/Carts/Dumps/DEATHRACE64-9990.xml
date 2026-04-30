@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>DEATHRACE64-9990</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>96226ff8c884fa436d8ada52de006bc835d589eb</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9990</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Death Race 64.tap</SourceFile>
+  <SourceFileSHA1>6e2256abd627dc04c4971c092475d474bc144ade</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "DEATHRACE64-9990" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Death Race 64.prg"</ExomizerCommand>
+</Metadata>

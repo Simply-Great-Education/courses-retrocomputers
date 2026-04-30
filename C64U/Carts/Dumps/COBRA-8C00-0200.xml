@@ -1,0 +1,24 @@
+﻿<Metadata>
+  <DumpFile>COBRA-8C00-0200</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d20349faf5120041aa0cddc9ea1ab9ffd9bc7504</DumpFileSHA1>
+  <SimplifiedName>Cobra</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8C00</Address>
+    <Address>$0200</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>253</SidLength>
+  <SourceFile>Cobra (Ocean).tap</SourceFile>
+  <SourceFileSHA1>5de71084aa8f786f26ebd94640a29e003536faf0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0200 "COBRA-8C00-0200" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $8c00 dec $d030" -x "inc $d020" -o "Cobra.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $8C00 which:
+  1. Turns off interrupts from the two CIA chips and acks any pending CIA interrupts
+  2. Copies 512 bytes of data from $8C30 to $0200 where it was after the original game had loaded
+  3. And finally jumps to the start of the game at $0200 (it couldn't use RTS because of the copy overwriting the boot code)
+  
+  Note: the space used at $8C00 in the original dump contained some unused data and code, so it was safe to overwrite.</Notes>
+</Metadata>

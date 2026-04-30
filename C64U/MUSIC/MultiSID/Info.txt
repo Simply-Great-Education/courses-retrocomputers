@@ -1,0 +1,13 @@
+2SID
+2SID refers to the technique of using two SID (Sound Interface Device) chips from the Commodore 64 computer simultaneously in real-time. This configuration doubles the audio capabilities, expanding from the standard 3 voices and single filter to 6 voices and dual filters, significantly enhancing the creative possibilities for Commodore 64 music composition.
+
+3SID
+While 2SID compositions, featuring 6 voices, are fairly common, 3SID music with 9 voices represents a much rarer achievement. This configuration utilises three SID chips simultaneously, tripling the original Commodore 64's audio capabilities from 3 voices and 1 filter to 9 voices and 3 filters. The additional sonic complexity allows composers to create remarkably rich, layered compositions that push the boundaries of what was thought possible on 8-bit hardware.
+
+4SID
+4SID music employs four SID chips to deliver an unprecedented 12 voices and 4 filters. These compositions are extremely rare, as they require specialised hardware modifications and significant technical expertise to implement properly. While the sonic possibilities are extraordinary, the practical challenges of synchronising four chips in real-time, combined with the limited software support, make 4SID compositions true collector's items in the chiptune community. :)
+
+
+Recommended:
+https://deepsid.chordian.net
+https://hvsc.c64.org

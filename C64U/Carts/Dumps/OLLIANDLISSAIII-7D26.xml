@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>OLLIANDLISSAIII-7D26</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a7881a72500bac6b66f7e77955293761a51d84a5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7D26</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Olli and Lissa III.tap</SourceFile>
+  <SourceFileSHA1>3725f4d7bf3918f46c810fcc879501b8818682d9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7D26 "OLLIANDLISSAIII-7D26" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Olli and Lissa III (J1).prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SUICIDEVOYAGE-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ac1b23ccc5d5a785843033c9fedc1ae9a0f9afde</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Suicide Voyage.tap</SourceFile>
+  <SourceFileSHA1>5e99c03601be65768c8768d3aee368b0c50406bc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "SUICIDEVOYAGE-C000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Suicide Voyage.prg"</ExomizerCommand>
+</Metadata>

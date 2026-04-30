@@ -1,0 +1,24 @@
+﻿<Metadata>
+  <DumpFile>VOLFIED-C000-1791</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>242e4606f728a46604772b5b6b3911a9049eb135</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$1791</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Volfied.tap</SourceFile>
+  <SourceFileSHA1>8cc06aa6f6eed0b55e9d4a9c52441aeda2beda87</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1791 "VOLFIED-C000-1791" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Volfied.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C000 which:
+  1. Turns off interrupts from the two CIA chips and acks any pending CIA interrupts.
+  2. Copies 1024 bytes of data from $C100 down to $0000 so that the dump can start at $0400 (this is the state the memory was in after the depacker from the original game had finished - this allows us to skip this slow step).
+  3. Sets various IO registers to correct values to allow the game to start.
+  4. Sets the correct border and screen colours.
+  5. Clears the stack.
+  6. Re-enables raster interrupts.
+  7. And finally jumps to the entry point at $1791 (it couldn't use RTS because of the stack being cleared).</Notes>
+</Metadata>

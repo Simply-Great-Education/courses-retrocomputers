@@ -1,0 +1,24 @@
+﻿<Metadata>
+  <DumpFile>CYBERNOID-0824</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a8411251415c0bf7eacb6b863be3bda7be90a06d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0824</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Cybernoid.tap</SourceFile>
+  <SourceFileSHA1>386be742ec0338ff99d4eeff2015249f74a4ba11</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0824 "CYBERNOID-0824" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Cybernoid.prg"</ExomizerCommand>
+  <Notes>The following modifications were made:
+  1. Patched the JSR $48E3 instruction at $805D to be JSR $3EC0 instead
+  2. Added a small routine at $3EC0 which calls the subroutine at $4950 to check for keyboard input. It then checks the fire button in port 2 - if pressed, then it skips past the highscore or credit screens as if 1 is pressed. This routine waits for the fire button to be released before returning, so that it only skips one step at a time.
+  3. Patched the JSR $4950 instruction at $83D6 to be JSR $3EA0 instead
+  4. Added a small routine at $3EA0 which calls the subroutine at $4950 to check for keyboard input. It then checks the fire button in port 2 - if pressed, then the game will behave as if 1 is pressed and start the game. This routine differs slightly from the routine placed at $3EA0 in that it does not wait for the fire button to be released before returning.
+  
+  Note: the space used for the two small routines added above contained some left over sourcecode from the development process of the original game, so could be safely overwritten.
+  
+  The loading screen by Stephen Robertson (SIR) was obtained from CSDb.</Notes>
+</Metadata>

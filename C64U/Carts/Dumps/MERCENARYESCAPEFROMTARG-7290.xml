@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>MERCENARYESCAPEFROMTARG-7290</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>341f154afe3f07ced03dd8c693003c03943dde93</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7290</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Mercenary - Escape from Targ.tap</SourceFile>
+  <SourceFileSHA1>13d85e08530ba1cb47b2dd5c6dcfd329c671e708</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7290 "MERCENARYESCAPEFROMTARG-7290" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mercenary - Escape from Targ.prg"</ExomizerCommand>
+  <Notes>The loading screen is based on the disk version released by Datasoft</Notes>
+</Metadata>

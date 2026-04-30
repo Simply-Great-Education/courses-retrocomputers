@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>OLLIESFOLLIES-0917</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5d1755a1e9fe16e4283544d78dd82cb066c9a8c7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0917</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Ollie's Follies.tap</SourceFile>
+  <SourceFileSHA1>de6764c4b79ed8b9e36bc1dce49f8c04b2b0d237</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0917 "OLLIESFOLLIES-0917" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ollie's Follies (J1).prg"</ExomizerCommand>
+</Metadata>

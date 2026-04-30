@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>WORLDSOCCER-C800-729A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7b983750e806f07e5934aaa853948e18a26fcdcf</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C800</Address>
+    <Address>$729A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>World Soccer.tap</SourceFile>
+  <SourceFileSHA1>578dc8d53ac538ede184dd971fa6001385ac7840</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x729A "WORLDSOCCER-C800-729A" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c800 dec $d030" -x "inc $d020" -o "World Soccer.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C800 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to run correctly.</Notes>
+</Metadata>

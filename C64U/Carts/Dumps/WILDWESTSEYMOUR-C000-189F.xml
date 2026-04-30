@@ -1,0 +1,24 @@
+﻿<Metadata>
+  <DumpFile>WILDWESTSEYMOUR-C000-189F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>aad44d4dc6d5dff4d70935bcf240455d94c0716d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$189F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Wild West Seymour.tap</SourceFile>
+  <SourceFileSHA1>13c0f8d388a62965b9fa69315f5010def6479299</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x189F "WILDWESTSEYMOUR-C000-189F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c000 dec $d030" -x "inc $d020" -o "Wild West Seymour.prg"</ExomizerCommand>
+  <Notes>Added a routine at $C000 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.
+  
+  Also zeroed out the following memory ranges as they contained an unnecessary repeating memory block:
+  
+  $0960 - $0AFF
+  $5660 - $5BFF
+  $BD90 - $C7FF
+  $CD00 - $CFFF</Notes>
+</Metadata>

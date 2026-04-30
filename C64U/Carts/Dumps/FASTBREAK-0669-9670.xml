@@ -1,0 +1,28 @@
+﻿<Metadata>
+  <DumpFile>FASTBREAK-0669-9670</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>f0ff03d2d53a0d1fd59028d57fb2bfca46e34d06</DumpFileSHA1>
+  <SimplifiedName>Fast Break</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0669</Address>
+    <Address>$9670</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <ColourRAMFile>FASTBREAK-CRAM-06A3</ColourRAMFile>
+  <ColourRAMStartAddress>$06A3</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Fast Break [NTSC].g64</SourceFile>
+  <SourceFileSHA1>3b8748c31caa301f7b0f7f075f34a343ac0db99f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9670 "AlternativeFormats\PRGs\Uncrunched\Fast Break.prg,0x0334,0x008D" -Di_table_addr=0x02 -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $06a3 lda #$36 sta $01 jsr $0669 dec $d030" -x "inc $d020" -o "Fast Break.prg"</ExomizerCommand>
+  <Notes>Add an init routine at $0669 which:
+  1. Sets up the correct VICII settings for the second loading screen to be displayed correctly
+  2. Sets 4 bytes of return address data at the top of the stack ($01FC - $01FF)
+  3. Sets the stack pointer to $FB to give the correct next available location on the stack (i.e. just below the address data copied in step 2)
+  4. Sets the memory bank setup to $36 (in $01)
+  5. Finally jumps to the start address of $9670 (it doesn't use RTS because of the stack manipulation above)
+  
+  Note: dumping should be performed on the second hit on $9670 (i.e. after the second loading screen is displayed).</Notes>
+</Metadata>

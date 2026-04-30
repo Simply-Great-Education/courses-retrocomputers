@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>BANDITS-0885</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6207c5c405112801d306e59f8fc54bb880512c51</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0885</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Bandits.d64</SourceFile>
+  <SourceFileSHA1>ede4d732662cef55cbcd5de26d0be61510bfe3f9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0885 "BANDITS-0885" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bandits.prg"</ExomizerCommand>
+</Metadata>

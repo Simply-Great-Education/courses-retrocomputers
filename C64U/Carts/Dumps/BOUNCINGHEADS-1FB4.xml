@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>BOUNCINGHEADS-1FB4</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>69cfcdf661fe9f5e108977e5dce5c14032f6185c</DumpFileSHA1>
+  <SimplifiedName>Bouncing Heads</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1FB4</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Bouncing Heads (Version 1).tap</SourceFile>
+  <SourceFileSHA1>9062482d7bda1646bb81889420d3cb9bc4fc808b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1FB4 "BOUNCINGHEADS-1FB4" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bouncing Heads.prg"</ExomizerCommand>
+</Metadata>

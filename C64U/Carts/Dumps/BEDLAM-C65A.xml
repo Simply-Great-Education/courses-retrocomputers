@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>BEDLAM-C65A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2bb2c94aaf6f2da187e13d81e0d3084c419b7048</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C65A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Bedlam.tap</SourceFile>
+  <SourceFileSHA1>174159f9990b57cb896e2eefeeedb66879b60499</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC65A "BEDLAM-C65A" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Bedlam (J1).prg"</ExomizerCommand>
+</Metadata>

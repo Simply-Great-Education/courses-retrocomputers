@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>JUDGEDREDD-7A20</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b02524d7137f8b505b946bab558affe25f50964d</DumpFileSHA1>
+  <SimplifiedName>Judge Dredd</SimplifiedName>
+  <JumpAddresses>
+    <Address>$7A20</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3F</MemoryConfig>
+  <SourceFile>Judge Dredd (Melbourne House).tap</SourceFile>
+  <SourceFileSHA1>8dc904a3b2afbcd7a39fcfd3f9a7473f7c4a5ad5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7A20 "JUDGEDREDD-7A20" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3f sta $01 dec $d030" -x "inc $d020" -o "Judge Dredd.prg"</ExomizerCommand>
+</Metadata>

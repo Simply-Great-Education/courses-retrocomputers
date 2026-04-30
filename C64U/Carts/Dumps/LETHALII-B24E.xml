@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>LETHALII-B24E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e6ca0910ae9d1c9bfb0a7e081831ef927ff38685</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$B24E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Lethal II.d64</SourceFile>
+  <SourceFileSHA1>530c36504b7fe012711532a17f6154aaaea9c5a2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xB24E "LETHALII-B24E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Lethal II.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SKIDMARX-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>45e4aca6ee24ee2f8730e6fe59ddc80e61e688e7</DumpFileSHA1>
+  <SimplifiedName>Skidmarx (Samar Productions)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Skidmarx (Samar Productions - 1996).d64</SourceFile>
+  <SourceFileSHA1>6b0cb81df4b3001159130aecc770dc73a7132355</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0810 "SKIDMARX-0810" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Skidmarx (Samar Productions).prg"</ExomizerCommand>
+</Metadata>

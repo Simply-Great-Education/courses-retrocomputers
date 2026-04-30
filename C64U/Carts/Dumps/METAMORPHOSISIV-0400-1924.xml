@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>METAMORPHOSISIV-0400-1924</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f89e95c2e34d3cce7d2a7ed4a50e9a561db489cc</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$1924</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Metamorphosis IV - Labyrinth of the Creator.tap</SourceFile>
+  <SourceFileSHA1>33feb64b4fdf9d1558e8a328202a3005b57e608f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "METAMORPHOSISIV-0400-1924" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Metamorphosis IV - Labyrinth of the Creator.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 which sets the magic value of $80 at $291 to allow the game to run properly.</Notes>
+</Metadata>

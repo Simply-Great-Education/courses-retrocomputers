@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SAVAGEPOND-C000</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>b90dd3e95f0edda689cf8ea8ac608f3f2e21e922</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <BasicProgramEnd>$0DA0</BasicProgramEnd>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Savage Pond.tap</SourceFile>
+  <SourceFileSHA1>cabad4044415c66dd96be352b35773eb88e4a34c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "SAVAGEPOND-C000" -Di_table_addr=0x02 -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Savage Pond.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC title screen which uses a SYS command to start the machine code main program when F1 is pressed. As it fiddles with some system vectors from the two BASIC progs loaded during the loading process to autrorun and such, it's entry point is in the BASIC code itself. It's also really picky about starting up. Therefore, a belt-and-braces BASIC init routine has been added at $C000 which initalises all key BASIC values and pointers before calling the RUN command.</Notes>
+</Metadata>

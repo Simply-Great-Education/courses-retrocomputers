@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>STUNTCARRACER-3FFB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>02a459dfeb752486c73699c660647442c3308cf7</DumpFileSHA1>
+  <SimplifiedName>Stunt Car Racer</SimplifiedName>
+  <JumpAddresses>
+    <Address>$3FFB</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Stunt Car Racer (Microstyle).tap</SourceFile>
+  <SourceFileSHA1>4d8fc75da67ec3a8977ed5d3b701bbb05b8fad17</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3FFB "STUNTCARRACER-3FFB" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Stunt Car Racer.prg"</ExomizerCommand>
+  <Notes>NOP'd out the JSR $425D at $4055 to remove a checksum routine and allow the game to start more quickly.</Notes>
+</Metadata>

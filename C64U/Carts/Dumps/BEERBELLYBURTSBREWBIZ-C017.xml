@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BEERBELLYBURTSBREWBIZ-C017</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b3106120931135d89be73c7ae87c1a7aa093cac1</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C017</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Beer Belly Burt's Brew Biz.tap</SourceFile>
+  <SourceFileSHA1>267ce4c8b7562b0275a13843dda2d6b4d21e8122</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC017 "BEERBELLYBURTSBREWBIZ-C017" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Beer Belly Burt's Brew Biz (J1).prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>CRYSTALCASTLESTV-6109</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3b5b94780c38c74f978ef247914dee38b3e044b6</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$6109</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Crystal Castles (Thundervision).d64</SourceFile>
+  <SourceFileSHA1>92ebd5d42c9b9cfe983618ba3a1e4508fea19b69</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6109 "CRYSTALCASTLESTV-6109" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Crystal Castles (Thundervision) (J1).prg"</ExomizerCommand>
+</Metadata>

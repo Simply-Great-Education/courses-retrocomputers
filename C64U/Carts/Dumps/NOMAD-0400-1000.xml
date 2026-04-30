@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>NOMAD-0400-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9d1ca83227d594f1a015855bc596c68bcca1edae</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>253</SidLength>
+  <SourceFile>NOMAD.tap</SourceFile>
+  <SourceFileSHA1>b4279dcff1bf4c9e931bfa794ee07616419b4dd6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "NOMAD-0400-1000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "NOMAD.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0400 to copy the colour RAM data from $5818 (where it was present in the original game)</Notes>
+</Metadata>

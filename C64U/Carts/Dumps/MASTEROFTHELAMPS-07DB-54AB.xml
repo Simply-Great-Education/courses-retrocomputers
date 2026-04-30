@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>MASTEROFTHELAMPS-07DB-54AB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3009ecba5ccd5b59c7882de2c3f028f9176e8f22</DumpFileSHA1>
+  <SimplifiedName>Master of the Lamps</SimplifiedName>
+  <JumpAddresses>
+    <Address>$07DB</Address>
+    <Address>$54AB</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Master of the Lamps [no1541].tap</SourceFile>
+  <SourceFileSHA1>4b16dc6d7aaf727b3b195654fd6db08b3a00fadd</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x54AB "MASTEROFTHELAMPS-07DB-54AB" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $07db dec $d030" -x "inc $d020" -o "Master of the Lamps.prg"</ExomizerCommand>
+  <Notes>Put some init code at $07DB to set some needed zero page values which allows a jump to $54AB which is part way through the game startup code.
+  This was the easiest way to skip the code that checks whether a 1541 is connected, as that code is initially XOR'd making direct patching a bit trickier.</Notes>
+</Metadata>

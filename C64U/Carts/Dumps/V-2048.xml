@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>V-2048</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1036eaea8ef73c8d4e1f93d7f0e0143ae2b287e5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2048</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>V.tap</SourceFile>
+  <SourceFileSHA1>1f56081662795b8820ee4255fc3ce084bd496de5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2048 "V-2048" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "V (J1).prg"</ExomizerCommand>
+  <Notes>NOP'd out the JMP $213D instruction at $228B to remove the disk drive protection check which causes the game to crash if a drive is detected.
+  
+  The loading screen is from the Spectrum version</Notes>
+</Metadata>

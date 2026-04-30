@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>CYBERNOIDII-F200</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5950cdcbea930bff963cf7f1cbd8516981de1b68</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$F200</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>399</SidLength>
+  <SourceFile>Cybernoid II.tap</SourceFile>
+  <SourceFileSHA1>e01a8966e7d233c7a156f7ff021640f6febbef8b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xF200 "CYBERNOIDII-F200" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Cybernoid II.prg"</ExomizerCommand>
+  <Notes>The following modifications were made:
+  1. Patched the $00 at $7B44 to $01 to default to joystick control.
+  2. Patched the JSR $2340 instruction at $5A22 to be JSR $0470 instead.
+  3. Added a small routine at $0470 which calls the subroutine at $2340 to check for keyboard input. It then checks the fire button in port 2 - if pressed, then the game will behave as if 1 is pressed and start the game.</Notes>
+</Metadata>

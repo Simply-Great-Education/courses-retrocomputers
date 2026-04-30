@@ -1,0 +1,30 @@
+﻿<Metadata>
+  <DumpFile>KILLERBEES-C100-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8d508ea46b6eb8ab426c83f45bec76fc934b17c0</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C100</Address>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Killer Bees (Digital Monastery - 2018).d64</SourceFile>
+  <SourceFileSHA1>f95367e4881e8cba363d93ec61a4f89e3d5f3ef3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "KILLERBEES-C100-080D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c100 dec $d030" -x "inc $d020" -o "Killer Bees (Digital Monastery - 2018).prg"</ExomizerCommand>
+  <Notes>Added a routine at $C100 to copy the colour RAM data from $63E8 (where it was present in the original game) and display the loading screen. It then waits for any key or the fire button on either joystick to enter the game.
+  
+  Also removed the protection which checked for the presence of certain data on the disk:
+  
+  1. Changed the JMP $2000 instruction at $2EAF to be JMP $C000 instead
+  2. Added a routine at $C000 which:
+    a. Changes the JMP ($0020) instruction at $3588 to be JMP $C030 instead
+    b. Sets the LDA instructions at $332D and $3371 to be RTS instead to remove highscore loading and saving to disk
+    c. Sets the four bytes starting at $0010 to $04, $DD, $06, $DD to allow the game to run correctly
+    d. It then jumps to the original start-up code at $2000 
+  3. Added a routine at $C030 which:
+    a. Sets $238F to $48 just as it would be if the disk data protection check succeeded. Without this, the failed protection check causes this byte to be set to $01, causing the game to crash.
+    b. It then executes the JMP ($0020) just like the original code at $3588
+  </Notes>
+</Metadata>

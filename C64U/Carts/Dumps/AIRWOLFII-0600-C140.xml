@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>AIRWOLFII-0600-C140</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3c471e6f0266c5a2a16d60f15cf1d13a2f28059a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0600</Address>
+    <Address>$C140</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Airwolf II.tap</SourceFile>
+  <SourceFileSHA1>fe31efd35045e7ea407b3d03bace5b5cfdd7ad4d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC140 "AIRWOLFII-0600-C140" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0600 dec $d030" -x "inc $d020" -o "Airwolf II.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0600 which:
+  1. Turn off interrupts from the two CIA chips and acks any pending CIA interrupts
+  2. Copies 14 bytes from $C120 (where they were in the original dump) to $DD02. The is done so that the CIA#2 settings are set to the default, which prevents a copy protection routine at $CEAD from displaying an illegal copy message (this routine is called from multiple places in the game code).</Notes>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>KIKSTARTII-8036</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9525b852457fe08549e626428c7ee9c7a5cf8834</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8036</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Kikstart II.tap</SourceFile>
+  <SourceFileSHA1>edd28436d078e4afc1ff33f3281ce774b7ddcca2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8036 "KIKSTARTII-8036" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Kikstart II.prg"</ExomizerCommand>
+</Metadata>

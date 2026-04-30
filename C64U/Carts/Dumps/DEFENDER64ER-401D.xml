@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>DEFENDER64ER-401D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>dcf2e89627a58662a32b303420b42330c009c0f8</DumpFileSHA1>
+  <SimplifiedName>Defender (64'er)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$401D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Defender (64'er Magazin 94-05 - Side 1).d64</SourceFile>
+  <SourceFileSHA1>58eb70d80fe07102fed3d83e5fa29ca0341a9254</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x401D "DEFENDER64ER-401D" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Defender (64'er).prg"</ExomizerCommand>
+</Metadata>

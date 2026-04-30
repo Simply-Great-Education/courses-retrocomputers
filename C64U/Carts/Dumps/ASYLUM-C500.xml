@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>ASYLUM-C500</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2282eae0b4595706e8e50d71ebd951d4b5378c26</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C500</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Asylum.tap</SourceFile>
+  <SourceFileSHA1>0aaacc0b2f0bddbd1fa815283537df941ea08150</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC500 "ASYLUM-C500" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Asylum.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C500 which:
+  1. Sets the pointer to beginning of the BASIC variable area ($2D/$2E)
+  2. Calls the init subroutine at $47B5 from the original game code
+  3. Executes the RUN command to start the game program
+  
+  The loading screen is from the disk version.
+  
+  Note: to dump the game, set a breakpoint at $02B8</Notes>
+</Metadata>

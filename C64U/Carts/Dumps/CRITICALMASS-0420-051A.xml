@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>CRITICALMASS-0420-051A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>54618b7e3f9d483fb6bd020cfaabc62b60154abc</DumpFileSHA1>
+  <SimplifiedName>Critical Mass (Durell)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0420</Address>
+    <Address>$051A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Critical Mass (Durell Big 4 Collection).tap</SourceFile>
+  <SourceFileSHA1>653360df3592a16ed1c66493368f2156835899f6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x051A "CRITICALMASS-0420-051A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0420 dec $d030" -x "inc $d020" -o "Critical Mass (Durell).prg"</ExomizerCommand>
+  <Notes>Added RLE packed colour RAM data and routine to unpack at $0420, which allows the intro to be displayed correctly.</Notes>
+</Metadata>

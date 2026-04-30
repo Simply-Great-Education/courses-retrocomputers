@@ -1,0 +1,10 @@
+Music runs continuously. Skip tune by pressing space, or choose songs between key 1-6. 
+
+Fast forward with Commodore key. 
+
+Use only pure 6581 SID (old model), please! 
+
+All tunes runs on NMI sampling the SID's third voice. Make sure your settings are correct.
+
+
+Distributed with the Commodore 64 Ultimate with permission from Geir Tjelta/Maniacs of Noise.

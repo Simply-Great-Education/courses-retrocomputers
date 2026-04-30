@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>OCTOPLEX-0400-0880</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7f5cce1db8796283d58cb46a6723d3c8b8800add</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$0880</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Octoplex.tap</SourceFile>
+  <SourceFileSHA1>5aaeb826cb44f3116390d07ce9b4ff16c534b87c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0880 "OCTOPLEX-0400-0880" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Octoplex.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to run correctly.</Notes>
+</Metadata>

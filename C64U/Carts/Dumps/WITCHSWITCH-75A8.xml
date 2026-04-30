@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>WITCHSWITCH-75A8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6ce650e08f509636a3be441a506c8b4f7a92846b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$75A8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3F</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>WitchSwitch.tap</SourceFile>
+  <SourceFileSHA1>d3d47ad4bbae6a5f8509abda9b7d2026d82165c0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x75A8 "WITCHSWITCH-75A8" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3f sta $01 dec $d030" -x "inc $d020" -o "WitchSwitch.prg"</ExomizerCommand>
+</Metadata>

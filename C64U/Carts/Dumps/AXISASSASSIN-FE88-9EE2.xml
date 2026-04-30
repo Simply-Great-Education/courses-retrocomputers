@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>AXISASSASSIN-FE88-9EE2</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2a9ee922b751cdc3f6f3053677969ea2d7de845b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$FE88</Address>
+    <Address>$9EE2</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Axis Assassin.tap</SourceFile>
+  <SourceFileSHA1>cdb6bac38134c0fa15c83be56c126c71c9aa2921</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9EE2 "AXISASSASSIN-FE88-9EE2" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $fe88 dec $d030" -x "inc $d020" -o "Axis Assassin.prg"</ExomizerCommand>
+  <Notes>The init routine at $FE88 is part of the original code, but was originally called before a lengthy depacking process. Taking the dump at $9EE2 and first calling this routine allows us to skip the depacking step and start the game more quickly.</Notes>
+</Metadata>

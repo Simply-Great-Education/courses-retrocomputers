@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>JAMMIN-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>541e7145733ae0797b24b7d9dd83a2f58a7b98d0</DumpFileSHA1>
+  <SimplifiedName>Jammin'</SimplifiedName>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Jammin' (Taskset).tap</SourceFile>
+  <SourceFileSHA1>e522c2d8e0d16f757b6529c0cf8cd6184b6f5002</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "JAMMIN-080D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Jammin' (J1).prg"</ExomizerCommand>
+</Metadata>

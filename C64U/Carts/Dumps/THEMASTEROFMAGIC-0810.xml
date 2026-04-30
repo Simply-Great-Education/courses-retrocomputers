@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>THEMASTEROFMAGIC-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ce111a928d045f7b697e524196338645ede5b122</DumpFileSHA1>
+  <SimplifiedName>Master of Magic, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Master of Magic The.tap</SourceFile>
+  <SourceFileSHA1>4b0ecd77bb6a006ec20f67d0dbe9e371b215aa14</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "THEMASTEROFMAGIC-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Master of Magic, The.prg"</ExomizerCommand>
+</Metadata>

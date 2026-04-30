@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MONKEYMAGIC-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>dff1f47171fb5d8d68fa69243d46227803059220</DumpFileSHA1>
+  <SimplifiedName>Monkey Magic</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Monkey Magic (Solar Software).tap</SourceFile>
+  <SourceFileSHA1>d588d416000f57906643eb062fbcd9eeecbb33df</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0810 "MONKEYMAGIC-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Monkey Magic.prg"</ExomizerCommand>
+</Metadata>

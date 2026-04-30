@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>PULSEWARRIOR-0803</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>07bab62d11788f06afed196337bb58276ea925b6</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0803</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Pulse Warrior.tap</SourceFile>
+  <SourceFileSHA1>498c9313d26d72eae30ede0babadc7db86ea04e2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0803 "PULSEWARRIOR-0803" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Pulse Warrior.prg"</ExomizerCommand>
+</Metadata>

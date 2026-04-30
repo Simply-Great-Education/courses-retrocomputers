@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MAGGOTMANIA-0811</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6c64a6e63ceb769fff9aa0b48a55be35922cc46a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0811</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Maggotmania.tap</SourceFile>
+  <SourceFileSHA1>e067da9d9b87092717d05ee9e23fe4859dcdd931</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "MAGGOTMANIA-0811" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Maggotmania (J1).prg"</ExomizerCommand>
+</Metadata>

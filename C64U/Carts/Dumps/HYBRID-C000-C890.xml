@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>HYBRID-C000-C890</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c89cec5bcd78ddeaef7141554062930f9db6bac5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$C890</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Hybrid.tap</SourceFile>
+  <SourceFileSHA1>814f347175ba37ede1b010db934932344f4141d2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC890 "HYBRID-C000-C890" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Hybrid.prg"</ExomizerCommand>
+  <Notes>Added a routine at $C000 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>JACKAL-USA-0400-4600</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2da7a61160e3a86b88f69e6612a82ca18d5705d0</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$4600</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Jackal (USA).g64</SourceFile>
+  <SourceFileSHA1>ebd336c349ae6ea1fe534bad4994b76a7a8a9131</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4600 "JACKAL-USA-0400-4600" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Jackal (USA) (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 to apply a PAL fix if running on a PAL machine.</Notes>
+</Metadata>

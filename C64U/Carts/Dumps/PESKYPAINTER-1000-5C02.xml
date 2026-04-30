@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>PESKYPAINTER-1000-5C02</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4f2c17dd4e42b62003f28a21b89dc08ee60aec0b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+    <Address>$5C02</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Pesky Painter.tap</SourceFile>
+  <SourceFileSHA1>dfc1011320f692602436475c7c73cefb35e50e21</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5C02 "PESKYPAINTER-1000-5C02" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $1000 dec $d030" -x "inc $d020" -o "Pesky Painter.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $1000 which:
+  1. Copies 1024 bytes of data from $1020 down to $0000 so that the dump can start at $0400
+  2. Jumps to the entry point at $5C02 (it couldn't use RTS because of the stack being modified)</Notes>
+</Metadata>

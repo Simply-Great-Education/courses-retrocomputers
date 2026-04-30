@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>DEFLEKTOR-25BA</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>44fe38137d8dde91ab6d11cc80291cf01d1c2914</DumpFileSHA1>
+  <SimplifiedName>Deflektor</SimplifiedName>
+  <JumpAddresses>
+    <Address>$25BA</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Deflektor (Version a).tap</SourceFile>
+  <SourceFileSHA1>5caf1a34049d007dd4c9bb3c77a940f8db1a960e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x25BA "DEFLEKTOR-25BA" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Deflektor.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

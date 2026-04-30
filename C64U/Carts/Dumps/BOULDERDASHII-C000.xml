@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BOULDERDASHII-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>97e0efbdcbb238e0b922042f5dc9c8b81bef8874</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Boulder Dash II - Rockford's Revenge.tap</SourceFile>
+  <SourceFileSHA1>7ee8598a13c18aa05a5b5a15cde36f55611d3731</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "BOULDERDASHII-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Boulder Dash II - Rockford's Revenge (J1).prg"</ExomizerCommand>
+</Metadata>

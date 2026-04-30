@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>BOUNCEIT-9C00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a4e149575e7225d1f9f7151ccae6c23d98411d53</DumpFileSHA1>
+  <SimplifiedName>Bounce It</SimplifiedName>
+  <JumpAddresses>
+    <Address>$9C00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Bounce It (Game On - 1993-12 - Side 1).d64</SourceFile>
+  <SourceFileSHA1>8ee23f03c552651d4eb86e69c9a5c51f1c2c3ab3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9C00 "BOUNCEIT-9C00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bounce It.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $9C00 which:
+  1. Calls the init subroutine at $0F09 from the original game code
+  2. Executes the RUN command to start the game program
+  
+  Note: to dump the game, set a breakpoint at $0F09</Notes>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>GALAXIBIRDS-2800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9706a2f599c6ff232ae70ae203cbec9f1d46c907</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Galax-i-Birds.tap</SourceFile>
+  <SourceFileSHA1>4d781bd647b4796d0dcd2c08f3a72df7019081dd</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2800 "GALAXIBIRDS-2800" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Galax-i-Birds.prg"</ExomizerCommand>
+</Metadata>

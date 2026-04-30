@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>FRUITBANK-9700</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5d5786c046ca9db6b92f842637bc60a5b9e887b4</DumpFileSHA1>
+  <SimplifiedName>Fruitbank</SimplifiedName>
+  <JumpAddresses>
+    <Address>$9700</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Fruitbank (Commodore Force).tap</SourceFile>
+  <SourceFileSHA1>d0a960765b089d4e3251299ff06269728a76c6ac</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9700 "FRUITBANK-9700" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Fruitbank.prg"</ExomizerCommand>
+</Metadata>

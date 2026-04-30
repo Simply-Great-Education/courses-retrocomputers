@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>PIGSINSPACE-6000-2DFA</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>98f89507c32299badac68b763a2018cb38febcc0</DumpFileSHA1>
+  <SimplifiedName>Pigs in Space</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6000</Address>
+    <Address>$2DFA</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Pigs in Space (ACE).tap</SourceFile>
+  <SourceFileSHA1>c0a6dadfc90148499838bfc91eb7c08d3dfb8215</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2DFA "PIGSINSPACE-6000-2DFA" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $6000 dec $d030" -x "inc $d020" -o "Pigs in Space.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC program to provide instructions before the main game loads. However, as the main game code overwrites the custom charmap when loaded, the following steps were taken to retain the instructions:
+  1. Line 240 in the BASIC instructions program was changed from LOAD"",1,1 to a SYS call to a new machine code routine at $6100.
+  2. The first 1536 ($0600) bytes of the custom charmap used in the instructions at $3000 were dumped (this includes the characters for the ACE logo).
+  3. The game was dumped at the start address of $2DFA and the memory occupying the 1536 ($0600) bytes at $3000 was copied to $6200.
+  4. A new routine was placed at $6000 which sets up the correct VICII settings and necessary BASIC pointers and runs the instructions program. The pointer to the start of the BASIC program ($2B/$2C) is set to $0866 in order to start the program at line 5 which skips the file loading commands. 
+  5. This routine also disables the RUN/STOP key by modifying the STOP vector by setting $E1 at $0328.
+  6. Once the instructions program has finished, the added SYS call jumps to the new routine at $6100, which restores the 1536 ($0600) bytes of data from $6200 back to $3000 before jumping to the games entry point at $2DFA.</Notes>
+</Metadata>

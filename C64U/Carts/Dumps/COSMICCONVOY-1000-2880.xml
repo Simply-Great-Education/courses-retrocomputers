@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>COSMICCONVOY-1000-2880</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8ad96879975c80bc67ebb0c844f6a8d520bd13ff</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+    <Address>$2880</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Cosmic Convoy.tap</SourceFile>
+  <SourceFileSHA1>f842050cbed38bff34d4aabbfeae5031e5d72b80</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2880 "COSMICCONVOY-1000-2880" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $1000 dec $d030" -x "inc $d020" -o "Cosmic Convoy.prg"</ExomizerCommand>
+  <Notes>Added a routine at $1000 which:
+  1. Sets all of the nibbles in colour RAM to $0A to allow the loading screen to be displayed correctly.
+  2. Displays the loading screen and waits for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

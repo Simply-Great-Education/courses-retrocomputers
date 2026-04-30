@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>MUNCHMAN64-5000-1D00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>89ac63c946b6ffc76770bb06217ad0033076b387</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5000</Address>
+    <Address>$1D00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Munch Man 64.tap</SourceFile>
+  <SourceFileSHA1>aeb856a7023fcae13731f18a3a5dc5776aceb09f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1D00 "MUNCHMAN64-5000-1D00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $5000 dec $d030" -x "inc $d020" -o "Munch Man 64.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $5000 which sets $034C to $0A so that a protection check at $0980 passes.</Notes>
+</Metadata>

@@ -1,0 +1,27 @@
+﻿<Metadata>
+  <DumpFile>MURDERONTHEWATERFRONT-9000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>00beaf73094ef3c73a878a0a46794be3c41c5660</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Murder on the Waterfront.tap</SourceFile>
+  <SourceFileSHA1>1a2ef60ac749e532f8bf5104041012a9ddf79522</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9000 "MURDERONTHEWATERFRONT-9000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Murder on the Waterfront.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC intro program before the main game loads. However, as the main game code overwrites the intro when loaded, the following steps were taken to retain the intro:
+  
+  1. A breakpoint at $C060 was set to break when the intro had loaded
+  2. The BASIC intro was dumped from $080D to $1D29 to skip the second section of file loading
+  3. The SYS 49194 instruction on line 893 was changed to SYS 37120 ($9100) instead
+  4. Another memory block from $C100 to $C300 was also dumped, as this contains some machine code and data needed by the intro
+  5. A breakpoint at $C177 was set to break when the main game had loaded
+  6. The modified BASIC intro was then placed at some free memory at $7001 and relinked with the BASIC subroutine at $A533
+  7. The memory block from $C100 to $C300 was copied to $C900
+  8. The memory block dumped in step 4 was restored to $C100
+  9. A routine was added at $9000 which sets the correct VICII and BASIC pointer values before executing the BASIC RUN command, which runs the modified intro program (now at $7001)
+  10. Once the intro has finished, the modified SYS call on line 893 jumps to a new routine at $9100, which restores the 512 bytes of data copied in step 7 from $C900 back to $C100, before setting the correct BASIC pointer values and executing the BASIC RUN command again to start the main game program. The routine also sets $FB, $FC, $FD and $FE to zero to avoid issues with the voice samples.
+  11. Lines 5 and 7 at the start of the main game program were commented out to remove additional file loading (the files are already in memory within the dump)</Notes>
+</Metadata>

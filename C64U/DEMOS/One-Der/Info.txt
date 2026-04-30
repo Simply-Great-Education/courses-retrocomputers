@@ -1,0 +1,18 @@
+One-Der was released on 29 December 1997.
+
+
+Oxyron was founded in December 1991.
+
+Check out more of their releases at https://csdb.dk/group/?id=7
+
+
+Distributed with the Commodore 64 Ultimate with permission from DeeKay.
+
+
+
+
+Trivia: There are two user-modes which can be enabled by pressing fire during the gouraud vectors or plot vectors.
+
+First hidden part: enter user-mode in the plot vector part, set rotation angles X=+2 Y=0 Z=+6.
+
+Second hidden part: to be found in the maze at the end. It's in a corner of a large open area.

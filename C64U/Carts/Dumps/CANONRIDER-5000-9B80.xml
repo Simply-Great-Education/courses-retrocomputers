@@ -1,0 +1,24 @@
+﻿<Metadata>
+  <DumpFile>CANONRIDER-5000-9B80</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8940e6487b0b04cb48a3f30e1e68d675ed2441a1</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5000</Address>
+    <Address>$9B80</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Canonrider.tap</SourceFile>
+  <SourceFileSHA1>89cf7d88324f1bfbf9ab2615e66c407b7bb194ed</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9B80 "CANONRIDER-5000-9B80" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $5000 dec $d030" -x "inc $d020" -o "Canonrider.prg"</ExomizerCommand>
+  <Notes>This game has executes a loading screen program before the main game loads. However, as the main game program overwrites this when loaded, the following steps were taken to retain this:
+  
+  1. When the breakpoint at $5000 was hit, the memory from $4700 to $55FF ($F00 bytes) was dumped, which includes the loading screen program and data
+  2. The instruction at $53A3 within the loading screen program was changed from JMP $53E8 to JMP $C400
+  3. When the breakpoint at $9B80 was hit:
+    a) the memory from $4700 to $55FF ($F00 bytes) was copied to $D000
+    b) the memory from $3000 to $3AFF ($B00 bytes) was copied to $E000 (this memory is overwritten when the loading screen program is executed, so needed to be backed-up)
+  4. The data dumped in step 1 was restored to $4700.
+  5. Once the loading screen program has finished, the modified instruction at $53A3 jumps to a new routine at $C400, which restores the 3840 ($F00) bytes of data from $D000 back to $4700 and the 2816 ($B00) bytes of data from $E000 back to $3000.</Notes>
+</Metadata>

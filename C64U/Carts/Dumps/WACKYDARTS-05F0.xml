@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>WACKYDARTS-05F0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b49180a98dcf984045face607b48e7d7425f3f0d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$05F0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Wacky Darts.tap</SourceFile>
+  <SourceFileSHA1>6a5784aac6666783255a0854f133bc8e037d6393</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x05F0 "WACKYDARTS-05F0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Wacky Darts.prg"</ExomizerCommand>
+  <Notes>Made the following changes to default to joystick in port two:
+  1. Patched the STA $0529 instruction at $0642 to be JSR $1300 instead
+  2. Added a small routine at $1300 to store $00 in $0529, which causes the game to default to joystick in port 2</Notes>
+</Metadata>

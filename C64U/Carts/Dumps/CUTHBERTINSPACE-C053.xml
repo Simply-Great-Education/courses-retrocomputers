@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>CUTHBERTINSPACE-C053</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>52982eac2f35bd7b534843e13065280a3aa79c9a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C053</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Cuthbert in Space.tap</SourceFile>
+  <SourceFileSHA1>f66a3edcfac02b71868c5ba46d46a8b9a766641d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC053 "CUTHBERTINSPACE-C053" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Cuthbert in Space (J1).prg"</ExomizerCommand>
+</Metadata>

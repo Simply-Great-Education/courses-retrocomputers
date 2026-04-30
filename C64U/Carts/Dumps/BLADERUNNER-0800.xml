@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>BLADERUNNER-0800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3a9aecb8133464c62f38ab36622f7c793d3a4d6c</DumpFileSHA1>
+  <SimplifiedName>Blade Runner</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Blade Runner (CRL) (Version 2).tap</SourceFile>
+  <SourceFileSHA1>5f340cdb1435d05cc1d8c3c738e9fb4ae57f3174</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0800 "BLADERUNNER-0800" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Blade Runner.prg"</ExomizerCommand>
+  <Notes>The following modifications were made:
+  1. Changed the "DO YOU WANT TO REDEFINE THE KEYS  Y N" message string at $2018 to be "GENERATING MAP - PLEASE WAIT..." instead (also added extra $FFs to terminate the shorter string).
+  2. Changed the LDA #$01 instruction at $0919 to be LDA $04 instead. This causes the generating map message to be indented four spaces on the screen to allow for the shorter string.
+  3. Changed the LDA #$07 instruction at $092D to be LDA $0B instead. This causes the generating map message to be centred vertically.
+  3. Patched the LDA $DC00 instruction at $093F to be JMP $095B instead. This simply acts as if the N key was pressed in response the original redefine keys message without waiting for a key.</Notes>
+</Metadata>

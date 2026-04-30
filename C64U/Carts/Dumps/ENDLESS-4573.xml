@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>ENDLESS-4573</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1bf1c83545069d9543be071f3648e0d0d9fb41fc</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4573</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Endless.tap</SourceFile>
+  <SourceFileSHA1>5bbdef1b7134537026e1fa0ff5e0791efce40302</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4573 "ENDLESS-4573" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Endless.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,139 @@
+TIGER CLAW 64KB - A beat 'em up game by Matthias 'Lazycow' Bock and Saul 'Saulc12' Cross, released exclusively on cartridge by RGCD for backers of the C64 in Pixels Kickstarter (Fusion Retro Books, 2016).
+
+
+INTRODUCTION
+
+Four magic scrolls have been stolen by the three lords of evil.
+
+Help TIGER CLAW on his path to retrieve the four valuable scrolls before Fire Fist, Thunder Chain and Angry Tongue can reveal their full potential.
+
+Fortunately, Master Lee transferred some of the scrolls' power into the four masks of endurance before the scrolls were taken. Find the masks and use them wisely.
+
+As Confucius said: "He that would perfect his work must first sharpen his tools."
+
+
+LOADING TIGER CLAW
+
+To load the TIGER CLAW cartridge, turn off your C64/128, insert the cartridge and turn the computer back on. The game will load automatically.
+
+If you are presented with a blank screen or graphic garbage, please try turning off the C64 and re-inserting the cartridge again. Issues like this are most likely due to an oxidised cartridge port (after all, we are talking about 30 year old technology here), so please check and clean the port - or even try the game on another C64 - before contacting us for a replacement.
+
+TIGER CLAW has been tested on both PAL and NTSC machines, and works on the C64, C128 and C64GS (there is no keyboard input required to play). TIGER CLAW has full NTSC support, and the game and music run at the same speed as on PAL systems.
+
+
+PLAYING TIGER CLAW
+
+TIGER CLAW is played by using a joystick or joypad plugged into port two. When the game has completed loading, you'll be prompted to 'Press Button'. Hit the FIRE button and the main menu will be displayed. From here you can select a variety of options and game modes using the joystick.
+
+* TRAINING MODE starts the single-player, wave-based training mini-game. Hone your combat skills here!
+* VERSUS MODE starts the multi-player versus mode (supports two to four players). Please note:
+  - Fire Fist, Angry Tonge and Thunder Chain are only available in two player mode.
+  - Three player mode and four player mode require the Protovision four player adapter.
+  - It is recommended that all weapons are removed from the vicinity where you are playing. Versus matches can become very competitive!
+* MUSIC acts as a jukebox from which you can listen to the entire game soundtrack.
+* DIFFICULTY
+  - STANDARD (default).
+  - EASY (smaller map, only one wave of enemies in each room, enemies react slower and do not use ranged-attacks).
+  - HARD (same map as in STANDARD mode, but hero starts with less health and the floor has less friction. Enemies are unlimited in number and react deadly-fast).
+* START begins the game.
+
+Note that an ATTRACT MODE starts automatically after a few seconds if an option is not selected. Press FIRE or move the joystick to return to the menu.
+
+
+CONTROLS
+
+TIGER CLAW has a complex control system. If you are new to the game it is recommended that you practice on the TRAINING MODE to familiarise yourself with how to play the game.
+
+MOVEMENT
+
+* Push LEFT and RIGHT to move.
+* Push UP to jump (note that your left/right momentum influences your jump).
+* Push UP or DOWN to climb ladders.
+* Push DOWN to crouch (used to avoid bird, chain and tongue attacks).
+
+COMBAT
+
+* Press FIRE button whilst STANDING or WALKING to punch and kick. Pattern is PUNCH, PUNCH, KICK.
+* Press FIRE button whilst JUMPING for a jump-kick.
+
+POWER-UP SPECIFIC MOVES
+
+* Push UP whilst JUMPING for a double-jump-kick (requires DOUBLE-JUMP-KICK power-up).
+* Push UP while SLIDING against a wall for a wall-jump (requires WALL JUMP power-up).
+* Push DOWN whilst JUMPING for a down-punch (requires DOWN PUNCH power-up).
+* PUSH LEFT or RIGHT twice to dash (requires POWER-DASH power-up).
+
+VERSUS MODE SPECIFIC MOVES
+
+* Press FIRE button whilst CROUCHING for ranged attack (ninja, Thunder Chain, Fire Fist and Angry Tongue characters only).
+
+
+THE ITEMS
+
+* Collect all four MAGIC SCROLLS to beat the game!
+* CHICKEN partially replenishes your health.
+* YELLOW MASK awards the wearer with the DOUBLE-JUMP-KICK power.
+* GREEN MASK bestows upon you the power of WALL JUMP.
+* WHITE MASK contains the deadly DOWN-PUNCH power.
+* BLUE MASK collect this mask to engage the POWER-DASH.
+* HIDDEN MAGIC SCROLL ???
+
+
+THE ENEMIES
+
+* STANDARD FIGHTER (pink shirt) - Foot soldiers trained in basic martial arts.
+* ADEPT FIGHTER (cyan shirt) - Trained by Master Fire Fist, these foot soldiers are tougher than standard fighters (and can jump-kick).
+* DAEMON - Summoned by Angry Tongue, the daemon is a resistant fighter whose heavy frame is immune to standard punches and kicks. Use jump-kicks or down-punch to take them out.
+* NINJA - Trained by Master Thunder Chain, ninjas are very fast and can throw shuriken.
+* HOUND - Nasty, but not very tough.
+* BIRD - Crouch to avoid its attacks, and jump-kick to knock them out of the sky.
+
+
+TRIVIA
+
+TIGER CLAW began as an entry in RGCD's annual 16KB C64 Cartridge Game Development Competition. It achieved second place in 2014 round. This specially enhanced 64KB cartridge version of the game features:
+
+* Dynamic sprite multiplexer with 14 sprites and status display in border.
+* 4 colour hires sprites (using overlay sprites) with 100 animation phases.
+* Over 24 rooms, 7 different items, 6 different enemies, 3 bossfights.
+* Full NTSC support, with identical game and music speed on both PAL and NTSC
+* 70KB game (40KB code, 14KB graphics, 5KB music, 11KB (packed) map).
+* Lazycow koala cartridge loader with 10KB picture and 3KB music.
+* Much less 'slippy' controls by increasing the floor friction.
+* Minor bug fixes and game balance tweaks, including limited attack waves, changed dash powerup and lower enemy skills.
+* New challenges such as bird attacks, vanishing blocks and a special hidden scroll.
+* Additional music tracks.
+* Selectable difficulty.
+* New training mode.
+* New versus mode for 2-4 players.
+* Title picture.
+
+If all this is possible, where's the magic?
+
+
+CREDITS
+
+TIGER CLAW is a Lazycow production, Copyright 2014-16. Published on 64KB C64 cartridge by RGCD, 2016.
+
+Matthias Bock - Code/Design/Manual
+Saul Cross - Music/Graphics/Design
+Jon Davies - Box and Poster Artwork
+Chris Mantil - Manual Design & Layout
+Steve Day - Box Design
+Dr. Martin Wendt - Technical Support
+David Simmons - Testing/NTSC Testing
+Andreas Schincaglia - Additional Support
+James Monkman - Manual/Testing
+Tim Harris & Raymond Lejuez - Cartridge Hardware
+
+
+LINKS
+
+For more information on the team involved in this C64 release, visit:
+
+www.rgcd.co.uk (RGCD homepage)
+www.lazycow.de/tigerclaw (TIGER CLAW homepage)
+rgcddev.itch.io/tiger-claw
+
+
+Distributed with the Commodore 64 Ultimate with permission from Matthias Bock.

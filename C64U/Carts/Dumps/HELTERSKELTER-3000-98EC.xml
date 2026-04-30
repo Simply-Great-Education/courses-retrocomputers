@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>HELTERSKELTER-3000-98EC</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5df9d46c72d64c1cc8fa0c595c7c27254e9b076a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3000</Address>
+    <Address>$98EC</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Helter Skelter.g64</SourceFile>
+  <SourceFileSHA1>6076aa6f61925eb6542fd8c7e5bdd956c93b4e74</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x98EC "HELTERSKELTER-3000-98EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $3000 dec $d030" -x "inc $d020" -o "Helter Skelter.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $3000 which:
+  1. Copies 256 bytes of data from $3020 down to $0300 so that the dump can start at $0400
+  2. Sets CIA #2 timer A ($DD04 and $DD05) to allow the game to run properly
+  3. Jumps to the entry point at $98EC (it couldn't use RTS because of the copy overwriting the boot code)</Notes>
+</Metadata>

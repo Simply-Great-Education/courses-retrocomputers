@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>DANDAREIII-9FAD</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>160541f2e2ee2e17258dec2687512c33d8900060</DumpFileSHA1>
+  <SimplifiedName>Dan Dare III - The Escape</SimplifiedName>
+  <JumpAddresses>
+    <Address>$9FAD</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Dan Dare III.tap</SourceFile>
+  <SourceFileSHA1>488fcc689e6b3ab15f904f24feedd0b1b10b6f49</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9FAD "DANDAREIII-9FAD" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Dan Dare III - The Escape.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

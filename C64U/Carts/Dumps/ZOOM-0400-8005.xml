@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>ZOOM-0400-8005</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>925e2040c88603dc027993b00f8050ab3b811de7</DumpFileSHA1>
+  <SimplifiedName>Zoom!</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$8005</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Zoom! [NTSC].g64</SourceFile>
+  <SourceFileSHA1>b3c12d6dc0a6e714e9932132332a644b0c871e5b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8005 "ZOOM-0400-8005" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Zoom!.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 to call the subroutine at $C49D from the original game code before jumping to the entry point which initialises some memory. This allows the game to run correctly on a PAL C64.</Notes>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>GRIDDER-1200</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ade7f4b93ad8799dca1d1e1d2948d096c70a1ab8</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1200</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Gridder.d64</SourceFile>
+  <SourceFileSHA1>d5631a08004fbd9d5b14699614ef4dced4f72a96</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1200 "GRIDDER-1200" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Gridder.prg"</ExomizerCommand>
+</Metadata>

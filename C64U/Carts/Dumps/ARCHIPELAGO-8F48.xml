@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ARCHIPELAGO-8F48</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f3095ee78447f062eced631edda0ac94d0d6cc59</DumpFileSHA1>
+  <SimplifiedName>Archipelago</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8F48</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Archipelago (Talent Computer Systems).tap</SourceFile>
+  <SourceFileSHA1>7307537caedad94d6378ac5727ac0921dc8e13dd</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8F48 "ARCHIPELAGO-8F48" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Archipelago.prg"</ExomizerCommand>
+</Metadata>

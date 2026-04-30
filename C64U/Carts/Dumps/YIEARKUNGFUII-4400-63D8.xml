@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>YIEARKUNGFUII-4400-63D8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>10a72443d1c6c05da0f81e54e6b924ad0f258ffe</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4400</Address>
+    <Address>$63D8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>253</SidLength>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Yie Ar Kung-Fu II.tap</SourceFile>
+  <SourceFileSHA1>7dc12c4ce5b09395985a049e423fcd76f679c4a0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x63D8 "YIEARKUNGFUII-4400-63D8" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $4400 dec $d030" -x "inc $d020" -o "Yie Ar Kung-Fu II (J1).prg"</ExomizerCommand>
+  <Notes>Filled out the screen buffer at $4400 with all spaces and placed an init routine and 512 bytes of code there, which is copied down from $4500 to $0200 where it was placed by the loader originally (the screen buffer at $4400 is constantly rewritten when displaying the title screen, so this does no harm). This allows us to keep this data above the dump start address of $0400.
+  As the copy routine writes over our loader code at $033C, we do not RTS, but rather jump to the entry point ($63D8) at the end of it.</Notes>
+</Metadata>

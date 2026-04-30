@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BRIDEOFFRANKENSTEIN-100C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a45572bbeeef19c30df6b137687b5ab04a9eb377</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$100C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Bride of Frankenstein.tap</SourceFile>
+  <SourceFileSHA1>8214a506e425e92b30ec367ee186adc568d70e9e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x100C "BRIDEOFFRANKENSTEIN-100C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Bride of Frankenstein.prg"</ExomizerCommand>
+</Metadata>

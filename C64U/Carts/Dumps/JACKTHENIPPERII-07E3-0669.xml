@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>JACKTHENIPPERII-07E3-0669</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4e5272f88b734db65789e1884ac6ae69e3b84ad9</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$07E3</Address>
+    <Address>$0669</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Jack the Nipper II.tap</SourceFile>
+  <SourceFileSHA1>1fb9ce281d8b7f22767302474c2ffb0d09c91610</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0669 "JACKTHENIPPERII-07E3-0669" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $07e3 dec $d030" -x "inc $d020" -o "Jack the Nipper II.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $07E3 to set $D1 to zero before start, as otherwise the games crashes (maybe an attempt at an obfuscated protection?)
+  As the original did not have a loading screen, the one included was converted from the Amstrad CPC version by DATA-LAND of Technische Maschinenfabrik (https://csdb.dk/scener/?id=4845).</Notes>
+</Metadata>

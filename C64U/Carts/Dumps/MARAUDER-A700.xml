@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MARAUDER-A700</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>2a6af33a29b2fed059142a30e71fc2fdbdb9541e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$A700</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Marauder.tap</SourceFile>
+  <SourceFileSHA1>6c3984580af8f11625ca4f0c7ae927ec5957b8b8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xA700 "MARAUDER-A700" -Di_table_addr=0x02 -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Marauder.prg"</ExomizerCommand>
+</Metadata>

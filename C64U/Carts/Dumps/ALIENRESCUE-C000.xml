@@ -1,0 +1,24 @@
+﻿<Metadata>
+  <DumpFile>ALIENRESCUE-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2e575f8afea8da22e149ce0524b7ac93af9104ac</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Alien Rescue.tap</SourceFile>
+  <SourceFileSHA1>980c6042bae9d8ee0b52447d2d6e5ca24f3c4a72</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "ALIENRESCUE-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Alien Rescue (J1).prg"</ExomizerCommand>
+  <Notes>This game has a BASIC program to display the title screen, so the following steps were taken to retain this:
+  1. When the title screen was shown, the BASIC program from $0801 to $0B20 was dumped to disk. This is because the first part of the program gets overwritten later with a SYS 8192 ($2000) statement to start the game once it's finished loading.
+  2. When the breakpoint at $2000 was hit, the BASIC program dumped in step 1 was restored into memory before the game memory dump was taken.
+  3. The SYS 2818 statement on line 300 has also been changed to SYS 8192 ($2000), which is actually the games entry point after loading. This allows the code to jump to the games entry point after the title screen is displayed.
+  4. A new routine was placed at $C000 which sets up the correct VICII settings and necessary BASIC pointers and runs the title screen program. 
+  
+  Also, this game had a form of simple copy protection which checked that the first letter of the game filename 'R' (as part of 'RESCUE') was present at $0342 in the tape buffer, just as it would be if the game was loaded from tape and would hang if not. Therefore, the BNE $2014 instruction at $2014 was changed to BNE $2016 to remove this check. 
+  
+  Note: to dump, simply set a breakpoint on $2000</Notes>
+</Metadata>

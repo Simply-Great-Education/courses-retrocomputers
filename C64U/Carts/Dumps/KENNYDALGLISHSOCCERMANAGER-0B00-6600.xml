@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>KENNYDALGLISHSOCCERMANAGER-0B00-6600</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c0732da1d7f12dcac41c2c9313244cdffa21d276</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0B00</Address>
+    <Address>$6600</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Kenny Dalglish Soccer Manager.tap</SourceFile>
+  <SourceFileSHA1>b833ba563ae3acd3533a12e1db20987eeb26534e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6600 "KENNYDALGLISHSOCCERMANAGER-0B00-6600" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0b00 dec $d030" -x "inc $d020" -o "Kenny Dalglish Soccer Manager.prg"</ExomizerCommand>
+</Metadata>

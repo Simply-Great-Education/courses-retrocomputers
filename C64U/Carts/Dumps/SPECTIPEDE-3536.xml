@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SPECTIPEDE-3536</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e0bfb25ba5f80a80ac30ccb87d3a55a4bada406f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3536</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Spectipede.tap</SourceFile>
+  <SourceFileSHA1>df2e61a6e882afcb046c121e2bfa9f471303f81b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3536 "SPECTIPEDE-3536" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Spectipede (J1).prg"</ExomizerCommand>
+</Metadata>

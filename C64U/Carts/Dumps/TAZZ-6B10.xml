@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>TAZZ-6B10</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e03bb37b5a25849857e1d6d7af699caba82bfbcc</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$6B10</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Tazz.tap</SourceFile>
+  <SourceFileSHA1>67f7827a2387b1fbda57cf382cf2496fe4695060</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6B10 "TAZZ-6B10" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Tazz.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>PAKUPAKU-7600</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>237b02fa2f971f4d24792f1093a6139e25bdf493</DumpFileSHA1>
+  <SimplifiedName>Paku Paku (Deathshadow  - 2012)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$7600</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Paku Paku (Deathshadow - 2012).prg</SourceFile>
+  <SourceFileSHA1>775bdbc7da532d5f0f0552b506dc17447924e063</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "PAKUPAKU-7600" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Paku Paku (Deathshadow  - 2012).prg"</ExomizerCommand>
+</Metadata>

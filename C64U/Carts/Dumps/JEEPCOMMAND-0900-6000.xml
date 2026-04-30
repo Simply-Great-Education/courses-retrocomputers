@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>JEEPCOMMAND-0900-6000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6a0cd1a2f3dbf353e36d5492e64ee235f5035f2b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0900</Address>
+    <Address>$6000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Jeep Command.tap</SourceFile>
+  <SourceFileSHA1>e9ac256b64af051d9c09adc7f3e5391686ddbd66</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6000 "JEEPCOMMAND-0900-6000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0900 dec $d030" -x "inc $d020" -o "Jeep Command (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0900 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to run correctly.</Notes>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>THEEMPIRESTRIKESBACK-0B53</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cbe559663a61f073e27e5b5cb8fcbd2ed56698e6</DumpFileSHA1>
+  <SimplifiedName>Empire Strikes Back, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0B53</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Empire Strikes Back The.tap</SourceFile>
+  <SourceFileSHA1>d862df71868e6670687490bfcfc419b80730bb6b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0B53 "THEEMPIRESTRIKESBACK-0B53" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Empire Strikes Back, The.prg"</ExomizerCommand>
+</Metadata>

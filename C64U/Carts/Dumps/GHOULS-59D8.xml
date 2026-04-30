@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>GHOULS-59D8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>24d7c6fa896174cc454eb80abb8e467782e98195</DumpFileSHA1>
+  <SimplifiedName>Ghouls</SimplifiedName>
+  <JumpAddresses>
+    <Address>$59D8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Ghouls (Version 1).tap</SourceFile>
+  <SourceFileSHA1>8335beab985bef4af7c457af6c99b1d72416537e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x59D8 "GHOULS-59D8" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ghouls.prg"</ExomizerCommand>
+</Metadata>

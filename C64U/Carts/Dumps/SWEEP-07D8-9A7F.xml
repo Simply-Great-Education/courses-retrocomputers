@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>SWEEP-07D8-9A7F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f5f60731ff2ea7d0903068baa9e58a98183f49d5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$07D8</Address>
+    <Address>$9A7F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Sweep.tap</SourceFile>
+  <SourceFileSHA1>793f2c86bde4675eea50a4d375abe6fe2f206795</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9A7F "SWEEP-07D8-9A7F" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $07d8 dec $d030" -x "inc $d020" -o "Sweep.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $07D8 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to start correctly.
+  Note: as this game is actually frozen, the game starts at $9B2B. However the true start address is $9A7F.</Notes>
+</Metadata>

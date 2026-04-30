@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>IMPOSSIBLEMISSION-0581-04AE</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>07c33f0695b5603ecc069ff1c1cdf1b3a2dfabc3</DumpFileSHA1>
+  <SimplifiedName>Impossible Mission</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0581</Address>
+    <Address>$04AE</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Impossible Mission (Version 2).tap</SourceFile>
+  <SourceFileSHA1>177536564d9d242ae0f9390069e0166c094b57ab</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x04AE "IMPOSSIBLEMISSION-0581-04AE" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0581 dec $d030" -x "inc $d020" -o "Impossible Mission.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0581 which:
+  1. Sets values on the stack between $01FC and $01FE to allow the game to run correctly.
+  2. Jumps to the entry point at $04AE (it couldn't use RTS because of the stack manipulation above).
+  
+  The loading screen was taken from the disk version.</Notes>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BOMBMANIA-2EDA</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ad1735a5732547e182c9e7d9f4d43cf34582f264</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2EDA</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Bomb Mania.g64</SourceFile>
+  <SourceFileSHA1>f00f81693475f05b0fe1f9cc605117d5fdcd9db0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2EDA "BOMBMANIA-2EDA" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bomb Mania.prg"</ExomizerCommand>
+</Metadata>

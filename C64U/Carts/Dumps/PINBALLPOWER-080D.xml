@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>PINBALLPOWER-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>120f375d9318155dc8e6ef500494af146c3efaaa</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>3D Pinball - Pinball Power.tap</SourceFile>
+  <SourceFileSHA1>9a97653ac9d819d7dfcea6f8dc37ecda70193494</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x080D "PINBALLPOWER-080D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "3D Pinball - Pinball Power (J1).prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

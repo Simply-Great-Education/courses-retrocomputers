@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>PURPLETURTLES-9E3A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a876333263eb9e46b4027a055f2ce154d4f36323</DumpFileSHA1>
+  <SimplifiedName>Purple Turtles</SimplifiedName>
+  <JumpAddresses>
+    <Address>$9E3A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Purple Turtles (Quicksilva).tap</SourceFile>
+  <SourceFileSHA1>0c62f309de27d55f8c31f87ca25d2113ceff526f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9E3A "PURPLETURTLES-9E3A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Purple Turtles.prg"</ExomizerCommand>
+</Metadata>

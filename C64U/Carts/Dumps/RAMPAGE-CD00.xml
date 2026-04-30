@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>RAMPAGE-CD00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>06710765e5d763c0c94fd10cd2e5a70a39c0084b</DumpFileSHA1>
+  <SimplifiedName>Rampage</SimplifiedName>
+  <JumpAddresses>
+    <Address>$CD00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Rampage (Version 3).tap</SourceFile>
+  <SourceFileSHA1>46ec4962dbd613e0a2e52917f0d11c4d04c867b2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCD00 "RAMPAGE-CD00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Rampage.prg"</ExomizerCommand>
+</Metadata>

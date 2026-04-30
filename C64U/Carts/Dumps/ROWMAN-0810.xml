@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ROWMAN-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a817a2a3c94be0a5d55aa1e8b81d08ceea3acc9d</DumpFileSHA1>
+  <SimplifiedName>Rowman</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Rowman (Darro99 - 2022).prg</SourceFile>
+  <SourceFileSHA1>08efc333690bc90a16114a2569c399fcbe745459</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "ROWMAN-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Rowman.prg"</ExomizerCommand>
+</Metadata>

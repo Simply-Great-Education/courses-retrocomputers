@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>HAMPSTEAD-8400-C07A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7bcaa5d32c5933662305226191a75d3821822ff7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8400</Address>
+    <Address>$C07A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3F</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Hampstead.tap</SourceFile>
+  <SourceFileSHA1>a38d85d63762d1e3e586282c48866075ad1d672a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC07A "HAMPSTEAD-8400-C07A" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3f sta $01 jsr $8400 dec $d030" -x "inc $d020" -o "Hampstead.prg"</ExomizerCommand>
+  <Notes>Added a routine at $8400 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

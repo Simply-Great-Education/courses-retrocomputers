@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ZOOMIES-6000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6c4d7ab010fd506d88f52f1c82bc9f6993fe7636</DumpFileSHA1>
+  <SimplifiedName>Zoomies!</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Zoomies! (Second Dimension - 2022).prg</SourceFile>
+  <SourceFileSHA1>e6bb862491c9ac08d02b869c5e64685065605918</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6000 "ZOOMIES-6000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Zoomies!.prg"</ExomizerCommand>
+</Metadata>

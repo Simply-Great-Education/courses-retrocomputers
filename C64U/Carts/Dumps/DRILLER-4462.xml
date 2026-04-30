@@ -1,0 +1,24 @@
+﻿<Metadata>
+  <DumpFile>DRILLER-4462</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>012acc5fc8b7e75d72ce52ccce0f82f1a2723e2b</DumpFileSHA1>
+  <SimplifiedName>Driller</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4462</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>DRILLER-CRAM-8E00</ColourRAMFile>
+  <ColourRAMStartAddress>$8E00</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>620</SidLength>
+  <SourceFile>Driller (Incentive).tap</SourceFile>
+  <SourceFileSHA1>77ac26d47f2a3207e943ab30583cf3eb5851e24d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4462 "AlternativeFormats\PRGs\Uncrunched\Driller.prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $8e00 lda #$37 sta $01 dec $d030" -x "inc $d020" -o "Driller.prg"</ExomizerCommand>
+  <Notes>Inserted byte packed colour RAM data (512 bytes) to dump file at $8E00 to restore before starting the game.
+  Also changed the SEI instruction at $D154 to be RTS instead, which disables the manual protection check when starting the game, or loading a saved game.
+  
+  As the game itself plays the SID tune too fast (it's synced against CIA#1 timer A at 60Hz, instead of the raster interrupt at 50Hz on a PAL C64), the SID music is now used in the simulated tape loader for the cartridge so that it can be played at the speed originally intended by Matt Gray.</Notes>
+</Metadata>

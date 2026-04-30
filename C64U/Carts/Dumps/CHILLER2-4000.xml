@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>CHILLER2-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>be666505ce88622f2e772fb8a6cabd2e660e4625</DumpFileSHA1>
+  <SimplifiedName>Chiller 2 (Cosine Systems - 2020)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>Classic</RasterBarType>
+  <SidLength>113</SidLength>
+  <SourceFile>Chiller 2.tap</SourceFile>
+  <SourceFileSHA1>378aff9b0a696c53708999717118444ca68747f4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "CHILLER2-4000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Chiller 2 (Cosine Systems - 2020).prg"</ExomizerCommand>
+</Metadata>

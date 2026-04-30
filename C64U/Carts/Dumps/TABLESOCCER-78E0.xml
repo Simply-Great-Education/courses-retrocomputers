@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>TABLESOCCER-78E0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f09dadf60a1864ad8248da5934b21eec47ae0b03</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$78E0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Table Soccer.tap</SourceFile>
+  <SourceFileSHA1>475d1452d45cbf8e277ff5bd922734ec96da21be</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x78E0 "TABLESOCCER-78E0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Table Soccer.prg"</ExomizerCommand>
+</Metadata>

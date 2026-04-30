@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>INTERNATIONALSPEEDWAY-0400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>37915127d9e30490a6f171a3d73de05b8fec1328</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>International Speedway.tap</SourceFile>
+  <SourceFileSHA1>c072b4719994386c3305f74d3d7a9fc52a7ed434</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0400 "INTERNATIONALSPEEDWAY-0400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "International Speedway.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>TRACKSUITMANAGER-6480-11FD</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4cb51f5d2cb2057d8f4a5d0ab7a12035334f2abe</DumpFileSHA1>
+  <SimplifiedName>Tracksuit Manager</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6480</Address>
+    <Address>$11FD</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>TRACKSUITMANAGER-CRAM-6500</ColourRAMFile>
+  <ColourRAMStartAddress>$6500</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>Tracksuit Manager (Version 2).tap</SourceFile>
+  <SourceFileSHA1>4fa5550b6f042675a3b4c208d158a3e8e241a028</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x11FD "AlternativeFormats\PRGs\Uncrunched\Tracksuit Manager.prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $6500 lda #$37 sta $01 jsr $6480 dec $d030" -x "inc $d020" -o "Tracksuit Manager.prg"</ExomizerCommand>
+  <Notes>Added a routine at $6480 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  Also modified the text on the loading screen "LOADING GAME ... PLEASE WAIT" to "PRESS ANY KEY TO CONTINUE" so as to make more sense.</Notes>
+</Metadata>

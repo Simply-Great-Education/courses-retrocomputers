@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>MASTERCHESS-0900-8000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2c068c60f7828df002164f2f326bc56d62ddad8b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0900</Address>
+    <Address>$8000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Master Chess.tap</SourceFile>
+  <SourceFileSHA1>b79b81775aa6bd1a225efdc9ba89d89812e0400a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8000 "MASTERCHESS-0900-8000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0900 dec $d030" -x "inc $d020" -o "Master Chess.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0900 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.
+  
+  Also zeroed out the following memory ranges as they contained an unnecessary repeating memory block:
+  
+  $08C0 - $1FFF
+  $4330 - $7FFF
+  $C9A0 - $CFFF</Notes>
+</Metadata>

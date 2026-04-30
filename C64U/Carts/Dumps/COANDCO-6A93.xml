@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>COANDCO-6A93</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4a7f8e42eebb0e19c2d084c38ee403dec7a13cfa</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$6A93</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Co and Co.tap</SourceFile>
+  <SourceFileSHA1>877627c2ac95e0598b89566e2b89e5e47edad06d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6A93 "COANDCO-6A93" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Co and Co.prg"</ExomizerCommand>
+</Metadata>

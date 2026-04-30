@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>IKARIWARRIORS-ELITE-0F80</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3700e0ff7d55521110c2ac08d02bfc74dfa6dae0</DumpFileSHA1>
+  <SimplifiedName>Ikari Warriors (Elite)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0F80</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>222</SidLength>
+  <SourceFile>Ikari Warriors.tap</SourceFile>
+  <SourceFileSHA1>89e8505423be3d00cf1dd14d89210980f80607fa</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0F80 "IKARIWARRIORS-ELITE-0F80" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Ikari Warriors (Elite).prg"</ExomizerCommand>
+</Metadata>

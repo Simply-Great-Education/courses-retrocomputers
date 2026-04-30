@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>DARKSIDE-07C5-467C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>961ba179eaedff89e6604d19096ab6163701a2ca</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$07C5</Address>
+    <Address>$467C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Dark Side.tap</SourceFile>
+  <SourceFileSHA1>32fcfba9db02f6402367f384f241db5afa1e7517</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x467C "DARKSIDE-07C5-467C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $07c5 dec $d030" -x "inc $d020" -o "Dark Side.prg"</ExomizerCommand>
+  <Notes>Copied colour RAM to $D800 in actual ram and then added an init routine at $07C5 to restore back to colour RAM from there. This allows the game to start after the decrunching step of the original and thus more quickly.</Notes>
+</Metadata>

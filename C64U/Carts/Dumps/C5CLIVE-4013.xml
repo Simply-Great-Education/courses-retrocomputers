@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>C5CLIVE-4013</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6dc635dda80c7eed98ecb8c672264e59337d09fc</DumpFileSHA1>
+  <SimplifiedName>C5 Clive</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4013</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>C5 Clive (Version a) [X].tap</SourceFile>
+  <SourceFileSHA1>23c69d87ed6b47b76b5c9f65fdf8a722e1cf3caa</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4013 "C5CLIVE-4013" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "C5 Clive.prg"</ExomizerCommand>
+  <Notes>The loading screen is based on the Spectrum version</Notes>
+</Metadata>

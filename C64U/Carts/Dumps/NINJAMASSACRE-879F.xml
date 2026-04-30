@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>NINJAMASSACRE-879F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>42256dce20010e91cc8af6c2207047a8aa9d9bcf</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$879F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Ninja Massacre.tap</SourceFile>
+  <SourceFileSHA1>aac3c875b33ab2364314230106ad1d58729253dc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x879F "NINJAMASSACRE-879F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ninja Massacre (J1).prg"</ExomizerCommand>
+</Metadata>

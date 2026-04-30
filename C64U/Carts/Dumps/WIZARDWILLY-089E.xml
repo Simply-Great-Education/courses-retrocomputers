@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>WIZARDWILLY-089E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>49edca4ad5f9008cd2203507e7061ed46efd6402</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$089E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Wizard Willy.tap</SourceFile>
+  <SourceFileSHA1>f9a14fe69cc25e246563c18f8fa4cd4d59eb3ce9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x089E "WIZARDWILLY-089E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Wizard Willy.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

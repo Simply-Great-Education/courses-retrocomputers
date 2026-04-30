@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>GRIDZONEREMIX-500B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>faa8b74cd7823b4d09a31fb20664d843b2d8fcca</DumpFileSHA1>
+  <SimplifiedName>Grid Zone Remix (TND - 2005)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$500B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>145</SidLength>
+  <SourceFile>Grid Zone Remix (Version 2).tap</SourceFile>
+  <SourceFileSHA1>63e493ba8e37d65709a462b39654a43fabc5616f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x500B "GRIDZONEREMIX-500B" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Grid Zone Remix (TND - 2005).prg"</ExomizerCommand>
+  <Notes>Note: As this game is actually frozen, the game starts at $C08A. However the true start address is $500B.</Notes>
+</Metadata>

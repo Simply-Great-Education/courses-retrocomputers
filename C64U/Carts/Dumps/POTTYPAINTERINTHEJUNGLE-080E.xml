@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>POTTYPAINTERINTHEJUNGLE-080E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>de3d54b5109e1804c35d5cee44856ee276b5c45a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080E</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Potty Painter - In the Jungle.tap</SourceFile>
+  <SourceFileSHA1>4ff6c1fe35787cef5ce14ef21408b22e5018bdad</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "POTTYPAINTERINTHEJUNGLE-080E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Potty Painter - In the Jungle.prg"</ExomizerCommand>
+  <Notes>The following changes were made to allow the game to start on the title screen instead of in game:
+  1. Added a routine at $3000 which:
+      a) Sets the current device number ($BA) to $01 (tape) to allow the game to run correctly
+      b) Executes the code copied from $09E1 to $09FA
+      c) Sets the screen colour to yellow
+      d) Jumps to $12B5
+  2. Patched the JMP $09DE instruction at $0813 to be JMP $3000 instead</Notes>
+</Metadata>

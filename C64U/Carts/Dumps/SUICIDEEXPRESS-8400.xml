@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SUICIDEEXPRESS-8400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8191dc500d7cf13e97534f86730cae3b857e3c78</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Suicide Express.tap</SourceFile>
+  <SourceFileSHA1>792a1771e60d469beea0b47c6862450bece65dbb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8400 "SUICIDEEXPRESS-8400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Suicide Express.prg"</ExomizerCommand>
+</Metadata>

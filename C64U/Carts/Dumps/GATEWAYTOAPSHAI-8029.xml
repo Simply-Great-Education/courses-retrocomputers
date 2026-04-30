@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>GATEWAYTOAPSHAI-8029</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>303ffc6f67a07f1b1dc45fa6030bb67463e2bd7e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8029</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Gateway to Apshai.g64</SourceFile>
+  <SourceFileSHA1>09c27dfdd63423a1c6613f4485e9f0b8c9592a5f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8029 "GATEWAYTOAPSHAI-8029" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Gateway to Apshai.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>FORBIDDENFOREST-1A00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4b1c1cf43322f95367fc57bed7dfe8bcfef243dc</DumpFileSHA1>
+  <SimplifiedName>Forbidden Forest</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1A00</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Forbidden Forest (US Gold).tap</SourceFile>
+  <SourceFileSHA1>25d5401115e2eb75965f5f33fd57f65829afedb2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "FORBIDDENFOREST-1A00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Forbidden Forest.prg"</ExomizerCommand>
+</Metadata>

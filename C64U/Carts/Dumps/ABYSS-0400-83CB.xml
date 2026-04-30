@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>ABYSS-0400-83CB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ae4428e88f8fd7b45833a8d776867c664d4b2e72</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$83E0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Abyss.tap</SourceFile>
+  <SourceFileSHA1>9c36085b41b4a6a2321afa4b8528ffe8662f0183</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x83E0 "ABYSS-0400-83CB" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "Abyss.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 which copies 256 bytes of data from $0420 down to $0000 so that the dump can start at $0400. This allows the game to run correctly.
+  
+  Note: As this game is actually frozen, the game starts at $7E25. However the true start address is $83CB.</Notes>
+</Metadata>

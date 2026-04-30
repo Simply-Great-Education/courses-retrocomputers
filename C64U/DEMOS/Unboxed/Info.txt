@@ -1,0 +1,15 @@
+Unboxed was released on 3 November 2018.
+
+
+Bonzai was founded in August 1988.
+
+Check out more of their releases at https://csdb.dk/group/?id=631
+
+
+Distributed with the Commodore 64 Ultimate with permission from Trap/Bonzai.
+
+
+
+Trivia: load the demo from side 2 and also from side 3 for an extra screen at the beginning.
+
+Note: the 6581 edition is for the old SID chip. 

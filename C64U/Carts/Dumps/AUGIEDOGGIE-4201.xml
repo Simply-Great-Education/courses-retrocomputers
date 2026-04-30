@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>AUGIEDOGGIE-4201</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2e6da0f5e7591bb860f3e44f98dc8f7e2f373492</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4201</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Augie Doggie and Doggie Daddy.tap</SourceFile>
+  <SourceFileSHA1>57cd1966ce43333bdcf9f1e82181827bff98364c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4201 "AUGIEDOGGIE-4201" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Augie Doggie and Doggie Daddy.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>BULLYSSPORTINGDARTS-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9636b376a2b6861b52d12e26e2bed930cf3f650c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Bully's Sporting Darts.tap</SourceFile>
+  <SourceFileSHA1>875ff791023b68062f113e76a294f8602a8c85d7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "BULLYSSPORTINGDARTS-080D" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bully's Sporting Darts.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

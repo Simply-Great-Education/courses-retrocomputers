@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SEAQUEST-34FF</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ad7c7b5c84a3e5e3550bfb978dcdd7ce9cffb02a</DumpFileSHA1>
+  <SimplifiedName>Seaquest</SimplifiedName>
+  <JumpAddresses>
+    <Address>$34FF</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Seaquest (Haplo - 2021).d64</SourceFile>
+  <SourceFileSHA1>b81681a989fab200702fa9a27054a12d9f32270c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x34FF "SEAQUEST-34FF" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Seaquest.prg"</ExomizerCommand>
+</Metadata>

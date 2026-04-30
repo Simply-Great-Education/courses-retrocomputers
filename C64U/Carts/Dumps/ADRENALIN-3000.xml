@@ -1,0 +1,29 @@
+﻿<Metadata>
+  <DumpFile>ADRENALIN-3000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0789ea6c75eeda3811df1548564bd237157c7e3f</DumpFileSHA1>
+  <SimplifiedName>Adrenalin</SimplifiedName>
+  <JumpAddresses>
+    <Address>$3000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Adrenalin (Magic Disk 64 - 1991-11 - Side 2).d64</SourceFile>
+  <SourceFileSHA1>2615961701c90cb8dd026b31afb76a9f232f8b5b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3000 "ADRENALIN-3000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Adrenalin.prg"</ExomizerCommand>
+  <Notes>The following steps were taken to only display the intro once and not attempt to reload it from disk between plays:
+  
+  1. Both the intro and game PRGs from the original disk were fully decrunched
+  2. Then for the game PRG:
+      a) removed the calls to the kernal load routine ($FFD5) at $4029 and the kernal save routine ($FFD8) at $6448 to remove disk access from the game (for high score loading and saving)
+      b) the JMP $6294 instruction at $6190 was changed to JMP $CF00
+      c) the onscreen message displayed on game over was modified at $6EE2 to remove the reference to reloading the intro by pressing fire
+      d) a new routine was placed at $CF00 which resets the SID registers, calls the SID tune init routine at $8000 and then sets $4313 to $21 (this is needed for the music to play properly), before jumping to $4000 to start a new game.
+      e) it was then crunched with TSCrunch (https://csdb.dk/release/?id=216394)
+  3. And for the intro PRG:
+      a) the code for loading the game PRG from disk at $9000 was removed
+      b) the JMP $9000 instruction at $30D7 was changed to JMP $8200
+      c) a new routine was placed at $8200 which resets machine state and then copies a copy routine to the stack and executes it. This routine copies the crunched game PRG from $A000 back down to $0801 and starts it with the BASIC RUN command (the start address for the game itself is $4000).
+  5. A new PRG (the dumpfile) was created by placing the uncrunched intro at $0801 and the newly crunched game at $C000</Notes>
+</Metadata>

@@ -1,0 +1,25 @@
+Ultiverzum was released 9 September 2023 by Singular.
+
+The first Commodore 64 demo for 48MHz mode.
+
+
+
+Quick steps to run this demo:
+
+Option 1 (quickest)
+a) Select "RunMeFirst.cfg" and select Load Settings, then select Ok.
+b) Select "Ultiverzum.d64" and select Run Disk.
+
+Option 2
+a) Select Turbo Boost
+b) Select Turbo Control and change to "Manual"
+c) Select CPU Speed and change to "48 MHz"
+d) Ensure Badline timing is set to "Enabled"
+e) Save to Flash
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Scorpy.
+
+
+More demos from Singular - https://csdb.dk/group/?id=514

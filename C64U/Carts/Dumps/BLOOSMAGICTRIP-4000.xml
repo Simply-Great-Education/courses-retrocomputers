@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>BLOOSMAGICTRIP-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>aa323aab86b3b965197c7955d62043568a2e54c4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Bloo's Magic Trip.d64</SourceFile>
+  <SourceFileSHA1>31768fb027d5540a764cede0e609cff5beb5d243</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "BLOOSMAGICTRIP-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bloo's Magic Trip.prg"</ExomizerCommand>
+</Metadata>

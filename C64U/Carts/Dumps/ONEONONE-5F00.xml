@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>ONEONONE-5F00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>be7e08ac5251b366f3619da3f1cb4f1e7c2c2dfc</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5F00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>One on One.tap</SourceFile>
+  <SourceFileSHA1>61610a942352d65b41138fb0099c746b0983d802</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5F00 "ONEONONE-5F00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "One on One (J1).prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

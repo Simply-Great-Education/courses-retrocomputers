@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>MISSIONIMPOSSIBUBBLE-9F8A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>eed86a1cc19e1fe27965a53870a6996b114e23c4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9F8A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <ColourRAMFile>MISSIONIMPOSSIBUBBLE-CRAM-4F00</ColourRAMFile>
+  <ColourRAMStartAddress>$4F00</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <SourceFile>Mission Impossibubble.tap</SourceFile>
+  <SourceFileSHA1>a4518d4dabe967d8b2ef5358dffada15cb42468c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9F8A "AlternativeFormats\PRGs\Uncrunched\Mission Impossibubble.prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $4f00 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Mission Impossibubble.prg"</ExomizerCommand>
+  <Notes>As this game is sloppily frozen, you must set a breakpoint at $9F8A and then start a game without actually playing it. Once all of your lives are gone and the game over message is shown, pressing fire should cause the breakpoint to be hit and a dump can be taken.</Notes>
+</Metadata>

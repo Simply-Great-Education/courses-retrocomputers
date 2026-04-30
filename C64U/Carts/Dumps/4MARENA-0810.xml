@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>4MARENA-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a20feaebe0851748f8d743378f3f99d75633567d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>4M Arena (Darro99 &amp; Erazzking - 2021).prg</SourceFile>
+  <SourceFileSHA1>598586bc9885ed9c45123cfb6bbf8c7d81a75677</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0810 "4MARENA-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "4M Arena (Darro99 &amp; Erazzking - 2021).prg"</ExomizerCommand>
+  <Notes>Added LDA #$24 and STA $47 instructions before the JMP $9FD9 instruction at $0852 to ensure the title music plays at the correct speed.</Notes>
+</Metadata>

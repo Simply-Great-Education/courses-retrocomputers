@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>MATTERHORNSCREAMER-C600-0AB2</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e5e1d051f981bbb1f5b841682a96b1661decf7a5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C600</Address>
+    <Address>$0AB2</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Matterhorn Screamer!.d64</SourceFile>
+  <SourceFileSHA1>5b988d1f5fa4b1bfa3bdb89a8117687f57f47e8c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0AB2 "MATTERHORNSCREAMER-C600-0AB2" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c600 dec $d030" -x "inc $d020" -o "Matterhorn Screamer!.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C600 which:
+  1. Turns off interrupts from the two CIA chips and acks any pending CIA interrupts.
+  2. Copies 256 bytes of data from $C690 down to $0000 and 512 bytes of data from $C790 to $0200 so that the dump can start at $0400.
+  3. Sets up the correct VICII settings and border colour.
+  4. Runs the first part of the init routine (copied from $1D3C - $1D72), which was executed in the original loader.
+  5. Re-enables raster interrupts and timer NMIs.
+  6. Jumps to the entry point at $0AB2 (it couldn't use RTS because of the copy above overwriting the boot code).</Notes>
+</Metadata>

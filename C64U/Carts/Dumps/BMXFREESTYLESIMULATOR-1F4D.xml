@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BMXFREESTYLESIMULATOR-1F4D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8e1c39f5f12a27119f9f0cbc5fe8158939e9b181</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1F4D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>BMX Freestyle Simulator.tap</SourceFile>
+  <SourceFileSHA1>1731810edf40b03c1861cf34bb7d1fb977385620</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1F4D "BMXFREESTYLESIMULATOR-1F4D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "BMX Freestyle Simulator.prg"</ExomizerCommand>
+</Metadata>

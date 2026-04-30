@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>MOONCRESTA-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>178babd412f5a376f1fd1a52a526b1affe8f0d86</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Moon Cresta.tap</SourceFile>
+  <SourceFileSHA1>708c4a37915f4de225e3a41eede67db25266efe1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "MOONCRESTA-4000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Moon Cresta.prg"</ExomizerCommand>
+  <Notes>The following modifications were made:
+  1. Patched the LDA #$01 instruction at $4010 to be LDA #$00 instead so that $18 gets set to $00 in the following instruction. This causes the game to default to the joystick in port 2 instead of keyboard on startup.
+  2. Patched the LDX $DC01 instructions at $5C9D and $5FF9 (these are where the keyboard is checked on the two title screens) to be JSR $1000 instead.
+  3. Added a small routine at $1000 to check the fire button in port 2 - if pressed, then the settings screen is shown in the same way as if a key is pressed.</Notes>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>ZODIAC-46F4</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fd9280eb290d09679fc47d222de2488a078563e8</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$46F4</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Zodiac.tap</SourceFile>
+  <SourceFileSHA1>d2a9f38f96e518cd1a7c970cb4ea1cf02fc161aa</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x46F4 "ZODIAC-46F4" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Zodiac.prg"</ExomizerCommand>
+</Metadata>

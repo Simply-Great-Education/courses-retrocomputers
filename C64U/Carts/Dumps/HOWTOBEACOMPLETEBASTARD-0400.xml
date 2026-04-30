@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>HOWTOBEACOMPLETEBASTARD-0400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>230a90c1126ad772e93a0d099615f0d685eff53f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$76</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>How to be a Complete Bastard.tap</SourceFile>
+  <SourceFileSHA1>34c6c4fcdbf1d390d6b102a5e7cd40bf59f842c2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0400 "HOWTOBEACOMPLETEBASTARD-0400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$76 sta $01 dec $d030" -x "inc $d020" -o "How to be a Complete Bastard.prg"</ExomizerCommand>
+</Metadata>

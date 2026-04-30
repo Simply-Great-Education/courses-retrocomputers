@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>STEIGAR-9D00-1100</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2823da42437df1c02c72062d79a69d9d34d9d3ce</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9D00</Address>
+    <Address>$1100</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Steigar.tap</SourceFile>
+  <SourceFileSHA1>0510d4a664f6b5787b1e1c72a44c1283730be978</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1100 "STEIGAR-9D00-1100" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $9d00 dec $d030" -x "inc $d020" -o "Steigar.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $9D00 which copies 512 bytes of data from $9D20 down to $0200 so that the dump can start at $0400.
+  It then jumps to the entry point at $1100 (it couldn't use RTS because of the copy overwriting the boot code).</Notes>
+</Metadata>

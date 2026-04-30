@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>CHAINREACTION-040E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b21cc6531478e621bd5935b8ea0d8eaa17824d1b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$040E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Chain Reaction.tap</SourceFile>
+  <SourceFileSHA1>474c91718645e4131766b511b27aefbc7fa84291</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x040E "CHAINREACTION-040E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Chain Reaction.prg"</ExomizerCommand>
+</Metadata>

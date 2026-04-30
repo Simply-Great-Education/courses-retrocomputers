@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>MARIOBROS-OCEAN-4900-062E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>af9f3d5215e87fc8b378c86969167e14d65c8b00</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4900</Address>
+    <Address>$062E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>202</SidLength>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Mario Bros (Ocean).tap</SourceFile>
+  <SourceFileSHA1>f54834ac1aeb0a4a2b9fc418e085c26f2cb2e0a0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x062E "MARIOBROS-OCEAN-4900-062E" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $4900 dec $d030" -x "inc $d020" -o "Mario Bros (Ocean) (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $4900 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to run correctly.</Notes>
+</Metadata>

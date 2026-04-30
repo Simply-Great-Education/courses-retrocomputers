@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>TROPICALFEVER-0A00-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>99006d4afcdf4fa3b7732e714932bf99f4df1057</DumpFileSHA1>
+  <SimplifiedName>Tropical Fever</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0A00</Address>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Tropical Fever (Tequila Sunrise Software).tap</SourceFile>
+  <SourceFileSHA1>a89bdf8e84c71361e80abda638e60868fa379714</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "TROPICALFEVER-0A00-1000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0a00 dec $d030" -x "inc $d020" -o "Tropical Fever.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0A00 which:
+  1. Copies 512 bytes of data from $0A20 down to $0100 so that the dump can start at $0400
+  2. Sets the CIA #2 Port B data direction register ($DD03) to $02
+  3. Sets the stack pointer to $F9
+  4. It then jumps to the entry point at $1000 (it couldn't use RTS because of the manipulation of the stack)</Notes>
+</Metadata>

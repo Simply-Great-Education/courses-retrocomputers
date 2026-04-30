@@ -1,0 +1,28 @@
+﻿<Metadata>
+  <DumpFile>LEADERBOARDTOURNAMENT-0757-0F9E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>37ffb00151f1ef315e946178e403e7f0c06487bc</DumpFileSHA1>
+  <SimplifiedName>Leaderboard Tournament</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0757</Address>
+    <Address>$0F9E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Leaderboard (Tournament Disk 1).d64</SourceFile>
+  <SourceFileSHA1>17013bbb0aa0246dfe9a87d345457b3f764a614e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0F9E "LEADERBOARDTOURNAMENT-0757-0F9E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0757 dec $d030" -x "inc $d020" -o "Leaderboard Tournament.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0757 to copy the colour RAM data from $6400 (where it was present in the original game) and display the loading screen. It then waits for any key or the fire button on either joystick to enter the game.
+
+  Also removed the protection which checked for a special dongle plugged into the cassette port, or the play, record, fast forward or rewind buttons on the datasette being pressed by checking the value in the processor port ($01):
+
+  1. $0AA2, $112F and $A03C were changed from LDA #$10 ($A9, $10) to LDA #$00 ($A9, $00)
+
+  2. $1245 and $9D20 were changed from LDA #$40 to ($A9, $40) to LDA #$00 ($A9, $00)
+
+  3. $14D9 was changed from $FE to $F6
+
+  4. $A6F9 was changed from CMP #$5A ($C9, $5A) to CMP #$62 ($C9, $62)</Notes>
+</Metadata>

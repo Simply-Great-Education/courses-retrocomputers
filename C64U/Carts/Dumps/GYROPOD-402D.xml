@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>GYROPOD-402D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ca55a5f4cc926e4c7477296f946b916eb66f83df</DumpFileSHA1>
+  <SimplifiedName>Gyropod</SimplifiedName>
+  <JumpAddresses>
+    <Address>$402D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Gyropod (Version 2).tap</SourceFile>
+  <SourceFileSHA1>637142e9978fbb68ebfa629bd98d822e2b7ba6dc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x402D "GYROPOD-402D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Gyropod.prg"</ExomizerCommand>
+</Metadata>

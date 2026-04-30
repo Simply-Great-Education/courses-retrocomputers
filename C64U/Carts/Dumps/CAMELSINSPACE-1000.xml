@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>CAMELSINSPACE-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4ae66636ab72085c144f8138aaddc51b0895562c</DumpFileSHA1>
+  <SimplifiedName>Camels in Space (TND - 2001)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>155</SidLength>
+  <SourceFile>Camels in Space.tap</SourceFile>
+  <SourceFileSHA1>31b4f2ef8d283336d5c44746e1092e979809ea2a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "CAMELSINSPACE-1000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Camels in Space (TND - 2001).prg"</ExomizerCommand>
+</Metadata>

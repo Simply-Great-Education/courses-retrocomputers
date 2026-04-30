@@ -1,0 +1,19 @@
+GREEN FELT CLASSICS
+===================
+
+Two classic games - the famous solitaire card game and Yacht - reissued in 2020/21 to demonstrate what can be done in BASIC V2.
+The great thing is that these games come together with a syntax-coloured PDF listing, so that you can easily see how these games were put together.
+One can learn a lot by observation - and so did I. My developer career started on the Commodore 64, trying to understand type-in listings.
+To download the two listings head over to https://romwer.itch.io/green-felt-classics and download the PDFs - for free.
+
+Please note that Solitaire 1351 requires a 1351 Commodore™ mouse to play (mouse goes in Joystick Port 2). Alternatively there is a Joystick version which plays just as nice. But since Solitaire was originally shipped on Microsoft Windows 3.0 - so people could learn the use of the mouse - playing with a mouse should be the first choice. If you already know Solitaire, then the game should be self explanatory. Special in this version is, that you can switch between a top and bottom part of a long tableau column by clicking at the very top (or very bottom) card. You can also double-click to move cards directly to the foundation pile.
+
+Fivefold shuffle is controlled by keyboard. The on-screen text should will you direction what key to press.
+
+If you want to run these BASIC games a little bit faster you can do so. As a proud owner of a Commodore 64 Ultimate, you have the privilege (and right) to turn your BASIC into a Ferrari by changing the processor speed up to 64Mhz! But let me assure you that 3Mhz is more than enough to get a great user experience with these two games. Or just stay with the original speed of 1Mzh and enjoy the gentle pace of a good old C64. It didn't do us any harm.
+
+Trivia: Both games have in common to make use of the rarely seen ECM (=Extended Color Mode). In this mode each character can have one of 4 different background colors. This is great in e.g. card games to allow the symbols on the cards having a white background while the overall background can remain green. The downside of this mode is, that only a total of 64 characters can be displayed at a time, which is the main reason why we don't see this mode more often. But using ECM wisely, brings a complete new and fresh look into C64 games.
+
+
+Author: Roman Werner / @romwer / roman.werner@gmail.com
+Find more of my C64 games at: https://romwer.itch.io

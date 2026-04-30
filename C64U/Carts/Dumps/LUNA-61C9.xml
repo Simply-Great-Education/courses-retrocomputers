@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>LUNA-61C9</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a2e8eff3b2878bacd6550b156ba185470f504571</DumpFileSHA1>
+  <SimplifiedName>Luna (Shallan - 2019)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$61C9</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Luna.d64</SourceFile>
+  <SourceFileSHA1>389ea9dd44c7999ea9a23eb656a3438db570fbe6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "LUNA-61C9" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Luna (Shallan - 2019).prg"</ExomizerCommand>
+</Metadata>

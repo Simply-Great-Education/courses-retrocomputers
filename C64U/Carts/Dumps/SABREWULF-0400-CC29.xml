@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>SABREWULF-0400-CC29</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>bff9d274f7861c7e02e841de4fe72e3d91527192</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$CC29</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>SABREWULF-CRAM-046F</ColourRAMFile>
+  <ColourRAMStartAddress>$046F</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Sabre Wulf.tap</SourceFile>
+  <SourceFileSHA1>c664fe1564dba3fae3b23ab428213b246ea3496f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCC29 "AlternativeFormats\PRGs\Uncrunched\Sabre Wulf.prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $046f lda #$37 sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "Sabre Wulf.prg"</ExomizerCommand>
+  <Notes>Inserted RLE packed colour RAM data to dump file at $046F to restore before showing the loading screen.
+  Also added a routine at $0400 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

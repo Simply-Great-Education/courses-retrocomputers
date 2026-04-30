@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>C64ANABALT-2000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>21c3432880b62194308daebeba28d05c40d4c5ad</DumpFileSHA1>
+  <SimplifiedName>C64anabalt (RGCD - 2011)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>C64anabalt (Side 1 - Music by Encore) .tap</SourceFile>
+  <SourceFileSHA1>4ae31c88d5398824efe43bc52aad4b079c2fb210</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2000 "C64ANABALT-2000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "C64anabalt (RGCD - 2011).prg"</ExomizerCommand>
+</Metadata>

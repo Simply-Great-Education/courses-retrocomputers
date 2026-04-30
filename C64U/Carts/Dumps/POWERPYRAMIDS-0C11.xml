@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>POWERPYRAMIDS-0C11</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>860e5180310daefedd5df481b02bf0bb3b347b38</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0C11</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Power Pyramids.tap</SourceFile>
+  <SourceFileSHA1>0a4bde3201c865f65b80c9d7a8cac15a2c96b666</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0C11 "POWERPYRAMIDS-0C11" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Power Pyramids.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

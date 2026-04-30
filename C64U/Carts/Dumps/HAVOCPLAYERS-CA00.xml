@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>HAVOCPLAYERS-CA00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>163a16ef69dd2d250497a90b4bac26166ac7f7bd</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CA00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Havoc (Players).tap</SourceFile>
+  <SourceFileSHA1>6059a01ca2487000b32b8703a0d4129898a25900</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCA00 "HAVOCPLAYERS-CA00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Havoc (Players).prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

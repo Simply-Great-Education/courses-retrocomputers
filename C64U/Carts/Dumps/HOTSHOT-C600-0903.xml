@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>HOTSHOT-C600-0903</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>732fb4bf4e91a42c848ce362f5e071d1d0d09080</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C600</Address>
+    <Address>$0903</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <ColourRAMFile>HOTSHOT-CRAM-C700</ColourRAMFile>
+  <ColourRAMStartAddress>$C700</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Hot Shot.tap</SourceFile>
+  <SourceFileSHA1>0301d572661686e4e9f116f71830bb454f7c554e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0903 "AlternativeFormats\PRGs\Uncrunched\Hot Shot.prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c700 lda #$35 sta $01 jsr $c600 dec $d030" -x "inc $d020" -o "Hot Shot.prg"</ExomizerCommand>
+  <Notes>Added a routine at $C600 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game. Once displayed, it turns off interrupts from the two CIA chips and acks any pending CIA interrupts to allow the game to start correctly.</Notes>
+</Metadata>

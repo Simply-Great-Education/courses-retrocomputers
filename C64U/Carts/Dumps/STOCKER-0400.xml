@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>STOCKER-0400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ad4a5ee7476a8f4fc171da1026050c95348aa874</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Stocker.d64</SourceFile>
+  <SourceFileSHA1>194a816b5862bcd5ad835409008bd059c4a24638</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0400 "STOCKER-0400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Stocker.prg"</ExomizerCommand>
+</Metadata>

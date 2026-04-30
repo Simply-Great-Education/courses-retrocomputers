@@ -1,0 +1,3 @@
+8580 SID model
+Second SID at $D420
+Third SID at $D440

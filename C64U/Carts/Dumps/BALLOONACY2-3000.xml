@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>BALLOONACY2-3000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>80bf0f0ca5e6e358c696fe7c1905b5ab5a64c27b</DumpFileSHA1>
+  <SimplifiedName>Balloonacy 2 (TND - 2005)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$3000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>138</SidLength>
+  <SourceFile>Balloonacy 2.tap</SourceFile>
+  <SourceFileSHA1>facfeed23db7b8fe5fc928c0425e659d4f076267</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3000 "BALLOONACY2-3000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Balloonacy 2 (TND - 2005).prg"</ExomizerCommand>
+</Metadata>

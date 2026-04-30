@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>ORION-7000-0200</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2f25aeb7d53168546a711c874272d3dc072f5126</DumpFileSHA1>
+  <SimplifiedName>Orion</SimplifiedName>
+  <JumpAddresses>
+    <Address>$7000</Address>
+    <Address>$0200</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Orion (Hewson).tap</SourceFile>
+  <SourceFileSHA1>aa03c53db727835029a65aac40ade34337895fc0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0200 "ORION-7000-0200" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $7000 dec $d030" -x "inc $d020" -o "Orion.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $7000 which copies 512 bytes of data from $7020 down to $0200 so that the dump can start at $0400 (this is the state the memory was in after the depacker from the original game had finished - this allows us to skip this slow step).
+  It then jumps to the entry point at $0200 (it couldn't use RTS because of the copy overwriting the boot code).</Notes>
+</Metadata>

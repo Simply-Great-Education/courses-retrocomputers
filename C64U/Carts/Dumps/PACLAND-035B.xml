@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>PACLAND-035B</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>f900ce0204b1e552f5926cf1b7ac7bf304c583cb</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$035B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Pac-Land.tap</SourceFile>
+  <SourceFileSHA1>50e27289c920d1bc83f50e63d89ea3a32334890e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x035B "PACLAND-035B" -Di_table_addr=0x02 -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Pac-Land.prg"</ExomizerCommand>
+  <Notes>As the original game is frozen, the breakpoint to use for dumping is actually $F337.
+  The loading screen is from the disk version.</Notes>
+</Metadata>

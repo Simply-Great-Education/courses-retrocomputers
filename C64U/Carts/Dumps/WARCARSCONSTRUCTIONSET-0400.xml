@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>WARCARSCONSTRUCTIONSET-0400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d1b30f48d62a5951e76d250d8751491be53854e0</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>War Cars Construction Set.tap</SourceFile>
+  <SourceFileSHA1>3c2ed7a2f0c63f7ca9d5df82c32b34bc04559d2c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0400 "WARCARSCONSTRUCTIONSET-0400" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "War Cars Construction Set.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>GAMEOVERII-SIDE1-095D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c86ddf5c7a7d5d0e8181629e17a5276e751e26d7</DumpFileSHA1>
+  <SimplifiedName>Game Over II (Side 1)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$095D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Game Over II (Side A).tap</SourceFile>
+  <SourceFileSHA1>505037a2c5544ef46a5e112aefadab939101aa5c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x095D "GAMEOVERII-SIDE1-095D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Game Over II (Side 1).prg"</ExomizerCommand>
+  <Notes>The following modifications were made:
+  1. Zeroed out an unnecessary repeated byte pattern from $10C0 - $1CC0.
+  2. Patched the JSR $A9E9 instruction at $A52B to be JSR $1800 instead (this is to allow the game to be started with the fire button in port 2 from the title sequence).
+  3. Added a small routine at $1800 which checks the fire button in port 2 - if pressed, then the game will behave as if 2 is pressed and start the game in joystick control mode. It then calls the subroutine at $A9E9 to carry on the normal code flow.
+  4. Patched the JSR $B157 instruction at $A8F0 to be JSR $1700 instead (this is to allow the game to be started with the fire button in port 2 from the main menu).
+  5. Added a small routine at $1700 which checks the fire button in port 2 - if pressed, then the game will behave as if 2 is pressed and start the game in joystick control mode. It then calls the subroutine at $B157 to carry on the normal code flow.
+  6. Changed $B245 from $00 to $01 to default to joystick input reading.</Notes>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>CASTLEDRACULA-0B41</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b7667a6e173fb67e47fa06397f4b5f487af81ddd</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0B41</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Castle Dracula.tap</SourceFile>
+  <SourceFileSHA1>f328d3e3e943fd633a29c87e53f46c3e979e1e9f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0B41 "CASTLEDRACULA-0B41" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Castle Dracula.prg"</ExomizerCommand>
+</Metadata>

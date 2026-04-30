@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MIGHTYBOMBJACK-088E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>677fd3d306103ce451662ee84beb9eea9ca3b421</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$088E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Mighty Bombjack.tap</SourceFile>
+  <SourceFileSHA1>f6b57bf4e07c1115cbccfdf1ec6f2854c9cc5582</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x088E "MIGHTYBOMBJACK-088E" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mighty Bombjack.prg"</ExomizerCommand>
+</Metadata>

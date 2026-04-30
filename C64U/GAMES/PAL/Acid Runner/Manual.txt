@@ -1,0 +1,23 @@
+Acid Runner
+
+As every morning, the Big Boss went to his treasury, but that day he encountered a very unpleasant surprise. Someone had stolen almost half of the chests of gold. Notifying the police was out of the question, since this wealth had been accumulated through not entirely legal means. After a few days, informants reported that the gold had been seized by Jasiek Siekierka's gang. Apparently it had been hidden in old bunkers from the Cold War era. The Big Boss could now attempt to recover his lost fortune. He entrusted this task to his best man - that is, You. So let's get to work!
+
+
+Game controls:
+
+FIRE - start game
+RUN/STOP - lose life
+SPACEBAR - pause
+RUN/STOP (during pause) - return to game start
+
+
+Programming by Gherkin
+Graphics by Gherkin
+Additional graphics by Zephyr
+Music by Benji
+
+Inflexion Development (1993)
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Krzysztof Augustyn.

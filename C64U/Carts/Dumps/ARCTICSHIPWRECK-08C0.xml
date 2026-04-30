@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ARCTICSHIPWRECK-08C0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8120fa9c2740817736de4bfc3b1894950e243c8a</DumpFileSHA1>
+  <SimplifiedName>Arctic Shipwreck</SimplifiedName>
+  <JumpAddresses>
+    <Address>$08C0</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Arctic Shipwreck (Blast Collection #121).d64</SourceFile>
+  <SourceFileSHA1>4a3c2a4ad7fe15686276653e497d30af80ee1074</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "ARCTICSHIPWRECK-08C0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Arctic Shipwreck.prg"</ExomizerCommand>
+</Metadata>

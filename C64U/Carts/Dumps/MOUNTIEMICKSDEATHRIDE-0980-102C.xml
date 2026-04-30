@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>MOUNTIEMICKSDEATHRIDE-0980-102C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>eb44c5259f1700a361e8e98c0cfb5a8dc5a5e8d6</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0980</Address>
+    <Address>$102C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <ColourRAMFile>MOUNTIEMICKSDEATHRIDE-CRAM-0A80</ColourRAMFile>
+  <ColourRAMStartAddress>$0A80</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Mountie Mick's Death Ride.tap</SourceFile>
+  <SourceFileSHA1>6bf099aa6a202c687f70e1ca8e2414163662bd00</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x102C "AlternativeFormats\PRGs\Uncrunched\Mountie Mick's Death Ride.prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $0a80 lda #$36 sta $01 jsr $0980 dec $d030" -x "inc $d020" -o "Mountie Mick's Death Ride.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0980 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

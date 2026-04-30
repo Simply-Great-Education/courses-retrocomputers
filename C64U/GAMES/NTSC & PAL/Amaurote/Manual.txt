@@ -1,0 +1,26 @@
+The city of Amaurote has been invaded by huge, aggressive insects who have built colonies in each of the city's 25 sectors. As the only uninjured army officer left after the invasion the job falls to you to destroy all the insect colonies.
+
+
+Amaurote is a classic title that many of you would remember from ZX Spectrum or Atari 800 developed by Ste and John Pickford. The C64 version was a different looking game, not using the isometric view and roughly based on the Amaurote concept, with one of the few common factors with the original was the music by David Whittaker, which, unfortunately, did not leverage the C64's amazing music capabilities (although it is stylish and creepy).
+
+Krzysztof Dabrowski (Brush/Elysium) visited an Atari forum in 2014 and read a thread about the Jakub Husak accelerating the game for the Atari 8-bit platforms and became intrigued in a potential C64 rendition that was faithful to the original execution. After years of on-off development, team Elysium made a breakthrough in 2022 by finally addressing all of the remaining bugs of the C64 edition. 
+
+Not only was the game complete for the stock breadbin, in addition, this version also utilises the Commodore 128 (in C64 mode), the game uses the 2MHz mode of the processor (off-screen), which provides a 30% increase in-game speed. Not only that, a special speed-up version of the game was also crafted: Amaurote for the SCPU, Turbo Chameleon and Ultimate64 accelerators - all in 20mhz mode. Just make sure you answer "yes" in the trainer menu.  
+
+Enhancing the game presentation even further, Michał Hoffmann (Randall/Elysium/MSL) was employed to deliver a new C64 soundtrack, reminiscent of the original, utilising the power of the SID. Additionally, James Svärd (Joe/Wrath Designs) crafted a beautiful title picture to complete the game's 2022 rendition. As a cherry on top Cal Skuthorpe (Buzz Clik/Onslaught) created a superb dir-art.
+
+
+Credits
+Programming by Krzysztof Dabrowski (Brush)
+Title picture by James Svärd (Joe)
+Music by Michal Hoffmann (Randall)
+Speedup by Jakub Husak
+Directory Art by Cal Skuthorpe (Buzz Clik)
+Testing by Bieno Marti Braitmaier (Bieno) & Bernardo Ugidos (Shocker)
+Support and documentation proofing by David Simmons (Jazzcat) 
+
+
+https://elysium64.itch.io/amaurote
+
+
+Distributed with the Commodore 64 Ultimate with permission from Krzysztof Dabrowski.

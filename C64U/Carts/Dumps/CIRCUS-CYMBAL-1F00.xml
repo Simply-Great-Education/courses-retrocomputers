@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>CIRCUS-CYMBAL-1F00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>47f2b369be2739dc3026f7b2cc9b65b248e76036</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1F00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Circus (Cymbal Software).tap</SourceFile>
+  <SourceFileSHA1>2e9c722b3e823535589b0afd35fda2cf5630ca9d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1F00 "CIRCUS-CYMBAL-1F00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Circus (Cymbal Software).prg"</ExomizerCommand>
+</Metadata>

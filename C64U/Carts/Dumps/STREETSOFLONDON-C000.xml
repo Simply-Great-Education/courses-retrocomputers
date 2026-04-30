@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>STREETSOFLONDON-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a7ebf80c50a9d0a89d8fcc195954ae0087c3cbb5</DumpFileSHA1>
+  <SimplifiedName>Streets of London</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Streets of London (Supersoft).tap</SourceFile>
+  <SourceFileSHA1>6498c124be41e269e1697dbf090997dc27d01358</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "STREETSOFLONDON-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Streets of London.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $0801. Therefore an init routine has been added at $C000 which:
+  1. Sets up the correct VICII settings and necessary BASIC pointers.
+  2. Sets $0351 to $60 (RTS) - it does this as there's a rather crude copy protection mechanism at the start of the program using a SYS 849 statement, which expects the RTS at the end of the filename loaded from tape.
+  3. Executes the RUN command to start the game program.</Notes>
+</Metadata>

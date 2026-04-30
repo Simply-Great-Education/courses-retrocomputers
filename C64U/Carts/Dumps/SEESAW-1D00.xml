@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>SEESAW-1D00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b79b1120dbae8b02f56b277d20ee820f84446268</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1D00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Seesaw.tap</SourceFile>
+  <SourceFileSHA1>fcb6ffc61bdedec8047a36079c4b6077480d5175</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1D00 "SEESAW-1D00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Seesaw.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $0801.
+  Therefore an init routine has been added at $1D00 to setup the necessary BASIC pointers and execute the RUN command to start the game program.
+  
+  Note: to dump, simply wait until the title screen is displayed, then dump with the monitor.</Notes>
+</Metadata>

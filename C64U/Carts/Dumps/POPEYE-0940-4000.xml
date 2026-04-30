@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>POPEYE-0940-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9046b43fdaebfa8eaae0ec27f4b7e098c35a1698</DumpFileSHA1>
+  <SimplifiedName>Popeye</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0940</Address>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Popeye (Version 2).tap</SourceFile>
+  <SourceFileSHA1>2bd42cbc3a098329e6338492dea8b77a891d591d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "POPEYE-0940-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0940 dec $d030" -x "inc $d020" -o "Popeye.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0940 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

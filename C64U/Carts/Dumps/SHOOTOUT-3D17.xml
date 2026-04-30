@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SHOOTOUT-3D17</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>190b549c67d2cce96c80759a7e7398770b8727ac</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3D17</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Shoot Out.tap</SourceFile>
+  <SourceFileSHA1>7d881038a42b123d30b9236318326c012e3127ee</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3D17 "SHOOTOUT-3D17" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Shoot Out.prg"</ExomizerCommand>
+</Metadata>

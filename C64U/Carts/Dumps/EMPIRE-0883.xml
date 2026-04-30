@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>EMPIRE-0883</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5a9c9f139245a97176dcf81566c2e74a9b490274</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0883</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Empire.tap</SourceFile>
+  <SourceFileSHA1>e1cabd4b666903a18178340a92f95cd2143aca16</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0883 "EMPIRE-0883" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Empire.prg"</ExomizerCommand>
+</Metadata>

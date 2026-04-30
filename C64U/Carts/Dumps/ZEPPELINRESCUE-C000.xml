@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>ZEPPELINRESCUE-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3d100a9eac54214668d3a331f84cffea33ebe142</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Zeppelin Rescue.d64</SourceFile>
+  <SourceFileSHA1>fe6aeb190c97e4cb61e5cbcf7b56da589d7b0e6b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "ZEPPELINRESCUE-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Zeppelin Rescue.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $1001. The second statement (line 4) of this program performs a slow loop reading data statements at the end of the program into memory. Therefore, to speed this process up, the following steps were taken:
+  1. When the screen turns black after displaying the initial loading message on a blue background, the RUN/STOP key was used to break the program
+  2. The CLR instruction ($9C) at the start of line 5 was changed to STOP ($90)
+  3. The program was run again, which automatically breaks at line 5 after the long data statement copy has completed
+  4. The STOP statement on line 5 was changed back to CLR
+  5. The FOR N=0 TO 1535:READ Q:POKE 2048+N,Q:NEXT:POKE 735,1 statement on line 4 was changed to WAIT 56320,16,16:WAIT 56320,16:in=1:POKE 735,1
+     This removes the slow data copy loop and instead waits for the fire button in port 2. The POKE 735,1 is needed for the game to startup in normal mode instead of practice mode.
+  6. A new routine was placed at $C000 which sets up the correct VICII settings and necessary BASIC pointers and runs the game program</Notes>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>THEDUEL-1F5A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>69c25648ffc8ca39640416f50fdf10fb391374ce</DumpFileSHA1>
+  <SimplifiedName>Duel, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1F5A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Duel, The (Duello Finale - Italian Bootleg).tap</SourceFile>
+  <SourceFileSHA1>25f306adc1f19786ce853e512b48135fc98ef914</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1F5A "THEDUEL-1F5A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Duel, The.prg"</ExomizerCommand>
+  <Notes>As this game is actually frozen, the game starts at $0ECB. However the true start address is $1F5A.
+  The original source used for this game is an Italian bootleg.</Notes>
+</Metadata>

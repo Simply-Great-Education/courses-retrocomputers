@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>SUPERBONKEYKONG-0400-406A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>537b0681f05d0a37d77a2d9f7caa263fe53d18b4</DumpFileSHA1>
+  <SimplifiedName>Super Bonkey Kong (Pond Software - 2018)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$406A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Super Bonkey Kong.d64</SourceFile>
+  <SourceFileSHA1>c0e4d11d7b65a62923abb21284c8581b0cd97082</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x406A "SUPERBONKEYKONG-0400-406A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Super Bonkey Kong (Pond Software - 2018).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 which sets $DD00 to $94 to allow the game to run correctly.</Notes>
+</Metadata>

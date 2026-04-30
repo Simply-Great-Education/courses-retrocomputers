@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>CASTLEBLACKSTAR-8000-0895</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ba5317ddd2eebfbe4e1b85d0717d8c09d516f1f9</DumpFileSHA1>
+  <SimplifiedName>Castle Blackstar</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8000</Address>
+    <Address>$0895</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>CASTLEBLACKSTAR-CRAM-8100</ColourRAMFile>
+  <ColourRAMStartAddress>$8100</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>Castle Blackstar (CDS Software).tap</SourceFile>
+  <SourceFileSHA1>727fd781e1cb5a09081fd8ed170e3a09d50ee71a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0895 "AlternativeFormats\PRGs\Uncrunched\Castle Blackstar.prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $8100 lda #$37 sta $01 jsr $8000 dec $d030" -x "inc $d020" -o "Castle Blackstar.prg"</ExomizerCommand>
+  <Notes>Added a routine at $8000 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  
+  Note: the TAP image used for this game has been fixed, as the data in the file between $3698A-$4C271 (which is loaded to $54E2-$7FFF in RAM) is corrupted. Therefore this data was replaced with a dump of this same data from RAM using the T64 version in GameBase64 (CRC32: 2C3AA8DD).</Notes>
+</Metadata>

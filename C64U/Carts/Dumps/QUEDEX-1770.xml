@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>QUEDEX-1770</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>acdf1939c4ab8bb4629e5aede4e3b9d9375a061f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1770</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>236</SidLength>
+  <SourceFile>Quedex.tap</SourceFile>
+  <SourceFileSHA1>d16e4b2e67eccfe937193fd9d60ec84fc47c80e4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1770 "QUEDEX-1770" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Quedex.prg"</ExomizerCommand>
+</Metadata>

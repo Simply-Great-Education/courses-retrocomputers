@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>FIREANT-6000-4800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>98be17d37d405f8bbc2560e3301a36dd0dc8648d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$6000</Address>
+    <Address>$4800</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Fire Ant.tap</SourceFile>
+  <SourceFileSHA1>4309cd72d3e7eed012d0278da75e5f08a834056f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "FIREANT-6000-4800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $6000 dec $d030" -x "inc $d020" -o "Fire Ant.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $6000 to set $291 to $80 as it was after loading the original, which allows the game to start (presumably some kind of basic copy protection).</Notes>
+</Metadata>

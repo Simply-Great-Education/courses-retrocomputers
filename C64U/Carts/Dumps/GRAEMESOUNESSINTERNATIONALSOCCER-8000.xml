@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>GRAEMESOUNESSINTERNATIONALSOCCER-8000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a49258ade1a4b782edd27c0057f48db23855a147</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Graeme Souness International Soccer.tap</SourceFile>
+  <SourceFileSHA1>cd6b95073d4f280e6403d56c00ebf3b69f142cc1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8000 "GRAEMESOUNESSINTERNATIONALSOCCER-8000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Graeme Souness International Soccer.prg"</ExomizerCommand>
+</Metadata>

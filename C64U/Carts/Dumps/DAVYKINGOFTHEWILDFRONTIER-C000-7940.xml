@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>DAVYKINGOFTHEWILDFRONTIER-C000-7940</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>666d1b24524916b96776b7536061c6f15dc9045b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$7940</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$3F</MemoryConfig>
+  <SourceFile>Davy - King of the Wild Frontier.tap</SourceFile>
+  <SourceFileSHA1>bca944cfc02a885b8268f26b3b02bc6f96cfc852</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "DAVYKINGOFTHEWILDFRONTIER-C000-7940" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3f sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Davy - King of the Wild Frontier.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C000 which:
+  1. Copies 1024 bytes of data from $C030 down to $0000 so that the dump can start at $0400 (this allows the in-game speech to work correctly)
+  2. Jumps to the entry point at $7940 (it couldn't use RTS because of the copy overwriting the boot code)</Notes>
+</Metadata>

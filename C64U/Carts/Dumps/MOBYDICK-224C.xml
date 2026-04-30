@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MOBYDICK-224C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>92651370f3b8d553c3be9583cdd168f0c22f54e8</DumpFileSHA1>
+  <SimplifiedName>Moby Dick</SimplifiedName>
+  <JumpAddresses>
+    <Address>$224C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Moby Dick (Soft and Easy).tap</SourceFile>
+  <SourceFileSHA1>2a0d307a3b2d769392021832c768f9e8128f297b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x224C "MOBYDICK-224C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Moby Dick.prg"</ExomizerCommand>
+</Metadata>

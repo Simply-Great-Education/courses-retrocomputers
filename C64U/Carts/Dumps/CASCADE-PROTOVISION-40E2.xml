@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>CASCADE-PROTOVISION-40E2</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>383daeb866894029761095141004a40e48ebdfb5</DumpFileSHA1>
+  <SimplifiedName>Cascade (Protovision - 2002)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$40E2</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Cascade (Protovision).d64</SourceFile>
+  <SourceFileSHA1>23a02c1045e97e224e0c26c5e957b2f45ace6b68</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x40E2 "CASCADE-PROTOVISION-40E2" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Cascade (Protovision - 2002).prg"</ExomizerCommand>
+</Metadata>

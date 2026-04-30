@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>BAZOOKABILL-4D00-8003</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>e0e1032e75506a021f810b4d6048406065b5ec98</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4D00</Address>
+    <Address>$8003</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Bazooka Bill.d64</SourceFile>
+  <SourceFileSHA1>81e9ca2bfdaabba06675ae816501e0ef943b1a9f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8003 "BAZOOKABILL-4D00-8003" -Di_table_addr=0x02 -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $4d00 dec $d030" -x "inc $d020" -o "Bazooka Bill.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $4D00 to set the correct border colour before starting the game.
+  
+  Note: We've used the disk version of this game as all the tape dumps seem to be broken causing some corrupt data (e.g. there's garbage at the end of the game over message - maybe the original is broken too?).</Notes>
+</Metadata>

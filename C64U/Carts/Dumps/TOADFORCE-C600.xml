@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>TOADFORCE-C600</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c17e34018a76710f12659e5f318c96351fab8a0d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C600</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Toadforce.tap</SourceFile>
+  <SourceFileSHA1>9982174f241c658fab4d5936b9f5a679ab602a35</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC600 "TOADFORCE-C600" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Toadforce.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>PASSINGSHOT-0B21</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c11969001d828a4e510108aa813810565171410a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0B21</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Passing Shot.tap</SourceFile>
+  <SourceFileSHA1>13b458b5439d4ab9e025a8c60fe9922beb135de9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0B21 "PASSINGSHOT-0B21" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Passing Shot.prg"</ExomizerCommand>
+</Metadata>

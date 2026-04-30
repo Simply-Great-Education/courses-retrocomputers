@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>STOCKCAR-4E4B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>bd1631661aa3086e93aab527889241104336042a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4E4B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Stock Car.tap</SourceFile>
+  <SourceFileSHA1>2f08b943103619108c6c225846fddccdfaf1c55b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4E4B "STOCKCAR-4E4B" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Stock Car.prg"</ExomizerCommand>
+</Metadata>

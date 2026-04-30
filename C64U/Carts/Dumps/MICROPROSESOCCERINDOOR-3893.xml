@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>MICROPROSESOCCERINDOOR-3893</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ee8cc546ef4f1ceab54bb4134e8f8677d80c6fd0</DumpFileSHA1>
+  <SimplifiedName>Microprose Soccer (Indoor)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$3893</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Microprose Soccer (Version 1) (Side 2).tap</SourceFile>
+  <SourceFileSHA1>9eedac219f714c07b9faef187f6deb4f3aaa1720</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3893 "MICROPROSESOCCERINDOOR-3893" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Microprose Soccer (Indoor).prg"</ExomizerCommand>
+</Metadata>

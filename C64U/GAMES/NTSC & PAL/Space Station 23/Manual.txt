@@ -1,0 +1,99 @@
+Story
+
+Space Station 23 has been hit by an asteroid and it's partly destroyed.
+
+The space station is also invaded by a nasty species of aliens.
+
+Joe Phoenix is back from the jungle and is now sent to the rescue. His mission is to collect resources to restore the full power of the space station and evict and kill all the aliens.
+
+
+
+Disk operations
+
+This game uses disk operations and the disk is required to be inserted in device number 8. The game progress is saved after the level complete score count.
+
+Note: If JiffyDOS is enabled, please disable for the game to load correctly.
+
+
+
+Gameplay
+
+Collect all the resources that are shown in the HUD. Without the needed amount of resources, you cannot exit the level.
+
+Exterior levels are on the surface of the planet. The climate on the planet is very hot, so you need to fill up a coolant from time to time.
+
+You must find a cartridge that is your access to the next level.
+
+Interior levels contain a mainframe computer, which can be taken into use by installing the OS. After the mainframe computer is operational, you can open jammed doors and shut down lasers by accessing the terminals.
+
+
+
+
+Joystick controls - Use the joystick in port 2 to move the player.
+
+Keyboard controls - Press F1 to toggle game background music on/off.
+
+
+Destroyable wall - These are obstacles that you can shoot down.
+
+Doors - Regular doors can be opened by walking toward them.
+
+Locked doors - These doors have to be unlocked via a terminal.
+
+Level exit door - This door opens only when you have collected enough resources and have found the cartridge. It's always coloured green.
+
+Terminal - Via the terminal, you can open jammed doors and shut down lasers.
+
+Mainframe computer - This can be taken into use by installing the OS. Requires diskette to be found.
+
+Teleport - With this, you can teleport to another room.
+
+Air vent - Break the vent by shooting and you can enter it. Behaves like a teleport.
+
+Enemy spawner - Break the spawner by shooting. This will spawn enemies until it's destroyed.
+
+Blockage - This can be cleared with a bomb.
+
+
+Pickups
+
+OS, needed for the mainframe computer.
+
+Nuclear, collect enough to gain access to the next level.
+
+Bolt, collect enough to gain access to the next level.
+
+Bomb, needed for clearing out a blockage.
+
+Ammo, collect to get more ammos.
+
+Cartridge, needed for opening the level exit door.
+
+Health, collect to get more health.
+
+Coolant station - The planet's surface is very hot, you need to fill up a coolant from time to time.
+
+Lasers - These have to be shut down via a terminal.
+
+
+
+Credits
+
+Programming, graphics, manual by Jani Parviainen
+
+Music by Antti Hannula, Jimi Welling
+
+Sound effects by Jani Parviainen
+
+Game testing by Mika Penttinen
+
+Special thanks to Ville Jokela
+
+
+https://vector5games.itch.io
+
+Copyright (c) Vector5 Games 2023
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Jani Parviainen.

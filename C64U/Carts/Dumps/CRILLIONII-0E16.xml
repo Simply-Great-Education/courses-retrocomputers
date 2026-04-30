@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>CRILLIONII-0E16</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>39aaef6231a712a06bee8971efccee195f07d682</DumpFileSHA1>
+  <SimplifiedName>Crillion II</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0E16</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Crillion II (64'er Sonderheft 54 - Side 1).d64</SourceFile>
+  <SourceFileSHA1>617c47d63d013b28d7e7b83a888218c2c298f13a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0E16 "CRILLIONII-0E16" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Crillion II (J1).prg"</ExomizerCommand>
+  <Notes>NOP'd out JSRs at $0E49 and $2192 to remove highscore loading and saving to disk.</Notes>
+</Metadata>

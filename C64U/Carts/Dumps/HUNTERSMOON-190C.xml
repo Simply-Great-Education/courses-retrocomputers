@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>HUNTERSMOON-190C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>bf60847b7cdfdf652e42efdcb4540342dfb162d7</DumpFileSHA1>
+  <SimplifiedName>Hunter's Moon</SimplifiedName>
+  <JumpAddresses>
+    <Address>$190C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>246</SidLength>
+  <SourceFile>Hunter's Moon (Version 2).tap</SourceFile>
+  <SourceFileSHA1>182e36a0518dd6dea3a6bdf327ff730bd6bcdcd9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x190C "HUNTERSMOON-190C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Hunter's Moon.prg"</ExomizerCommand>
+</Metadata>

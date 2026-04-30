@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>WATERPOLO-0C00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f7c2cb96fce28db9d84cc9e6d477fd01fa7be956</DumpFileSHA1>
+  <SimplifiedName>Waterpolo</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0C00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$34</MemoryConfig>
+  <SourceFile>Waterpolo (10 Great Games 2).tap</SourceFile>
+  <SourceFileSHA1>752edbce72c1f2347b85c624bc9aff0883560773</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0C00 "WATERPOLO-0C00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$34 sta $01 dec $d030" -x "inc $d020" -o "Waterpolo.prg"</ExomizerCommand>
+</Metadata>

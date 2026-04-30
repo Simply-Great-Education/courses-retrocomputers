@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>STRONTIUMDOG-5100-8681</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f6236ba1e1a49e0b89dfe7e862c00e02830e2e96</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5100</Address>
+    <Address>$8681</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Strontium Dog and the Death Gauntlet.tap</SourceFile>
+  <SourceFileSHA1>3034afdca62332215a3334d160fe5c94eb186f96</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8681 "STRONTIUMDOG-5100-8681" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $5100 dec $d030" -x "inc $d020" -o "Strontium Dog and the Death Gauntlet.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC program to display instructions for the game, so the following steps were taken to retain this:
+  1. When the instructions were shown, the BASIC program from $0801 to $0F84 was dumped to disk. This is because the intro program gets overwritten later when the game is loaded.
+  2. The BASIC program was modified so that the LOAD instruction on line 450 was changed to SYS 34433 ($8681) to start the game after the instructions are shown
+  3. When the breakpoint at $8681 was hit, the memory between $5066 and $5FFF was zeroed out (this area contains assembly source left over from development of the game and is not needed)
+  4. The modified BASIC program dumped in step 1 was placed at $5201 and relinked with the BASIC subroutine at $A533
+  5. A new routine was placed at $5100 which sets up the correct VICII settings and necessary BASIC pointers and runs the instructions program</Notes>
+</Metadata>

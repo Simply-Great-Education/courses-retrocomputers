@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SUPERROBINHOOD-6300</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9dc28010c8549188950014975805b26c5e1fd416</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$6300</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Super Robin Hood.tap</SourceFile>
+  <SourceFileSHA1>ff75704b2c52cad79e6e3317ecf0c210f801282a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "SUPERROBINHOOD-6300" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Super Robin Hood.prg"</ExomizerCommand>
+</Metadata>

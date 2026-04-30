@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>MOONBUGGY-C000-1400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>25cf4205c09adcabeeb5b0f0b635000974ae11ec</DumpFileSHA1>
+  <SimplifiedName>Moon Buggy</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$1400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Moon Buggy (Anirog v1).tap</SourceFile>
+  <SourceFileSHA1>9afac78813ca2a598b1cf01e7ec405c047dbdabe</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1400 "MOONBUGGY-C000-1400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c000 dec $d030" -x "inc $d020" -o "Moon Buggy.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C000 which fills the tape buffer with spaces to allow the score and highscore area to display correctly.
+  It then jumps to the entry point at $1400 (it couldn't use RTS because of the overwriting of the boot code).
+  
+  The loading screen is from the Spectrum version</Notes>
+</Metadata>

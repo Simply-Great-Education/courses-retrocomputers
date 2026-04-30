@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>SPOOKS-C000-15F0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>22db6e7db0c36e998aae869b022aa236081dc015</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$15F0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>SPOOKS-CRAM-C090</ColourRAMFile>
+  <ColourRAMStartAddress>$C090</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Spooks.tap</SourceFile>
+  <SourceFileSHA1>49746132f4f0ae918a398db29af2d03caba6e895</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x15F0 "AlternativeFormats\PRGs\Uncrunched\Spooks.prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c090 lda #$37 sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Spooks.prg"</ExomizerCommand>
+  <Notes>Added a routine at $C000 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  
+  Note: filler memory which repeats every 256 bytes between $0900-$0C00 and $9000-$CC00 was also zeroed out as it's redundant.</Notes>
+</Metadata>

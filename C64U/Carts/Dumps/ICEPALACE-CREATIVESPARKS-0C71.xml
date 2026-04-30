@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ICEPALACE-CREATIVESPARKS-0C71</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c993f7a0711c46b9a61209f8a3a366c4e9705ce0</DumpFileSHA1>
+  <SimplifiedName>Ice Palace (Creative Sparks)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0C71</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Ice Palace (Version a).tap</SourceFile>
+  <SourceFileSHA1>5cd9e1592e3bd187f6982307c9c84c039decda14</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0C71 "ICEPALACE-CREATIVESPARKS-0C71" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ice Palace (Creative Sparks).prg"</ExomizerCommand>
+</Metadata>

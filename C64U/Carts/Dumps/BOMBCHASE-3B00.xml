@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BOMBCHASE-3B00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7a190e8d50f88fae7dceebbe18a9cefb21323b7d</DumpFileSHA1>
+  <SimplifiedName>Bomb Chase (TND - 2002)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$3B00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Bomb Chase.tap</SourceFile>
+  <SourceFileSHA1>454b712252d596508ae75c26e441b908d9b64ed6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3B00 "BOMBCHASE-3B00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bomb Chase (TND - 2002).prg"</ExomizerCommand>
+</Metadata>

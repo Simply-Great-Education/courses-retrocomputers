@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>LETSINVADE2-1800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>38533e652b3658fb033c7dc223ea52a8b6877ae8</DumpFileSHA1>
+  <SimplifiedName>Let's Invade 2 - Super Invasion (TND - 2019)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>185</SidLength>
+  <SourceFile>Let's Invade 2 - Super Invasion.tap</SourceFile>
+  <SourceFileSHA1>f3612335ee5532fc6de82a8a0631ba309004cdfd</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1800 "LETSINVADE2-1800" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Let's Invade 2 - Super Invasion (TND - 2019).prg"</ExomizerCommand>
+</Metadata>

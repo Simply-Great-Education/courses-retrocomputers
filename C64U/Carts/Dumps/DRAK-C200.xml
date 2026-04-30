@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>DRAK-C200</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3417a2838fe5cd5d25b10d0bd07eb9e46228ce95</DumpFileSHA1>
+  <SimplifiedName>Drak</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C200</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Drak (ECP).tap</SourceFile>
+  <SourceFileSHA1>359d37bf67a5912f6d8d4c8f86f947c8a5b3e51a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "DRAK-C200" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Drak.prg"</ExomizerCommand>
+  <Notes>As this game is actually frozen, the game starts at $C2F2. However the true start address is $C200.</Notes>
+</Metadata>

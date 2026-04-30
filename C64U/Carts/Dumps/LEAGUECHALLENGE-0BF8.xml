@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>LEAGUECHALLENGE-0BF8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ec6c547ec249f62545c1e3343c389091304b414d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0BF8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>League Challenge.tap</SourceFile>
+  <SourceFileSHA1>9fdd96a623c01164a62d6dcc45e323d311377bbe</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0BF8 "LEAGUECHALLENGE-0BF8" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "League Challenge.prg"</ExomizerCommand>
+  <Notes>The true starting address is $0C00, where the code sets up various BASIC pointers, but crucially does not set the pointer to the beginning of the BASIC area ($2B/$2C). Because this game has this set to $3000 instead of the default $0801, the instructions to set this pointer have been added before the original code at $0BF8.</Notes>
+</Metadata>

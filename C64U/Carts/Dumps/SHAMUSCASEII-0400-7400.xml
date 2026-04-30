@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>SHAMUSCASEII-0400-7400</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>7e6abc6438300b2332479791b04aca952b09c9c5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$7400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3E</MemoryConfig>
+  <SourceFile>Shamus Case II.g64</SourceFile>
+  <SourceFileSHA1>6afd968690c5d722613846cd5963db6dbf21e311</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7400 "SHAMUSCASEII-0400-7400" -Di_table_addr=0x02 -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3e sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "Shamus Case II.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 which performs a few steps to allow the game to run correctly:
+  
+  1. Turns off interrupts from the two CIA chips and acks any pending CIA interrupts
+  2. Copies a 12 byte string to the stack at $016D, some bytes of which are checked to allow the game to run (specifically $0174 = $32 and $0177 = $37)
+  3. Sets the Port B data direction register ($DD03) to $25
+  4. Sets the length of the file name or disk command at $B7 to $01
+  
+  Note: the dump is also made from $0334 so as the capture the tape buffer in the state as left by the original loader, including 4 important bytes stored at $0398 which are needed for the game to run.</Notes>
+</Metadata>

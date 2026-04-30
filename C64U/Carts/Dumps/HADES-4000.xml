@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>HADES-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>bcc5b2762fd92066c3db8c269089ccd3c909f2d9</DumpFileSHA1>
+  <SimplifiedName>Hades</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Hades (Stefan Posthuma - 1985).d64</SourceFile>
+  <SourceFileSHA1>911d5d41acc9ed71d40e1e705fcb9e47673673c9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "HADES-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Hades.prg"</ExomizerCommand>
+</Metadata>

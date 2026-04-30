@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>ARKANOIDII-0500-06D4</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c1bb44701bf5d749c21fd76ae4e2d52593f7716a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0500</Address>
+    <Address>$06D4</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>253</SidLength>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Arkanoid - Revenge of Doh.tap</SourceFile>
+  <SourceFileSHA1>574c7dbc9c451bfc1043b74044d4280389decc1a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x06D4 "ARKANOIDII-0500-06D4" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $0500 dec $d030" -x "inc $d020" -o "Arkanoid - Revenge of Doh (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0500 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to start correctly. Also zeroes memory from $0300 to $0400 as the game expects (this avoids level corruption).
+  Also patched the $00 at $60C1 to $01 to default to joystick control.</Notes>
+</Metadata>

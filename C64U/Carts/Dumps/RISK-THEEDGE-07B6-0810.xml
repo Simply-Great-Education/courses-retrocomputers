@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>RISK-THEEDGE-07B6-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7da60558dd4e63d89e5011d711dc898f0aa3fe61</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$07B6</Address>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>R.I.S.K. (The Edge).tap</SourceFile>
+  <SourceFileSHA1>2cda7827cf7828e497ef31b13754279d31f6f591</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0810 "RISK-THEEDGE-07B6-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $07b6 dec $d030" -x "inc $d020" -o "R.I.S.K. (The Edge).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $07B6 to set the border colour to black and copy 32 bytes to $02A7 to allow the game to run properly. This is needed to skip the lengthy decompression step.</Notes>
+</Metadata>

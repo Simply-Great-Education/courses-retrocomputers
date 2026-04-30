@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>VULTURES-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ed9f63b00d73ea7cdc801e2387e9728573409983</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Vultures.tap</SourceFile>
+  <SourceFileSHA1>12a85d636652385838b5825b9d99b13784783328</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "VULTURES-0900" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Vultures.prg"</ExomizerCommand>
+</Metadata>

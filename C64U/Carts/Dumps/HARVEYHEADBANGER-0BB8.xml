@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>HARVEYHEADBANGER-0BB8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0ee35cc0f6d11e765cb2a7b9a3177e42448a8d55</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0BB8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Harvey Headbanger.tap</SourceFile>
+  <SourceFileSHA1>06010383e6cce4a96197fd7419e452639f64d040</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0BB8 "HARVEYHEADBANGER-0BB8" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Harvey Headbanger.prg"</ExomizerCommand>
+  <Notes>The following patches were made to fix the incorrect last cell of the loading screen bitmap which obscured the digit 6 of SIR'86:
+  
+  1. $CBE7 was changed from $0E to $09 (this is used to set the last 4-bits in colour RAM)
+  2. $CFE7 was changed from $00 to $E7 (this is the last 8x8 cell in screen RAM)</Notes>
+</Metadata>

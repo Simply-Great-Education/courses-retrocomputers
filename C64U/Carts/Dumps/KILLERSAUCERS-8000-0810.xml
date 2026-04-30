@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>KILLERSAUCERS-8000-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f73adad786b340ed29ee3a08ca83ab0a59ef9972</DumpFileSHA1>
+  <SimplifiedName>Killer Saucers (TND - 2020)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8000</Address>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Killer Saucers.tap</SourceFile>
+  <SourceFileSHA1>75ba259f88f56e1eb8fe4a8384f09d572da2542e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "KILLERSAUCERS-8000-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $8000 dec $d030" -x "inc $d020" -o "Killer Saucers (TND - 2020).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $8000 to set the current device number ($BA) to $01 (tape) before starting the game to disable highscore loading and saving to disk.</Notes>
+</Metadata>

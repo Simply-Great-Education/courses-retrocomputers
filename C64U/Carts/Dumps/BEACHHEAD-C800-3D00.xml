@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>BEACHHEAD-C800-3D00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b3894b096156836a1ab0059840100be6f65e9a75</DumpFileSHA1>
+  <SimplifiedName>Beach-Head</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C800</Address>
+    <Address>$3D00</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Beach-Head (US Gold).tap</SourceFile>
+  <SourceFileSHA1>0bace6889aa68ef52635c15493aaf64986501665</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "BEACHHEAD-C800-3D00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c800 dec $d030" -x "inc $d020" -o "Beach-Head.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C800 which copies 256 bytes of data from $C820 down to $0300 so that the dump can start at $0400.
+  It then executes the BASIC RUN command to start the game (it couldn't use RTS because of the copy overwriting the loader).</Notes>
+</Metadata>

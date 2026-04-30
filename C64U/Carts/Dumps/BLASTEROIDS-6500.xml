@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>BLASTEROIDS-6500</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>adf3d005c15179ee55ba3c181c56347d51c75ac9</DumpFileSHA1>
+  <SimplifiedName>Blasteroids</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6500</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Blasteroids (Version 2).tap</SourceFile>
+  <SourceFileSHA1>1b0813d6d00b97b8c0a0561bd17b0a657d22a328</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6500 "BLASTEROIDS-6500" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Blasteroids.prg"</ExomizerCommand>
+  <Notes>As the original did not have a loading screen, the one included was converted from the Amstrad CPC version by DATA-LAND of Technische Maschinenfabrik (https://csdb.dk/scener/?id=4845).</Notes>
+</Metadata>

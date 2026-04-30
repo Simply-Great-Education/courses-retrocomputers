@@ -1,0 +1,161 @@
+An unknown militarized terrorist unit, known as the X-Force, has occupied the peaceful city of Suburbia. As the top pilot in the Earth Defence Force (EDF) the job of defeating the terrorists falls to you!
+
+Flying your state of the art attack helicopter you are sent into what seems to be a straight forward seek-and-destroy mission - but as the story unfolds it will become apparent that the X-Force's goal is more sinister than anyone could have imagined...
+
+Grab your joystick, save the world, and see if you can get that all-time high score!
+
+
+
+AVIATOR ARCADE II is an Arcane Productions game for the Commodore 64/128 personal computer, developed by Mark Hindsbo, Saul Cross and Thomas Petersen. Published by RGCD and Psytronik Software in 2018.
+
+
+AVIATOR ARCADE II BACKGROUND
+
+This game represents a journey back to a time of wonders where the first home computers shaped a generation. At least for me the 80's and 90's introduced a special feeling of magic and wonder enabled by 8-bit (and later 16-bit) computers and the community around them. What became the demo scene was an unlikely amalgamation of graffiti spraying artists, skateboard carrying musicians, Adidas wearing coders, and proliferating swappers. A coming together of an eclectic group of misfits around a joint passion that I have not witnessed since. 
+
+This retro journey started with my in-laws moving. My father in-law had found his old Commodore 64 in the attic and since none of his children wanted it he was going to throw it away. I had always regretted selling my own back in the day to be able to afford the Amiga. So, I asked him if I could have it and to my delight he packed it in his suitcase and brought it all the way to the U.S. the next time he came to visit (my wife and I are both from Denmark originally). I was now the proud owner of an original PAL breadbin identical to the one I had back in the day!
+
+It had the classic black screen fault that was luckily a simple PLA issue and with that chip changed I had an almost pristine fully functioning set-up! With my appetite wetted I had soon bought a handful of different systems - breadbin, C64C, SX64, C64R, NTSC and PAL - and restored several non-functioning units. This involved a lot of fun with the soldering iron and was very satisfying work, but my real passion has always been coding. 
+
+In the late 80's I transitioned to the Amiga where I did most of my scene coding however since then I have had this longing to go back and make the C64 game I never got to back in the day. It was remarkable to find a still thriving community around the C64 over thirty years later, with sites such as Codebase 64 dedicated to tutorials, tips and tricks. I must admit that the internet and cross development makes it so much easier and pleasant to learn and code today! 
+
+The Commodore 64 is such a great system for a coder. It has this unique combination of power, simplicity and constraints that makes it delightful to coax great experiences out of. Soon I was remembering how to count clock cycles and discovering new tricks for optimizing code. I spent countless hours optimizing the sorting algorithm, making the sprite multiplexer fail gracefully, and stabilizing the horizontal split with a variable number of sprites crossing the line. I must admit I am quite proud of the end result. 
+
+However, even more satisfying was connecting with the Commodore 64 community! I stumbled upon the RGCD 16K Cartridge Game Development Competition and that became a great forcing function to get a first version completed. I met some fantastic people that were willing to contribute and collaborate, making the process even more fun. Many thanks go to Richard Bayless and André Högbom for so freely sharing their talents as Aviator Arcade 16K was being created. And of course, to James Monkman for creating the competition that has spawned so many great titles and renewed relevance of the C64. 
+
+It felt great shipping Aviator Arcade 16K, but it was clearly a version one. Not quite the game I always wanted to create. I wanted something that could have been considered a full price top-notch title back in the day. The 16K version however, had laid the foundation in terms of (re)learning skills to now pursue this dream. Hence, I began developing the production that you are holding in your hands today. 
+
+Along the way Saul Cross volunteered his unique pixel talents that are truly second to none! His take on the levels and enemies would continually inspire new code and concepts. And Facebook introduced me to Thomas Petersen who initially was only going to do a title track and ended up doing multiple scores and all the sound effects so masterfully! I cannot thank Saul and Thomas enough for the collaboration and inspiration along the way! Gentlemen I am honoured to have worked with you!      
+
+It has been a multi-year journey. Much longer than I had expected, but as it often is with hobby projects born out of love, real life had its way of demanding priority from those of us creating the game. We sincerely hope you will enjoy the simple thrill of a shoot'em up made from sheer 8-bit passion. So many people have helped, commented and contributed along the way that I cannot mention everyone, but you know who you are. Thank you so much to everyone who is a part of this vibrant retro community!     
+
+- Mark Hindsbo 2018
+   
+
+CARTRIDGE BOOT OPTIONS
+
+Hold the following keys at power on or reset to activate the various boot options: 
+
+1 - Loads the original Aviator Arcade 16K!
+2 - Resets saved data to factory default.
+SPACEBAR - Boots to BASIC.
+
+NOTE: if a C64GS is detected, then auto-fire is enabled automatically (since it does not have a keyboard). If for some reason this does not get auto detected, you can force auto-fire on by holding down the joystick button during boot.   
+
+   
+   
+BEFORE BEGINNING YOUR MISSION
+
+After the game has loaded and the credits have been displayed, you can press F1 to view the HELP screen, or F7 to open the OPTIONS MENU. 
+
+OPTIONS MENU
+
+* Starting level (1-10): Use this option to start from or replay any previously reached level. Initially only level 1 is unlocked.
+
+* Difficulty (Easy/Normal/Hard): This option determines the difficulty and scoring of the game. Enemies fire more or less often, and bosses are tougher. A bonus score is awarded at end of game based on difficulty (Easy = +0%, Normal = +25%, Hard = +50%).
+
+* Game Music (On/Off): When music is off sound effects can use all 3 channels.
+
+* Sound Effects (On/Off): For when you just want to hear the game music undisturbed.
+ 
+* Auto-fire (On/Off): When auto-fire is off the bomb is activated by hitting SPACEBAR. When auto-fire is on bomb can be released using FIRE button (your primary weapon will fire automatically).
+
+When you are ready, press FIRE on the joystick in port 2 to start your mission. Get ready for good old fashioned unadulterated 8-bit shoot'em up action!
+
+NOTE: As you complete each level the mission briefings will reveal another chapter of the story. It's also important to read these (especially on later levels) to determine how to best defeat the enemy!
+
+
+PLAYING AVIATOR ARCADE II
+
+Use joystick in port 2 to control your helicopter. Use the joystick button to fire the current weapon and press the SPACEBAR to trigger a smart bomb. With auto-fire on the joystick FIRE button will trigger the smart bomb. 
+
+During the game you can use F1 to toggle music on and off and F3 to toggle sound effects on and off. With music off the sound effects will use all three SID voices. F5 will turn auto-fire on or off and F7 will pause the game. With game paused press F7 again to continue playing. 
+
+NOTE: Every level features new enemies, power-ups, effects and unique bosses. There are three different major settings to explore across ten levels.
+
+
+SCORING 
+
+It's simple. Shoot anything you can, and you will be awarded points based on the specific enemy you just killed. Tougher enemies award you more points and bosses award the most.
+
+Some objects are bonuses and will give you an extra 1000 points each, added to the total once the game is over. A small sound will be played when you destroy these bonus objects.
+
+Every 100000 points you will be awarded an extra life. Three lives should be more than enough for anyone, but we don't judge and will award you up to the 9 lives of a cat!
+
+In addition to the score you will also be able to attain higher ranks. You will start each new game as a Lieutenant and it is possible to become General. Can you achieve the double of both high score and rank?
+
+Each enemy hit will move you two steps closer to the next rank, but each miss will move you one step back. So yes, there is a small penalty for auto-fire or spray and pray - accuracy moves you up through the ranks the fastest. If you die your rank will be halved as a penalty for destroying valuable assets of the EDF.
+
+As mentioned above the harder the difficulty the more points you will get. Easy doesn't award any extra points, normal adds 25% and hard 50% to your score once the game is over. 
+
+
+POWER-UPS
+
+Your craft can be upgraded and repaired throughout the game by picking up power-ups. Power-ups are collected by shooting them. They are automatically applied once you shoot them, so if you do not want a particular power-up be careful not to hit it.
+
+There are three different sets or power-ups suited to each of the three game environments:
+
+
+MILITARY TECH
+
+* Restore your helicopter to fully undamaged state.
+* Rapid fire machine-gun, doubling the rate of fire.
+* Heat seeking missiles, tracking the nearest enemy.
+* Extra smart bombs. Your helicopter can only carry two at a time (three in easy mode).
+
+SPACE TECH
+
+* Restore your spacecraft to pristine condition.
+* Double the rate of fire for the default rail-gun.
+* Heat seeking missiles are twice as good in space.
+* Lasers fire faster and carry twice the punch of your rail-gun.
+* Sonic waves are not stopped by hitting the enemy.
+* Yes, you can also carry smart bombs in your space craft
+
+ALIEN TECH
+
+* Even alien technology needs repair after taking a couple of hits.
+* A force shield to protect your craft from incoming fire.
+* Dual heat seeking missiles.
+* Lasers are a favourite of any civilization.
+* EMP waves travel through any target.
+* Photon blasts are the ultimate in firepower.
+* Refill your hold of smart bombs.
+
+
+TRIVIA 
+
+The first computer Mark Hindsbo ever played on was a VIC 20 that a friend's dad had bought. This was the spark of a lifelong love of code. Living in the countryside he plucked strawberries over two summers to afford his very own Commodore 64.
+
+Later, on the Amiga, Mark was part of the group 'Arcane', which is the origin of the name 'Arcane Productions' for his current work. The games he makes today support both PAL and NTSC since he one of the sceners that has lived on both sides of the Atlantic.
+
+
+CREDITS
+
+AVIATOR ARCADE II is an Arcane Productions game, developed by Mark Hindsbo, Saul Cross and Thomas Petersen. Published on 512KB C64 cartridge by RGCD, 2018. Published on 5.25" Diskette by Psytronik Software, 2018. 
+
+Mark Hindsbo - Code
+Saul Cross - Graphics
+Thomas E. Petersen - Music & Sound Effects
+Jonathan Eggleton - Splash/Loader Screen Graphics 
+Jens Schönfeld - Cartridge Hardware
+Chris Mantil - Manual Design & Layout
+Telemachus Stavropoulos - Box Illustration
+Steve Day - Box Design & Layout
+James Monkman & Jason McKenzie - Production
+
+Additional thanks to Jay Aldred, Sönke Raufeisen & Jason Kelk for their thorough testing and helpful feedback.
+
+
+LINKS
+
+For more information on the team involved in this C64 release, visit: 
+rgcd.co.uk (RGCD homepage)
+psytronik.net (Psytronik homepage)
+
+Official RGCD/Psytronik forum for general feedback can be found at: 
+lemon64.com/forum/index.php
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Mark Hindsbo.

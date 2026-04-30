@@ -1,0 +1,26 @@
+﻿<Metadata>
+  <DumpFile>FRANKENSTEINJNR-0C00-100C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>22b24b42e75a583f11c40a2863c739dadc1ec4d0</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0C00</Address>
+    <Address>$100C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Frankenstein Jnr.tap</SourceFile>
+  <SourceFileSHA1>c14a7ad321ea6cb6dfcc236a5a4db8959080491e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x100C "FRANKENSTEINJNR-0C00-100C" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0c00 dec $d030" -x "inc $d020" -o "Frankenstein Jnr.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0C00 which copies 512 bytes of data from $0C20 down to $0200 so that the dump can start at $0400.
+  It then jumps to the entry point at $100C (it couldn't use RTS because of the copy overwriting the boot code).
+  
+  Note: as the original game is frozen, the breakpoint to use for dumping is actually $6BBB.
+
+  This also means that a small modification was required to prevent the startup code located at $100C from overwriting some memory with data which had changed by the time the freeze was taken.
+  
+  The change was to NOP out the JSR $1134 at $1030, as the data was already present at the right locations in the dump.
+  
+  And finally, the loading screen is from the Spectrum version</Notes>
+</Metadata>

@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>SCUBADIVE-2700</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b9e6f08c323e479fce3c6c449c61dbd0eb229070</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2700</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Scuba Dive.tap</SourceFile>
+  <SourceFileSHA1>4488c919d1822ac8523bf1830688ec97923446df</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "SCUBADIVE-2700" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Scuba Dive.prg"</ExomizerCommand>
+  <Notes>Made the following changes to default to joystick control:
+  1. Patched the JMP $2880 instruction at $27E2 to be JMP $28F1 instead - this runs the code which normally gets executed when J is pressed on the menu screen
+  2. Patched the JMP $28B4 instruction at $28C6 to be JMP $0900 instead
+  3. Added a small routine at $0900 to check the fire button in port 2 - if pressed, then it sets $C5 to $29, which causes the game to start when on the menu screen, just as if P was pressed. The routine then jumps to $28B4 to carry on the normal code flow.
+  4. Also patched the menu screen to make it clear that either P or fire button can be used to start the game
+  
+  The loading screen is based on the Spectrum version</Notes>
+</Metadata>

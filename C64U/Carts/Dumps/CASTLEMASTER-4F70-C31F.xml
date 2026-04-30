@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>CASTLEMASTER-4F70-C31F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1129a35e6e49442b6aa4218e3ed627ef7cff8281</DumpFileSHA1>
+  <SimplifiedName>Castle Master</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4F70</Address>
+    <Address>$C31F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Castle Master (Version 2).tap</SourceFile>
+  <SourceFileSHA1>72f0783aabd1056f7e886ad7a4d6ad118f54b7d4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC31F "CASTLEMASTER-4F70-C31F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $4f70 dec $d030" -x "inc $d020" -o "Castle Master.prg"</ExomizerCommand>
+  <Notes>Copied colour RAM to $D800 in actual ram and then added an init routine at $4F70 to restore back to colour RAM from there. This allows the game to start after the decrunching step of the original and thus more quickly.</Notes>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>DREAMWARRIOR-0A8B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>58162d7db3d9ad1eaa7a9ab5d35c25b42c8fad97</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0A8B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Dream Warrior.tap</SourceFile>
+  <SourceFileSHA1>4c2547ea4232465df283c57dcc5b968fd02b5497</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0A8B "DREAMWARRIOR-0A8B" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Dream Warrior.prg"</ExomizerCommand>
+</Metadata>

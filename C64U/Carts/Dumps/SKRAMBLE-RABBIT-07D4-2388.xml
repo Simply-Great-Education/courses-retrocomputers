@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SKRAMBLE-RABBIT-07D4-2388</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>de86bd2a1314a0ff6dd6e943ddc295fdebd536e6</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$07D4</Address>
+    <Address>$2388</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Skramble (Rabbit Software).tap</SourceFile>
+  <SourceFileSHA1>d4b82f07d4bb52cb9a8045cd70fab15d173b4864</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "SKRAMBLE-RABBIT-07D4-2388" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $07d4 dec $d030" -x "inc $d020" -o "Skramble (Rabbit Software).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $07D4 to setup required low memory values</Notes>
+</Metadata>

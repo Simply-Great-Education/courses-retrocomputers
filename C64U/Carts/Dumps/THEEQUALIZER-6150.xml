@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>THEEQUALIZER-6150</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2c2417c1c0f05780cf5766a0bd99177b12e1a1c3</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$6150</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Equalizer, The.tap</SourceFile>
+  <SourceFileSHA1>e5bdf5814744d9465cdba9a09997203ae06a9aec</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6150 "THEEQUALIZER-6150" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Equalizer, The.prg"</ExomizerCommand>
+</Metadata>

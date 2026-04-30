@@ -1,0 +1,160 @@
+INTRODUCTION
+
+Vlambeer's Super Bread Box is coming to bring back the glory of the golden arcade age, when all that really mattered was getting on that high score list. Grab your baseball cap and loosen your pants, it's time to fight endless hordes of enemies and collect every weapon crate you can. Prepare for an arcade delight with tight controls, refreshing game mechanics, cracking retro art and a terribly hip chiptune soundtrack.
+
+Super Bread Box is an official conversion of the 2010 indie classic Super Crate Box for the C64 computer, developed by Commodore enthusiast Paul Koller and published on cartridge by Vlambeer and RGCD. A cut-down version of Super Bread Box was developed for the 2012 RGCD 16K C64 Game Development Competition, which it won. Since then it has grown to become a full game that includes almost all of the features of the original, as well as three new and exclusive levels and additional playable characters from the modern day C64 and indie gaming scene!
+
+
+Super Bread Box has been tested on both PAL and NTSC machines, and works on the C64, C128 and C64GS.
+
+Although the game runs on NTSC hardware, it does suffer from the occasional slowdown due to NTSC machines having less CPU time per screen refresh. As such, Super Bread Box is labelled as NTSC compatible, but designed for PAL systems.
+
+
+SUPER BREAD BOX SETUP
+
+To play Super Bread Box you'll need to have a joystick plugged into port 2. The following rules apply for navigating through the various menus and option screens:
+
+FIRE - Select/Activate
+LEFT/RIGHT - Switch/Scroll through options
+DOWN - Exit/Back
+
+After loading is complete, you'll be presented with the credits screen. To exit this press FIRE on the joystick. You'll then be presented with the following options:
+
+ENTER NAME
+ENTER CODE
+DISK LOAD
+
+In order to save your progress and to enter scores into the online leaderboards, Super Bread Box requires you to create an eight-character profile name. To start a new profile, select ENTER NAME. You can then enter your name using either the keyboard or UP/DOWN/LEFT/RIGHT on the joystick. Press FIRE to confirm.
+
+Super Bread Box uses a 25-character password system to save your profile and statistics. You can enter the code from you last play session by selecting ENTER CODE. Again, this can be entered via the keyboard or UP/DOWN/LEFT/RIGHT on the joystick. Press FIRE to confirm.
+
+Additionally, you may wish to save your progress to disk. If you've saved a previous play session and wish to continue, insert the disk and select DISK LOAD.
+
+
+MENU STRUCTURE
+
+After either setting up a new game profile (or loading a previous one) the main menu is displayed:
+
+PLAY
+TUTORIAL
+CHARACTERS
+STATISTICS
+DISK SAVE
+CREDITS
+RESET GAME
+
+To start the game select PLAY. This will take you to the level select screen, from which you can scroll through the currently unlocked levels (LEFT/RIGHT), view your scores and start playing by pressing FIRE. Pulling DOWN on the joystick will return you to the previous menu.
+
+For first time players, we strongly recommend you play the TUTORIAL. This was actually compulsory in the original Super Crate Box.
+
+The CHARACTERS screen shows you the currently unlocked player characters. Additional characters are unlocked during play by collecting bread boxes (aka crates). You can also select your favourite character on this screen (LEFT/RIGHT), pressing FIRE to confirm/exit. This overrides the default setting of cycling through the different player characters every time you die.
+
+STATISTICS is a super useful screen, so pay attention here. The numbers beneath each of the monsters show how many you've killed and been killed by, and this is followed by your profile information (name, total kills, total deaths, number of deaths by fire, number of deaths by disc gun rebounds and the total crates collected). At the bottom of the screen is the corresponding password that can be used to save your progress and for entering the online leaderboards. Please be sure to write this down at the end of each play session (you can use the provided code sheets). Press FIRE to return to the menu.
+
+Tired of writing down codes all the time? Then plug in a disk drive, insert a floppy and hit DISK SAVE. Your progress will be saved and can be reloaded the next time you play from the DISK LOAD option that is displayed when the game first boots up.
+
+The CREDITS screen displays most (but not all!) of the cool people involved in this project. Hit FIRE to return to the menu when you've had enough.
+
+Want to restart using a different profile name? Hold down FIRE for three seconds whilst this option is selected to reset the game. 
+
+
+PLAYING SUPER BREAD BOX
+
+Remember the TUTORIAL mentioned above? If you are new to Super Bread Box you should most certainly play this. Go on, do it now.
+
+Done? Ok, well here's some additional stuff you might want to know about the game.
+
+* You start the game with only the Pistol, Double Pistol, Shotgun, Machine Gun and Bazooka available. New weapons are unlocked as you collect more crates. Keep an eye on the statistics displayed immediately after each death to see how many crates are required before the next one becomes available.
+* To begin with you will only be able to play in the CONSTRUCTION YARD level, with the next level being unlocked by collecting 10 or more crates in a single attempt on the current one. The five levels to unlock are the ROCKET SILO, MOON TEMPLE, MOUNTAIN CAVE, SPACE FREIGHTER and OFFICE TOWER (the last three being exclusive to the Commodore 64 edition).
+* To beat the game you'll need to master all of the weapons. Even the Disc Gun.
+* You DO NOT get points for killing enemies.
+
+
+USING THE ONLINE SCORE BOARDS
+
+When designing Super Bread Box, one of the key requirements was to have some method of recording the total number of C64 crate boxes (or 'bread boxes') collected worldwide, as well as online leaderboards. To achieve this we worked together with our local web guru Jamie Howard to build a bespoke website for the game.
+
+To upload your score, visit http://www.superbreadbox.com and follow these steps:
+
+* Watch the totally rad trailer on the front page! (optional)
+* Click on HIGHSCORES on the menu bar.
+* Scroll down the page and enter the 25 character password that the game provides.
+* Enter your email address and tick/un-tick the 'Tell me when I'm beaten' box.
+* Press Go!
+
+The 'Tell me when I'm beaten' option does exactly that. Every time your score is beaten (until you are kicked off the top 15 positions), you'll receive an email detailing who by and by how many crates.
+
+If you forget your code, don't panic - we'll remember it for you! To reclaim a lost code, hit the 'Click here for lost score codes' link on the bottom of the HIGHSCORES page. Enter in your profile name and email address that you used to register. If all goes well, the window will expand and you'll see an option to alter your 'Tell me when I'm beaten' preference and a nice friendly box that says 'Email me my score code'. Press that and your code will be sent back to you.
+
+
+TRIVIA
+
+Super Bread Box was originally developed as a competition entry for the RGCD C64 16KB Cartridge Game Development Competition in 2012. It took Paul Koller a further six months to complete the full 64KB version. The release was then further delayed by a combination of extensive playtesting and getting the online leaderboards up and working.
+
+Having all the animation frames for all 16 characters in the Commodore 64's limited RAM at the same time is impossible! Therefore the cartridge ROM is continuously accessed to copy these sprites over when necessary.
+
+Paul Koller possesses a copy of the game that includes Spongebob Squarepants as a playable character - added following a request made by his son. Dizzy was also one of the initial characters, but was dropped due to potential legal issues.
+
+The Super Bread Box website uses only 16 colours, taken from the C64 palette!
+
+As with most of our 64KB cartridge releases there's an Easter egg buried in deep in the code of Super Bread Box, featuring two of our personal heroes. ;)
+
+
+CREDITS
+
+Super Bread Box is an Vlambeer/Paul Koller/RGCD production, Copyright 2012-13. Published on 64KB C64 cartridge by Vlambeer and RGCD, 2013.
+
+Super Crate Box Design & Concept
+Rami Ismail & Jan Willem Nijman (Vlambeer)
+
+Super Crate Box Artwork
+Paul Veer & Roy Nathan de Groot
+
+Super Crate Box Music
+Eirik Suhrke
+
+Commodore 64 Conversion
+Paul Koller
+
+Box & Poster Design
+Ilija Melentijevic
+
+Cartridge Hardware
+Tim Harris & Raymond Lejuez
+
+Super Bread Box Website
+Jamie Howard
+
+SID Music
+Mikkel Hastrup (Undone)
+
+PAL & NTSC Testing
+David Simmons (RGCD)
+
+Project Management
+James Monkman (RGCD)
+
+
+LINKS
+
+http://www.superbreadbox.com
+http://www.vlambeer.com
+http://rgcd.co.uk
+https://rgcddev.itch.io/super-bread-box
+
+
+Note:
+
+You will find the cartridge rom of SUPER BREAD BOX, together with a blank d64 file for you to use for saving/loading your progress through the game. If using VICE, you'll need to attach the disk image file first, and then attach the cartridge image.
+
+Score saving and loading is MANUALLY done to the provided disk image, or via a password code system.
+
+To save/load your scores, from the title screen press FIRE to access the start menu. Select LOAD DISK SCORES to load a previously saved game.
+
+
+DON'T FORGET TO ENTER YOUR SCORE CODE over at http://www.superbreadbox.com
+
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Paul Koller.

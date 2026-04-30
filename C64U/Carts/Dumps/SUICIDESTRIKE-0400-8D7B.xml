@@ -1,0 +1,27 @@
+﻿<Metadata>
+  <DumpFile>SUICIDESTRIKE-0400-8D7B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a3e78c331b3f2d870e65942acc7b9b731154b5c4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$8D7B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Suicide Strike.tap</SourceFile>
+  <SourceFileSHA1>8444ff96a83ce551281f5eccac6928884a9d3e21</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8D7B "SUICIDESTRIKE-0400-8D7B" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Suicide Strike.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 which sets $0208 to $2C to allow the game to start.
+  
+  The code has also been patched as follows to act as a PAL fix and improve the experience at the point of game over:
+  
+  1. Changed the BEQ $92DC instruction at $92C0 to BEQ $92C6 - this causes F1 and the fire button in port 1 to pause when in-game just like F3, instead of crashing by trying to restart the game (the game only crashes on PAL systems when F1 is pressed in-game).
+     I did it this way instead of modifying the interrupt timings, as I feel restarting the game on a keypress isn't a good feature anyway.
+  2. Changed the JMP $B859 instruction at $B830 to JMP $C000, where a new routine has been added to set $8D6E to $87, which causes the game to return to the mission briefing screen as if the F5 key was pressed. It then jumps to $B859 as the original code did.
+     This removes the annoying hang at the end of a game with no indication to the user that F1 or F5 must be pressed to either restart the game or return to the mission briefing screen.
+  3. Changed the LDA #$78 instruction at $8FA5 to be LDA #$88 instead to reduce the occasional lock-ups when displaying the mission briefing screen. But it isn't perfect, as even the original running on an NTSC machine will lock-up sometimes.
+  
+  Note: to dump the game, set a breakpoint at $8DB7 (not a typo - this is the JSR $8E71 instruction), then NOP out the JSR $8DEB instruction at $8D9D. The start address of $8D7B can then be used, but startup will be quicker.
+  The routine at $8DEB decrypts sections of code and breaking after it allows the decrypted code to be patched as per the notes above.</Notes>
+</Metadata>

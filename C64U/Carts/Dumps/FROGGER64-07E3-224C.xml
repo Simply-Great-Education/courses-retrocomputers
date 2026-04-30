@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>FROGGER64-07E3-224C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ed3b6f1030be42b961dc0a8aebde1f627dd70cd3</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$07E3</Address>
+    <Address>$224C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Frogger 64.tap</SourceFile>
+  <SourceFileSHA1>7c4de6c6646f686a048807db7cde2fd17937164f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x224C "FROGGER64-07E3-224C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $07e3 dec $d030" -x "inc $d020" -o "Frogger 64.prg"</ExomizerCommand>
+  <Notes>Put some init code at $07E3 to set a magic value of $0F at $02 before starting the game.</Notes>
+</Metadata>

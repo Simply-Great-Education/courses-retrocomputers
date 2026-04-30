@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>PARATROOPERS-0AD1</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fdb79908002267a60bfb94d088f2660b24ab6b08</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0AD1</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Paratroopers.tap</SourceFile>
+  <SourceFileSHA1>19edb6f0bcf40677aff22c3ef5fe98ec75ab3949</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0AD1 "PARATROOPERS-0AD1" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Paratroopers (J1).prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

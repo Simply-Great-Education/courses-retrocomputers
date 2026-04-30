@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>POSEIDONPLANETELEVEN-3B0F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5a31d56e1fe9893e76feb9d0f19cef8e50f503db</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3B0F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Poseidon - Planet Eleven.tap</SourceFile>
+  <SourceFileSHA1>660dca92d4b4372379a7505534922b6d8766ae76</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3B0F "POSEIDONPLANETELEVEN-3B0F" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Poseidon - Planet Eleven.prg"</ExomizerCommand>
+</Metadata>

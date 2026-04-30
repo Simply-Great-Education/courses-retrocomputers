@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>AQUANAUT-7D00-6182</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fe4d20952f26a3255c8b6555937fb93f2eb11a0a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7D00</Address>
+    <Address>$6182</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Aquanaut.tap</SourceFile>
+  <SourceFileSHA1>fa7b85e943791c188db251b39bf4c370e948562b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6182 "AQUANAUT-7D00-6182" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $7d00 dec $d030" -x "inc $d020" -o "Aquanaut.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $7D00 which sets $286 to $09 so that text in the game displays correctly.
+  
+  Also made the following changes to allow the fire button in port 2 start the game with 9 lives (with the original code you must press 3-9 to choose the number of starting lives):
+  
+  1. Patched the JSR $FFE4 instruction at $6206 to be JSR $7B00 instead
+  2. Added a small routine at $7B00 to check the fire button in port 2 - if pressed, then it sets the accumulator to $39 and returns, which causes the game to start just as if 9 was pressed. If not pressed, the routine then JMPs to $FFE4 to carry on the normal code flow.</Notes>
+</Metadata>

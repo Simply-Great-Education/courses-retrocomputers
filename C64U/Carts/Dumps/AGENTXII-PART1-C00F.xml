@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>AGENTXII-PART1-C00F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d194b1b5b88f56ecc363d590bd172656d7a946ec</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C00F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Agent X II (Part 1).tap</SourceFile>
+  <SourceFileSHA1>3da6cc6578ed56deb4b6484ccafd549df9d24cd9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC00F "AGENTXII-PART1-C00F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Agent X II (Part 1) (J1).prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>WHODARESWINSII-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f71d5d9aad0fcca941984e868190eacbca28ae33</DumpFileSHA1>
+  <SimplifiedName>Who Dares Wins II</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Who Dares Wins II (Pack of Aces).tap</SourceFile>
+  <SourceFileSHA1>7b1670dfbc65fc1cc5a1838af4cf4e4efad50aa6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "WHODARESWINSII-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Who Dares Wins II.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

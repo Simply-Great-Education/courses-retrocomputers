@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>FLYINGFEATHERS-4000-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>aa1819c71d0d9a4b62e1bf33655f631a032f787b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Flying Feathers.tap</SourceFile>
+  <SourceFileSHA1>b360041da6334fd3bbf563092fb90c191bd3d958</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "FLYINGFEATHERS-4000-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $4000 dec $d030" -x "inc $d020" -o "Flying Feathers.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $4000 which sets $034C to $3D as it would be when actually loading from tape. This allows a protection check at $1BC1 to succeed.</Notes>
+</Metadata>

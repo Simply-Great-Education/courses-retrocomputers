@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>OPERATIONFIREBALL-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c6ade11b0e29e77ee7b852e6ebc7f0b3dffaedde</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Operation Fireball.tap</SourceFile>
+  <SourceFileSHA1>5771b8f9f6b9ae37d4533153f4beeb10d19ef974</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "OPERATIONFIREBALL-4000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Operation Fireball.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>ZYRONSESCAPE-C700</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9056b84ab626bed072494b029bb1bbef6f678c1b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C700</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Zyrons Escape.tap</SourceFile>
+  <SourceFileSHA1>9601a16e565e12b084f90b7f1a483018d079de95</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC700 "ZYRONSESCAPE-C700" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Zyrons Escape.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>OPERATIONWOLF-4240</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b12b44086a8340c33b07ff8727c1434244133a8b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4240</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>191</SidLength>
+  <SourceFile>Operation Wolf.tap</SourceFile>
+  <SourceFileSHA1>581c1ba7a675a2dee4d96ea74a95fbeb3b9f81ba</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4240 "OPERATIONWOLF-4240" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Operation Wolf.prg"</ExomizerCommand>
+</Metadata>

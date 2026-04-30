@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>NECROMANCER-0400-62FA</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ac3a36fedc708443f2c4e100bbbd84d49a38978f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$62FA</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3E</MemoryConfig>
+  <SourceFile>Necromancer.d64</SourceFile>
+  <SourceFileSHA1>c561b00dfb627458fc54070517d11dd7d95db7cf</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x62FA "NECROMANCER-0400-62FA" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3e sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "Necromancer.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 which:
+  1. turns off interrupts from the two CIA chips and acks any pending CIA interrupts
+  2. copies 512 bytes of data from $0430 down to $0000 so that the dump can start at $0400
+  3. sets the stack pointer to $BE
+  4. sets CIA #2 Port B ($DD01) to $5A (this was originally set during the loading process and allows the game to run correctly)
+  5. re-enables raster interrupts (CLI)
+  6. finally jumps to the entry point at $62FA (it couldn't use RTS because of the copy overwriting the stack)</Notes>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>LORDSFIRE-3200</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>38b3110c94ec8125d354a7ba9a221504422161c8</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3200</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Lordsfire.d64</SourceFile>
+  <SourceFileSHA1>6d9783b36e04e3977076e5a669005097a85f46b9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3200 "LORDSFIRE-3200" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Lordsfire.prg"</ExomizerCommand>
+</Metadata>

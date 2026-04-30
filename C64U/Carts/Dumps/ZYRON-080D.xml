@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>ZYRON-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e9a360afc0b725520635a057311c82cc68dff205</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Zyron.tap</SourceFile>
+  <SourceFileSHA1>1590281b54c8e435f9fdb5e040da8f7bae3a3c81</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x080D "ZYRON-080D" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Zyron.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SPIKESPEAK-80F0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a8da02aaf5ef4a79e6b63d1fc77b321c42c1ecc6</DumpFileSHA1>
+  <SimplifiedName>Spike's Peak</SimplifiedName>
+  <JumpAddresses>
+    <Address>$80F0</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Spike's Peak (Human Engineered Software).tap</SourceFile>
+  <SourceFileSHA1>6d0792c108f718d878ffc10519cb8f4d986c6857</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "SPIKESPEAK-80F0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Spike's Peak.prg"</ExomizerCommand>
+</Metadata>

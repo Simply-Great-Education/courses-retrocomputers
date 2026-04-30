@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ARMOURDILLO-8010</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>302968a40c5daa7cfd0f6635c1c7a0eca302cd24</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8010</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Armourdillo.tap</SourceFile>
+  <SourceFileSHA1>cccf03f5c3c43e5f33bff29203cd63d8a3076fe9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8010 "ARMOURDILLO-8010" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Armourdillo.prg"</ExomizerCommand>
+</Metadata>

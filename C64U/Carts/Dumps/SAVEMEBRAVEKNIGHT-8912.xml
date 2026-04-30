@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SAVEMEBRAVEKNIGHT-8912</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7ae7fd945a4503165f5e5eb7c9544e6e09417779</DumpFileSHA1>
+  <SimplifiedName>Save Me, Brave Knight</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8912</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Save Me, Brave Knight (1983)(F451 Software).d64</SourceFile>
+  <SourceFileSHA1>b386bc81e4931af2c09859494d41009c6bb8be22</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8912 "SAVEMEBRAVEKNIGHT-8912" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Save Me, Brave Knight.prg"</ExomizerCommand>
+</Metadata>

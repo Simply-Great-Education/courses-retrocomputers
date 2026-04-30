@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>THELASTV8-07DB-0D00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>80f19ff7bce0760c66b08948469b26e8c7107670</DumpFileSHA1>
+  <SimplifiedName>Last V8, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$07DB</Address>
+    <Address>$0D00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Last V8 The.tap</SourceFile>
+  <SourceFileSHA1>624c039f1f82b2b4ac0c5d9be62c7f65ba312a33</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0D00 "THELASTV8-07DB-0D00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $07db dec $d030" -x "inc $d020" -o "Last V8, The.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $07DB to zero out the tape buffer to prevent a sprite corruption issue. It then jumps to the entry point at $0D00 (it couldn't use RTS because of the zeroing overwriting the boot code).</Notes>
+</Metadata>

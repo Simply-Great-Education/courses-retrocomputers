@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>FOOTBALLEROFTHEYEARII-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2547ee62f42459e1ab760d02f5bf942b075a9fd4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Footballer of the Year II.tap</SourceFile>
+  <SourceFileSHA1>1d1cb7296a7b579d7372340811a00d6db5beca39</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0810 "FOOTBALLEROFTHEYEARII-0810" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Footballer of the Year II.prg"</ExomizerCommand>
+  <Notes>The game should be dumped on the 4th hit at $0810 due to various decompression steps in the original loader (this includes proceeding past the loading/title screen and music).</Notes>
+</Metadata>

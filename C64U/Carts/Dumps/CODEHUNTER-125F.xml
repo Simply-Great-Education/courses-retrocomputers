@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>CODEHUNTER-125F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>134ea314c34addb9e8f7ea1dc5f549828441068e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$125F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Code Hunter.tap</SourceFile>
+  <SourceFileSHA1>3c0812690dbd7d28ebb23c5106791e5a700458c0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x125F "CODEHUNTER-125F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Code Hunter.prg"</ExomizerCommand>
+</Metadata>

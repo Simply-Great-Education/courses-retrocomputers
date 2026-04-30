@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>PAINTERBOY-55C2</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>bd5a094f7fa2611c10a361fcd658a9780e8c570c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$55C2</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Painterboy.tap</SourceFile>
+  <SourceFileSHA1>619387169cd0df3cf8700a9da9fb705d810bc9d6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x55C2 "PAINTERBOY-55C2" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Painterboy.prg"</ExomizerCommand>
+  <Notes>The loading screen is presumed to be from the disk version</Notes>
+</Metadata>

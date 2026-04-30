@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SARGEANTSEYMOURROBOTCOP-0500</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d8eaa39b32328b6012f4b36b18464b1b8188ca18</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0500</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Sergeant Seymour - Robotcop.tap</SourceFile>
+  <SourceFileSHA1>31514c989b7ace25068f8845ee76a45d029d6da4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0500 "SARGEANTSEYMOURROBOTCOP-0500" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Sergeant Seymour - Robotcop.prg"</ExomizerCommand>
+</Metadata>

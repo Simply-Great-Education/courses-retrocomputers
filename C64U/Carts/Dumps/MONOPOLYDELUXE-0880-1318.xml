@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MONOPOLYDELUXE-0880-1318</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f4fdef7599d9b869c36d74bedaafb133c66c43ca</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0880</Address>
+    <Address>$1318</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Monopoly Deluxe.tap</SourceFile>
+  <SourceFileSHA1>13180a6ec49a54c25986d8146b379b3bde1207b9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1318 "MONOPOLYDELUXE-0880-1318" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0880 dec $d030" -x "inc $d020" -o "Monopoly Deluxe.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0880 to set zero page address $04 to $92 to allow the game to start correctly.</Notes>
+</Metadata>

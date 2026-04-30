@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>ROCKNWRESTLE-29DB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e21d91bfda271956b4cece0cbae4bd179766dbfc</DumpFileSHA1>
+  <SimplifiedName>Rock'n Wrestle</SimplifiedName>
+  <JumpAddresses>
+    <Address>$29DB</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$30</MemoryConfig>
+  <ColourRAMFile>ROCKNWRESTLE-CRAM-1980</ColourRAMFile>
+  <ColourRAMStartAddress>$1980</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Rock'n Wrestle (Version 1).tap</SourceFile>
+  <SourceFileSHA1>c5e93d5873c8478954fc28931d02a5bbed2d7a31</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x29DB "AlternativeFormats\PRGs\Uncrunched\Rock'n Wrestle (J1).prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $1980 lda #$30 sta $01 dec $d030" -x "inc $d020" -o "Rock'n Wrestle (J1).prg"</ExomizerCommand>
+  <Notes>Inserted RLE packed colour RAM data to dump file at $1980 to restore before starting the game.</Notes>
+</Metadata>

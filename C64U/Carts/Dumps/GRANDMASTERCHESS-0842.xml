@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>GRANDMASTERCHESS-0842</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>596204b83c079b385d5088865b939864158477c4</DumpFileSHA1>
+  <SimplifiedName>Grandmaster Chess</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0842</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Grandmaster (Alternative).tap</SourceFile>
+  <SourceFileSHA1>feb9a394e6e08f65f8afcb572baeb134abb3eab1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0842 "GRANDMASTERCHESS-0842" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Grandmaster Chess.prg"</ExomizerCommand>
+</Metadata>

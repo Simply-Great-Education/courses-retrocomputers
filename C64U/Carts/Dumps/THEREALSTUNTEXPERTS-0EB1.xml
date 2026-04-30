@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>THEREALSTUNTEXPERTS-0EB1</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>514533bbffcf36802d79cb7a12d2aa433823d69e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0EB1</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Real Stunt Experts, The.tap</SourceFile>
+  <SourceFileSHA1>91811b362b017492bc5237374bc8019fccf5d286</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0EB1 "THEREALSTUNTEXPERTS-0EB1" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Real Stunt Experts, The.prg"</ExomizerCommand>
+</Metadata>

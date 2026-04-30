@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>SATANSHOLLOW-800A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4da7c5b36e4ce09bd3e04baec042cd85f30b384a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$800A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Satan's Hollow.d64</SourceFile>
+  <SourceFileSHA1>c3122e469ae312596a905e8558ad9b56c2d8abfa</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x800A "SATANSHOLLOW-800A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Satan's Hollow (J1).prg"</ExomizerCommand>
+  <Notes>NOP'd out the JSR calls to $80C8 at $804A and $8074 to remove disk highscore loading and saving.
+  Also zeroed out $64FF - $6543 to initialise the highscore table.</Notes>
+</Metadata>

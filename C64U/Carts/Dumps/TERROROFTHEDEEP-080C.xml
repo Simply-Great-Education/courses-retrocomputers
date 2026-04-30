@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>TERROROFTHEDEEP-080C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2b46341228a9e9b82a37860ef45f67bb2c7ef941</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Terror of the Deep.tap</SourceFile>
+  <SourceFileSHA1>9a1a2c4da9aa7f8e5d9bb16bc5879cf23e4f3fdc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x080C "TERROROFTHEDEEP-080C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Terror of the Deep.prg"</ExomizerCommand>
+</Metadata>

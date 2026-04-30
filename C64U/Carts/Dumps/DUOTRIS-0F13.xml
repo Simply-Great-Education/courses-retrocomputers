@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>DUOTRIS-0F13</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>46e2ab0be505659ffd68589410f45e5e8c6762e4</DumpFileSHA1>
+  <SimplifiedName>Duotris</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0F13</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Duotris - (Game On - 1991-02 - Side 2).d64</SourceFile>
+  <SourceFileSHA1>f42477ffc6a6c7e918b16cae498c890c70a57f15</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0F13 "DUOTRIS-0F13" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Duotris.prg"</ExomizerCommand>
+  <Notes>NOP'd out the calls to the kernal load routine ($FFD5) at $0F30 the kernal save routine ($FFD8) at $0EA9 to remove disk access from the game.</Notes>
+</Metadata>

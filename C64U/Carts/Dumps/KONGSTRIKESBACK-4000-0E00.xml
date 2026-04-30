@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>KONGSTRIKESBACK-4000-0E00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2d56b7a1730e5ec02fd30f92e28f5c70affdfacf</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+    <Address>$0E00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Kong Strikes Back!.tap</SourceFile>
+  <SourceFileSHA1>81f0075061ab1b885ed849eb944f7aad5b6a4251</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0E00 "KONGSTRIKESBACK-4000-0E00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $4000 dec $d030" -x "inc $d020" -o "Kong Strikes Back!.prg"</ExomizerCommand>
+  <Notes>Added a routine at $4000 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

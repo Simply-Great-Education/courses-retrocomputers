@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>METAMORPHOSISIII-0400-2EC0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5337619936dbf0f420b7de252752bfc1a44cb03b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$2EC0</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Metamorphosis III - The Creator's Revenge.tap</SourceFile>
+  <SourceFileSHA1>6380a9bc4de5e1804a78721382432a057a821123</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "METAMORPHOSISIII-0400-2EC0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Metamorphosis III - The Creator's Revenge.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 which sets the magic value of $80 at $291 to allow the game to run properly.</Notes>
+</Metadata>

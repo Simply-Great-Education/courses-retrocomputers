@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>WORMINPARADISE-1006</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d56d02d5202a01452d8978520efdf018783d164f</DumpFileSHA1>
+  <SimplifiedName>Worm in Paradise, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1006</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Worm in Paradise, The (Level 9 Computing).tap</SourceFile>
+  <SourceFileSHA1>95b30a7ed55be342ad1e0ff7e682b50170355516</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1006 "WORMINPARADISE-1006" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Worm in Paradise, The.prg"</ExomizerCommand>
+</Metadata>

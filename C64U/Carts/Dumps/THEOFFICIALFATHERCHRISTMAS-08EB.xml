@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>THEOFFICIALFATHERCHRISTMAS-08EB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>92479a23ceee2ff6f6bdbcb87983bbf4830b6bb3</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$08EB</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Official Father Christmas, The.tap</SourceFile>
+  <SourceFileSHA1>8a46fcbf617cf8d82015e769f88411f278eddeaa</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x08EB "THEOFFICIALFATHERCHRISTMAS-08EB" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Official Father Christmas, The.prg"</ExomizerCommand>
+</Metadata>

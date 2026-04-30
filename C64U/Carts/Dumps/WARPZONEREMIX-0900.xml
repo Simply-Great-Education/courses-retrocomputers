@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>WARPZONEREMIX-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2d7127d268bc42ab565d47fb08cef6a4e97cf69e</DumpFileSHA1>
+  <SimplifiedName>Warpzone Remix (Cosine Systems - 2003)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Warpzone Remix (Cosine Systems).d64</SourceFile>
+  <SourceFileSHA1>333941ce3ffd66543e37a351f05792626d99b93c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0900 "WARPZONEREMIX-0900" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Warpzone Remix (Cosine Systems - 2003).prg"</ExomizerCommand>
+</Metadata>

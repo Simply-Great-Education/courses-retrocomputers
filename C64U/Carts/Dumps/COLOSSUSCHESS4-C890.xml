@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>COLOSSUSCHESS4-C890</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fdc1513d7dc73c9425196526ab41bce3e003cbdd</DumpFileSHA1>
+  <SimplifiedName>Colossus Chess 4</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C890</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Colossus Chess 4.0 (Version 1).tap</SourceFile>
+  <SourceFileSHA1>aa9400345a7bfaf4a0c3853d79f2b805c785aee0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC890 "COLOSSUSCHESS4-C890" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Colossus Chess 4.prg"</ExomizerCommand>
+</Metadata>

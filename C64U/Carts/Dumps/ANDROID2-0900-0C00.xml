@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>ANDROID2-0900-0C00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>af2410a50e493657f8576ea0ee798ed713317430</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0900</Address>
+    <Address>$0C00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Android 2.tap</SourceFile>
+  <SourceFileSHA1>5ebbec87685e54e52cf1fe432c0795c1a84695e0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0C00 "ANDROID2-0900-0C00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0900 dec $d030" -x "inc $d020" -o "Android 2.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0900 to set $C0 to $80 so that the game defaults to joystick instead of keyboard on startup.</Notes>
+</Metadata>

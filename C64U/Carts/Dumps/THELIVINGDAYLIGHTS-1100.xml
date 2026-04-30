@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>THELIVINGDAYLIGHTS-1100</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ecc16eb27bb9e1522a1d68bc063aa9a63aa1636c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1100</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Living Daylights, The.tap</SourceFile>
+  <SourceFileSHA1>f26d18b378807d4e4e07d51222747f8c23f2df73</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1100 "THELIVINGDAYLIGHTS-1100" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Living Daylights, The.prg"</ExomizerCommand>
+</Metadata>

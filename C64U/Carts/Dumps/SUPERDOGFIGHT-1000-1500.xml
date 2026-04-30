@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>SUPERDOGFIGHT-1000-1500</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0b76d322fe683ed23df95e15dfa7f74027b80965</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+    <Address>$1500</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Super Dogfight.tap</SourceFile>
+  <SourceFileSHA1>7b8c8a3d82e769ff3cc904f43897c6ad6a619cc1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1500 "SUPERDOGFIGHT-1000-1500" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $1000 dec $d030" -x "inc $d020" -o "Super Dogfight (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $1000 which copies 256 bytes of data from $1020 down to $0300 so that the dump can start at $0400.</Notes>
+</Metadata>

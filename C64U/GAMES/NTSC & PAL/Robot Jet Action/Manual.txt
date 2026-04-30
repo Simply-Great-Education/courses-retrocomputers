@@ -1,0 +1,45 @@
+Robot Jet Action
+
+
+Introduction
+
+Life was peaceful in the land of retro games. One day, evil robots from other worlds attacked! They wanted to steal all the jewels from the old games. To keep all the diamonds, coins, stars or other gems from the old games, someone has to run them down and collect everything before they are taken! The hero that can do this is a nice little Robot. Equipped with a jetpack that is fast enough to collect everything before these evil robots do. Go from planet to planet, from game to game, and keep all these gems. Watch out for obstacles and avoid overheating your jetpack!
+
+A modern game for the Commodore 64
+
+Robot Jet Action is a classic arcade-style platform game for the Commodore 64/128. The game was created as part of the Commodore computer enthusiast portal - C64portal.pl. In the game, the player controls a small robot with a joystick. Use the fire button to activate the jetpack, by holding down the fire button, the Robot flies higher and higher. 
+
+The game is presented with high-resolution graphics and a dedicated soundtrack that perfectly fits the action taking place on the screen.
+
+
+Authors
+Idea, Design, Programming, Graphics: 
+Tomasz 'Carrion' Mielnik 
+
+Music and sound effects: 
+Kamil 'Jammer' Wolnikowski
+
+
+
+Game features
+
+- 35 challenging levels on five planets.
+- Each planet refers to some old retro game or games.
+- The map allows you to choose a planet/world on which the player wants to start the journey.
+- Level with a boss at the end of each planet/world.
+- The player decides whether he wants to collect all the items and be PERFECT or go to the next level as quickly as possible.
+- Extra lives can be collected. One extra life in each world/planet.
+- C64 hi-res graphics in the rarely used ECM graphics mode.
+- Great dedicated music composed by one of the best contemporary composers operating on the C64 scene.
+- An animated intro introducing the atmosphere of the game.
+- An animated end-sequence when the player succeeds in completing all the levels.
+- Works on a real 40-year-old Commodore 64/128 and on an modern emulator.
+- Compatible with SD2IEC, THEC64 mini® and THEC64®.
+- Source code of the game is available at c64portal.pl
+
+
+https://carrion64.itch.io/robot-jet-action
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Tomasz 'Carrion' Mielnik.

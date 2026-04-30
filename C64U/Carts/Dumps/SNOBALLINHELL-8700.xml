@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SNOBALLINHELL-8700</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8c960b82fb16640bda87c118a6faf282e0c9d278</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8700</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Snoball in Hell.tap</SourceFile>
+  <SourceFileSHA1>81610d2c3a145e0531ac6f8f2939280cc645a09b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8700 "SNOBALLINHELL-8700" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Snoball in Hell.prg"</ExomizerCommand>
+</Metadata>

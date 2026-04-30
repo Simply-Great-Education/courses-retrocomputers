@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>HYPERACTIVE-929E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5aac483899e6f7621acf127427b35762c12c735e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$929E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Hyper Active.tap</SourceFile>
+  <SourceFileSHA1>797b0c51fd5e6967a48ea9d271a1f986e3d9c491</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x929E "HYPERACTIVE-929E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Hyper Active.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

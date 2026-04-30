@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>MIAMIVICE-0D36</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f248ab11c2ad8a862992d42dc8414cef5d86889e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0D36</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>253</SidLength>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Miami Vice.tap</SourceFile>
+  <SourceFileSHA1>23780a067f1544121dcfd23cb96836e9895f3873</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0D36 "MIAMIVICE-0D36" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Miami Vice (J1).prg"</ExomizerCommand>
+  <Notes>Patched the STA $027D instruction at $0E18 to be JSR $CE00 instead. A tiny routine to check the port 1 fire button has been placed at $CE00, which if detected, unpauses the game by setting $0DCB to zero. It also performs the original STA $027D instruction so as to keep the original functionality.
+  
+  Without this patch only the shift-lock key can be used to unpause the game, which in uninuitive and is even more frustrating as the game starts in paused mode!</Notes>
+</Metadata>

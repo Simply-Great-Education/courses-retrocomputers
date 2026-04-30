@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SOCCERPINBALL-5D1E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ff4db88cb9a6d495e3de4fd2b735c65db3810cde</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5D1E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Soccer Pinball.tap</SourceFile>
+  <SourceFileSHA1>667c66fd4c548df647de2cb313d5a5517978c115</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5D1E "SOCCERPINBALL-5D1E" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Soccer Pinball.prg"</ExomizerCommand>
+  <Notes>As the original game is frozen, the breakpoint to use for dumping is actually $5D3C.</Notes>
+</Metadata>

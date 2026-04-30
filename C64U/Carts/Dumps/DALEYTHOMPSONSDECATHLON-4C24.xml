@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>DALEYTHOMPSONSDECATHLON-4C24</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>06315d706515b0a96e4d2d1ae867b7c64ee8db16</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4C24</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>89</SidLength>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Daley Thompson's Decathlon.tap</SourceFile>
+  <SourceFileSHA1>93bd7ac43aebc68cf0a91b1d4449136fe3b05c27</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4C24 "DALEYTHOMPSONSDECATHLON-4C24" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Daley Thompson's Decathlon (J1).prg"</ExomizerCommand>
+</Metadata>

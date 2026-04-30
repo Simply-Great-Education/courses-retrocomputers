@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BLASTOPIADX-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ddc77128de8abce39a5c3da69488e0408e8f55c6</DumpFileSHA1>
+  <SimplifiedName>Blastopia DX (TND - 2019)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$38</MemoryConfig>
+  <SourceFile>Blastopia DX.tap</SourceFile>
+  <SourceFileSHA1>26b12426ef8442e1d3b1b06dd2d19ed059ab2d6b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "BLASTOPIADX-4000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$38 sta $01 dec $d030" -x "inc $d020" -o "Blastopia DX (TND - 2019).prg"</ExomizerCommand>
+</Metadata>

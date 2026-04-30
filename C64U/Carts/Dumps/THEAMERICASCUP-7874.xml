@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>THEAMERICASCUP-7874</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>378fa557026a818c06f45001c2c1330ee1819890</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7874</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>America's Cup, The.tap</SourceFile>
+  <SourceFileSHA1>7e89ef83d058eebe5b89cbd909a46e86ebdd4a7f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7874 "THEAMERICASCUP-7874" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "America's Cup, The.prg"</ExomizerCommand>
+  <Notes>The loading screen is based on the disk version from Electronic Arts.
+  
+  Note: As this game is actually frozen, the game starts at $3CDF. However the true start address is $7874.</Notes>
+</Metadata>

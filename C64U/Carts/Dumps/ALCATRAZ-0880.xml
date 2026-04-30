@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ALCATRAZ-0880</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>086881cdaffb32d031c8d7d7c01e4be18e3bc3cf</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0880</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Alcatraz.tap</SourceFile>
+  <SourceFileSHA1>69ad62f4222c84f63d16b81530c178bcf0647bb1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0880 "ALCATRAZ-0880" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Alcatraz (J1).prg"</ExomizerCommand>
+</Metadata>

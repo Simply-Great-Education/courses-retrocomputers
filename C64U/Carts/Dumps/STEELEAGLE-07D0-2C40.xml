@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>STEELEAGLE-07D0-2C40</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e391f4ad6323e408ba15764be01aec8a53798b33</DumpFileSHA1>
+  <SimplifiedName>Steel Eagle</SimplifiedName>
+  <JumpAddresses>
+    <Address>$07D0</Address>
+    <Address>$2C40</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Steel Eagle [PAL].d64</SourceFile>
+  <SourceFileSHA1>28f44d69ce540647c84ea50836133a3dddd5cb57</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2C40 "STEELEAGLE-07D0-2C40" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $07d0 dec $d030" -x "inc $d020" -o "Steel Eagle.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $07D0 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to run correctly.
+  The loading screen is from the Spectrum version.</Notes>
+</Metadata>

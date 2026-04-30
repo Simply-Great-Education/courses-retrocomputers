@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>FRANTICFREDDIEII-0700-03DA</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>7f787576224f186deeeeffdd8881ec68c4e2c14c</DumpFileSHA1>
+  <SimplifiedName>Frantic Freddie II (2019)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0700</Address>
+    <Address>$03DA</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Frantic Freddie II.d64</SourceFile>
+  <SourceFileSHA1>9f529aa7e64d2b436532222f02c4399430abebe2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x03DA "FRANTICFREDDIEII-0700-03DA" -Di_table_addr=0x02 -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $0700 dec $d030" -x "inc $d020" -o "Frantic Freddie II (2019).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0700 to set the serial shift register ($DC0C) to $20 to allow the game to run correctly.
+  Also NOP'd out the calls to the kernal load routine at $98BE and save routine at $5FDD to remove disk access.</Notes>
+</Metadata>

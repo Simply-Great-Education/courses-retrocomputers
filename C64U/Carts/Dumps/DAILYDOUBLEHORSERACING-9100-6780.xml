@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>DAILYDOUBLEHORSERACING-9100-6780</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>16100ee73119a0f89b6bbdd1eba6a5764274b37b</DumpFileSHA1>
+  <SimplifiedName>Daily Double Horse Racing</SimplifiedName>
+  <JumpAddresses>
+    <Address>$9100</Address>
+    <Address>$6780</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>DAILYDOUBLEHORSERACING-CRAM-9200</ColourRAMFile>
+  <ColourRAMStartAddress>$9200</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>Daily Double Horse Racing (Version a).tap</SourceFile>
+  <SourceFileSHA1>4b2e77b40a920d6019f36276b49decb726ba960b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6780 "AlternativeFormats\PRGs\Uncrunched\Daily Double Horse Racing.prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $9200 lda #$37 sta $01 jsr $9100 dec $d030" -x "inc $d020" -o "Daily Double Horse Racing.prg"</ExomizerCommand>
+  <Notes>Added a routine at $9100 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  
+  Also removed the loading please wait text from the loading screen.</Notes>
+</Metadata>

@@ -1,0 +1,124 @@
+Timo's Castle
+
+
+
+Hello Timo,
+
+Welcome to Your Castle!
+
+Let's get ready for the journey of your life...
+
+
+
+
+Control
+
+Joystick in Port 2
+
+Game Title
+- Move Joystick to switch between "Easy" and "Normal" mode. In Easy mode you won't lose a life by falling too far.
+- Press fire to start a game -or-to continue.
+
+In-Game
+- Move Timo left and right to walk.
+- Move up and down to climb ladders.
+- Press Fire Button to Jump.
+
+Keyboard
+- F1= Start New Game
+- P= Pause
+- RUN/STOP= Abort Game
+- SPACE= Coolness on/off
+- ALL KEYS= Enter High Score Name
+
+
+Goal
+
+There are 8 rooms for you to master. In each room you will find a selection of items to pick up. Collect them all. Some of the larger items will trigger some event within the level. As soon as you have collected all items, a key will appear.
+
+Pick up this key to unlock the exit to the next room. If you manage to complete all rooms without the "continue" option, you will unlock the happy ending to Timo's Castle.
+
+In addition, you can choose to chase the high scores. Tip: Collect additional points by finishing any room as fast as you can. The faster you are, the higher the bonus points (only accessible in Normal mode).
+
+
+Challenge
+
+Avoid contact with moving objects within the room, these are deadly to Timo. Everything wants to kill you. If you fall too far from height then Timo will lose a life (Normal Mode only).
+
+
+Status Bar
+
+Score= Points you collected so far.
+- Small items = 50 Points
+- Large items = 500 Points
+- Hidden Bonus = 1000 Points
+= Time Bonus (Normal mode only)
+- Additional points the faster you are
+Timos= Lives remaining
+- (New life after 20000 Points)
+Room= Current Level / Room number
+
+
+The Story
+
+
+There it was again! That pain from a long-suppressed childhood of which nobody truly believed you, and yet, you had seen it with your own eyes...
+The house... it became... alive!
+
+You are Timo, a Scottish outcast prince, and you reluctantly remember the day when you were alone at home as a little boy and witnessed how ordinary objects suddenly started to levitate and blocked the passageways ahead, with a shunt of doors locking all at once.
+
+With skilful precision, you were able to make your way through the rooms of your parents house to try and investigate the cause of this haunting.
+
+When entering the musty cellar, you finally discovered the answer. But in the back of your mind it dawned on you that you should not have embarked on this quest alone.
+
+In a flash of light and horror, you realised that an evil witch had taken up residency here, bringing with it, a great misfortune upon the estate.
+
+In an effort of courage and bravery, you engaged into a fierce battle with the witch.
+
+With much cunning and deceit, you had been able to win this duel and banished the witch once and for all.
+
+So you thought.
+
+After this formative event, you turned your back on the noble life and became a brave young rebel who could take on the world at any time. But the stabbing pain you now felt in your chest was the same one you had to endure in that battle against the witch.
+
+This pain even overshadowed the grief over the loss of your parents, who were discovered motionless in the marsh near your Scottish estate a few months ago.
+
+Surrounded by dozens of green croaking frogs. The case was closed without result.
+
+Despite this heavy blow of fate, and although you wanted nothing more to do with pomp and royal obligations, you accepted the inheritance:
+
+Your parents' country house in the Scottish Highlands that you've never heard of before.
+
+And it turned out that it came with a magnificent little castle.
+
+Together with your beloved Amber, you begin your quest to restore the castle and the neglected gardens to their former glory.
+
+As you collect the pine cones scattered around the castle gardens, suddenly you hear a blood-curdling scream reaching you from the castle tower.
+
+Amber!!!
+
+Thousands of images haunt your mind all at once and with a shiver of disbelief the mocking laughter that accompanies Amber's scream.
+
+And that pain, that sicken pain!
+
+The witch is back.
+
+
+
+
+Credits
+
+Roman Werner - Lead Design, Code, Graphics, Manual
+Timo Weingärtner - Producer, Design
+Benjamin Dibbert (Nordischsound) - Music, Design
+Oğan Kandemiroğlu - Cover Art
+
+
+
+The computer program and its associated documentation and materials are protected by National and International Copyright laws. Storage of the computer program and its associated documentation and materials in a retrieval system, reproduction, translation, copying, hiring, lending, broadcasting and public performance are prohibited without the express written permission of Pixelbrei Games. All rights of the author and owner are reserved world-wide.
+
+
+Copyright 2024 by Pixelbrei Games
+
+
+Distributed with the Commodore 64 Ultimate with permission from Roman Werner.

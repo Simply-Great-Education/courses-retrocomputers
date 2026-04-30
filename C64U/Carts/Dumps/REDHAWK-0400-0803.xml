@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>REDHAWK-0400-0803</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>16aa2920583658db76bfa68643f4794e6b60a59f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$0803</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3F</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Redhawk.tap</SourceFile>
+  <SourceFileSHA1>da9e99f6d90ba3ccb2529df5dc0509bc7e703bc3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0803 "REDHAWK-0400-0803" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3f sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "Redhawk.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0400 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

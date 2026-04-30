@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>MADSCIENTIST-6500-04E0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>37db6eac4a9280b96fcb07edf36d9914d7cf2771</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$6500</Address>
+    <Address>$04E0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Mad Scientist.tap</SourceFile>
+  <SourceFileSHA1>30ca392abd3c686b1f48f2a3ea967cdafd399262</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x04E0 "MADSCIENTIST-6500-04E0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $6500 dec $d030" -x "inc $d020" -o "Mad Scientist.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $6500 which:
+
+  1. turns off interrupts from the two CIA chips and acks any pending CIA interrupts
+  2. copies 256 bytes of data from $6530 down to $0000 so that the dump can start at $0400
+  3. sets the values $03, $02 and $07 at the end of colour RAM ($DBFD-$DBFF) to avoid a protection routine at $34E8 from crashing the game
+
+  Note: the breakpoint to use for dumping is $0C7F, but using the start address of $04E0 allows some setup code to run which was executed in the original before the game had finished loading.</Notes>
+</Metadata>

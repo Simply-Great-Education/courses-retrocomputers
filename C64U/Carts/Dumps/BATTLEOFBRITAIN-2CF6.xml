@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>BATTLEOFBRITAIN-2CF6</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>91f8a79d7010cea682c4eed756440033ba1fbe90</DumpFileSHA1>
+  <SimplifiedName>Battle of Britain</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2CF6</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Battle of Britain (Firebird).g64</SourceFile>
+  <SourceFileSHA1>e8c88b28b38eaef066a623d2171a5a1713a5669a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "BATTLEOFBRITAIN-2CF6" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Battle of Britain.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>THECURSE-8E3D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b7a3c5ff96efd3ccff8f891f0f6b8bfff33a1b7d</DumpFileSHA1>
+  <SimplifiedName>Curse, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8E3D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Curse, The (Gilsoft).tap</SourceFile>
+  <SourceFileSHA1>523f263eaff2b367ba5c4ce4e1f171c2708cdf8d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8E3D "THECURSE-8E3D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Curse, The.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

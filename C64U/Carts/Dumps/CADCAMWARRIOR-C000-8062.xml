@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>CADCAMWARRIOR-C000-8062</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f1cedfed392f036c53cb73cee019919eb1ca95a2</DumpFileSHA1>
+  <SimplifiedName>Cad-Cam Warrior</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$8062</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3F</MemoryConfig>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>Cad-Cam Warrior (Version 2).tap</SourceFile>
+  <SourceFileSHA1>05f0729e10e6b84516d6706f33746cf0c0ac8840</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8062 "CADCAMWARRIOR-C000-8062" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3f sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Cad-Cam Warrior.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C000 which:
+  1. Sets the correct VICII settings
+  2. Sets the correct border and screen colours as well as background #1 and #2 colours
+  3. Initialises colour RAM for the loading screen to display correctly
+  4. Displays the loading screen and waits for any key or the fire button on either joystick to enter the game</Notes>
+</Metadata>

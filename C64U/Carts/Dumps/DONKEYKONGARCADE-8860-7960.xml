@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>DONKEYKONGARCADE-8860-7960</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>683141f6369cdf016d7f40555873d86fa701553a</DumpFileSHA1>
+  <SimplifiedName>Donkey Kong Arcade (Oxyron - 2016)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8860</Address>
+    <Address>$7960</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3F</MemoryConfig>
+  <SourceFile>Donkey Kong Arcade.prg</SourceFile>
+  <SourceFileSHA1>0bb842908dcc9cbd65799bfbb556a08326b0368e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7960 "DONKEYKONGARCADE-8860-7960" -Di_table_addr=0x02 -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3f sta $01 jsr $8860 dec $d030" -x "inc $d020" -o "Donkey Kong Arcade (Oxyron - 2016).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $8860 to set the current device number ($BA) to $01 (tape) before starting the game to disable highscore loading and saving to disk.</Notes>
+</Metadata>

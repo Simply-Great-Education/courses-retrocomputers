@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>LIVEANDLETDIE-0803</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5433c68b09f8a7804ebeefb1468f5f7be8ea89cf</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0803</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Live and Let Die.tap</SourceFile>
+  <SourceFileSHA1>80121b9c464eca7001ea4e54078504999e6cb0e5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0803 "LIVEANDLETDIE-0803" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Live and Let Die.prg"</ExomizerCommand>
+</Metadata>

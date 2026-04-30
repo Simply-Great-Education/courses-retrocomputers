@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>LASERZONE-800A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>31046ea3bb92e36b324d85a2e13052c800c292db</DumpFileSHA1>
+  <SimplifiedName>Laser Zone</SimplifiedName>
+  <JumpAddresses>
+    <Address>$800A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Laser Zone (Llamasoft).tap</SourceFile>
+  <SourceFileSHA1>2f5fc669d93c42a177765a4e6348aa6f89ef8208</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x800A "LASERZONE-800A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Laser Zone (J1).prg"</ExomizerCommand>
+</Metadata>

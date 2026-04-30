@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>FLUNKY-C900-9048</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9b13d7035dc676648d9da821b185ffbe8bb2de89</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C900</Address>
+    <Address>$9048</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Flunky.tap</SourceFile>
+  <SourceFileSHA1>6ad4c8d567dd45f51fe649e93d91b59614fe77a7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9048 "FLUNKY-C900-9048" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c900 dec $d030" -x "inc $d020" -o "Flunky.prg"</ExomizerCommand>
+  <Notes>Added a routine at $C900 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

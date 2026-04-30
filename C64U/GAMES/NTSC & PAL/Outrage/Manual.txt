@@ -1,0 +1,258 @@
+A game by Cosmos Designs (1990-2020)
+Copyright 2020 Protovision & Psytronik Software
+
+Game concept and Development by Bernd Buchegger
+Graphics and Design by Bernd Buchegger
+Additional Development by Sidney Arbouw
+Music by Karl Sommer
+Additional music and sound effects by Roy Widding
+Loading picture by Steve Day
+Loader system by Lasse Oorni
+NTSC fixed by Zack Thompson
+C64 docs displayer by Ruben Spaans, Roy Widding & Cal Skuthorpe
+Manual design & Illustrations by Lobo
+Quality assurance by David Simmons & Bieno Braitmaier
+Storyline by David Simmons
+Box artwork by Trevor Storey
+Resurrection support by Arnold Blueml
+Production management by Jakob Chen-Voos
+Produced by David Simmons
+
+
+The Story
+
+Crying...
+I woke up to the sound of crying. 
+The pain, the smell of smoke and blood... 
+my blood.
+I struggled to my feet...our base had been decimated. We never coordinated our ground and air offensives. A desperate struggle ensued and we had lost, lost it all!
+I found my loved ones, I found my friends... all gone.
+Who were they? WHAT were they? A dragon? 
+No, it cannot be, I must have a concussion, surely this is not possible!
+I made my way to the armoury; everything was gone except our most basic weapon used for training new recruits and a single pack of supplies. My loved ones. Gone.
+The rage built up inside of me - they are all gone!
+There has to be justice. I will not rest, I will not hold my peace, 
+I will succeed...
+
+
+
+Controls
+
+Joystick
+You will control your hero with Joystick in Port#2 - vengeance is yours!
+Joystick left - Run to the left
+Joystick right - Run to the right
+Joystick up - Jump
+Joystick down - Dodge
+Button - Fire
+
+Keyboard
+<Space>: Smart bomb
+<Runstop>: Pause
+F1: Default weapon (weak with unlimited ammunition)
+F3: Weapon#2 (stronger, ammunition must be bought in the shop)
+F5: Weapon#3 (even stronger, ammunition must be bought in the shop)
+F7: Weapon#4 (strongest, ammunition must be bought in the shop)
+You see the type of weapon while standing still or while firing your gun.
+
+
+
+Display
+
+The lower part of the screen shows the games display panel. 
+Have an eye on the energy bar as it constantly decreases over time. 
+Make sure to reach a store in time to replenish your energy.
+
+
+
+The Shop
+
+Enter the shop by jumping on the shop symbol:
+
+These symbols pop up in specific locations. Make sure to use them and replenish your energy in time. In order to buy items in the store collect the coins that appear when you kill enemies. Their value is different depending on the type of enemy. 
+
+
+The Shop - continued
+Note that using the smart bomb does not lead to coins. When in the shop, select the item you wish with the joystick and activate the purchase by clicking the button. The respective amount will be subtracted from your account.
+ 
+Note that you cannot cancel a purchase. Leave the shop by clicking the exit symbol. The shop will disappear and you start at the point where you entered the shop.
+
+Hint: Re-enter the same shop by moving forward until the spot of the shop fully disappears and returning back, the shop will reappear at the same location.
+
+
+Extra Life
+Cost: 500
+
+Replenish Energy
+Cost: 200
+
+Smart Bomb
+Cost: 50
+
+Rapid Fire
+Cost: 300
+
+Ammo Weapon#2
+Cost: 50
+Units: 10
+
+Ammo Weapon #3
+Cost: 100
+Units: 10
+
+Ammo weapon #4
+Cost: 150
+Units: 10
+
+
+
+Game Objective
+
+You simply run from left to right and fight your way through hordes of spawning monsters. At the end of each level, a boss enemy awaits you. Kill the boss to finish the level.
+You will enter 5 different levels each with their specific boss enemy. Expect glory and fame and a spectacular ending sequence as a reward!
+
+General hints
+You can move freely in the game and kill as many monsters as you like but beware of the decreasing energy bar. Contact with monsters or enemy shots, of course, will also diminish your energy bar and you die when the bar is down to zero. You start with 5 lives - buy more in the shop. Make sure to act quick when the coins appear as they bounce shortly before they vanish. Smart bombs can always be used and have specific firepower. Stronger enemies like bosses might not be killed and definitely take serious damage! Having one or more smart bombs ready for the boss might save you serious trouble!
+
+The weapon types #2 to #4 have limited ammunition but are way stronger. When ammo is empty you will switch back to your default weapon automatically. Note that some monsters might need several hits before they die due to their individual armour. Stronger weapons can help to save time and your precious hero's life.
+
+The rapid-fire is a great option as it significantly enhances the fire rate of each weapon. Note that it is only valid in the level where you buy it and must be repurchased in the next level.
+
+
+
+Boss enemies
+
+Each level ends with a mighty boss enemy. Bosses have strong armour but are only as strong as their weakest point - find it! You will easily recognise a good hit by a momentary flashing of the enemy. Remember that smart bombs work well on bosses but one bomb might not be sufficient. Successfully killing the boss reveals precious coins and the shop symbol will appear. Jump on the symbol to start loading the next level.
+
+
+
+
+Outrage: a RETROspective
+
+The game you hold in your hands is not only a piece of amazing code, pixel graphics and SID music; it is also a piece of history spanning three decades of home computing. We are happy to share the following narrative that covers the roots of "Outrage" but also reaches back to the early years of our lives with the 
+Commodore 64: a story that lingered in the dark for a long time.
+
+Bernd & Arnold
+Austria, January 2020
+
+
+
+Chapter 1: The Fellowship of the Game
+
+It all started 32 years ago in the year of 1988, when the name "Cosmos Designs" first appeared in a C64 scene demo called "It's a Nosey". In May 1989, the group was eventually founded by Arnold Blueml (Arny, ABC) and Hannes Sommer (Mc Sprite) following their collaboration on two demos called "First Try" and "Yppox". Later that year also Karl Sommer (Mc Lord) joined as well as Bernd Buchegger (Panther) - the original creator of "Outrage". The group members from Austria were aged between 15 to 16 years when they were mainly focusing on producing demos: "Megademo 90", "Wise Brains", "Just 4 Parts" and many more. Cosmos Designs was frequently present in important scene charts for demos. The group achieved some first-time records for sprites "multiplexer" (e.g. 118 sprites in "Cosmail), introduced new routines (e.g. the first "plasma" effect on C64 in "Living Chips") and also made a cooperation demo with "Black Mail", another famous demo group.
+
+
+Chapter 1: The Fellowship of the Game - part II
+
+With the first prototype of "D.I.S.C." (vertical shoot 'em up) developed in 1989, the game development started to emerge and a lot of projects were initiated simultaneously. The demo production stopped by the end of 1991 and the focus fully shifted to games with productions in a variety of genres, e.g. "Lions of the Universe" (horizontal shoot 'em up), "Cosmox" (original platformer) and "Fred's in Trouble" (jump'n run). Towards the end of the C64's commercial lifespan; the activities of Cosmos Designs also faded, but not before reaching another notable climax in 1993 with the release of their first and only multi-platform title called "Super Nibbly" (snake), which received a release for C64, Amiga, Atari ST and PC DOS.
+
+
+Chapter 1: The Fellowship of the Game - Part III
+
+All productions originated in the bedrooms of the teenage computer geeks that practised their passion besides school and other hobbies or duties. Communication between the members was done via cord phone, letters, text files on disks or at occasional meetups. Source materials were exchanged via disks and shared via mail which also meant that feedback loops could take some time until the next update was available. The development tools used in the beginning were mainly standard software (Turbo Assembler, Koala Paint, Amica Paint, etc.) but over time also proprietary tools and more sophisticated development environments were applied. 
+
+All productions originated in the bedrooms of the teenage computer geeks that practised their passion besides school and other hobbies or duties. Communication between the members was done via cord phone, letters, text files on disks or at occasional meetups. Source materials were exchanged via disks and shared via mail which also meant that feedback loops could take some time until the next update was available. The development tools used in the beginning were mainly standard software (Turbo Assembler, Koala Paint, Amica Paint, etc.) but over time also proprietary tools and more sophisticated development environments were applied. Game submissions to publishers were done via mail including demo versions on disk, introduction letters and sometimes they also included photo-print screenshots done via reflex camera directly off the TV. The longest feedback of a publisher took about 12 months which was when a MicroProse producer called in the middle of a memorable night (time shift) to ask about the submission of "Super Nibbly" and to negotiate a possible release as a Windows game.
+
+
+Chapter 1: The Fellowship of the Game - Part IV
+
+The reason why they even noticed it amongst tons of other game submissions they received daily, was because they figured out the game had found its way to nearly all computers in their office and was played during lunchtime frequently by their employees.
+
+There were a couple of games that took quite some time from production start to release, e.g. "Ballfever" (platformer) which was the second game prototype but took 4 years until its release. But no game came close to the production time of 30 years for "Outrage", ranging from its original development which started in 1990 until its final release in 2020, which eventually makes it the leader in ranking for the longest production time of a commercially released video game. 
+
+
+Chapter 2: The Two Decades
+
+This is Bernd/Panther from Cosmos Designs and in this chapter, I'm going to tell you about the origins of "Outrage" from my perspective. To get this started let me turn back the wheel of time to the year 1988: The Commodore 64 is still a state of the art in home computing but the next generation with Commodore Amiga and Atari ST is already on the rise. Nevertheless, the whole C64 scene is a strong and vivid community with many productions in the making. 
+
+I entered the scene as a young boy who was totally fascinated by the new possibilities of these machines. My first scene contact was established in an arcade hall by recognising the three letters a player entered in the high score as a known scene nickname. Soon I attended my first copy party which instantly led to more contacts. This resulted in my first membership in the group "Crystal" followed by some other groups. Where others pursued a career as a cracker or swapper, I was always attracted by the coder's corner and started my first attempts in forcing the 6510 chip to perform things it was likely never designed for.
+
+When I first met Arnold and Hannes from Cosmos Designs, I immediately felt at home. The creative energy of these guys and their high productivity was truly infectious. With a constantly refined design and coding skills, we managed to release several demos that gained a lot of respect from the scene.
+
+
+Chapter 2: The Two Decades - Part II
+
+Then came the transition from demo to game development which was kicked off by Hannes who quickly evolved into a real game production machine. Together with Arnold as lead designer, many game series started to pop up. Hannes' brother Karl joined in as music and sound composer and I was given the opportunity to contribute some graphics. Hannes succeeded in selling these games to publishers and made a respectable earning for a teenager at that time.
+
+Inspired by this success and constantly encouraged by Hannes and Arnold, I started to follow our new course in 1990. An initial idea inspired by a variety of jump and run and shooter concepts started to take shape. It was the sort of arcade I preferred and early design drafts were soon drawn, refined, dropped again and redrawn. Hannes helped me to better understand the required game mechanics. At that time, he was almost a full-time developer, even sacrificing school time in favour of his ongoing game productions. Unlike Hannes, I was only coding during my weekends as I was attending a residential school. 
+
+The name "Outrage" resulted from extensive dictionary research where I was looking up cool game titles. I did all the game graphics, sprite animations and coding myself.
+
+
+Chapter 2: The Two Decades - Part III
+
+Being in full control of all these components was fascinating and soon became addictive, resulting in weekends spent in my room sitting on an old brown synthetic leather kneeling stool, staring into a small cathode-ray tube television and hacking in assembler code. Fortunately, some good friends and the restrictive policies in my residential school in regard to bringing home computers ensured that I did not totally lose contact with the real world. 
+
+I refined and worked on each level until it finally felt sufficiently polished. Each level had its own specific in-game graphics with a clear and distinguishable style mixed with special effects. Of course, a vicious boss monster had to guard the end of each level. My goal was to offer at least five levels fully packed with action. A self-coded in-game editor helped to compose all these graphics, arrange the monster placement and fine-tune the levels during endless work hours. But what the heck - it was all worth the fun and experience!
+
+But my high-quality commitment came at a price  - it consumed more than two years to finally reach my goal and accomplish these five levels that I had initially planned. Reaching this milestone in the year 1993 revealed an aspect that I had almost ignored so far: How to sell it to a publisher? I first laid my hopes on Hannes and his experience in these matters. But it turned out that in this year, a game competition had been announced by Boeder in cooperation with "64'er" magazine and we both decided to attend.
+
+
+Chapter 2: The Two Decades - Part IV
+
+Boeder was a popular "floppy disc producer" but also known for its technical publications and acted as a game publisher in those days. The deal was to join the contest and the top three winners were promised a fully managed game publishing by Boeder and as an extra prize, a week in the south of France including a visit to one of their "disc production sites". This sounded great, so I packed my beloved "Outrage" onto a 5¼ floppy disk and submitted my application. Hannes did the same with his recently finished platform game "Cosmox". Several weeks passed until I received a letter from Boeder at my home address. I was at school when my parents informed me via phone about the envelope. 
+
+
+Chapter 2: The Two Decades - Part V
+
+I was totally excited and desperately waiting to finally come home and tear this envelope open. And guess what - I was nominated a winner! I could almost not believe it and felt incredibly happy. I immediately called Hannes to inform him and we were both amused as he was nominated too!
+
+A few days later we held the brand new "64'er" magazine in our hands that was showcasing the winners with their nominated game projects.
+
+Everybody at Cosmos Designs was cheering with me as my first game instantly turned into a winner. Proudly I presented the article to all my parents, relatives and friends.
+
+
+Chapter 2: The Two Decades - Part VI
+
+For the first time in their life, they might have got some kind of idea that all the time I had spent in my room has not been totally worthless. Personally, I felt finally appreciated for all the effort I had put into this project. 
+
+These first weeks of excitement were gradually replaced by nervousness as I did not get any further notice from Boeder after the results of the competition had been published. I calmed myself by believing that such a big company like Boeder would likely need several weeks of preparation. But after three months of silence, I finally wrote a letter to Boeder asking about the state of the process and how to move on. After some more weeks, I received a written reply from Boeder stating that some internal restructuring actually consumed their full attention and that they would get back to me once these activities were settled. So, I put myself into waiting mode again...
+
+Almost half a year after the competition results were published, I got another letter from Boeder. Hoping to read about the next steps to release "Outrage" I opened it and started reading the lines. Boeder firstly excused themselves for the long delay. They were rethinking their whole C64 marketing strategy and finally decided to cancel all their activities in favour of the uprising market of next-generation home computers. 
+
+
+Chapter 2: The Two Decades - Part VII
+
+To their deep regret, they had to withdraw from publishing "Outrage" and as compensation, they offered me to choose something from their official product catalogue for free. Needless to say, that even the prospected travel to France was obviously not an option anymore. Well, I sat there like I had been struck by lightning. How could such a serious company arrange such a big competition and then simply break all their promises? I felt totally betrayed by Boeder and deeply furious. Out of my rage and anger, I wrote a very emotional letter in response. As they had written that I could choose "something" from their catalogue and sent them a complete order of all their products. Well, Boeder never sent anything back or even replied to my letter.
+
+This marked the preliminary ending of all my "Outrage" engagement and I suspended my hopes in finding another publisher. My focus quickly shifted to my study of applied informatics, to personal computers, the uprising internet with the famous Mosaic browser, telnet sessions in billboard systems and the whole new generation of PC games and software applications. The scene changed rapidly and so did Cosmos Designs and its members. We all stayed in loose contact while everybody was pursuing his own personal dreams and goals. We started and finished studies, joined companies, founded companies, got married, started to raise children and so the years went by. And in an attic corner remained an old and dusty box with some 5.25" floppy disks, containing the still unpublished source material of "Outrage".
+
+
+Chapter 3: The Return of the Game
+
+Years passed and the C64 legacy of Cosmos Designs was covered by the sands of time. After the millennium, Arnold discovered the reestablishment of home computer fandom on the internet (e.g. CSDb in 2001 and C64hq.com aka C64.com in 2002) and decided to contribute our group's history to this world-wide community. By the end of 2002, the memorial website cosmos-c64.com was launched showcasing our portfolio. During this effort, he also wanted to include "Outrage" and when requesting screenshots from Bernd, we figured there was no suitable source available. Luckily there was an Austrian scene guy (thanks, TMB) who supported the case by converting Bernd's old floppies into d64 files.
+
+
+Chapter 3: The Return of the Game - part II
+
+There was tremendous excitement when we were able to put our fingers on the game again after all these years and played the first round of "Outrage" on an emulator. It was way harder than Bernd expected as he had added a decent amount of difficulty to the gameplay. Nevertheless, it was a lot of fun and we could finally publish some material on the web. We also spread the word to some legacy game magazines and blogs who published a few articles about the game. As Bernd didn't plan to revive his coding skills, we started to search for alternatives to release the game. To our surprise, there was a small but lively niche market for such games and people out there who were still producing C64 games. Some of those people were on the search for old and unpublished games and the recently published articles helped to make people aware of the existence of "Outrage". 
+
+
+Chapter 3: The Return of the Game - part III
+
+Our first contact with Protovision was established in 2005. It was a team from Germany that was actively working on some C64 projects and had gained experience in publishing such games. After some friendly and open discussions and exchanging the demo version of the game, Protovision agreed to set up a contract and begin with fixing glitches that have been found during the game testing. We felt really happy having found such a dedicated partner and were looking forward to the next steps. Unfortunately, it turned out that Protovision had problems in assigning sufficient coding resources to this new project. Other ongoing projects kept them busy and the required amount of bug fixing also turned out to be much higher than initially expected. Besides announcements in blogs and a lot of email threads, no noticeable deliverables were produced not to mention a single test release of the game.
+
+Five more years passed and it got quite clear that Protovision would not be able to deliver. In 2010 a new alternative arose on the horizon via David Simmons (Jazzcat) in connection with Psytronik. We informed Protovision about our decision of involving another party and provided all our precious game resources to him hoping for a lucky end - once more. Unfortunately, destiny was not with us again i.e. no real progress was made for another couple of years as all the people involved could only spend their spare time with other things having a higher priority. 
+
+
+Chapter 3: The Return of the Game - part IV
+
+Despite the frustration of not seeing any real progress, we did not feel there was anyone to blame. We displayed patience and remained supportive if occasionally requested. There was at least one notable outcome: a great loader image by Steve Day that is still used in today's version. 
+
+It was only in 2018 when one of many resurrection efforts offered a new chance of life for the old dog. After reaching out to lots of active C64 game developers and receiving either rejections or silence, we managed to come across a skilled and experienced coder from Italy who showed high interest in the project. With new aspiration, we communicated the change in the project setup to Dave. Coincidentally he had also reached out to several people meanwhile and managed to onboard a new promising coder, Sidney Arbouw. Sidney immediately picked up the challenge and showed fast progress and we decided to turn our recent designated saviour from Italy down with deep regret. Jakob from Protovision also joined in actively providing support and leadership for the game boxing as well as Lobo who produced the manual including fantastic illustrations. Also, most recently, Roy Widding joined the team to provide new music/sound effects as well as assisting with the documentation viewer (on C64) with assistance from Ruben Spaans (code) and Cal Skuthorpe (PETSCII). After years of deadlock, our inbox suddenly spilled over with communication and updates from various sides. 
+
+
+Chapter 3: The Return of the Game - finale
+
+Ultimately, the first test release for "Outrage" arrived. It contained the new loader graphic, lots of bug fixes, all five levels and fortunately some cheats that greatly supported our testing experience - after all this time we were not the most skilled C64 players anymore. Sure, this release was not yet perfect but it was the first code update for more than a quarter of the century and the first tangible progress towards our long-pursued goal. Could this dream finally come true?
+
+Obviously, the story arrived at a happy end and we appreciate that you chose to be a part of it. While it has been a long dry spell with many ups and downs, it is also a tale about tenacity and passion for retro computing. We would like to thank everyone involved that helped move this project forward. A special thanks go to Dave, who never stopped believing in the game's release and finally managed to gather a team that accomplished his mission. Since this is most likely our last release, Cosmos Designs wants to say goodbye and we wish you a good time playing "Outrage" and hopefully many more game releases in the future for our old friend: Commodore 64.
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from David 'Jazzcat' Simmons, Bernd 'Panther' Buchegger, and Protovision.
+
+
+https://protovision.games
+
+https://psytronik.net

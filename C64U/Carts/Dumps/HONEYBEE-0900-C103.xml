@@ -1,0 +1,25 @@
+﻿<Metadata>
+  <DumpFile>HONEYBEE-0900-C103</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ffd3098a468163a111a6d9cde98489d95839d69e</DumpFileSHA1>
+  <SimplifiedName>Honey Bee (Psytronik - 2016)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0900</Address>
+    <Address>$C103</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <ColourRAMFile>HONEYBEE-CRAM-0A00</ColourRAMFile>
+  <ColourRAMStartAddress>$0A00</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <SourceFile>Honey Bee.tap</SourceFile>
+  <SourceFileSHA1>5f6af6df722539b528a8a6d8289f61bce01c3b8d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC103 "AlternativeFormats\PRGs\Uncrunched\Honey Bee (Psytronik - 2016).prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $0a00 lda #$35 sta $01 jsr $0900 dec $d030" -x "inc $d020" -o "Honey Bee (Psytronik - 2016).prg"</ExomizerCommand>
+  <Notes>Added a routine at $0900 which:
+  
+  1. Sets up the correct VICII settings to display the loading screen
+  2. Initialises the loading music by calling the routine at $1000 (important: accumulator should be set to zero for music to initialise correctly)
+  
+  Note: although the entry point is $C103, the game should be dumped when a breakpoint at $C13A is hit. This allows the LDA $0200,X instruction at $C12F to be changed to LDA $C200,X as the data for the press space sprite is already at $C200 and allows the dump to start at $0400.</Notes>
+</Metadata>

@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>COSMICPIRATE-8900-08A3</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6b7afcfea0d14ab4a1bd0812e22315b639182cb5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8900</Address>
+    <Address>$08A3</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Cosmic Pirate.tap</SourceFile>
+  <SourceFileSHA1>3a13c4b5c9a018e19d174287c5242bae26022f92</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x08A3 "COSMICPIRATE-8900-08A3" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $8900 dec $d030" -x "inc $d020" -o "Cosmic Pirate.prg"</ExomizerCommand>
+  <Notes>The real start address is $0874. However, as part of the startup code between $088A and $0893 copies the modified BASIC and kernal vector data from $0300 - $0333 to $8708, we set our break point at $08A3 instead, meaning the memory is initialised just as it would be by the original loading process.
+  
+  A small init routine has been added at $8900 which is a copy of the code from $0874 to $0882 which sets the correct VICII settings before starting the game.</Notes>
+</Metadata>

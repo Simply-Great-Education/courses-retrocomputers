@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>GYROSCOPE-08AB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5204af2ba1fedd19176f3e7ae9c0ff6b8d8bf517</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$08AB</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Gyroscope.tap</SourceFile>
+  <SourceFileSHA1>f47e55cb90eaeec1e592913586e15f72e217b2e1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x08AB "GYROSCOPE-08AB" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Gyroscope.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Amstrad CPC version</Notes>
+</Metadata>

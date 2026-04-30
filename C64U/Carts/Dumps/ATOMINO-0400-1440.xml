@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>ATOMINO-0400-1440</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>54ccf760e44b906ff7a2673f0f6876d5c9dce6f1</DumpFileSHA1>
+  <SimplifiedName>Atomino</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$1440</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Atomino (English).d64</SourceFile>
+  <SourceFileSHA1>4b468388acc72c1638ce471cbef547959b10097c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1440 "ATOMINO-0400-1440" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "Atomino.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 to set $D000 to $04 allow the the game to run properly.</Notes>
+</Metadata>

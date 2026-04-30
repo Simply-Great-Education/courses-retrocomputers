@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>DEATHWISHIII-4032</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1d292b48ed01d095714bffb102d3694083ebbcd4</DumpFileSHA1>
+  <SimplifiedName>Death Wish III</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4032</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Deathwish III.tap</SourceFile>
+  <SourceFileSHA1>4572c4ed4bd92a301a0f6a512936e6d60676744c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4032 "DEATHWISHIII-4032" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Death Wish III.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

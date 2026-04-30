@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>OPERATIONHANOI-C600</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>895fe43aa7d675ffda762aa2c1a4174ac9d5514c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C600</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Operation Hanoi.tap</SourceFile>
+  <SourceFileSHA1>a32f56a5ff46b18f9791abc3f6380a8e38e47f43</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC600 "OPERATIONHANOI-C600" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Operation Hanoi.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

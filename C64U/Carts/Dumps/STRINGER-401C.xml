@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>STRINGER-401C</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>0d00b7273ca655f300f52239c9087a8788e2ad4f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$401C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Stringer.tap</SourceFile>
+  <SourceFileSHA1>d1f8590d593eba7b6eb8f97f9eb4ef8e4ee93f6e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x401C "STRINGER-401C" -Di_table_addr=0x02 -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Stringer.prg"</ExomizerCommand>
+</Metadata>

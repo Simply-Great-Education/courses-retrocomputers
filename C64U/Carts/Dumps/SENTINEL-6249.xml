@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SENTINEL-6249</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6f7c34b7af3e64b901ed83394d1941a57ae85406</DumpFileSHA1>
+  <SimplifiedName>Sentinel</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6249</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Sentinel (US Gold).tap</SourceFile>
+  <SourceFileSHA1>37b66cab62a04f4ad5ae11430745d18bdd50789f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6249 "SENTINEL-6249" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Sentinel.prg"</ExomizerCommand>
+</Metadata>

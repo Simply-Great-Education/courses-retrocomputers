@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>CALVIN-6DC0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ac0411dd01eec9afa9500519600e0cfbab035ac2</DumpFileSHA1>
+  <SimplifiedName>Calvin</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6DC0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Calvin (ECP).tap</SourceFile>
+  <SourceFileSHA1>b72488e6153351eb513501ec4aa0a6d62808df67</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6DC0 "CALVIN-6DC0" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Calvin (J1).prg"</ExomizerCommand>
+  <Notes>Because the game is frozen, you must set a breakpoint at $6DC0, start the game and lose all your lives. Once the breakpoint is hit, you can create the dump.</Notes>
+</Metadata>

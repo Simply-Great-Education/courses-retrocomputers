@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>INSECTSINSPACE-0901</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>278e71491e54b501748f0f223f2aa7e0f1cfd6c3</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0901</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Insects in Space.tap</SourceFile>
+  <SourceFileSHA1>3e363376a3703ce9549e03d5c2240ab1e18ce66e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0901 "INSECTSINSPACE-0901" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Insects in Space.prg"</ExomizerCommand>
+</Metadata>

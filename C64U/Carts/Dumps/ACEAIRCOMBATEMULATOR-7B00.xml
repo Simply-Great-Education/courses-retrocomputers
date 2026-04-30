@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>ACEAIRCOMBATEMULATOR-7B00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ce53abebe1d9fceb4c905ae7a6be5147be0ce1e6</DumpFileSHA1>
+  <SimplifiedName>ACE - Air Combat Emulator</SimplifiedName>
+  <JumpAddresses>
+    <Address>$7B00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>ACE (Version 1a).tap</SourceFile>
+  <SourceFileSHA1>acab963f34263b3f0a24ea6daf96365079f09021</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7B00 "ACEAIRCOMBATEMULATOR-7B00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "ACE - Air Combat Emulator.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the disk version.
+  
+  Note: the original version of this game came with a colour grid protection card, although this version along with several others do not require it.</Notes>
+</Metadata>

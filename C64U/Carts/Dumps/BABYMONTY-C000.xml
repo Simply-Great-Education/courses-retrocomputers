@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>BABYMONTY-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e53bff0c626c229ac8a18f3e48d3a5b93a2b7196</DumpFileSHA1>
+  <SimplifiedName>Baby Monty</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Baby Monty (Personal Computer World - 1984).tap</SourceFile>
+  <SourceFileSHA1>2be9147e4759d0dda75b0dac9f699907b8678811</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "BABYMONTY-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Baby Monty.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $0801. Therefore an init routine has been added at $C000 which:
+  1. Sets up the correct VICII settings and necessary BASIC pointers.
+  2. Executes the RUN command to start the game program.</Notes>
+</Metadata>

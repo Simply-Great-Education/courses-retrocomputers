@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>SYSTEM15000-8000-154E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>967ba13e2e5ca67418393b8f5b2919786bbddbc4</DumpFileSHA1>
+  <SimplifiedName>System 15000</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8000</Address>
+    <Address>$154E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>System 15000 (2nd Edition).tap</SourceFile>
+  <SourceFileSHA1>f0ff4129630f41e3df30fb3dab0774a141085658</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x154E "SYSTEM15000-8000-154E" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $8000 dec $d030" -x "inc $d020" -o "System 15000.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $8000 which:
+  1. copies 256 bytes of data from $8020 down to $0000 so that the dump can start at $0400
+  2. sets $0200 to $20 and $0201 to $35 to allow the game to start correctly</Notes>
+</Metadata>

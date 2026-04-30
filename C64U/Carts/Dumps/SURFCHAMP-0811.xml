@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>SURFCHAMP-0811</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a3ddf4cc7784aed91d64d5a6f49e1b7acbfebd6d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0811</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>SurfChamp.tap</SourceFile>
+  <SourceFileSHA1>ce77148e5900fb5f279450835bb300ac1cdf37ec</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "SURFCHAMP-0811" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "SurfChamp.prg"</ExomizerCommand>
+  <Notes>To prevent this game from crashing after the title screen, the game needs to be started with the BASIC RUN command (this allows for the correct return addresses to be pushed onto the stack).
+  The facilitate this, the original SYS 2061 statement at line 1 in the BASIC loader program at $0801 has been changed to SYS 2065 instead (i.e. the entry point).
+  
+  The following changes were also made to allow the fire button in port 2 to dismiss the title screen, not just any key:
+  
+  1. Patched the LDA $C5, CMP $C5 instructions at $902C to be JSR $C700, NOP instead
+  2. Patched the BEQ instruction at $9030 to branch backwards a further 2 bytes, which causes the new routine at $C700 to be called again when no keys or the fire button are pressed
+  3. Added a small routine at $C700 to check the fire button in port 2 - if pressed, then it sets the accumulator to $01 and returns, which causes the game to start just as if any key was pressed. If not pressed, the routine then scans for any key before returning.</Notes>
+</Metadata>

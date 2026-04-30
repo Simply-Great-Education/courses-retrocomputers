@@ -1,0 +1,104 @@
+Rescuing Orc
+
+This is an original game by Juan J. Martinez (@reidrac) for the Commodore 64/128,
+both PAL and NTSC.
+
+How far would you go to help a friend?
+
+When your best friend Orc (an orc, coincidentally) didn't show up for tea after a couple of weeks, it was pretty clear something had happened to him.
+
+Armed with your trusty sword, enter the dangerous World of Magica where things are
+not always what they seem, including you: a goblin with good character!
+
+This is a mission to find what happened to your friend, starting deep in the Black Forest and exploring 5 different areas, from the perilous Rocky Mountains to the dark corridors of Bluestone Keep.
+
+
+Black Forest
+
+Ancient trees whisper stories of the world they have seen change over hundreds of years.
+
+This is the home of Elves and other critters, like the crawling slimes that infest the intricate cave system under the forest, and giant bats that wait for prey in the darkest places.
+
+It is also the home of your best friend, Orc.
+
+
+Rocky Mountains
+
+There is an intricate path to cross the mountains, where Lizardmen ambush the adventurous travellers that test their luck in the narrow passages, throwing them stones so they slip an fall over the sharp rocks of the bottom of the gorge.
+
+It is said that in these mountains the rock is alive, in the form of silent golems slowly pacing, looking for victims to crush.
+
+
+Bluestone Keep
+
+Once bastion of the good men, the stronghold has fallen in disgrace. The walls of blue
+stone that for generations were the symbol of the fight of humans against immortal evil, now protect secrets of dungeons filled with prisoners and torture.
+
+Some fools dare to say the King is a mad man, putting his hopes and dreams in hands
+of wizards and their arcane arts. Others are too scared of his soldiers and knights, that protect the King and his treasure.
+
+
+
+Controls
+
+The game can be controlled with the keyboard or a joystick on port #2.
+
+Menu screen:
+• 1: music on/off
+• Joystick fire: start game with joystick
+• Space: start game with keyboard
+
+In game controls:
+• Joystick up / q: jump
+• Joystick left / o: move left
+• Joystick right / p: move right
+• Joystick fire / space: slash / dismiss text
+• Joystick down / a: action
+• 1: pause / resume
+• STOP: exit game
+
+
+
+
+Troubleshooting
+
+If DolphinDOS is enabled, please disable for the game to operate correctly.
+
+
+
+Credits
+
+Programming, sound and graphics: Juan J. Martinez.
+Loading screen: Vanja Utne.
+Game testing: Antxiko, José María Velo, Fran Loscos, Rob Caporetto, Ant Stiller, Graham Axten and Roy Fielding.
+
+For further information and updates, please visit:
+http://www.usebox.net/jjm/rescuing-orc/
+
+
+Licence
+TL;DR: This is freeware. You can distribute it freely as long as you include the following licence text in all copies. Contacting the author is always appreciated.
+
+This is version 1.0.2 (released 2017-08-23).
+
+
+Rescuing Orc
+
+Copyright (c) 2017 Juan J. Martinez jjm@usebox.net
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this
+software and associated documentation files (the "Software"), to deal in the Software
+without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+Distributed with the Commodore 64 Ultimate with permission from Juan J. Martinez.

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>STARRAIDERSII-0800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ff886c2fafab67c9dc2b7070f35ca577ccfdc19c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Star Raiders II.tap</SourceFile>
+  <SourceFileSHA1>8f873db5d68d16826f381403f05c16bf51fc443c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0800 "STARRAIDERSII-0800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Star Raiders II.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>TIGERTANKS-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>af269a58fef9f7601c6e03a98a6ec21061f323c1</DumpFileSHA1>
+  <SimplifiedName>Tiger Tanks</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Tiger Tanks (Jim Green PD 53 - 08-1990).d64</SourceFile>
+  <SourceFileSHA1>8168c40f1e09d6d099621eb0b4658bef6d40edad</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "TIGERTANKS-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Tiger Tanks.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $0801. Therefore an init routine has been added at $C000 which:
+  1. Sets up the correct VICII settings and necessary BASIC pointers
+  2. Executes the RUN command to start the game program</Notes>
+</Metadata>

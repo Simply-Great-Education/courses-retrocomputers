@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>STORM-8C4C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a3e1f34f1163942fc62372efd00d055e35d6c125</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8C4C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Storm.tap</SourceFile>
+  <SourceFileSHA1>d62248d3553fe539d4401d1ea3bd1a4cddabfe74</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8C4C "STORM-8C4C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Storm (J1).prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>ARAC-6000-0830</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9778d4be102380c8844ad3a72d298b6f03b1bab6</DumpFileSHA1>
+  <SimplifiedName>ARAC</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6000</Address>
+    <Address>$0830</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>ARAC (Version a).tap</SourceFile>
+  <SourceFileSHA1>e1d2f456c3c4d3e106f231559a0389dc48768186</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0830 "ARAC-6000-0830" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $6000 dec $d030" -x "inc $d020" -o "ARAC (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $6000 which copies 512 bytes of data from $6020 down to $0200 so that the dump can start at $0400.
+  It then jumps to the entry point at $0830 (it couldn't use RTS because of the copy overwriting the boot code).
+  
+  Note: the space taken by the init routine and data at $6000 overwrites the first part of the loading screen bitmap, which is still present in memory after the loading has finished.</Notes>
+</Metadata>

@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>THEHOUSETHATJACKBUILT-8000-2208</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c7be404f0ec5823509b86cce82d46b38e06680d4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8000</Address>
+    <Address>$2208</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>House Jack Built, The.tap</SourceFile>
+  <SourceFileSHA1>88d85125c8edc9d8675b2321bfd01af274384a6a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2208 "THEHOUSETHATJACKBUILT-8000-2208" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $8000 dec $d030" -x "inc $d020" -o "House Jack Built, The.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $8000 to set the device number of the current file ($BA) to $01 (tape) to allow the game to run properly.
+  
+  The loading screen is based on the Spectrum version</Notes>
+</Metadata>

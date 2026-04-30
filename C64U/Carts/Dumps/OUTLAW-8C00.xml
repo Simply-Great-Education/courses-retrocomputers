@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>OUTLAW-8C00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1a98ea9eb3f6b910ebdf07b60cae0f43e3c29a72</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8C00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Outlaw.tap</SourceFile>
+  <SourceFileSHA1>c65c7280f4457f0a90a18d542e00ef82fc83e659</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8C00 "OUTLAW-8C00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Outlaw.prg"</ExomizerCommand>
+  <Notes>As the original did not have a loading screen, the one included was converted from the Spectrum version by DATA-LAND of Technische Maschinenfabrik (https://csdb.dk/scener/?id=4845).</Notes>
+</Metadata>

@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>FASTEDDIE-1000-8220</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>bb95199257c8c34873dc3d4bda68d4d377a19dd4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+    <Address>$8220</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Fast Eddie.d64</SourceFile>
+  <SourceFileSHA1>96c2068151a6613e99f9fdc840191b4d141a543e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8220 "FASTEDDIE-1000-8220" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $1000 dec $d030" -x "inc $d020" -o "Fast Eddie (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $1000 which copies 512 bytes of data from $1030 down to $0000 so that the dump can start at $0400.
+  It then sets the stack pointer to $F4 and jumps to the entry point at $8220 (it couldn't use RTS because of the copy overwriting the stack).</Notes>
+</Metadata>

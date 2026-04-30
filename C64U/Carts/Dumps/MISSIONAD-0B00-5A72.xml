@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>MISSIONAD-0B00-5A72</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a441634cd725ce5357446ea906ce8f41d2b5ecea</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0B00</Address>
+    <Address>$5A72</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>MISSIONAD-CRAM-1300</ColourRAMFile>
+  <ColourRAMStartAddress>$1300</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Mission AD.tap</SourceFile>
+  <SourceFileSHA1>e0db10fd9871de43ab8b04c4c9c01b2e88577301</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5A72 "AlternativeFormats\PRGs\Uncrunched\Mission AD (J1).prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $1300 lda #$37 sta $01 jsr $0b00 dec $d030" -x "inc $d020" -o "Mission AD (J1).prg"</ExomizerCommand>
+  <Notes>Added a routine at $0B00 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

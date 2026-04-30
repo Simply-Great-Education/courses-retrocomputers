@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SPACEBIKE-077C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>023b9b54f131df464bde84f64a1ec6609b164b2d</DumpFileSHA1>
+  <SimplifiedName>Spacebike</SimplifiedName>
+  <JumpAddresses>
+    <Address>$077C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Spacebike [PAL].d64</SourceFile>
+  <SourceFileSHA1>23226cf19f5d5ef87c08204dd98a8ee92e874bdb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x077C "SPACEBIKE-077C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Spacebike.prg"</ExomizerCommand>
+  <Notes>The disk dump was used as the tape copy is frozen.</Notes>
+</Metadata>

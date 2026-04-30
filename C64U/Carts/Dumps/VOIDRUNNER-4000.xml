@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>VOIDRUNNER-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>538d39a392a5374480a55cf04b532e0105059133</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Voidrunner.tap</SourceFile>
+  <SourceFileSHA1>57bbc268878f0fa02f0132912ce05e04241ba468</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "VOIDRUNNER-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Voidrunner.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>STREETHASSLE-0853</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a0f869a638e0648cde6651833c230565a8928743</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0853</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Street Hassle.tap</SourceFile>
+  <SourceFileSHA1>d7494233088ed747b627f9ce3e21386967a0bcaf</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0853 "STREETHASSLE-0853" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Street Hassle.prg"</ExomizerCommand>
+  <Notes>Memory from $0400 to $0800 was filled with zeroes in the dump file. This removes some corruption at the top of displayed sprites which was present in the original game.
+  The loading screen comes from the original Melbourne House release.</Notes>
+</Metadata>

@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>THEMAGICIANSBALL-6400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>717803d7c9d1c5cbcf546716972d604a034d4e7b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$6400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Magician's Ball, The.tap</SourceFile>
+  <SourceFileSHA1>86247d31d5217a2e2d167c76a3146efa5781b1bb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6400 "THEMAGICIANSBALL-6400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Magician's Ball, The.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $0801. Therefore an init routine has been added at $6400 which:
+  1. Sets up the correct VICII settings and necessary BASIC pointers.
+  2. Executes the RUN command to start the game program.</Notes>
+</Metadata>

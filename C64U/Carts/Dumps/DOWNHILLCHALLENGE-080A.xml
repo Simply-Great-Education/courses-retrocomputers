@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>DOWNHILLCHALLENGE-080A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>34f48389efaf823c1d3c14d3faf30f3add3b255b</DumpFileSHA1>
+  <SimplifiedName>Downhill Challenge (Endurion - 2018)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$080A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Downhill Challenge.d64</SourceFile>
+  <SourceFileSHA1>ddf968e8d9c63aa504eb3062d39961a04663d03a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x080A "DOWNHILLCHALLENGE-080A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Downhill Challenge (Endurion - 2018).prg"</ExomizerCommand>
+  <Notes>NOP'd out the calls to the kernal load routine ($FFD5) at $0896 the kernal save routine ($FFD8) at $08F9 to remove disk access from the game.</Notes>
+</Metadata>

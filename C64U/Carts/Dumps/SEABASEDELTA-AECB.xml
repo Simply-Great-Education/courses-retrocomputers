@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SEABASEDELTA-AECB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>86cb1fa6d2fa630d540bf4f0c6d283df429a3c69</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$AECB</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Seabase Delta.tap</SourceFile>
+  <SourceFileSHA1>a46e4d0b142bc355d34c847e1bb91859d8eb5b2d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xAECB "SEABASEDELTA-AECB" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Seabase Delta.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Amstrad CPC version</Notes>
+</Metadata>

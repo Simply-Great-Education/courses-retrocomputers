@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>HENRYSHOUSE-0A00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ba05627601f0ea335838eada2bbd39f8e666d4fa</DumpFileSHA1>
+  <SimplifiedName>Henry's House</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0A00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Henry's House (Version a).tap</SourceFile>
+  <SourceFileSHA1>4fd9428eb44a2a9a180b7e21f9b50d43018751c5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0A00 "HENRYSHOUSE-0A00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Henry's House.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>INSIDEOUTING-101B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f18a6513888e84adb725ce289f40cdc4d11b458e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$101B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Inside Outing.tap</SourceFile>
+  <SourceFileSHA1>86cafb1eceb27c97de27b4c5d3ddf2421275c206</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x101B "INSIDEOUTING-101B" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Inside Outing.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,38 @@
+HUNCHBACK 
+(C) 1983 by Ocean Software Limited 
+
+
+HUNCHBACK
+---------
+Its program code, graphic representation and artwork are the copyright of Ocean Software Limited and may not be reproduced, stored, hired or broadcast in any form whatsoever without the written permission of O.S.L. All rights reserved.
+The object of the game is to rescue Esmerelda from her castle stronghold, avoiding all the obstacles in Quasimodo's path. The program runs on the Commodore 64 machine.
+
+
+PLAYING
+-------
+QUASIMODO must rescue the imprisoned Esmerelda from the castle stronghold. Jump along the Ramparts, swing over the Fiery pit, dodge the Arrows and Fireballs and remember to keep ahead of the chasing Knight. 15 Screens of fun and excitement and each one more difficult than the last.
+
+
+STATUS AND SCORING 
+------------------
+On screen scoring shows number of lives, current score and bonus score; 
+points are awarded for each completed screen and the bonus builds up if no lives are lost. 
+Hall of Fame feature for best score. 
+
+
+CONTROLS 
+--------
+Game is controlled by Joystick or Keyboard. 
+Move left <
+Move right ->
+Jump - A
+
+
+HUNCHBACK
+Officially licensed by Century Electronics Limited is one of a number of exciting games published by Ocean. 100% machine code, just like the Arcade. Made in the UK.
+
+
+Distributed with the Commodore 64 Ultimate with permission.
+
+PIKO INTERACTIVE LLC
+of 8390 North Verde Dr. San Antonio Texas 78240

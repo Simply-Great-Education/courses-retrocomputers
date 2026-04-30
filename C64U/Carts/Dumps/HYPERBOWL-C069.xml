@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>HYPERBOWL-C069</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0470e153ebdc9c3450832dbb0eb6b2ad90f8bd70</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C069</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Hyperbowl.tap</SourceFile>
+  <SourceFileSHA1>f0e0701a19c4b586ff872c36837931a76b310e96</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC069 "HYPERBOWL-C069" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Hyperbowl (J1).prg"</ExomizerCommand>
+</Metadata>

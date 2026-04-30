@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>DOUBLETAKE-C000-6BE0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>beaaf8f071e4b2131440e2cf4dfd16cd194aa5f7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$6BE0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>253</SidLength>
+  <SourceFile>Double Take.tap</SourceFile>
+  <SourceFileSHA1>4c10f24393f8da1f5f55c307ab5b726babdbffe5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6BE0 "DOUBLETAKE-C000-6BE0" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Double Take.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C000 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to run correctly.
+  
+  Note: although the space used at $C000 appears to be occupied, it is actually used for the title screen and is initialised on game startup, so can be used safely.</Notes>
+</Metadata>

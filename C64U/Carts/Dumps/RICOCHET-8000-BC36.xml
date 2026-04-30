@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>RICOCHET-8000-BC36</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d33b80bbedc41a98055fbee8bf30853366048d20</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8000</Address>
+    <Address>$BC36</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Ricochet.tap</SourceFile>
+  <SourceFileSHA1>bdcffbcfbc4c5e3b41003d659f56874d12da40d3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xBC36 "RICOCHET-8000-BC36" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $8000 dec $d030" -x "inc $d020" -o "Ricochet.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $8000 which copies 256 bytes of data from $8030 down to $0300 so that the dump can start at $0400.
+  It then jumps to the entry point at $BC36 (it couldn't use RTS because of the copy overwriting the boot code).</Notes>
+</Metadata>

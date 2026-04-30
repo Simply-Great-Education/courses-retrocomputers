@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>SPYVSSPY-0400-6604</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a1eb59adc961f54322629069087b1535a369e422</DumpFileSHA1>
+  <SimplifiedName>Spy vs Spy</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$6604</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Spy vs Spy (First Star Software).tap</SourceFile>
+  <SourceFileSHA1>78caea6a26eae32c5291639eb42735c63ef872f1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6604 "SPYVSSPY-0400-6604" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Spy vs Spy.prg"</ExomizerCommand>
+  <Notes>Moved some init code from $02A7 to $0400 to ensure it was above the dump start address of $0400.</Notes>
+</Metadata>

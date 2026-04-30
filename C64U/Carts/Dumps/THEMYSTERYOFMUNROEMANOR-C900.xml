@@ -1,0 +1,25 @@
+﻿<Metadata>
+  <DumpFile>THEMYSTERYOFMUNROEMANOR-C900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ea1d83664033fecb0218c9f447ca0c1dc03612fb</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Mystery of Munroe Manor, The.tap</SourceFile>
+  <SourceFileSHA1>8f05494e08889ac27cc99efa75537d8560c54947</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC900 "THEMYSTERYOFMUNROEMANOR-C900" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mystery of Munroe Manor, The.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC intro before the main BASIC game loads. However, as the main game program overwrites this when loaded, the following steps were taken to retain the intro:
+  
+  1. The SYS00888 call on line 730 in the BASIC intro was changed to a SYS call to a new machine code routine at $CA00.
+  2. The memory from $0900 to $2BFF ($2300 bytes) was dumped, which includes the BASIC intro.
+  3. After the actual BASIC game has finished loading, the memory occupying the 8960 ($2300) bytes at $0900 was copied to $D000.
+  4. The data dumped in step 2 was restored to $0900.
+  5. A new routine was placed at $C900 which sets up the correct VICII settings and necessary BASIC pointers and runs the intro program.
+  6. This routine also disables the RUN/STOP key by modifying the STOP vector by setting $FE at $0328.
+  7. Once the intro program has finished, the added SYS call jumps to the new routine at $CA00, which restores the 8960 ($2300) bytes of data from $D000 back to $0900 before setting the correct VICII settings and necessary BASIC pointers for the game itself and runs it.
+  
+  Note: the memory between $9400-$BFFF and $C900-$CFFF contained an unecessary repeating memory block. Therefore these ranges were zeroed out.</Notes>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SWOOP-4DC0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d14e80800f7d09553f4506ae7452439b33940e2a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4DC0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Swoop.tap</SourceFile>
+  <SourceFileSHA1>69df5cbb3ca7dfdbb9f387584db790ab4bf40b4f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4DC0 "SWOOP-4DC0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Swoop.prg"</ExomizerCommand>
+</Metadata>

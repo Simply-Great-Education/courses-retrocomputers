@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>REPTON3-C090</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4b9ae83c25d7ae4aabe8ae11c361a4757467ef44</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C090</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Repton 3.tap</SourceFile>
+  <SourceFileSHA1>2b426c759131577ad6d6341b272323311fe44276</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC090 "REPTON3-C090" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Repton 3.prg"</ExomizerCommand>
+</Metadata>

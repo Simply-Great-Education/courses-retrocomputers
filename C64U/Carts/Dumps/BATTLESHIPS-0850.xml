@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>BATTLESHIPS-0850</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>dd972c5e2410bc5937287b6bfe1773681d672f9b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0850</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Battle Ships.tap</SourceFile>
+  <SourceFileSHA1>6edac3642f1908183ca9a41251b79712c39441a8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0850 "BATTLESHIPS-0850" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Battle Ships.prg"</ExomizerCommand>
+  <Notes>The original game used a routine at $2755 which used the raster position read from $D012 to generate a random 16-bit value stored at $4A3D. Based on the differing time a user took to enter the RUN command at the start of loading, this would produce varying values in $D012 when read during startup, which provided a level of randomness to the vessel placements in the game.
+  
+  However, as this variance is removed by the conversion to autostarting executables (meaning the vessel placements would no longer be random), the following steps were taken to introduce an alternative random number generator:
+  
+  1. Changed the JSR $2A4A instruction at $15CF to be JSR $C000 instead (this is called once a frame during the code to check for input from the joystick in port 2)
+  2. Added a new routine at $C000 which generates a random 16-bit number by utilising self-modifying code, which is stored at $4A3D
+  3. This new routine then calls the routine at $2A4A before returning so as to carry on the original code flow</Notes>
+</Metadata>

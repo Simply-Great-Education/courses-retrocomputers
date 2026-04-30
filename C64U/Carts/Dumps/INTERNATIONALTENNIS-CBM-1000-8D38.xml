@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>INTERNATIONALTENNIS-CBM-1000-8D38</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>907e628154bb623f7595a81c7bfa59aa93cdaf10</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+    <Address>$8D38</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>INTERNATIONALTENNIS-CBM-CRAM-1100</ColourRAMFile>
+  <ColourRAMStartAddress>$1100</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>International Tennis (Commodore).tap</SourceFile>
+  <SourceFileSHA1>3c25a5a425e718a9d8181175cb643ed62184a59b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8D38 "AlternativeFormats\PRGs\Uncrunched\International Tennis (Commodore).prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $1100 lda #$37 sta $01 jsr $1000 dec $d030" -x "inc $d020" -o "International Tennis (Commodore).prg"</ExomizerCommand>
+  <Notes>Added a routine at $1000 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  
+  Also reworked the loading screen a little to remove the countdown info at the bottom and insert the CBM UK copyright message.</Notes>
+</Metadata>

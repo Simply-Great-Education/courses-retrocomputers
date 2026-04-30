@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>INTERNATIONALHOCKEY-A50B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>89c00690b124aca75873cfda8d095f536b2d1e7c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$A50B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>International Hockey.d64</SourceFile>
+  <SourceFileSHA1>633095850c5a1fe59346942e1682c420b5f53d87</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xA50B "INTERNATIONALHOCKEY-A50B" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "International Hockey.prg"</ExomizerCommand>
+</Metadata>

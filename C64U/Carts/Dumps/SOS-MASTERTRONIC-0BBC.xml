@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SOS-MASTERTRONIC-0BBC</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>51f5016b862559254fb0bffe8de4ab51228f7b2f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0BBC</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>S.O.S. (Mastertronic).tap</SourceFile>
+  <SourceFileSHA1>93114736ed0e89425e0c43b71a07c22743faa759</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0BBC "SOS-MASTERTRONIC-0BBC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "S.O.S. (Mastertronic) (J1).prg"</ExomizerCommand>
+</Metadata>

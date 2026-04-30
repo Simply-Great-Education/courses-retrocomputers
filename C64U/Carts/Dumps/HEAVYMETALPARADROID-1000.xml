@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>HEAVYMETALPARADROID-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>eae3ca0e0e8f7ccbe384e601b88fd6269a67a172</DumpFileSHA1>
+  <SimplifiedName>Heavy Metal Paradroid</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Paradroid - Metal Edition.tap</SourceFile>
+  <SourceFileSHA1>c7083d214efeec0ee6ad8ae29fee9c2f90918324</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "HEAVYMETALPARADROID-1000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Heavy Metal Paradroid.prg"</ExomizerCommand>
+</Metadata>

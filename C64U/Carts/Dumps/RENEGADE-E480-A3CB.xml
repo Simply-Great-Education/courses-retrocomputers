@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>RENEGADE-E480-A3CB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b7d9a8c994f58c15b59fae194be586c4ef7f56fe</DumpFileSHA1>
+  <SimplifiedName>Renegade</SimplifiedName>
+  <JumpAddresses>
+    <Address>$E480</Address>
+    <Address>$A3CB</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>169</SidLength>
+  <SourceFile>Renegade (Version 2).tap</SourceFile>
+  <SourceFileSHA1>1642a00599e6598d866a303dab2385dfdfda876c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xA3CB "RENEGADE-E480-A3CB" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $e480 dec $d030" -x "inc $d020" -o "Renegade.prg"</ExomizerCommand>
+  <Notes>Moved the last part of the original loading routine from $0161 to $E480 so that the dump can start at $0400. This routine sets up the VICII settings, disables all interrupts and copies 512 bytes of data from $EC00 down to $0200.
+  It then jumps to the entry point at $A3CB (it couldn't use RTS because of the copy overwriting the boot code).
+  
+  The loading screen is from the Spectrum version.</Notes>
+</Metadata>

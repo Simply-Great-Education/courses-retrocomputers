@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>EAGLEEMPIRE-6100-4853</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c21dff33d459f14dbb27433abf5054fdced1cb28</DumpFileSHA1>
+  <SimplifiedName>Eagle Empire</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6100</Address>
+    <Address>$4853</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Eagle Empire (Version 1) [ReadError].tap</SourceFile>
+  <SourceFileSHA1>7988165d315a09373f83e45504799993aaec3cd2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4853 "EAGLEEMPIRE-6100-4853" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $6100 dec $d030" -x "inc $d020" -o "Eagle Empire.prg"</ExomizerCommand>
+  <Notes>Added a routine at $6100 which sets $61 to $0A so that the ship shield sprite animation works correctly.</Notes>
+</Metadata>

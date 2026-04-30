@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>TERRACRESTA-409C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>59ce8f475f2982b4f5ee0d6d96f0c3f93392446b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$409C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>253</SidLength>
+  <SourceFile>Terra Cresta.tap</SourceFile>
+  <SourceFileSHA1>0b5c603d5f69bea85a8d496c1271f06d5babce07</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x409C "TERRACRESTA-409C" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Terra Cresta.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>TREX64-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f9e44fbce12ebf2e9cf70b66965bf2fd66f02da5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>T-Rex 64 v1.0.2 (Maciej Malecki - 2022).d64</SourceFile>
+  <SourceFileSHA1>8f1d14734f49c445109ad31707fa6599d057f16c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0810 "TREX64-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "T-Rex 64 v1.0.2 (Maciej Malecki - 2022).prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>COLOSSUSBRIDGE4-9000-1655</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>283cf32234b471027d79c069dbd477cd0d402868</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9000</Address>
+    <Address>$1655</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>COLOSSUSBRIDGE4-CRAM-9100</ColourRAMFile>
+  <ColourRAMStartAddress>$9100</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Colossus Bridge 4.tap</SourceFile>
+  <SourceFileSHA1>5dd799694c0d93d2e9ee27204425d2504abc1cd1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1655 "AlternativeFormats\PRGs\Uncrunched\Colossus Bridge 4.prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $9100 lda #$37 sta $01 jsr $9000 dec $d030" -x "inc $d020" -o "Colossus Bridge 4.prg"</ExomizerCommand>
+  <Notes>Added a routine at $9000 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  
+  Once the loading screen has been displayed, the routine then executes code originally found at $02A7 when the game had finished loading, before setting the correct VICII setting for the game itself and jumping to $1655 (it does this as the original code from $02A7 sets the stack pointer making RTS impossible).</Notes>
+</Metadata>

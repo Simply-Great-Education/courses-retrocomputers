@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>LEDSTORM-0400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>41869471a0758c9cdb242ca78ec1532b1a3f1776</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>LED Storm.tap</SourceFile>
+  <SourceFileSHA1>e336b29e57b5bfd1f7e920ab14b1184fb7a488ef</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0400 "LEDSTORM-0400" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "LED Storm.prg"</ExomizerCommand>
+</Metadata>

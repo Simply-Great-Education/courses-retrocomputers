@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>PROTENNISTOUR-312C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cc370adc9bf4bf7cb7f78c7101d3cc060f8c6f83</DumpFileSHA1>
+  <SimplifiedName>Pro Tennis Tour</SimplifiedName>
+  <JumpAddresses>
+    <Address>$312C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Pro Tennis Tour (Ubisoft).tap</SourceFile>
+  <SourceFileSHA1>14f818e398673c0b90af6fcb4aad34160859c811</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x312C "PROTENNISTOUR-312C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Pro Tennis Tour.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SPINDIZZY-6000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>554f5c3ea58a07fe23c210cc3f4f67653acff3a9</DumpFileSHA1>
+  <SimplifiedName>Spindizzy</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Spindizzy (Winner).tap</SourceFile>
+  <SourceFileSHA1>2446284701185cbd5d5832d2b5fb3159ba3971ec</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6000 "SPINDIZZY-6000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Spindizzy.prg"</ExomizerCommand>
+</Metadata>

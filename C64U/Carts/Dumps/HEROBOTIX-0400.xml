@@ -1,0 +1,27 @@
+﻿<Metadata>
+  <DumpFile>HEROBOTIX-0400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3e7e8323ff68c0eeb586116f2b6de7d74e39cbce</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Herobotix.tap</SourceFile>
+  <SourceFileSHA1>ebeb998a425c9253d69ef787bfe847b8fa8dc87f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0400 "HEROBOTIX-0400" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Herobotix.prg"</ExomizerCommand>
+  <Notes>As the released game is not completable, the following bytes were patched according to the fix kindly provided by mikroman:
+  
+  $5695: 42 42 42
+  $569D: 26 1A 26
+  $56A4: 04 02 02 02
+  $56AD: 25 27 27
+  $56B6: 38 38
+  $56D4: 22
+  $56DC: 02 05
+  $56E4: 27
+  $56EC: 47
+  $9C8C: 4C 1D
+  $9DBC: 13</Notes>
+</Metadata>

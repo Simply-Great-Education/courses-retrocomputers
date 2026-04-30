@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SUPERSNAKESIMULATOR-2000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9e98adacbad96e3ff94269918f5d820f1c23dcfc</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Super Snake Simulator.tap</SourceFile>
+  <SourceFileSHA1>61d6241ade6f9b2bf417d598d51f06c538b34c52</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2000 "SUPERSNAKESIMULATOR-2000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Super Snake Simulator.prg"</ExomizerCommand>
+</Metadata>

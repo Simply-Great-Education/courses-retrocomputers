@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>FOOTBALLMANAGER2-033C</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>3a019c811892c1116342c0a02ff85eb830f49108</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$033C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Football Manager 2.tap</SourceFile>
+  <SourceFileSHA1>49f91940fbf24cd5241e1175990d91b18f51fe41</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x033C "FOOTBALLMANAGER2-033C" -Di_table_addr=0x02 -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Football Manager 2.prg"</ExomizerCommand>
+  <Notes>As this game is actually frozen, the game starts at $19FB. However the true start address is $033C.
+  The loading screen is from the Spectrum version</Notes>
+</Metadata>

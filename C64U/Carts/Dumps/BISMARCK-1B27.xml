@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>BISMARCK-1B27</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>86c8d1798134295a2b991757cabe147fdc1b596b</DumpFileSHA1>
+  <SimplifiedName>Bismarck</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1B27</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Bismarck (Datasoft).d64</SourceFile>
+  <SourceFileSHA1>b6d7312d8068e651562fa0f8c90f23cc7d6c9a93</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1B27 "BISMARCK-1B27" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bismarck.prg"</ExomizerCommand>
+  <Notes>Used the Datasoft disk release because it has a loading screen and is not frozen like the tape dump (Trilogic).</Notes>
+</Metadata>

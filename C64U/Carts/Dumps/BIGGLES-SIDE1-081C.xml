@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>BIGGLES-SIDE1-081C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>80770f7b225600d4d71c88ea449c20f0104805c4</DumpFileSHA1>
+  <SimplifiedName>Biggles (Side 1)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$081C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Biggles (Mirrorsoft) (Side 1).tap</SourceFile>
+  <SourceFileSHA1>c84575c94723c0d684dbb644c2bc97ca47d00192</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x081C "BIGGLES-SIDE1-081C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Biggles (Side 1).prg"</ExomizerCommand>
+</Metadata>

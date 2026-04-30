@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>XOR-5D00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d7172b91b8a26bd6773c9c43aaed02b23c10a016</DumpFileSHA1>
+  <SimplifiedName>XOR</SimplifiedName>
+  <JumpAddresses>
+    <Address>$5D00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>XOR [no1541].tap</SourceFile>
+  <SourceFileSHA1>23aab0c0123fcfe4893934c6f2041d6bd5b22484</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5D00 "XOR-5D00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "XOR.prg"</ExomizerCommand>
+  <Notes>The following modifications were made:
+  1. Patched the LDA $C5, NOP instructions at $5DF8 to be JSR $1000 instead.
+  2. Added a small routine at $1000 to check the fire button in port 2 - if pressed, then the game will behave as if a key is pressed and proceed to the start game screen. If not pressed, the routine performs the LDA $C5 and returns to continue the normal code flow.</Notes>
+</Metadata>

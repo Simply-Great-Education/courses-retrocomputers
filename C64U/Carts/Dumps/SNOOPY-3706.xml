@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SNOOPY-3706</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1ddda2d5472ea4d3993470a34c53093035b8a583</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3706</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Snoopy.d64</SourceFile>
+  <SourceFileSHA1>267c1170b603b02c2b66b3f63bbc3bd6053126b8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "SNOOPY-3706" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Snoopy.prg"</ExomizerCommand>
+</Metadata>

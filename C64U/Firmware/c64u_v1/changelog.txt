@@ -1,0 +1,81 @@
+** 1.1.0 (build 165) - March 16, 2026 **
+
+Important note about versioning
+-------------------------------
+
+Commodore has updated its firmware versioning system.
+
+The latest release is version 1.1. The earlier version 3.14 will be retroactively referenced as the initial 1.0 firmware used during early development.
+
+This change helps prevent confusion as Commodore's firmware continues to evolve. The firmware has been significantly enhanced and modified, and Commodore revisions may introduce changes that make it incompatible with firmware used on other apparently compatible FPGA hardware. For that reason, only firmware released by Commodore should be used with official Commodore hardware.
+
+A future update may introduce safeguards to help make sure incompatible firmware not released by Commodore does not damage your motherboard.
+
+Commodore remains committed to collaborating with the wider community and contributing compatible improvements whenever possible.
+
+
+Added
+-----
+
+- Navigation: Left arrow ← (top-left of C64U keyboard) will now navigate back a menu, in addition to previous controls such as WASD.
+- USB Mouse Support: Should support most mice. (Some proprietary USB mice may not work.)
+- The LED controller for the keyboard and case now has Music Detect mode, which can automatically detect sounds and start jamming to your favorite SIDs and game sound effects, even when not in "SID Music" mode. This allows you to keep the LEDs on during general usage, but have them become sound-reactive only when applicable.
+
+
+Changed
+-------
+
+- Improved light colors and patterns for Starlight and Founders Edition.
+- The power LED will turn on RED even when the keyboard LEDs have been set to 'off'.
+- Commodore 64 Ultimate Web Interface: Added drag and drop support for Web SID, PRG, and CRT files.
+- Commodore 64 Ultimate Web Interface: Improves some tool tips and styling.
+- Commodore 64 Ultimate Web Interface: Improved the BASIC editor (Stop button, uppercase option, and error handling).
+- Commodore 64 Ultimate Web Interface: Disabled line wrapping in the BASIC Editor / Tokenizer window to make it easier to analyze long lines of code.
+- CommoServe File Search: Now searches Commodore's File server instead of the Assembly64 server, ensuring only software that a developer has granted permission for, is served to end users.
+
+
+Fixed
+-----
+
+- The network status was not updating without leaving the page and going back. The page for WiFi and LAN now updates properly.
+- Improved stability of WiFi and Ethernet Connectivity.
+- WiFi no longer connects to open APs if they have not been set as 'known' APs.
+- The user port now has 9V AC.
+- CIA timing has been changed to make some fastloaders work better.
+- Turbo mode gets disabled for a second after reset, so that PAL/NTSC detection in JiffyDOS works correctly. This fixes faulty JiffyDOS data transfers with Turbo enabled.
+- Commodore 64 Ultimate Web Interface: no longer links to external websites for firmware updates. Simply visit https://www.commodore.net/downloads for the latest firmware at any time.
+- Fixed Memory leak issue with the File Manager's fcopy function.
+- Commodore 64 Ultimate Web Interface: Fixed httpd crash when only httpd is enabled.
+- Commodore 64 Ultimate Web Interface: Fixed web BASIC editor tokenizer bug with "DATA" statements.
+- Commodore 64 Ultimate Web Interface: Live Monitor fixed and improvements related to 'm'+'d' command.
+- Fix memory leak in Temp writer / REU writer in API endpoints.
+- Fix loading the RGB palette for analog RGB output.
+- Changed reference from Assembly 64 to CommoServe in help text.
+- Various HDMI optimizations and fixes.
+- Resolved issues with the ACIA 6551 emulation.
+- CommoServe Files: Fixed issue where you couldn't view text files from search results.
+- Fixed an issue where a reboot is no longer required to switch between the external and internal cartridge bus.
+
+
+Deprecated
+----------
+
+- None
+
+
+Removed
+-------
+
+- None
+
+
+Security Related
+----------------
+
+- None
+
+
+
+** 1.0.0 (AKA v3.14.0) - November 11, 2025 **
+
+- Initial Release

@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>MISSIONOMEGA-C000-0A00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>73345fa946a7a798dce4ffa02078657780c8b2a4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$0A00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>MISSIONOMEGA-CRAM-C080</ColourRAMFile>
+  <ColourRAMStartAddress>$C080</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Mission Omega.tap</SourceFile>
+  <SourceFileSHA1>564adbe3d5fbd64ce36e96f5a079d3175581d224</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0A00 "AlternativeFormats\PRGs\Uncrunched\Mission Omega (J1).prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c080 lda #$37 sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Mission Omega (J1).prg"</ExomizerCommand>
+  <Notes>Added a routine at $C000 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

@@ -1,0 +1,48 @@
+Misfortune
+
+by Bad Bytes & Everlasting Style
+
+In an age when the malevolent warlord Evil Edwin cast his iron grip across the galaxy, a small band of freedom fighters led by the brave warrior Dozer waged a desperate struggle against tyranny. The cosmos had fallen into an era of perpetual darkness, with entire star systems crushed beneath Edwin's ruthless empire.
+
+Hope flickered when Dozer's wise mentor, the legendary sage Keeper Thane, discovered an ancient ritual capable of shattering Edwin's dark legions once and for all. With this power, light could finally return to the oppressed worlds.
+
+But fate had other plans. Thane's heroic sacrifice ended in tragedy - the ritual failed, and the keeper perished in the attempt.
+
+Now consumed by grief and burning with righteous fury, Dozer embarks on a perilous journey across five treacherous realms. His mission: gather the resources needed to build an army capable of toppling Edwin's empire and avenging his fallen mentor.
+
+
+Your Mission
+
+Guide Dozer through five distinct worlds, each hiding secrets and challenges that will test your skills:
+
+- Collect treasure scattered throughout each realm to fund your rebellion
+- Discover five sacred keys in every world to unlock the chest containing that realm's power source  
+- Navigate puzzle platforms by bumping blocks from below - some will reveal keys, others grant special abilities
+- Race against time as Edwin's forces close in on your location
+- Utilise three devastating attack powers to eliminate enemies that block your path
+- Gather power-ups including extra time, bonus points, and enhanced abilities
+- Activate checkpoint markers that glow when touched, allowing you to respawn there if defeated.
+
+The fate of the galaxy rests in your hands. Will you succeed where Thane could not, or will Edwin's shadow reign eternal?
+
+Time is running short, hero. The revolution begins now.
+
+
+
+
+Troubleshooting
+
+If DolphinDOS is enabled, please disable for the game to operate correctly.
+
+
+
+
+Credits
+
+Programming and graphics by Mathew 'Grize' Cox.
+Music by Dwayne 'Morbid' Bakewell.
+Testing by Matthew 'Vengeance' McHugo & Kellie New.
+Produced by Matthew 'Vengeance' McHugo & David 'Jazzcat' Simmons.
+
+
+Distributed with the Commodore 64 Ultimate with permission from David 'Jazzcat' Simmons.

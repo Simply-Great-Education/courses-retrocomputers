@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>WHEELIES-40CA</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6a562aab486b1187553c7a7abe1e10fd4efead38</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$40CA</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Wheelies.tap</SourceFile>
+  <SourceFileSHA1>009320a40b466e6ddbdc9aaa989b0b37c156e5fc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x40CA "WHEELIES-40CA" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Wheelies.prg"</ExomizerCommand>
+</Metadata>

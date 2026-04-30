@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>IMHOTEP-8E5B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3d61c8c8b28fad39c3967e5f0fdadc556026974d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8E5B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Imhotep.tap</SourceFile>
+  <SourceFileSHA1>a45b5c6c29a5dcd09e30e489eda60b5884c21d91</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8E5B "IMHOTEP-8E5B" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Imhotep.prg"</ExomizerCommand>
+</Metadata>

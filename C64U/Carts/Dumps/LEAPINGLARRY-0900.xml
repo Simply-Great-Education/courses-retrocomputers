@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>LEAPINGLARRY-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>24a2c47f958277d458c24b6ba758b47c5b388c18</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Leaping Larry.tap</SourceFile>
+  <SourceFileSHA1>114c121d6a80da38cf69e25eebad1143a44b9611</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0900 "LEAPINGLARRY-0900" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Leaping Larry.prg"</ExomizerCommand>
+</Metadata>

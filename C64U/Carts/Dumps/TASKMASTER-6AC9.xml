@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>TASKMASTER-6AC9</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2f528ab30f230af029445264e4075001de47a8ce</DumpFileSHA1>
+  <SimplifiedName>Taskmaster</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6AC9</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Taskmaster (Version a).tap</SourceFile>
+  <SourceFileSHA1>54f767d7405b17108a379ca483c3eab632b0167e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6AC9 "TASKMASTER-6AC9" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Taskmaster.prg"</ExomizerCommand>
+</Metadata>

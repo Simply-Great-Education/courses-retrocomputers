@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MRROBOTANDHISROBOTFACTORY-801C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0d15e4a99df4fd2901ea79068a7f0d9213f13c0a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$801C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Mr Robot and his Robot Factory.tap</SourceFile>
+  <SourceFileSHA1>39f983651e69653c818faa7dffd56319ef2b0883</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x801C "MRROBOTANDHISROBOTFACTORY-801C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mr Robot and his Robot Factory (J1).prg"</ExomizerCommand>
+  <Notes>The loading screen is from the disk version</Notes>
+</Metadata>

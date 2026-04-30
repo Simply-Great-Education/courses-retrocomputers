@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MRSPEEDY-5000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>dec9ca60e088c1642bcb715e1b05fd9d2724fe3c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5000</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Mr Speedy.tap</SourceFile>
+  <SourceFileSHA1>c42556b83ccf6b76a94c82590feaf6047cecf4ad</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "MRSPEEDY-5000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mr Speedy (J1).prg"</ExomizerCommand>
+</Metadata>

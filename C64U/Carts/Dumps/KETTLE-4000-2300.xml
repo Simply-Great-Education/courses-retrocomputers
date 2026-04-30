@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>KETTLE-4000-2300</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f2fadfcbe8661cb7b25c1765be263ed0bdfa213f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+    <Address>$2300</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Kettle.tap</SourceFile>
+  <SourceFileSHA1>f33c2a6daf9ad42296fa40fdf4b46b5afa3b26fc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2300 "KETTLE-4000-2300" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $4000 dec $d030" -x "inc $d020" -o "Kettle.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $4000 which copies 768 bytes of data from $4030 down to $0100 so that the dump can start at $0400.
+  Also removed what seemed to be some cartridge detection protection by adding an RTS at $335A.</Notes>
+</Metadata>

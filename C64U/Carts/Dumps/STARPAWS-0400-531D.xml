@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>STARPAWS-0400-531D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a527e3f575adef1d7e7d7d5b32c89fd04dc36a52</DumpFileSHA1>
+  <SimplifiedName>Star Paws</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$531D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <RasterBarType>None</RasterBarType>
+  <SidLength>120</SidLength>
+  <SourceFile>Star Paws [Fixed].tap</SourceFile>
+  <SourceFileSHA1>616b7ddfd301ccc9a8bf3c31bdf91ce4930bb6a5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x531D "STARPAWS-0400-531D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Star Paws.prg"</ExomizerCommand>
+  <Notes>Copied some init code from $5202 to $0400 so that the intro can be displayed (this was originally called earlier during the load routine).</Notes>
+</Metadata>

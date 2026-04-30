@@ -1,0 +1,28 @@
+﻿<Metadata>
+  <DumpFile>DEATHSTARINTERCEPTOR-2800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8032a97618c5b17fd859aad160667c1a3fe8afc3</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>DeathStar Interceptor.tap</SourceFile>
+  <SourceFileSHA1>0205aa29ea72db411838a20595473c063d2b2082</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2800 "DEATHSTARINTERCEPTOR-2800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "DeathStar Interceptor (J1).prg"</ExomizerCommand>
+  <Notes>This game has a BASIC main menu with the program being loaded at $0801. Therefore an init routine has been added at $2800 which:
+  1. Sets up the correct VICII settings and necessary BASIC pointers, so the execution can start at the point the loader has finished and start the game. This includes setting the pointer to the current byte in the BASIC program at $7A which allows the program to skip the SYS1345 instruction at the start of the program, which if executed prevents the game from starting (it's basically a crude form of copy protection). 
+  2. Executes the RUN command to start the game program.
+  
+  The following modifications were made to allow the function keys to be pressed whilst the music is playing on the main menu:
+  
+  1. The JSR $805D instruction at $89CA was patched to be JSR $2900 instead.
+  2. A new routine was added at $2900 which changes the raster interrupt to be $2A00.
+  3. A new raster interrupt handler was added at $2A00 which is based on the original interrupt handler code at $89CE, but with two JSR $8AE8 calls added at the end, just like the original music playing interrupt handler at $8A29.
+  
+  Line 44 in the BASIC main menu program was also changed by removing the GOSUB 336 and GOSUB 312 instructions at the end and replacing with a single GOSUB 328. The removes the need to type the security code "DSI" when viewing the mission briefing instructions, which are accessed by pressing F1 on the menu.
+  
+  Note: to dump, simply set a breakpoint on $A7AE after entering the RUN command when the first part of the game has loaded.</Notes>
+</Metadata>

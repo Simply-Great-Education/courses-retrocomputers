@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MINER2049ER-8010</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d44943799356b45de9eddb82ff2372495ee8894b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8010</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Miner 2049'er.d64</SourceFile>
+  <SourceFileSHA1>12aefffa0546c45b38943d6d16195c7a1db0e9ce</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8010 "MINER2049ER-8010" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Miner 2049'er (J1).prg"</ExomizerCommand>
+</Metadata>

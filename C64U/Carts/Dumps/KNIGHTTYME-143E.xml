@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>KNIGHTTYME-143E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b6a558a7fee7c3b19dbaa2409163739c562fb86f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$143E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Knight-Tyme.tap</SourceFile>
+  <SourceFileSHA1>a4cad1b93eda8410084fb552a283e53fd79195fc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x143E "KNIGHTTYME-143E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Knight-Tyme.prg"</ExomizerCommand>
+  <Notes>Patched the $00 at $900B to be $01 to default to joystick.
+  
+  The loading screen is from the Spectrum version</Notes>
+</Metadata>

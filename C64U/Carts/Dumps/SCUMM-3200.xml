@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>SCUMM-3200</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>17c567cddea52123b42b11ef76d57419bbd9a2e5</DumpFileSHA1>
+  <SimplifiedName>Scumm</SimplifiedName>
+  <JumpAddresses>
+    <Address>$3200</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>100</SidLength>
+  <SourceFile>Scumm (Game On - 1991-01 - Side 2).d64</SourceFile>
+  <SourceFileSHA1>c9b4f061ada93ec9bf72626abba24c069798a42d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3200 "SCUMM-3200" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Scumm.prg"</ExomizerCommand>
+  <Notes>Removed the calls to the kernal load routine ($FFD5) at $BB4C and the kernal save routine ($FFD8) at $BB59 to remove disk access from the game (for high score loading and saving).</Notes>
+</Metadata>

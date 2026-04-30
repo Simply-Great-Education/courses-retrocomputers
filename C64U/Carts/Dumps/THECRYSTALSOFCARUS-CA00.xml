@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>THECRYSTALSOFCARUS-CA00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>583825776e2b806c9dbc6f079f215391131195c4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CA00</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <RasterBarType>None</RasterBarType>
+  <SidLength>67</SidLength>
+  <SourceFile>Crystals of Carus, The.tap</SourceFile>
+  <SourceFileSHA1>abc8c4b8e9234cf1fa626c93537803ba4d41d4ff</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "THECRYSTALSOFCARUS-CA00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Crystals of Carus, The.prg"</ExomizerCommand>
+</Metadata>

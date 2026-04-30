@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>THEGREATESCAPE-07CB-5FBE</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3b9af79bdb3cf4cacb84025c4eea1e60bbdf3547</DumpFileSHA1>
+  <SimplifiedName>Great Escape, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$07CB</Address>
+    <Address>$5FBE</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>191</SidLength>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Great Escape The (Version 2).tap</SourceFile>
+  <SourceFileSHA1>c89590dd4e27de38e933999bfffbd41756aabf0c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5FBE "THEGREATESCAPE-07CB-5FBE" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $07cb dec $d030" -x "inc $d020" -o "Great Escape, The (J1).prg"</ExomizerCommand>
+  <Notes>Copied some init code from $0138 - $0153 to $07CB to allow game to startup properly.</Notes>
+</Metadata>

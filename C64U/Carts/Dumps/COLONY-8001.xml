@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>COLONY-8001</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>01a5fa00304af194d52645c8aa619f9ce79f8b1d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8001</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Colony.tap</SourceFile>
+  <SourceFileSHA1>e6371837b92ad9a90f110246d3f1a6642eac2bb9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8001 "COLONY-8001" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Colony.prg"</ExomizerCommand>
+</Metadata>

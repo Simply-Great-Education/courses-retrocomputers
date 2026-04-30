@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ZIMSALABIM-799B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>961efc19fb9cf2470843a2cc781ba47471f0d997</DumpFileSHA1>
+  <SimplifiedName>Zim Sala Bim</SimplifiedName>
+  <JumpAddresses>
+    <Address>$799B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$3F</MemoryConfig>
+  <SourceFile>Zim Sala Bim (Version 2).tap</SourceFile>
+  <SourceFileSHA1>0885dc00ccc633728da7f19d25021b114b8a68c4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x799B "ZIMSALABIM-799B" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3f sta $01 dec $d030" -x "inc $d020" -o "Zim Sala Bim.prg"</ExomizerCommand>
+</Metadata>

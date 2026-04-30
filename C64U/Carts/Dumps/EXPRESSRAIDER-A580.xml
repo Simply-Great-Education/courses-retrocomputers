@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>EXPRESSRAIDER-A580</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4e22a58eeed4faecf17320f17e82abc23208b765</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$A580</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Express Raider.tap</SourceFile>
+  <SourceFileSHA1>d013bc1ad3ab7e155f88efaf7eb16b0431e38e3c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xA580 "EXPRESSRAIDER-A580" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Express Raider.prg"</ExomizerCommand>
+  <Notes>The real start address is $F41A. However, we need to first copy from $7200-$7400 to $0200-$0400 (512 bytes) as was performed during the original loading process, so this overwrites our loader code. Therefore we just JMP to $F41A at the end of the init code added at $A580 instead of using RTS.</Notes>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>TARGET-X-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1b950ee5ed34d168c6c3a5adab229a91015a9a93</DumpFileSHA1>
+  <SimplifiedName>Target-X</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Target-X (John McCarthy - 1987).d64</SourceFile>
+  <SourceFileSHA1>daab586e46173acfd0a391609846ec2c8c7f6ca3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "TARGET-X-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Target-X.prg"</ExomizerCommand>
+  <Notes>Homepage: https://github.com/camperjohn64/commodore64</Notes>
+</Metadata>

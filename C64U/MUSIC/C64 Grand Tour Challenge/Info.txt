@@ -1,0 +1,15 @@
+The C64 Grand Tour Challenge Musicdisk
+
+Released on 21 January 2022 by Vincenzo
+
+
+Keys to use in the music disk:
+H - help
+P - pause
+F - fast forward (toggle)
+Cursor Up/Down - select track
+Return - play
+
+
+
+Press Run/Stop for Techno Syndrome. It's using samples so it has to be loaded separately. It also fills the whole memory and there's no return to the music disk interface.

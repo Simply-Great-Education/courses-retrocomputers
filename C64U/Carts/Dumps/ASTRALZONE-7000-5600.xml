@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>ASTRALZONE-7000-5600</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>86758aa12fb5bca571669c189ca65c7d74f11e37</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7000</Address>
+    <Address>$5600</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Astral Zone.tap</SourceFile>
+  <SourceFileSHA1>a8684cab9f394b4985b1de700dcbe200ad25df75</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5600 "ASTRALZONE-7000-5600" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $7000 dec $d030" -x "inc $d020" -o "Astral Zone.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $7000 which sets the pointers to the BASIC variable area ($2D/$2E) and end of BASIC ($37/$38). This matches what happens when the original subroutine at $0162 is executed before starting the game.</Notes>
+</Metadata>

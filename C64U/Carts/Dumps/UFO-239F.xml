@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>UFO-239F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1477330873a7fe84eeff0404d3c0ba2d495d63e6</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$239F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>U.F.O.tap</SourceFile>
+  <SourceFileSHA1>6ab295d19d94963b3954a0edd3767edc83dc2ae0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x239F "UFO-239F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "U.F.O.prg"</ExomizerCommand>
+  <Notes>The following changes were made to default to joystick control:
+  1. $235A was changed from $74 to $C4
+  2. $3C77 was changed from $8C to $37</Notes>
+</Metadata>

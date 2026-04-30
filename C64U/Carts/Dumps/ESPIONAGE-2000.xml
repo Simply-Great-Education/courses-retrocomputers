@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>ESPIONAGE-2000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ffe57fac93b0689f9252e72203142cf24eeb44ad</DumpFileSHA1>
+  <SimplifiedName>Espionage</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Espionage (Version a).tap</SourceFile>
+  <SourceFileSHA1>d753292a71cf0c0790709c99f93398b93219d5bf</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2000 "ESPIONAGE-2000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Espionage.prg"</ExomizerCommand>
+  <Notes>The JMP ($002D) instruction at $2092 was changed to JMP $F562 in order to remove the manual protection step.
+  
+  As this game is actually frozen, the game starts at $21A0. However the true start address is $2000.</Notes>
+</Metadata>

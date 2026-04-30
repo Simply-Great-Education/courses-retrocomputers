@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BOMBO-63C4</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ff5eb4f08c48555e00a913644a55de8c9d63fb85</DumpFileSHA1>
+  <SimplifiedName>Bombo</SimplifiedName>
+  <JumpAddresses>
+    <Address>$63C4</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Bombo (Version 3).tap</SourceFile>
+  <SourceFileSHA1>32d392569052c66a98ecef08100e3d7bef8bc316</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x63C4 "BOMBO-63C4" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bombo.prg"</ExomizerCommand>
+</Metadata>

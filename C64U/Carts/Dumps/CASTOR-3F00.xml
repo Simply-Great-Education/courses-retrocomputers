@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>CASTOR-3F00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>35631001f4a3d03f91e4ca77795da408bc36f4b7</DumpFileSHA1>
+  <SimplifiedName>Castor</SimplifiedName>
+  <JumpAddresses>
+    <Address>$3F00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Castor (Game On - 1995-03 - Side 2).d64</SourceFile>
+  <SourceFileSHA1>6ebdbc802600264376cc167e5b5132cebf8c8ccf</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3F00 "CASTOR-3F00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Castor.prg"</ExomizerCommand>
+  <Notes>Performed the following patches to remove the disk access for highscore loading and saving:
+  1. NOP'd out the call to the kernal load routine ($FFD5) at $3F19
+  2. Changed the SEI instruction at $3E00 to RTS to force an immediate return from the highscore saving routine without performing any disk access</Notes>
+</Metadata>

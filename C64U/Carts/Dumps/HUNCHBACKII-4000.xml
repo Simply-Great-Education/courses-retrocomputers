@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>HUNCHBACKII-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7e63eb4e91eb12dfd1d920faaad170194659689d</DumpFileSHA1>
+  <SimplifiedName>Hunchback II - Quasimodo's Revenge</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Hunchback II.tap</SourceFile>
+  <SourceFileSHA1>ecb4c4c900e824bd0d070f62a2573dc219b97555</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "HUNCHBACKII-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Hunchback II - Quasimodo's Revenge.prg"</ExomizerCommand>
+</Metadata>

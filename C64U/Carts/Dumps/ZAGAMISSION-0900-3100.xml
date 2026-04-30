@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>ZAGAMISSION-0900-3100</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>dd5cece8802d71f7ccf19a91ed0135437b032e7b</DumpFileSHA1>
+  <SimplifiedName>Zaga Mission</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0900</Address>
+    <Address>$3100</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$34</MemoryConfig>
+  <SourceFile>Zaga Mission (Anirog).tap</SourceFile>
+  <SourceFileSHA1>2cb8b950d11931d253b0456350a582fad34972f0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3100 "ZAGAMISSION-0900-3100" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$34 sta $01 jsr $0900 dec $d030" -x "inc $d020" -o "Zaga Mission.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0900 which:
+  1. Copies 512 bytes of data from $0940 down to $0200 so that the dump can start at $0400
+  2. Sets the accumulator to zero
+  3. Jumps to the code located at $022E, which is the tail end of the original loader. This sets the port B data direction register ($DD03) to the value of the accumulator ($00), copies some data to the zero page and finally jumps to the entry point ($3100).</Notes>
+</Metadata>

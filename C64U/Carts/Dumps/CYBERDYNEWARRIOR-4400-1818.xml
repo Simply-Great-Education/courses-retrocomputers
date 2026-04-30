@@ -1,0 +1,25 @@
+﻿<Metadata>
+  <DumpFile>CYBERDYNEWARRIOR-4400-1818</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>27832af4b37780ad9224f22dc8e7d7e5a2e6e215</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4400</Address>
+    <Address>$1818</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Cyberdyne Warrior.tap</SourceFile>
+  <SourceFileSHA1>3acdfa8c28b7ac7cdda53579cfb47cbb65e9bead</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1818 "CYBERDYNEWARRIOR-4400-1818" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $4400 dec $d030" -x "inc $d020" -o "Cyberdyne Warrior.prg"</ExomizerCommand>
+  <Notes>To allow a quicker start of the game, added an init routine at $4400 which:
+  
+  1. Turns off interrupts from the two CIA chips and acks any pending CIA interrupts
+  2. Copies 512 bytes of code and data back down to $0200, so that the game could be dumped from $0400
+  3. Sets $DD00 to $96
+  
+  Note: the game does not hit $1818 on the first run because the game was actually frozen using an Action Replay! Therefore, you must set the breakpoint on $1818, start the game. Then once you die, the breakpoint will be hit and you can dump from there.
+  
+  The loading screen is by Steve Rowlands, but was never used in the finished game. It was kindly shared with the Games That Weren't team in 2008.</Notes>
+</Metadata>

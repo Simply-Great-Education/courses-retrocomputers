@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>YOGIBEAR-2C1A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7bacfb691e5bb9dbf9a113d3cac7b4c095ec5182</DumpFileSHA1>
+  <SimplifiedName>Yogi Bear</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2C1A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Yogi Bear (Version 2a).tap</SourceFile>
+  <SourceFileSHA1>9057361f9e89c725f4f8270c855b2215e3948323</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2C1A "YOGIBEAR-2C1A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Yogi Bear.prg"</ExomizerCommand>
+</Metadata>

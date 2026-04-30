@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>HEADTOHEADKARATE-0C92</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fc10bcb028bae8abbe513c398e7b6c4fb54402dd</DumpFileSHA1>
+  <SimplifiedName>Head-to-Head Karate</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0C92</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Head-to-Head Karate (UpTime Vol1 No. 03 - Side 2) (v2).d64</SourceFile>
+  <SourceFileSHA1>56cdcfb28d4a8bc6a166149018202e7c1a17b434</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0C92 "HEADTOHEADKARATE-0C92" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Head-to-Head Karate.prg"</ExomizerCommand>
+</Metadata>

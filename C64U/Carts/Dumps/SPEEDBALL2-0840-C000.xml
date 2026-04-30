@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>SPEEDBALL2-0840-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>79061f7824eb613c84a0650aab68f7f2ae705f4e</DumpFileSHA1>
+  <SimplifiedName>Speedball 2</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0840</Address>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Speedball II.tap</SourceFile>
+  <SourceFileSHA1>5fc5134dc56bbfe483f1c54164168c829abaffb8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "SPEEDBALL2-0840-C000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $0840 dec $d030" -x "inc $d020" -o "Speedball 2.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0840 which:
+  1. Turns off interrupts from the two CIA chips and acks any pending CIA interrupts.
+  2. Copies 512 bytes of data from $0872 down to $0200 so that the dump can start at $0400 (this is the state the memory was in after the depacker from the original game had finished - this allows us to skip this slow step).
+  3. Sets the correct border and screen colours.
+  4. Clears the stack.
+  5. And finally jumps to the entry point at $C000 (it couldn't use RTS because of the copy overwriting the boot code).</Notes>
+</Metadata>

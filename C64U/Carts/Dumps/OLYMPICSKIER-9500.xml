@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>OLYMPICSKIER-9500</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7a11e03ba8460e93272151cd1c65b1bca40b3dc4</DumpFileSHA1>
+  <SimplifiedName>Olympic Skier</SimplifiedName>
+  <JumpAddresses>
+    <Address>$9500</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Olympic Skier (Mr Chip Software).tap</SourceFile>
+  <SourceFileSHA1>f191b83c3b6458934142951d32eb792ec12ecdb6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9500 "OLYMPICSKIER-9500" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Olympic Skier (J1).prg"</ExomizerCommand>
+</Metadata>

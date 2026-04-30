@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MEGAMANIA-ARLASOFT-6573</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e1b62c34ce3c4abfc72a0774410949e98f3afafe</DumpFileSHA1>
+  <SimplifiedName>Megamania (Arlasoft - 2020)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6573</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Megamania (Arlasoft 2020).d64</SourceFile>
+  <SourceFileSHA1>14bd775379d01d688babd8f8a5bcd1d1567a01a8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6573 "MEGAMANIA-ARLASOFT-6573" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Megamania (Arlasoft - 2020).prg"</ExomizerCommand>
+</Metadata>

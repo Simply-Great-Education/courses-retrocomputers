@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>SUPERSKRAMBLE-0900-257A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5fedece6077aebaff470798a03ca507ffe61a8d1</DumpFileSHA1>
+  <SimplifiedName>Super Skramble!</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0900</Address>
+    <Address>$257A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Super Skramble! (Terminal Software).tap</SourceFile>
+  <SourceFileSHA1>78618dfa89919505034faa811409ae9369a3c642</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x257A "SUPERSKRAMBLE-0900-257A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0900 dec $d030" -x "inc $d020" -o "Super Skramble! (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0900 which copies 256 bytes of data from $0920 down to $0300 so that the dump can start at $0400. This is to workaround a rather crude copy protection mechanism at $1143, which expects an RTS after the filename loaded from tape.
+  It then jumps to the entry point at $257A (it couldn't use RTS because of the copy overwriting the boot code).
+  
+  Note: $3002 was changed from $FF to $FA so that the game waits on the title screen for a short while before entering demo mode.</Notes>
+</Metadata>

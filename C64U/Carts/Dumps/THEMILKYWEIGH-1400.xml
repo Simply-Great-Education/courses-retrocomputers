@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>THEMILKYWEIGH-1400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3838a75eb94d9456b7f8c128c6fe58726ea7434b</DumpFileSHA1>
+  <SimplifiedName>Milky Weigh, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1400</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Milky Weigh, The (30 Games - Argus Press Software - Side 1).tap</SourceFile>
+  <SourceFileSHA1>950b5eced1f9ac9327d33d85b570ed9d9190b660</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "THEMILKYWEIGH-1400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Milky Weigh, The.prg"</ExomizerCommand>
+</Metadata>

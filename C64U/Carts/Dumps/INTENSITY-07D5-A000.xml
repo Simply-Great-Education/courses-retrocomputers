@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>INTENSITY-07D5-A000</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>35be6ca92e45248f8803aa21d7fb27581f46f539</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$07D5</Address>
+    <Address>$A000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Intensity.tap</SourceFile>
+  <SourceFileSHA1>4ebcccae2ecf7a2a528b3cb33e64f668b9266e73</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xA000 "INTENSITY-07D5-A000" -Di_table_addr=0x02 -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $07d5 dec $d030" -x "inc $d020" -o "Intensity.prg"</ExomizerCommand>
+  <Notes>Initial breakpoint to use for dumping (i.e. once game has loaded) is $A11E.
+  Added an init routine at $07D5 to set some necessary zero page values.
+  Also added keypress and port 2 fire read routine at $9A40 to skip intro which was originally shown during the loading process. Patched looping jump at $A11B to point to this new routine instead.</Notes>
+</Metadata>

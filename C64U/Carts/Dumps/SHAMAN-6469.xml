@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SHAMAN-6469</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d219a6e3dadee347a4a66d881766d62a5e1d0b68</DumpFileSHA1>
+  <SimplifiedName>Shaman</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6469</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Shaman (Magic Disk 64 - 1995-11 - Side 2).d64</SourceFile>
+  <SourceFileSHA1>18357235648a585adb1c086c6e0ae4aeb377187f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6469 "SHAMAN-6469" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Shaman.prg"</ExomizerCommand>
+</Metadata>

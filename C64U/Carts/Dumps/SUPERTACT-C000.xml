@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>SUPERTACT-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a043c1d00de62920d473f1eda2ba1577847c56e3</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Super Tact.tap</SourceFile>
+  <SourceFileSHA1>5d84c41043e3f2715e09ed2e63a664ecac3a68eb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "SUPERTACT-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Super Tact.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $0801. Therefore an init routine has been added at $C000 which:
+  1. Sets up the correct VICII settings and necessary BASIC pointers.
+  2. Executes the RUN command to start the game program.
+  
+  Note: as the original game is frozen, the breakpoint to use for dumping is actually $8061.</Notes>
+</Metadata>

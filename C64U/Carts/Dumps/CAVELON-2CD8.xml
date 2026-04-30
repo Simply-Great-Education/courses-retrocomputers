@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>CAVELON-2CD8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0378e5829039003c042cd16911498e7480c42296</DumpFileSHA1>
+  <SimplifiedName>Cavelon</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2CD8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Cavelon (Ocean).tap</SourceFile>
+  <SourceFileSHA1>5936048750748bd381f5d13e81d74774f1a264ac</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2CD8 "CAVELON-2CD8" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Cavelon (J1).prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

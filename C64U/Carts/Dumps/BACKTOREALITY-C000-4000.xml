@@ -1,0 +1,30 @@
+﻿<Metadata>
+  <DumpFile>BACKTOREALITY-C000-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f6e01a8c114271f8d31142c614b20a30159f9a9b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Back to Reality.tap</SourceFile>
+  <SourceFileSHA1>7b62d454dccf3bafe33a839b5b1375c5b999f637</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "BACKTOREALITY-C000-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c000 dec $d030" -x "inc $d020" -o "Back to Reality.prg"</ExomizerCommand>
+  <Notes>Added a routine at $C000 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.
+  
+  Once the loading screen has been displayed, the routine then initialises colour RAM for the game itself.
+  
+  Also made the following changes to allow the fire button in port 2 start the game:
+  
+  1. Patched the JSR $FFE4 instruction at $4F87 to be JSR $C100 instead
+  2. Added a small routine at $C100 to check the fire button in port 2 - if pressed, then it sets the accumulator to $20 and returns, which causes the game to start just as if the space bar was pressed. If not pressed, the routine then JMPs to $FFE4 to carry on the normal code flow.
+  
+  Also zeroed out the following memory ranges as they contained an unnecessary repeating memory block:
+  
+  $0880 - $0BFF
+  $1800 - $1FFF
+  $C000 - $CFFF</Notes>
+</Metadata>

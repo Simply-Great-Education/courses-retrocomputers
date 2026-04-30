@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>WHERESMYBONES-2245</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f862c1516165adba8e45ca823807807ad6a94b96</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2245</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Where's My Bones.tap</SourceFile>
+  <SourceFileSHA1>d746c460f29d5392db754e6483eff79596430eb1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2245 "WHERESMYBONES-2245" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Where's My Bones.prg"</ExomizerCommand>
+</Metadata>

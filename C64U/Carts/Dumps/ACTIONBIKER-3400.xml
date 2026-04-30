@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ACTIONBIKER-3400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>daa75227dfcaffee49f06da3d09de7ca5a150601</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Action Biker.tap</SourceFile>
+  <SourceFileSHA1>651d087568270b603202a2bc806aef33de109f35</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3400 "ACTIONBIKER-3400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Action Biker.prg"</ExomizerCommand>
+</Metadata>

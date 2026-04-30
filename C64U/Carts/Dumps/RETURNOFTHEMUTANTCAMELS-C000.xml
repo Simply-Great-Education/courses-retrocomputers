@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>RETURNOFTHEMUTANTCAMELS-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>516ad468e2a253d39c49e36eb5b790dc6bbc6455</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Return of the Mutant Camels.tap</SourceFile>
+  <SourceFileSHA1>a83041405e5886ed804cb64dffe2fe2e297e9c5e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "RETURNOFTHEMUTANTCAMELS-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Return of the Mutant Camels.prg"</ExomizerCommand>
+</Metadata>

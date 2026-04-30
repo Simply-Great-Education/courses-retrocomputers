@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>ARKPANDORA-8F00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fc5aa9dd29bb17cad998890f8c36fa0e3c48e447</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8F00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Ark Pandora.tap</SourceFile>
+  <SourceFileSHA1>4b73727ec0b599b15b9929ea7fb285daae12048f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8F00 "ARKPANDORA-8F00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ark Pandora.prg"</ExomizerCommand>
+</Metadata>

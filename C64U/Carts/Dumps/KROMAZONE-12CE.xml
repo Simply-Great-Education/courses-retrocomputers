@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>KROMAZONE-12CE</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>78d79a3b5b17278d68de96bff8684cef7706b1c0</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$12CE</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Kromazone.tap</SourceFile>
+  <SourceFileSHA1>dc0df63885b0376068e5a3491e2b309d65699401</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x12CE "KROMAZONE-12CE" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Kromazone.prg"</ExomizerCommand>
+</Metadata>

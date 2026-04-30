@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>HERCULES-C000-0886</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4490b770f4b10ee371bc25bde64030b8c1e7381b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$0886</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Hercules.tap</SourceFile>
+  <SourceFileSHA1>1f785de9837b97cf8ec2a71a0dccb9fdd3fea98b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0886 "HERCULES-C000-0886" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c000 dec $d030" -x "inc $d020" -o "Hercules (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C000 to set $1A to $76 to allow the first level to always be the same as when the original game is loaded from tape (i.e. the code uses whatever value is stored at this address, which just so happens to be set to $76 when loading from tape).</Notes>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>PETCH-0A00-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e258c0972637027f67b6a3288b85d95a0fc63db6</DumpFileSHA1>
+  <SimplifiedName>Petch (aka Pengo)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0A00</Address>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Petch.tap</SourceFile>
+  <SourceFileSHA1>a27022f40503873a2e942ca68b73285592610c63</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "PETCH-0A00-1000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0a00 dec $d030" -x "inc $d020" -o "Petch (aka Pengo).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0A00 which copies a jump table back to $0200 where it was originally, allowing the dump to start at $0400.</Notes>
+</Metadata>

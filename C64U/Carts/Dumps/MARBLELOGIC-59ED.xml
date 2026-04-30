@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>MARBLELOGIC-59ED</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>01c848f277098358bcf82d1d744e5f0631a7e088</DumpFileSHA1>
+  <SimplifiedName>Marble Logic (Unreal - 2006)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$59ED</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Marble Logic (2006).prg</SourceFile>
+  <SourceFileSHA1>2073f203f08eec2c791cf24eb363d4a2b197fb1b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x59ED "MARBLELOGIC-59ED" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Marble Logic (Unreal - 2006).prg"</ExomizerCommand>
+  <Notes>Starts at $59ED instead of $59D8 so as to skip the high score loading from disk. Also removed the call to the kernal save routine ($FFD8) at $6CB0 to remove high score saving to disk.</Notes>
+</Metadata>

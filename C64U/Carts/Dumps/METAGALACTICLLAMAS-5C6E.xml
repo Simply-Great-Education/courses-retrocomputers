@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>METAGALACTICLLAMAS-5C6E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>97c164bf7d9da597cf6892b2f91b2ca886213f2b</DumpFileSHA1>
+  <SimplifiedName>Metagalactic Llamas</SimplifiedName>
+  <JumpAddresses>
+    <Address>$5C6E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Metagalactic Llamas (Version 1).tap</SourceFile>
+  <SourceFileSHA1>0b6ba993c0a063ef8ac127af6478e9f053b5c861</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5C6E "METAGALACTICLLAMAS-5C6E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Metagalactic Llamas.prg"</ExomizerCommand>
+</Metadata>

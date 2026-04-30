@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SUPERSTOCKCAR-164F</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>e10bcd0097b9dc198cb9bf2b9e9dc72f89c211de</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$164F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Super Stock Car.tap</SourceFile>
+  <SourceFileSHA1>d89091010c687cc1381c9e8c1351a3230cedb548</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x164F "SUPERSTOCKCAR-164F" -Di_table_addr=0x02 -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Super Stock Car.prg"</ExomizerCommand>
+</Metadata>

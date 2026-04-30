@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>SNACKMAN-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>80cbc07569fe244f752e441083179570a3b280c6</DumpFileSHA1>
+  <SimplifiedName>Snackman</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Snackman (John McCarthy - 1983).d64</SourceFile>
+  <SourceFileSHA1>fdada20d48377042b46d5bead6c46ab7fae99a7b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "SNACKMAN-0810" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Snackman.prg"</ExomizerCommand>
+  <Notes>Patched $1F8B to RTS ($60) to skip high score clearing and loading. Also NOP'd out the call to the kernal save routine ($FFD8) at $3B05 to remove high score saving.
+  Homepage: https://github.com/camperjohn64/commodore64</Notes>
+</Metadata>

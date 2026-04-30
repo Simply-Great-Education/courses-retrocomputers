@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>DELIVERANCE-STORMLORDII-SIDE1-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e3910973192e298e87aa69133fca2c3d56c4f469</DumpFileSHA1>
+  <SimplifiedName>Deliverance - Stormlord II (Levels 1 and 2)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>537</SidLength>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Deliverance (Hewson) (Side 1).tap</SourceFile>
+  <SourceFileSHA1>7123a5521a056326c8954eea26f24fd9bb6841e4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "DELIVERANCE-STORMLORDII-SIDE1-C000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Deliverance - Stormlord II (Levels 1 and 2) (J1).prg"</ExomizerCommand>
+</Metadata>

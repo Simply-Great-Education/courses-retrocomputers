@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>BCSQUESTFORTIRES-033C-6000</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>2e9810ca28747dc2e1b306c1f8dd336fcf5bef23</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$033C</Address>
+    <Address>$6000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>BC's Quest For Tires.tap</SourceFile>
+  <SourceFileSHA1>8c5cd6540f4e74f5b83f94c585d7d8221b7dae9f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6000 "BCSQUESTFORTIRES-033C-6000" -Di_table_addr=0x02 -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $033c dec $d030" -x "inc $d020" -o "BC's Quest For Tires.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $033C to copy a memory block down to $01DE to $0248 that was placed there by the original loader. It also sets the stack pointer to $DF to allow for the first part of this memory block residing on the stack.
+  The actual entry point is $0447, although this causes a jump to $551D which displays the manual protection step. Therefore the init routine jumps to $6000 to skip this.
+  
+  The loading screen is from the disk version</Notes>
+</Metadata>

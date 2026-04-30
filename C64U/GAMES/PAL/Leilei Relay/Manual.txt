@@ -1,0 +1,12 @@
+Baby UFOs in Ufoland have to train arduously before they can leave their home world.
+
+Historically, the most infamous of these training grounds was the Lei Lei Relay.
+
+Collect the lanterns to advance to the next field, up until you reach the UFO cathedral. There you will attain the rank of UFO master.
+
+Guide the UFO using Joystick in Joystick port 2. Left and Right turns the ship, while Up is thrust and so is Fire. Pressing key '1' on the keyboard switches the music on/off.
+
+A Commodore 64 game from 2021.
+
+
+Distributed with the Commodore 64 Ultimate with permission from Tero 'Dr. TerrorZ' Heikkinen.

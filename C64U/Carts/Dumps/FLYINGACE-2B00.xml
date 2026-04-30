@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>FLYINGACE-2B00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c11c16eb1f8436f20a5f204a908198c067b96e5f</DumpFileSHA1>
+  <SimplifiedName>Flying Ace</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2B00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Flying Ace (Avalon Hill Game Company).tap</SourceFile>
+  <SourceFileSHA1>e8842ffbf4f586c096d4c7150fa26c550f7fa1eb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2B00 "FLYINGACE-2B00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Flying Ace.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>CYCLONS-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>837bbaab30de350c64b63222b5f8413eb14242ec</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Cyclons.tap</SourceFile>
+  <SourceFileSHA1>dbbb07642a37ced4a6a35a37427a2b9746dc67bd</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "CYCLONS-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Cyclons.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC program which loads the game and starts it. Because we only want to use the tail end of this program, the following steps were taken:
+  1. A new routine was placed at $C000 which sets up the correct VICII settings and necessary BASIC pointers and runs the program. The pointer to the start of the BASIC program ($2B/$2C) is set to $0981 in order to start the program at line 5367 which skips the file loading command and the prompt to insert a joystick into port 2.
+  2. This routine also copies 256 bytes of data from $C040 down to $0300 so that the dump can start at $0400.
+
+  Notes: to dump the game, simply set a breakpoint on $0EC0 (this is hit when pressing any key after the joytsick port 2 prompt).</Notes>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>CJINTHEUSA-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>aeea148598a677a8c53592ad22d4fbe9dfad372c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>CJ in the USA.tap</SourceFile>
+  <SourceFileSHA1>f754359a32f5f7e987e2572405cc51da8f978ced</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "CJINTHEUSA-080D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "CJ in the USA.prg"</ExomizerCommand>
+</Metadata>

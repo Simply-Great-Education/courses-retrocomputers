@@ -1,0 +1,138 @@
+YOOMP! 64
+
+An official Commodore 64 conversion of Team Yoomp's ABBUC Software Contest 2007 winning game YOOMP! for the Atari XL/XE home computer. Converted to the Commodore 64 home computer by Zbigniew Ross in 2016-2017 and featuring audio by MCH. published by RGCD and Psytronik Software in 2018.
+
+
+YOOMP! 64 BACKGROUND
+
+A few years ago I discovered that C64 emulation was not perfect - and because of this (and for the nostalgia) I decided to get hold of a real Commodore 64. I started to become more interested in retro computers and current events related to C64 - I never imagined that the development scene would be so active on this computer, with new hardware and software being released every week! Anyway, one day I have found an article describing games on various retro computing platforms, and among them there was a write up about Yoomp! for the Atari 8-bit. 
+
+After playing it on an emulator I enjoyed the concept of Yoomp! so much that I decided to write a similar game for Android. Of course I wrote to the author to secure permission, but Eru (author of the game) wrote back explaining that although he cannot stop me from creating an Android version, he'd prefer it if I didn't as he had already started to develop a version for mobile platforms himself.
+
+So, I stopped work on the Android port and started to wonder why nobody had created a version of this game for C64 yet - after all, it's the best 8-bit computer in the world! ;) 
+
+After some research I came across a thread on Lemon 64 regarding a previous attempt to convert the game, and I read Eru's posts explaining how the game works. However, the Atari 8-bit and C64 are very different machines so the same methods were not 100% relevant. On the Atari version the image of the tunnel is scaled 2x (horizontally and vertically) via hardware. Scaling the image (graphic) on C64 in a similar way was a real problem. For example, Hewson's Eliminator achieves a similar effect by only drawing every 2nd line but the overall result would not work for Yoomp! as the image would be too dark and fragmented.
+
+Instead, I opted for a different solution - using the sprites. In the multicolor mode one pixel has a width of 2, so by enabling double height for the sprites these pixels become square. This not only simplified my calculations, but this way the scaling would be done 'in hardware'. The resulting tunnel area is drawn using 6 x 4 sprites, giving the tunnel a size of 144 x 144 pixels (72 x 72 pixels non-scaled).
+
+After an exhausting fight with raster IRQ, I had an area on screen ready to draw the tunnel - so now the next step was to animate it. Using C# I wrote a program to draw the tunnel on a bitmap and at the same time it generates the assembler code responsible for drawing mapped graphics from a 2D texture into an array of sprites.
+
+My first approach to draw the animated tunnel was similar to those used in modern graphics systems - first draw the texture data on the sprites, then scroll the content of the texture so it gives the illusion of movement. Unfortunately, it turned out that even using the speedcode technique (generated assembler code to maximize execution speed) it was still too slow. After 5 or 6 attempts with different code I finally managed to get a satisfactory speed but only after reducing the tile size to 4 x 8 'texels', half the size used in the original Yoomp!
+
+After some further discussions about my project with Eru, I started to understand a key secret to how the Atari version worked. It is all about special arrangement of tunnel data in memory, allowing the speedcode to achieve data mapping *and* scrolling in a single pass, so there was no need to scroll the texture in a separate frame!
+
+I adjusted my C# application to generate speedcode for this optimised data layout and... bingo! The tunnel was scrolling much faster. This data structure required quite a lot of memory; the tunnel texture uses 16KB, the speedcode for drawing requires about 13KB, and a 6KB buffer for sprites means that already half of the Commodore 64's memory is consumed. However, the problem of drawing the tunnel had been overcome, so adding the remaining logic of the game was comparatively easy! 
+
+- Zbigniew Ross 2018
+
+
+
+INTRODUCING YOOMP! 64
+
+YOOMP! 64 is a three-dimensional jumping game for the Commodore 64. Bounce the ball through 23 three-dimensional textured tubes, collect as many points as you can and try not to fall off the edge!
+
+YOOMP! 64 is controlled via a joystick plugged into PORT 2. When the title screen has loaded, press FIRE to access the main menu.
+
+
+MAIN MENU OPTIONS
+
+Use the joystick (UP, DOWN and FIRE) to select from the following options.
+
+START GAME
+
+Begin your journey through the tube!
+
+MUSIC/SFX 
+ 
+Toggles between in-game music or sound effects. It's either/or - you cannot have both active.
+
+PASSWORD
+
+YOOMP! 64 features 23 levels, and from here you can select a previously reached level by using a four character password (using the joystick UP and DOWN to scroll through the alphabet and LEFT and RIGHT to move the cursor). When you have entered the password, press FIRE to confirm.
+
+If you enter an incorrect password, you will be returned to the menu. If the password is correct, the game will start from the selected level. 
+
+
+PLAYING THE GAME
+
+After selecting START from the MAIN MENU (or entering a valid password), you'll be presented with a GET READY screen. Press FIRE here to YOOMP!
+
+The in-game screen consists of two main elements:
+
+THE TUNNEL - This is where the game takes place.
+
+HUD - This shows how many LIVES you have left, your current SCORE, and how many LONG JUMPS are available.
+
+You control the bouncing ball by rotating it around the inside of the tube by pushing LEFT or RIGHT on the joystick. You also have a limited number of LONG JUMPS available (starting with 3) that are activated by pressing FIRE. A long jump must be activated a bounce prior to when you wish to take it, so it requires some planning ahead. I.E.
+
+HIT FLOOR, STANDARD BOUNCE, << PRESS FIRE >> HIT FLOOR, LONG JUMP 
+
+
+TILE TYPES
+
+Throughout the tube are a variety of tile types (explained below). Some are helpful, others are not!
+
+SPEED UP TILE - Speeds up your movement through the tunnel to twice the normal velocity for the next two bounces.
+
+BOOZE TILE - Hitting this causes you to temporarily lose control of the ball!
+
+EARTHQUAKE TILE - Causes a short burst of distracting screen shake!
+
+HOLES (SMALL, MEDIUM, LARGE) - Don't fall through these!
+
+1UP - Extra life.
+
+SLOW TILE - Slows down your movement through the tunnel to twice the normal velocity for the next two bounces.
+
+BRIGHTER/DARKER TILES - Increases or decreases the tunnel lighting.
+
+LIGHTNING TILE - Causes a period of intense bright flashing, after which the normal brightness level is reset.
+
+TELEPORT ENTRY/EXIT TILE - Use these as shortcuts to the opposite side the tunnel!
+
+FORCED MOVEMENT TILE - Forces the ball to bounce to the left or right, depending on which side of the tile was hit.
+
+EXTRA LONG JUMP TILE - Gives you an extra LONG JUMP to use.
+
+LONG JUMP TILE - Bounces your ball over long distances for free.
+
+PAUSE/RESUME TILE - Pauses and restarts tunnel movement.
+
+BRIDGE/INCOMPLETE TILE - An incomplete tile. As with the HOLES, be sure to avoid the black area!
+
+
+END OF LEVEL
+
+At the end of each level you are presented with a PASSWORD to access the next stage. Be sure to write these down. Can you spot the theme? ;)
+
+
+CREDITS
+
+YOOMP! 64 was developed by Zbigniew Ross, Copyright 2016-17. Published on 64KB C64 cartridge by RGCD, 2018. Published on 5.25" Diskette by Psytronik Software, 2018. 
+
+Marcin "Eru" Zukowski: Original Atari 8-Bit coder and game designer.
+
+Zbigniew Ross: Commodore 64 Code, Graphics and Design
+MCH: Music, Sound Effects & Testing
+James Monkman: Manual Text & Testing
+Chris Mantil: Manual Design & Layout
+Siem Appelman: Technical Support
+Tim Harris & Raymond Lejuez: Cartridge Hardware
+Ilija Melentijevic - Poster Illustration
+Thomas Koch - Box Artwork/Logo
+
+Additional thanks to comankh and BagoZonde for helping with testing.
+
+
+LINKS
+
+For more information on the team involved in this C64 release, visit: 
+rgcd.co.uk (RGCD homepage)
+psytronik.net (Psytronik homepage)
+
+Official RGCD/Psytronik forum for general feedback can be found at: 
+lemon64.com/forum/index.php
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Zbigniew Ross.

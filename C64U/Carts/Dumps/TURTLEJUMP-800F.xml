@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>TURTLEJUMP-800F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>aed6aa61a0828962b595374bdd77f8442285afcb</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$800F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Turtle Jump.tap</SourceFile>
+  <SourceFileSHA1>ddaf76bf3199dd446c1f566223c00157533529a4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x800F "TURTLEJUMP-800F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Turtle Jump.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>GREENBERET-4000</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>5d1b93779c98a6111edb62321a0a0ee68c5c78e6</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>213</SidLength>
+  <SourceFile>Green Beret.tap</SourceFile>
+  <SourceFileSHA1>8f5d462be4d6f9e67c2cd13acb80b02f75305911</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "GREENBERET-4000" -Di_table_addr=0x02 -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Green Beret.prg"</ExomizerCommand>
+  <Notes>NOP'd out a JSR $0100 at $0790 to remove a check for connected disk drives or peripherals. This subroutine was designed to crash the game if any such devices were detected.</Notes>
+</Metadata>

@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>RAINBOWEDGERUNDX-C006</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4537b3da6419f7a4239b041c1f473fd496aafa79</DumpFileSHA1>
+  <SimplifiedName>Rainbow Edge Run DX (Megastyle - 2021)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C006</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Rainbow Edge Run DX.d64</SourceFile>
+  <SourceFileSHA1>de1a5685f454b47bf68cfe2747e152ed954604ee</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC006 "RAINBOWEDGERUNDX-C006" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Rainbow Edge Run DX (Megastyle - 2021).prg"</ExomizerCommand>
+  <Notes>To remove high score loading and saving to disk, the following changes were made:
+  
+  1. Changed the JMP $0400 instruction at $B4C3 to JMP $C100 instead
+  2. Added a new routine at $C100 which:
+    a) Patches $1F54 to RTS (60) (this prevents the high score loading error from being displayed)
+    b) NOPs out the JSR $2056 instruction at $1FCB (this removes highscore saving)
+    c) JMPs to $040D instead of the original $0400 to skip highscore loading</Notes>
+</Metadata>

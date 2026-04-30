@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>GORDIANTOMB-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6ead4ad710650dfb09c8a2e6c84cf7c0c6cb4e3f</DumpFileSHA1>
+  <SimplifiedName>Gordian Tomb</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Gordian Tomb (CP Verlag - Golden Disk 64 #09 - 1990).d64</SourceFile>
+  <SourceFileSHA1>a5526dc3b4079fa2f6c60b4a3b794b43e53da7f2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0810 "GORDIANTOMB-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Gordian Tomb.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>LEGENDOFKAGE-0928</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f4b0bdf99fa3d3dee2b53456997d42a7e3412b33</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0928</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>253</SidLength>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Legend of Kage.tap</SourceFile>
+  <SourceFileSHA1>e07251f7a6b4951899b366cacb070afdc8879f6c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0928 "LEGENDOFKAGE-0928" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Legend of Kage (J1).prg"</ExomizerCommand>
+</Metadata>

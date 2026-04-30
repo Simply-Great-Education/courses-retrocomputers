@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SCARPER-818C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2e746b0e7a4263d7eb61dc1e405ac9fc083d3213</DumpFileSHA1>
+  <SimplifiedName>Scarper!</SimplifiedName>
+  <JumpAddresses>
+    <Address>$818C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Scarper! (M.C. Lothlorien).tap</SourceFile>
+  <SourceFileSHA1>419561c4701e220d119acf586e9cb00b7be2cf0e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x818C "SCARPER-818C" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Scarper!.prg"</ExomizerCommand>
+</Metadata>

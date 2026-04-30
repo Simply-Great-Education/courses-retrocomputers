@@ -1,0 +1,26 @@
+﻿<Metadata>
+  <DumpFile>4THANDINCHES-0400-8000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f92be693e89cce142b3b81a920bc471fb3e6e83b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$8000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>4th and Inches.tap</SourceFile>
+  <SourceFileSHA1>8b45d97d8a634894fe43803e3c85ea025a1a640e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8000 "4THANDINCHES-0400-8000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "4th and Inches.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to start correctly. Also sets the correct border and screen colours.
+
+  Also removed the protection which checked for tape play pressed ($01) and loaded arbitrary multiload data after each quarter:
+  
+  1. $83E2 changed from LDA #$10 ($A9, $10) to LDA #$00 ($A9, $00)
+  2. Multiload data copied from $3F00 - $3FD7 to $CC00
+  3. Memory load routine added at $CB00 which loads data from $CC00 to $3F00
+  4. Tape load routine pointer switched with memory load routine - $8423 changed from JSR $FFD5 ($20, $D5, $FF) to JSR $CB00 ($20, $00, $CB)
+
+  The loading screen is from the disk version.</Notes>
+</Metadata>

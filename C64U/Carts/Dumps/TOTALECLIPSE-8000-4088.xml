@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>TOTALECLIPSE-8000-4088</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>be9f9838393577ed5f56e4e6fa8d8fcdbd58a7a5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8000</Address>
+    <Address>$4088</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Total Eclipse.tap</SourceFile>
+  <SourceFileSHA1>69724d60876ff59a5b9f23b8996f3dc69b5062db</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4088 "TOTALECLIPSE-8000-4088" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $8000 dec $d030" -x "inc $d020" -o "Total Eclipse.prg"</ExomizerCommand>
+  <Notes>Copied colour RAM to $D800 in actual ram and then added an init routine at $8000 to restore back to colour RAM from there, as well as setup the correct VICII display settings. This allows the game to start after the decrunching step of the original and thus more quickly.</Notes>
+</Metadata>

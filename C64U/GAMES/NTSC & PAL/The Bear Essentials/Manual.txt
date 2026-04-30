@@ -1,0 +1,67 @@
+Poor old Bear!
+
+He's just spent the summer being incredibly lazy, and ignoring all of his chores. Mrs. Bear has finally caught up with him though, and is demanding that he finds enough fruit (350 apples should do it!) for them to last the approaching Winter.
+
+He won't be allowed home until his task is complete. To add to his troubles, all of the other animals are looking for food too, so best steer clear of them!
+
+Venture out into the wild to find all of the fruit from the areas around Bear's home. Yes, even the strange glowing fruit from the abandoned mine that Bear has been itching to explore lately.
+
+Rumour has it that the mine was sealed up back in the 80's after a whole SPECTRUM of problems... What could be down there?!
+
+
+
+Controls:
+
+Use a joystick in port 2 to move Bear left and right, and the fire button to jump.
+
+Pressing Run/Stop, Space Bar or the 2nd fire button will pause the game and show the map. You can view your progress on this screen and see which rooms and areas have been visited. Rooms will show in green if all of the apples have been collected.
+
+While the map is showing, you can toggle the music on or off by moving the joystick left and right, or you can reset the game by holding down the fire button.
+
+You will start the game with 5 lives, but there is an extra life to be gained in each area of the game from Bear's very close friends - you should recognise these familiar characters so be sure to head over to them if you spot them.
+
+
+
+Check Points and Saving the Game:
+
+Continues can be gained by discovering the special check point rooms that separate the different areas of the game. Continuing when all lives have been lost will let Bear keep all of the fruit collected so far, but he will be taken back to the last check point room he visited.
+
+When you are in a check point room, you can save your game by pressing the F7 key. Previously saved games can be loaded by pressing F7 on the password screen.
+
+If you earn a high score, this will be saved to disk automatically.
+
+You will be given passwords at certain points in the game, the first of which will allow you to continue the game from the start of the mining area. Be sure to try out any other passwords you spot to see what they do!
+
+You are free to explore the areas in any order, but the mine will only open after all other areas are complete. Make a note of the location of the mine entrance when you discover it.
+
+Infinite continues will be granted in the mining area, and you will continue from the current room. This will be very handy, you'll see!
+
+Oh, and be careful down there... It's pretty MANIC!
+
+
+
+Additional Info:
+
+The Bear Essentials took around two years to make from April 2015. It was released on Xmas Eve 2016.
+
+The tape and disk editions were released in 2017 and featured the map and a few new rooms, and also included Super Bonkey Kong as a B side.
+
+This version was updated in 2018 and includes all the features from the tape / disk edition, plus a new save game feature to address the difficulty of the game and a high score saver.
+
+Also downloadable is the development diary in handy PDF form, for all the insights on how the game took shape over two years!
+
+
+
+Credits:
+
+Code, graphics, music and sound effects by Graham Axten
+
+A very special thank you to Vanja Utne for the countless hours preparing and making the disk / tape editions of the game, for the awesome artwork and for realising my dream of releasing The Bear Essentials!
+
+(c) 2019 Pond Software / Graham Axten
+
+https://axtevision.itch.io/the-bear-essentials
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Graham Axten. 

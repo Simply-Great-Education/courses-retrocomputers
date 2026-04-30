@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>CITADEL-9000-3B9B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b841f1c29c60c15215c0679c609fe212398bf309</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9000</Address>
+    <Address>$3B9B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>176</SidLength>
+  <SourceFile>Citadel.tap</SourceFile>
+  <SourceFileSHA1>effce654819b508194840aee07dc9c81bcef530f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3B9B "CITADEL-9000-3B9B" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $9000 dec $d030" -x "inc $d020" -o "Citadel.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $9000 which copies 512 bytes of data from $9050 down to $0100 so that the dump can start at $0400.
+  It then jumps to the entry point at $3B9B (it couldn't use RTS because of the copy overwriting the boot code).
+  
+  Note: to dump, set a breakpoint at $2E - the second part of the init routine placed at $9000 was taken from $2E - $51, which sets various IO registers and sets the stack pointer before jumping to the games entry point.</Notes>
+</Metadata>

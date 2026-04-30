@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>EMERALDMINE-3000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2c59e4d9fb05dfee26cf2ac4044d06644ca38fee</DumpFileSHA1>
+  <SimplifiedName>Emerald Mine</SimplifiedName>
+  <JumpAddresses>
+    <Address>$3000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Emerald Mine (Kingsoft).tap</SourceFile>
+  <SourceFileSHA1>e0bd7120be79526f01d01db9511efe5ef8b7b4f6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3000 "EMERALDMINE-3000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Emerald Mine.prg"</ExomizerCommand>
+  <Notes>As this game is actually frozen, the game starts at $3267. However the true start address is $3000.
+  But to dump, you must set a breakpoint at $3003, which will hit when you start the game. This is important so as to avoid graphical corruption issues.</Notes>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SPOOKYCASTLE-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>39f88981103f73ac4d36f4357e890d87721f01a6</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Spooky Castle.tap</SourceFile>
+  <SourceFileSHA1>b70e9e3ae1df6f9973f4adc65a42fc8e030672a4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0900 "SPOOKYCASTLE-0900" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Spooky Castle.prg"</ExomizerCommand>
+</Metadata>

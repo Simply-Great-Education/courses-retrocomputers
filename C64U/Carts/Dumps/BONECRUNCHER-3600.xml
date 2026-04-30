@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BONECRUNCHER-3600</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1699cd98c17a1a5087575dac2a5505885880496e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3600</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>BoneCruncher.tap</SourceFile>
+  <SourceFileSHA1>e5865cfff22326651c865dd71298983e8bd07671</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3600 "BONECRUNCHER-3600" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "BoneCruncher.prg"</ExomizerCommand>
+</Metadata>

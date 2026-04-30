@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MICKEYMOUSE-8080</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b2383984b7431fb21cfcbe989caf4b16946498e3</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8080</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Mickey Mouse.tap</SourceFile>
+  <SourceFileSHA1>27f6ea1e5f55a4c3e1ef7d8c626344974a6fae28</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8080 "MICKEYMOUSE-8080" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mickey Mouse.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,3368 @@
+v5 - 2024-01-06
+---------------
+
+New Features or Changes
+-----------------------
+
+Reworked the cartridge boot code for better stability and tweaked the loading
+raster bar simulation for a more authentic look.
+
+Assault Machine and Castle of Terror now have working MultiLoad64 conversions,
+so I've finally started to help with this part of the collection! I certainly
+plan to be more active in this area in upcoming releases. :)
+
+$olo1870 has been busy adding many more games to MultiLoad64 himself, which is
+great to see. Many thanks to him and all those giving him suggestions for games
+to add, as well as testing his conversions. He has also tweaked many of his
+conversions such that the games now load much quicker and have extras such as
+intros etc. He even managed to produce an 11th hour fix for Tintin on the Moon.
+Awesome stuff!
+
+hellboy73 has also added Gumball, Hostages and Muncher Eats Chewits to
+MultiLoad64. All excellent additions I'm sure you'll agree.
+
+And thanks to redmist77, we not only have a working conversion of HardBall! in
+the collection now, but also conversions of all the Leaderboard games. Very
+nice work indeed.
+
+Games Added
+-----------
+
+Action Biker '99 (Re-Hashed by Jon Wells)
+Aftermath (Alternative Software)
+Ah Diddums
+Ape Craze
+Astral Zone
+Aztec
+Baby Monty
+Barnsley Badger (Psytronik - 2016)
+Beaky and the Eggsnatchers
+Bobsleigh
+Bride of Frankenstein
+Brix
+Cataball
+Caves of Oberon, The
+Choc-a-Bloc Charlie
+Circus (Channel 8 Software)
+Circus (Cymbal Software)
+Convoy Raider
+Cosmic Convoy
+Crack-Up
+Crazy Er-Bert
+Crazy Painter
+Cursed Key, The (Mad Productions - 2010)
+Cybermen
+Danger Ranger
+Death or Glory (CRL)
+Demon Attack
+Demons of Dex (Digital Monastery - 2016)
+Doc - The Destroyer
+Endzone
+Energem Enigma
+Escape MCP (New Version)
+Extricator
+Flying Cobra - Special Edition
+For Speed We Need 3 (TND+Blazon - 2023)
+Gerry the Germ Goes Body Poppin'
+Grabber
+Grebit
+Greenrunner (Psytronik - 2012)
+Guardian Angel, The
+Guns 'n' Ghosts (Psytronik - 2013)
+Helter Skelter
+Hobgoblin
+Hummdinger
+Jonny and the Jimpys - Spellbound
+Jungle Joe (Vector5 Games - 2022)
+Kayak
+Kentucky Racing
+Knight Rider
+Knight Trap (Vector5 Games - 2022)
+Kong (Anirog)
+Leaderboard Executive
+Leaderboard Tournament
+Leaderboard
+Lunar City (TND - 2023)
+Mama Llama
+Mean Machine
+Money Minefield (Luna Software)
+Mr Speedy
+Neptune Lander Elite (C64Mark - 2020)
+Old Tower (Retrosouls - 2020)
+Pesky Painter
+Pirates in Hyperspace
+Pixel City Skater (Digital Monastery - 2014)
+PSSST! (Boony - 2023)
+Rabbit Pie
+Ransack
+Rattler
+Redrunner (Psytronik - 2012)
+Ring Master
+RodMan (Future was 8bit, The - 2020)
+Sam's Jam
+Santa's Workout (Vector5 Games - 2021)
+Seaworld
+Shirley Muldowney's Top Fuel Challenge
+Ski-er 64
+Snake Bite
+Snake vs Bomb (TND - 2022)
+Snake vs Bomb 2 (TND - 2023)
+Snake-Pit
+Snodgits
+Soccer 7
+Sprite Man
+Stunt Bike
+Suicide Voyage
+Sun Star
+Super Cup Football
+Super Silverfish (TND - 2016)
+Superhero
+SurfChamp
+T-Rex 64 v1.0.2 (Maciej Malecki - 2022)
+Trance Sector Ultimate (TND - 2015)
+Triple Tournament
+Vampire's Empire
+Vortex Crystals - Full Edition (TND - 2017)
+Waterski 3D
+Waxworks
+Zenon
+Zero Gravity
+Zone Trooper
+Zoomerang
+
+MultiLoad64:
+
+Assault Machine
+Bangkok Knights
+Barbarian II The Dungeon of Drax
+Castle of Terror
+Chuck Rock
+Cool Croc Twins
+Dark Man
+Dominator
+Double Dragon II
+Double Dragon III
+Elvira - Mistress of the Dark
+Elvira II - The Jaws of Cerberus
+Eswat
+Final Fight
+First Samurai
+Flying Shark
+Frank Bruno's Boxing
+Gumball
+Hagar the Horrible
+Hostages
+Impossamole
+Karnov
+Last Battle
+Last Ninja, The
+Lemmings
+Log!cal
+Lotus Esprit Turbo Challenge
+Muncher Eats Chewits, The
+Neverending Story II
+Night Shift
+Nightmare on Elm Street
+Ninja Spirit
+Nobby the Aardvark
+North and South
+Phobia
+Pit Fighter
+Professional Bmx Simulator
+Real Ghostbusters, The
+Retrograde
+Road Runner
+Robocop
+Shadow Warriors
+Sleepwalker (Ocean)
+Street Fighter II
+Super Cycle
+Super Space Invaders
+SWIV
+Target Renegade
+Twinworld
+Untouchables, The
+
+Extras\OtherCRTs:
+
+Athanor
+Aviator Arcade II
+Bad Blood
+Bard's Tale III - Thief of Fate
+Bburago Rally
+Black Gold
+Bomberland
+Boom
+Borrowed Time
+Bufallo Bill's Wid West Show
+Castles of Doctor Creep, The
+Centric
+Championship Wrestling
+Combat Crazy - Warbringer
+Dark Fusion
+Defender of the Crown
+Destroyer Escort
+Die Hard II - Die Harder
+Doctor Doom's Revenge
+Dragon Strike
+F-14 Tomcat
+Faery Tale Adventure
+Fairy Well (Mix256 - 2011)
+Flimbo's Quest
+Galaxy Force
+Garrison
+GP Cars
+Greystorm
+Hot Rod
+Iron Lord
+Isle of the Cursed Prophet
+Jump 'n Crate v1.39
+MAH v2.1 (Retream - 2022)
+Mail Order Monsters
+Mountain Valley Collection
+Murder on the Mississippi
+No Mercy
+Old Mine Hoist v1.2
+Orbits
+P.P. Hammer And His Pneumatic Weapon
+Pawn, The
+Project Firestart
+Q-Game (Papposoft - 2007)
+Rubicon
+S-Blox v1.0 (Avatar - 2013)
+Slime Deluxe (Mr. NOP - 2016)
+Sly Spy - Secret Agent
+SNK vs CAPCOM
+Snow Strike
+Space Orbs (Space Moguls - 2019)
+Strike Fleet
+Superman - Man of Steel
+Sword of Honour
+Tanks 3000
+Target Renegade
+The Prisoner (Commodore Plus - 2023)
+The Secret of Monkey Island (D42)
+The Three Stooges
+Tom and Jerry
+Ultima V Remastered
+Ulysses and the Golden Fleece
+Western Games
+Yoomp! 64
+
+Games Fixed or Improved
+-----------------------
+
+1942
+    - As the re-released version on the Encore label has different music to the
+      original Elite release, this is now also included. Thanks to nokou for
+      the suggestion.
+
+4th and Inches
+    - The game uses an arbitrary multiload protection after each match quarter
+      which needed to be bypassed. Thanks to redmist77 for creating the fix, as
+      well as adding the loading screen from the disk version to the CRT.
+
+Adrenalin
+    - This has now been fixed such that it does not reload the intro from disk
+      on game over. Thanks to jc70 for the issue report.
+
+Alleykat
+    - The CRT now contains the loading screen by Lizard (LIZ) which was ripped
+      from the version in GameBase64. Thanks to leventp, ricky006 and
+      Wayne / Art Ravers for sharing info for this on the Lemon64 forums.
+
+Aquaplane
+    - This was incorrectly labelled as a joystick port 1 game, but in fact uses
+      the joystick in port 2 if 'Q' is pressed on the title screen. The game is
+      now patched so that pressing the fire button in port 2 on the title screen
+      enables joystick control mode and starts the game. Thanks to tiktokofoz
+      for the issue report.
+
+Ardy The Aardvark
+    - The CRT now contains a conversion of the loading screen from the Atari
+      8-bit computer version.
+
+Assault Machine (MultiLoad64)
+    - Has now been correctly converted and added to MultiLoad64 as it did not
+      correctly support the loading of the equip droids menu. Thanks to jc70
+      for the issue report.
+
+Battle Ships
+    - Fixed an issue which caused the vessels not to be placed randomly. Thanks
+      to kamil8 for the issue report.
+
+Castle of Terror (MultiLoad64)
+    - Has now been correctly converted and added to MultiLoad64 (it was
+      removed in the last version as it did not correctly support the loading
+      of the second part). Thanks to jc70 for the issue report.
+
+Cyberdyne Warrior
+    - Fixed an issue which caused corrupted graphics after completing the 2nd
+      level. Thanks to mmhh for the issue report.
+
+Cybernoid
+    - The Spectrum loading screen used for the CRT has been replaced with the
+      one by Stephen Robertson (SIR) obtained from CSDb.
+
+Davy - King of the Wild Frontier
+    - Now uses a dump from side B of the tape which uses a fastloader, as this
+      has correct in-game speech, whereas the kernal loader on side A does not.
+      Furthermore, low memory is now also initialised before starting the game
+      to remove further issues with the speech. Thanks to Zombeaver for the
+      issue report.
+
+Delta
+    - The Spectrum loading screen used for the CRT has been replaced with the
+      one by Lizard (LIZ) obtained from CSDb.
+
+Driller
+    - Removed the manual protection when loading a saved game (this was already
+      removed when starting the game). Thanks to Zombeaver for the issue
+      report.
+
+Dropzone
+    - The CRT now contains the updated loading screen by Steve Day (STE'86)
+      obtained from CSDb.
+
+Eagle Empire
+    - Fixed an issue which prevented the ship shield sprite animation to not
+      work correctly with the CRT version. Thanks to ricky006 for the issue
+      report.
+
+Gunfright
+    - Fixed an issue which prevented forward movement of the character with any
+      control method. Thanks to FaberfoX for the issue report.
+
+Harvey Smith Showjumper
+    - Fixed an issue which caused the game to crash when the first round
+      finishes. Thanks to woodlandcreature74 for the issue report.
+
+Livingstone I Presume
+    - Fixed an issue which caused the game to crash part way through the game.
+      The Novaload .TAP file in Dumps\SourceFiles has also been fixed. Thanks
+      to Robin from the 8-Bit Show and Tell YouTube channel for the fix. The
+      CRT now also contains the Spectrum loading screen.
+
+Madballs
+    - Fixed an issue which caused the letter selection cursor on the high score
+      name entry screen to be corrupted. Thanks to Zombeaver for the issue
+      report.
+
+Micro Ball
+    - The CRT now plays the loading music at the faster, correct speed (i.e.
+      it's now synced against CIA#1 timer A at 60Hz, instead of the raster
+      interrupt at 50Hz on a PAL C64).
+
+Mission Impossibubble
+    - Now initialises colour RAM so that the game displays correctly. Thanks to
+      redmist77 for the issue support.
+
+Nodes of Yesod
+    - As the version initially in the collection was the faster version from
+      side B of the original tape, the slower version from side A has also
+      been added. The game is now also patched so that it defaults to joystick
+      control and pressing the fire button in port 2 starts the game. Thanks to
+      Zombeaver for the issue report.
+
+Pancho
+    - The game is now patched so that pressing the space bar or the fire button
+      in port 2 at any time on the title screen starts the game. Thanks to
+      Zombeaver for the suggestion.
+
+Parallax
+    - Fixed an issue which caused the title screen music to play incorrectly.
+      This was caused by a bad memory dump ($A4C7 was $85 instead of $8D).
+      Thanks to lmforg and ricky006 for the issue report.
+
+Poster Paster
+    - Fixed an issue which prevented the options screen from being displayed for
+      the correct amount of time before returning to the title screen. Thanks to
+      Mousey for the issue report.
+
+Raid on Bungeling Bay
+    - Fixed an issue which caused the helicopter rotors and engine sound to not
+      gradually spin up to speed when taking off for the first time. Thanks to
+      tiktokofoz for the issue report.
+
+Raid over Moscow
+    - Fixed an issue which caused corrupted graphics at the bottom of the world
+      overview map. Thanks to tiktokofoz for the issue report.
+
+Ricochet
+    - Fixed an issue which caused there to be no in-game sound. Thanks to
+      Wayne / Art Ravers for the issue report.
+
+Run for Gold & Scare Bear
+    - The CRTs now play the loading music at the faster, correct speed (i.e.
+      it's now synced against CIA#1 timer A at 60Hz, instead of the raster
+      interrupt at 50Hz on a PAL C64).
+
+Speedball
+    - Fixed an issue where the use of certain IO registers in the loading
+      screen display code of the CRT version caused the match part of the game
+      to run very slowly. Thanks to Bovirtual for the issue report.
+
+Star Paws
+    - Fixed an issue which caused corrupted graphics in the mine sections. The
+      issue was caused by the fact that the tape dump used did not allow for a
+      devious copy protection mechanism which checks how much blank tape is left
+      after the game has finished loading. Therefore, we are now using a fixed
+      version which has been trimmed to match the tape length of the original.
+      Thanks to pistolhamster for the issue report, as well as PonPon and the
+      Ultimate Tape Archive team for providing the fixed TAP image.
+
+Starglider
+    - Fixed so that the music/sound begins as soon as the game starts just like
+      the disk version. Thanks to tiktokofoz for the issue report.
+
+Strangeloop
+    - Fixed an issue which caused the game to crash when trying to display the
+      dissolved message after coming into contact with acid pools. Thanks to
+      Mousey for the issue report.
+
+Thing on a Spring
+    - The CRT now contains the loading screen by Stephen Robertson (SIR)
+      obtained from CSDb.
+
+Titanic Blinky
+    - Fixed an issue which prevented the character from shooting anything or
+      losing any energy. Thanks to kamil8 for the issue report.
+
+Tintin on the Moon (MultiLoad64)
+    - Fixed an issue which prevented the completion screen from displaying at
+      the end of the game. It seems this bug exists in the original tape and
+      disk versions. Thanks to PonPon and hayesmaker64 for the issue report.
+
+Track and Field
+    - Removed some copy protection which caused the game to crash on game over.
+      Thanks to CapFuture1975 for the issue report.
+
+Uridium
+    - The Spectrum loading screen used for the CRT has been replaced with the
+      one by Steve Day (STE'86) obtained from CSDb.
+
+Games Replaced or Removed
+-------------------------
+
+Aviator Arcade (Extras\OtherCRTs)
+    - Even though this was released as a 16kb cartridge, it takes way too long
+      to boot, so we have now converted it to a quicker booting version in the
+      main folder.
+
+Aliens (Electric Dreams - 1987) (Extras\OtherCRTs)
+    - Removed as there is now a version in MultiLoad64.
+
+Bagman Strikes Back
+    - Replaced with the latest fixed version (v1.0.2): the maximum number of
+      extra lives expected could be exceeded.
+
+Bruce Lee
+    - Replaced with the final revision 3 of the game which does not suffer from
+      the occasional lock-ups on PAL machines which affects revisions 1 and 2.
+
+Elite
+    - Replaced with the newer flicker-free version released by Mark Moxon on
+      27th February 2023. This new version almost eliminates flicker when
+      drawing planets and can even draw them with more detail if desired. For
+      more info, see: https://github.com/markmoxon/c64-elite-flicker-free
+      
+Fix-It Felix Jr
+    - Added the newer v1.1 EasyFlash version which has hiscore saving as well
+      as some other improvements in Extras\OtherCRTs. The older version has
+      been kept so as to continue providing a non-EasyFlash version.
+
+Pool of Radiance (Extras\OtherCRTs) - replaced with a later fixed version
+
+RoboCop (Extras\OtherCRTs) - replaced with a later fixed version
+
+v4 - 2022-12-25
+---------------
+
+New Features or Changes
+-----------------------
+
+Given that the root folder was becoming rather cluttered, its structure has been
+simplified and some folders have been renamed for better clarity. Here are the
+old to new path mappings:
+
+    BINs --> AlternativeFormats\BINs
+    EasyFlash --> AlternativeFormats\EasyFlash
+    PRGs --> AlternativeFormats\PRGs
+    Tapecart --> AlternativeFormats\Tapecart
+    Originals --> Dumps\SourceFiles
+    Screenshots --> Extras\Images\Screenshots
+    Extras\OriginalCRTs --> Extras\OfficialCRTs
+
+100 multiload game conversions are now included in the MultiLoad64 folder. Many
+thanks to $olo1870 and hellboy73 for their hard work to put this first batch of
+games together. As we add more multi-load games to future versions of the
+collection, they will be included here.
+
+The AlternativeFormats\BINs folder now contains a further subfolder containing
+BIN files for use with Hucky (RGCD) cartridges. As these are limited to 64kb,
+they do not contain any added extras such as loading screens or music.
+
+Loading screens for games which have them have been added to the
+Extras\Images\LoadingScreens folder.
+
+Thumbnail images for the Sidekick64 device have been added to the
+Extras\Images\Sidekick64Thumbnails folder in TARGA (TGA) format. This includes
+an additional file in slideshow format where the game also has a loading screen.
+These should be placed in the same folder as the CRT files for the Sidekick64 to
+use them. Thanks to Frenetic for the addition of the slidehow feature to the
+Sidekick64 firmware and his general assistance and advice.
+
+Where a game was released after the year 2000, this info has been added to the
+filename to allow more recent games to be identified more easily. Thanks to
+Snarko for the suggestion.
+
+Games Added
+-----------
+
+1985 - The Day After
+1nvader (Darren Foulds - 2019)
+3D Time Trek
+4M Arena (Darro99 & Erazzking - 2021)
+Abyssonaut (Anthony Stiller - 2015)
+Ace 2088
+Action Force
+Agent UOP
+Alley Cat
+Amaurote (Mastertronic)
+Amaurote v1.0 (Elysium - 2022)
+Amazon Tales (TND - 2019)
+America's Cup, The
+American Express
+Android Control
+Angle Ball
+Ankh
+Anter Planter
+Aqua
+Aquanaut
+Aquaplane
+Arcana
+Archipelago
+Arctic Shipwreck (see footnote 1)
+AREX
+Assault Machine
+ATA
+Back to Reality
+Bagman Strikes Back (LC-Games - 2022)
+Ballistix
+Balloonacy (TND - 2002)
+Balloonacy 2 (TND - 2005)
+Ballooning
+Banana Drama
+Bandana City
+Bank Run (TND - 2013)
+Battle of the Planets
+Battlefield
+Bear Essentials, The (Pond Software - 2019)
+Berks Four v1.1 (Digital Monastery - 2019)
+Berzerk v1.1 (Arlasoft - 2022)
+Biff
+Big Ben
+Black Knight (ECP)
+Blazer
+Blazing Thunder
+Blip! - Video Classics
+Blockheads (Carleton Handley - 2020)
+BMX Trials
+Bomb Fusion
+Bomb Squad
+Bonka
+Bouncing Heads
+Boxer, The
+Break It
+Breakdown
+Brian Jacks Superstar Challenge
+Bubbler
+Builder Ben
+Bumble-Bee
+Burger Chase
+C'est la Vie
+C5 Clive
+Cad-Cam Warrior
+California Goldrush
+Camels in Space (TND - 2001)
+Canonrider
+Carry on Laughing
+Cascade (Protovision - 2002)
+Cashman
+Castle Blackstar (see footnote 2)
+Castle Dracula
+Causes of Chaos, The
+Cave Fighter
+Cavemania
+Caverns of Sillahc
+Centropods
+Challenger
+Chaos in Space
+Chubby Gristle
+City Fighter
+Cityattak!
+Classic Snooker (aka Tournament Snooker)
+Cluedo
+Co-Axis
+Cobra Force
+Code Hunter
+Codename-Mat II
+Colossus Bridge 4
+Combat Zone (Alternative Software)
+Cosmic Combat DX v1.1 (TND - 2022)
+Cosmic Cruiser
+Cosmic Pirate
+Cosmic Split
+CounterForce
+Croaky (Derek - 2019)
+Crystals of Carus, The
+Cuddly Cuburt
+Cybotron
+Cyclons
+Daily Double Horse Racing
+Dandy
+Dark Tower, The
+Darkland
+Davy - King of the Wild Frontier
+Death Wake
+DeathStar Interceptor
+Deep Strike
+Defender 64
+Defenders of the Earth
+Defuzion (TND - 2000)
+Defuzion 2 (TND - 2000)
+Defuzion 3 (TND - 2001)
+Deliverance (The Power House)
+Destruct
+Diablo
+Discovery
+Duet
+Elektrix
+Elven Warrior
+Emerald Mine
+Emerald Mine II
+Empire Strikes Back (Megastyle - 2022)
+Epsilon IV
+Equalizer, The
+Escape from Doomworld
+Escape from the Waste Disposal Unit
+Espionage
+Evening Star
+Exodus
+Exorcist (Mr Micro)
+Extreme
+FA Cup Football
+Faces of Haarne
+Fast Food (Arlasoft - 2021)
+Final Blow
+First Starfighter, The
+Fist Fighter
+Fix-it Felix Jr
+Flaschbier Final (Werner Soft - 2022)
+Flunky
+Flying Feathers
+Fool's Gold
+Force, The
+Fortress (Twierdza)
+Fortress Underground
+Frak!
+Freak Factory
+Freeway (Arlasoft - 2021)
+Front Line
+Frosty the Snowman
+Frosty the Snowman 2 - Turbo (Beyond Reproach - 2009)
+Fruity
+Galivan
+Gammaron
+Gazza II
+Ghost Town 64
+Giant's Revenge
+Gilbert - Escape From Drill
+Gods and Heroes
+Golf Master
+Gothik
+Graeme Souness International Soccer
+Graham Gooch's All Star Cricket
+Grand Larceny
+Grid Zone Remix (TND - 2005)
+Gunstar
+Gyro Run (TND - 2021)
+Halcyon
+Hallax
+Hans Kloss
+Happiest Days of Your Life, The
+Happy Hacker
+Harvey Headbanger
+Head-to-Head Karate
+Headache
+Heli 1983 - Directors Cut (Drachenberg Studios - 2022)
+Hellfire
+Helm, The
+Hercules
+Hideous!
+Hocus Focus
+Hollywood or Bust
+Honey Bee (Psytronik - 2016)
+Hong Kong Phooey
+Hot Shot
+Humpty in the Garden
+Hunter Patrol
+Huxley Pig
+Hybrid
+Hyper Viper (Psytronik - 2010)
+Hyperbowl
+I.C.U.P.S.
+I-Alien
+Inspector Gadget and the Circus of Fear
+International Rugby Simulator
+International Tennis (Commodore)
+Invade-a-Load!
+Invaders 64
+Invasion
+Invert (TND - 2013)
+Jack and the Beanstalk
+Jars' Revenge (TRSI - 2011)
+Jet Power Jack
+Jocky Wilson's Darts Compendium
+John Lowe's Ultimate Darts
+Judge Dredd
+Jungle Drums
+Jungle Quest
+Junkyard Jalopies
+Kami-Kaze (Supersoft)
+Katabatia v1.1 (malcontent - 2021)
+Kellogg's Tour
+Killer Bees (Digital Monastery - 2018)
+Killing Machine
+Klemens
+Knightmare
+Krazy Kar
+Krypton
+LA Police Dept
+Land of Neverwhere
+Laserwheel
+Last Mission
+League Challenge
+Leaping Larry
+Leilei Relay (Dr. TerrorZ - 2021)
+Lifeterm
+Little Nippers DX (TND - 2022)
+Little Sara Sister 1 (Ice Team - 2013)
+Little Sara Sister 1.5 (Ice Team - 2013)
+Little Sara Sister 2 (Ice Team - 2013)
+Living Daylights, The
+Lordsfire
+Lunar Lander (Defiance Studios - 2017)
+Macadam Bumper
+Mad Mix Game - The Pepsi Challenge
+Maggotmania
+Magic Rufus
+Majik
+Master Chess
+Mastermind
+Masters of the Universe - Super Adventure
+Maxwell Manor
+Mean City
+Megamania (Arlasoft - 2020)
+Meganova - The Weapon
+Metabolis
+Metranaut
+Metro Blitz
+Miami Dice
+Micro Ball
+Micro Mouse
+Milky Weigh, The
+Millenium Assault
+Millie & Molly v1.1 (Carleton Handley - 2020)
+Mind Control (Mastertronic)
+Mindtrap
+Minotax
+Missile Evade (Goatscrote - 2022)
+Mission Genocide
+Mission on Thunderhead
+Monkey Magic
+Moon Buggy
+Moon Crisis 1999
+Mordon's Quest
+Moto Cross Simulator
+Motocross Racer
+Mrs. Mop
+Munch Man 64
+Murder on the Waterfront
+Mystery of Munroe Manor, The
+Neagox
+Necris-Dome, The
+NEIL Android
+Nether Earth
+Neutralizor
+New Rally-X 64 (TheStuffMade - 2022)
+Nonterraqueous
+Nuclear War Games
+Odyssey
+Omega Force One
+Omicron (Jim Roof) (see footnote 3)
+On Field Football
+Operation Anoria
+Operation Fireball
+Operation Hormuz
+Orange Squash
+Orbitron
+Orbital Rescue (RunStop64 - 2022)
+Out on a Limb
+Oxxonian
+Oy Up! (Arlasoft - 2020)
+Pacman v1.0 (Arlasoft - 2022)
+Pac-Wor
+Pakacuda
+Paku Paku (Deathshadow  - 2012)
+Pancho
+Panic 64
+Panic Planet
+Para Academy
+Para Assault Course
+Pedro
+Periscope Up
+Pieces II - Community Edition (Oxyron - 2022)
+Pilgrim
+Pinball Wizard
+Pixie Pete
+Platou
+Plekthora (Dr. Mortal Wombat - 2021)
+Plumb Crazy!
+Pneumatic Hammers
+Pogotron
+POING Ultra (TND - 2022)
+Poppy Locky (Megastyle - 2020)
+Postman Pat III
+Potty Painter - In the Jungle
+Power Boat Race (aka Speedboat Race)
+Power Pyramids
+Precision (Digital Monastery - 2022)
+President
+Prison Riot
+Pro Boxing (Artworx)
+Pro Mountain Bike Simulator
+Prowler
+Psi-Droid
+Punch and Judy
+Punchy
+Puzzlenoid
+Q10 Tankbuster
+Quest for the Holy Grail, The
+Questprobe 1 - The Incredible Hulk
+Questprobe 2 - Spider-Man
+Questprobe 3 - The Human Torch and the Thing
+QWAK Reset Edition v1.3 (Oziphantom - 2017)
+Race Against Time, The
+Race, The
+Radius
+Raid 2000
+Rainbow Edge Run DX (Megastyle - 2021)
+Raskel
+Rat, The
+Ratan Ballads
+Ray Fish DX (TND - 2021)
+Real Stunt Experts, The
+Reckless Rufus
+Red Max
+Rescue 17
+Return of the Space Warriors
+Richtofen's Revenge
+Ricochet
+Ring of Power
+Ringside Boxing
+Ringside Karate
+RMS Titanic
+Road Runner and Wile E. Coyote
+Road Toad (aka Froggee)
+Road Warrior
+Robot Jet Action (Carrion - 2022)
+Rollerboard
+Rolloverture
+Romulus
+Roulette Simulator
+Round the Bend!
+Rowman
+Rugby - The World Cup
+Run for Gold
+Runn 'n' Gunn (Carleton Handley - 2021)
+S.O.S. (Mastertronic)
+Sabotage
+Save Me, Brave Knight
+Scare Bear
+Scuba Kidz
+Seabase Delta
+Seaquest
+Sector 90
+Sergeant Seymour - Robotcop
+Sever the Wicked (Haplo - 2022)
+Seymour at the Movies
+Shadow Skimmer
+Shanghai Warriors
+Shaolin (Jon Wells - 2001)
+Shiftrix
+Shoot the Rapids
+Showdown (Badgerpunch Games - 2020)
+Silicon Warrior
+Skate Wars (aka Skate Ball)
+Skateboard Joust
+Ski Run
+Skyjet
+Skyline Attack
+Slaine
+Slug vs Lettuce (Scene World Magazine - 2022)
+Snacks 4 Snakes (Protovison - 2022)
+Snare (Beyond Belief)
+Snoball in Hell
+Soccer Challenge
+Soccer Pinball
+Space Doubt
+Space Firehawk (Karsten Senkel - 2020)
+Space Hunter
+Space Panic (Karmic - 2021)
+Space Rider
+Special Agent (Firebird)
+Spectipede
+Speed Racer
+Spellseeker
+Spheron
+Spider (Input 64)
+Spider and the Fly
+Spider Fighter (Haplo - 2022)
+Spitfire
+Spooked
+Spooky Castle
+Sprite Invaders (Booze Design - 2021)
+Spyders (Mr. NOP - 2017)
+Star Commando
+Star Force (ECP)
+Star Race
+Star Slayer
+Star Trek (Interceptor)
+Star Trooper
+Starbase Defence
+Starray
+Steigar
+Stranded
+Streets of London
+Strontium Dog and the Death Gauntlet
+Supa Catcha Troopa
+Super Blitz
+Super G-Man
+Super Mario Bros 64 (Zeropaige - 2019)
+Super Rider
+Super Skramble!
+Super Stuntman
+Super Tact
+Super Trolley
+Supercuda
+T-Bird
+Table Soccer
+Tangent
+Tanium
+Tank (Ocean)
+Tarzan
+Taz (Arlasoft - 2021)
+Tenebra Extended (Haplo - 2022)
+Terra Cognita
+Terrorpods
+Thomas the Tank Engine
+Thunderground (Arlasoft - 2021)
+Tiger Tanks
+Time Zero (CCS)
+Tip-Trick
+Toadforce
+Tolteka
+Tombs of Xeiops
+Tracker
+Trans-Atlantic Balloon Challenge
+Trap (COMPUTE!'s Gazette)
+Treasure Island (Mastertronic)
+Treasure Isle
+Treasure of the Phoenix
+Triaxos
+Troll
+Trooper Truck
+Turbo 64
+Turdle (Megastyle - 2022)
+Turn It
+Turtle Jump
+Tutankham (LC Games - 2022)
+Tutankham Returns (LC Games - 2022)
+Twin Tigers
+Two-To-One
+U.F.O.
+UCM - Ultimate Combat Mission
+Ultrazoyd
+Valley, The
+Vengeance
+Venture64 (Donnie Russell II - 2022)
+Voodoo Castle
+W.A.R.
+Wallie goes to Rhymeland
+Warlok
+Warp (Creative Software)
+Warrior II
+Weaver
+Weaver II
+Web
+Wheelies
+Whirlinurd
+Wild Ride (aka Crazy Coaster)
+Wildfire
+Winter Wonderland
+Winter-Holidays
+World Championship Soccer
+World Championship Squash
+World Rugby
+World Series Baseball
+X-15 Alpha Mission
+X-29 Fighter Mission
+Zeppelin Rescue
+Zix
+Zompy Stomp (see footnote 4)
+Zone 7 Part 3
+Zoomies!
+Zub
+Zulu
+Zyto
+
+MultiLoad64:
+
+Ace of Aces
+Addams Family
+Alien Syndrome
+Alien3
+Aliens The Computer Game (U.S. Version) (Activision)
+AlienStorm
+Altered Beast
+Armalyte
+Atomic Robo-Kid
+Back to the Future Part II
+Back to the Future Part III
+Bart vs The Space Mutants
+Bionic Commando
+Black Tiger
+Blues Brothers
+Bonanza Bros
+Chase H.Q.
+Chips Challenge
+Cool World
+Creatures II - Torture Trouble
+Deceptor
+Dragon Breed
+Dragons Lair
+Dragons Lair II
+Dynamite Dux
+Elvira The Arcade Game
+Forgotten Worlds
+Galactic Games
+Ghostbusters II
+Ghouls 'N Ghosts
+Golden Axe
+Goonies
+Gremlins II
+Hawkeye
+Highlander
+Hook
+Hudson Hawk
+Impossible Mission II
+Indy Heat
+James Pond II - Codename Robocod
+Jetsons
+Karateka
+Lethal Weapon
+Marble Madness
+McDonaldLand
+Midnight Resistance
+Monty Python's Flying Circus
+Moonwalker
+Mr. Heli
+Myth History in the Making
+Narc
+Neverending Story
+Newzealand Story
+Nightbreed
+Ninja Warriors
+Out Run
+Out Run Europa
+Platoon
+Predator
+Rainbow Islands
+RBI 2 Baseball
+Rick Dangerous II
+Rockstar Ate My Hamster
+Rodland
+Rolling Ronny
+Running Man
+Salamander
+Shadow Dancer
+Smash TV
+Sonic Boom
+Space Gun
+Spitting Image
+Strider
+Strider II
+Suburban Commando
+Summer Camp
+Summer Games
+Summer Games II
+Super Monaco Grand Prix
+Teenage Mutant Hero Turtles
+Teenage Mutant Hero Turtles Coin-OP
+The Train
+Thunder Jaws
+Tintin on the Moon
+Total Recall
+Turbo Outrun
+Turrican
+Turrican II
+Tusker
+UN Squadron
+Viz The Game
+Winter Camp
+Winter Games
+Wonderboy in Monsterland
+World Games
+WWF European Rampage
+WWF Wrestlemania
+X-Out
+
+Extras\OtherCRTs:
+
+Accolade Comics
+Akalabeth (2016)
+Alienator
+Aviator Arcade
+Bellringer III v1.5
+Bug Hunt
+C-2048
+Cabal (US)
+Cheeky Twins 2
+Dark Castle
+Desolator - Halls of Kyros
+Doc Cosmos
+Ewe Woz 'Ere DX v1.1
+Eye of the Beholder - v1.00
+Fortress of Narzod
+Freaky Fish DX v1.1
+Fungus II
+Grid Pix
+Icicle Race
+Jewels of Darkness
+Kobo64 (r313)
+LuftrauserZ
+Mean Streets
+Neutron v1.1
+Nixy the Glade Sprite
+P0 Snake
+Platman
+Platman Worlds (Psytronik - 2017)
+Puzzle Bobble v1.21
+Quadpawn
+Real Ghostbusters
+Relentless 64
+Robocop 2
+Simpsons, The (Arcade)
+Super Goatron
+Super Hang-On
+Tenebra Macabre
+Time Soldier
+Voivod Attack
+Weird Dreams
+Zatacka
+
+Footnote 1 (Arctic Shipwreck)
+-----------------------------
+
+The D64 was created with the PRG file from disk #121 in the Blast Collection
+released by SCI 666. I have made an exception to include this scene release from
+UGS because it seems unlikely a copy of the original will ever be tracked down.
+
+Footnote 2 (Castle Blackstar)
+-----------------------------
+
+The TAP image used for this game has been fixed, as the data in the file between
+$3698A-$4C271 (which is loaded to $54E2-$7FFF in RAM) is corrupted. Therefore
+this data was replaced with a dump of this same data from RAM using the T64
+version in GameBase64 (CRC32: 2C3AA8DD).
+
+Footnote 3 (Omicron)
+--------------------
+
+The D64 uses the scene release from OTD of JEDI. This was deemed acceptable as
+the game is PD and no intro was removed. However it is hoped this can be
+replaced with a copy of the original release in the future.
+
+Footnote 4 (Zompy Stomp)
+------------------------
+
+The D64 was created with the PRG file from disk #13 in the Blast Collection
+released by SCI 666. As it looks otherwise unchanged other than being crunched,
+it was felt this would be acceptable. However it is hoped this can be replaced
+with a dump of the original media in the future.
+
+Games Fixed or Improved
+-----------------------
+
+BC's Quest For Tires
+    - The cartridge now contains the loading screen from the disk version.
+      Thanks to FRauANtje for the suggestion.
+
+Cyberdyne Warrior
+    - The cartridge now contains the unreleased loading screen by Steve
+      Rowlands (obtained from Games That Weren't).
+
+Driller
+    - As the game itself plays the SID tune too fast (it's synced against CIA #1
+      timer A at 60Hz, instead of the raster interrupt at 50Hz on a PAL C64),
+      the SID music is now used in the simulated tape loader for the cartridge
+      so that it can be played at the speed originally intended by Matt Gray.
+
+Dropzone
+    - This game has an issue on some real C64s whereby the fire button in port 2
+      is constantly in autofire mode without the button actually being pressed.
+      Therefore, a fix has been applied to address this. Thanks to Jimmie
+      Svensson for the issue report and fix testing.
+
+Herobotix
+    - As the released game is not completable, we have applied the fix kindly
+      provided by mikroman on the Lemon forums. Here's how he described the fix:
+      
+        You can't complete it. Due to mistakes in the room design you can't get
+        the last piece. I repaired the broken rooms by using the same room data
+        that is in the Amstrad version. Also fixed an electronic gate that
+        stored data into a music table instead of the switch table.
+      
+      (https://www.lemon64.com/forum/viewtopic.php?t=76872)
+
+Fred
+    - Fixed a possible issue with the game running properly if an external
+      device is using I/O area #2 ($DF00 - $DFFF - e.g. certain types of
+      cartridge).
+
+Silkworm
+    - Added an init routine which zeroes out the tape buffer to avoid a
+      corrupted sprite being displayed in-game when using the crunched PRG.
+      Thanks to Mousey for the issue report.
+
+Stealth
+    - Now has a required PAL fix and disk saving has been removed. Thanks to
+      hellboy73 for the issue report.
+
+Games Replaced or Removed
+-------------------------
+
+Alien 3 (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Alien Syndrome (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Armalyte (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Back to the Future 3 (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Atomic Robo-Kid (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Batman The Movie (Extras\OtherCRTs)
+    - removed as there is already an official release in Extras\OfficialCRTs.
+
+Calvin - replaced with a dump created from the original tape.
+
+Castle of Terror
+    - removed as this is in fact a multiload game. We will convert this game for
+      addition to MultiLoad64 in the next release. Thanks to Damage for the
+      issue report.
+
+Crazy Coaster
+    - replaced with the original 1985 game Wild Ride from Interceptor
+      Software.
+
+Creatures 2 - Torture Trouble (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Dragon Breed (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Dragon's Lair I & II (Extras\OtherCRTs)
+    - removed as there are now versions in MultiLoad64.
+
+Elite
+    - replaced with the flicker-free version created by Mark Moxon
+      (https://github.com/markmoxon/c64-elite-flicker-free). As a happy
+      consequence, this version is based on the newer release of Elite which
+      includes music on the title screen.
+
+Ghostbusters 2 (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+HardBall!
+    - removed as this is in fact a multiload game. We will convert this game for
+      addition to MultiLoad64 in the next release. Thanks to retroczr for the
+      issue report.
+
+Hawkeye (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Hudson Hawk (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+James Pond II - Codename Robocod (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Jars' Revenge (Extras\OtherCRTs)
+    - removed as there is now a conversion from the tape version.
+
+Marble Madness (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+McDonald Land (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Mr. Heli (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Newzealand Story (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Rainbow Islands (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Rodland (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Rolling Ronny (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Revolverheld
+    - replaced with a dump created from the original tape from Commodore Dossier
+      #10.
+
+Salamander (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Slugger, The
+    - replaced with the original european version World Series Baseball from
+      Elite.
+
+Strider (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Task-F
+    - replaced with a dump created from the original tape.
+
+Teenage Mutant Hero Turtles (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Tusker (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+UN Squadron (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+Wonderboy in Monsterland (Extras\OtherCRTs)
+    - removed as there is now a version in MultiLoad64.
+
+v3 - 2022-02-26
+---------------
+
+New Features or Changes
+-----------------------
+
+Added support for loading music and raster bars to the Magic Desk CRTs which
+are combined with loading screens for a simulated tape loading experience
+(these can be skipped with any key or either fire button just like the plain
+loading screen images). This means that games with loading music such as the
+classic Ocean loaders can now be enjoyed with the CRT files.
+
+The MagicDeskBINs folder now contains two subfolders, one which contains plain
+64kb files, along with another which contains larger files where games have
+added extras like loading screens or music. This allows more flexibility when
+choosing which EPROM size to use when writing the games to a physical
+cartridge.
+
+Games using joystick port 1 for primary control are now denoted by having the
+(J1) suffix in their filename. This not only acts as a visual cue to the user,
+but is also automatically used by emulators such as LR-VICE to swap joystick
+ports (https://github.com/libretro/vice-libretro#joyport-control).
+
+All screenshots have now been replaced with new images at 384x272 to ensure
+the borders are included. Many thanks to the volunteers who helped to perform
+this task (CentralPerk, CommFor, cringle, docbobo, nls, nc513, oldschooljoe,
+Remzi and ricky006).
+
+The crunched PRGs no longer have the "-[ex]" suffix in their filename, as
+these were rather redundant and made the process of maintaining the collection
+a little harder than it needed to be (i.e. when renaming files in conjunction
+with the new primary control suffix above).
+
+Added the use of $D030 to switch to 2Mhz mode on the C128 and the MiSTer C64
+core to speed up the decrunch of the crunched PRGs (has no effect on a real
+C64).
+
+Games Added
+-----------
+
+3D Speed Duel
+3D Tanx
+A Fistful of Bucks
+Aardvark
+Abyss
+Actionauts
+Adrenalin
+Adventureland
+Adventures of Barsak the Dwarf
+Adventures of Basildon Bond, The
+Africa Gardens
+Air Support
+Alcatraz
+Alien (Argus Press Software)
+Alien Rescue
+Android 2
+Apple Cider Spider (see footnote 1)
+Aqua Racer
+Arcade Flight Simulator
+Arcade Fruit Machine
+Ark Pandora
+Armageddon Man, The
+Armourdillo
+Arnie 2
+Astro Chase
+Asylum
+ATF - Advanced Tactical Fighter
+Atom Ant
+Augie Doggie and Doggie Daddy
+Autotest
+Aztec Tomb Adventure
+Aztec Tomb Revisited
+Ball Fever
+Balloon Rescue
+Bat Attack
+Battle Chopper
+Battle Island
+Battle of Britain
+Bazooka Bill
+Beach Buggy Simulator
+Beach Volley
+Beat It!
+Bee 52
+Beer Belly Burt's Brew Biz
+Better Dead Than Alien!
+Bigtop Barney
+Bismarck
+Black Thunder
+Blade Runner
+Blastopia DX (TND - 2019)
+Blitz 2000
+Blok Copy RX (TMR - 2018)
+Blue Baron
+BMX Racers
+Bongo
+Bonzo
+Boss, The
+Boulder Dash 16
+Bounce It
+Bouncing Ball
+Boxing Manager
+Boxing Manager 2
+Brands
+BraveStarr
+Breakthru
+Bristles
+Broadsides
+Buffalo Round Up
+Bugsy
+Bulge, The - Battle for Antwerp
+Bully's Sporting Darts
+Bumping Buggies
+Caesar the Cat
+Captive, The
+Carrier Command
+Castle of Terror
+Catastrophes
+Centurions Power X Treme
+Chain Reaction
+Challenge of the Gobots
+Championship Jet Ski Simulator
+Cheap Skate
+Chinese Juggler, The
+Classic Adventure
+Cobra
+Colony
+Combat Leader
+Count Duckula
+Count Duckula II
+Countdown to Meltdown
+Cowboy Kidz
+Crazy Balloon
+Crazy Caveman
+Crazy Coaster
+Crystal Castles (Thundervision) (see footnote 2)
+Curse of Sherwood, The
+Curse, The
+Cuthbert Enters the Tombs of Doom
+Cuthbert in Space
+Cuthbert in the Jungle
+Cyberwing
+Damsel in Distress
+Dare Devil Denis - The Sequel
+Dark Caves
+Dark Empire
+DarkSyde
+Deathscape
+Defender (64'er)
+Demolition Construction Set
+Demons of Topaz - Ozzy Versus The Universe
+Deviants
+Devil's Island
+Diamond Trail
+Dictator
+Digiloi (Dr. Terrorz - 2018)
+Dizzy Dice
+DNA Warrior
+Dodgy Geezers
+Double Take
+Dr. J
+DragonHawk
+Drak
+Dynamite Dan
+Eddie Kidd Jump Challenge
+Edge Grinder (Cosine Systems - 2011)
+Egbert
+Elektraglide
+Ellak's Tomb
+Empire of Karn
+Endless
+Endless Forms Most Beautiful v1.3 (2019)
+Enduro Racer
+Energy Warrior
+Escape from Arth
+Falcon - The Renegade Lord
+Falklands 82
+Fall Guy, The
+Fast Eddie
+Felix in the Factory
+Fifth Axis, The
+Fighter Pilot
+Fire Track
+Firequest
+Five a Side
+Floyd of the Jungle
+Flying Ace
+Flying Saucers
+Football Manager 2
+Forbidden Fruit
+Frankie Goes to Hollywood
+Fred
+Frightmare
+Frogs and Flies 64
+Fruit Machine Simulator 2
+Fruitbank
+Galaga (Arlasoft - 2021)
+Galaxian DX (Arlasoft - 2021)
+Game Over
+Game Over II
+Gandalf the Sorcerer
+Gates of Dawn
+GBA Championship Basketball
+Ghost Manor
+Gilligans Gold
+Glider Rider
+Goblin (Pond Software - 2016)
+Golden Baton, The
+GR9 Strike Force (Cosine Systems - 2009)
+Grell and Falla (see footnote 3)
+Gremlins - The Adventure
+Gryphon
+Guadalcanal
+Gun Runner (The Power House)
+GuttBlaster
+GUTZ
+H.A.T.E. - Hostile All Terrain Encounter
+Hades
+Hampstead
+Harbour Attack
+Haunted House
+Havoc (Dynavision)
+Havoc (Players)
+Herbert's Dummy Run
+Herby
+Heroes of Karn, The
+Hexpert
+Hideous Bill and the Gi-Gants
+High Frontier
+House Jack Built, The
+How to be a Complete Bastard
+Humanoids
+Hunt for the Red October, The
+Hunter
+Hyper Circuit
+Ice Hunter
+Ice Palace (K-tel)
+Imagination
+Impact
+Infection
+Infodroid
+International Table Tennis
+International Truck Racing
+It's a Knockout
+Iwo Jima
+Jackal (USA)
+Jahangir Khan World Championship Squash
+Jammin'
+J-Bird (see footnote 4)
+Jeep Command
+Jewels of Babylon
+Jocky Wilson's Darts Challenge
+Johnny Reb
+Johnny Reb II
+Jonah Barrington's Squash
+Journey to the Centre of the Earth
+Kaktus
+Kayleth
+Kenny Dalglish Soccer Manager
+Kentilla
+Kettle
+Kick Off
+Kikstart C16 (Cosine Systems - 2007)
+Killer Saucers (TND - 2020)
+Knoorkie
+Kobayashi Naru
+Kong (Sputnik World - 2021)
+Kong Strikes Back!
+Kromazone
+Kwah
+Lazer-Force
+Let's Invade! (TND - 2016)
+Let's Invade 2 - Super Invasion (TND - 2019)
+Lethal
+Lethal II (see footnote 5)
+Lifeforce (CRL)
+Live and Let Die
+Logo
+Lord of the Balrogs
+Los Angeles SWAT
+Lunar Blitz RX (Cosine Systems - 2014)
+Lunar Outpost
+Mad Nurse
+Mad Scientist
+Mad Springs
+Madballs
+Magic Castle
+Magic Madness
+Magician's Ball, The
+Magnetron
+Main Frame
+Marble Logic (Unreal - 2006)
+Masters of the Universe - The Ilearth Stone
+Matterhorn Screamer!
+Max Torque
+Mayday Squad!
+Maze Mania
+Maze Thriller
+Mean Streak
+Melonmania
+Mental Moons
+Mermaid Madness
+Merry Christmas
+Methodos
+Metropolis (Power House)
+Metropolis (Topo Soft)
+Miami Chase
+Miami Vice
+Microcosm
+Mig Alley Ace
+MIG-29 Soviet Fighter
+Millibug
+Mindbender
+Mindroll
+Minit Man
+Moebius (Infinite Games)
+Monster Munch
+Mountain Bike Racer
+Mouse Trap
+Mr Dig
+Mr Mephisto
+Mr Wimpy
+Mr Wino
+Mugsy's Revenge!
+Munch Mania
+Murray Mouse Super Cop
+Mystery of the Nile, The
+Mystic Mansion
+Neoclyps
+New York City
+Nexus
+Nibly (see footnote 6)
+Night Knight (Aris-Soft - 2021)
+Ninja Master
+NorthStar
+Nova
+Nuclear Embargo
+Nukewar
+Official Father Christmas, The
+Okinawa
+On-Court Tennis
+On-Track Computer Model Car Racing
+Operation Hanoi
+Oracle's Cave, The
+Painterboy
+Parky and the Yellow Submarine
+Pearl of Dawn
+Penalty Soccer
+Penetrator
+Percy Penguin
+Phoenix-Recovered (Sorbas - 2021)
+Pigs in Space
+Pile-Up
+Play Your Cards Right
+Point X
+Postman Pat
+Postman Pat II
+Predator 2
+Prince, The
+Pro Boxing Simulator
+Pro Tennis Simulator
+Psi Warrior
+Psycho Hopper
+Pulsoid
+Purple Turtles
+Puzzle Panic
+Quari
+Quartet
+Quo Vadis
+Raging Beast
+Ramparts
+Rapid Fire
+Rasterscan
+Raw Recruit
+Reaxion Extended (Cosine Systems - 2001)
+Rebel Planet
+Red Alert (see footnote 7)
+Red Arrows
+Red LED
+Redhawk
+Return of the Jedi
+Revolverheld  (see footnote 8)
+Revs
+RG Rampage (Cosine Systems - 2012)
+Risk
+Road Roller
+Robin to the Rescue
+Rocket Roger
+Rogue Trooper
+Rollaround
+Room Ten
+Round About
+Ruff and Reddy
+Rupert and the Ice Castle
+Rupert and the Toymaker's Party
+Saga of Erik the Viking, The
+Santa's Christmas Capers
+Scalextric
+Scarper!
+Scary Monsters
+Sceptre of Baghdad
+Scout
+Scrabble De Luxe
+Scumm
+Scuttle
+Secret Mission
+Shades
+Shanghai
+Shard of Inovar
+Shock Raid (TND - 2021)
+Shockway Rider
+Shoot Out
+Short Circuit
+Silva Pod
+Skidmarx (Samar Productions)
+Skull
+Slicker Puzzle, The
+Slightly Magic
+Slugger, The
+Smuggler
+Snackman
+Software House
+Soldier of Light
+Solo Flight
+Sorcerer of Claymorgue Castle, The
+Souls of Darkon
+Space Invaders (Mariano Kalafatovich - v1.1 - 2021)
+Space Trap
+Space Tunnel
+Spacebike
+Special Operations
+Spike's Peak
+Spiky Harold
+Spooks
+Spy Strikes Back!, The
+Spy Who Loved Me, The
+Spyplane
+Squash a Frog
+Stalag I
+Star Crash
+Star Eggs
+Star Hawx (TND - 2021)
+Starace
+Starfysh (TND - 2017)
+Steve Davis Snooker
+Stock Car
+Storm Warrior (Elite)
+Storm Warrior (K-Tel)
+Straight Up (Dr. Wuro Industries - 2021)
+Street Machine
+Strike Force Cobra
+Striker in the Crypts of Trogan
+Stringer
+Sub Burner
+Subsunk
+Subway Vigilante
+Suicide Strike
+Super Bowl XX
+Super Dogfight
+Super Hyperzap (C64CD - 2018)
+Super Seymour
+Super Snake Simulator
+Super Stock Car
+Super Tank Simulator
+Super Zaxxon (HesWare)
+Superman - The Game
+Survivors, The
+SWAG
+Swamp Fever
+Swap
+Switchblade
+Tai Chi Tortoise
+Target-X
+Tarzan Goes Ape!
+Task III
+Taskforce
+Taskmaster
+Temple of Terror
+Terminal City
+Terrormolinos
+Thanatos
+Threshold
+Thrusta
+Thruster Ball
+Time Fighter
+TimeTrax
+Titan
+Titans
+TLL - Tornado Low Level
+Tobruk - The Clash of Armour
+Top Duck
+Traffix
+Transformers
+Tube, The
+Tubes'n'Balls (System-X - 2021)
+Turbo Esprit
+Turmoil
+Twintris
+Ugh!
+Urban Upstart
+UWOL - Quest for Money (The Mojon Twins - 2010)
+V
+Valkyrie 17
+Velocipede
+Velocipede II
+Venom
+War Cars Construction Set
+War Machine (Players)
+War Play
+Warflame RX (Cosine Systems - 2006)
+Warpzone Remix (Cosine Systems - 2003)
+Warriors of Zypar, The
+Weatherwar II
+Web Dimension
+Who Dares Wins (Alligata)
+Who Dares Wins (dk'tronics)
+Wild West Seymour
+William Wobbler
+Witch's Cauldron, The
+Wiz
+Wizard's Lair
+Wolfling v1.4 (Lazycow - 2019)
+Wombles, The
+World Soccer
+Worm in Paradise, The
+Worron
+Wu Lung
+X-Force (TND - 2015)
+Xeno
+XOR
+Xpiose
+Yogi Bear
+Yogi Bear and Friends in the Greed Monster
+Yogi's Great Escape
+You Have to Win the Game (Kabuto - 2012)
+Z
+Zarjaz
+Zaxxon (Synsoft)
+Zim Sala Bim
+Zodiac
+Zyrons Escape
+Zzzz
+
+Extras\OtherCRTs:
+
+Aliens (Electric Dreams - 1987)
+Assembloids
+Back to the Future 3
+Batman The Movie
+Berzerk Redux v1.18
+Buck Rogers - Countdown to Doomsday
+Catalypse
+Champions of Krynn
+Curse of the Azure Bonds
+Death Knights of Krynn
+DeathWeapon
+Elite+
+Forest of Doom
+Gauntlet
+Gauntlet - Deeper Dungeons
+Gem'X
+Get 'Em DX
+Ghostbusters 2
+Hawkeye
+I Want More Diamonds
+Ice Cold Beer (Megastyle 2019)
+It's Magic 1 + 2
+Jumpman
+L'Abbaye des Morts
+Lala Prologue
+Lethal Zone
+Maniac Mansion & Zak McKracken (Deutsch)
+Marble Madness
+McDonald Land
+Mechanicus
+Menace
+Mollusk Redux
+Mr. Heli
+Newzealand Story
+Potsworth
+Pool of Radiance
+PSI 5 Trading Company
+Purple Heart
+R-Type
+Robots Rumble
+Rocket Smash EX
+Scramble Infinity v1.2
+Secret of the Silverblades
+Soulless
+Space Lords (Centaurus)
+Spelunker
+StercoreXD
+Super Huey
+Supremacy (aka Overlord)
+The Untouchables
+Tiger Claw
+Turbo Outrun
+Vallation 16K
+Vegetables Deluxe
+
+Footnote 1 (Apple Cider Spider)
+-------------------------------
+
+The D64 image used for this is the modified Desperado (ASS) release from
+GameBase64. It is hoped this can be replaced with a dump of the original disk
+in the future.
+
+Footnote 2 (Crystal Castles - Thundervision)
+--------------------------------------------
+
+As this was never officially released, I have made an exception to include the
+scene release from Section 8.
+
+Footnote 3 (Grell and Falla)
+----------------------------
+
+As this was never officially released, I have made an exception to include the
+scene release supplied by G-Force.
+
+Footnote 4 (J-Bird)
+-------------------
+
+The D64 has been recreated from a copy found online in which the J-BIRD.SEQ
+file was corrupted. This file was replaced with the in-memory copy of the file
+dumped from the Bad Brothers scene release (https://csdb.dk/release/?id=99582).
+Futhermore, the high score file has been cleared. It is hoped this can be
+replaced with a dump of the original media in the future.
+
+Footnote 5 (Lethal II)
+----------------------
+
+As this was never officially released, I have made an exception to include the
+scene release (the game was rescued by iAN CooG).
+
+Footnote 6 (Nibly)
+------------------
+
+The D64 was created with the PRG file from disk #119 in the Blast Collection
+released by SCI 666. As it was compiled with the Petspeed 64 BASIC compiler, it
+is assumed to be a copy of the original file. However it is hoped this can be
+replaced with a dump of the original media in the future.
+
+Footnote 7 (Red Alert)
+----------------------
+
+This was recreated from the T64 file found in GameBase64 (CRC32: 20C5347E)
+released by Desperado (ASS). It is hoped this can be replaced with a dump of
+the original tape in the future.
+
+Footnote 8 (Revolverheld)
+-------------------------
+
+The D64 was created using the PRG file from disk #133 in the Blast Collection
+released by SCI 666. As this otherwise appears to be an unmodified dump of the
+game, I have decided to include it. However it is hoped this can be replaced
+with a dump of the original media in the future (the game came with issue #5 of
+the Dutch magazine Commodore Dossier).
+
+Games Fixed or Improved
+-----------------------
+
+180 - now allows joystick button in port 2 to start a one player game
+
+Airwolf II
+    - Copies 14 bytes from $C120 (where they were in the original dump) to
+      $DD02. The is done so that the CIA#2 settings are set to the default,
+      which prevents a copy protection routine at $CEAD from displaying an
+      illegal copy message on real hardware and the Ultimate 64 (this routine is
+      called from multiple places in the game code). Thanks to Espressomatic for
+      the issue report.
+
+Alien (Argus Press Software)
+    - Now allows joystick button in port 2 to start the full game mode. Thanks
+      to CentralPerk for the suggestion.
+
+Arc of Yesod, The - now defaults to joystick on startup
+
+Arkanoid - now defaults to joystick on startup
+
+Arkanoid - Revenge of Doh - now defaults to joystick on startup
+
+Asterix and the Magic Cauldron -
+    - Applied the fix found here:
+      https://c64.tin.at/_single_files/asterix_and_the_magic_cauldron.sol.txt
+      
+      This makes collection of the last piece possible, which was originally
+      placed at exactly the same position as the wall near the entrance door to
+      Rome, making the game impossible to complete.
+
+Auto Mania
+    - now defaults to joystick on startup and allows joystick
+      button in port 1 to start the game
+
+Beach-Head
+    - We now copy 256 bytes from $C820 to $0300 before starting the game. This
+      fixes the crash when losing a ship in Sequence 4 - Battle Stations
+      (shelling the enemy ships to sink them). Thanks to hellboy73 for the
+      issue report.
+
+Citadel - now starts more quickly
+
+Crillion - now allows joystick button in port 1 to start the game
+
+Crillion II and Crillion '93
+    - Fixes the game not starting when a disk drive is not attached. Thanks to
+      cringle for the issue report.
+
+Cybernoid - now allows joystick button in port 2 to start the game
+
+Cybernoid II - now defaults to joystick on startup
+
+Damsel in Distress
+    - Modified the BASIC program to allow control via joystick port 2 as well
+      as keys.
+
+Donkey Kong Arcade (Oxyron - 2016)
+    - Added an init routine at $8860 which sets $BA to #$01 (tape) before
+      starting the game. This forces the game code to disable loading and saving
+      highscores from/to disk. Without this change, the crunched PRG version was
+      crashing when trying to save the highscores after entering your initials.
+      Thanks to hellboy73 for the issue report.
+
+Equinox - now defaults to joystick on startup
+
+Everyone's a Wally
+    - now defaults to joystick on startup and allows joystick
+      button in port 2 to start the game
+
+Frost Byte - now defaults to joystick on startup
+
+Ghostbusters
+    - Fixes missing graphics for the first vehicle (the Compact). Thanks to
+      Paolo DiscoBEAR Vaccari for the issue report.
+
+Gogo the Ghost - now allows joystick button in port 2 to start the game
+
+Great Gurianos
+    - NOP'd out the unnecessary JSR $0FAE call at $0448 to fix an issue where
+      the fire button would not start the game when using a Final Cartridge or
+      BackBit cartridge. The reason for this is that the code checks the value
+      at $DF00 (in I/O Area #2) which is used by both cartridges. The Action
+      Replay is not affected. Thanks to Evie Salomon for finding the issue and
+      LastChance for reporting it.
+
+Herbert's Dummy Run
+    - now defaults to joystick on startup and allows joystick
+      button in port 2 to start the game
+
+Klax
+    - Now defaults to joystick on startup. Also fixed a bug due to the
+      potential for the raster IRQ to fire on line #$FF before another busy
+      wait loop polling $D012 for the same line, causing the game to hang.
+
+Knight-Tyme - now defaults to joystick on startup
+
+Moon Cresta - now defaults to joystick on startup
+
+Ogre
+    - Modified the init routine at $C500 so that it now turns off interrupts
+      from the two CIA chips and acks any pending CIA interrupts. This allows
+      the game to start correctly. Thanks to LastChance for the issue report.
+
+Qix
+    - Now patched to remove disk loading attempts and failure messages after
+      the game has started. Thanks to ricky006 for the issue report.
+
+Pyjamarama!
+    - now defaults to joystick on startup and allows joystick
+      button in port 1 to start the game
+
+Rainbow Chaser
+    - Added an init routine at $0400 which turns off interrupts from the two
+      CIA chips and acks any pending CIA interrupts. This allows the game to
+      start correctly. Thanks to LastChance for the issue report.
+
+Revenge of the Mutant Camels
+    - Applied the collision detection fix released by Jeff Minter on 16th May
+      2021 here: https://twitter.com/llamasoft_ox/status/1393933353670397960
+
+Scuba Dive - now defaults to joystick on startup
+
+Stormlord
+    - now skips the redefine keys screen and defaults to joystick on startup
+
+Stormbringer - now defaults to joystick on startup
+
+Stunt Car Racer - now starts more quickly
+
+Super Sprint
+    - As this is in fact a multiload game (tracks 5-8 are loaded after
+      completing the first 4), there are now two files provided for this to
+      provide all 8 tracks. Thanks to LastChance for the issue report.
+      
+Survivor
+    - Added an init routine at $0400 which turns off interrupts from the two
+      CIA chips and acks any pending CIA interrupts. This allows the game to
+      start correctly. Thanks to LastChance for the issue report.
+
+The Last V8
+    - Added an init routine at $07DB which zeroes out the tape buffer before
+      starting the game to prevent a potential sprite corruption issue. Thanks
+      to ricky006 for the issue report.
+      
+Wacky Darts - now defaults to joystick on startup
+
+Zalaga - now defaults to joystick on startup
+
+Zybex
+    - Fixes missing graphics for the two spacemen sprites on the title screen.
+      Thanks to beatmaster for the issue report.
+
+Games Replaced or Removed
+-------------------------
+
+Airborne Ranger (Extras\OtherCRTs) - replaced with a later fixed version
+
+Bruce Lee - Return of Fury
+    - replaced with the bug-fixed and enhanced version from the Bruce Lee
+      Duology release (https://rebel-android.itch.io/bruce-lee-duology).
+
+Dig Dug
+    - removed as there is already an official cartridge release for it in
+      Extras\OfficialCRTs
+
+Eindeloos - replaced with the English version 'Endless'
+
+Heist, The - replaced the D64 dump with the tape dump
+
+International Karate Ultimate (Extras\OtherCRTs)
+    - replaced with the latest version from 2018
+
+P-47 Thunderbolt (Extras\OtherCRTs)
+    - replaced with a later fixed version
+
+Rocket Smash (Extras\OtherCRTs)
+    - replaced with the improved Rocket Smash EX
+
+Simpsons Arcade Game (Extras\OtherCRTs)
+    - replaced with a later fixed version
+
+Space Lords (Extras\OtherCRTs)
+    - replaced with the improved Space Lords (Centaurus)
+
+v2 - 2021-02-20
+---------------
+
+New Features or Changes
+-----------------------
+
+The primary uncrunched games are now in Magic Desk CRT format for even quicker
+loading. These also support the display of loading screens which wasn't always
+possible with the original PRG format due to space limitations. The uncrunched
+PRGs are still included for use when Magic Desk cartridge support is not
+available on a specific platform or device.
+
+Screenshots are now included for all the core games in the collection. Future
+work is planned to improve these by replacing with larger resolution files
+which capture the full C64 screen, including the borders which are used by some
+games. But for now, they are the traditional 320x200.
+
+Official cartridge images are now included in Extras\OfficialCRTs
+(thanks to Mayhem for his assistance in putting this set together)
+
+Other cartridge images of interest (e.g. multiload games converted to CRT
+format etc) are now included in Extras\OtherCRTs
+
+Games Added
+-----------
+
+1943 - The Battle of Midway
+5th Gear
+Abu Simbel Profanation (Equinoxe - 2017)
+ACE - Air Combat Emulator
+ACE 2
+Action Fighter
+adidas Championship Tie Break
+Agent USA
+Agent X II
+Alcazar - The Forgotten Fortress
+Alien 8 (Rod & Emu - 2019)
+Amazing Spider-Man, The
+Andy Capp
+ARAC
+Arena
+Asteroids (Norbert Kehrer - 2013)
+AticAtac (2020)
+Atomino
+Auriga
+Awakening (Endurion - 2015)
+Axis Assassin
+B.C. Bill
+BadLands
+Ball Crazy
+Ball Game, The
+Bangers and Mash
+Batman - The Caped Crusader
+Bedlam
+Beyond the Ice Palace
+Big Deal, The
+Bignoses USA Adventure
+Black Hawk
+Black Lamp
+Black Magic
+Blinky's Scary School
+Blobber
+Bloo's Magic Trip
+Blue Moon
+Blue Thunder
+BMX Freestyle Simulator
+BMX Kidz
+BOFH - Servers Under Siege (Covert Bitops - 2002)
+Bomb Chase (TND - 2002)
+Bomb Mania
+Bomberman C64 (Samar Productions - 2007)
+BoneCruncher
+Bounder on the Rebound
+Bozos Night Out
+Brainstorm
+Bruce Lee - Return Of Fury (Megastyle - 2019)
+Bubble Ghost
+Buck Rogers
+Bug Blaster
+Bug Blitz
+Bugbomber
+Bulldog
+Bump Set Spike
+Burger Time
+Burger Time '97
+Burnin' Rubber
+C64anabalt (RGCD - 2011)
+Calvin
+Captain Fizz Meets the Blaster-Trons
+Castor
+Caverns of Khafka
+Chameleon
+Championship 3D Snooker
+Championship Sprint
+Chickin Chase
+Chiller 2 (Cosine Systems - 2020)
+Chilly Willy
+Chimera
+Cholo
+Chomper Man
+Chopper Command (Antonio Savona - 2019)
+Chopper Commander
+Circus Charlie
+Clean Up Service
+Clean Up Time
+Cliff Hanger
+Clystron
+Co and Co
+Cohen's Towers
+Collapse
+Colossus Chess 4
+Continental Circus
+Cookie (Andy Noble - 2017)
+Cops and Robbers
+CORE
+Cosmos v1.2 (Hulten Brothers - 2014)
+Crackpots (Antonio Savona - 2020)
+Crillion
+Crillion '93
+Crillion II
+Crossfire (Sierra Online)
+Crossroads
+Crossroads II - Pandemonium
+Dante's Inferno
+Deactivators
+Dead or Alive
+Dead Zone
+Death Race 64
+Death Wish III
+Deliverance - Stormlord II
+Demon Blue
+Denarius
+Dinky Doo
+DJ Puff's Volcantic Capers
+Doctor Who and the Mines of Terror
+Dogfight 2187
+Donkey Kong Arcade (Oxyron - 2016)
+Donkey Kong Junior (Mr. SID - 2014)
+Doughboy
+Downhill Challenge (Endurion - 2018)
+Duck Shoot
+Duel, The (see footnote 2)
+Duotris
+Dynamix
+Dynamoid
+Edd the Duck!
+Eindeloos
+Elidon
+E-Motion
+Equinox
+Escape from Paradise
+Escape from the Planet of the Robot Monsters
+Exolon
+Exterminator
+Eye of Horus
+F1 Tornado
+Fast Break
+Fast Food
+Fearless Fred and the Factory of Doom
+Fernandez Must Die
+Finders Keepers
+Fiona Rides Out
+Fire Ant
+Fire Galaxy
+Fire One
+Firefly
+FireTrap
+Flak - The Ultimate Flight Experience
+Flappy Bird (Sos - 2014)
+Floyd the Droid
+Formula 1 Simulator
+Fox Fights Back!
+Frankenstein Jnr
+Frantic Freddie II (2019)
+Freddy Hardest
+Friday the 13th
+Frogger '93
+Frogger Arcade (2016)
+Frogs
+Frost Byte
+Frostbite (Antonio Savona - 2019)
+Fungus
+Fury, The
+Future Knight
+Galactic Gardener
+Galaga
+Galax-i-Birds
+Galaxions
+Galaxy
+Gaplus
+Ghost Chaser
+Ghouls
+Gladiators
+Gogo the Ghost
+Grand Prix Simulator
+Grand Prix Simulator II
+Grandmaster Chess
+Great American Cross-Country Road Race, The
+Great Gurianos
+Gridtrap
+Gryzor
+Gun Fighter
+Gunfright v1.10 (Rod & Emu - 2017)
+Guzzler
+Gyropod
+Hacker
+Hades Nebula
+Halls of the Things, The
+Harvey Smith Showjumper
+Head the Ball
+Heist, The
+Hektic
+Hektic II
+Heli Rescue
+Hellgate
+Hero of the Golden Talisman
+Hopeless
+Hot Pop
+House of Usher
+Hungry Horace
+Ice Palace (Creative Sparks)
+Insects in Space
+Interchange
+International Hockey
+International Speedway
+IQ
+Iron Horse
+Island of Dr Destructo, The
+ISS - Incredible Shrinking Sphere
+It's Only Rock 'n' Roll
+Java Jim in Square Shaped Trouble
+Jaws (Screen 7)
+Jet-Boot Jack
+Jet-Boys
+Jinks
+Jinn-Genie
+Joe Gunn - Gold (Psytronik - 2009)
+Jouste
+Jr Pac-Man
+Juno First
+Kendo Warrior
+Key Finders
+Keystone Kapers (Antonio Savona - 2019)
+Kid Grid
+Killer-Ring
+Killerwatt
+Kinetik
+Klax
+Knightlore v1.10 (Rod & Emu - 2018)
+Knight-Tyme
+Kokotoni Wilf
+Kongo Kong
+Lady Tut
+Laser Zone
+Lawn Tennis
+Legend of Kage
+Legend of the Knucker-Hole, The
+Litti's Hot Shot
+Livingstone I Presume
+Lost Tomb
+Luna (Shallan - 2019)
+Mad Race (Sputnik World - 2018)
+Maniax
+Mario Bros (Atari) (see footnote 1)
+Mario Bros (Ocean)
+Mario Bros II
+Maziacs
+Mediator
+Metagalactic Llamas
+Metamorphosis II - Attack on Cyglorx
+Metamorphosis III - The Creator's Revenge
+Metamorphosis IV - Labyrinth of the Creator
+Metro-Cross
+Missile Command
+Mission Impossibubble
+Mission Omega
+Moby Dick
+Moon Crystals
+Moon Shuttle
+Moonfall
+Moonshadow
+Moonsweeper (Imagic)
+Moontorc
+Morpheus
+Mr Do's Castle
+Munchy
+Munsters, The
+Mushroom Alley
+Mutants
+Nautilus
+Navy Moves
+Necromancer
+Nemesis the Warlock
+Neuronics
+Neutral Zone
+Nibbly 2012
+Nibbly '92
+Ninja Massacre
+NOMAD
+Octoplex
+Odysseus - Trojan Warrior
+Ogre
+Oh No!
+Oink!
+Olli and Lissa
+Olli and Lissa III
+Ollie's Follies
+Ollo
+Ollo II
+Omidar
+On the Tiles
+Oops!
+Orb
+Orion
+Out of This World
+Out Run
+Outlaw
+Overlander
+Pac-Land
+Pandora
+Pandora's Box
+Panther
+Panzer
+Paradroid Redux (TNT-Beyond Force - 2010)
+Paras, The
+Paratroopers
+Pastfinder
+Pegasis
+Pentagram (2016)
+Petch (aka Pengo)
+Peter Pack Rat
+Phantom of the Asteroid
+Pharaoh's Curse
+Ping Pong
+Pingo
+Polar Pierre
+Pole Position II
+Poltergeist
+Poseidon - Planet Eleven
+Powerama
+Prince Clumsy
+Pro Powerboat Simulator
+Professional BMX Simulator
+Professional Skateboard Simulator
+Professional Ski Simulator
+Professional Snooker Simulator
+Prohibition
+Project SOL
+Project X
+Protector (Mastertronic)
+Protector (Rabbit Software)
+Protector II
+Psycho Pigs UXB
+Pull
+Pulse Warrior
+Puzznic
+Pyramid, The
+Qix
+Quake Minus One
+Quango
+Quest for Quintana Roo
+Quest for the Golden Eggcup, The
+Quick Draw McGraw
+R1-D1
+Rad Ramp Racer
+Rainbow Chaser
+Rampage
+Raster Runner
+Rebel
+Renaissance
+Renegade
+Rescue Squad
+Return of the Mutant Camels
+Rimrunner
+River Rescue
+Rockford
+Rogue
+Rollin
+Rolling Thunder
+Rygar
+SAS Combat Simulator
+Satan's Hollow
+Scarabaeus
+Scorpion
+Scramble 64
+Scramble Spirits
+Scumball
+SDI
+Seaside Special
+Seesaw
+Serpentine
+Shadow Switcher (Dr. Wuro Industries - 2018)
+Shaman
+Shao-Lin's Road
+Shark
+Sheepoid DX (Psytronik - 2013)
+Shotgun (Dr. Wuro Industries - 2016)
+Sidewize
+Skatin' USA
+Skramble (Anirog Software)
+Sky High Stuntman
+Sky Runner
+Slamball
+Sleepwalker
+Slimey's Mine
+Slug
+Smash TV
+Snokie
+Snoopy
+Soldier of Fortune (Firebird)
+Sooper Froot
+Space Harrier
+Spaceman Splorf - Planet of Doom (Pond Software - v1.1 - 2016)
+Spellbound
+Spirit of the Stones
+Sport of Kings
+Spy's Demise
+Stairways
+Star Control
+Star Soldier
+Star Trader
+Star Trek - The Rebel Universe
+Starforce
+Starforce Fighter
+Starfox
+Stargunner
+Starion
+Star-Lifter
+Stealth
+Steel Eagle
+Steg the Slug
+Stocker
+Stop the Express
+Stormbringer
+Strangeloop
+Street Surfer
+Subsonic
+Subterranea
+Sunburst
+Super Bonkey Kong (Pond Software - 2018)
+Super Cars
+Super Pac-Man
+Super Sprint
+Super Trux
+Superkid
+Superkid in Space
+Survivor
+Sweep
+Swoop
+Sword of Fargoal, The
+System 15000
+Tag Team Wrestling
+Tales of the Arabian Nights
+Tanks (Radarsoft)
+Tanks (Samar Productions)
+Task-F
+Telengard
+Terry's Big Adventure
+Thai Boxing
+Thunderbirds (Firebird)
+Thunderbirds (Grandslam)
+ThunderBolt
+ThunderCats
+Tiger Mission
+Tilt
+Time Tunnel
+To Hell and Back
+Tom
+Tomcat
+Toobin'
+Topper the Copper
+Train Robbers
+Trantor - The Last Storm Trooper
+Triad (Commodore)
+Tropical Fever
+Tubyx
+Turbo Kart Racer
+Twinky Goes Hiking
+Underwurlde
+Uridium+
+Vegas Jackpot
+Venom Strikes Back
+Vice Squad, The (Psytronik - 2013)
+Video Card Arcade
+Video Meanies
+Vioris
+Vixen
+Vultures
+WarGames
+Warhawk
+Werewolves of London
+West Bank
+Wheelin Wallie
+Where's My Bones
+White Viper
+Willow Pattern Adventure, The
+WitchSwitch
+Wizard Plus
+Wizard Willy
+Woolly Jumper (Psytronik - 2013)
+World Championship Boxing Manager
+Xerons
+Xevious
+Xybots
+Zaga Mission
+Zalaga
+Zeppelin
+Zeta-7
+Zig Zag
+Zoids
+Zolyx
+Zoom!
+Zybex
+Zyron
+
+Footnote 1 (Mario Bros Atari)
+-----------------------------
+
+As this was never officially released, I have made an exception to include an
+unattributed scene release for this.
+
+Footnote 2 (Duel, The)
+----------------------
+
+This is based on an Italian bootleg, as an original TAP image could not be
+found. But as it's an Italian game, I felt this would be acceptable for now.
+
+Games Fixed or Improved
+-----------------------
+
+Archon
+    - replaced with a dump from the original .D64 as the TAP version from
+      Ariolasoft is actually a cracked copy (it has the message
+      "ARCHO.N CRACKED BY DU.O IN 1984" at $0820)
+      
+Bomber - now starts more quickly
+
+Bomb Jack - fixed the title screen music
+      
+Castle Master I and II - both now start more quickly
+
+Cyberdyne Warrior - now starts more quickly
+
+Dark Side - now starts more quickly
+
+Dizzy Down the Rapids - now starts more quickly
+
+Eliminator - now starts more quickly
+
+Get off My Garden!
+    - removed extraneous LDA instruction from the init routine at $7900
+    
+Gribbly's Day Out
+    - replaced the original tape image with the Rack-It re-release which
+      has a loading screen, various bug fixes and easier to read font
+
+Hard Hat Mack
+    - now zeroes the tape buffer to allow the game to run correctly
+      (thanks to LastChance for the issue report)
+   
+Herobotix - now starts more quickly
+
+International Karate
+    - replaced with the Now Games 5 / Pack of Aces tape image which has a
+      loading screen
+      
+Ivan 'Ironman' Stewart's Super Off-Road - now starts more quickly
+
+Little Computer People
+    - replaced with the Activision release as the sounds were broken in the
+      Mastertronic release used initially (thanks to LastChance for the issue
+      report)
+      
+Microdot - now starts more quickly
+
+Panic Dizzy
+    - now starts more quickly (although the PRGs no longer display the
+      loading screen)
+      
+Pipe Mania - now starts more quickly
+
+Shamus Case II
+    - now also sets the length of the file name or disk command at $B7 to $01
+      to allow the game to run correctly (thanks to LastChance for the issue
+      report)
+
+Skate Crazy
+    - replaced with the disk version which has two parts (the original Car Park
+      Challenge plus Championship Course)
+      
+Slayer
+    - replaced with the Rack-It budget re-release which includes the loading
+      screen by Stephen Robertson (SIR)
+      
+Speedball 2
+    - The dump file has now been created after the games original decrunch
+      routine has finished, allowing for quicker startup and better compression
+      in Exomizer (thanks to CapFuture1975 for the issue report)
+
+Stormlord
+    - now starts more quickly (although the PRGs no longer display the loading
+      screen)
+      
+Stuntman Seymour - now starts more quickly
+
+Total Eclipse I and II
+    - both now start more quickly (although the PRGs no longer display the
+      loading screens)
+      
+Vindicators
+    - now starts more quickly (although the PRGs no longer display the loading
+      screen)
+
+Games Replaced or Removed
+--------------------------
+
+Beach-Head II
+    - removed as this is in fact a multi-load game (however there is CRT image
+      by The Joker in the Extras\OtherCRTs folder)
+
+BMX Simulator II
+    - replaced this budget re-release with the original Professional BMX
+      Simulator which has more tracks
+
+Bounder
+    - replaced with the updated Bounder on the Rebound which has bug fixes,
+      making the game easier and more playable
+
+v1 - 2020-10-25
+---------------
+
+The first release! ;)
+
+Games Added
+-----------
+
+10th Frame
+180
+1942
+3D Pinball - Pinball Power
+3D Pool
+3-D Skramble
+4th and Inches
+720 Degrees
+Acid Runner
+Action Biker
+Addicta Ball
+Advanced Pinball Simulator
+Airwolf
+Airwolf II
+Alleykat
+American 3D Pool
+Anarchy
+Ancipital
+Ant Attack
+Arc of Yesod, The
+Arcade Classics
+Arcadia 64
+Archon
+Archon II - Adept
+Ardy The Aardvark
+Arkanoid
+Arkanoid - Revenge of Doh
+Army Moves
+Arnie
+Artillery Duel
+Asterix and the Magic Cauldron
+Attack of the Mutant Camels
+ATV Simulator
+Auf Wiedersehen Monty
+Auto Mania
+Avenger - The Way of the Tiger
+Aztec Challenge
+Bagitman
+Ball-Blasta
+Ballblazer
+Bandits
+Barbarian - The Ultimate Warrior
+Barry McGuigan World Championship Boxing
+Batalyx
+Battle Ships
+Battle Through Time
+Battle Valley
+Batty
+BC II - Grog's Revenge
+BC's Quest For Tires
+Beach-Head
+Beach-Head II
+Beamrider
+Big Mac
+Biggles
+Bird Mother
+Blackwyche
+Blagger
+Blagger Goes to Hollywood
+Blasteroids
+Blue Max
+Blue Max 2001
+BMX Simulator
+BMX Simulator II
+Bobby Bearing
+Bomb Jack
+Bomb Jack II
+Bomb Uzal
+Bomber
+Bombo
+Booga-Boo the Flea
+Booty
+Boulder Dash
+Boulder Dash II - Rockford's Revenge
+Boulder Dash III
+Bounces
+Bounder
+Bounty Bob Strikes Back
+Breaker
+Bruce Lee
+Bubble Bobble
+Bubble Dizzy
+Buggy Boy
+Camelot Warriors
+Captain Kidd
+Captured
+Carnage
+Castle Master
+Castle Master II - The Crypt
+Cauldron
+Cauldron II
+Cavelon
+Cavelon II
+Caverns of Eriban, The
+Chiller
+China Miner
+Choplifter!
+Chopper
+Chuckie Egg
+Chuckie Egg II
+Citadel
+CJ in the USA
+CJ's Elephant Antics
+Cloud Kingdoms
+Comic Bakery
+Commando
+Confuzion
+Congo Bongo
+Cosmic Causeway
+Cosmic Tunnels, The
+Crazy Comets
+Critical Mass (Durell)
+Crystal Kingdom Dizzy
+Cyberdyne Warrior
+Cybernoid
+Cybernoid II
+Daley Thompson's Decathlon
+Daley Thompson's Super-Test
+Dam Busters, The
+Dan Dare - Pilot of the Future
+Dan Dare II - Mekon's Revenge
+Dan Dare III - The Escape
+Dark Side
+David's Midnight Magic
+Decathlon
+Deflektor
+Delta
+Demon's Kiss
+Desert Fox
+Desert Hawk
+Detective Game, The
+Dig Dug
+Dino Eggs
+Dizasterblaster
+Dizzy
+Dizzy - Down the Rapids
+Dizzy - Prince of the Yolkfolk!
+Donald Duck's Playground
+Donkey Kong (Ocean)
+Doomdark's Revenge
+Doriath
+Draconus
+Dragon Skulle
+Dragon's Kingdom
+Dream Warrior
+Drelbs
+Driller
+Drol
+Dropzone
+Druid
+Eagle Empire
+Eagles
+Eliminator
+Elite
+Emlyn Hughes International Soccer
+Empire
+Empire Strikes Back, The
+Encounter
+Enigma Force
+Enlightenment - Druid II
+Entombed
+Erebus
+Everyone's a Wally
+Exile
+Exploding Fist+
+Express Raider
+Fairlight
+Falcon Patrol
+Falcon Patrol II
+Fantasy World Dizzy
+Feud
+Fighting Warrior
+Firelord
+First Strike
+Fist II - The Legend Continues
+Fist II - Tournament
+Flip and Flop
+Flyer Fox
+Football Manager
+Footballer of the Year
+Footballer of the Year II
+Forbidden Forest
+Fort Apocalypse
+Frankenstein (Zeppelin Games)
+Frantic Freddie
+Frenzy
+Frogger
+Frogger 64
+Frogger II - Threedeep!
+Fruit Machine Simulator
+Garfield - Big Fat Hairy Deal
+Gateway to Apshai
+Get Off my Garden!
+Ghettoblaster
+Ghostbusters
+Ghosts'n Goblins
+Gordian Tomb
+Great Escape, The
+Great Giana Sisters, The
+Green Beret
+Gremlins
+Gribbly's Day Out
+Gridder
+Gridrunner
+Guardian
+Guardian II
+Gumshoe
+Gyroscope
+H.E.R.O.
+Hacker II
+Hard Hat Mack
+HardBall!
+Hard'n'Heavy
+Harrier Attack
+Hat Trick
+Head Over Heels
+Heartland
+Heavenbound
+Heavy Metal Paradroid
+Helikopter Jagd
+Hellhole
+Henry's House
+Herobotix
+Highnoon
+Highway Encounter
+Hobbit, The (1982 Version)
+Hoppin' Mad
+Horace Goes Skiing
+Hover Bovver
+Human Race, The
+Hunchback
+Hunchback II - Quasimodo's Revenge
+Hunter's Moon
+Hustler
+Hyber Blob
+Hypa-Ball
+Hyper Active
+Hyper Sports
+Hysteria
+I Ball
+I Ball II
+IK+
+Ikari Warriors (Elite)
+Imhotep
+Impossible Mission
+Infernal Runner
+Inside Outing
+Intensity
+International 3D Tennis
+International Basketball
+International Karate
+International Tennis (Zeppelin Games)
+Into the Eagle's Nest
+IO - Into Oblivion
+Iridis Alpha
+Ivan 'Ironman' Stewart's Super Off-Road
+Jack the Nipper
+Jack the Nipper II
+Jet Set Willy
+Jet Set Willy II
+Joe Blade
+Joe Blade II
+Juice!
+Jumpin Jack
+Jumpman Junior
+Kamikaze
+Kane
+Kane II
+Kikstart
+Kikstart II
+Krakout
+Krystals of Zong
+Kung-Fu Master
+Kwik Snax
+Last V8, The
+Lazy Jones
+LED Storm
+Legend of Sinbad, The
+Licence to Kill
+Lightforce
+Little Computer People
+Little Puff in Dragonland
+Loco
+Lonely Rider
+Loopz
+Lords of Midnight
+Mad Doctor
+Madness
+Magicland Dizzy
+Mancopter
+Manic Miner
+Marauder
+Master of Magic, The
+Master of the Lamps
+Match Day
+Match Day II
+Match Point
+Matrix
+Mega Phoenix
+Mega-Apocalypse
+Mercenary - Escape from Targ
+Mercenary - The Second City
+Mickey Mouse
+Microdot
+Microprose Soccer
+Mighty Bombjack
+Mikie
+Milk Race
+Miner 2049'er
+Mission AD
+Mission Elevator
+Molecule Man
+Monopoly Deluxe
+Monte Carlo Casino
+Montezuma's Revenge
+Monty Mole
+Monty on the Run
+Moon Cresta
+Motos
+Mountie Mick's Death Ride
+Mr Robot and his Robot Factory
+Mr. Do!
+Mutant Monty
+Nebulus
+Nemesis
+Neptune's Daughters
+Netherworld
+Night Mission Pinball
+Night Racer
+Night Shade
+Ninja (Mastertronic)
+Ninja Commando
+Nodes of Yesod
+Nosferatu the Vampyre
+O'Riley's Mine
+Octapolis
+Oils Well
+Olympic Skier
+One Man and his Droid
+One on One
+Operation Wolf
+Orc Attack
+Outlaws
+Pac-Mania
+Panic Dizzy
+Paperboy
+Paradroid
+Paradroid - Competition Edition
+Parallax
+Park Patrol
+Passing Shot
+PC Fuzz
+Peter Shilton's Handball Maradona
+Pi R Squared
+Pipe Mania
+Piracy
+Pitfall
+Pitfall II - Lost Caverns
+Pitstop
+Pitstop II
+POD
+Pogo Joe
+Pole Position
+Pooyan
+Popeye
+Poster Paster
+Potty Pigeon
+Power Drift
+Powerplay Hockey
+Pro Tennis Tour
+Pyjamarama!
+Quasimodo
+Quedex
+R.I.S.K. (The Edge)
+Raid on Bungeling Bay
+Raid over Moscow
+Rainbow Walker
+Rally Speedway
+Rambo - First Blood Part II
+Ranarama
+Re-Bounder
+Repton
+Repton 3
+Rescue on Fractalus
+Revenge of the Mutant Camels
+Rick Dangerous
+River Raid
+Robin of the Wood
+Rock n'Bolt
+Rocket Ball
+Rock'n Wrestle
+Rocky Horror Show, The
+Roland's Ratrace
+RollerBall
+Saboteur
+Saboteur II
+Sabre Wulf
+Sacred Armour of Antiriad, The
+Samurai Warrior - The Battles of Usagi Yojimbo
+Sanxion
+Savage Pond
+Scorpius
+Scuba Dive
+Sensitive
+Sentinel
+Sentinel, The
+Shadowfire
+Shamus
+Shamus Case II
+Sheep in Space
+Shogun
+Sigma Seven
+Silkworm
+Siren City
+Skate Crazy
+SkateRock
+Skool Daze
+Skramble (Rabbit Software)
+Slap Fight
+Slapshot
+Slayer
+Slinky
+Slurpy
+Soldier One
+Solomon's Key
+Son of Blagger
+Sorcery
+Space-Pilot
+Space-Pilot II
+Speed King
+Speedball
+Speedball 2
+Spellbound Dizzy
+Spikey in Transylvania
+Spindizzy
+Spitfire '40
+Splat!
+Split Personalities
+Spore
+Spy vs Spy
+Spy vs Spy II - The Island Caper
+Spy vs Spy III - Arctic Antics
+Squirm
+Squish 'em
+Staff of Karnath, The
+Star League Baseball
+Star Paws
+Star Raiders II
+Star Wars
+Starglider
+Starquake
+Steel
+Stellar 7
+Stix
+Storm
+Stormlord
+Stratego
+Street Hassle
+Stunt Car Racer
+Stuntman Seymour
+Suicide Express
+Super Pipeline
+Super Pipeline II
+Super Robin Hood
+Super Scramble Simulator
+Superstar Ping-Pong
+Tapper
+Tau Ceti
+Tazz
+Terra Cresta
+Terror of the Deep
+Tetris (Mirrorsoft)
+Theatre Europe
+Thing Bounces Back
+Thing on a Spring
+Through the Trapdoor
+Thrust
+Thrust II
+Time Machine
+Tir Na Nog
+Titanic Blinky
+Tomahawk
+Total Eclipse
+Total Eclipse II
+Toy Bizarre
+Track and Field
+Tracksuit Manager
+Traffic
+Trailblazer
+Trap
+Trap Door, The
+Trashman (New Generation Software)
+TRAZ - Transformable Arcade Zone
+Treasure Island (Mr Micro)
+Treasure Island Dizzy
+Trollie Wallie
+Trolls and Tribulations
+Tunnel Vision
+Uchi Mata
+Uridium
+Vampire
+Vindicators
+Voidrunner
+Volfied
+Vortex Raider
+Wacky Darts
+Warlock - The Avenger
+Waterline
+Waterpolo
+Wavy Navy
+Way of the Exploding Fist, The
+Who Dares Wins II
+Wizardry
+Wizball
+Wonderboy
+Yie Ar Kung-Fu
+Yie Ar Kung-Fu II
+Zamzara
+Zenji
+Zorro
+Zynaps

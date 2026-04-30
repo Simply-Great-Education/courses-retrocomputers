@@ -1,0 +1,25 @@
+﻿<Metadata>
+  <DumpFile>BLACKKNIGHT-ECP-8800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8a51ab33d204bdee9a05f6996401b6b336532905</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Black Knight (ECP).tap</SourceFile>
+  <SourceFileSHA1>3c935636c1394a5822a90b493f063bbd8c322230</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8800 "BLACKKNIGHT-ECP-8800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Black Knight (ECP).prg"</ExomizerCommand>
+  <Notes>As the original game is frozen, the breakpoint to use for dumping is actually $C032.
+  
+  Starting at the true start address causes the title music to be too quiet. This is likely due to some data having changed between the game starting and the freeze being taken.
+  
+  Therefore to fix this issue, the following changes have been made:
+  
+  1. The JSR $8600 at $8718 has been changed to JSR $0F00 instead
+  2. A routine has been added at $0F00 which first calls the original init routine at $8600
+  3. It then executes a section of the SID init code taken from the freezer boot code at $086F-$0891 (this can be dumped by setting a breakpoint on $080D)
+  
+  Note: the resulting music is slightly different to the music heard with the original frozen version, but it is assumed this version is actually as it was intended to be, as it sounds more complete (i.e. the freeze borked this even though it was kept louder).</Notes>
+</Metadata>

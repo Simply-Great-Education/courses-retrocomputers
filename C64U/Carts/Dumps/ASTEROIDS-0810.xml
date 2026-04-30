@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ASTEROIDS-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>22ec2adacf07eab84b0face98d8d1caaad59d892</DumpFileSHA1>
+  <SimplifiedName>Asteroids (Norbert Kehrer - 2013)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Asteroids Emulator (Norbert Kehrer - 2013-03-18).d64</SourceFile>
+  <SourceFileSHA1>79af51dd99179479970ed3552f2d8d064c2ac741</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "ASTEROIDS-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Asteroids (Norbert Kehrer - 2013).prg"</ExomizerCommand>
+</Metadata>

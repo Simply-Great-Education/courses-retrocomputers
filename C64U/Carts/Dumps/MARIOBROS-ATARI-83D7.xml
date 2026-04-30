@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>MARIOBROS-ATARI-83D7</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c4daae10df37514b8f856a55f85d69ae99290b6d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$83D7</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Mario Bros (Atari).d64</SourceFile>
+  <SourceFileSHA1>6dde1da5e8cd8ff41af16476884f3d755f95a6a3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x83D7 "MARIOBROS-ATARI-83D7" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Mario Bros (Atari) (J1).prg"</ExomizerCommand>
+  <Notes>As this game was never offcially released, the original source used for this game is an unattributed scene release.</Notes>
+</Metadata>

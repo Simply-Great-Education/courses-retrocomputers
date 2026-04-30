@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>WHODARESWINS-DKTRONICS-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>19f3ffc0dd97ad0410123c665da41f8aa01f3ad1</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Who Dares Wins (dk'tronics).tap</SourceFile>
+  <SourceFileSHA1>9f4de7c3ef30904e0404c600ff01bf942556d2ec</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "WHODARESWINS-DKTRONICS-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Who Dares Wins (dk'tronics) (J1).prg"</ExomizerCommand>
+  <Notes>This game has a BASIC program to display the title screen, so the following steps were taken to retain this:
+  1. When the title screen was shown, the BASIC program from $0801 to $0B20 was dumped to disk. This is because the first part of the program gets overwritten later with a SYS 8164 ($1FE4) statement to start the game once it's finished loading.
+  2. When the breakpoint at $1FE4 was hit, the BASIC program dumped in step 1 was restored into memory before the game memory dump was taken.
+  3. The SYS 2818 statement on line 300 has also been changed to SYS 8164 ($1FE4), which is actually the games entry point after loading. This allows the code to jump to the games entry point after the title screen is displayed.
+  4. A new routine was placed at $C000 which sets up the correct VICII settings and necessary BASIC pointers and runs the title screen program. 
+
+  Note: to dump, simply set a breakpoint on $1FE4</Notes>
+</Metadata>

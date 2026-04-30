@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>THAIBOXING-1C12</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d56050e034ecc060377651f73aa2ca211c9e6d99</DumpFileSHA1>
+  <SimplifiedName>Thai Boxing</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1C12</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Thai Boxing (Anco) (Master Date 1986-09-19).tap</SourceFile>
+  <SourceFileSHA1>35ad5ebba911791c879f03c80f620ba95ca0eabf</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1C12 "THAIBOXING-1C12" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Thai Boxing.prg"</ExomizerCommand>
+</Metadata>

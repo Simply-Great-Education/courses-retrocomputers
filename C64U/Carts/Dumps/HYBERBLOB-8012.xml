@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>HYBERBLOB-8012</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2cc62292d793eae02a86207e759e148491650f9d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8012</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Hyber Blob.tap</SourceFile>
+  <SourceFileSHA1>6dc4e63819e747aaf92e4a43f772a468f3b64eb0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8012 "HYBERBLOB-8012" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Hyber Blob.prg"</ExomizerCommand>
+</Metadata>

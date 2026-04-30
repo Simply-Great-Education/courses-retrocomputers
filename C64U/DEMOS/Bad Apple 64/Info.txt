@@ -1,0 +1,54 @@
+Bad Apple 64 was released 29 June 2014.
+
+
+
+Onslaught was founded in February 1995.
+
+Check out more of their releases at https://onslaught.c64.org
+
+
+Distributed with the Commodore 64 Ultimate with permission from Algorithm.
+
+
+
+Production and technical notes by Algorithm:
+
+The original untouched video had over 6000 unique frames running at 30fps
+The first step was to decimate these frames to around 2200 frames (This would result in the video having the same length if played back at 10fps)
+
+According to rough calculations, I decided to encode each set of 128 frames separately.
+
+Each chunk of 128 frames would consist of individual graphic definitions and tile lookups together with the frame packed data.
+
+Each set of 128 frames were fed through my tile quantizer (2x2) 16x16 pixels which would generate 256 (optimum tiles in 16x16 pixels)
+
+As the whole sequence of frames is reduced to 256 16x16 tiles, there are only 1024 8x8 unique gfx occurrences in this data.
+
+This data is then fed through the 8x8 genetic/hill climbing VQ encoder which results in the whole set of 128 frames only requiring 256
+tiles.
+
+There is still the issue that each frame uses 1k in size. Luckily as this data was previously quantized using the 16x16 variant, the entire 128k of frame lookups can be reduced to 32k as there are only 256 unique 2x2 tiles in the frame definitions.
+
+The 2x2 lookups are extracted from the frame data (this takes up 1k) and the 128k (128 frames) converted to 32k with no loss in quality.
+
+The next stage is delta packing, I am using a bit delta variant. First frame is uncompressed 240 bytes. The next frames store only the differences. the indication on whether or not a 2x2 block has changed or not is determined by the 30 byte bit-buffer that skips or reads a lookup value.
+
+On average this 32k of data for this animation sequence gets packed to around 12k
+
+Semi uncompressed data that is used for each 128 frames is the following
+
+2x2 tile lookup (1k)
+codebook (2k)
+compressed frames (approx. 12k)
+
+Finally this entire chunk is lz packed resulting in the whole 128 bytes being packed to around 10k
+
+The decoder uses two main buffers.
+While playing back the 128 frames from one buffer, it loads the next set into the other buffer
+
+Decoder is running at 12frames per second (I could have optimized the decoder more - by also de-interleaving the 2x2 lookups for major speedup) but it worked fine as it is.
+
+Yes, quality does leave a lot to be desired, but I don't think much can be done in 60-70 bytes per frame (Although using vector plotting and filling
+would work for smooth simple area's (but eat on the frame rate)
+
+Objective was to include the sequence from beginning to end on a single disk side. And this has been achieved.

@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>PUNCHY-9000-9F22</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fa0daea1b1fff94fa1bb0cc4ca032b814338ebcb</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9000</Address>
+    <Address>$9F22</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Punchy.tap</SourceFile>
+  <SourceFileSHA1>5235df404d66330239509afa00412bb33409ef31</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9F22 "PUNCHY-9000-9F22" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $9000 dec $d030" -x "inc $d020" -o "Punchy.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $9000 which sets the pointers to the beginning of the BASIC ($2B/$2C) and variable areas ($2D/$2E).
+  
+  The loading screen is from the Spectrum version</Notes>
+</Metadata>

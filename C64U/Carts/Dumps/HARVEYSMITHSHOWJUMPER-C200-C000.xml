@@ -1,0 +1,25 @@
+﻿<Metadata>
+  <DumpFile>HARVEYSMITHSHOWJUMPER-C200-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6efedaab20f467fc421c2ba8a6b1494035e41a93</DumpFileSHA1>
+  <SimplifiedName>Harvey Smith Showjumper</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C200</Address>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Harvey Smith Showjumper (Version a).tap</SourceFile>
+  <SourceFileSHA1>0764b29a747fa6cecc1d3aa670d38899fa42a3bb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "HARVEYSMITHSHOWJUMPER-C200-C000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c200 dec $d030" -x "inc $d020" -o "Harvey Smith Showjumper (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C200 which:
+  1. turns off interrupts from the two CIA chips and acks any pending CIA interrupts
+  2. copies 512 bytes of data from $D000 down to $0100 so that the dump can start at $0400
+  3. sets the stack pointer to $DF to give the correct next available location on the stack (i.e. within the data copied in step 2)
+  4. sets the correct border colour in $D020 ($06)
+  5. finally jumps to the start address of $C000 (it doesn't use RTS because of the stack manipulation above)
+  
+  Note: the breakpoint to use for dumping is $C032 - the start address of $C000 skips the manual protection step.</Notes>
+</Metadata>

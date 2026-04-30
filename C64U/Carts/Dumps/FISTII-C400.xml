@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>FISTII-C400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d9e45d4ab3fe28fe56fcd57568245e89fcd87435</DumpFileSHA1>
+  <SimplifiedName>Fist II - The Legend Continues</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Fist II (Version 2) (Side 1).tap</SourceFile>
+  <SourceFileSHA1>171ab889d33875ea064ad934cc5a6719b634559d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC400 "FISTII-C400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Fist II - The Legend Continues.prg"</ExomizerCommand>
+</Metadata>

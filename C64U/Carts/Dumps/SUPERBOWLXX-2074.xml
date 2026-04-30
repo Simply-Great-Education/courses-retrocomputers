@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>SUPERBOWLXX-2074</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>65af1d0d44b7d88cd5b9af88ba33db3a0ecfe5a4</DumpFileSHA1>
+  <SimplifiedName>Super Bowl XX</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2074</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>191</SidLength>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Super Bowl XX (Game Set and Match 2).tap</SourceFile>
+  <SourceFileSHA1>4317f4c073f4d00f32ee622fe9e5305cee96f2de</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2074 "SUPERBOWLXX-2074" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Super Bowl XX (J1).prg"</ExomizerCommand>
+</Metadata>

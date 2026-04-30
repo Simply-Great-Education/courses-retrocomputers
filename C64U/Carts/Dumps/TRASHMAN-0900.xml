@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>TRASHMAN-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7c582629c84165ccb8ee5ee867c910a19bece8e5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Trashman (New Generation Software).tap</SourceFile>
+  <SourceFileSHA1>7478188b71aeac733f14a69d2afddc4b98daeadc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0900 "TRASHMAN-0900" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Trashman (New Generation Software).prg"</ExomizerCommand>
+  <Notes>The loading screen was converted from the Spectrum version by Andy Green (https://www.facebook.com/AndyGreenPixelArt).</Notes>
+</Metadata>

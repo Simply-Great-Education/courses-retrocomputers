@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>METRANAUT-408D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ab2fdf32eab6d39321eafebe4d4585551c6d00b4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$408D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Metranaut.tap</SourceFile>
+  <SourceFileSHA1>08a4b7dab64d451c5e08bec30ab1b9c2de209fe2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x408D "METRANAUT-408D" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Metranaut.prg"</ExomizerCommand>
+</Metadata>

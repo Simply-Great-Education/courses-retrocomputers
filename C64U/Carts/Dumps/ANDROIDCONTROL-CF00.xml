@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>ANDROIDCONTROL-CF00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cb4da880511214eda28bf8e4b20b700b8dd461cc</DumpFileSHA1>
+  <SimplifiedName>Android Control</SimplifiedName>
+  <JumpAddresses>
+    <Address>$CF00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Android Control (ECP).g64</SourceFile>
+  <SourceFileSHA1>9108f97c019800bf02f9ebe8b46499782493d59a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCF00 "ANDROIDCONTROL-CF00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Android Control.prg"</ExomizerCommand>
+  <Notes>Because the game is frozen, you must set a breakpoint at $CF00, start the game, lose all of your energy and then press fire on the game over screen. Once the breakpoint is hit, you can create the dump. If you do not do this, the game will crash after the game over screen is dismissed.</Notes>
+</Metadata>

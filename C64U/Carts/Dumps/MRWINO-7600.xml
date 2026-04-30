@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>MRWINO-7600</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d4f08295663165ed656a0cc68083b86f238e8785</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7600</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Mr Wino.tap</SourceFile>
+  <SourceFileSHA1>de52b939ad07388bf2a331fc18a2d05d6afa86ae</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7600 "MRWINO-7600" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mr Wino.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>METROPOLIS-TOPOSOFT-C900-8163</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>43f0e8f9875db38d5534b55dd9daa714ca5cc7f1</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C900</Address>
+    <Address>$8163</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <ColourRAMFile>METROPOLIS-TOPOSOFT-CRAM-C980</ColourRAMFile>
+  <ColourRAMStartAddress>$C980</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Metropolis (Topo Soft).tap</SourceFile>
+  <SourceFileSHA1>74629dcddce3cd0ee5f9a2d2c092e0bdefc1da97</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8163 "AlternativeFormats\PRGs\Uncrunched\Metropolis (Topo Soft).prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c980 lda #$35 sta $01 jsr $c900 dec $d030" -x "inc $d020" -o "Metropolis (Topo Soft).prg"</ExomizerCommand>
+  <Notes>Added a routine at $C900 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  Note: both the routine and colour RAM data overwrite the tape loader code from the original (ANALOAD by ERBE)</Notes>
+</Metadata>

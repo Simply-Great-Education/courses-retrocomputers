@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>SOLDIEROFLIGHT-5000-3F00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3cfc8cebc580b8b61c642df43e93af143b8c353f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5000</Address>
+    <Address>$3F00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>246</SidLength>
+  <SourceFile>Soldier of Light.tap</SourceFile>
+  <SourceFileSHA1>300573ffe16e463b23e0fb0235b957b35da0f396</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3F00 "SOLDIEROFLIGHT-5000-3F00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $5000 dec $d030" -x "inc $d020" -o "Soldier of Light.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $5000 which copies 256 bytes of data from $5020 down to $0200 so that the dump can start at $0400. This allows the game to run correctly.
+  
+  Note: As this game is actually frozen, the game starts at $3F96. However the true start address is $3F00.</Notes>
+</Metadata>

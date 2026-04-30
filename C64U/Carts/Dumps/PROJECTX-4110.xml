@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>PROJECTX-4110</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>080b7c4254c90e138ce7ee9f8c641ffc64cfe8c0</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4110</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Project X.tap</SourceFile>
+  <SourceFileSHA1>2ec8fc28e079726492267c1c33fa96d27fe8533e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4110 "PROJECTX-4110" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Project X.prg"</ExomizerCommand>
+</Metadata>

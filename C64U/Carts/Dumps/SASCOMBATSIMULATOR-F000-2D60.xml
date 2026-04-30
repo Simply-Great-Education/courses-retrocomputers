@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>SASCOMBATSIMULATOR-F000-2D60</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>991373dcbc1658c7a2dc9f623733ceb27f429f03</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$F000</Address>
+    <Address>$2D60</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>SAS Combat Simulator.tap</SourceFile>
+  <SourceFileSHA1>61dc7c0668b2ff8e277985db84f0d07d25d36ce8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2D60 "SASCOMBATSIMULATOR-F000-2D60" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $f000 dec $d030" -x "inc $d020" -o "SAS Combat Simulator.prg"</ExomizerCommand>
+  <Notes>Add an init routine at $F000 which copies 384 bytes to the end of colour memory ($DA80 - $DC00) so that the bottom part of the screen displays correctly.
+  As the original game is frozen, the breakpoint to use for dumping is actually $2EA4.</Notes>
+</Metadata>

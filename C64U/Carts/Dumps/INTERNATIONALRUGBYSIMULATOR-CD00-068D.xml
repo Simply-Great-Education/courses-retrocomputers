@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>INTERNATIONALRUGBYSIMULATOR-CD00-068D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f1de633bf1b0dc682df215178c92a0407f241098</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CD00</Address>
+    <Address>$068D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>International Rugby Simulator.tap</SourceFile>
+  <SourceFileSHA1>6cae35fe8c44d7440e34f4e60ed7f8b28067e313</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x068D "INTERNATIONALRUGBYSIMULATOR-CD00-068D" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $cd00 dec $d030" -x "inc $d020" -o "International Rugby Simulator.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $CD00 to set the TOD values ($DC08-$DC0B) and the CIA#1 Timer B value ($DC0F) to allow the game to run correctly.
+  
+  The memory between $CC00-$CFFF contained an unecessary repeating memory block. Therefore this range was zeroed out.</Notes>
+</Metadata>

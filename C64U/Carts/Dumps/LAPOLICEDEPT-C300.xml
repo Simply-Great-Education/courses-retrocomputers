@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>LAPOLICEDEPT-C300</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>138e471daa63129a366be916406d0a4484a27899</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C300</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>LA Police Dept.tap</SourceFile>
+  <SourceFileSHA1>847d5ef4c82de78c1aff1a58706ba8ff4e001532</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC300 "LAPOLICEDEPT-C300" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "LA Police Dept.prg"</ExomizerCommand>
+</Metadata>

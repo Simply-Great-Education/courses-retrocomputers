@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>FLASCHBIERFINAL-0840</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d28a20d4a10c94a3a99016b734043557e7ed3d20</DumpFileSHA1>
+  <SimplifiedName>Flaschbier Final (Werner Soft - 2022)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0840</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Flaschbier (Final - 2022).prg</SourceFile>
+  <SourceFileSHA1>48169b39a5cb6813095d4b4522c878dcdda5dbd6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "FLASCHBIERFINAL-0840" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Flaschbier Final (Werner Soft - 2022).prg"</ExomizerCommand>
+</Metadata>

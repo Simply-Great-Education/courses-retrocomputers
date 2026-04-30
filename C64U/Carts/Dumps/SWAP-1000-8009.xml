@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>SWAP-1000-8009</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2957633669dbe6103335696ca475465eaab04ef0</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+    <Address>$8009</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <ColourRAMFile>SWAP-CRAM-1100</ColourRAMFile>
+  <ColourRAMStartAddress>$1100</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Swap.tap</SourceFile>
+  <SourceFileSHA1>9aef38497f83c05c86a37697a9bb3e627e84f14f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8009 "AlternativeFormats\PRGs\Uncrunched\Swap.prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $1100 lda #$35 sta $01 jsr $1000 dec $d030" -x "inc $d020" -o "Swap.prg"</ExomizerCommand>
+  <Notes>Added a routine at $1000 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

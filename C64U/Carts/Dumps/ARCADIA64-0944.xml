@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>ARCADIA64-0944</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d54746cd2dc1657a65046c0e964d903511f59a2b</DumpFileSHA1>
+  <SimplifiedName>Arcadia 64</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0944</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Arcadia 64 (Version 1).tap</SourceFile>
+  <SourceFileSHA1>c041b0a17ecfabedd73e316e6231a89c634c0420</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "ARCADIA64-0944" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Arcadia 64 (J1).prg"</ExomizerCommand>
+  <Notes>The loading screen was converted from the Spectrum version by Andy Green (https://www.facebook.com/AndyGreenPixelArt).</Notes>
+</Metadata>

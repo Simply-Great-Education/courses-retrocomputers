@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>MAGICRUFUS-559F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3655b6b2354108e731889b43ec5475ce5d699474</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$559F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Magic Rufus.tap</SourceFile>
+  <SourceFileSHA1>c035de050dfab6e538e65c3166eba8be0d4c323c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x559F "MAGICRUFUS-559F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Magic Rufus.prg"</ExomizerCommand>
+</Metadata>

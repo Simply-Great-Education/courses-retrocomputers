@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>CENTROPODS-3000-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b870d90a235d9ae0f2f2c0c31ca13a58c4987ed6</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3000</Address>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Centropods.tap</SourceFile>
+  <SourceFileSHA1>e726264e47a74c8350fb3e60e5233ebc13b8c452</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "CENTROPODS-3000-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $3000 dec $d030" -x "inc $d020" -o "Centropods.prg"</ExomizerCommand>
+  <Notes>Added a routine at $3000 which sets $0342 in the tape buffer to $14, the same as it would be when actually loading from tape. This is to allow a protection check at $0FF4 to succeed and allow the game to run.</Notes>
+</Metadata>

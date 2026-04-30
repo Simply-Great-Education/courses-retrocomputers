@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SPIRITOFTHESTONES-97D4</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>329ee83e029b99fba53291bb93d0a2e90ead050f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$97D4</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Spirit of the Stones.tap</SourceFile>
+  <SourceFileSHA1>0170fa31527d11f56190e877ad8cc5a1d6f4e906</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x97D4 "SPIRITOFTHESTONES-97D4" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Spirit of the Stones.prg"</ExomizerCommand>
+  <Notes>The entry point $97D4 is hit after entering the correct word on the manual protection step. Dumping at this point obviously removes this step.</Notes>
+</Metadata>

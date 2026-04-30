@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>KILLINGMACHINE-3400-0FCC</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7274c8cb9efcea18e5d34a03cbc3502c7af3f685</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3400</Address>
+    <Address>$0FCC</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Killing Machine.tap</SourceFile>
+  <SourceFileSHA1>e9f94e9175e6da57177d2e2900658a8c68be6150</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0FCC "KILLINGMACHINE-3400-0FCC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $3400 dec $d030" -x "inc $d020" -o "Killing Machine.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $3400 which copies 256 bytes of data from $3410 down to $0300 so that the dump can start at $0400.
+  It then jumps to the entry point at $0FCC (it couldn't use RTS because of the copy overwriting the boot code).</Notes>
+</Metadata>

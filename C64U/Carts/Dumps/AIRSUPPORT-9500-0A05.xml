@@ -1,0 +1,25 @@
+﻿<Metadata>
+  <DumpFile>AIRSUPPORT-9500-0A05</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2140565ce7ab6c7cf6fdc4327a2c7b819a1337a5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9500</Address>
+    <Address>$0A05</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3D</MemoryConfig>
+  <SourceFile>Air Support.g64</SourceFile>
+  <SourceFileSHA1>2a6307764711e7a3cf1e2499c27c9eefbfb270b6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0A05 "AIRSUPPORT-9500-0A05" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3d sta $01 jsr $9500 dec $d030" -x "inc $d020" -o "Air Support.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $9500 which:
+  1. Turns off interrupts from the two CIA chips and acks any pending CIA interrupts
+  2. Calls the init subroutine at $09E8 from the original game code
+  
+  The game is also patched to stop it crashing on PAL machines when a key is pressed as follows:
+  
+  1. Changed the AND #$F0 instruction at $780C to AND #$70
+  2. Changed the AND #$F8 instruction at $792E, $79A3 and $79CB to AND #$78
+  
+  All of these allow the screen control register ($D011) to be updated without crashing the game.</Notes>
+</Metadata>

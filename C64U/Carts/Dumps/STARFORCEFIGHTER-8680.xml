@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>STARFORCEFIGHTER-8680</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f06e5ff284d9eb4228f0297729c6cb978a9d6f67</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8680</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Starforce Fighter.tap</SourceFile>
+  <SourceFileSHA1>732f9af173dc34cff7dde1998cbd2506f81c70d0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8680 "STARFORCEFIGHTER-8680" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Starforce Fighter.prg"</ExomizerCommand>
+</Metadata>

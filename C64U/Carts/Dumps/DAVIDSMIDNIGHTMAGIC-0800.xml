@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>DAVIDSMIDNIGHTMAGIC-0800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>48db99a462d52fb8bce190e9a3ef7d4a966d53dd</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>David's Midnight Magic.tap</SourceFile>
+  <SourceFileSHA1>3acb70f257941cb5c29f18b2f471b2f4d6c18cbb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0800 "DAVIDSMIDNIGHTMAGIC-0800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "David's Midnight Magic.prg"</ExomizerCommand>
+  <Notes>Fixed corrupted highscore table at $B500 (80 bytes) which was present in the original by initialising all scores to zero.</Notes>
+</Metadata>

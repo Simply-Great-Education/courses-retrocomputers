@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>1943-8022</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>70c849964829088a128c23a13af6d796bab28760</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8022</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>1943 - The Battle of Midway.tap</SourceFile>
+  <SourceFileSHA1>72e2311226f5a00559d229d5507eb054f52a3cf7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8022 "1943-8022" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "1943 - The Battle of Midway (J1).prg"</ExomizerCommand>
+</Metadata>

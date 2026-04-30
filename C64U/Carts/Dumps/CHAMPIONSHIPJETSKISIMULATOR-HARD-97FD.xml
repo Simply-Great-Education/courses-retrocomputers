@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>CHAMPIONSHIPJETSKISIMULATOR-HARD-97FD</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>57a5ddbe12498b0bf72c32ffaaa3d83d363429a5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$97FD</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Championship Jet Ski Simulator (Hard).tap</SourceFile>
+  <SourceFileSHA1>2d5e669a9ba92ef75970ecef4e7181a178bab382</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x97FD "CHAMPIONSHIPJETSKISIMULATOR-HARD-97FD" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Championship Jet Ski Simulator (Hard) (J1).prg"</ExomizerCommand>
+  <Notes>The loading screen is based on the Spectrum version</Notes>
+</Metadata>

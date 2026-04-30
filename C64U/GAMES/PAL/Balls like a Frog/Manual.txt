@@ -1,0 +1,34 @@
+Balls like a Frog
+
+You, as a loveable little amphibian, have stumbled upon the temple of Blaf.
+
+This disturbance has made you aware of the Sun god being trapped inside one of the temples, where he is kept encased in stone.
+
+While at this temple you see that it tries to destroy you with spheres on a path, so you must get firing and bust those balls before they reach the skull and end the frog's hopping life.
+
+
+
+Menu control:
+
+- Cursor keys and space or joystick
+
+- In game control:
+
+Direction: The frog rotates towards the joystick direction
+Rotation: Use joystick left/right to rotate frog
+Paddle 1/2: An analogue paddle controls frog rotation
+A 1351 mouse controls direction
+The space bar swaps the two balls (except for mouse mode, where the right mouse button swaps)
+
+
+Game modes:
+
+Adventure: progress through 76 levels and 22 maps to free the sun god.
+Gauntlet: play an endless game one map with increasing difficulty
+Training: improve your skill by playing a single level
+
+https://drmortalwombat.itch.io/balls-like-a-frog
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from drmortalwombat.

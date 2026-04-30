@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>LOOPZ-167D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d4b794b09edb0a2539e0321553fe03e3f1599e3b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$167D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Loopz.d64</SourceFile>
+  <SourceFileSHA1>a3c4b7f7607c6ee8be556901c59e3d66a124c567</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x167D "LOOPZ-167D" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Loopz.prg"</ExomizerCommand>
+</Metadata>

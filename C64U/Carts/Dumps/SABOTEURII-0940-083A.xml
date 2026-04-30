@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>SABOTEURII-0940-083A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7431c6d82ac09b38db04634ed636a130a0c3502e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0940</Address>
+    <Address>$083A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Saboteur II.tap</SourceFile>
+  <SourceFileSHA1>20a9379ed955fb23993e303441759bfafd5a7cb3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x083A "SABOTEURII-0940-083A" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0940 dec $d030" -x "inc $d020" -o "Saboteur II.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0940 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

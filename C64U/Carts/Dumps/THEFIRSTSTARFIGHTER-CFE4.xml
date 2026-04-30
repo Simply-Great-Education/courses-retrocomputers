@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>THEFIRSTSTARFIGHTER-CFE4</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fd32a25d141f45b03bfc64e91f451a287798927c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CFE4</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>First Starfighter, The.tap</SourceFile>
+  <SourceFileSHA1>cf749ed3f124ae6191e7e2c72007e695faf994ea</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCFE4 "THEFIRSTSTARFIGHTER-CFE4" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "First Starfighter, The.prg"</ExomizerCommand>
+</Metadata>

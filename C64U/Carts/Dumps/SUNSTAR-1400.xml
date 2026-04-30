@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SUNSTAR-1400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d3f94e80b152c3406d299cc84f02299d37059f58</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Sun Star.tap</SourceFile>
+  <SourceFileSHA1>c86ff6a2a6f64352e2344bc273b0fac08dfa8e4f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1400 "SUNSTAR-1400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Sun Star.prg"</ExomizerCommand>
+</Metadata>

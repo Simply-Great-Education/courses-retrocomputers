@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>TASKFORCE-1400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ee8768378104b2449ee8483df0602ae1286f2e65</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Taskforce.tap</SourceFile>
+  <SourceFileSHA1>202d40ee54e78b8b8f88c727912789220eadeb7e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1400 "TASKFORCE-1400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Taskforce.prg"</ExomizerCommand>
+  <Notes>The loading screen is based on the Spectrum version</Notes>
+</Metadata>

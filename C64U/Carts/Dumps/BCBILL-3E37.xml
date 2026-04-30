@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>BCBILL-3E37</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>698042d28eaf4d9081ec9543a7a0ecbb4983a6e1</DumpFileSHA1>
+  <SimplifiedName>B.C. Bill</SimplifiedName>
+  <JumpAddresses>
+    <Address>$3E37</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3F</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>BC Bill (Version 2).tap</SourceFile>
+  <SourceFileSHA1>818879217375432b1ef1657edc361ae9bb025036</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3E37 "BCBILL-3E37" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3f sta $01 dec $d030" -x "inc $d020" -o "B.C. Bill.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

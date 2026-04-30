@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>CHAMPIONSHIP3DSNOOKER-0470</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>25f255045a10b8f4b7dbdae4896ab0e26d35ec5f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0470</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Championship 3D Snooker.tap</SourceFile>
+  <SourceFileSHA1>07024cece1e9a33dfceb9fb0e0b845679d5e1763</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0470 "CHAMPIONSHIP3DSNOOKER-0470" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Championship 3D Snooker.prg"</ExomizerCommand>
+</Metadata>

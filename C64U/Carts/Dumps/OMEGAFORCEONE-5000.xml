@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>OMEGAFORCEONE-5000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e2620176c174a9149d746397c52769fd7351a711</DumpFileSHA1>
+  <SimplifiedName>Omega Force One</SimplifiedName>
+  <JumpAddresses>
+    <Address>$5000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Omega Force One (64'er Sonderheft #37 - Side 4).d64</SourceFile>
+  <SourceFileSHA1>3bc64af4d443f983e233742cd41fe68f10d7cf2f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5000 "OMEGAFORCEONE-5000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Omega Force One.prg"</ExomizerCommand>
+</Metadata>

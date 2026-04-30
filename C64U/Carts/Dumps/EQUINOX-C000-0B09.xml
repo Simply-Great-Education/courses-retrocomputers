@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>EQUINOX-C000-0B09</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6776b01a62dece3ab3324d3d24a44c21a64bbc8c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$0B09</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Equinox.tap</SourceFile>
+  <SourceFileSHA1>abdd1f702e421bf08345c8354ffa06a925811368</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0B09 "EQUINOX-C000-0B09" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Equinox.prg"</ExomizerCommand>
+  <Notes>Added a routine at $C000 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.
+  
+  Before entering the game, the routine makes the following changes to default to joystick control:
+  
+  1. Sets $55D4 to $01 (default is $00)
+  2. Sets $535A to $80 (default is $10)
+  3. Sets $5369 to $10 (default is $80)</Notes>
+</Metadata>

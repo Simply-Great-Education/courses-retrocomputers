@@ -1,0 +1,26 @@
+﻿<Metadata>
+  <DumpFile>AUTOMANIA-09F4</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cf9471285d0f9725e8582ab57dfe6fed4115d3b6</DumpFileSHA1>
+  <SimplifiedName>Auto Mania</SimplifiedName>
+  <JumpAddresses>
+    <Address>$09F4</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Auto Mania (Mikro-Gen Version a).tap</SourceFile>
+  <SourceFileSHA1>f27e1412c606235a8f39596089266a474db51653</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x09F4 "AUTOMANIA-09F4" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Auto Mania (J1).prg"</ExomizerCommand>
+  <Notes>Patched $8080 to $01 to default to joystick control.
+  
+  Also made the following changes to allow the joystick button in port one to start the game as well as the return key:
+  
+  1. Patched the JSR $513C instruction at $8016 to be JSR $9000 instead
+  2. Added a small routine at $9000 to check the fire button in port 1 - if pressed, then it sets the accumlator to $12 and returns, which starts the game as if the return key is pressed. If not pressed, the routine then executes the JSR $513C instruction and returns to carry on the normal code flow.
+  3. Updated the message at $7DF9 to reflect the fact that both return or fire can be used to start the game
+  
+  The loading screen is from the Spectrum version</Notes>
+</Metadata>

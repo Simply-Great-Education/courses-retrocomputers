@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>SUPERMANTHEGAME-4E00-502A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0ded890c6583447be0a02caf574790e853d65936</DumpFileSHA1>
+  <SimplifiedName>Superman - The Game</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4E00</Address>
+    <Address>$502A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Superman - The Game (First Star).tap</SourceFile>
+  <SourceFileSHA1>a4b11a3e2be17c3cb2c3f5b4fdab402e3ecb03ab</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x502A "SUPERMANTHEGAME-4E00-502A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $4e00 dec $d030" -x "inc $d020" -o "Superman - The Game.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $4E00 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts. This fixes an occasional lock-up suffered by the original when starting up the game. It also sets the correct border and screen colours.</Notes>
+</Metadata>

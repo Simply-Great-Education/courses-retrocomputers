@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>HAPPYHACKER-0826</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a5897eefbb07a3b5cc8cd516a8c9781cbf5382fd</DumpFileSHA1>
+  <SimplifiedName>Happy Hacker</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0826</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Happy Hacker (Input 64 - 1987-03).d64</SourceFile>
+  <SourceFileSHA1>ae8b9cdb4412161481f1c7115e722e3502a46e68</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "HAPPYHACKER-0826" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Happy Hacker (J1).prg"</ExomizerCommand>
+  <Notes>The BEQ $24AC instruction at $24B2 was NOP'd out to default to joystick control</Notes>
+</Metadata>

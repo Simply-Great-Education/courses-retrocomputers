@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>PEGASIS-07A0-159A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d6d1831a6b6358c713eb3bc539fe5f95d1ed2bd3</DumpFileSHA1>
+  <SimplifiedName>Pegasis</SimplifiedName>
+  <JumpAddresses>
+    <Address>$07A0</Address>
+    <Address>$159A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Pegasis (Bootleg).d64</SourceFile>
+  <SourceFileSHA1>5dd3360641b9c81bf10c6357faa20609fb472c43</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x159A "PEGASIS-07A0-159A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $07a0 dec $d030" -x "inc $d020" -o "Pegasis (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $07A0 which copies $38 bytes of code and data back down to $02A7, so that the game could be dumped from $0400.
+  
+  Note: The source for this game is not a copy of the original disk. Rather, it was extracted from the DISK0573.D64 image contained in OZ Garth's collection gathered by Skylab and uploaded to http://c64disks.hvilket.net/Skylab in 2016.
+  This is a bootleg compilation, but the game files seem to be copies from the original disk.</Notes>
+</Metadata>

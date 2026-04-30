@@ -1,0 +1,27 @@
+﻿<Metadata>
+  <DumpFile>MILLIBUG-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c72843c06e2e431c51cb43ebfea125575af41fec</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Millibug.tap</SourceFile>
+  <SourceFileSHA1>b6e1ec3a64473220cb913a66a8975c27f8913b8a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "MILLIBUG-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Millibug.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC program to display the title screen, so the following steps were taken to retain this:
+  1. When the title screen was shown, the BASIC program from $0801 to $0B30 was dumped to disk. This is because the first part of the program gets overwritten later with a SYS 14314 ($37EA) statement to start the game once it's finished loading.
+  2. When the breakpoint at $37EA was hit, the BASIC program dumped in step 1 was restored into memory before the game memory dump was taken.
+  3. The SYS 2818 statement on line 300 has also been changed to SYS 14314 ($37EA), which is actually the games entry point after loading. This allows the code to jump to the games entry point after the title screen is displayed.
+  4. A new routine was placed at $C000 which sets up the correct VICII settings and necessary BASIC pointers and runs the title screen program. 
+  
+  Also, this game had a form of simple copy protection:
+  1. Code at $4268 checks that the device of the current file ($BA) is tape ($01). 
+  2. Code at $42F6 checks that certain correct values are in within the game filename in the tape buffer at locations $0342, $0347 and $034B.
+  
+  If either of these checks fail, the game hangs. Therefore all of these values are placed at the correct locations by the routine added at $C000 to allow the game to run correctly.
+  
+  Note: to dump, simply set a breakpoint on $37EA</Notes>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>DNAWARRIOR-04EB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f1a21a8492e0d719a9d2bd888a2bfd6956cf853f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$04EB</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>DNA Warrior.tap</SourceFile>
+  <SourceFileSHA1>48e148e9327f09c5869cc8d91cf21f4788e3772e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x04EB "DNAWARRIOR-04EB" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "DNA Warrior.prg"</ExomizerCommand>
+</Metadata>

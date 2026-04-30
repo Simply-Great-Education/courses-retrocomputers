@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>TORNADOLOWLEVEL-16E6</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>504c6389dbf597b0b61565b03ff97af8422a8cf9</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$16E6</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>TLL - Tornado Low Level.tap</SourceFile>
+  <SourceFileSHA1>6f7853a9144d5e9bbeb5cee2dea6336ce42d85c8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x16E6 "TORNADOLOWLEVEL-16E6" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "TLL - Tornado Low Level.prg"</ExomizerCommand>
+  <Notes>The following modifications were made:
+  1. Patched the JMP $1234 instruction at $1143 to be JMP $CA00 instead.
+  2. Added a small routine at $CA00 to check the fire button in port 2 - if pressed, then it sets A to $33 and jumps to $C00E, causing the game to start. If not pressed, the routine then jumps to $1234 to carry on the normal code flow.
+  3. Changed the LDA $01 instruction at $1181 to be LDA $02 instead to default to joystick.
+  4. Changed the STA $04CD instruction at $1179, and the STA $D8CD instruction at $117E to be STA $04F5 and STA $D8F5 respectively to correctly place the currently selected control cursor on joystick in port 2.
+  
+  The loading screen is from the Spectrum version</Notes>
+</Metadata>

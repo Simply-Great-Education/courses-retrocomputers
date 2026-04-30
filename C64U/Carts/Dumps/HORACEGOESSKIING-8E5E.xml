@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>HORACEGOESSKIING-8E5E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9781766fd48f70d239005ca3727e1c9a0f2571a1</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8E5E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Horace Goes Skiing.tap</SourceFile>
+  <SourceFileSHA1>5d6abbeadbabef04867d5495ac2529da50f47279</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8E5E "HORACEGOESSKIING-8E5E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Horace Goes Skiing.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

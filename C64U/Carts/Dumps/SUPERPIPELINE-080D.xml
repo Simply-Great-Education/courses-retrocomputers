@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SUPERPIPELINE-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b13824690c86a5be89aa1d73693003647023b19b</DumpFileSHA1>
+  <SimplifiedName>Super Pipeline</SimplifiedName>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Super Pipeline (Version 1).tap</SourceFile>
+  <SourceFileSHA1>ad4eb33405fc01d66d2880d409bd068e4de5c25d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "SUPERPIPELINE-080D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Super Pipeline (J1).prg"</ExomizerCommand>
+</Metadata>

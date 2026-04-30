@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SHAOLIN-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9d2b0c054374da40881567113b69184879c747e9</DumpFileSHA1>
+  <SimplifiedName>Shaolin (Jon Wells - 2001)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Shaolin.tap</SourceFile>
+  <SourceFileSHA1>2adedcd3552e0afe2d1b9266fb238382d6d009d7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0900 "SHAOLIN-0900" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Shaolin (Jon Wells - 2001).prg"</ExomizerCommand>
+</Metadata>

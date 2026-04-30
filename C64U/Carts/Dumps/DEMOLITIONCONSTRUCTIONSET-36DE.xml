@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>DEMOLITIONCONSTRUCTIONSET-36DE</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ba84827125f59c88908ff07ccf0dc1623a27e3ad</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$36DE</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Demolition Construction Set.d64</SourceFile>
+  <SourceFileSHA1>5d1e923e0ba0dddd0a77a5201f2c4bd7493158c4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x36DE "DEMOLITIONCONSTRUCTIONSET-36DE" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Demolition Construction Set (J1).prg"</ExomizerCommand>
+  <Notes>Didn't use the tape version as that is frozen after the game has started. This is a problem as the init the routine at $0AA1 trashes itself.</Notes>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>DINKYDOO-0400-58DB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>dc3811bd672c5be51f605c00ddd10bdb5844a97a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$58DB</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Dinky Doo.tap</SourceFile>
+  <SourceFileSHA1>6a26d6152ad02ba13716d16cc2337d64f403e808</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x58DB "DINKYDOO-0400-58DB" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Dinky Doo.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 to set the maximum length of the keyboard buffer at $0289 to $08 to allow the game to run.</Notes>
+</Metadata>

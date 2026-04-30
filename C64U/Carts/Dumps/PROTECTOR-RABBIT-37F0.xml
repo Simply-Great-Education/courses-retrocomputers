@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>PROTECTOR-RABBIT-37F0</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>51a65d98ed42f29bd08728019a87b4cd6b413b8e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$37F0</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Protector (Rabbit Software).tap</SourceFile>
+  <SourceFileSHA1>1557b8af7f253235a39271bfabf64437f20a99e1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x37F0 "PROTECTOR-RABBIT-37F0" -Di_table_addr=0x02 -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Protector (Rabbit Software) (J1).prg"</ExomizerCommand>
+  <Notes>Dumped from $0334 as the game checks that $0342 = $54 in order for it to start.</Notes>
+</Metadata>

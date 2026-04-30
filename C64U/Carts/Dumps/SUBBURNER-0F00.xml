@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SUBBURNER-0F00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4c26461d839adfe5ac271aeacaddfff4e520216f</DumpFileSHA1>
+  <SimplifiedName>Sub Burner</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0F00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Sub Burner (Commodore Format Power Pack 43).tap</SourceFile>
+  <SourceFileSHA1>571f1f49fdf2b79f59f17254f6043b0e55a04ec7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0F00 "SUBBURNER-0F00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Sub Burner.prg"</ExomizerCommand>
+  <Notes>Added some code at $2017 (thus overwriting the JMP $2000 instruction) to check the port 2 fire button, which if detected, skips the rather long intro. If not, then the code jumps back to $2000 to continue the normal code flow.</Notes>
+</Metadata>

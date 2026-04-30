@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>MATCHPOINT-0A00-9066</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>13cafeaadaf2b20c12890b125dcd6a3e2691ca79</DumpFileSHA1>
+  <SimplifiedName>Match Point</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0A00</Address>
+    <Address>$9066</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Match Point (Version 3).tap</SourceFile>
+  <SourceFileSHA1>81b2167994a2cbe93faef5806f847428c7212159</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9066 "MATCHPOINT-0A00-9066" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0a00 dec $d030" -x "inc $d020" -o "Match Point.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0A00 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>GOBLIN-1400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1fb7b2bad387e3ba37a50f5d26edbc65d6041a30</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Goblin (Pond Software - 2016).d64</SourceFile>
+  <SourceFileSHA1>e33726a48c4432ace0a59a5449b941ab426339fe</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1400 "GOBLIN-1400" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Goblin (Pond Software - 2016).prg"</ExomizerCommand>
+</Metadata>

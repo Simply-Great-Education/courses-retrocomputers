@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>MAYDAYSQUAD-36F7</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>eb00b1e3e7a614bd941309b475d8ff3e90b60a15</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$36F7</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>175</SidLength>
+  <SourceFile>Mayday Squad!.tap</SourceFile>
+  <SourceFileSHA1>88a37325b6cec20b5761df974563215f8292831b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x36F7 "MAYDAYSQUAD-36F7" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Mayday Squad!.prg"</ExomizerCommand>
+</Metadata>

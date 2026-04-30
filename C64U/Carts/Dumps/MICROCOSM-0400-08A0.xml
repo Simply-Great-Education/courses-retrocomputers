@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MICROCOSM-0400-08A0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9aa122e7f26a66ea206c77a5d4791a2e8df55d7b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$08A0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Microcosm.tap</SourceFile>
+  <SourceFileSHA1>ed5e51d672e3c9d5841f071a763c44d5d133d1df</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x08A0 "MICROCOSM-0400-08A0" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "Microcosm.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0400 to copy the colour RAM data from $9800 (where it was present in the original game) and display the loading screen. It then waits for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

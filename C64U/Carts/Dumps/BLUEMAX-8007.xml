@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>BLUEMAX-8007</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a205f941c38619f2a69c944ed244d8832d047d74</DumpFileSHA1>
+  <SimplifiedName>Blue Max</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8007</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>95</SidLength>
+  <SourceFile>Blue Max (Version 2).tap</SourceFile>
+  <SourceFileSHA1>bc265d12e126d0cac5649b4a4db34fe20e48fbd3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8007 "BLUEMAX-8007" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Blue Max.prg"</ExomizerCommand>
+  <Notes>As the original did not have a loading screen, the one included was converted from the Spectrum version by DATA-LAND of Technische Maschinenfabrik (https://csdb.dk/scener/?id=4845).</Notes>
+</Metadata>

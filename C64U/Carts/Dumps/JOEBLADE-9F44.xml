@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>JOEBLADE-9F44</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3667075fef4a518e0870028a1148b5feea4663bf</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9F44</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Joe Blade.tap</SourceFile>
+  <SourceFileSHA1>751748496aa66b3de3f9fa4bbf195355c6290362</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9F44 "JOEBLADE-9F44" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Joe Blade.prg"</ExomizerCommand>
+  <Notes>The loading screen is based on the Spectrum and Amstrad CPC versions</Notes>
+</Metadata>

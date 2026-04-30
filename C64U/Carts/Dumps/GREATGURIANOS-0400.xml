@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>GREATGURIANOS-0400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>68c4452a37180d002ecc74b5512ac56d43e61170</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Great Gurianos.tap</SourceFile>
+  <SourceFileSHA1>c638d07659622eec59eb944c012d3d5501c1271e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0400 "GREATGURIANOS-0400" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Great Gurianos (J1).prg"</ExomizerCommand>
+  <Notes>NOP'd out the unnecessary JSR $0FAE call at $0448 to fix an issue where the fire button would not start the game when using a Final Cartridge or the BackBit cartridge.
+  The reason for this is that the code checks the value at $DF00 (in I/O Area #2) which is used by both cartridges. The Action Replay is not affected.
+  Thanks to Evie Salomon for finding the issue and LastChance for reporting it.</Notes>
+</Metadata>

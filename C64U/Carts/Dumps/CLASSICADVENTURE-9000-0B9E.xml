@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>CLASSICADVENTURE-9000-0B9E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1d60002ee6ec66872a0f425501b207a0071fac52</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9000</Address>
+    <Address>$0B9E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Classic Adventure.tap</SourceFile>
+  <SourceFileSHA1>818f9f458672a3b5403913ef13b9fa28ca2fd67c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0B9E "CLASSICADVENTURE-9000-0B9E" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $9000 dec $d030" -x "inc $d020" -o "Classic Adventure.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $9000 to set the correct screen colour before starting the game.</Notes>
+</Metadata>

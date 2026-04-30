@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>ALIEN-ARGUSPRESS-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fcdb2707d201115abe9d8135c0c44aadcb779e32</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Alien (Argus Press Software).tap</SourceFile>
+  <SourceFileSHA1>9bfe18c1d1e72d03dd95b74c81754dbfb919d5f2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "ALIEN-ARGUSPRESS-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Alien (Argus Press Software).prg"</ExomizerCommand>
+  <Notes>Made the following changes to allow the joystick button in port two to start the full game:
+  
+  1. Patched the LDA $91, CMP #$FA instructions at $605F to be JSR $1000 instead
+  2. Added a small routine at $1000 to check the fire button in port 2 - if pressed, then it returns, which starts the full game. If not pressed, the routine then executes the LDA $91, CMP #$FA instructions and returns to carry on the normal code flow.</Notes>
+</Metadata>

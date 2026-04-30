@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SUPERPACMAN-106E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c50ca6e855f8acb9afbb7f2dc5714ac65699857a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$106E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Super Pac-Man.g64</SourceFile>
+  <SourceFileSHA1>9f1b605afec7a81bde532f66ba57eab4c32a2b5e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x106E "SUPERPACMAN-106E" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Super Pac-Man (J1).prg"</ExomizerCommand>
+</Metadata>

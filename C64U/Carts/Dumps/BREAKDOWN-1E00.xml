@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>BREAKDOWN-1E00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c057c3bc1294ff3d00e89d8a3d8063b921f247a5</DumpFileSHA1>
+  <SimplifiedName>Breakdown</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1E00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Breakdown (Zzap!64 Megatape #37).tap</SourceFile>
+  <SourceFileSHA1>105cbaf0c06e17cf026059cee19c6112c5e47a9a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1E00 "BREAKDOWN-1E00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Breakdown.prg"</ExomizerCommand>
+  <Notes>Note: as the original game is frozen, the breakpoint to use for dumping is actually $1F40.</Notes>
+</Metadata>

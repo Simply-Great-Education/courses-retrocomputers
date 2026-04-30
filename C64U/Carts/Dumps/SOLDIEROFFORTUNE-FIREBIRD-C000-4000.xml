@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>SOLDIEROFFORTUNE-FIREBIRD-C000-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>30370a93c280948063978a26a3a2f9c8defcdf98</DumpFileSHA1>
+  <SimplifiedName>Soldier of Fortune (Firebird)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Soldier of Fortune (Graftgold).tap</SourceFile>
+  <SourceFileSHA1>6341c2ea5277bb5b70bdd1051e003fa5d886dd32</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "SOLDIEROFFORTUNE-FIREBIRD-C000-4000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Soldier of Fortune (Firebird).prg"</ExomizerCommand>
+  <Notes>This game is really picky on the interrupt and timing setup. Therefore a routine has been added at $C000 which borrows quite a bit of the code found at $C5B1 just before the game starts.
+  Essentially it sets up a temporary IRQ handler, the triggering of which is used to sync everything up.</Notes>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>ACE2-098B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1811bb9556b4f72fa149dae77ee65bb9810f5229</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$098B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>ACE 2.tap</SourceFile>
+  <SourceFileSHA1>2ca5fe13ffef4659662c81c11f7bae395fa3a4e1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x098B "ACE2-098B" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "ACE 2.prg"</ExomizerCommand>
+  <Notes>The value stored at $098A was changed from $03 to $00 to remove the manual protection.</Notes>
+</Metadata>

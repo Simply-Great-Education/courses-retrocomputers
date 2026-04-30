@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>STIX-080F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>742ae6b1895054b1ff0b9afb63f9e9958ba9c65f</DumpFileSHA1>
+  <SimplifiedName>Stix</SimplifiedName>
+  <JumpAddresses>
+    <Address>$080F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Stix (Version 1).tap</SourceFile>
+  <SourceFileSHA1>73a5cb6af8a1b42a5e5504aae209b23867880319</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x080F "STIX-080F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Stix (J1).prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>KEYSTONEKAPERS-0820</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>44456a5ddccd397121fef64dc52715841883741e</DumpFileSHA1>
+  <SimplifiedName>Keystone Kapers (Antonio Savona - 2019)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0820</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Keystone Kapers.prg</SourceFile>
+  <SourceFileSHA1>a96b1427b5d2a5b16314dbc016dd2e6fa5352a63</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0820 "KEYSTONEKAPERS-0820" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Keystone Kapers (Antonio Savona - 2019).prg"</ExomizerCommand>
+</Metadata>

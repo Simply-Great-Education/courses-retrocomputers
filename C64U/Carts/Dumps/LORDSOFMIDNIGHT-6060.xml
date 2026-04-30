@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>LORDSOFMIDNIGHT-6060</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>39c86bf6175559ac5ab7908ac9fa80207d862731</DumpFileSHA1>
+  <SimplifiedName>Lords of Midnight</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6060</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Lords of Midnight (Version a).tap</SourceFile>
+  <SourceFileSHA1>3e5e9b894597d7ec1308a141d78e6457b84cb1fd</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6060 "LORDSOFMIDNIGHT-6060" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Lords of Midnight.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

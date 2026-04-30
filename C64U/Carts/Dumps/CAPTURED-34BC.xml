@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>CAPTURED-34BC</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7f01701df2a8432760da1be933ab022b203fdc84</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$34BC</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Captured.d64</SourceFile>
+  <SourceFileSHA1>808f96f14091fe8c764e1cac9442a598414a4898</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x34BC "CAPTURED-34BC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Captured.prg"</ExomizerCommand>
+</Metadata>

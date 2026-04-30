@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>HOVERBOVVER-8000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>66a7681cac64ca0b6a843330f4aae44142e14be6</DumpFileSHA1>
+  <SimplifiedName>Hover Bovver</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Hover Bovver (Version 1).tap</SourceFile>
+  <SourceFileSHA1>90b3133029ca6850af7d45c59da2a6731561f014</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8000 "HOVERBOVVER-8000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Hover Bovver (J1).prg"</ExomizerCommand>
+</Metadata>

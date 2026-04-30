@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>ZALAGA-1497</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9c28e7a9abb075401ce641d348f4d6ece1004f17</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1497</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Zalaga.tap</SourceFile>
+  <SourceFileSHA1>0ece9b5149f08fc53809332f07be5518e010e476</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1497 "ZALAGA-1497" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Zalaga (J1).prg"</ExomizerCommand>
+  <Notes>The following modifications were made:
+  1. Patched the JMP $166B instruction at $3395 to be JMP $C400 instead.
+  2. Added a small routine at $C400 to set $9B to $FF so that the game defaults to joystick.
+  3. The routine then sets the on-screen control display from the K1 (keyboard) to J1 (joytstick) by setting 16 bytes of data in the bitmap at $BF28.
+  4. The routine then finally jumps to $166B to carry on the normal code flow.</Notes>
+</Metadata>

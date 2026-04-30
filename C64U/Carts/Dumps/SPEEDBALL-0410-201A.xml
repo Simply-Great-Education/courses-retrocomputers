@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>SPEEDBALL-0410-201A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5db827fa0978748e547ccaad36beb742079c524a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0410</Address>
+    <Address>$201A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Speedball.tap</SourceFile>
+  <SourceFileSHA1>4691dd0eaf5cb71e6a53a08bb524392b9211b5e9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x201A "SPEEDBALL-0410-201A" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $0410 dec $d030" -x "inc $d020" -o "Speedball.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0410 to set the CIA #2 timer A and timer B control registers ($DD0E and $DD0F) to allow the game to run.</Notes>
+</Metadata>

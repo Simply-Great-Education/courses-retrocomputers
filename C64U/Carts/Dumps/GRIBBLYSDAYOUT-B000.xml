@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>GRIBBLYSDAYOUT-B000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2156ca6991d71168d267319a937cca2b4528a54e</DumpFileSHA1>
+  <SimplifiedName>Gribbly's Day Out</SimplifiedName>
+  <JumpAddresses>
+    <Address>$B000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Gribbly's Day Out (Rack-It).tap</SourceFile>
+  <SourceFileSHA1>83638c7fe548a4d4088a48e3d075f66f1f393293</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xB000 "GRIBBLYSDAYOUT-B000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Gribbly's Day Out.prg"</ExomizerCommand>
+</Metadata>

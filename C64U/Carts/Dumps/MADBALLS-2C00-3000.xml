@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>MADBALLS-2C00-3000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>aab1b4649e5b35aee5c772d67a737c73f6b11544</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2C00</Address>
+    <Address>$3000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>84</SidLength>
+  <SourceFile>Madballs.tap</SourceFile>
+  <SourceFileSHA1>0fc714492a70394d17531a72eee3a93344887154</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3000 "MADBALLS-2C00-3000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $2c00 dec $d030" -x "inc $d020" -o "Madballs.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $2C00 which copies 768 bytes of data from $2C30 down to $0100 so that the dump can start at $0400.
+  It then jumps to the entry point at $3000 (it couldn't use RTS because of the copy overwriting the boot code).</Notes>
+</Metadata>

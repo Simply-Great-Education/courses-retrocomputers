@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>ARMYMOVES-SIDE2-CC50-2108</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9565e5a0edb3f296697d8930c3fc5b480c0b9f1c</DumpFileSHA1>
+  <SimplifiedName>Army Moves (Side 2)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$CC50</Address>
+    <Address>$2108</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>253</SidLength>
+  <SourceFile>Army Moves (Version 2) (Side 2).tap</SourceFile>
+  <SourceFileSHA1>268124a15db808a8fd5bef477f2d22bd5659f3d1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2108 "ARMYMOVES-SIDE2-CC50-2108" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $cc50 dec $d030" -x "inc $d020" -o "Army Moves (Side 2).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $CC50 to set $F503 to $01 which skips the code entry step.</Notes>
+</Metadata>

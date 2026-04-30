@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SKYRUNNER-0847</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>15cd2575ca403088c89405304d37da708bc53b8e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0847</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Sky Runner.tap</SourceFile>
+  <SourceFileSHA1>33f838df9d8a4b6d00f92daad1826da6af55026c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0847 "SKYRUNNER-0847" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Sky Runner.prg"</ExomizerCommand>
+</Metadata>

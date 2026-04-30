@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>RASTERSCAN-0A00-0BB8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4f7c00c926bc09a8c7ecf0d28f55cd7fe75ac7ef</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0A00</Address>
+    <Address>$0BB8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Rasterscan.tap</SourceFile>
+  <SourceFileSHA1>3fbf7221056d806141ac0d0ce4d6e7289bf74ae8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0BB8 "RASTERSCAN-0A00-0BB8" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0a00 dec $d030" -x "inc $d020" -o "Rasterscan.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0A00 to set the current device number ($BA) to $01 (tape) to allow the game to run correctly.</Notes>
+</Metadata>

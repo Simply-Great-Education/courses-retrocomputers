@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>CYBOTRON-0850</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>24b61ead6a088d4cfa3192bb39e90a3d9ce04396</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0850</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Cybotron.tap</SourceFile>
+  <SourceFileSHA1>edb83274990a76be4fd3e17c4cb40ade9448cab8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "CYBOTRON-0850" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Cybotron.prg"</ExomizerCommand>
+</Metadata>

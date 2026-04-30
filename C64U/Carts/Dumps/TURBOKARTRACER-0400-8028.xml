@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>TURBOKARTRACER-0400-8028</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>64d486ddd31b771d5b3de96ed858b664860ff8c7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$8028</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Turbo Kart Racer.tap</SourceFile>
+  <SourceFileSHA1>0d3a8236a238fd082cc16d6aa7cd634896e2d354</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "TURBOKARTRACER-0400-8028" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Turbo Kart Racer (J1).prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

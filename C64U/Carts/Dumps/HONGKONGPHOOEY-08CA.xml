@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>HONGKONGPHOOEY-08CA</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2cfea85ce6bff59b30d73a22b8d26f8037339938</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$08CA</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Hong Kong Phooey.tap</SourceFile>
+  <SourceFileSHA1>4e9ef491e9c201f696dab3083c3a03f4841d0d3b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x08CA "HONGKONGPHOOEY-08CA" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Hong Kong Phooey.prg"</ExomizerCommand>
+</Metadata>

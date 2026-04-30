@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>SUPERSPRINT-1TO4-5000-9480</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>ffa102929c8140f70bcc5b4845e520f9c124707a</DumpFileSHA1>
+  <SimplifiedName>Super Sprint - Tracks 1-4</SimplifiedName>
+  <JumpAddresses>
+    <Address>$5000</Address>
+    <Address>$9480</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Super Sprint.tap</SourceFile>
+  <SourceFileSHA1>8e2bb7ea87cde603fd7a9fc8623c7b2bbdcd1f83</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9480 "SUPERSPRINT-1TO4-5000-9480" -Di_table_addr=0x02 -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $5000 dec $d030" -x "inc $d020" -o "Super Sprint - Tracks 1-4.prg"</ExomizerCommand>
+  <Notes>NOP'd out the BEQ instruction at $AC3D to remove the option to load tracks 5-8 and just offer tracks 1-4 again.</Notes>
+</Metadata>

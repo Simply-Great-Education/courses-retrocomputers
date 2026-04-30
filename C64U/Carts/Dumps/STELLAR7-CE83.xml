@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>STELLAR7-CE83</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cc79c3ffb48d18a0c5611700a1a6033e1bb0736f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CE83</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Stellar 7.tap</SourceFile>
+  <SourceFileSHA1>98fee3485d8800f0f67bf796a5b9076ffcffed8e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCE83 "STELLAR7-CE83" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Stellar 7.prg"</ExomizerCommand>
+</Metadata>

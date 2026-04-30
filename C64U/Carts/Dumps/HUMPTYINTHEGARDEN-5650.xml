@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>HUMPTYINTHEGARDEN-5650</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>73c37695f0f1d98d1d3f296190e5b16f45cba783</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5650</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Humpty in the Garden.tap</SourceFile>
+  <SourceFileSHA1>81fa409f25237e388daf3b8c5a596b48f6823513</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5650 "HUMPTYINTHEGARDEN-5650" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Humpty in the Garden.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>STRANGELOOP-B191</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9f70f7be9b6ba3cff61d0bbdc49b51f1385266cb</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$B191</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Strangeloop.tap</SourceFile>
+  <SourceFileSHA1>02f361a51c29007dd645e59aca8df49464f74d21</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xB191 "STRANGELOOP-B191" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Strangeloop.prg"</ExomizerCommand>
+  <Notes>To allow the dump to start from $0400, the following changes were made:
+  
+  1. A small routine at $02A7 was moved to $9A80 instead.
+  2. The JSR $02A7 instruction at $FADC was changed to JSR $9A80 instead.
+  
+  The loading screen is from the Spectrum version</Notes>
+</Metadata>

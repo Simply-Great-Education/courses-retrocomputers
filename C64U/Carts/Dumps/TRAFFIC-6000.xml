@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>TRAFFIC-6000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a9caec02e8438b102b7194f9b2e9eaf2deb00cea</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$6000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Traffic.tap</SourceFile>
+  <SourceFileSHA1>5e28e4132d9eca8c55852f749a08b0bda931794c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6000 "TRAFFIC-6000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Traffic.prg"</ExomizerCommand>
+  <Notes>Modified the CPX $DD07 instruction at $6073 to JMP $4700 to skip the message about plugging the joystick into port 1.
+  
+  Note: the game should be dumped on the 2nd hit at $6000.</Notes>
+</Metadata>

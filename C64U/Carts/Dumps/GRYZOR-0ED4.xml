@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>GRYZOR-0ED4</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>aa8c8878f0153bd18c2a412c249ccf16f5d1f5f1</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0ED4</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>169</SidLength>
+  <SourceFile>Gryzor.tap</SourceFile>
+  <SourceFileSHA1>7f6ef019d6d080c7dee7e19530ed2d0fbc894b51</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0ED4 "GRYZOR-0ED4" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Gryzor.prg"</ExomizerCommand>
+</Metadata>

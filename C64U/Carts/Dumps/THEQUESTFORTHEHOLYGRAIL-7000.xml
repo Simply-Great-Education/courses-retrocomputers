@@ -1,0 +1,25 @@
+﻿<Metadata>
+  <DumpFile>THEQUESTFORTHEHOLYGRAIL-7000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5ab72fe27af66236a7f65661035eb35dbf9fcd35</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Quest for the Holy Grail, The.tap</SourceFile>
+  <SourceFileSHA1>f17a5ffbf5146c57b8a9e28dbf21811caf38c429</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7000 "THEQUESTFORTHEHOLYGRAIL-7000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Quest for the Holy Grail, The.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $0801.
+  Therefore an init routine has been added at $7000 to setup the necessary BASIC pointers and execute the RUN command to start the game program.
+  To avoid the bad statement at $0801, the routine sets the pointer to the beginning of the BASIC area ($2B/$2C) to $0850 so as to start the program at line 1.
+  
+  Also zeroed out the following memory ranges as they contained an unnecessary repeating memory block:
+  
+  $6BF0 - $73FF
+  $8BF0 - $BEFF
+  
+  Note: to dump the game, set a breakpoint at $C000</Notes>
+</Metadata>

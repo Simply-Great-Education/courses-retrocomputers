@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>THEVICESQUAD-0400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ad769cb26693ea3caba988e25c681ed5eb80fd9a</DumpFileSHA1>
+  <SimplifiedName>Vice Squad, The (Psytronik - 2013)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>170</SidLength>
+  <SourceFile>Vice Squad, The.tap</SourceFile>
+  <SourceFileSHA1>8461ccf642b24c26e011f9e357f3f28c1f0a5248</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0400 "THEVICESQUAD-0400" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Vice Squad, The (Psytronik - 2013).prg"</ExomizerCommand>
+</Metadata>

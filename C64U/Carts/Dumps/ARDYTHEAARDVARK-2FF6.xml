@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>ARDYTHEAARDVARK-2FF6</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1fe0a1a54a18fa3e8d8f6f6a4f59046aeebf55fd</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2FF6</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Ardy The Aardvark.tap</SourceFile>
+  <SourceFileSHA1>c51384f21532d2e66b2429b2eb6e303a662c83ce</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2FF6 "ARDYTHEAARDVARK-2FF6" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ardy The Aardvark.prg"</ExomizerCommand>
+  <Notes>The loading screen is a conversion from the Atari 8-bit computer family version</Notes>
+</Metadata>

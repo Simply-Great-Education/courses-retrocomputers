@@ -1,0 +1,24 @@
+﻿<Metadata>
+  <DumpFile>AMAZONTALES-C000-F2DF</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>81d213ca620337dde4d2a46755df5bbf4b0f84c2</DumpFileSHA1>
+  <SimplifiedName>Amazon Tales (TND - 2019)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$F2DF</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Amazon Tales.tap</SourceFile>
+  <SourceFileSHA1>167ece53bd3216f9fa4f593f22bcf74f83a32b8f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xF2DF "AMAZONTALES-C000-F2DF" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Amazon Tales (TND - 2019).prg"</ExomizerCommand>
+  <Notes>Added a routine at $C000 which:
+  
+  1. Copies 256 bytes of data from $C060 down to $0200 so that the dump can start at $0400 (this block contains the data for the press space sprite on the loading screen)
+  2. Sets up the correct VICII settings to display the loading screen
+  3. Copies the colour RAM data from $4328 (where it was present in the original game) to display the loading screen correctly
+  4. Sets the current device number ($BA) to $01 (tape) to disable highscore loading and saving to disk
+  5. Initialises the loading music by calling the routine at $1000</Notes>
+</Metadata>

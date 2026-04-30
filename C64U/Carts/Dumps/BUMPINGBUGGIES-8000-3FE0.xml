@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>BUMPINGBUGGIES-8000-3FE0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a53ad70568105ebec5a63d3a593d5637949a1c2f</DumpFileSHA1>
+  <SimplifiedName>Bumping Buggies</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8000</Address>
+    <Address>$3FE0</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Bumping Buggies (Version 1).tap</SourceFile>
+  <SourceFileSHA1>095bfd8a1a04eac54fa6d7e0ad7c88bbce0a34bc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "BUMPINGBUGGIES-8000-3FE0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $8000 dec $d030" -x "inc $d020" -o "Bumping Buggies.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $8000 which sets $034C to $3D (the equals sign). Without this the game will not start (probably a simple protection check to ensure this byte in the tape buffer is set as expected by a real load from tape).</Notes>
+</Metadata>

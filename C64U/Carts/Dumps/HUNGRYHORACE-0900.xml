@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>HUNGRYHORACE-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>aeea17c8fb12715b1329fcb8e94f14eb7f1a6af3</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Hungry Horace.tap</SourceFile>
+  <SourceFileSHA1>72bb9048174e4805d9e5b9295f01bc898887a77a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0900 "HUNGRYHORACE-0900" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Hungry Horace.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>ROLLAROUND-4A38</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c689bb8a3fb0817f416e5120a1cc2312f540b64a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4A38</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Rollaround.tap</SourceFile>
+  <SourceFileSHA1>c1b9443cdc3a885a7f9e32617a573d07ef2a80c7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4A38 "ROLLAROUND-4A38" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Rollaround.prg"</ExomizerCommand>
+  <Notes>The loading screen is based on the Spectrum version</Notes>
+</Metadata>

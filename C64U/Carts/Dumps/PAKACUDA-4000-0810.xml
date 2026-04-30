@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>PAKACUDA-4000-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6ed06469001075de21f09cd54dbc6e216597c4d4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Pakacuda.tap</SourceFile>
+  <SourceFileSHA1>aeaa3544e839cb12e3b502362bedbe66229fc30a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "PAKACUDA-4000-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $4000 dec $d030" -x "inc $d020" -o "Pakacuda.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $4000 which sets $0342 to $14 so that a protection check at $0895 passes.</Notes>
+</Metadata>

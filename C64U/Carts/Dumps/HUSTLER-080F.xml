@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>HUSTLER-080F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f2590c0b7e426f61411b7fdc08452ca49a8c9616</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080F</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Hustler.tap</SourceFile>
+  <SourceFileSHA1>a22218fc78ef1694d84114147cf3e2c3e6a09f08</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "HUSTLER-080F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Hustler.prg"</ExomizerCommand>
+  <Notes>Changed the CMP #$3D instruction at $088C to RTS, NOP to remove the protection check (the value $3D is stored at $034C after the load from the original tape).</Notes>
+</Metadata>

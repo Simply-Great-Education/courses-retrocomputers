@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>MONTEZUMASREVENGE-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>619f67c4585d5d383711a41ab2df6308eb922f3d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Montezuma's Revenge.tap</SourceFile>
+  <SourceFileSHA1>0a8d3810ce8ec05be58a67f2e1f49abb9171c6b6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "MONTEZUMASREVENGE-080D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Montezuma's Revenge.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>JOHNNYREBII-08D7</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0d1fffedb4d755c6caa1c6de006e1864ca71f85c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$08D7</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Johnny Reb II.tap</SourceFile>
+  <SourceFileSHA1>862871c93f2d3993d897ad33ffdd335a05e99542</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x08D7 "JOHNNYREBII-08D7" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Johnny Reb II.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,85 @@
+Sceptre Of Baghdad
+
+
+Introduction
+
+Cyclops - the one-eyed giant. Medusa - who will turn you to stone with just a glance.
+A burning desert, a shark-infested river. All these things and more must be passed before the Caliph of Baghdad can recover the sacred sceptre and prove his right to rule his beloved country.
+
+
+The Story
+
+It was the first day of the year and the people had started to gather in the palace
+yard. At noon, the beloved Caliph must show the sacred sceptre to prove his rule to rule over the land of Baghdad.
+
+However, several hours earlier:
+
+The Caliph woke up in his bed feeling strange - everything around him seemed to have
+grown bigger. Nervously, he ran through his palace to the room where he kept his magic
+lamp. He climbed onto the table and polished the lamp until a genie appeared.
+
+"How can I help you, O master?"
+"Why am I so small?! What has happened to my palace?! What does all this mean?!" asked
+the Caliph.
+
+After an oppressive silence, the genie spoke again.
+
+"It seems that an evil wizard from a land across the Great Sea has conjured your palace full of demons and obstacles to prevent you from showing the sceptre at noon. He intends to divest you of all your power and become the Caliph himself."
+
+"What can I do? Can you help me?" asked the Caliph.
+"I am doomed to stay in this lamp," replied the genie. "But whenever I can, I will try to give you some helpful clues and I grant you the power to fire magic orbs that will destroy some of the demons sent by the Wizard."
+
+
+
+Game Objective
+
+The Caliph must find the sceptre of Baghdad and walk with it to the palace balcony.
+
+
+
+Objects
+
+When the Caliph picks up an object, this will be replaced with the current object in the display. Use F1 to switch the object in the display so that it cannot be dropped. Up to four objects can be carried at any time. Some puzzles require more than one object.
+
+
+
+Hints And Tips
+
+1. Lamp
+You can ask the genie for clues using the hanky on the lamp. (It's a good idea to leave the hanky in the same room.) When you think you have solved the clue, you can ask for another.
+
+2. Potion
+During your travels, you may find a potion. When you drink it, it will store that stage of the game. You can return to that position by selecting "Old Game" on the options menu. Note: There is only one potion in each game. If you choose the "Old Game" option, there will not be a new potion.
+
+3. Map
+Important: Make a map and list of objects and locations
+
+4. The End Sequence
+This can be found after the actual game on the tape. Reset your machine and follow normal instructions. To view the end sequence, enter the password which is given to you when you complete the game!
+
+
+
+Controls
+
+O - Left
+P - Right
+Q - Jump
+A - Enter door, use magic carpet or use held object
+SPACE - Fire orb
+
+You may use a joystick plugged into port 2 if you prefer.
+
+F1 - Cycle through held objects, F3 - Toggle "Fire mode"
+
+RUN/STOP - Pause/Resume
+INST/DEL - Quit
+I - Change filter of music or effects to suit your machine
+
+You can select one of three different colour options when the game starts.
+
+
+https://psytronik.net
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Psytronik Software.

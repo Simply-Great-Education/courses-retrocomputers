@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MAINFRAME-6E30-0801</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>578e59ded379d1aaf8112e0b1ea5d5bf09524049</DumpFileSHA1>
+  <SimplifiedName>Main Frame</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6E30</Address>
+    <Address>$0801</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Main Frame (Microillusions).g64</SourceFile>
+  <SourceFileSHA1>06b06e9213c2ff4d0fc5d084d2e1601ac47fbc7b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0801 "MAINFRAME-6E30-0801" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $6e30 dec $d030" -x "inc $d020" -o "Main Frame.prg"</ExomizerCommand>
+</Metadata>

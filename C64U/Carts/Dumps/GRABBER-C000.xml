@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>GRABBER-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>eb2e2dd687cc0adafbe6dbef7823f348c49fb314</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Grabber.tap</SourceFile>
+  <SourceFileSHA1>12895a270c0a0d444c06c76a29bd9f368533ddd4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "GRABBER-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Grabber.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game with the main program being loaded at $0801. Therefore an init routine has been added at $C000 which:
+  1. Sets up the correct VICII settings and necessary BASIC pointers.
+  2. Disables the RUN/STOP key by modifying the STOP vector by setting $FE at $0328.
+  3. Executes the RUN command to start the command to start the game program.
+  
+  Note: The ON statement on line number 20 of the BASIC program has been changed to so that the first two line numbers are 500 and 200 so as to skip the load commands on lines 100, 110 and 120.</Notes>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>EDDIEKIDDJUMPCHALLENGE-0AEB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fc3bf6af5d4b757e749b33fe03c4e3dabf80fb1d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0AEB</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3D</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Eddie Kidd Jump Challenge.tap</SourceFile>
+  <SourceFileSHA1>21395433311d93a26e9ebcbc9d336c98840ff855</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0AEB "EDDIEKIDDJUMPCHALLENGE-0AEB" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3d sta $01 dec $d030" -x "inc $d020" -o "Eddie Kidd Jump Challenge.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

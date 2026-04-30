@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>LIFEFORCE-CRL-0400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>33697c88e4edd34066b06de17171391ceca7f099</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Lifeforce (CRL).tap</SourceFile>
+  <SourceFileSHA1>203f364b9e04972f795cef329f801730a624ecc8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0400 "LIFEFORCE-CRL-0400" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Lifeforce (CRL).prg"</ExomizerCommand>
+</Metadata>

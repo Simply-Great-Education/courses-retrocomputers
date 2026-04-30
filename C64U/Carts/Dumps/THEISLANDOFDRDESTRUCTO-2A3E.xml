@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>THEISLANDOFDRDESTRUCTO-2A3E</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>4320a94cadd47ba16ba93d722a675e489bdb18c8</DumpFileSHA1>
+  <SimplifiedName>Island of Dr Destructo, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2A3E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Island of Dr Destructo The.tap</SourceFile>
+  <SourceFileSHA1>886863eb979c40d45ea8bf2f0e9ae944a54f8837</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2A3E "THEISLANDOFDRDESTRUCTO-2A3E" -Di_table_addr=0x02 -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Island of Dr Destructo, The.prg"</ExomizerCommand>
+</Metadata>

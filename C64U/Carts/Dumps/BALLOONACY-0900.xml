@@ -1,0 +1,25 @@
+﻿<Metadata>
+  <DumpFile>BALLOONACY-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8faafc3a484d46732ec62648e27eaef2a7c538d2</DumpFileSHA1>
+  <SimplifiedName>Balloonacy (TND - 2002)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>192</SidLength>
+  <SourceFile>Balloonacy.tap</SourceFile>
+  <SourceFileSHA1>e7b0cca9198f776fbbc43f0eff2115cafb7a2fb5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0900 "BALLOONACY-0900" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Balloonacy (TND - 2002).prg"</ExomizerCommand>
+  <Notes>Because the original cruncher used for both parts 1 and 2 fiddled with $DE00, it inadvertently banked in parts of the MagicDesk cartridge at $8000, which caused the colour RAM to be initialiased incorrectly for the title screen on both parts.
+  Therefore both parts were dumped separately and recrunched using Exomizer. The original menu routine at $0900 was then rewritten to handle copying of the crunched data for the chosen part and jumping to $080D to start the decrunching process.
+  The code checking for part 2 was also removed (the code for the original menu is: 376632).
+  
+  Notes:
+  1. To dump part 1 set a breakpoint at $0FA0
+  2. To dump part 2 set a breakpoint at $0F40
+  3. The crunched part 1 is at $1000 and part 2 is at $4400 in the rebuilt dump file</Notes>
+</Metadata>

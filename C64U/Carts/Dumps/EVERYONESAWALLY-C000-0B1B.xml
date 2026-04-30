@@ -1,0 +1,26 @@
+﻿<Metadata>
+  <DumpFile>EVERYONESAWALLY-C000-0B1B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8da0fa58eec5c99b5730b55f289ddab22f74d87e</DumpFileSHA1>
+  <SimplifiedName>Everyone's a Wally</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$0B1B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Everyone's a Wally (Mikro-Gen Version a).tap</SourceFile>
+  <SourceFileSHA1>8e3747bdc84cd3e7286515e593e99716b572497c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0B1B "EVERYONESAWALLY-C000-0B1B" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c000 dec $d030" -x "inc $d020" -o "Everyone's a Wally.prg"</ExomizerCommand>
+  <Notes>Added a routine at $C000 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.
+  
+  Before starting the game, the routine sets $4385 to $01 to default to joystick control.
+  
+  Also made the following changes to allow the joystick button in port two to start the game as well as the space bar:
+  
+  1. Patched the LDA $4489 instruction at $43DA to be JSR $07D0 instead
+  2. Added a small routine at $07D0 to check the fire button in port 2 - if pressed, then it sets the accumlator to zero and returns, which starts the game. If not pressed, the routine then executes the LDA $4489 instruction and returns to carry on the normal code flow.
+  3. Updated the message at $1342 to reflect the fact that both space or fire can be used to start the game</Notes>
+</Metadata>

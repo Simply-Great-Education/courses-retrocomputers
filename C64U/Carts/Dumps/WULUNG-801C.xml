@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>WULUNG-801C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5c66bd0c4763d4da159be1a571017be9de77b666</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$801C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Wu Lung.d64</SourceFile>
+  <SourceFileSHA1>571ad1a1e843007b4f842f5a6b89b15b784748a8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x801C "WULUNG-801C" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Wu Lung.prg"</ExomizerCommand>
+</Metadata>

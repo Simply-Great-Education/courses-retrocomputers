@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SLUGVSLETTUCE-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f16a455a27fd58c80cff11512174b99e6411b819</DumpFileSHA1>
+  <SimplifiedName>Slug vs Lettuce (Scene World Magazine - 2022)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Slug vs Lettuce.tap</SourceFile>
+  <SourceFileSHA1>20eb7a8299af791344be192cee493b124c3231fc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "SLUGVSLETTUCE-1000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Slug vs Lettuce (Scene World Magazine - 2022).prg"</ExomizerCommand>
+</Metadata>

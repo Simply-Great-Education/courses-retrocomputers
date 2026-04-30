@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MENTALMOONS-CFD0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>008ee7d356983325238af1bcaa4d08f3ef2193de</DumpFileSHA1>
+  <SimplifiedName>Mental Moons</SimplifiedName>
+  <JumpAddresses>
+    <Address>$CFD0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Mental Moons (Commodore Zone #5 - Side A).d64</SourceFile>
+  <SourceFileSHA1>e8fb35cfac76dbc876cdae53e408069d6873b67c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCFD0 "MENTALMOONS-CFD0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Mental Moons.prg"</ExomizerCommand>
+</Metadata>

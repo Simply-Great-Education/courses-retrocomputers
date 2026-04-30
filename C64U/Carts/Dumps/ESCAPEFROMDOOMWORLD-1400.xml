@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>ESCAPEFROMDOOMWORLD-1400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>99d7dd2e6aed2e7b9adbdf5f4becd278064f4923</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Escape from Doomworld.tap</SourceFile>
+  <SourceFileSHA1>7bc74f533c7ae51ba372c96f76bf76e3f0dedec7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1400 "ESCAPEFROMDOOMWORLD-1400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Escape from Doomworld.prg"</ExomizerCommand>
+</Metadata>

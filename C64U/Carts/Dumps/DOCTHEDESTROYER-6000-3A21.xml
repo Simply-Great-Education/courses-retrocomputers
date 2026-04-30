@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>DOCTHEDESTROYER-6000-3A21</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>01be7c78fbc77c0206a84ad4985276a4eeed4541</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$6000</Address>
+    <Address>$3A21</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3F</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Doc - The Destroyer.tap</SourceFile>
+  <SourceFileSHA1>538fc4e11c371213a3d9cc52319b3c57b4b03fc4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3A21 "DOCTHEDESTROYER-6000-3A21" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3f sta $01 jsr $6000 dec $d030" -x "inc $d020" -o "Doc - The Destroyer (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $6000 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to run correctly.</Notes>
+</Metadata>

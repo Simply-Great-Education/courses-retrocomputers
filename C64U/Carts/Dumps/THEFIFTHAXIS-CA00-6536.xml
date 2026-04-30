@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>THEFIFTHAXIS-CA00-6536</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ed50da1d8e695c02a19d6ed23704a3fc2d33f4dc</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CA00</Address>
+    <Address>$6536</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Fifth Axis, The.tap</SourceFile>
+  <SourceFileSHA1>f858b5ad0b986479a6d16a0f99870507a639c125</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6536 "THEFIFTHAXIS-CA00-6536" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $ca00 dec $d030" -x "inc $d020" -o "Fifth Axis, The.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $CA00 which sets $0101 to $01 and $0102 to $41 to allow the game to run correctly (these values are used to set $DC0E and $DC0F at $65A7 and $65AD)</Notes>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>DIZZYPRINCEOFTHEYOLKFOLK-077E-18F1</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6996f59c302241346d6331e3c5580045083a87d1</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$077E</Address>
+    <Address>$18F1</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Dizzy - Prince of the Yolkfolk!.tap</SourceFile>
+  <SourceFileSHA1>093dbeb00094574ea12bc4df8ee4a1db95aff896</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x18F1 "DIZZYPRINCEOFTHEYOLKFOLK-077E-18F1" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $077e dec $d030" -x "inc $d020" -o "Dizzy - Prince of the Yolkfolk!.prg"</ExomizerCommand>
+  <Notes>Added a routine at $077E to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>AUFWIEDERSEHENMONTY-5410</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>43bae0ea11d855a241cf5cee90ad939ca80fea83</DumpFileSHA1>
+  <SimplifiedName>Auf Wiedersehen Monty</SimplifiedName>
+  <JumpAddresses>
+    <Address>$5410</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Auf Wiedersehen Monty (Gremlin - 10 Great Games II).tap</SourceFile>
+  <SourceFileSHA1>1f72ad843804542844456b671545467099c9e320</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5410 "AUFWIEDERSEHENMONTY-5410" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Auf Wiedersehen Monty (J1).prg"</ExomizerCommand>
+  <Notes>As the original did not have a loading screen, the one included was converted from the Spectrum version by DATA-LAND of Technische Maschinenfabrik (https://csdb.dk/scener/?id=4845).</Notes>
+</Metadata>

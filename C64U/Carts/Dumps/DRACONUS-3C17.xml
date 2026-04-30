@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>DRACONUS-3C17</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5e825fcb9d0a43c11601bb52271d13c5933f2d35</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3C17</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Draconus.tap</SourceFile>
+  <SourceFileSHA1>6bfbef80c294ffaee6296cbda39d1a8ac58e17a6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3C17 "DRACONUS-3C17" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Draconus.prg"</ExomizerCommand>
+</Metadata>

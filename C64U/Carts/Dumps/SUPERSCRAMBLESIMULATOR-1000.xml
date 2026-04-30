@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SUPERSCRAMBLESIMULATOR-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1a9e459074ffcade35b3fc18377e502614f9f7ef</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Super Scramble Simulator.tap</SourceFile>
+  <SourceFileSHA1>98ab54df2a87c3af76f1a2efa830a4936e3095f3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "SUPERSCRAMBLESIMULATOR-1000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Super Scramble Simulator.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

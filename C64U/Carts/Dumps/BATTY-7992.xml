@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BATTY-7992</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fb492c86cae518a049e059c3a4f4acd5b0fe0878</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7992</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Batty.tap</SourceFile>
+  <SourceFileSHA1>3216e07165e08c3d858aa0c1a56c0917404c0ae8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7992 "BATTY-7992" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Batty.prg"</ExomizerCommand>
+</Metadata>

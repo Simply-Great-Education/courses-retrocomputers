@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>ANTERPLANTER-3000-CC00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>417e54cd1582c125b2628c28628ac995546bd6d8</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3000</Address>
+    <Address>$CC00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>Anter Planter.tap</SourceFile>
+  <SourceFileSHA1>54009b994f52cf0c26b05eb17e5b7c1f01aa3510</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCC00 "ANTERPLANTER-3000-CC00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $3000 dec $d030" -x "inc $d020" -o "Anter Planter.prg"</ExomizerCommand>
+  <Notes>Added a routine at $3000 to display the loading screen and wait for any key or the fire button on either joystick to enter the game. The first part of this routine uses the original code from $11D6 which is used by the original loader.</Notes>
+</Metadata>

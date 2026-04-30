@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SURVIVOR-0400-E000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d7da7ce80c2dcf5cdf63c5e75e9538c193b503b9</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$E000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3D</MemoryConfig>
+  <SourceFile>Survivor.tap</SourceFile>
+  <SourceFileSHA1>1e8e8d6e7ba949dc22ec7dd182bc084f497a72cd</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xE000 "SURVIVOR-0400-E000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3d sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "Survivor.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 which turns off interrupts from the two CIA chips and acks any pending CIA interrupts.</Notes>
+</Metadata>

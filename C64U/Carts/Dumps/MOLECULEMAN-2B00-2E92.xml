@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MOLECULEMAN-2B00-2E92</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2ad7d94fccdf278c02e95038f0a1e738984a04ce</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2B00</Address>
+    <Address>$2E92</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Molecule Man.tap</SourceFile>
+  <SourceFileSHA1>d55a9837873a614156d0ff5f49620b4bec23d82b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2E92 "MOLECULEMAN-2B00-2E92" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $2b00 dec $d030" -x "inc $d020" -o "Molecule Man.prg"</ExomizerCommand>
+  <Notes>Added a routine at $2B00 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

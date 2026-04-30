@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>LITTISHOTSHOT-083F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>91083e14a51733e89f0616abcedcdf034a456827</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$083F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Litti's Hot Shot.tap</SourceFile>
+  <SourceFileSHA1>b1de864029489007536a8ffd33e6d25b126b4c2e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x083F "LITTISHOTSHOT-083F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Litti's Hot Shot.prg"</ExomizerCommand>
+</Metadata>

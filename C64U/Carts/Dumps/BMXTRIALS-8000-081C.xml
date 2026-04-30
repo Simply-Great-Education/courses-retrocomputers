@@ -1,0 +1,25 @@
+﻿<Metadata>
+  <DumpFile>BMXTRIALS-8000-081C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>65bfbd65b7cf988ddb6b134ad5eb362cb843cb17</DumpFileSHA1>
+  <SimplifiedName>BMX Trials</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8000</Address>
+    <Address>$081C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>BMXTRIALS-CRAM-8100</ColourRAMFile>
+  <ColourRAMStartAddress>$8100</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>BMX Trials (Version 1).tap</SourceFile>
+  <SourceFileSHA1>f35f2ac6ab40e4857213109d01f3cb9b1b266fbd</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x081C "AlternativeFormats\PRGs\Uncrunched\BMX Trials (J1).prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $8100 lda #$37 sta $01 jsr $8000 dec $d030" -x "inc $d020" -o "BMX Trials (J1).prg"</ExomizerCommand>
+  <Notes>Added a routine at $8000 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  It then zeroes out $FB-$FE to allow the game to start correctly and sets up the correct VICII settings for the game itself.
+  
+  The memory between $8000-$CBFF contained an unecessary repeating memory block. Therefore this range was zeroed out.</Notes>
+</Metadata>

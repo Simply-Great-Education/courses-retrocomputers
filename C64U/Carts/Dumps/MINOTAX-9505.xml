@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MINOTAX-9505</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f6f1b611f7b08697b7dc97ab693165ba2b9c0479</DumpFileSHA1>
+  <SimplifiedName>Minotax</SimplifiedName>
+  <JumpAddresses>
+    <Address>$9505</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Minotax (S+S Soft).tap</SourceFile>
+  <SourceFileSHA1>744622458c4a7976ae90e413e3dc4d4e9e7a5f74</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9505 "MINOTAX-9505" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Minotax.prg"</ExomizerCommand>
+</Metadata>

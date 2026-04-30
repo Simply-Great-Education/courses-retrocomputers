@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>FREEWAY-ARLASOFT-91FE</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>89098083fc6620ed850ea3d168d25e0293663956</DumpFileSHA1>
+  <SimplifiedName>Freeway (Arlasoft - 2021)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$91FE</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Freeway (Arlasoft 2021).prg</SourceFile>
+  <SourceFileSHA1>10ac41ce0aafe73e43601b363dc1301e54a232e9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x91FE "FREEWAY-ARLASOFT-91FE" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Freeway (Arlasoft - 2021).prg"</ExomizerCommand>
+</Metadata>

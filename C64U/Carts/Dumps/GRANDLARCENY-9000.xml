@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>GRANDLARCENY-9000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5d14a54e01af458b642003aeaa158fe5813187bf</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3F</MemoryConfig>
+  <SourceFile>Grand Larceny.tap</SourceFile>
+  <SourceFileSHA1>00b2da77f928271157ba0d005f90da7bad6e836d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9000 "GRANDLARCENY-9000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3f sta $01 dec $d030" -x "inc $d020" -o "Grand Larceny.prg"</ExomizerCommand>
+</Metadata>

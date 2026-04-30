@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>ZYBEX-06C0-6000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f1db73684dae4922c730fdd929d210b8d4ebe570</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$06C0</Address>
+    <Address>$6000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Zybex.tap</SourceFile>
+  <SourceFileSHA1>cd80515e6a4dceaec5289ade1fb788ae7633a02d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6000 "ZYBEX-06C0-6000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $06c0 dec $d030" -x "inc $d020" -o "Zybex.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $06C0 which copies 256 bytes of data from $06E0 down to $0300 so that the dump can start at $0400.</Notes>
+</Metadata>

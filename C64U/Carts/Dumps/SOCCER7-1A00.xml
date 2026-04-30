@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SOCCER7-1A00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fec3cc4f2b531095106cc20d23d5f63b6ef66bdb</DumpFileSHA1>
+  <SimplifiedName>Soccer 7</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1A00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Soccer 7 (Version 1).tap</SourceFile>
+  <SourceFileSHA1>0102aa861934a775a5bb123c92f2af9b3daf9764</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1A00 "SOCCER7-1A00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Soccer 7.prg"</ExomizerCommand>
+  <Notes>As the original game is frozen, the breakpoint to use for dumping is actually $1A52.</Notes>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>CASHMAN-6000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c46649b7e052a764b88fc7b8728a456cfedb3238</DumpFileSHA1>
+  <SimplifiedName>Cashman</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Cashman (Electric Boys Entertainment Software).tap</SourceFile>
+  <SourceFileSHA1>5079f67bf6f7e5d9098f17f65fd4e805f0e9f3a1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6000 "CASHMAN-6000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Cashman.prg"</ExomizerCommand>
+</Metadata>

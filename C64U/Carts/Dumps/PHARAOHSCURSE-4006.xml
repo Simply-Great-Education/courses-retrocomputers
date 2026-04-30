@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>PHARAOHSCURSE-4006</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>27e80540db7cddc4614e57f3b9bbbf5117cfe78c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4006</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Pharaoh's Curse.tap</SourceFile>
+  <SourceFileSHA1>2102ec770381414346165adcb7a478cfadbfc455</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4006 "PHARAOHSCURSE-4006" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Pharaoh's Curse.prg"</ExomizerCommand>
+</Metadata>

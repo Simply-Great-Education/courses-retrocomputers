@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>CAPTAINKIDD-3000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2c846b35c300be3213eb89ccf5f33092e452f1fe</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Captain Kidd.tap</SourceFile>
+  <SourceFileSHA1>9b0ef54b453b57e3f2a6dc93b992de06c8df3043</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3000 "CAPTAINKIDD-3000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Captain Kidd.prg"</ExomizerCommand>
+</Metadata>

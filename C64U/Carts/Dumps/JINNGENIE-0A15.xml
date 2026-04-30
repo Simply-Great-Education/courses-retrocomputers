@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>JINNGENIE-0A15</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>799582af540968385891a53d3b154d3a09c6750d</DumpFileSHA1>
+  <SimplifiedName>Jinn-Genie</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0A15</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Jinn-Genie (Micromega).tap</SourceFile>
+  <SourceFileSHA1>fa80f2edc942812b9fed8b4592be50d0831d6ae7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0A15 "JINNGENIE-0A15" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Jinn-Genie.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>KNIGHTRIDER-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>dab2fd3d46d8dbdda6576cc19338e933346bf82b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Knight Rider.tap</SourceFile>
+  <SourceFileSHA1>747401aa6e155befc58bc47bc9bfc620958bbf1b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "KNIGHTRIDER-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Knight Rider (J1).prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

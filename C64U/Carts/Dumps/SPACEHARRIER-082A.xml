@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SPACEHARRIER-082A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d954f99ad34b9fd68989c312a681b5833cf9d8a9</DumpFileSHA1>
+  <SimplifiedName>Space Harrier</SimplifiedName>
+  <JumpAddresses>
+    <Address>$082A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Space Harrier (Version 1).tap</SourceFile>
+  <SourceFileSHA1>1658d310c9359f2d42aad8818901598811677f3f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x082A "SPACEHARRIER-082A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Space Harrier.prg"</ExomizerCommand>
+</Metadata>

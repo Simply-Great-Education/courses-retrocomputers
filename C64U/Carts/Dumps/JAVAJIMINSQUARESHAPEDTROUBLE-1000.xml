@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>JAVAJIMINSQUARESHAPEDTROUBLE-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a91160d85255e5537334507994beca9a223ac33f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Java Jim in Square Shaped Trouble.tap</SourceFile>
+  <SourceFileSHA1>dfe1b3a665d5285f479d80be5bdf3ca184ec1ee3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "JAVAJIMINSQUARESHAPEDTROUBLE-1000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Java Jim in Square Shaped Trouble.prg"</ExomizerCommand>
+</Metadata>

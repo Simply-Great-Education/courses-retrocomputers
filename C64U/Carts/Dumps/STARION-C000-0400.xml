@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>STARION-C000-0400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5850b92280e590f5dcbf79bb9a082e260fd292d9</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$0400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3F</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Starion.tap</SourceFile>
+  <SourceFileSHA1>c310097b69f893e140ec86bb32ddd37994a46de7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0400 "STARION-C000-0400" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3f sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Starion.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C000 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to run correctly.</Notes>
+</Metadata>

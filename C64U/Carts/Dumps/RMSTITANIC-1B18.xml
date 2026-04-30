@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>RMSTITANIC-1B18</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1d08bd27e996dcf27ed258973ad904d317887b68</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1B18</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>RMS Titanic.tap</SourceFile>
+  <SourceFileSHA1>3eb843083cb59de4d6169e49430470787ca5246c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1B18 "RMSTITANIC-1B18" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "RMS Titanic.prg"</ExomizerCommand>
+</Metadata>

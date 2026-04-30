@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>METHODOS-9000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5770f659541028936a8b28d2842801f9fe9d4da8</DumpFileSHA1>
+  <SimplifiedName>Methodos</SimplifiedName>
+  <JumpAddresses>
+    <Address>$9000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Methodos (Game On - 1993-01 - Side 2).d64</SourceFile>
+  <SourceFileSHA1>ca58022f6f62480c0a4dcd24ca5899b0e1878c6b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9000 "METHODOS-9000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Methodos.prg"</ExomizerCommand>
+  <Notes>The following modifications were made:
+  1. Patched the LDA $DC01 instruction at $065C to be JSR $0680 instead.
+  2. Added a small routine at $0680 to check the fire button in port 2 - if pressed, then the game will behave as if Q is pressed and proceed to the start game screen. If not pressed, the routine performs the LDA $DC01 and returns to continue the normal code flow.</Notes>
+</Metadata>

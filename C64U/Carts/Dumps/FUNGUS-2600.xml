@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>FUNGUS-2600</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>187a96d27af7d39a19198fe328eef011f776820a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2600</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Fungus.tap</SourceFile>
+  <SourceFileSHA1>96933327ef0ff75e702cabf92372525de2c8183c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2600 "FUNGUS-2600" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Fungus.prg"</ExomizerCommand>
+</Metadata>

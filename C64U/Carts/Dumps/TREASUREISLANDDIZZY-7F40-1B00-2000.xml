@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>TREASUREISLANDDIZZY-7F40-1B00-2000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c3b3147d499dc264651ebab00b50c208b02196b2</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7F40</Address>
+    <Address>$1B00</Address>
+    <Address>$2000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Treasure Island Dizzy.tap</SourceFile>
+  <SourceFileSHA1>64978a1a18f1ec4bed801fd7056235f9fdeca332</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2000 "TREASUREISLANDDIZZY-7F40-1B00-2000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $7f40 jsr $1b00 dec $d030" -x "inc $d020" -o "Treasure Island Dizzy.prg"</ExomizerCommand>
+  <Notes>The call to $7F40 displays the loading screen, which includes the outer frame of the gameplay area. Added another routine at $1B00 which waits for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>REVENGEOFTHEMUTANTCAMELS-87F0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f790987d69ea51f03bcc42c6a070152740d71a01</DumpFileSHA1>
+  <SimplifiedName>Revenge of the Mutant Camels</SimplifiedName>
+  <JumpAddresses>
+    <Address>$87F0</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Revenge of the Mutant Camels (Version 1).tap</SourceFile>
+  <SourceFileSHA1>fa078134ad01a3f3a53b428ec18a8fd97440875c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "REVENGEOFTHEMUTANTCAMELS-87F0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Revenge of the Mutant Camels.prg"</ExomizerCommand>
+  <Notes>Applied the collision detection fix released by Jeff Minter on 16th May 2021 here: https://twitter.com/llamasoft_ox/status/1393933353670397960
+  
+  He wrote:
+  
+  After all these years I have fixed the shitty collision detection in c64 Revenge of the Mutant Camels. The game plays so much better now.
+  
+  The fix changes the LDA #44 (A5 44) instructions at $9AB3 and $9ABC to be LDA #$FF (A9 FF) instead.</Notes>
+</Metadata>

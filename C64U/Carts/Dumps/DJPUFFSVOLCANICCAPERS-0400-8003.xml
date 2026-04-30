@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>DJPUFFSVOLCANICCAPERS-0400-8003</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6f356957ed4f84dc96f6825714bf1cf6f287e9c2</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$8003</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$85</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>DJ Puff's Volcantic Capers.tap</SourceFile>
+  <SourceFileSHA1>a951da07c84a2dd35368bc5659fcd2dac84ba11f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8003 "DJPUFFSVOLCANICCAPERS-0400-8003" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$85 sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "DJ Puff's Volcantic Capers.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 which copies 256 bytes of data from $0430 down to $0100 so that the dump can start at $0400 (this is the state the memory was in after the depacker from the original game had finished - this allows us to skip this slow step).
+  It then sets the to processor port ($01) to $85 and the processor port data direction register ($00) to $FF, before jumping to the entry point at $8003 (it couldn't use RTS because of the copy overwriting the stack).
+  
+  Note: as the original game is frozen, the breakpoint to use for dumping is actually $9AB8.</Notes>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>EDGEGRINDER-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>55a42e7f2e6244f9a572cb6bc977632508f5a53f</DumpFileSHA1>
+  <SimplifiedName>Edge Grinder (Cosine Systems - 2011)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>93</SidLength>
+  <SourceFile>Edge Grinder (Cosine Systems).d64</SourceFile>
+  <SourceFileSHA1>2a55c353207128e1423e64f680d3eb2b1a751609</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "EDGEGRINDER-1000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Edge Grinder (Cosine Systems - 2011).prg"</ExomizerCommand>
+</Metadata>

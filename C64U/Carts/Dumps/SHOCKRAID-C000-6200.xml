@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>SHOCKRAID-C000-6200</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>85e643954ca0be322987faae91363363ecff7555</DumpFileSHA1>
+  <SimplifiedName>Shock Raid (TND - 2021)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$6200</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>184</SidLength>
+  <SourceFile>Shock Raid (2021).tap</SourceFile>
+  <SourceFileSHA1>50b4273ed47aab3099ada0febe50178a92bd78dc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6200 "SHOCKRAID-C000-6200" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c000 dec $d030" -x "inc $d020" -o "Shock Raid (TND - 2021).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C000 to set the current device number ($BA) to $01 (tape) before starting the game to disable highscore loading and saving to disk.</Notes>
+</Metadata>

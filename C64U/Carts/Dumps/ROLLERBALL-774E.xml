@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>ROLLERBALL-774E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>600249ace25e73026570bc3dbb8fe9bc18c6c692</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$774E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>RollerBall.tap</SourceFile>
+  <SourceFileSHA1>0db37f148d4acabd2e11fb0aad9d1a80d0f64a4b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x774E "ROLLERBALL-774E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "RollerBall.prg"</ExomizerCommand>
+</Metadata>

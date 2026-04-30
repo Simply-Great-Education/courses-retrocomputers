@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>GHOSTBUSTERS-C800-6000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>296e84a13b6f46b32a263ae48a542877bd8c70d1</DumpFileSHA1>
+  <SimplifiedName>Ghostbusters</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C800</Address>
+    <Address>$6000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Ghostbusters (Activision) [no1541].tap</SourceFile>
+  <SourceFileSHA1>0abd6834d2b74e3c0e64f58d9e7b604f2c613cf2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6000 "GHOSTBUSTERS-C800-6000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c800 dec $d030" -x "inc $d020" -o "Ghostbusters.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C800 which:
+  1. Copies 256 bytes of data from $C820 down to $0300 so that the dump can start at $0400 (this block contains car sprite data).
+  2. Zeroes out $0200 - $0300 to avoid graphical issues.</Notes>
+</Metadata>

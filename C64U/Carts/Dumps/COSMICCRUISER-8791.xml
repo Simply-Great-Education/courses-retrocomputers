@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>COSMICCRUISER-8791</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a430da6d7f6bc88e226e548f5db794bae87f2748</DumpFileSHA1>
+  <SimplifiedName>Cosmic Cruiser</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8791</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Cosmic Cruiser (Version 1).tap</SourceFile>
+  <SourceFileSHA1>1e9d0cecf3fe8851b94c59c9650b35f387db0496</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8791 "COSMICCRUISER-8791" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Cosmic Cruiser.prg"</ExomizerCommand>
+  <Notes>Patched the LDA #$00 instruction at $1064 to be LDA #$E9 to significantly reduce the wait on the Imagine splash screen.</Notes>
+</Metadata>

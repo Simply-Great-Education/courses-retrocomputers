@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>FORTRESSUNDERGROUND-1000-116B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e1757870101965af4795dabf34ec197b53005d79</DumpFileSHA1>
+  <SimplifiedName>Fortress Underground</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1000</Address>
+    <Address>$116B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Fortress Underground (10 Top Classics - Kingsoft - Side 1).g64</SourceFile>
+  <SourceFileSHA1>97451b204738eac7837e6628cfa7c78791bbabed</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x116B "FORTRESSUNDERGROUND-1000-116B" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $1000 dec $d030" -x "inc $d020" -o "Fortress Underground (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $1000 which initialises colour RAM for the status bar at the bottom of the screen to display correctly. 
+  
+  As the original game is frozen, the breakpoint to use for dumping is actually $2B20.
+  
+  However, whilst the real starting address is $1100, this cannot be used as the startup code there had already copied various overlapping memory blocks to new locations at the point the game was frozen. Therefore, to avoid corrupting some of this memory by running through the code a second time, we actually jump to the instruction at $116B.</Notes>
+</Metadata>

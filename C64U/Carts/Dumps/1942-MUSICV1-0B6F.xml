@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>1942-MUSICV1-0B6F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cbf7e71f9f2b485d8c54322aa7000c5e60758bf7</DumpFileSHA1>
+  <SimplifiedName>1942 (Music v1)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0B6F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>1942 (Elite) (Music v1).tap</SourceFile>
+  <SourceFileSHA1>3a34c2e06330605741ee30e139e51a8b5811de8c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0B6F "1942-MUSICV1-0B6F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "1942 (Music v1).prg"</ExomizerCommand>
+  <Notes>This is the original Elite release which has 633rd Squadron composed by Ron Goodwin for the music.</Notes>
+</Metadata>

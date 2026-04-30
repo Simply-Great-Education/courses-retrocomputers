@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>MUSHROOMALLEY-0400-18AE</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7e900a574979c979bd5077ce9fa7780eae01e558</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$18AE</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Mushroom Alley.tap</SourceFile>
+  <SourceFileSHA1>b21334393af0e8810f10e4e9e78b2e0ec5675481</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "MUSHROOMALLEY-0400-18AE" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Mushroom Alley.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 which sets the magic value of $80 at $291 to allow the game to run properly.</Notes>
+</Metadata>

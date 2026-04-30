@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>ABYSSONAUT-0800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e6fef55a2fd8161e3db5270e154ba7cb9a9022c1</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Abyssonaut (Anthony Stiller - 2015).tap</SourceFile>
+  <SourceFileSHA1>93f0765fd916c8b18b3af19d5c559c88a9cce963</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0800 "ABYSSONAUT-0800" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Abyssonaut (Anthony Stiller - 2015).prg"</ExomizerCommand>
+</Metadata>

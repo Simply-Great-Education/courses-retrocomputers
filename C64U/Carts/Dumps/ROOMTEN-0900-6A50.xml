@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>ROOMTEN-0900-6A50</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7602501e237b8433addf126c4d9e2474c97ddc88</DumpFileSHA1>
+  <SimplifiedName>Room Ten</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0900</Address>
+    <Address>$6A50</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Room Ten (Version a).tap</SourceFile>
+  <SourceFileSHA1>b281493b84833097b69e0481c49f519ff3dad251</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6A50 "ROOMTEN-0900-6A50" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $0900 dec $d030" -x "inc $d020" -o "Room Ten.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0900 to copy the colour RAM data from $6328 (where it was present in the original game) and display the loading screen. It then waits for any key or the fire button on either joystick to enter the game.
+  
+  Note: the bitmap data at $2000, screen RAM data at $0400 and the colour RAM data at $6328 have all been modified in order to incorporate the CRL logo into the image. In the original, this was a sprite.</Notes>
+</Metadata>

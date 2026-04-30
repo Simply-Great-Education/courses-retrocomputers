@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>BADLANDS-0400-7418</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b8664eb3e1acf57c2916fbda358a354e6c24e9d5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$7418</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$34</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>BadLands.tap</SourceFile>
+  <SourceFileSHA1>6943f3a385155fc3e71d365c12c854b8b016579a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7418 "BADLANDS-0400-7418" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$34 sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "BadLands.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 which copies 768 bytes of data from $0430 down to $0000 so that the dump can start at $0400 (this is the state the memory was in after the depacker from the original game had finished - this allows us to skip this slow step).
+  It then jumps to the entry point at $7418 (it couldn't use RTS because of the copy overwriting the boot code).
+  
+  Note: as the original game is frozen, the breakpoint to use for dumping is actually $AC60.
+  
+  The loading screen was converted from the Spectrum version by Andy Green (https://www.facebook.com/AndyGreenPixelArt).</Notes>
+</Metadata>

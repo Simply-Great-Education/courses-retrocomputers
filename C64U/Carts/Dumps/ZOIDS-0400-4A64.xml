@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>ZOIDS-0400-4A64</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2dcb9fb76d1c6190c02e8876154ec3be95719288</DumpFileSHA1>
+  <SimplifiedName>Zoids</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$4A64</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Zoids (Version 3).tap</SourceFile>
+  <SourceFileSHA1>c2aeca70c524777574a2bd5388de02faccb7014f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4A64 "ZOIDS-0400-4A64" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "Zoids.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C000 to setup the correct VICII display settings before starting the game</Notes>
+</Metadata>

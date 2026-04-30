@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MANICMINER-0C01</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>62c6e0c0d64ffcb3582b562ca25df5b536be671d</DumpFileSHA1>
+  <SimplifiedName>Manic Miner</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0C01</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Manic Miner (Software Projects).tap</SourceFile>
+  <SourceFileSHA1>8d2e5e8f9267d1524b2fa5c014e3cf22554df81a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0C01 "MANICMINER-0C01" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Manic Miner.prg"</ExomizerCommand>
+  <Notes>The loading screen was converted from the Spectrum version by Andy Green (https://www.facebook.com/AndyGreenPixelArt).</Notes>
+</Metadata>

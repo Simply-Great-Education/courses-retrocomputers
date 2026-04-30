@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ROADROLLER-1B0D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>20a2ad4fd440de5779f1562cb2bfa199c3094ed7</DumpFileSHA1>
+  <SimplifiedName>Road Roller</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1B0D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Road Roller (Knight Software).tap</SourceFile>
+  <SourceFileSHA1>a6b546b63d5c3ed82247ce87fa8c9d6cfbeb2252</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1B0D "ROADROLLER-1B0D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Road Roller.prg"</ExomizerCommand>
+</Metadata>

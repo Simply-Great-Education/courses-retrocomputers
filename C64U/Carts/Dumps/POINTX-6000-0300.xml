@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>POINTX-6000-0300</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ae36375fefa174bd4b5a3c7d19d99bd3ad1b10bc</DumpFileSHA1>
+  <SimplifiedName>Point X</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6000</Address>
+    <Address>$0300</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$30</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Point X (PowerSoft).tap</SourceFile>
+  <SourceFileSHA1>daf99abc4390638fd72872fd71e35ac6886deb60</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0300 "POINTX-6000-0300" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$30 sta $01 jsr $6000 dec $d030" -x "inc $d020" -o "Point X.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $6000 which copies 256 bytes of data from $6020 down to $0300 so that the dump can start at $0400.
+  It then jumps to the entry point at $0300 (it couldn't use RTS because of the copy overwriting the boot code).</Notes>
+</Metadata>

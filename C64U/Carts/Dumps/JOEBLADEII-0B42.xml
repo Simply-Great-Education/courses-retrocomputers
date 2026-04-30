@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>JOEBLADEII-0B42</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>936167b1cd7436d4982daf606b7585376d15aa6a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0B42</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Joe Blade II.tap</SourceFile>
+  <SourceFileSHA1>4ee7897158983e3696ae9e922bef89eedb9ab4d6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0B42 "JOEBLADEII-0B42" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Joe Blade II.prg"</ExomizerCommand>
+</Metadata>

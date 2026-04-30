@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>LIVINGSTONEIPRESUME-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5d23379b272f2222153c84ebe48e41d324cdddd4</DumpFileSHA1>
+  <SimplifiedName>Livingstone I Presume</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Livingstone I Presume [Fixed].tap</SourceFile>
+  <SourceFileSHA1>de76e2fbdde146696255ca5f55e78cb01b03324e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "LIVINGSTONEIPRESUME-4000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Livingstone I Presume.prg"</ExomizerCommand>
+  <Notes>The original game had one bad byte (a extra NOP instead of a JSR instruction at $4013) which causes the game to crash part way through. Robin from the 8-Bit Show and Tell YouTube channel analysed the issue by comparing the UK version with the original Spanish version, and discovered this was likely caused by a bad patch. The video of Robin's analysis can be found here: https://www.youtube.com/watch?v=c4OQPojiEOo
+  
+  Therefore, we have now patched the original Novaload tape dump used to correct this issue.
+  
+  The loading screen is from the Spectrum version.</Notes>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>VIORIS-6200</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8ab10a7022d61398ff3965c79c4a825ae6282f3f</DumpFileSHA1>
+  <SimplifiedName>Vioris</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6200</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Vioris (Commodore Format Power Pack 37).tap</SourceFile>
+  <SourceFileSHA1>51b9112f284242cc1bd28d306c532fa5aacca873</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6200 "VIORIS-6200" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Vioris.prg"</ExomizerCommand>
+  <Notes>As this game is actually frozen, the game starts at $6783. However the true start address is $6200.</Notes>
+</Metadata>

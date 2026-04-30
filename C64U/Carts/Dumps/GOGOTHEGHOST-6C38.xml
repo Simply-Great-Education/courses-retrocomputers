@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>GOGOTHEGHOST-6C38</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9e0aad612ca23c1450bd435a797f1919050578c1</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$6C38</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Gogo the Ghost.tap</SourceFile>
+  <SourceFileSHA1>594f7fd99e737384cb7b7d2984830ef52c8187d0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6C38 "GOGOTHEGHOST-6C38" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Gogo the Ghost.prg"</ExomizerCommand>
+  <Notes>Made the following changes to default to allow joystick button in port 2 to start the game:
+  1. Patched the CPX $45DD instruction at $67F6 to be JMP $1500 instead
+  2. Added a small routine at $1500 to check the fire button in port 2 - if pressed, then it sets X to $01, which causes the game to start just as if the RETURN key was pressed. The routine then executes the CPX $45DD as the original code did and jumps to $67F9 to carry on the normal code flow.</Notes>
+</Metadata>

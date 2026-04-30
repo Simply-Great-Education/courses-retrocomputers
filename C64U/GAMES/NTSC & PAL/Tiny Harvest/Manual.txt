@@ -1,0 +1,29 @@
+Tiny Harvest - Welcome to the farm!
+(c) Artex Software - www.artexsoft.com
+
+In this cozy farming game, you have to help your cousin to restore an old farm. When you arrive, there's a dog, a lonely cow and some barren fields. How will it look after you got to work?
+
+Plant crops, harvest wheat, milk the cows, buy some chickens and collect some eggs. Befriend the dog, bake a cake, and try to get awarded the Best Farm prize! How exactly you do all that is entirely up to you.
+
+The game should explain itself, bit by bit, if you're willing to experiment a little. You can only carry one item at a time, and you only need one button (or alternatively the space bar) for your actions. An interactive hint shows you the options depending on your position.
+
+Some controls & tips
+
+* Use the sign post on the farm (bottom left) to save or load a game from one of 3 slots.
+* Use the + / - keys to increase or decrease contrast.
+* Use the W A S D keys or the arrow keys to move around. Or use a joystick in port #2.
+* Cows and chickens each consume 1 wheat per day. If there's none left, e.g. because you planted all of it, the cows won't give milk and the chickens won't lay any eggs.
+* After some time, crops might start to rot and disappear.
+* You can never fully mess things up or run out of options. Wait for cherries to replenish your cash.
+
+Credits
+
+* Jan Klose - Programming, graphics, soundtrack
+* Jan's daughters - Lots of playtesting and useful advice
+* Blueapollo - Additional graphics
+* Kimonade - Additional graphics
+* Goattracker - Music player routine
+* Helge Borgarts, Jan Klose - Artex Publishing
+
+
+Distributed with the Commodore 64 Ultimate with permission from Jan Klose.

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BOUNCINGBALL-08AD</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5a29e46f4b81fbbae322f645c4ac731276dc4a5b</DumpFileSHA1>
+  <SimplifiedName>Bouncing Ball</SimplifiedName>
+  <JumpAddresses>
+    <Address>$08AD</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Bouncing Ball (Input 64 - 1987-10).d64</SourceFile>
+  <SourceFileSHA1>8d11a2e9641399690e2bedd0e38402c9559043bc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x08AD "BOUNCINGBALL-08AD" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bouncing Ball.prg"</ExomizerCommand>
+</Metadata>

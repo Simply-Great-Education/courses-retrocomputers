@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>LITTLEPUFFINDRAGONLAND-1806</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e03003bbad662838b6c5b4f30cde34656a77891c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1806</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Little Puff in Dragonland.tap</SourceFile>
+  <SourceFileSHA1>2e2492922f3db70e79bd14bd4c4e2df02b7eba54</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1806 "LITTLEPUFFINDRAGONLAND-1806" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Little Puff in Dragonland.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

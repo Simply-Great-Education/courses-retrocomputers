@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>CLIFFHANGER-0400-0C00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c0a134b8746637ae0b5d55391e7aaaa44c6b2f75</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$0C00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Cliff Hanger.tap</SourceFile>
+  <SourceFileSHA1>20de1c9801167861d77eab90e6436c023a03ecfa</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0C00 "CLIFFHANGER-0400-0C00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Cliff Hanger.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 to set $02 = $5E to allow the game to run correctly.
+  As the original did not have a loading screen, the one included was converted from the Spectrum version by DATA-LAND of Technische Maschinenfabrik (https://csdb.dk/scener/?id=4845).</Notes>
+</Metadata>

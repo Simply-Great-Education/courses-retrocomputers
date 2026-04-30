@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BEYONDTHEICEPALACE-0414</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>19bb8b9d1d0929a28e7f9d1044696f9c82285e9d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0414</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Beyond the Ice Palace.tap</SourceFile>
+  <SourceFileSHA1>08a04f2864d7d6a49e277e2f96a42fa2da5012c0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0414 "BEYONDTHEICEPALACE-0414" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Beyond the Ice Palace.prg"</ExomizerCommand>
+</Metadata>

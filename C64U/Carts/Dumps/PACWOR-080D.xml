@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>PACWOR-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2b94ecd4ca969afab8b0743dc48af00a42ef3bf7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Pac-Wor.prg</SourceFile>
+  <SourceFileSHA1>d7bb9488dcc776a8c6d68ecc1009f948e30485cf</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "PACWOR-080D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Pac-Wor (J1).prg"</ExomizerCommand>
+</Metadata>

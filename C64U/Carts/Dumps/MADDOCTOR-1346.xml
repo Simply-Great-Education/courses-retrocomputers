@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MADDOCTOR-1346</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>49ff8e66402e527bde84011269a38e1cf07cde0c</DumpFileSHA1>
+  <SimplifiedName>Mad Doctor</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1346</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Mad Doctor (Creative Sparks).tap</SourceFile>
+  <SourceFileSHA1>35d5f332d3e8cb2838411a29f93cae128a0cd0f7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1346 "MADDOCTOR-1346" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mad Doctor (J1).prg"</ExomizerCommand>
+</Metadata>

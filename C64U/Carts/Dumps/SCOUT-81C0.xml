@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SCOUT-81C0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>672ee8c3faa1f6f3a6d04eec9f3e1581479589f0</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$81C0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Scout.tap</SourceFile>
+  <SourceFileSHA1>752a885fd8cddbe37a6d66ed93cbe0b62409b6ca</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x81C0 "SCOUT-81C0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Scout.prg"</ExomizerCommand>
+</Metadata>

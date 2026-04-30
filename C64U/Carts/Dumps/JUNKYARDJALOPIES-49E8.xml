@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>JUNKYARDJALOPIES-49E8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>11f2078a6104126b572080d40069a0eeb00bc7e0</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$49E8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$3F</MemoryConfig>
+  <SourceFile>Junkyard Jalopies.tap</SourceFile>
+  <SourceFileSHA1>be8d27eeb0d37c76d68f9cadc9ba19d0570cf1f4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x49E8 "JUNKYARDJALOPIES-49E8" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3f sta $01 dec $d030" -x "inc $d020" -o "Junkyard Jalopies.prg"</ExomizerCommand>
+</Metadata>

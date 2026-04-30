@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SCARYMONSTERS-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>dd48404ab24e457d93b171bd62f12a6f20d12d28</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Scary Monsters.tap</SourceFile>
+  <SourceFileSHA1>01bb29bcc465b842df6088b8dcdf0db859f6b9ca</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "SCARYMONSTERS-1000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Scary Monsters.prg"</ExomizerCommand>
+</Metadata>

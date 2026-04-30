@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>LAWNTENNIS-4086</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>edd232e4f8e8d4cfef764065dc7b8f7a6f5c252d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4086</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Lawn Tennis.tap</SourceFile>
+  <SourceFileSHA1>9d8fa2ec719b224b820174195c5ae193ea9488a4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4086 "LAWNTENNIS-4086" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Lawn Tennis.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>THEAMAZINGSPIDERMAN-CC00-C288</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>674b6eea45e2b60803ca10ab42087f16a6794f8f</DumpFileSHA1>
+  <SimplifiedName>Amazing Spider-Man, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$CC00</Address>
+    <Address>$C288</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Amazing Spider-Man The (Version a).tap</SourceFile>
+  <SourceFileSHA1>3703875081d10d0e75358d2cb5116bde7a014ede</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC288 "THEAMAZINGSPIDERMAN-CC00-C288" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $cc00 dec $d030" -x "inc $d020" -o "Amazing Spider-Man, The.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $CC00 which copies 256 bytes of data from $CC20 down to $0000 so that the dump can start at $0400. This allows the game to run correctly.</Notes>
+</Metadata>

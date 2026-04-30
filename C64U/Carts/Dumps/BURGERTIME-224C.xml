@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>BURGERTIME-224C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cdb25a7f3378bb71d9dd3eca7b8eff8061b3265e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$224C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Burger Time.tap</SourceFile>
+  <SourceFileSHA1>f8b87b7526384e5f38bfb8456de31b0a62cdc8a0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x224C "BURGERTIME-224C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Burger Time.prg"</ExomizerCommand>
+</Metadata>

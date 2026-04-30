@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>EREBUS-0400-0880</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>52c061b28f09d655c48eb0228785a2f6b69827d7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$0880</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Erebus.tap</SourceFile>
+  <SourceFileSHA1>1bf2ef2ac547f1443680f5cae07269c8524beeef</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0880 "EREBUS-0400-0880" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Erebus (J1).prg"</ExomizerCommand>
+  <Notes>Added a routine at $0400 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.
+  The loading screen was moved from $2000 to $C000, as the original loader overwrote it during the loading process. The screen RAM was also moved from $0400 to $E000 so as to be in the same VICII bank.</Notes>
+</Metadata>

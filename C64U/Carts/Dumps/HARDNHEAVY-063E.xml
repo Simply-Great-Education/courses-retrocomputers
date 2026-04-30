@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>HARDNHEAVY-063E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4f078b0f100b8f0b9f2335bbdb1d18086416c5b6</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$063E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Hard'n'Heavy.g64</SourceFile>
+  <SourceFileSHA1>a0c4b6aaf2630073058d9fe7e7ac9611827ee056</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x063E "HARDNHEAVY-063E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Hard'n'Heavy.prg"</ExomizerCommand>
+</Metadata>

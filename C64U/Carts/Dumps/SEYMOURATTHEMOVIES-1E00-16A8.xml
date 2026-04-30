@@ -1,0 +1,25 @@
+﻿<Metadata>
+  <DumpFile>SEYMOURATTHEMOVIES-1E00-16A8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ebfcae9fa6c30b0aea1e8bf5ef79b05a120b1b84</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1E00</Address>
+    <Address>$16A8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Seymour at the Movies.tap</SourceFile>
+  <SourceFileSHA1>72c9d3a11744832adab68a853e77b3ffa6dd0f95</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x16A8 "SEYMOURATTHEMOVIES-1E00-16A8" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $1e00 dec $d030" -x "inc $d020" -o "Seymour at the Movies.prg"</ExomizerCommand>
+  <Notes>Added a routine at $1E00 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.
+  
+  Although there is an alternative tape version of this game which supports joystick control, the music in that version plays incorrectly. Therefore this version which only supports keyboard controls has been modified to allow control via joystick port 2 as well as keys with the following changes:
+  
+  1. Changed the JSR $056F instruction at $5144 to be JSR $C200 instead
+  2. Added a routine at $C200 which:
+      a) Executes the original keyboard checking routine at $056F
+      b) Checks the inputs from the joystick in port two and maps them to the control variables within the game. This is trickier for the return key, as $5186 cannot be set directly like left ($518A), right ($518B) and jump ($5188). Instead, the routine adds the correct values in the keyboard input buffers used by the game to simulate the return key being pressed.
+  3. Changed the LDA $07AC, AND $10 instructions at $07C2 to be LDA $07B3, AND $02 instead to allow the return key or firebutton to start the game (this was originally the space bar)</Notes>
+</Metadata>

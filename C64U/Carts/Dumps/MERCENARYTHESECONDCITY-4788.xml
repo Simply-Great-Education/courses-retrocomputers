@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MERCENARYTHESECONDCITY-4788</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a1c5ed2a2d6218e68370e56357dd56be8081b69f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4788</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Mercenary - The Second City.tap</SourceFile>
+  <SourceFileSHA1>bfcc934d73303e883e948761eae2c91b74abf28f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4788 "MERCENARYTHESECONDCITY-4788" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Mercenary - The Second City.prg"</ExomizerCommand>
+  <Notes>This version can only be loaded by first loading the Escape from Targ scenario. Wait for the load to finish and then the crash landing on Targ to occur. Then press [CNTRL] + L and enter load number 0.
+  The loading screen is based on the disk version released by Datasoft.</Notes>
+</Metadata>

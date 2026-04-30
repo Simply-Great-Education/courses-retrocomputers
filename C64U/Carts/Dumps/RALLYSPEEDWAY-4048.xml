@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>RALLYSPEEDWAY-4048</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5c8432b364206c314196576afa7d4ad9a136f365</DumpFileSHA1>
+  <SimplifiedName>Rally Speedway</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4048</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Rally Speedway (v1).d64</SourceFile>
+  <SourceFileSHA1>3435f698239227c5b0577731a616aa853d77a80d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4048 "RALLYSPEEDWAY-4048" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Rally Speedway (J1).prg"</ExomizerCommand>
+</Metadata>

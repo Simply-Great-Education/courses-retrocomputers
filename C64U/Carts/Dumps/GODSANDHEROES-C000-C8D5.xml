@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>GODSANDHEROES-C000-C8D5</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>079056ab5f47dc26f1ad15d5d446007fae1d3cf7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$C8D5</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <ColourRAMFile>GODSANDHEROES-CRAM-C100</ColourRAMFile>
+  <ColourRAMStartAddress>$C100</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Gods and Heroes.tap</SourceFile>
+  <SourceFileSHA1>025a90c88d46e7abf1a1193bdc157ae4d7d0f7b7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC8D5 "AlternativeFormats\PRGs\Uncrunched\Gods and Heroes (J1).prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c100 lda #$35 sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Gods and Heroes (J1).prg"</ExomizerCommand>
+  <Notes>Added a routine at $C000 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

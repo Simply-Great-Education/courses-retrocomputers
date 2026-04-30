@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>POGOJOE-0983</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6bd2078f749f08dbd7a9a4fd26d4229a9d7e0d40</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0983</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Pogo Joe.d64</SourceFile>
+  <SourceFileSHA1>5f72eb5eaac87c5dc70fe9fdf664c9f2d92e78ff</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0983 "POGOJOE-0983" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Pogo Joe.prg"</ExomizerCommand>
+</Metadata>

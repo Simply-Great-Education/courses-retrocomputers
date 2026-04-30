@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>TIMEMACHINE-4F74</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5a0c1c1aae61ec08c8ee9aafcb3314dc7abab3ba</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4F74</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Time Machine.tap</SourceFile>
+  <SourceFileSHA1>18ec944be95c29593abb9259a90c38747929977f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4F74 "TIMEMACHINE-4F74" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Time Machine.prg"</ExomizerCommand>
+</Metadata>

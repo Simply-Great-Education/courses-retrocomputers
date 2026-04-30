@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>DEEPSTRIKE-7000-1627</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f0dc9637be42aacc18e7472a10f2ee5745565513</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7000</Address>
+    <Address>$1627</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Deep Strike.tap</SourceFile>
+  <SourceFileSHA1>22c2c6ca224b14d84edd2e970f50178105d8e2a1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1627 "DEEPSTRIKE-7000-1627" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $7000 dec $d030" -x "inc $d020" -o "Deep Strike.prg"</ExomizerCommand>
+  <Notes>Added a routine at $7000 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.
+  
+  Also NOP'd out the JSR $31A3 instruction at $1642 to remove the copyright nag screen.</Notes>
+</Metadata>

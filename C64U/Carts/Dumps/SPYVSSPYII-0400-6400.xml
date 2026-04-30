@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>SPYVSSPYII-0400-6400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>01e7136efaca89919ed7c68e5f2b9daab63731ec</DumpFileSHA1>
+  <SimplifiedName>Spy vs Spy II - The Island Caper</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$6400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Spy vs Spy II (First Star Software).tap</SourceFile>
+  <SourceFileSHA1>ac6fb3660549936e9f5e32f576518cd53bafc870</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6400 "SPYVSSPYII-0400-6400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Spy vs Spy II - The Island Caper.prg"</ExomizerCommand>
+  <Notes>Moved some init code from $03BD to $0400 to ensure it was above the dump start address of $0400.</Notes>
+</Metadata>

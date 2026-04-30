@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>180-8012</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>17bcd9a194e370cf9e413f1ea2ef4bbed42fd916</DumpFileSHA1>
+  <SimplifiedName>180</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8012</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>180 (Version 1).tap</SourceFile>
+  <SourceFileSHA1>78e3d0c65be02c66db88b43e36af673203af4a28</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8012 "180-8012" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "180.prg"</ExomizerCommand>
+  <Notes>Made the following changes to allow joystick button in port two to start the one player game:
+  1. Patched the JSR $FF9F instruction at $AD0C to be JSR $0900 instead
+  2. Added a small routine at $0900 to check the fire button in port 2 - if pressed, then it sets $C5 to $38 and returns, which causes the game to start just as if 1 was pressed. If not pressed, the routine then JSRs to $FF9F to carry on the normal code flow.</Notes>
+</Metadata>

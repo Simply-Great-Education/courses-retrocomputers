@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>RESCUE17-6000-1FFC</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b4ce38f0214a8b3e4037d62f6dbcd57e5b0a2436</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$6000</Address>
+    <Address>$1FFC</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Rescue 17.tap</SourceFile>
+  <SourceFileSHA1>ddd858b2c58711cbf93c011094af7551d47119ad</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1FFC "RESCUE17-6000-1FFC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $6000 dec $d030" -x "inc $d020" -o "Rescue 17.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $6000 to set the current device number ($BA) to $01 (tape) to allow the game to run correctly.</Notes>
+</Metadata>

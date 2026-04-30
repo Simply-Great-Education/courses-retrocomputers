@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>GILBERTESCAPEFROMDRILL-C8F0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2ec8d4863c5ceaf4ca457b8f781d1d06c773289a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C8F0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Gilbert - Escape From Drill.tap</SourceFile>
+  <SourceFileSHA1>325fbaedb351a57dcd165a55b6d46d40375526e7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC8F0 "GILBERTESCAPEFROMDRILL-C8F0" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Gilbert - Escape From Drill.prg"</ExomizerCommand>
+</Metadata>

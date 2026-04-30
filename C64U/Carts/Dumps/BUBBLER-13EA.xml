@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BUBBLER-13EA</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d05e44f40086e42743546c18c01c86a6642ce44c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$13EA</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Bubbler.d64</SourceFile>
+  <SourceFileSHA1>d5115d068d932e7386b154b6069b8268ce941902</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "BUBBLER-13EA" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bubbler.prg"</ExomizerCommand>
+</Metadata>

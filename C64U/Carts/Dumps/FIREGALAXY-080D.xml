@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>FIREGALAXY-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>845cc7031503c3e197e60c28b0941c9e10995599</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Fire Galaxy.d64</SourceFile>
+  <SourceFileSHA1>6ae90c5f44742307a60a4650155a75a566a88155</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "FIREGALAXY-080D" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Fire Galaxy.prg"</ExomizerCommand>
+</Metadata>

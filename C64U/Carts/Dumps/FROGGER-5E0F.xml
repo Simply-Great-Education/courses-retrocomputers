@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>FROGGER-5E0F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>53de7df88d3bfa944ab1ed64be7b4b0aa6051182</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5E0F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Frogger.d64</SourceFile>
+  <SourceFileSHA1>f401d8d3df0b0bdb2de2705024f5bb5711a20ac5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5E0F "FROGGER-5E0F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Frogger.prg"</ExomizerCommand>
+  <Notes>Patched $5BCE to JMP $5C65: This skips the questions to set control keys and jumps straight to the question for a fast or slow game.
+  Patched $5CB1 to JMP $5CCD: This skips the question to confirm your selection.
+  Added a small routine at $0D80 to read the fire button in port 2. Patched $87B2 to jump to this routine so that the fire button can be checked inside the key press check loop. If the fire button is pressed, it places the keyboard matrix code for F1 into $C5, which causes the game to start.
+  </Notes>
+</Metadata>

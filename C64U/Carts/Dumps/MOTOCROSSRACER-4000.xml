@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>MOTOCROSSRACER-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d032b1e0106e9906ff795488b47a00dd86707bec</DumpFileSHA1>
+  <SimplifiedName>Motocross Racer</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Motocross Racer (Xonox).g64</SourceFile>
+  <SourceFileSHA1>77f3bf3e9664108b9a0a5e94ed30a6ed73ca8955</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "MOTOCROSSRACER-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Motocross Racer (J1).prg"</ExomizerCommand>
+</Metadata>

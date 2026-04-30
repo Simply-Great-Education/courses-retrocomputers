@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>NODESOFYESOD-SLOW-7A15</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>78799bba663fb1312a4246245566bb375e2dc232</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7A15</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Nodes of Yesod (Slow Version).tap</SourceFile>
+  <SourceFileSHA1>e131b6c6223e89b26ae13d3705b0d0a12597d5fa</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7A15 "NODESOFYESOD-SLOW-7A15" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Nodes of Yesod (Slow Version).prg"</ExomizerCommand>
+  <Notes>The following modifications were made:
+  1. Patched the JSR $89AF instruction at $8700 to be JSR $7C00 instead.
+  2. Added a small routine at $7C00 to set $15 to $01 so that the game defaults to joystick. The routine then jumps to $89AF to carry on the normal code flow.
+  3. Patched the JSR $87A5 instruction at $8712 to be JSR $7D00 instead.
+  4. Added a small routine at $7D00 to check the fire button in port 2 - if pressed, then it sets $3A to $04 and returns, causing the game to start. If not pressed, the routine then jumps to $87A5 to carry on the normal code flow.</Notes>
+</Metadata>

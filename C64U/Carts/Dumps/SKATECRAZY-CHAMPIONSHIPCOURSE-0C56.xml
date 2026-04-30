@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>SKATECRAZY-CHAMPIONSHIPCOURSE-0C56</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b6aaef0a3f8f24543b103ed1a998b122ee13b1d3</DumpFileSHA1>
+  <SimplifiedName>Skate Crazy - Championship Course</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0C56</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Skate Crazy (Gremlin Graphics).d64</SourceFile>
+  <SourceFileSHA1>55a799602d2d62df9e78feb2d826d9984f7833d0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0C56 "SKATECRAZY-CHAMPIONSHIPCOURSE-0C56" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Skate Crazy - Championship Course.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Amstrad CPC version</Notes>
+</Metadata>

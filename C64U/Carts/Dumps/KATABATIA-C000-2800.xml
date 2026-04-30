@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>KATABATIA-C000-2800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a7e4b5c4be714ac0916fed4c8fdd82c723114108</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$2800</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Katabatia v1.1 (malcontent - 2021).d64</SourceFile>
+  <SourceFileSHA1>30cf788f18b3beff987f60c477edde1e91174e2a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "KATABATIA-C000-2800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c000 dec $d030" -x "inc $d020" -o "Katabatia v1.1 (malcontent - 2021).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C000 to set the current device number ($BA) to $01 (tape) before starting the game to force it to assume it has been loaded from tape.</Notes>
+</Metadata>

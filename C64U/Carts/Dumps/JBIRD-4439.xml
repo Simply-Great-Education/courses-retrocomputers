@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>JBIRD-4439</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>11249a4234966cedfd3da3e6846c540e6d50017f</DumpFileSHA1>
+  <SimplifiedName>J-Bird</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4439</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>J-Bird (Orion Software).d64</SourceFile>
+  <SourceFileSHA1>763312543cfb3a511e425de580a22de53740ad2d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4439 "JBIRD-4439" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "J-Bird.prg"</ExomizerCommand>
+  <Notes>Changed the LDA #$02 instruction at $59EA to be RTS, NOP instead to remove highscore saving to disk.</Notes>
+</Metadata>

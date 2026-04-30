@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>HUMANOIDS-0ED0-CE40</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9fcb39706eb9bbde779ee0fa2722abb925ae90cd</DumpFileSHA1>
+  <SimplifiedName>Humanoids</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0ED0</Address>
+    <Address>$CE40</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Humanoids (ECP).tap</SourceFile>
+  <SourceFileSHA1>dc482aa8bba6b4e2822fe57baaf795842c1ea2ce</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "HUMANOIDS-0ED0-CE40" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0ed0 dec $d030" -x "inc $d020" -o "Humanoids.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0ED0 which copies 256 bytes of data from $0EE0 down to $0200 so that the dump can start at $0400. This allows the game to run correctly.
+  
+  Note: As this game is actually frozen, the game starts at $422D. However the true start address is $CE40.
+  
+  Also removed an unnecessary copy of the BASIC ROM between $A000 and $BFFF in RAM before taking the dump.</Notes>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>MOTOS-0800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d3c2f6cd6529d59a28e896f798662c5b0ed0b16f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Motos.tap</SourceFile>
+  <SourceFileSHA1>50489421e4effc2fa7e9cdd16615b2753bc94d49</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0800 "MOTOS-0800" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Motos.prg"</ExomizerCommand>
+  <Notes>The loading screen is based on the Spectrum version</Notes>
+</Metadata>

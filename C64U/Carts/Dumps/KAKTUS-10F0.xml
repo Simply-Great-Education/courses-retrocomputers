@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>KAKTUS-10F0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>bf652e58f6c803e556173820cf029f0ae1da9475</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$10F0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Kaktus.tap</SourceFile>
+  <SourceFileSHA1>a0bfbddd909357b4178133b6957201519b4618b8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x10F0 "KAKTUS-10F0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Kaktus.prg"</ExomizerCommand>
+</Metadata>

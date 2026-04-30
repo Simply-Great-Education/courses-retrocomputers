@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>PANDORASBOX-2768</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8945138da55d804805c4d302068fdd18134c2382</DumpFileSHA1>
+  <SimplifiedName>Pandora's Box</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2768</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Pandoras Box (Commodore).tap</SourceFile>
+  <SourceFileSHA1>8a2712ea42f24b3d2a67a24982d87e4ce744cf61</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "PANDORASBOX-2768" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Pandora's Box (J1).prg"</ExomizerCommand>
+</Metadata>

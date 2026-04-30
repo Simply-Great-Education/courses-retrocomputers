@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>FIGHTERPILOT-0C19</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a9034ff02dde96a3f57b713400fbe2b6494dc695</DumpFileSHA1>
+  <SimplifiedName>Fighter Pilot</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0C19</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Fighter Pilot (Version 2a).tap</SourceFile>
+  <SourceFileSHA1>b2bae65551719201cee6d6aed2ebbd3eb588f6ac</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0C19 "FIGHTERPILOT-0C19" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Fighter Pilot.prg"</ExomizerCommand>
+</Metadata>

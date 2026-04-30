@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>X15ALPHAMISSION-C200-8009</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>88a15a0752b36d789702258f63297b86dd1b45e8</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C200</Address>
+    <Address>$8009</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>X15ALPHAMISSION-CRAM-C300</ColourRAMFile>
+  <ColourRAMStartAddress>$C300</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>X-15 Alpha Mission.tap</SourceFile>
+  <SourceFileSHA1>a42312e910d13db9789918434139ca647a40c8e5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8009 "AlternativeFormats\PRGs\Uncrunched\X-15 Alpha Mission (J1).prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c300 lda #$37 sta $01 jsr $c200 dec $d030" -x "inc $d020" -o "X-15 Alpha Mission (J1).prg"</ExomizerCommand>
+  <Notes>Added a routine at $C200 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

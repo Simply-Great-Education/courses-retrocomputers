@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>OUTRUN-ROUTEC-04B4</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f4ed28ba57b91e56264834b07f49763cef5774d6</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$04B4</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Out Run (Route C).tap</SourceFile>
+  <SourceFileSHA1>c4cda01d716c6816b9c088e43bbe123834371427</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x04B4 "OUTRUN-ROUTEC-04B4" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Out Run (Route C) (J1).prg"</ExomizerCommand>
+</Metadata>

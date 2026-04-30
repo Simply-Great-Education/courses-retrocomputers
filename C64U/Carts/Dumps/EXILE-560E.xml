@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>EXILE-560E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b371f3894c6dcfaaf6276be5be7c79d0b448f181</DumpFileSHA1>
+  <SimplifiedName>Exile</SimplifiedName>
+  <JumpAddresses>
+    <Address>$560E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Exile (Version 1).tap</SourceFile>
+  <SourceFileSHA1>1d9233c3b85b0a4bc62670caceb86695baa9e719</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x560E "EXILE-560E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Exile.prg"</ExomizerCommand>
+</Metadata>

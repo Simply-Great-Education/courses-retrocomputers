@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>SIRENCITY-CB00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>90bcc23480a084e173be5aa930ebbbc6a0f24ad2</DumpFileSHA1>
+  <SimplifiedName>Siren City</SimplifiedName>
+  <JumpAddresses>
+    <Address>$CB00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <BasicProgramEnd>$2700</BasicProgramEnd>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Siren City (Version 2).tap</SourceFile>
+  <SourceFileSHA1>e36f228f53834c1c49b7aa05694e1a214f45eca5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCB00 "SIRENCITY-CB00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Siren City.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC title screen which uses a SYS command to start the machine code main program when a key is pressed. Therefore, a belt-and-braces BASIC init routine has been added at $CB00 which initalises all key BASIC values and pointers before calling the RUN command.</Notes>
+</Metadata>

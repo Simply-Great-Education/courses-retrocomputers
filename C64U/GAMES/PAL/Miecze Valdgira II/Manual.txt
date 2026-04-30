@@ -1,0 +1,24 @@
+The dwarf Aldir, known as the Liberator of Heldgor, was sitting in one of the chambers of his small fortress when a wounded, emaciated messenger arrived at his court. The news he brought was very disturbing. A sinister shadow had fallen upon the peaceful land of Dale (King Aldir's homeland) - that of Bloody Zenon, a criminal who had previously engaged only in petty robbery. This time, however, he had acquired the Eye of the Cyclops, a magical item whose power allowed the invader to subjugate monsters from the underworld. With their help, Bloody Zenon conquered the land of Dale and settled in the palace, demanding to be called the Lord of the Mountains.
+
+And here begins our adventure. King Aldir decided to embark on a solitary journey to free Dale from the tyrant. On his path he will encounter many dangers, which he will face with his courage and skill. However, the most important will be the ability to find and use items - both magical ones (talisman, wand, spell, crown of power, magic key, golden key) and ordinary ones (casket, old key, pickaxe, lamp, stone, lockpick, hammer). The mission ends with our hero's coronation as king of the dwarves, using the Crown of Power.
+
+
+Controls
+
+The game character is controlled using a joystick placed in port #2:
+- Right/Left - moving the hero character
+- Down - picking up items  
+- Up - jump
+- FIRE button - access inventory (storing or using items)
+
+
+
+Credits
+
+Programming by Krzysztof Augustyn.
+Graphics by Tomasz Mielnik.
+Animations by Tomasz Kostrzewski.
+Music by Wojciech Radziejewski.
+
+
+Distributed with the Commodore 64 Ultimate with permission from Krzysztof Augustyn.

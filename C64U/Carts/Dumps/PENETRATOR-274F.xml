@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>PENETRATOR-274F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>dc1ceded31590418f8c99d96e37ef91e76ae08a2</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$274F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$3F</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Penetrator.tap</SourceFile>
+  <SourceFileSHA1>8346491d50570af70fc08f87a7940b6d45a0005d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x274F "PENETRATOR-274F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3f sta $01 dec $d030" -x "inc $d020" -o "Penetrator.prg"</ExomizerCommand>
+</Metadata>

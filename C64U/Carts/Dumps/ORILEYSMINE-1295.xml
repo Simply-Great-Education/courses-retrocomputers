@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ORILEYSMINE-1295</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d8d52c076e6f285acf56ab5aaa7b54a9331ad651</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1295</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>O'Riley's Mine.tap</SourceFile>
+  <SourceFileSHA1>7d69845d66ae871b3a270c2dbcc5d83e5a58c7f7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1295 "ORILEYSMINE-1295" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "O'Riley's Mine (J1).prg"</ExomizerCommand>
+</Metadata>

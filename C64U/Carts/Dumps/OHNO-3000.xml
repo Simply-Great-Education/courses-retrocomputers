@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>OHNO-3000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ee7fa7eb1b5c2b92f64e6ef1e26debc953a02114</DumpFileSHA1>
+  <SimplifiedName>Oh No!</SimplifiedName>
+  <JumpAddresses>
+    <Address>$3000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Oh No! (Silverbird).tap</SourceFile>
+  <SourceFileSHA1>43d554728c3cff05f13d761c9c9218b9e455dc9d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3000 "OHNO-3000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Oh No!.prg"</ExomizerCommand>
+</Metadata>

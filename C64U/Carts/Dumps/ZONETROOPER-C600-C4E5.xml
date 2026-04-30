@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>ZONETROOPER-C600-C4E5</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3ad2bb8dc49b4a7b030a7d63f4cb2c654c844e76</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C600</Address>
+    <Address>$C4E5</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <ColourRAMFile>ZONETROOPER-CRAM-C800</ColourRAMFile>
+  <ColourRAMStartAddress>$C800</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Zone Trooper.tap</SourceFile>
+  <SourceFileSHA1>b8c98ab952b533628d624d5818215c79efe631f9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC4E5 "AlternativeFormats\PRGs\Uncrunched\Zone Trooper.prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c800 lda #$35 sta $01 jsr $c600 dec $d030" -x "inc $d020" -o "Zone Trooper.prg"</ExomizerCommand>
+  <Notes>Added a routine at $C600 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  
+  It then copies 256 bytes of data from $C6A0 down to $0100 so that the dump can start at $0400. It then jumps to the entry point at $C4E5 due to the copy overwriting the boot code.</Notes>
+</Metadata>

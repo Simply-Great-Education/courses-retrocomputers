@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SUPERSEYMOUR-5B0A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f53bc06d2b2ad3f79bcc876159a034bbb7ad6efc</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5B0A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Super Seymour.tap</SourceFile>
+  <SourceFileSHA1>30199eda53fc3922309f8702a31c281ca7fb8438</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5B0A "SUPERSEYMOUR-5B0A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Super Seymour.prg"</ExomizerCommand>
+</Metadata>

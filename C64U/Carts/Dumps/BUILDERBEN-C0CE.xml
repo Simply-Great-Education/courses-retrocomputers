@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>BUILDERBEN-C0CE</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>daf38dd4b47f4a32bfc61ff07c1004b1de1405ba</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C0CE</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Builder Ben.tap</SourceFile>
+  <SourceFileSHA1>814e1adbb9ff4d749f6503b1dfde8f69d56bf5cc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC0CE "BUILDERBEN-C0CE" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Builder Ben.prg"</ExomizerCommand>
+</Metadata>

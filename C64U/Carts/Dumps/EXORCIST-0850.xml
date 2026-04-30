@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>EXORCIST-0850</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>04db3f1c06bde61d1b4ddd5fceb97b89677e173a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0850</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Exorcist (Mr Micro).tap</SourceFile>
+  <SourceFileSHA1>fbda0569a6ae0ac6d13cb7ad2a75327742173a84</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "EXORCIST-0850" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Exorcist (Mr Micro).prg"</ExomizerCommand>
+</Metadata>

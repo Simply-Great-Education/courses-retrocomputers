@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SPACEFIREHAWK-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2d556dd2e257d9bb2c8e71c88aba1ea0fcfd9592</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Space Firehawk (Karsten Senkel - 2020).d64</SourceFile>
+  <SourceFileSHA1>9eb4faba04773740e48b682cfbe820faa59fe4f3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "SPACEFIREHAWK-4000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Space Firehawk (Karsten Senkel - 2020).prg"</ExomizerCommand>
+</Metadata>

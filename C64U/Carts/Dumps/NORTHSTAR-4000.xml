@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>NORTHSTAR-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>be83b30f797341c5bd0101e3686dd6d8d530eb8a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>NorthStar.tap</SourceFile>
+  <SourceFileSHA1>acdedb8de552ca66db5afb3b1ff975764d693b02</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "NORTHSTAR-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "NorthStar.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

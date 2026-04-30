@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>HELI1983DIRECTORSCUT-082C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5e403c3ca5272a8a3b76509594ffb6d36893c497</DumpFileSHA1>
+  <SimplifiedName>Heli 1983 - Directors Cut (Drachenberg Studios - 2022)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$082C</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Heli 1983 - Directors Cut.prg</SourceFile>
+  <SourceFileSHA1>36d26fc1dc881c445a3bc936bb8921257fe156b3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "HELI1983DIRECTORSCUT-082C" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Heli 1983 - Directors Cut (Drachenberg Studios - 2022).prg"</ExomizerCommand>
+</Metadata>

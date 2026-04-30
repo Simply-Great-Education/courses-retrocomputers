@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>YIEARKUNGFU-4380-0400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>214e3bb93ddf1ce718e7362679d54e43f2622c53</DumpFileSHA1>
+  <SimplifiedName>Yie Ar Kung-Fu</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4380</Address>
+    <Address>$0400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>253</SidLength>
+  <SourceFile>Yie Ar Kung-Fu (Imagine).tap</SourceFile>
+  <SourceFileSHA1>7d88c0b8887941902845bf46052c6f80a4c42a3c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0400 "YIEARKUNGFU-4380-0400" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $4380 dec $d030" -x "inc $d020" -o "Yie Ar Kung-Fu.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $4380 to setup the port A data direction register ($DC02) to allow the game to run properly.
+  Also removed the disk drive protection check which caused the game to crash if a drive was detected by replacing the BMI $051C instruction ($30, $EC) at $052E with RTS, NOP ($60, $EA).</Notes>
+</Metadata>

@@ -1,0 +1,244 @@
+Welcome to GEOS
+---------------
+
+Welcome to GEOS - your 
+retro-futuristic gateway to the 
+8-bit desktop dream. Follow these 
+quick steps to get up and running. 
+
+(Full GEOS deep-dive is below if you
+want to nerd out.)
+
+
+-= QUICK START =-
+=================
+
+Get started with the perfect config
+in 3 quick steps:
+
+
+STEP 1 - Setup
+--------------
+  Load these files then return here:
+     1a. Load GEOS Config.cfg
+     1b. Enable RAM Disk.reu
+
+
+STEP 2 - Set Controller
+-----------------------
+  Do you have a Joystick/Mouse?
+
+  'Nope'
+     Run this file:
+     2. Enable Keyboard Cursor.cfg
+
+  'Yeah!'
+     Connect it to Port 1 now
+     In GEOS use [C=]+[I] to toggle 
+     Joystick/Mouse
+
+
+STEP 3 - Boot!
+--------------
+  Run this disk to start GEOS!:
+     GEOS Boot Disk.d81
+
+
+Notes
+-----
+  JiffyDOS Owners:
+     If you wish to use JiffyDOS,
+     set your Kernal, Drive A, and
+     Drive B ROMs before STEP 3.
+
+  Config files:
+     When using the cfg file,
+     these configuration changes are
+     temporary. Previously flashed
+     settings are available after
+     a power cycle.
+
+
+PRINTING
+========
+
+You can print from GEOS programs!
+The Commodore 64 Ultimate will
+create a PNG file in the Temp 
+folder. You can use the C64U 
+AutoPrint driver (available at
+commodore.net) to print these files
+on your main printer.
+
+(If you see a "Printer inaccessible"
+message when printing from GEOS, 
+return to the C64U Menu, press F1,
+then toggle "Printer" off/on.)
+
+
+HOTKEYS
+=======
+
+GEOS also supports several keyboard 
+hotkeys. Most commands use the 
+Commodore key C= to access functions. 
+Common commands include C= + Z to 
+open a file, C= + D to delete a file,
+and C= + R to reset the desktop.
+
+Try these hotkeys:
+1-0 to select a page in the desktop.
+Press [^ CRSR v] to scroll the window
+one page down
+C= + A to select drive A 
+C= + B to select drive B 
+C= + SHIFT + A/B to swap the RAM disk
+     to drive A/B
+C= + 1 - 8 to select one icon
+C= + Z to open that file
+
+Try this to open to GeoWrite:
+* Once GEOS has booted, press the
+  C64U Multi-Function switch to 
+  open the File Browser.
+* Open the "GEOS App Disks" folder
+* Scroll down to "GEOWrite.d64"
+* Press RETURN and choose 
+  Mount Disk on B
+* Press C= + B to select the disk 
+  in GEOS
+* Press C= + 1 to select the 
+  first icon
+* Press C= + Z to run GeoWrite!
+
+Then use WASD and RETURN to move the
+cursor and select things! (Requires 
+keyboard cursor emulation - see above.)
+
+More Hotkey Commands:
+C= + 1 - 0: Select an icon or file
+CRSR up/down: Change page (window)
+C= + Z: Open file
+C= + H: Duplicate a file
+C= + M: Rename a file
+C= + Q: Get file information
+C= + P: Print
+C= + D: Delete a file
+C= + U: Undo a delete operation
+C= + I: Input/Printer Preferences
+C= + R: Reset the desktop
+
+Disk Operations:
+C= + A: Change to disk drive A
+C= + B: Change to disk drive B
+C= + O: Open a floppy disk
+C= + C: Close a disk
+C= + N: Rename a disk
+C= + K: Copy a disk
+C= + E: Erase a disk
+C= + F: Format a disk
+C= + SHIFT + A: Swap drives A and C
+C= + SHIFT + B: Swap drives B and C
+
+Page/File Selection in the Desktop:
+C= + W: Select pages
+C= + X: Select files within pages
+C= + Y: Select in the border
+
+
+So what is GEOS?
+----------------
+
+Berkeley Softworks launched GEOS
+
+(Graphic Environment Operating 
+System)
+
+in 1986 as a disk-based graphical 
+interface for the Commodore 64. The
+system brought desktop computing
+features to home users through
+pull-down menus, clickable icons, 
+dialog boxes, and proportional 
+typography.
+
+Drag and drop functionality formed a
+core part of the user experience. 
+Users could drag files directly onto
+the printer icon for immediate
+printing, move them to disk icons for
+copying, or drop them into the
+trashcan for deletion. This direct
+manipulation approach simplified file
+management considerably.
+
+The file association system worked
+without requiring extensions or
+identifying headers. Double-clicking
+any data file would automatically
+launch its associated application, a
+capability that remains standard in
+modern operating systems. This
+seamless integration eliminated the
+need for users to remember specific
+file naming conventions.
+
+Hardware compatibility expanded over
+time through various enhancements.
+RAM expansion modules increased
+available memory, while CPU
+accelerator cards improved processing
+speed. Hard drive support eventually
+became available, along with
+compatibility for numerous other
+peripheral devices that extended the
+system's capabilities.
+
+
+What is the GEOS RAM Disk?
+--------------------------
+
+The GEOS RAM Disk REU preload is
+provided to make GEOS faster and
+easier to use.
+
+If you run the RAM disk file before
+running your boot disk, you will have
+a fully configured RAM disk, ready
+to go, with GeoWrite, GeoDraw, and
+other apps pre-loaded.
+
+Press C= + SHIFT + B to swap the RAM
+disk in to drive B, then mount your
+data disks in drive A from the C64U
+main menu.
+
+
+Acknowledgements
+----------------
+
+This bootable version of GEOS was
+made available by Cenbe
+(https://www.lyonlabs.org/commodore)
+and then further modified with the
+help of Alan Reed and Tom Wilson.
+
+GEOWrite (all fonts 1581-REU) 1581
+was compiled by David Simmons. Note:
+performs best with REU 2MB enabled.
+
+This version of the guide compiled 
+by David Simmons, Marc Bilodeau, 
+Peri Fractic, Tom Wilson.
+
+Distributed with the 
+Commodore 64 Ultimate with kind
+permission from Maurice Randall.
+
+GEOS was developed by Berkeley 
+Softworks (later GeoWorks 
+Corporation).
+
+Manuals and further information are
+available at 
+https://www.lyonlabs.org/commodore/onrequest/geos/index.html

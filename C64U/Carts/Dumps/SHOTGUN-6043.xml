@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SHOTGUN-6043</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>02803e7aadba01cd067af45732df4cf0af394994</DumpFileSHA1>
+  <SimplifiedName>Shotgun (Dr. Wuro Industries - 2016)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6043</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Shotgun v1.1 (Dr. Wuro Industries).d64</SourceFile>
+  <SourceFileSHA1>d10e03fd486827dd1d3ebe9a87cc0e09d41835c4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6043 "SHOTGUN-6043" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Shotgun (Dr. Wuro Industries - 2016).prg"</ExomizerCommand>
+</Metadata>

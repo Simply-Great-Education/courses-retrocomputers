@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>CARRYONLAUGHING-CB00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d29bd22939fd65c67a5b4e1651edc9581b76caed</DumpFileSHA1>
+  <SimplifiedName>Carry on Laughing</SimplifiedName>
+  <JumpAddresses>
+    <Address>$CB00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Carry on Laughing (LiveWire).tap</SourceFile>
+  <SourceFileSHA1>17c0dd1ea3650f2f28d6fd2fcaccaf0b60a34ee2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCB00 "CARRYONLAUGHING-CB00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Carry on Laughing.prg"</ExomizerCommand>
+  <Notes>Removed an unnecessary copy of the BASIC ROM between $A000 and $BFFF in RAM before taking the dump.</Notes>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>TIPTRICK-739E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4e6b65e8a7db1262cfecd7f7baa49c25cc1f0f25</DumpFileSHA1>
+  <SimplifiedName>Tip-Trick</SimplifiedName>
+  <JumpAddresses>
+    <Address>$739E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Tip-Trick [PAL].g64</SourceFile>
+  <SourceFileSHA1>b2a3f1862c313d8d0c857d911a3b3bff94c1e4d3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x739E "TIPTRICK-739E" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Tip-Trick.prg"</ExomizerCommand>
+  <Notes>Removed the calls to the kernal load routine ($FFD5) at $7E9E and the kernal save routine ($F5ED) at $7E61 to remove disk access from the game (for high score loading and saving).</Notes>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>GUADALCANAL-0940</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b7a0c6e66a0f22b4bcc296e44114f786430bf4c0</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0940</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Guadalcanal.tap</SourceFile>
+  <SourceFileSHA1>211097cae698b60614a630a004dc016efbb8d0b2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0940 "GUADALCANAL-0940" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Guadalcanal.prg"</ExomizerCommand>
+</Metadata>

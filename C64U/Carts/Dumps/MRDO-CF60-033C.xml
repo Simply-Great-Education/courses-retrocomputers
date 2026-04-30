@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>MRDO-CF60-033C</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>9fdb0d0e9327c9de6a8350232d2017022aa1b3f4</DumpFileSHA1>
+  <SimplifiedName>Mr. Do!</SimplifiedName>
+  <JumpAddresses>
+    <Address>$CF60</Address>
+    <Address>$033C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Mr. Do! (Version a).tap</SourceFile>
+  <SourceFileSHA1>3c6045fdbc8a9b7e960bd77b6f0a50b110be9180</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x033C "MRDO-CF60-033C" -Di_table_addr=0x02 -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $cf60 dec $d030" -x "inc $d020" -o "Mr. Do! (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $CF60 to set some ZP and stack values to allow the game to run.</Notes>
+</Metadata>

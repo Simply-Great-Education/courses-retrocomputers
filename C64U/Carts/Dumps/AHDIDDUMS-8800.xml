@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>AHDIDDUMS-8800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>bd1bb5c144a5bcf82066ce095b77bb98dd080f0c</DumpFileSHA1>
+  <SimplifiedName>Ah Diddums</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Ah Diddums (Version a).tap</SourceFile>
+  <SourceFileSHA1>93cc5bdc093b1bef48e7a541171b477242c9a159</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8800 "AHDIDDUMS-8800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ah Diddums (J1).prg"</ExomizerCommand>
+  <Notes>The loading screen was converted from the Spectrum version by Alfonso Fernandez Borro (https://zxart.ee/eng/authors/letter20332/-af-).</Notes>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>TBIRD-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cc42617c08e0904966410d453bc9f31d84fdf3c2</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>T-Bird.tap</SourceFile>
+  <SourceFileSHA1>7f37ac4672a183447ae827aa453eb9cb04b9009f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x080D "TBIRD-080D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "T-Bird.prg"</ExomizerCommand>
+</Metadata>

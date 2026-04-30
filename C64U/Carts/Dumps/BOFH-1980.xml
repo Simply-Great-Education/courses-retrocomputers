@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>BOFH-1980</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>0866f29d74ff999fbffc314579ea98ef907e5ef1</DumpFileSHA1>
+  <SimplifiedName>BOFH - Servers Under Siege (Covert Bitops - 2002)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1980</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>BOFH - Servers Under Siege.d64</SourceFile>
+  <SourceFileSHA1>d53349100f94fd37cdf96ac5851f4cb9cee36d1a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1980 "BOFH-1980" -Di_table_addr=0x02 -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "BOFH - Servers Under Siege (Covert Bitops - 2002).prg"</ExomizerCommand>
+  <Notes>NOP'd out the calls to the kernal load routine ($FFD5) at $1EE3 and the kernal save routine ($FFD8) at $1F1A to remove disk access from the game (for high score loading and saving).
+  Also copied the default high score table data to $0334-$0400 (this was originally loaded by the game from disk).</Notes>
+</Metadata>

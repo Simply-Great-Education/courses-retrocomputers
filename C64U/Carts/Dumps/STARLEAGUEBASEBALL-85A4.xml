@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>STARLEAGUEBASEBALL-85A4</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>462aca31472b7400c00362c6255f020f96258295</DumpFileSHA1>
+  <SimplifiedName>Star League Baseball</SimplifiedName>
+  <JumpAddresses>
+    <Address>$85A4</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Star League Baseball [no1541].tap</SourceFile>
+  <SourceFileSHA1>be2e563fed38ec54b54481c17cf43570edb207b3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x85A4 "STARLEAGUEBASEBALL-85A4" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Star League Baseball (J1).prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SPOOKED-0D7B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cda8d0682d6704534d20bfb6b237059f082dabcc</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0D7B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Spooked.tap</SourceFile>
+  <SourceFileSHA1>96ce811ccd27854f4a67181391ef5a1aba77e1b4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0D7B "SPOOKED-0D7B" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Spooked.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

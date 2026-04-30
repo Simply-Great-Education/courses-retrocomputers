@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>THERACE-2000-C622</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>599c5aab7ecb0445bf3b42a53b23ef089ffe54db</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2000</Address>
+    <Address>$C622</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Race, The.tap</SourceFile>
+  <SourceFileSHA1>3118e879d532492dc0fb4745f6be2597f09f57ea</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC622 "THERACE-2000-C622" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $2000 dec $d030" -x "inc $d020" -o "Race, The (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $2000 which copies 256 bytes of data from $2020 down to $0200 so that the dump can start at $0400.
+  It then jumps to the entry point at $C622 (it couldn't use RTS because of the copy overwriting the boot code).
+  
+  Note: as the original game is frozen, the breakpoint to use for dumping is actually $0548.</Notes>
+</Metadata>

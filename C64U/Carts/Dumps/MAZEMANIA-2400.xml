@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MAZEMANIA-2400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>107cf7ca2d4e0baffd41ede06509e8c5020006a6</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Maze Mania.tap</SourceFile>
+  <SourceFileSHA1>e55b5e24da34e8e66d29722ba706af32cb315104</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2400 "MAZEMANIA-2400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Maze Mania.prg"</ExomizerCommand>
+</Metadata>

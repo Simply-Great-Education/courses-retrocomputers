@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>SPACEHUNTER-C800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>165b168c38335547b0e37177776e62429d890a0f</DumpFileSHA1>
+  <SimplifiedName>Space Hunter</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Space Hunter (Version 1).tap</SourceFile>
+  <SourceFileSHA1>db4b2229ff9841b0e4e0056d3a8c5d6d30e74082</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC800 "SPACEHUNTER-C800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Space Hunter.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the disk version</Notes>
+</Metadata>

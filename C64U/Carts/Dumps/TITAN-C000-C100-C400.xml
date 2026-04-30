@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>TITAN-C000-C100-C400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>80eb0f6f3eb9803243a03ca9544d1dda0e80d9e2</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$C100</Address>
+    <Address>$C400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>TITAN-CRAM-BB00</ColourRAMFile>
+  <ColourRAMStartAddress>$BB00</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Titan.tap</SourceFile>
+  <SourceFileSHA1>3ef4eee0c09ab6c46ddd7e5fca68e23bff1fee18</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC400 "AlternativeFormats\PRGs\Uncrunched\Titan.prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $bb00 lda #$37 sta $01 jsr $c000 jsr $c100 dec $d030" -x "inc $d020" -o "Titan.prg"</ExomizerCommand>
+  <Notes>Added a routine at $C000 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  Also copied the init routine from $02A7 to $C100 so that the game could be dumped from $0400.</Notes>
+</Metadata>

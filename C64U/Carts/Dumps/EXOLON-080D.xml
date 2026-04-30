@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>EXOLON-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e0fa7bbd99390cb10549460a66ce8b55ae5d9af4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Exolon.tap</SourceFile>
+  <SourceFileSHA1>d6d84cc75200a256d77e8546396b2bb220aef96f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "EXOLON-080D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Exolon.prg"</ExomizerCommand>
+  <Notes>Patched $3935 from $00 to $02 so that the controls default to joystick in port 2.
+  
+  Note: as the Rack-It release containing the loading screen by Stephen Robertson (SIR) could not be located, the image was converted back from the image hosted on Lemon64!</Notes>
+</Metadata>

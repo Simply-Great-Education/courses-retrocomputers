@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>STARGLIDER-0410-5900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b2adbb0f650024a3b0b708451842c24e9b5873f4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0410</Address>
+    <Address>$5900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <ColourRAMFile>STARGLIDER-CRAM-05D0</ColourRAMFile>
+  <ColourRAMStartAddress>$05D0</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Starglider.tap</SourceFile>
+  <SourceFileSHA1>dc9de9c3bfa35e1f9e9e49c7dc3e35b9a35e297f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5900 "AlternativeFormats\PRGs\Uncrunched\Starglider.prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $05d0 lda #$36 sta $01 jsr $0410 dec $d030" -x "inc $d020" -o "Starglider.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0410 which:
+  1. Displays the loading screen (the colour RAM is loaded for this to display correctly) and waits for any key or the fire button on either joystick to enter the game
+  2. Sets the CIA #1 timer B ($DC06/$DC07) to $040A so that the music/sound begins as soon as the game starts just like the disk version</Notes>
+</Metadata>

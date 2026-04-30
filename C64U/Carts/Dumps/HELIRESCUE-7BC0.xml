@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>HELIRESCUE-7BC0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c3208b425c7fb94e4e540fdca74b5e7fca42d887</DumpFileSHA1>
+  <SimplifiedName>Heli Rescue</SimplifiedName>
+  <JumpAddresses>
+    <Address>$7BC0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Heli Rescue (Golden Disk 64 - 1992-02).d64</SourceFile>
+  <SourceFileSHA1>f77e84223ee6914b317eab3f0cfd268e705f1ffd</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7BC0 "HELIRESCUE-7BC0" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Heli Rescue.prg"</ExomizerCommand>
+  <Notes>NOP'd out the call to the subroutine at $AC00 at $7BC5 to remove attempted access to the serial bus.</Notes>
+</Metadata>

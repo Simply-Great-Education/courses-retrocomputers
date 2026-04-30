@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SQUASHAFROG-2AF8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b1dce03073c2b078f5bc424e796d22ab67e7ccd4</DumpFileSHA1>
+  <SimplifiedName>Squash a Frog</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2AF8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Squash a Frog (Alligata).tap</SourceFile>
+  <SourceFileSHA1>f17f44d0b7cb2c6670719cb7e62728f020f23d8d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2AF8 "SQUASHAFROG-2AF8" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Squash a Frog.prg"</ExomizerCommand>
+</Metadata>

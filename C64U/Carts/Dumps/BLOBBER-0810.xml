@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>BLOBBER-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>36c6aa997228880a4fa90bbe5e015cb25eb544b0</DumpFileSHA1>
+  <SimplifiedName>Blobber</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Blobber (Happy Computer - LH 8903 - 20903).d64</SourceFile>
+  <SourceFileSHA1>c7dee07683e034f9da0b69fa81af27cf177b4299</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "BLOBBER-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Blobber.prg"</ExomizerCommand>
+  <Notes>Removed disk highscore loading and saving by removing the calls to $F5ED (load) at $47F0 and $F4A5 (save) at $44AD.</Notes>
+</Metadata>

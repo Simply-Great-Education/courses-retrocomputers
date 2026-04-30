@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>ANGLEBALL-4349</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>afd77b8b1e0e6c659fb44f3e7598476c5f3eb20a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4349</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Angle Ball.tap</SourceFile>
+  <SourceFileSHA1>6591c4abcf6bcc5fff5f90f5dfda4317c43303f4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4349 "ANGLEBALL-4349" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Angle Ball.prg"</ExomizerCommand>
+</Metadata>

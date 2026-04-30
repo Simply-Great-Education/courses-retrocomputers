@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>STRANDED-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2774529abee3a6f585bb4715dfeacad94bd9cf78</DumpFileSHA1>
+  <SimplifiedName>Stranded</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Stranded (English Software).tap</SourceFile>
+  <SourceFileSHA1>cb00033af3f2e9b9fa534995ebbb6e5d9840586a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "STRANDED-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Stranded.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>CAVERNSOFSILLAHC-1360</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6067ab1ab7ee58dd481ee5c9e9ae05d4624d9ca7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1360</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <RasterBarType>None</RasterBarType>
+  <SidLength>67</SidLength>
+  <SourceFile>Caverns of Sillahc.tap</SourceFile>
+  <SourceFileSHA1>02db8f21a38e478624a0450f01be92f6d7312b03</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1360 "CAVERNSOFSILLAHC-1360" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Caverns of Sillahc.prg"</ExomizerCommand>
+</Metadata>

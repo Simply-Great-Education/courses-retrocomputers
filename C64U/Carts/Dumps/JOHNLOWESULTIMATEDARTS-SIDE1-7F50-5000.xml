@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>JOHNLOWESULTIMATEDARTS-SIDE1-7F50-5000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f411051c9592554d04255dc07b4ea43be1da1a73</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7F50</Address>
+    <Address>$5000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>JOHNLOWESULTIMATEDARTS-SIDE1-CRAM-D000</ColourRAMFile>
+  <ColourRAMStartAddress>$D000</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>John Lowe's Ultimate Darts (Side 1).tap</SourceFile>
+  <SourceFileSHA1>797065fe5e80f05c4acee883ef4a8d4e748abd84</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5000 "AlternativeFormats\PRGs\Uncrunched\John Lowe's Ultimate Darts (Side 1).prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$34 sta $01 jsr $d000 lda #$37 sta $01 jsr $7f50 dec $d030" -x "inc $d020" -o "John Lowe's Ultimate Darts (Side 1).prg"</ExomizerCommand>
+  <Notes>Added a routine at $7F50 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  It then sets up the correct VICII settings for the game itself.
+  
+  Also restored 32 bytes of data to the loading screen bitmap at $FD30 which were corrupted at the end of the original loading code by a call to the kernal RESTOR routine ($FD15).</Notes>
+</Metadata>

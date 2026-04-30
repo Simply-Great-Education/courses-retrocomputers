@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>OUTLAWS-0910</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6fa8967bf90bed1cf4e7d1f6caabb0dad7ac3adf</DumpFileSHA1>
+  <SimplifiedName>Outlaws</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0910</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Outlaws (Ultimate).tap</SourceFile>
+  <SourceFileSHA1>e8a256b185ad5662c1a1f584e1fc9d411f28dd59</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0910 "OUTLAWS-0910" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Outlaws.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>DEFUZION-9000-0A07</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3374d8b67201b796872dda45b61e8c55814a0a42</DumpFileSHA1>
+  <SimplifiedName>Defuzion (TND - 2000)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$9000</Address>
+    <Address>$0A07</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <ColourRAMFile>DEFUZION-CRAM-9100</ColourRAMFile>
+  <ColourRAMStartAddress>$9100</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>185</SidLength>
+  <SourceFile>Defuzion.tap</SourceFile>
+  <SourceFileSHA1>4c4580b88b70a4ccd16056ea95343cc9d66cac56</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0A07 "AlternativeFormats\PRGs\Uncrunched\Defuzion (TND - 2000).prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $9100 lda #$35 sta $01 jsr $9000 dec $d030" -x "inc $d020" -o "Defuzion (TND - 2000).prg"</ExomizerCommand>
+  <Notes>Added a routine at $9000 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

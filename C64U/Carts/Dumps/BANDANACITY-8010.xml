@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>BANDANACITY-8010</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8b4dc6ffd575403f1ca1c77608138cc4a2588cd3</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8010</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <RasterBarType>None</RasterBarType>
+  <SidLength>67</SidLength>
+  <SourceFile>Bandana City.tap</SourceFile>
+  <SourceFileSHA1>bb40b5bce0f657324df8847324eb7a45c08d175d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8010 "BANDANACITY-8010" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bandana City.prg"</ExomizerCommand>
+</Metadata>

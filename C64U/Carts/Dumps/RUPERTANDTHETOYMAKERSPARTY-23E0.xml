@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>RUPERTANDTHETOYMAKERSPARTY-23E0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>aef31dff4e9341a95c83f839eea55c4ca9624da9</DumpFileSHA1>
+  <SimplifiedName>Rupert and the Toymaker's Party</SimplifiedName>
+  <JumpAddresses>
+    <Address>$23E0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Rupert and the Toymaker's Party (Version 1).tap</SourceFile>
+  <SourceFileSHA1>fb54450c3a577dc6b50f2989ccd2f008f55b9964</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x23E0 "RUPERTANDTHETOYMAKERSPARTY-23E0" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Rupert and the Toymaker's Party.prg"</ExomizerCommand>
+  <Notes>Patched the LDA #$00 instruction at $2401 to be LDA #$01 instead. This causes $2618 to be initialised to #$01, which allows keys 1 - 4 to be used straight away on the title screen to choose a route rather than having to wait for a while.
+  
+  The loading screen is from the Spectrum version</Notes>
+</Metadata>

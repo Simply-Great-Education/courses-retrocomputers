@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BRAVESTARR-1C44</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>dbe8be4a58d4e525bb49ace597a8e7e3ddce3eb6</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1C44</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>BraveStarr.tap</SourceFile>
+  <SourceFileSHA1>c6d3fe68f2dba0b8e469936ad4aa9a6b56898b2a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1C44 "BRAVESTARR-1C44" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "BraveStarr.prg"</ExomizerCommand>
+</Metadata>

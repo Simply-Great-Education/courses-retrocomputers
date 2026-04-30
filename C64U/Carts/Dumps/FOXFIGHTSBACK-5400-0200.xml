@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>FOXFIGHTSBACK-5400-0200</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>87b363e1b68d5df8db19ec646e5555e75cbdd1df</DumpFileSHA1>
+  <SimplifiedName>Fox Fights Back!</SimplifiedName>
+  <JumpAddresses>
+    <Address>$5400</Address>
+    <Address>$0200</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Fox Fights Back! (ImageWorks).tap</SourceFile>
+  <SourceFileSHA1>a706b249c3850f1d9ac48e86cd7372e544f4101a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0200 "FOXFIGHTSBACK-5400-0200" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $5400 dec $d030" -x "inc $d020" -o "Fox Fights Back!.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $5400 which copies 512 bytes of data from $5420 down to $0200 so that the dump can start at $0400 (this is the state the memory was in after the depacker from the original game had finished - this allows us to skip this slow step).
+  It then jumps to the entry point at $0200 (it couldn't use RTS because of the copy overwriting the boot code).</Notes>
+</Metadata>

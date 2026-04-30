@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>NIGHTSHADEMONO-9353</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>680ffaefe88b0e828de1f8b250e6111b5d081a20</DumpFileSHA1>
+  <SimplifiedName>Night Shade (Mono)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$9353</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Night Shade (Side 2a).tap</SourceFile>
+  <SourceFileSHA1>62a18dbe4473fd634cd55a8617d339bc2df8c1cb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9353 "NIGHTSHADEMONO-9353" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Night Shade (Mono).prg"</ExomizerCommand>
+</Metadata>

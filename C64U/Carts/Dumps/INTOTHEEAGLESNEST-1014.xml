@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>INTOTHEEAGLESNEST-1014</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>90034ed2930d4c40402ce990498836e08010128e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1014</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Into the Eagle's Nest.tap</SourceFile>
+  <SourceFileSHA1>f0aa8fe45b85fa25e52e466c3741da8540530ddb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1014 "INTOTHEEAGLESNEST-1014" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Into the Eagle's Nest.prg"</ExomizerCommand>
+</Metadata>

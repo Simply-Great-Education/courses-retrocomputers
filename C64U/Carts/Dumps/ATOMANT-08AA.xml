@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ATOMANT-08AA</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2984a23edef9b085f35afb90f3ee8cbde8eba6fb</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$08AA</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Atom Ant.tap</SourceFile>
+  <SourceFileSHA1>db39b66e0d62fc3131843634b9054cfd24ab482b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x08AA "ATOMANT-08AA" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Atom Ant.prg"</ExomizerCommand>
+</Metadata>

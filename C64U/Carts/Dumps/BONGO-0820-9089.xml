@@ -1,0 +1,27 @@
+﻿<Metadata>
+  <DumpFile>BONGO-0820-9089</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e8e96db1ba7ca26d10a2a49c9b8c592b2f133bc7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0820</Address>
+    <Address>$9089</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Bongo.tap</SourceFile>
+  <SourceFileSHA1>a6cefca1819a68cce3e7191ae2390540a1ba5723</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9089 "BONGO-0820-9089" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0820 dec $d030" -x "inc $d020" -o "Bongo.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0820 which copies 256 bytes of data from $0830 down to $0200 so that the dump can start at $0400. This allows the game to run correctly.
+  
+  Also applied the following fixes:
+
+  To remove garbage from the player 1 screen:
+ 
+  1. Removed junk values between $9A7F - $9A86
+  2. Removed colons at $9C2A, $9C4E, $9C53, $9C54, $9CC6 and $9CC8
+  
+  To remove garbage from the player 2 screen:
+  
+  Changed the CPY #$FF instruction at $72A7 to be CPY #$00 instead (i.e. copy one less character)</Notes>
+</Metadata>

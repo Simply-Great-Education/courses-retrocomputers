@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ROUNDTHEBEND-6600</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c85f778c89fb86dca14f308af1ab92788f3221c1</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$6600</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Round the Bend!.tap</SourceFile>
+  <SourceFileSHA1>85408c446abb1ded21c4d8bf5bdcb32d386f1cc8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6600 "ROUNDTHEBEND-6600" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Round the Bend!.prg"</ExomizerCommand>
+</Metadata>

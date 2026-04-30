@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>URIDIUM-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>446b84355f31dd5e6a6a24a0cb154145bae9ac2f</DumpFileSHA1>
+  <SimplifiedName>Uridium</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Uridium (Version 1).tap</SourceFile>
+  <SourceFileSHA1>03c0a0c775fb5e2a4cffbd865205f04d4824b27a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0900 "URIDIUM-0900" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Uridium.prg"</ExomizerCommand>
+  <Notes>The loading screen by Steve Day (STE'86) was obtained from CSDb.</Notes>
+</Metadata>

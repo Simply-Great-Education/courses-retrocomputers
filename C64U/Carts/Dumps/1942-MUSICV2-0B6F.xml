@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>1942-MUSICV2-0B6F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a0570d9f21ba95ad8b2088cd73613d8a900595c0</DumpFileSHA1>
+  <SimplifiedName>1942 (Music v2)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0B6F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>1942 (Encore) (Side 1) (Music v2).tap</SourceFile>
+  <SourceFileSHA1>772800101f3d334072df40c88043e534f14e586f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0B6F "1942-MUSICV2-0B6F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "1942 (Music v2).prg"</ExomizerCommand>
+  <Notes>This is the Encore re-release which has different music to the original Elite version.</Notes>
+</Metadata>

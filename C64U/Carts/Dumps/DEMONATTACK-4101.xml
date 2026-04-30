@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>DEMONATTACK-4101</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f478b0d806d3db0581f2acc81ec8770a2b7fb45d</DumpFileSHA1>
+  <SimplifiedName>Demon Attack</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4101</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Demon Attack &amp; Pitfall!.g64</SourceFile>
+  <SourceFileSHA1>18847544f133c0cac5753400c2e3c380f1ee0f9b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4101 "DEMONATTACK-4101" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Demon Attack (J1).prg"</ExomizerCommand>
+</Metadata>

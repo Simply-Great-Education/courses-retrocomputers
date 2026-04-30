@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>BRAINSTORM-51A2</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3aef809ebfcb1b78b245e9d20b7485682a5d9ef4</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$51A2</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Brainstorm.tap</SourceFile>
+  <SourceFileSHA1>60fa1c9b97280e153c8d7a02005730888dc3ecd8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x51A2 "BRAINSTORM-51A2" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Brainstorm.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

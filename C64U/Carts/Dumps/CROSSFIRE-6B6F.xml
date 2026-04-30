@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>CROSSFIRE-6B6F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>10245c6d5be238d34f0f4ea8077b33d5542463a2</DumpFileSHA1>
+  <SimplifiedName>Crossfire (Sierra Online)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6B6F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Crossfire.d64</SourceFile>
+  <SourceFileSHA1>a2714ce32affa1e2bc8416bbb33b633ce163280a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6B6F "CROSSFIRE-6B6F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Crossfire (Sierra Online).prg"</ExomizerCommand>
+</Metadata>

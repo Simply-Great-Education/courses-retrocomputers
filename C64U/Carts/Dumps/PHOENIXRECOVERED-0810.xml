@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>PHOENIXRECOVERED-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7a3c33d16c9929431d75fc7db9627a7f179736ec</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Phoenix-Recovered (Sorbas - 2021).prg</SourceFile>
+  <SourceFileSHA1>4c8ff8393ddf3cdb723378a4db854f71ff02a40a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0810 "PHOENIXRECOVERED-0810" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Phoenix-Recovered (Sorbas - 2021).prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SLUG-0C2F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ffa14844be73b670831d48829899edc8b6f893aa</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0C2F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Slug.tap</SourceFile>
+  <SourceFileSHA1>58028cb05c659cf736d86fb29ac5ed4bb4310e56</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0C2F "SLUG-0C2F" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Slug.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

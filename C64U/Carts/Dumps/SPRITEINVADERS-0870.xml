@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SPRITEINVADERS-0870</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e8c264bf6bbb1c83938445f71f575cb98b91565c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0870</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Sprite Invaders (Booze Design - 2021).prg</SourceFile>
+  <SourceFileSHA1>b5b312201b417e322ba47528cc4e3beab62851f1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0870 "SPRITEINVADERS-0870" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Sprite Invaders (Booze Design - 2021).prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>TRIAXOS-1000-841B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>23c30aa67c40d93e8f2e9e3af7370d1a905e8c00</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+    <Address>$841B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Triaxos.tap</SourceFile>
+  <SourceFileSHA1>03edf02e8e2d94f72aea7d61037e8be56b4c6192</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x841B "TRIAXOS-1000-841B" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $1000 dec $d030" -x "inc $d020" -o "Triaxos.prg"</ExomizerCommand>
+  <Notes>Added a routine at $1000 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.
+  
+  Also patched the $01 at $234B to $0F to increase the music volume on the title screen (this bug exists in the original game - without this the music is too quiet).</Notes>
+</Metadata>

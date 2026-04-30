@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>RETURNOFTHESPACEWARRIORS-7477</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>00178cf9412fd0e2d97cb98f300db7979bcbf062</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7477</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Return of the Space Warriors.tap</SourceFile>
+  <SourceFileSHA1>fcd9b49bb370b47c11c2877bce2ece29ec3d6db9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7477 "RETURNOFTHESPACEWARRIORS-7477" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Return of the Space Warriors.prg"</ExomizerCommand>
+  <Notes>To default player one and two to joystick control, the following changes were made:
+  1. Changed the JMP $7148 instruction at $7488 to be JMP $1000 instead
+  2. Add a routine at $1000 which sets $65 and $66 to $02, before jumping to $7148 to carry on the normal code flow</Notes>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>TURDLE-CB06</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e8662e23115c7f13320294a565d75084b1bb88de</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CB06</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Turdle (Megastyle - 2022).prg</SourceFile>
+  <SourceFileSHA1>6084f052bbb7a62919f2bb1b420e1a4a7464d563</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCB06 "TURDLE-CB06" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Turdle (Megastyle - 2022).prg"</ExomizerCommand>
+</Metadata>

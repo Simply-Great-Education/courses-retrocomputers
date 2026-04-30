@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>OINK-4030</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>acf963aefb0eafebdc6c12f22300052e161ffb3f</DumpFileSHA1>
+  <SimplifiedName>Oink!</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4030</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Oink! (Version b).tap</SourceFile>
+  <SourceFileSHA1>e3648a37c3ebd472b24f10a0cf74612061ae6aeb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4030 "OINK-4030" -Di_table_addr=0x02 -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Oink!.prg"</ExomizerCommand>
+</Metadata>

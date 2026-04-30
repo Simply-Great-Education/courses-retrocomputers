@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>PUZZLENOID-0800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fac288208aa0cdce6a4b807debabb0aadffed099</DumpFileSHA1>
+  <SimplifiedName>Puzzlenoid</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Puzzlenoid (64'er Magazin - 91-03 - Side 1).d64</SourceFile>
+  <SourceFileSHA1>a18e132fb4b8763079f8a86505df1ed20d4b17ae</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0800 "PUZZLENOID-0800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Puzzlenoid.prg"</ExomizerCommand>
+  <Notes>Removed the calls to the kernal load routine ($FFD5) at $390E and the kernal save routine ($FFD8) at $38DA to remove disk access from the game (for high score loading and saving).</Notes>
+</Metadata>

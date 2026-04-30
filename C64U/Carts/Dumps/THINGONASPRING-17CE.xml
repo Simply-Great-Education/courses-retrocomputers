@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>THINGONASPRING-17CE</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b6b987cefd3fd209d7b1600b5f0e28f390e4133f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$17CE</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Thing on a Spring.tap</SourceFile>
+  <SourceFileSHA1>d992eb8ef5e3e079db946bd90342457cadb464c7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x17CE "THINGONASPRING-17CE" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Thing on a Spring.prg"</ExomizerCommand>
+  <Notes>The loading screen by Stephen Robertson (SIR) was obtained from CSDb.</Notes>
+</Metadata>

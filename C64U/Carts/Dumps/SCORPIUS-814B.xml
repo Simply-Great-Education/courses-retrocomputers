@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SCORPIUS-814B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>399d710bfd3b51af7eb0ce90c3bb17c5df1dffcf</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$814B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Scorpius.tap</SourceFile>
+  <SourceFileSHA1>7be17d03fd4e8abbe2ac779facb6f6da92786d74</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x814B "SCORPIUS-814B" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Scorpius.prg"</ExomizerCommand>
+</Metadata>

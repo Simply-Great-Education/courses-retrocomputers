@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>STOPTHEEXPRESS-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d1c0a3ae05fe281feda0c4991e6f7d1d1d0e08c1</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Stop the Express.tap</SourceFile>
+  <SourceFileSHA1>4c52fe73ee4d61c5cbd8fd6539c74f8e899cc1f8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "STOPTHEEXPRESS-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Stop the Express (J1).prg"</ExomizerCommand>
+  <Notes>The loading screen was converted from the Spectrum version by Andy Green (https://www.facebook.com/AndyGreenPixelArt).</Notes>
+</Metadata>

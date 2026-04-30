@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>MOONSWEEPER-0860</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>62219a9df5000d2213dad17405451b031332c82c</DumpFileSHA1>
+  <SimplifiedName>Moonsweeper (Imagic)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0860</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Moonsweeper.d64</SourceFile>
+  <SourceFileSHA1>171966cdf0897ed9bf96f6c50b15f5ea095b8f1c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0860 "MOONSWEEPER-0860" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Moonsweeper (Imagic).prg"</ExomizerCommand>
+</Metadata>

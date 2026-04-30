@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>NONTERRAQUEOUS-0CCA</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>124d9093e70bff1dee4295579c7f786a30a4f747</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0CCA</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Nonterraqueous.tap</SourceFile>
+  <SourceFileSHA1>6c246e9f8cb16fb86577173eeac45720ec531a19</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0CCA "NONTERRAQUEOUS-0CCA" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Nonterraqueous.prg"</ExomizerCommand>
+</Metadata>

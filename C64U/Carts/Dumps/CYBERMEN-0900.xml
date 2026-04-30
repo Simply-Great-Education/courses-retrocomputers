@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>CYBERMEN-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6ed128bb20068a8c97acf953f0cefa3200b25a70</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Cybermen.tap</SourceFile>
+  <SourceFileSHA1>5424d32bc2d0b961ba9df36f7d3075b72ff682b3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "CYBERMEN-0900" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Cybermen.prg"</ExomizerCommand>
+</Metadata>

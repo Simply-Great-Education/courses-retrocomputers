@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>GR9STRIKEFORCE-0812</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a33fd1a1b6f82c84d6bcd97fc1d6d002c404d590</DumpFileSHA1>
+  <SimplifiedName>GR9 Strike Force (Cosine Systems - 2009)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0812</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>GR9 Strike Force (Cosine Systems).d64</SourceFile>
+  <SourceFileSHA1>a7c3b1b405b807eeec845d60e64daae021787d65</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0812 "GR9STRIKEFORCE-0812" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "GR9 Strike Force (Cosine Systems - 2009).prg"</ExomizerCommand>
+</Metadata>

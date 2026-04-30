@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>THEHALLSOFTHETHINGS-2000-A001</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3c95414be4a05517001172f4734a9201f1dbf793</DumpFileSHA1>
+  <SimplifiedName>Halls of the Things, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$2000</Address>
+    <Address>$A001</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <ColourRAMFile>THEHALLSOFTHETHINGS-CRAM-2080</ColourRAMFile>
+  <ColourRAMStartAddress>$2080</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>Halls of the Things The (Version 2a).tap</SourceFile>
+  <SourceFileSHA1>e320e4ac51d85d655ce56ac72565b616b8dac0cb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xA001 "AlternativeFormats\PRGs\Uncrunched\Halls of the Things, The.prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $2080 lda #$36 sta $01 jsr $2000 dec $d030" -x "inc $d020" -o "Halls of the Things, The.prg"</ExomizerCommand>
+  <Notes>Added a routine at $2000 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

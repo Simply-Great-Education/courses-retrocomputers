@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>HALCYON-0A00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>54f69eb39f7026f8ad9b990cd4452bc192b4cab9</DumpFileSHA1>
+  <SimplifiedName>Halcyon</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0A00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Halcyon (Kingsoft).tap</SourceFile>
+  <SourceFileSHA1>e41573b433a45303b54422f26bb8900720d291e2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0A00 "HALCYON-0A00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Halcyon.prg"</ExomizerCommand>
+  <Notes>As this game is actually frozen, the game starts at $0AD3. However the true start address is $0A00.</Notes>
+</Metadata>

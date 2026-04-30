@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>BALLCRAZY-0400-8460</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>799c13d3a9bc02fde2fae341c1f2d3356e187944</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$8460</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Ball Crazy.tap</SourceFile>
+  <SourceFileSHA1>afc819a5053d8067ac4ce94ec570eee29c333710</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8460 "BALLCRAZY-0400-8460" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Ball Crazy.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0400 to copy the colour RAM data from $7800 (where it was present in the original game) and display the loading screen. It then waits for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

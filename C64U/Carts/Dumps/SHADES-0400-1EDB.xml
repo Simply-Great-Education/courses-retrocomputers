@@ -1,0 +1,30 @@
+﻿<Metadata>
+  <DumpFile>SHADES-0400-1EDB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>661d67f01480c8e7b510501954dd9486ba4581e8</DumpFileSHA1>
+  <SimplifiedName>Shades</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$1EDB</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Shades (Durell).tap</SourceFile>
+  <SourceFileSHA1>efe4cf46c468b6a02d3db7f908b5f604fb7d80a5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1EDB "SHADES-0400-1EDB" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Shades.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC program to request player setup before the main game loads. However, as the main game code overwrites this program, the following steps were taken to retain it:
+  
+  1. The initial file loading part of the BASIC program was removed
+  2. It was modified at line 2200 to replace the existing SYS call to jump back to a new machine code routine at $0DF8 instead when the program is finished
+  3. The new machine code routine at $0DF8 sets the processor port ($01) to $34 to bank in all of memory and jumps to another new machine code routine at $DB00
+  4. The 1536 ($0600) bytes of data representing the modified BASIC program and the new routine at $0DF8 was placed back at $0800
+  5. The data occupying this space ($0800 - $0E00) was moved to $D000 in the dump so that it could be copied back into place after the program is finished
+  6. In order to to be able to display the loading screen, the screen RAM part of the image ($03E8 bytes) was used to replace the data at $CC00
+  7. The data occupying this space ($CC00 - $CFE8) was moved to $D600 in the dump so that it could be copied back into place after the loading screen is displayed
+  8. A new machine code routine was placed at $0400 which sets the correct VICII settings and BASIC pointers in order to display the loading screen and then run the modified BASIC program
+  9. This routine also disables the RUN/STOP key by modifying the STOP vector by setting $E1 at $0328
+  10. The new machine code routine at $DB00 copies the data back down from $D000 to $0800 and $D600 to $CC00
+  12. To handle the fact that processor port ($01) must be set back to $37 to bank all of ROM back in, it copies a small routine to the bottom of the stack ($0100) and executes it to jump to the games entry point at $1EDB</Notes>
+</Metadata>

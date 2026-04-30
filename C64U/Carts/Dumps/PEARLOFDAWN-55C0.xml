@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>PEARLOFDAWN-55C0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3f70bcd84c1237931575f741d401f0e044ce18e5</DumpFileSHA1>
+  <SimplifiedName>Pearl of Dawn</SimplifiedName>
+  <JumpAddresses>
+    <Address>$55C0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Pearl of Dawn (Game On - 1992-06 - Side 2).d64</SourceFile>
+  <SourceFileSHA1>984c13f377cd7a646f5b6076551c0b5ea231137e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x55C0 "PEARLOFDAWN-55C0" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Pearl of Dawn.prg"</ExomizerCommand>
+</Metadata>

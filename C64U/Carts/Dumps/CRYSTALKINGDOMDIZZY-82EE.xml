@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>CRYSTALKINGDOMDIZZY-82EE</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>865ba20da695b9c027bd6fc5f18fce9adadcfcaa</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$82EE</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Crystal Kingdom Dizzy.tap</SourceFile>
+  <SourceFileSHA1>adac99d8a0a5af2f68973f759be51f458208ae58</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x82EE "CRYSTALKINGDOMDIZZY-82EE" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Crystal Kingdom Dizzy.prg"</ExomizerCommand>
+</Metadata>

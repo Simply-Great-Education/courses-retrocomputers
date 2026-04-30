@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>GRANDPRIXSIMULATOR-CBA6</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5e621320573bd360601feb7e65ec896e973d6561</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CBA6</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>GRANDPRIXSIMULATOR-CRAM-6300</ColourRAMFile>
+  <ColourRAMStartAddress>$6300</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Grand Prix Simulator.tap</SourceFile>
+  <SourceFileSHA1>2ebbd84f618a9e489fb75444db08e2cbfb53ed5e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCBA6 "AlternativeFormats\PRGs\Uncrunched\Grand Prix Simulator.prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $6300 lda #$37 sta $01 dec $d030" -x "inc $d020" -o "Grand Prix Simulator.prg"</ExomizerCommand>
+  <Notes>Inserted RLE packed colour RAM data to dump file at $6300 to restore before starting the game.</Notes>
+</Metadata>

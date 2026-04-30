@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SPACETRAP-081C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f419df2f67773022ceb9fb8820ca34f7e9c1792d</DumpFileSHA1>
+  <SimplifiedName>Space Trap</SimplifiedName>
+  <JumpAddresses>
+    <Address>$081C</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Space Trap (Handic Software).d64</SourceFile>
+  <SourceFileSHA1>8bf57b286d0d738083ce592b91e002a25d2bbc76</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "SPACETRAP-081C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Space Trap (J1).prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MEGAPHOENIX-80E8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>de4451b7e86b5ff4dc6b1be2949a5b2937189e91</DumpFileSHA1>
+  <SimplifiedName>Mega Phoenix</SimplifiedName>
+  <JumpAddresses>
+    <Address>$80E8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Mega Phoenix (PC Hits - Prism Leisure).tap</SourceFile>
+  <SourceFileSHA1>43a7bb9c890e1f0e8d9ffd0478877c3c520ceed9</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x80E8 "MEGAPHOENIX-80E8" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mega Phoenix.prg"</ExomizerCommand>
+</Metadata>

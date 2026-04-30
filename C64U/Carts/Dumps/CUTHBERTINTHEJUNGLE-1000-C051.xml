@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>CUTHBERTINTHEJUNGLE-1000-C051</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7a415b5ad3b21dea91938f6cd337ba062d46cf96</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+    <Address>$C051</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Cuthbert in the Jungle.tap</SourceFile>
+  <SourceFileSHA1>b9b983861cf2210808f29b29b105fcd52b07110c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC051 "CUTHBERTINTHEJUNGLE-1000-C051" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $1000 dec $d030" -x "inc $d020" -o "Cuthbert in the Jungle (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $1000 which sets the first two bytes of the temporary area at $22 to $40, $08. This allows the game to start in the expected state.</Notes>
+</Metadata>

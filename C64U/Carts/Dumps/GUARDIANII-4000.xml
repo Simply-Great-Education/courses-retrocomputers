@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>GUARDIANII-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8b86de6b3345f6d3ebd06888c1d4a425a611062b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Guardian II.tap</SourceFile>
+  <SourceFileSHA1>bf44ff17701c0ff6014005d258584cd24c6bc8d7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "GUARDIANII-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Guardian II.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,25 @@
+﻿<Metadata>
+  <DumpFile>SKULL-9E80-73FC</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ab3cfb6e32c44eb98eb7d9c3c5f59781342ef386</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9E80</Address>
+    <Address>$73FC</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Skull.tap</SourceFile>
+  <SourceFileSHA1>ad6b106fa591323b717543d86bbe6f0cb9553329</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x73FC "SKULL-9E80-73FC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $9e80 dec $d030" -x "inc $d020" -o "Skull.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $9E80 which:
+  1. Turns off interrupts from the two CIA chips and acks any pending CIA interrupts.
+  2. Copies 256 bytes of data from $9ED0 down to $0000 so that the dump can start at $0400. This allows the game to run correctly.
+  3. Sets up the correct VICII settings and border colour.
+  4. Sets 2 bytes of return address data at the top of the stack ($01FE - $01FF).
+  5. Sets the stack pointer to $FD to give the correct next available location on the stack (i.e. just below the address data copied in step 4).
+  6. Re-enables raster interrupts and timer NMIs.
+  7. And finally jumps to the entry point at $73FC (it couldn't use RTS because of the stack manipulation above).
+  
+  All of this allows the game to start more quickly.</Notes>
+</Metadata>

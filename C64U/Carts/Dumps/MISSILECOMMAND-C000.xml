@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MISSILECOMMAND-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>dbb7e75e70bccc6c4f3ab8a3288066d92544799f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Missile Command.tap</SourceFile>
+  <SourceFileSHA1>6b18a69b56f1b91dc57e00f0a0f4f60042784763</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "MISSILECOMMAND-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Missile Command.prg"</ExomizerCommand>
+  <Notes>This is a BASIC game which loads two BASIC programs (one at $0801 is used to load the files from the tape and the actual game program is loaded at $0A01).
+  Therefore an init routine has been added at $C000 to setup the necessary BASIC pointers and execute the RUN command to start the game program.
+  Note: the breakpoint to use for dumping is $86AD</Notes>
+</Metadata>

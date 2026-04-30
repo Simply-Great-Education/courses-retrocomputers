@@ -1,0 +1,79 @@
+﻿<Metadata>
+  <DumpFile>RISK-7FA0-49FE</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>abf186e3d78f609d43d8494841f18c41c08aae2e</DumpFileSHA1>
+  <SimplifiedName>Risk</SimplifiedName>
+  <JumpAddresses>
+    <Address>$7FA0</Address>
+    <Address>$49FE</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Risk (Virgin Games).tap</SourceFile>
+  <SourceFileSHA1>8cff0c52dc234afe63dff805cedcd5ab227903f4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x49FE "RISK-7FA0-49FE" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $7fa0 dec $d030" -x "inc $d020" -o "Risk.prg"</ExomizerCommand>
+  <Notes>Add an init routine at $7FA0 which:
+  1. Sets up the correct VICII display settings
+  2. Copies data from memory starting at $8131 to colour RAM
+  
+  Note: As there was no free space left in memory to place a compressed copy of colour RAM for the title screen, the lower nibbles from colour RAM were stored in the bytes starting at $8131.
+  This part of memory stores map data from the game and was chosen because every other byte stores a value less than $0F.
+  This meant that the existing lower nibbles (4 bits) of these values could be left shifted into the higher nibble, thus allowing the 4-bit colour RAM data to be stored in the lower nibble of each byte.
+  This process is reversed when the game is loaded, returning the map data to it's original state.
+  
+  This small bit of code can be used to store the colour RAM nibbles in every other byte starting at $8131 before taking the dump:
+  
+  SOURCEPTR = $FB
+  DESTPTR = $FD
+  TEMP = $2A
+
+  *=$7FBC
+
+      ; Set source address in $FA to Colour RAM (D800)
+      lda #$d8
+      sta SOURCEPTR+1
+      lda #$00
+      sta SOURCEPTR
+
+      ; Set destination address in $FC
+      lda #$81
+      sta DESTPTR+1
+      lda #$31
+      sta DESTPTR
+
+      ldx #$04
+      ldy #$00
+  src
+      lda (SOURCEPTR),Y
+      and #$0f
+      sta TEMP
+      lda (DESTPTR),Y
+      asl
+      asl
+      asl
+      asl
+      ora TEMP
+      sta (DESTPTR),Y
+
+      inc SOURCEPTR
+      bne noinc
+      inc SOURCEPTR+1
+
+      dex
+      beq done
+
+  noinc
+      lda DESTPTR
+      clc
+      adc #$02
+      sta DESTPTR
+      bcc src
+
+      inc DESTPTR+1
+      bcs src
+
+  done
+      jmp *
+  </Notes>
+</Metadata>

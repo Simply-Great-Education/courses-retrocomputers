@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>ACTIONFORCE-C000-920E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6efc3837fb02ba5ddeb7a19234ae48f687295bfb</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$920E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Action Force.tap</SourceFile>
+  <SourceFileSHA1>1ee81804288f186707bd56ac2904a38703c0e658</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x920E "ACTIONFORCE-C000-920E" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c000 dec $d030" -x "inc $d020" -o "Action Force.prg"</ExomizerCommand>
+  <Notes>Added a routine at $C000 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

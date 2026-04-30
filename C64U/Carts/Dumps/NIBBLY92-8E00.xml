@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>NIBBLY92-8E00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b76d3cc2743dc6841d8de5bb756e45e9d1d1ffd5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8E00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Nibbly '92.d64</SourceFile>
+  <SourceFileSHA1>07391982def0262aee3e7be3f41143c6ee188b6f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8E00 "NIBBLY92-8E00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Nibbly '92.prg"</ExomizerCommand>
+</Metadata>

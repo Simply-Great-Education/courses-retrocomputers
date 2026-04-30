@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>FLYINGSAUCERS-C000-0B6A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f7e528752d87982abb0da500b0bc31286fcedf7a</DumpFileSHA1>
+  <SimplifiedName>Flying Saucers</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$0B6A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Flying Saucers (2020).prg</SourceFile>
+  <SourceFileSHA1>fe78f28553068b4d4b37609f776b1d4a1bca8394</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0B6A "FLYINGSAUCERS-C000-0B6A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Flying Saucers (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C000 to set the correct screen and border colours before showing the game instructions</Notes>
+</Metadata>

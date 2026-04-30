@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>RECKLESSRUFUS-8000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6f3359d7bda1f2f72af963b0b5cfb137369dd309</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Reckless Rufus.tap</SourceFile>
+  <SourceFileSHA1>8df03f4834948568e33364af784ec9fd2058961d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8000 "RECKLESSRUFUS-8000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Reckless Rufus.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

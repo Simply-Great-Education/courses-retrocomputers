@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SANXION-9670</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6b66f3c96d3b2141aafcdb33e621818d850c9a2e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9670</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>334</SidLength>
+  <SourceFile>Sanxion.tap</SourceFile>
+  <SourceFileSHA1>9779c33d0c0ba96ea557bf6c5bc2db019375f652</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9670 "SANXION-9670" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Sanxion.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>ANTATTACK-0BAC</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cc7e3ca02af898d3c1a4260c0031c96c3d1b678a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0BAC</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Ant Attack.tap</SourceFile>
+  <SourceFileSHA1>d9df00556434f066d0809c6b1d908a2ec7342a87</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0BAC "ANTATTACK-0BAC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ant Attack.prg"</ExomizerCommand>
+</Metadata>

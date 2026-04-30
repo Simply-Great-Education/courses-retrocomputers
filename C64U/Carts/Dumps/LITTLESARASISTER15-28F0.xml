@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>LITTLESARASISTER15-28F0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>27ff08c5e8d268cd5cf681853acdb335b2bab6af</DumpFileSHA1>
+  <SimplifiedName>Little Sara Sister 1.5 (Ice Team - 2013)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$28F0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>165</SidLength>
+  <SourceFile>Little Sara Sister Trilogy.tap</SourceFile>
+  <SourceFileSHA1>76eb504261247e1ce847565482cec5f3bda49e0d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x28F0 "LITTLESARASISTER15-28F0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Little Sara Sister 1.5 (Ice Team - 2013).prg"</ExomizerCommand>
+</Metadata>

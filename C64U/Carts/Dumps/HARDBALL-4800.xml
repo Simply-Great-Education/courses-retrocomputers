@@ -1,0 +1,29 @@
+﻿<Metadata>
+  <DumpFile>HARDBALL-4800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f74d00f0d322b26133a1473e39511340d3a18698</DumpFileSHA1>
+  <SimplifiedName>HardBall!</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <RasterBarType>None</RasterBarType>
+  <SidLength>38</SidLength>
+  <SourceFile>HardBall! (Version 2).tap</SourceFile>
+  <SourceFileSHA1>0040bf2a17d09a2932f0e972d43a4c31d35a1e20</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4800 "HARDBALL-4800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "HardBall!.prg"</ExomizerCommand>
+  <Notes>Removed the multiload protection which loaded the same code at $4700-$47EF and executed after each inning.  The only free memory to store the code is at $0334-$03FF.  As this is not enough memory to store the #$EF bytes, non-essential parts of the tape multiload routine are removed and used.
+  1. Tape multiload routine is located from $AF30 to $AFA1.
+  2. Kept essential loader code at $AF30 - JSR $C6F1 ($20, $F1, $C6), JSR $C05F ($20, $5F, $C0) and JSR $0FEF ($20, $EF, $0F).
+  3. Added the first #$66 bytes of the multiload code at $AF39 to $AF9E.
+  4. Added the next #$7F bytes at $037F with a JMP $037F at $AF9F.  (The remaining bytes are a self-modifying wipe and RTS that can be ignored.)
+  5. Added an RTS at $03FF which is normally achieved by self-modifying code.
+  6. $A789 changed from BNE $A78E ($D0, $03) to BNE $A78B ($D0, $00) to bypass multiload code anti-tamper check.
+  7. $C689 changed from STA $7A ($85, $7A) to BIT $7A ($24, $7A) to bypass multiload failure check.
+  8. Moved data from $037F to $03FF to free memory at $0B7F with a restore routine added at $0B00.
+  9. Added JSR $0B00 ($20, $00, $B0) at $4800 to restore data before running game. (Restoring $037F - $03FF as part of an init routine would overwrite uncrunched start routine.)
+  </Notes>
+</Metadata>

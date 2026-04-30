@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BOMBSQUAD-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>616682a502e2e86d50a7b444779af524996aa52d</DumpFileSHA1>
+  <SimplifiedName>Bomb Squad</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Bomb Squad (64'er Magazin - 07-99 - Side 2).d64</SourceFile>
+  <SourceFileSHA1>ae7823a52b99eabee3e6e6f71d0086f1a5376e29</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "BOMBSQUAD-C000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Bomb Squad.prg"</ExomizerCommand>
+</Metadata>

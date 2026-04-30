@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>IRONHORSE-0840-0880</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3a8aae7509c874bb22c922d7848273f714778dbf</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0840</Address>
+    <Address>$0880</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>191</SidLength>
+  <SourceFile>Iron Horse.tap</SourceFile>
+  <SourceFileSHA1>466260b98d09ab8da463705d760bf99aabb60e2f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0880 "IRONHORSE-0840-0880" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $0840 dec $d030" -x "inc $d020" -o "Iron Horse.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0840 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to start correctly.</Notes>
+</Metadata>

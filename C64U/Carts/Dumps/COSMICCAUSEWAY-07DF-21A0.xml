@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>COSMICCAUSEWAY-07DF-21A0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9f0ebda15a44c69881985bc8108ee7c80270d3c6</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$07DF</Address>
+    <Address>$21A0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Cosmic Causeway.tap</SourceFile>
+  <SourceFileSHA1>2bd18d24cb04cdfbe27fc4e8466a90d71edac13e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x21A0 "COSMICCAUSEWAY-07DF-21A0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $07df dec $d030" -x "inc $d020" -o "Cosmic Causeway (J1).prg"</ExomizerCommand>
+  <Notes>Moved some init code from $011D to $07DF to ensure it was above the dump start address of $0400.</Notes>
+</Metadata>

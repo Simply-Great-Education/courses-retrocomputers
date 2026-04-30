@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>GHOSTTOWN64-3FFC</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c3569b617c1cbe23bf286610f740c34fe256604b</DumpFileSHA1>
+  <SimplifiedName>Ghost Town 64</SimplifiedName>
+  <JumpAddresses>
+    <Address>$3FFC</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Ghost Town 64 (Ingo Hinterding - 2020).prg</SourceFile>
+  <SourceFileSHA1>02c0eaf3d71c234461b919b052832847ffd7e3b3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3FFC "GHOSTTOWN64-3FFC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ghost Town 64.prg"</ExomizerCommand>
+</Metadata>

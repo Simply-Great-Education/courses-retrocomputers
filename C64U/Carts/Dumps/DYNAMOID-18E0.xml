@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>DYNAMOID-18E0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2a13014d8a426eced515232f3605c517b2f69d45</DumpFileSHA1>
+  <SimplifiedName>Dynamoid</SimplifiedName>
+  <JumpAddresses>
+    <Address>$18E0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Dynamoid (Game On - 1990-07 - Side 1).d64</SourceFile>
+  <SourceFileSHA1>3bc78d2cbaa1e76a1dbf52089bccb2ca4ce31e99</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x18E0 "DYNAMOID-18E0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Dynamoid (J1).prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>TURBO64-1770</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6757786b69f60b6a6e878ad4198d56fd64f9b5b9</DumpFileSHA1>
+  <SimplifiedName>Turbo 64</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1770</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Turbo 64 (Limbic Systems UK Ltd).tap</SourceFile>
+  <SourceFileSHA1>98e697f59aa646a4ecc6f39ad71f6143c86cd8d6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1770 "TURBO64-1770" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Turbo 64.prg"</ExomizerCommand>
+  <Notes>To remove the manual protection from the game, the BNE $1AC4 instruction at $1AC0 has been changed to BNE $1AD6 instead.</Notes>
+</Metadata>

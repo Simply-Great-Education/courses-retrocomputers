@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>PROFESSIONALSKISIMULATOR-11D0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>740f0f383cded590a1728e84c829b2105a2b43a1</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$11D0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Professional Ski Simulator.tap</SourceFile>
+  <SourceFileSHA1>5d4deb13a5a7c69a69b0b7e9a5318829c266e262</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x11D0 "PROFESSIONALSKISIMULATOR-11D0" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Professional Ski Simulator.prg"</ExomizerCommand>
+</Metadata>

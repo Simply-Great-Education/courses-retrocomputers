@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>MELONMANIA-3100</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4e8bca6ba2dedfd52081e7f4a128f4098deca618</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3100</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Melonmania.tap</SourceFile>
+  <SourceFileSHA1>7f4da2ffa8a74cf23fcaaf8aa22442be7e53bdfd</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3100 "MELONMANIA-3100" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Melonmania.prg"</ExomizerCommand>
+</Metadata>

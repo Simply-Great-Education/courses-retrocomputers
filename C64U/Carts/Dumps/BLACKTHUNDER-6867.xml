@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BLACKTHUNDER-6867</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cdaf22b2ccadc9533d3894e3602335d8d6562960</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$6867</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Black Thunder.tap</SourceFile>
+  <SourceFileSHA1>06e82444bd21a8e920f48e19b0ba9afbbd8afe66</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6867 "BLACKTHUNDER-6867" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Black Thunder.prg"</ExomizerCommand>
+</Metadata>

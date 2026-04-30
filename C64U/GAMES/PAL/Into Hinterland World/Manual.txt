@@ -1,0 +1,73 @@
+Into Hinterland World is a side-scrolling shooter game developed 2015-2020 for the Commodore 64 home computer. It can be played with one player only or as a co-op two player game. It was released at the Excess & Abyss-Connection Party on January, 25th 2020 by Background of Abyss-Connection.
+
+
+
+storyline
+
+In 2085 90% of all lifeforms became extinct by environmental catastrophes. The planet was covered by epidemics and diseases.
+
+Mankind was in danger like never before in history. A small group of scientists concluded that the only solution for these problems could be found in the past.
+
+So, they began to collect and analyse gene-material from all geological eras.
+
+Now it is up to you!
+
+
+
+single-player or two-player co-op gameplay
+
+For second player press fire on joystick two. Then, a satellite for the second player materialises.
+
+
+
+time machine
+
+Your time-machine is the D14 Zeitgeist.
+
+Hint: Look below your ship at the flashing materialising-gate.
+
+
+
+weapon system
+
+Sterntaenzer Strength: 1, single shot
+
+Irrlicht Strength: 2, single shot
+
+Lichtmeer Strength: 2, double-shot
+
+Nordlicht Strength: 3, double-shot
+
+Lichtfinger Strength: 4, thermal-beam
+
+Wirbelgleiter Strength: 5, double-shot
+
+Flankenschlag Strength: 6, double-shot
+
+Vollstrecker Strength: 7, emp / double-shot
+
+
+
+collectable items
+
+- energy up 
+This gives you better weapons and the power to repair your ship. Collect every energy pod to survive a crash. You have to collect all energy capsules! Otherwise your armoury and the whole mission is in danger.
+
+- shield
+shield In the game you get one more shield if you collect this item.
+
+
+
+credits
+All code, graphics and some music by Background of AC. For contact, please, write to background(at)abyss-connection.de
+
+Additional music was contributed by Henne of AC and fieserWolf of AC. Additional sprites by Sebastian Pliet. Support by Uli and Bethor. Additional support by Elisa, Julia and Carmen.
+
+
+
+
+https://englishclass.de/~wolf/ac/hinterland
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from fieserWolf.        

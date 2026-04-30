@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>THOMASTHETANKENGINE-4000-0894</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c07eceb9d101d36c73f49130fe45d0c44c222bca</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4000</Address>
+    <Address>$0894</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <ColourRAMFile>THOMASTHETANKENGINE-CRAM-4100</ColourRAMFile>
+  <ColourRAMStartAddress>$4100</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>1</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Thomas the Tank Engine.tap</SourceFile>
+  <SourceFileSHA1>8f2b0503435cdfc496ad68845edca79c7bee6b32</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0894 "AlternativeFormats\PRGs\Uncrunched\Thomas the Tank Engine.prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $4100 lda #$35 sta $01 jsr $4000 dec $d030" -x "inc $d020" -o "Thomas the Tank Engine.prg"</ExomizerCommand>
+  <Notes>Added a routine at $4000 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

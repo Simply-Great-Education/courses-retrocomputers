@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>POWERAMA-3EFF</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ea48ee0e6d3b8e9b9ef3127aeb7af95130ee7c26</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3EFF</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Powerama.tap</SourceFile>
+  <SourceFileSHA1>ac706fc243801ce22d2cff3542c59122390ef0dd</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3EFF "POWERAMA-3EFF" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Powerama.prg"</ExomizerCommand>
+</Metadata>

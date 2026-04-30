@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>MATCHDAYII-0E3B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>12488f7d2d66232df7e46b67d6fce101b885e264</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0E3B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>169</SidLength>
+  <SourceFile>Match Day II.tap</SourceFile>
+  <SourceFileSHA1>11b0affd6fd6339d4ae343fbaf3b5708ecdfb5c1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0E3B "MATCHDAYII-0E3B" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Match Day II.prg"</ExomizerCommand>
+</Metadata>

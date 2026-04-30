@@ -1,0 +1,71 @@
+Lykia - The Lost Island
+
+An adventure game by Puls4r in 2022
+
+
+Do you want to experience something magical in your life? Perhaps a quest that will open your eyes to a world of wonderment, mystery and the values of friendship? If you do, then you have something in common with Nora. But be warned, it won't be easy?
+
+
+
+
+How to play
+
+Use a joystick in port 1 or 2 or the keys E,D,O,P to move Nora. 
+Use the joystick button or press comma to use the currently selected item.
+
+Some actions have a long press functionality! 
+
+Press the space key to open the inventory.
+To select and activate an inventory item, press comma or the joystick button.
+Long press on an inventory item to get a description of the selected item.
+
+To progress through the story you need to use inventory items on people/places.
+
+Press Run/Stop to pause the game, load a save game or quit.
+
+Press button or comma to talk to people, inspect things or to use the currently activated inventory item.
+
+Press F1 to get a hint.
+
+Gomez follows you through the game to save your progress after you complete the very first quest.
+
+
+
+
+Credits
+
+Main Coding: Stefan Mader
+
+Lead Artist: Robert Kisnemeth
+
+Story: Olaf Nowacki
+
+Music and SFX: Markus Jentsch
+
+Additional Graphics: Rainer Muhr, Stefan Mader, Andy Zeidler
+
+Additional Code: Balazs Szabo, Imre Szell, Christian Bauer (and the Frodo staff), Bitbreaker, Hermit
+
+Assistance: Lena Kilkka
+
+Testing:
+Louie Dimovski, Jason Mackenzie, Andrew Schultz, Florian Ranzinger, Jamiro Drache, Manuel Sehrbrock
+
+
+Production:
+
+Disk and USB Version: Jason Mackenzie
+
+Cartridge Version: Tim Jakob Chen-Voos
+
+Cartridge Design: Fedor Zagumennov
+
+Cover Art: Trevor Storey
+
+
+
+
+https://protovision.games
+
+
+Distributed with the Commodore 64 Ultimate with permission from Protovision.

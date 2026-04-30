@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>GUZZLER-1C00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0ad91e570c78b74603a6f993f38a66f35184f933</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1C00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Guzzler.tap</SourceFile>
+  <SourceFileSHA1>6befaff26a99b41969c8c17e80f0fab9aed71bfe</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1C00 "GUZZLER-1C00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Guzzler.prg"</ExomizerCommand>
+</Metadata>

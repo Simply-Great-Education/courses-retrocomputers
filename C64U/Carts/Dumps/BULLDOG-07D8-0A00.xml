@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>BULLDOG-07D8-0A00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ad1848e42335d7c80d030c246e2ea3f868e5593d</DumpFileSHA1>
+  <SimplifiedName>Bulldog</SimplifiedName>
+  <JumpAddresses>
+    <Address>$07D8</Address>
+    <Address>$0A00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Bulldog (Version a).tap</SourceFile>
+  <SourceFileSHA1>003b5f788a7165870e52a8fd35bb8e4adeff6558</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0A00 "BULLDOG-07D8-0A00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $07d8 dec $d030" -x "inc $d020" -o "Bulldog.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $07D8 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to start correctly.</Notes>
+</Metadata>

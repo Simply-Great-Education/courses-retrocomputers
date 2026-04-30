@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SUPERZAXXON-2E10</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>28924fd0ec16a49ac1bec39f9b0ffdde7d9a52d7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$2E10</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Super Zaxxon (HesWare).tap</SourceFile>
+  <SourceFileSHA1>4c391acfa73e8e8ba4baa0a91deca58cb1eeaeed</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2E10 "SUPERZAXXON-2E10" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Super Zaxxon (HesWare).prg"</ExomizerCommand>
+</Metadata>

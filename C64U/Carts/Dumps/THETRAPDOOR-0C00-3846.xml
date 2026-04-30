@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>THETRAPDOOR-0C00-3846</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8646996412fe2ea39539ec8b16e96170c54e56cb</DumpFileSHA1>
+  <SimplifiedName>Trap Door, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0C00</Address>
+    <Address>$3846</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Trap Door The.tap</SourceFile>
+  <SourceFileSHA1>7d6265eeddc77759af89249e0fcaf6570eef1945</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3846 "THETRAPDOOR-0C00-3846" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0c00 dec $d030" -x "inc $d020" -o "Trap Door, The.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0C00 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.
+  Also restored 32 bytes of data to the loading screen bitmap at $FD30 which were corrupted at the end of the original loading code by a call to the kernal RESTOR routine ($FD15).</Notes>
+</Metadata>

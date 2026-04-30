@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>ASTERIXANDTHEMAGICCAULDRON-04B8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>38247ff4dd46b013430e1e86a832672ec2805089</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$04B8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Asterix and the Magic Cauldron.tap</SourceFile>
+  <SourceFileSHA1>60d483242c00f4b3ff4336255bdd6baebd000860</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x04B8 "ASTERIXANDTHEMAGICCAULDRON-04B8" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Asterix and the Magic Cauldron.prg"</ExomizerCommand>
+  <Notes>Applied the fix found here: https://c64.tin.at/_single_files/asterix_and_the_magic_cauldron.sol.txt
+  
+  This patches $465E from $23 to $0E and $465F from $DF to $98.
+  
+  This makes collection of the last piece possible, which was originally placed at exactly the same position as the wall near the entrance door to Rome, making the game impossible to complete.</Notes>
+</Metadata>

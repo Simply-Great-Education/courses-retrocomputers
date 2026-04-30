@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>CAULDRONII-800A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e821c4dac953e76cb5b9ed4d1ed5c4daff06d640</DumpFileSHA1>
+  <SimplifiedName>Cauldron II</SimplifiedName>
+  <JumpAddresses>
+    <Address>$800A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Cauldron II (Palace).tap</SourceFile>
+  <SourceFileSHA1>cdc2617c7b4cbefe56a96999e27e34f0f164dbe5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x800A "CAULDRONII-800A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Cauldron II.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

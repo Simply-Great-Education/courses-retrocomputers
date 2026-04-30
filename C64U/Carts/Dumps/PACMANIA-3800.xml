@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>PACMANIA-3800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0e0305bf839b2204dc7e4c78a819c5eedf3e7358</DumpFileSHA1>
+  <SimplifiedName>Pac-Mania</SimplifiedName>
+  <JumpAddresses>
+    <Address>$3800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Pac-Mania (Version a).tap</SourceFile>
+  <SourceFileSHA1>c2319e36d3032e15117336c0dabcd1cf4f34bb25</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3800 "PACMANIA-3800" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Pac-Mania.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

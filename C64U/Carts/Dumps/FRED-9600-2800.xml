@@ -1,0 +1,34 @@
+﻿<Metadata>
+  <DumpFile>FRED-9600-2800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>93a2739ebb24c96b8f996eea330f9090a2995eca</DumpFileSHA1>
+  <SimplifiedName>Fred</SimplifiedName>
+  <JumpAddresses>
+    <Address>$9600</Address>
+    <Address>$2800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Fred (Version 2).tap</SourceFile>
+  <SourceFileSHA1>6995f2fe32b252544c1d3af2361b2a88c4ae0ee1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2800 "FRED-9600-2800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $9600 dec $d030" -x "inc $d020" -o "Fred.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC program to provide instructions before the main game loads. However, as the main game code overwrites the intro and custom charmap when loaded, the following steps were taken to retain the intro:
+  
+  1. Part of the BASIC intro was dumped from $08FC to $0F5A, then modified to remove the tape loading call and replace with a SYS call to jump back to a new machine code routine at $9680
+  2. The first 1024 bytes of the custom charmap used in the intro at $2000 were dumped (this includes the characters for the 'Fred' logo)
+  3. A breakpoint at $2800 was set to break when the main game had loaded
+  4. The first 1024 bytes of the custom charmap used in the main game at $2000 were copied to $C000
+  5. The custom charmap data used by the intro is loaded back to $2000 
+  6. The modified BASIC intro was then placed at some free memory at $9001 and relinked with the BASIC subroutine at $A533
+  7. A routine was added at $9600 which sets the correct VICII and BASIC pointer values before executing the BASIC RUN command, which runs the modified intro program (now at $9001)
+  8. This routine also disables the RUN/STOP key by modifying the STOP vector at $0328 to point to a small routine at $9700 to intercept it (this was taken from the original game code at $02A7)
+  9. Once the intro has finished, the added SYS call jumps to the new routine at $9680, which restores the first 1024 bytes of the main game charmap data from $C000 back to $2000 before jumping to the games entry point at $2800
+  
+  Also, the following changes were made to avoid issues with the game running if an external device is using I/O area #2 ($DF00 - $DFFF - e.g. certain types of cartridge):
+  
+  1. Changed the LDA $DFF1 instruction at $6062 to be JMP $6078 instead
+  2. Changed the LDA $DFF1 instruction at $60F4 to be JMP $610A instead
+  3. Changed the LDA $DFF1 instruction at $61A6 to be JMP $61BA instead
+  4. Changed the LDA $DFF1 instruction at $6232 to be JMP $6245 instead</Notes>
+</Metadata>

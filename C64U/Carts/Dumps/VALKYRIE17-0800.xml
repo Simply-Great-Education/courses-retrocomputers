@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>VALKYRIE17-0800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7c4ebf53981c9a5407b3b9ed6be70ff606eb33f7</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Valkyrie 17.tap</SourceFile>
+  <SourceFileSHA1>2cfdee2deb9492736099959293d72063801165e6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0800 "VALKYRIE17-0800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Valkyrie 17.prg"</ExomizerCommand>
+  <Notes>Changed the JSR $0F91 instruction at $0E69 to JMP $0E74 instead to skip the question asking if this is a pirate copy of the game.</Notes>
+</Metadata>

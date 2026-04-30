@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SMUGGLER-082F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8d2da0eaa91184ede2a0eb6510b906bede43a0ec</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$082F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Smuggler.tap</SourceFile>
+  <SourceFileSHA1>93a93ecbaa95c5d931788d37f6c36e8de5eaf52a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x082F "SMUGGLER-082F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Smuggler.prg"</ExomizerCommand>
+</Metadata>

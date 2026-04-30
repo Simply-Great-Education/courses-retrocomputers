@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>FRIDAYTHE13TH-9200</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5922cd6d26fee2e41f451800c914e95ea2afdaff</DumpFileSHA1>
+  <SimplifiedName>Friday the 13th</SimplifiedName>
+  <JumpAddresses>
+    <Address>$9200</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Friday the 13th (Version 1).tap</SourceFile>
+  <SourceFileSHA1>ffa954a2c43b671389d150b6e48df56563fb3f00</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9200 "FRIDAYTHE13TH-9200" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Friday the 13th.prg"</ExomizerCommand>
+</Metadata>

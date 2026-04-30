@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>TROLLSANDTRIBULATIONS-0400-4036</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>2b6c96508600657e32466aefb7a7e5ad7d2a31c8</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$4036</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Trolls and Tribulations.g64</SourceFile>
+  <SourceFileSHA1>ee30770845e6fe135768db9e11212570afb387ff</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4036 "TROLLSANDTRIBULATIONS-0400-4036" -Di_table_addr=0x02 -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "Trolls and Tribulations.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to start correctly.</Notes>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>TIMETUNNEL-0CDA</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c371f7ad521509949d4feba017014a35d7b16078</DumpFileSHA1>
+  <SimplifiedName>Time Tunnel</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0CDA</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Time Tunnel (US Gold).tap</SourceFile>
+  <SourceFileSHA1>8cadf97058efa75004fe745ef31b666238f20cb8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0CDA "TIMETUNNEL-0CDA" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Time Tunnel.prg"</ExomizerCommand>
+</Metadata>

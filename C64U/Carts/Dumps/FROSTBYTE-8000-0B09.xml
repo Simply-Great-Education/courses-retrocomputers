@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>FROSTBYTE-8000-0B09</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a37854997443b8f49ed198786e5d617a62ededeb</DumpFileSHA1>
+  <SimplifiedName>Frost Byte</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8000</Address>
+    <Address>$0B09</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Frost Byte (Version a).tap</SourceFile>
+  <SourceFileSHA1>4f78e163a9fe081c88d42830c60706d60ad9c92c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0B09 "FROSTBYTE-8000-0B09" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $8000 dec $d030" -x "inc $d020" -o "Frost Byte.prg"</ExomizerCommand>
+  <Notes>Added a routine at $8000 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.
+  
+  Before starting the game, the routine sets $23BD to $FF to default to joystick control.</Notes>
+</Metadata>

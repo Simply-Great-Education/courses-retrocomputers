@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>GETOFFMYGARDEN-7900-808B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a58fde08cad95e9ea41e88759c9d037e6fd44c24</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7900</Address>
+    <Address>$808B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Get Off my Garden!.tap</SourceFile>
+  <SourceFileSHA1>6f792ea69d50aeb1557f66de3a918fc0d00d2081</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x808B "GETOFFMYGARDEN-7900-808B" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $7900 dec $d030" -x "inc $d020" -o "Get Off my Garden!.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $7900 to copy a memory block down to $02A7 to $02FF that was placed there by the original loader.</Notes>
+</Metadata>

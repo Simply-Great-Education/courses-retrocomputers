@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>COOKIE-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d1937df59c4661f960bfd54683598a710d06d9aa</DumpFileSHA1>
+  <SimplifiedName>Cookie (Andy Noble - 2017)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Cookie.prg</SourceFile>
+  <SourceFileSHA1>178debb61f98f3934b122949709e398d2e786bb8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "COOKIE-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Cookie (Andy Noble - 2017).prg"</ExomizerCommand>
+</Metadata>

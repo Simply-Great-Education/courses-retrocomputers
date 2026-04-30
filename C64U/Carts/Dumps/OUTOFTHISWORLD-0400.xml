@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>OUTOFTHISWORLD-0400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ba36501e6e749eb859d21e118493b43b120440be</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Out of This World.tap</SourceFile>
+  <SourceFileSHA1>2feb378573f9c63bdf29508f172581319a853080</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0400 "OUTOFTHISWORLD-0400" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Out of This World.prg"</ExomizerCommand>
+</Metadata>

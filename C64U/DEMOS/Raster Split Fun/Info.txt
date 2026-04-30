@@ -1,0 +1,20 @@
+Raster Split Fun was released 29 June 2024 by Singular and Replay.
+
+
+
+Quick steps to run this demo:
+
+Option 1 (quickest)
+a) Select "RunMeFirst.cfg" and select Load Settings, then select Ok.
+b) Select "Raster Split Fun.prg" and select Run.
+
+Option 2
+a) Select Turbo Boost
+b) Select Turbo Control and change to "Manual"
+c) Select CPU Speed and change to "48 MHz"
+d) Save to Flash
+
+
+
+
+Distributed with the Commodore 64 Ultimate with permission from Scorpy.

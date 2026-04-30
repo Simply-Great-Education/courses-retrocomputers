@@ -1,0 +1,32 @@
+﻿<Metadata>
+  <DumpFile>HERBERTSDUMMYRUN-C000-0AED</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>39af42e73f3cbac138bf5b056ef7f6c87ff57e7e</DumpFileSHA1>
+  <SimplifiedName>Herbert's Dummy Run</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$0AED</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Herbert's Dummy Run (10 Computer Hits 3).tap</SourceFile>
+  <SourceFileSHA1>c6a3ffcd1c5163000e6b292e16aed6b5e39fdc01</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0AED "HERBERTSDUMMYRUN-C000-0AED" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Herbert's Dummy Run.prg"</ExomizerCommand>
+  <Notes>Added a routine at $C000 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.
+  
+  Made the following changes to default to joystick control:
+  
+  1. Patched the JSR $3F47 at $6063 to be JSR $9600 instead
+  2. Added a routine at $9600 which:
+     Sets $95 to $01 (default is $00)
+     Sets $2A04 to $50 (default is $10)
+     Sets $2A13 to $10 (default is $50)
+  3. The routine then executes the JSR $3F47 instruction and returns to carry on the normal code flow
+  
+  Also made the following changes to allow the joystick button in port two to start the game as well as the space bar:
+  
+  1. Patched the LDA $DC01 instruction at $2240 to be LDA $DC00 instead
+  2. Updated the message at $2A2C to reflect the fact that both space or fire can be used to start the game</Notes>
+</Metadata>

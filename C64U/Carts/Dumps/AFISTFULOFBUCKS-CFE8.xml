@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>AFISTFULOFBUCKS-CFE8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cbead1bbe81d0ce9598e6e3474927081f2a9bc7d</DumpFileSHA1>
+  <SimplifiedName>A Fistful of Bucks</SimplifiedName>
+  <JumpAddresses>
+    <Address>$CFE8</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>202</SidLength>
+  <SourceFile>Eine Handvoll Dollars (Quellesoft).tap</SourceFile>
+  <SourceFileSHA1>71df99907b97cc4b6b344f82ba7ff654f17037bf</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCFE8 "AFISTFULOFBUCKS-CFE8" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "A Fistful of Bucks.prg"</ExomizerCommand>
+</Metadata>

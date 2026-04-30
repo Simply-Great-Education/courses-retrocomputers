@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>BOXINGMANAGER2-415A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>bac7d385666f8740be1bbe1d6b8408e1f7f116be</DumpFileSHA1>
+  <SimplifiedName>Boxing Manager 2</SimplifiedName>
+  <JumpAddresses>
+    <Address>$415A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Boxing Manager 2 (Cult).tap</SourceFile>
+  <SourceFileSHA1>a2ea413ef7c3677d216cf972ca5f33f50b90330a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x415A "BOXINGMANAGER2-415A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Boxing Manager 2.prg"</ExomizerCommand>
+  <Notes>As this game is actually frozen, the game starts at $05C2. However the true start address is $415A.
+  
+  The loading screen is based on the Spectrum version</Notes>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>WORRON-0834</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>26103d37a1dd8846a5b89d9b91cb0738f5eda657</DumpFileSHA1>
+  <SimplifiedName>Worron</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0834</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Worron-v1.1.t64</SourceFile>
+  <SourceFileSHA1>18d532dac6105b15f839234f7f15a08c97e90e82</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "WORRON-0834" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Worron.prg"</ExomizerCommand>
+  <Notes>Changed the STA $DC00 instruction at $0885 to jump to our own input handling routine at $07BC so that any key can exit the title screen, not just the space bar.</Notes>
+</Metadata>

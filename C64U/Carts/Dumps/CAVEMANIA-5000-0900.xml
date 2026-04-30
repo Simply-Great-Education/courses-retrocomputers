@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>CAVEMANIA-5000-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>56777e11aaf63bae8bef1e34d99ceb86e766b8e3</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5000</Address>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Cavemania.tap</SourceFile>
+  <SourceFileSHA1>d0e0d9fdc9ae22a29f2b23f193787069ff2c50e7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0900 "CAVEMANIA-5000-0900" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $5000 dec $d030" -x "inc $d020" -o "Cavemania.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $5000 which:
+  1. Sets the correct VICII settings
+  2. Sets the correct border and screen colours
+  3. Initialises colour RAM for the loading screen to display correctly
+  4. Displays the loading screen and waits for any key or the fire button on either joystick to enter the game</Notes>
+</Metadata>

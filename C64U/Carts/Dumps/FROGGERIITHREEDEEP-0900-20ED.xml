@@ -1,0 +1,22 @@
+﻿<Metadata>
+  <DumpFile>FROGGERIITHREEDEEP-0900-20ED</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c6dc47692235c513be9b507da654a564e3c6149d</DumpFileSHA1>
+  <SimplifiedName>Frogger II - Threedeep!</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0900</Address>
+    <Address>$20ED</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <ColourRAMFile>FROGGERIITHREEDEEP-CRAM-0A00</ColourRAMFile>
+  <ColourRAMStartAddress>$1300</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Frogger II.d64</SourceFile>
+  <SourceFileSHA1>5b8abafb4620e6da037046657bdf1ed3a6ecfc13</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x20ED "AlternativeFormats\PRGs\Uncrunched\Frogger II - Threedeep! (J1).prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $1300 lda #$36 sta $01 jsr $0900 dec $d030" -x "inc $d020" -o "Frogger II - Threedeep! (J1).prg"</ExomizerCommand>
+  <Notes>Added a routine at $0900 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

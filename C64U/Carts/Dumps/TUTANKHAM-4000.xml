@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>TUTANKHAM-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>f4918c3907531dceb3a889eaf12764df880d07b3</DumpFileSHA1>
+  <SimplifiedName>Tutankham (LC Games - 2022)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Tutankham (LC-Games - 2022).d64</SourceFile>
+  <SourceFileSHA1>e7a5c2cb8a3cdb961f6a0d9852c7ec5669eb0484</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "TUTANKHAM-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Tutankham (LC Games - 2022).prg"</ExomizerCommand>
+  <Notes>The following changes were made to remove highscore loading and saving to disk:
+  1. Changed the JSR $FFBD instruction at $4435 to RTS
+  2. Changed the JSR $FFBD instruction at $4450 to RTS
+  3. Changed the JSR $FFBD instruction at $4475 to RTS</Notes>
+</Metadata>

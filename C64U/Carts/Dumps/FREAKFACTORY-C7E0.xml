@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>FREAKFACTORY-C7E0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d98da2ecc36f759d4b8624f7ee02773438f83c93</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C7E0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Freak Factory.tap</SourceFile>
+  <SourceFileSHA1>3f50bd63151ce2ae2cfe7607666869eacab46a8f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC7E0 "FREAKFACTORY-C7E0" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Freak Factory.prg"</ExomizerCommand>
+</Metadata>

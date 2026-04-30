@@ -1,0 +1,73 @@
+E2IRA was released on 29 May 2022.
+
+
+Arise was founded in December 1991.
+
+Check out more of their releases at https://csdb.dk/group/?id=152
+
+
+Distributed with the Commodore 64 Ultimate with permission from Wacek/Arise.
+
+
+
+
+E2IRA by Arise
+
+Winner of Best Oldschool Production at Meteoriks Awards 2023.
+
+
+Here are some background stories/facts about E2IRA, no technicalities, just some human background for everyone interested :)
+
+1. The Name
+I think there is no mystery now WHY we did name the previous demo ES1RA, not ESIRA. Yes, this has always been planned to be a series, and so it shall be.
+
+2. The Pre-Intro
+Just in case someone did not notice that, the pre-intro is actually the ending part of the first demo in this series, ES1RA.
+
+3. The Walking Cube In Space
+This is the part that really kicked off the work on the demo. When Luke and myself met on Lost Party in Licheń, (and even before that when he and Bimber started discussing some things using private channels), we discussed and exchanged the ideas we were working on. Soon later afterwards, Luke shared with me the prototype of this effect and we started to work on it together, and that was the first part that was completed for E2IRA. For both of us it surely showed, that we can really do great things complimenting our skills together, which resulted in most parts being cooperative code work between the two of us, and many times starting as Luke's prototypes (for example all the dodecahedrons). From that point onward it was an incredibly smooth, almost organic teamwork.
+
+4. The Intro
+The part of the demo history started with the previous version of the intro, which originally was featuring an animation of our uzjel sign falling into pieces, played backwards. This animation was done by Mojzesh, and using this by me opened a dispute between us, that ultimately lead to Mojzesh leaving Arise. As much as I regretted it back then, I think objectively this was for the best for both sides. Although I had to scrap the original idea, I think we ultimately ended up with something even better. And as Mojzesh got together with Samar, this lead to the fact that we did have two demos released at MD2022: E2IRA and Amanita 80%. If that would not happen, there is a possibility at least some of the Amanita parts would be part of E2IRA. And you can clearly see those demos are very different, so ultimately I think the scene gained as a result. And I wish Mojzesh all the best, wherever he feels happier using his coding talents.
+
+Also, that unfortunate situation lead to one more thing. Part of that dispute went a bit public on the c64scene.pl forum, and as aftermath I was contacted by Biter/Futuris, an extremely talented scener from PC who graciously proposed to support us with some original 3d work for our demo. You can see his excellent work in the ending part, when it shows a different take on "arise coming together". Bartek, I really appreciate what you did for us, so if you are reading this, thanks again!
+
+5. Lightcasting Ball
+Obviously inspired by the Amiga demo "Nexus 7" by Andromeda, which we have been great fans of since 1994. And we wanted to do this effect more or less since that time ;) Please be aware that the whole 3d for that part have been created from scratch by Bimber, we did not use any assets from the Amiga demo. Also, it is important to notice that Jammer have meticulously included parts of the original Nexus 7 soundtrack in his music, which is just pure awesomeness on his part.
+
+6. Split Vectors
+This is a spiritual continuation of vector part from ES1RA, also somewhat a tribute to Censor Design's "split between gfx and chars" part from Wonderland IX, one of my (if not the) personal favourite demos of all time.
+
+7. Flip Disc aka Dworcowa Dozorcowa
+If you look closely you will see that this artwork is taking place at a train station, deciphering the partial sign on the right you can get this is actually in Pabianice, Poland, which is my hometown, and back in the 90s when we were travelling to parties around Poland as a crew, this was a place when the Łódź crew of Arise and myself would usually part ways, so hat off to Bimber for including this tiny, personal detail.
+
+8. Logo opening side B
+The font we used in its smaller incarnation might be a bit hard to read sometimes, so just in case: "ars celare artem" is the latin inscription on the top, you will have no problem to google the meaning of it. "ARS" is also three letter abbreviation of Arise Designs, and "Artem" is the beginning of "Artemiusz", the first name of Browar/Arise, who remains inactive for some time now, but who knows when this could change? Wink wink nudge nudge.
+
+9. FPP
+So the first image in this part is kind of cryptic, and some people see here different things. I had one person saying he saw a person holding a kite. Another saw God holding a floppy. And I personally always have seen here Władysław Komendarek, a legendary Polish electronic musician, again - look him up to judge the resemblance. I remember Luke's face, when he showed to Bimber two versions of this effect with two images and asked him to choose one, and Bimber said "Why not both?" ;)
+
+Also, I think it was somewhere around this part, during Bimber's brief family holidays where there were just me and Luke talking jokingly that with that many effect ideas we might be going to the 3rd disk side soon. Just a few days later, when Bimber came back, this was no longer a joke ;)
+
+10. Cthulhu
+This whole part was inspired by a totally random 3d octopus asset that we stumbled upon on the internet looking for something else. Then it was turned into the 3d nightmarish display under skillful hands of Bimber. Also, during development this was never called a Cthulhu part, it has always been "octopussy", and you can find that hinted also in the end upscroll, if you look very closely. This part almost did not make it into the demo, it is Jammer's exquisite sound that gives it that extra special something. Obey!
+
+11. Greetings
+It has been quite a long time since we had a "real" greetings part in our demo, but this one is the most complete one to date. And a bit of "tongue in cheek" as well. A few insider jokes are included, except for Savoy, because that is not a joke, they really do suck. And as suggested, you can always make a choice, if you are the subject of "greetings", or... the other thing ;)
+
+12. Inside The Dodecahedron
+The guy on the chair is depressed because it is close to the end of the demo, of course.
+
+13. Sit Down And Enjoy
+This is one of Rodney's "real life" artworks, which fitted perfectly with the flow. We sincerely hope we were able to keep you on the edge of your seat during this demo ;)
+
+14. We Are Forever
+As mentioned before, this features the 3d work done by Biter. Also, this is a closing of the demo, and what we want to say is that despite the turbulences, dramas, personnel changes and everything else, we are determined to continue and keep making demos as long as we are able to. We love the demoscene, we love the 64, we will be the ones turning off the lights!
+
+15. The Upscroll
+And this one is making some personal dreams a reality. For both me and Bimber this is the part we have always wanted to make, meaning upscroll with credits including the thumbnails of the effects. This time we finally made it, which was made possible with Sparta's incredibly awesome loader system.
+
+Last comment, a bit personal from me. This was the best demomaking experience in my life so far. From every perspective, the way we worked as a team, the chemistry and enjoyment that was there during the whole process. Everybody's dedication and free flow of ideas. Creative juices pumping in our veins that did not run out even when the demo was already completed. The strange coincidences (or signs or good omens from the demomaking gods). We loved every minute of it. And I think you can see this in the demo.
+
+See you in the next one,
+wacek/arise

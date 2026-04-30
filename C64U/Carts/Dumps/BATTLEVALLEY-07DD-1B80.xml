@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>BATTLEVALLEY-07DD-1B80</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>21e838414cc3c8ef4cf15f8bec6d265a093832ad</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$07DD</Address>
+    <Address>$1B80</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Battle Valley.tap</SourceFile>
+  <SourceFileSHA1>c5c4e00be4b7642ac4e8c5a4e744a32ecc05696a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1B80 "BATTLEVALLEY-07DD-1B80" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $07dd dec $d030" -x "inc $d020" -o "Battle Valley.prg"</ExomizerCommand>
+  <Notes>Moved some init code from $0380 to $07DD to ensure it was above the dump start address of $0400.</Notes>
+</Metadata>

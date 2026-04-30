@@ -1,0 +1,28 @@
+﻿<Metadata>
+  <DumpFile>ENLIGHTENMENTDRUIDII-C000-2304</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>cbbb183b986ad580558f5711be23ce0afb1d233e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$2304</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Enlightenment - Druid II.tap</SourceFile>
+  <SourceFileSHA1>de13cdede9b14337f9a05d35440fc8d2e361729e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2304 "ENLIGHTENMENTDRUIDII-C000-2304" -Di_table_addr=0x02 -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Enlightenment - Druid II (J1).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $C000 which:
+  1. Turns off interrupts from the two CIA chips and acks any pending CIA interrupts
+  2. Sets up the correct screen RAM and bitmap settings
+  3. Sets $DD01 (CIA#2 Port B) to $24 and $DD08, $DD09 and $DD0B (time of day values) to $01 (these were set during the original loading routine and allows the game to run properly)
+  4. Copies 512 bytes of data from $C06F to $0120 where it was after the original game had loaded
+  5. Sets $99 (current input device number) to the default of $00 (keyboard) and $9A (current output device number) to the default of $03 (screen) to ensure the game gets past the intro animation
+  6. Sets screen and border colours to black and clears colour RAM to allow the intro animation to display correctly (i.e. without garbage behind it)
+  7. It sets the stack pointer to $22 (i.e. below the data copied in step 4)
+  8. And finally jumps to the start of the game at $2304 (it doesn't use RTS as the stack was overwritten in step 4)
+  
+  Note: the space used at $C000 in the original dump contained a BASIC program which seems to have been left over from the development process, so it was safe to overwrite.</Notes>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>REBOUNDER-8010</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ebce5713f316b3d5f84a7c8b21e44100c572f26f</DumpFileSHA1>
+  <SimplifiedName>Re-Bounder</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8010</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Re-Bounder (10 Great Games 2).tap</SourceFile>
+  <SourceFileSHA1>d2b4337268200e0a50c624b3c85548da223a9319</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8010 "REBOUNDER-8010" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Re-Bounder.prg"</ExomizerCommand>
+</Metadata>

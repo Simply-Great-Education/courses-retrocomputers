@@ -1,0 +1,20 @@
+Star Storm
+
+Originally developed in 1987, this classic space shooter was lovingly reconstructed from surviving assets when the original was lost. Built in full assembly/machine code, this faithful recreation captures the nostalgic essence of 80s arcade action!
+
+
+
+Controls:
+
+Joystick Port 2
+
+Keyboard:
+
+Z - Left
+X - Right
+Right Shift - Fire
+
+
+PAL. 8580 (new SID).
+
+Distributed with the Commodore 64 Ultimate with permission from Jim "Viper" Williams.

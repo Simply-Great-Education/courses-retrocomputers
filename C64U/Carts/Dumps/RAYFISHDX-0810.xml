@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>RAYFISHDX-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>69ddbc2d45c9b3e5a106e5d3e69c65153e824153</DumpFileSHA1>
+  <SimplifiedName>Ray Fish DX (TND - 2021)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>188</SidLength>
+  <SourceFile>Ray Fish DX.tap</SourceFile>
+  <SourceFileSHA1>efc636b1a6bbfd59ccac65284f92c8389de05b82</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0810 "RAYFISHDX-0810" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Ray Fish DX (TND - 2021).prg"</ExomizerCommand>
+</Metadata>

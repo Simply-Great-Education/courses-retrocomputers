@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SWAMPFEVER-8044</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6671505f00d94352c5aa418f2b63a591361fa952</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8044</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Swamp Fever.tap</SourceFile>
+  <SourceFileSHA1>b2f8184a476c363f9f743a94034ba6a6485aefae</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8044 "SWAMPFEVER-8044" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Swamp Fever.prg"</ExomizerCommand>
+</Metadata>

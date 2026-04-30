@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>ROGUETROOPER-0400-2026</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d8f50f51c999ff3b238110419a5a788a9d3b3a0b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$2026</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Rogue Trooper.tap</SourceFile>
+  <SourceFileSHA1>9ae42665e9d2e88c019161751a48c32bc2c0bb89</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x2026 "ROGUETROOPER-0400-2026" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Rogue Trooper.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0400 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

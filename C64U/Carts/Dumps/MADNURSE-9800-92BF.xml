@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>MADNURSE-9800-92BF</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>12c91bf3e8db147645e0a8c14c1a2a7375ee3d51</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9800</Address>
+    <Address>$92BF</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <ColourRAMFile>MADNURSE-CRAM-9890</ColourRAMFile>
+  <ColourRAMStartAddress>$9890</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Mad Nurse.tap</SourceFile>
+  <SourceFileSHA1>51751d65f6689496471b05a05ea29aecac46bb92</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x92BF "AlternativeFormats\PRGs\Uncrunched\Mad Nurse.prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $9890 lda #$36 sta $01 jsr $9800 dec $d030" -x "inc $d020" -o "Mad Nurse.prg"</ExomizerCommand>
+  <Notes>Added a routine at $9800 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  It then sets the correct VICII settings before starting the game.</Notes>
+</Metadata>

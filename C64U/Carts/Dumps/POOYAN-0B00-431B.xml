@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>POOYAN-0B00-431B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4588023db2d7fb052c955ed53861b474dca401b3</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0B00</Address>
+    <Address>$431B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Pooyan.tap</SourceFile>
+  <SourceFileSHA1>9259b41b707ede888b00fdaa484cdca51022b3b5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x431B "POOYAN-0B00-431B" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0b00 dec $d030" -x "inc $d020" -o "Pooyan.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0B00 to set $7F in ZP to #$C6 to allow the game to run.</Notes>
+</Metadata>

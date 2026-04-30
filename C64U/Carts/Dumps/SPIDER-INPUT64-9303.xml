@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SPIDER-INPUT64-9303</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e308d61c4b90f77d4276b3c7b6ca21a16484598f</DumpFileSHA1>
+  <SimplifiedName>Spider (Input 64)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$9303</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Spider (Input 64 - 1987-07).d64</SourceFile>
+  <SourceFileSHA1>0fa6a873c634461ce1ae621be5938618ee5f8610</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9303 "SPIDER-INPUT64-9303" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Spider (Input 64).prg"</ExomizerCommand>
+</Metadata>

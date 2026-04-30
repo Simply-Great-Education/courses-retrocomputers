@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>SPYVSSPYIII-0400-6400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4731d21a48e518036e8a3074e68c0b4d8ccd64be</DumpFileSHA1>
+  <SimplifiedName>Spy vs Spy III - Arctic Antics</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$6400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Spy vs Spy III (Spy vs Spy Trilogy).tap</SourceFile>
+  <SourceFileSHA1>1ad8c432569d0199d1c5054e26ee97676e5aab11</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6400 "SPYVSSPYIII-0400-6400" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Spy vs Spy III - Arctic Antics.prg"</ExomizerCommand>
+  <Notes>Moved some init code from $03BD to $0400 to ensure it was above the dump start address of $0400.</Notes>
+</Metadata>

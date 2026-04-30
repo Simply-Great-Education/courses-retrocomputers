@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>NEWRALLYX64-4ACC</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6fecbc66a52b3ad33bcf031315c0ebff6c656a07</DumpFileSHA1>
+  <SimplifiedName>New Rally-X 64 (TheStuffMade - 2022)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4ACC</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>New Rally-X 64 (RC1.1).d64</SourceFile>
+  <SourceFileSHA1>ee540cb899a8fa410a135b5dfb576b9520b0fccd</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4ACC "NEWRALLYX64-4ACC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "New Rally-X 64 (TheStuffMade - 2022).prg"</ExomizerCommand>
+</Metadata>

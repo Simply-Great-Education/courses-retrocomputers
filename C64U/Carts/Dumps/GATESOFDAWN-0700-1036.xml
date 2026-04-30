@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>GATESOFDAWN-0700-1036</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c3b0b9d44df98c6216dd13ca939034c1a1d26918</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0700</Address>
+    <Address>$1036</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Gates of Dawn.tap</SourceFile>
+  <SourceFileSHA1>867a08ecd06f64ed0bc50228bfd6202ba3c99a30</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1036 "GATESOFDAWN-0700-1036" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0700 dec $d030" -x "inc $d020" -o "Gates of Dawn.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0700 which resets the TI variable at $A0 to zero before starting the game. The ensures the game always starts the same as the original.</Notes>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>ORANGESQUASH-0803</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e62ebfc8d9ebf425e2a04e635ed42d6a2b590454</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0803</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Orange Squash.tap</SourceFile>
+  <SourceFileSHA1>c4ba22532022873658b0a54a1231d3f5475fff95</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0803 "ORANGESQUASH-0803" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Orange Squash.prg"</ExomizerCommand>
+</Metadata>

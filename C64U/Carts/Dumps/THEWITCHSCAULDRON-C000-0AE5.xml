@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>THEWITCHSCAULDRON-C000-0AE5</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0ee0bb9c6719e0bbe684244378e1abc981d07546</DumpFileSHA1>
+  <SimplifiedName>Witch's Cauldron, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$0AE5</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Witch's Cauldron, The (Mikro-Gen Version a).tap</SourceFile>
+  <SourceFileSHA1>f316d45291a254c2e672918321cb315bce90fd3b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0AE5 "THEWITCHSCAULDRON-C000-0AE5" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $c000 dec $d030" -x "inc $d020" -o "Witch's Cauldron, The.prg"</ExomizerCommand>
+  <Notes>Added a routine at $C000 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

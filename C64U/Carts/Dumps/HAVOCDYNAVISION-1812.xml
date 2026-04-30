@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>HAVOCDYNAVISION-1812</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>3439668aa85fa0fdf9bfbd5ab9bc7fa785cced16</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1812</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Havoc (Dynavision).tap</SourceFile>
+  <SourceFileSHA1>2bd67dbd863991baa814b5c4e5690c5ccd18ff3e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1812 "HAVOCDYNAVISION-1812" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Havoc (Dynavision).prg"</ExomizerCommand>
+</Metadata>

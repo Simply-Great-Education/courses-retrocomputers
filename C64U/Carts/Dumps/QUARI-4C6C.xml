@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>QUARI-4C6C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c5111ca7403af6e8778c8582bd803677df11592a</DumpFileSHA1>
+  <SimplifiedName>Quari</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4C6C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Quari (Version a).tap</SourceFile>
+  <SourceFileSHA1>c488bcffa2a9ec3ce1e49d89a5f62710545bcd47</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4C6C "QUARI-4C6C" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Quari.prg"</ExomizerCommand>
+</Metadata>

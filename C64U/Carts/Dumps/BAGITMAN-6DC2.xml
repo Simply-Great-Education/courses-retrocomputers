@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BAGITMAN-6DC2</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8a5a0944cded0d2dea1b98da409011725a208caa</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$6DC2</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Bagitman.d64</SourceFile>
+  <SourceFileSHA1>bfe67130e814b0cdb58b852b3a45f4bcb840560a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6DC2 "BAGITMAN-6DC2" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Bagitman (J1).prg"</ExomizerCommand>
+</Metadata>

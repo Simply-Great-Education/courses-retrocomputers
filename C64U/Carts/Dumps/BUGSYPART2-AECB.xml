@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BUGSYPART2-AECB</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>77b0fab213583d3e289148319db0137562637015</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$AECB</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Bugsy - Part 2 - The Crimelord.tap</SourceFile>
+  <SourceFileSHA1>5cd1f863fae3bf42b50573438225fe4b80aaa3eb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xAECB "BUGSYPART2-AECB" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Bugsy - Part 2 - The Crimelord.prg"</ExomizerCommand>
+</Metadata>

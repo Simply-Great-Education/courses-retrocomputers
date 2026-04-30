@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SPORE-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5047062b64a15dd35ef5f788f2a9bde4913da12b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Spore.tap</SourceFile>
+  <SourceFileSHA1>6e53ecfe5ec92b680e790af9f2eba66ded496971</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "SPORE-1000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Spore.prg"</ExomizerCommand>
+</Metadata>

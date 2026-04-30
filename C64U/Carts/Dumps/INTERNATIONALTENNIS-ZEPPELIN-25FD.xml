@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>INTERNATIONALTENNIS-ZEPPELIN-25FD</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>62444720fab1d59d12406ecc095610ad3aa5b1fc</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$25FD</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>International Tennis (Zeppelin Games).tap</SourceFile>
+  <SourceFileSHA1>56959f8ee51e756eb04d85e9537a3493b98be0cb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x25FD "INTERNATIONALTENNIS-ZEPPELIN-25FD" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "International Tennis (Zeppelin Games).prg"</ExomizerCommand>
+</Metadata>

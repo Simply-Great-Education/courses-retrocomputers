@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>COPSANDROBBERS-17FF</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5d72a6a387484f25f9f64ac97de8046c2254cc72</DumpFileSHA1>
+  <SimplifiedName>Cops and Robbers</SimplifiedName>
+  <JumpAddresses>
+    <Address>$17FF</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Cops and Robbers (Atlantis).tap</SourceFile>
+  <SourceFileSHA1>77ca6a92eadf99b656f2ca6870c48e5c85a18d1f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x17FF "COPSANDROBBERS-17FF" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Cops and Robbers.prg"</ExomizerCommand>
+</Metadata>

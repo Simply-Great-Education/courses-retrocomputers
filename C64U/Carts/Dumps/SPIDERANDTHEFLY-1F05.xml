@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SPIDERANDTHEFLY-1F05</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>b1f93417d7c3789e51b2f855770ebbf424a26306</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1F05</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Spider and the Fly.tap</SourceFile>
+  <SourceFileSHA1>17e02f52c20cb26935b0106870cdf438e5b1b08a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1F05 "SPIDERANDTHEFLY-1F05" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Spider and the Fly.prg"</ExomizerCommand>
+</Metadata>

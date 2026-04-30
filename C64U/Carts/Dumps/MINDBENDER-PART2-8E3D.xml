@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MINDBENDER-PART2-8E3D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1e629d5a3be1827a3b901c216ffcf7313cfe25a9</DumpFileSHA1>
+  <SimplifiedName>Mindbender - Part 2</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8E3D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Mindbender - Part 2 (Gilsoft).tap</SourceFile>
+  <SourceFileSHA1>bad793d3af1e33288d57d3d9b8c884b2e99b0ce3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8E3D "MINDBENDER-PART2-8E3D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mindbender - Part 2.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

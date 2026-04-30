@@ -1,0 +1,13 @@
+SPEED
+
+by Onslaught, SHAPE, Creators
+
+A collection of multispeed tunes that push the SID chip to its limits.
+
+
+Setup Requirements: PAL only, JiffyDOS disabled, Drive B disabled. 
+
+Important: Insert Side 2 when prompted after program loading - the program continues running and expects this disk swap.
+
+
+Distributed with the Commodore 64 Ultimate with permission from Jazzcat/Onslaught.

@@ -1,0 +1,31 @@
+﻿<Metadata>
+  <DumpFile>PROBOXING-ARTWORX-9000-1956</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9050fd57009552ab0b9ae65e9ff40b81fce2442e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9000</Address>
+    <Address>$1956</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>PROBOXING-ARTWORX-9400-CRAM</ColourRAMFile>
+  <ColourRAMStartAddress>$9400</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>Pro Boxing (Artworx).g64</SourceFile>
+  <SourceFileSHA1>41d645493234de00b72fc3269108c8cbc7e6a5d2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1956 "AlternativeFormats\PRGs\Uncrunched\Pro Boxing (Artworx).prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $9400 lda #$37 sta $01 jsr $9000 dec $d030" -x "inc $d020" -o "Pro Boxing (Artworx).prg"</ExomizerCommand>
+  <Notes>To remove the long delay when starting the game and display the loading screen, a routine was added at 9000 which:
+  
+  1. Copies 768 bytes of data from $90B0 down to $0000 so that the dump can start at $0400
+  2. Displays the loading screen (the colour RAM is loaded for this to display correctly) and waits for any key or the fire button on either joystick to enter the game
+  3. Sets up the correct VICII settings for the game itself
+  4. Sets the stack pointer to $F5
+  5. Hides the cursor by setting $CC
+  6. Jumps to the entry point at $1956 (it could not use RTS because of the stack being changed above in step 1)
+  
+  Also restored screen RAM from $0400-$07E7 and removed the "DO NOT REMOVE DISK" message from the loading screen.
+  
+  Note: to dump the game, set a breakpoint on $1956 after the loading screen is displayed and wait for the stack pointer (SP) to be $F5.</Notes>
+</Metadata>

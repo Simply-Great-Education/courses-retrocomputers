@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>DARKEMPIRE-0886</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0561072620117faa9581cb47059feac0061964e8</DumpFileSHA1>
+  <SimplifiedName>Dark Empire</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0886</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <SourceFile>Dark Empire (M.C. Lothlorien).tap</SourceFile>
+  <SourceFileSHA1>cdb2898e730a8caf15dd73cc0b4d5191d26dc82b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0886 "DARKEMPIRE-0886" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Dark Empire.prg"</ExomizerCommand>
+</Metadata>

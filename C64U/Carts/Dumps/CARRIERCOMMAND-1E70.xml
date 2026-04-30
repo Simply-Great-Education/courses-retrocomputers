@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>CARRIERCOMMAND-1E70</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>32d032b903b46e9309c42f3b3d51674920d55c6b</DumpFileSHA1>
+  <SimplifiedName>Carrier Command</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1E70</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Carrier Command (Version 2).tap</SourceFile>
+  <SourceFileSHA1>7553e40edaf10be1238c1b6e2a29d9bc4c6051fc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1E70 "CARRIERCOMMAND-1E70" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Carrier Command.prg"</ExomizerCommand>
+  <Notes>As this game is actually frozen, the game starts at $313D. However the true start address is $1E70.</Notes>
+</Metadata>

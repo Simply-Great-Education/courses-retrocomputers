@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MERMAIDMADNESS-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>230105ec029b311246a3ce5ee8bb5c5fe7527c11</DumpFileSHA1>
+  <SimplifiedName>Mermaid Madness</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Mermaid Madness (Version 3).tap</SourceFile>
+  <SourceFileSHA1>1be86b28092ecbfbd79b111c84f81a35270ddcf4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "MERMAIDMADNESS-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Mermaid Madness.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

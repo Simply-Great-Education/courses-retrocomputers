@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SUPERBLITZ-224C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1a33030130e6d6569ae32ec856174e1be259df37</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$224C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Super Blitz.tap</SourceFile>
+  <SourceFileSHA1>499a0d5e001c53ebd55faefb67c0294580c0b720</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x224C "SUPERBLITZ-224C" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Super Blitz.prg"</ExomizerCommand>
+</Metadata>

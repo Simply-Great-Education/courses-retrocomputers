@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>BERKSFOUR-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cd46e94fa2da547bf17ecbea48432e2fbc4704b5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>128</SidLength>
+  <SourceFile>Berks Four v1.1 (Digital Monastery - 2019).tap</SourceFile>
+  <SourceFileSHA1>58f2d2f28995f5d56a9655d76c95be01b9052604</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "BERKSFOUR-080D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Berks Four v1.1 (Digital Monastery - 2019).prg"</ExomizerCommand>
+  <Notes>Changed the JMP $C800 instruction at $B03F to be JMP $C09A instead to skip the trainer menu</Notes>
+</Metadata>

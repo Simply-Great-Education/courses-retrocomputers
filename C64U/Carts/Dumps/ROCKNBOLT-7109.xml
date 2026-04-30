@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>ROCKNBOLT-7109</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8a8dd98628c28541208d4d9408c3efcad3b37aeb</DumpFileSHA1>
+  <SimplifiedName>Rock n'Bolt</SimplifiedName>
+  <JumpAddresses>
+    <Address>$7109</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Rock n'Bolt [no1541].tap</SourceFile>
+  <SourceFileSHA1>7e06c06dce0fbceb6b957229134e2c178dee0cd6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7109 "ROCKNBOLT-7109" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Rock n'Bolt (J1).prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,27 @@
+﻿<Metadata>
+  <DumpFile>NEMESISTHEWARLOCK-5000-86D7</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>de6da1ebd2810c9ddbbc5a33685d4aaf4fd14ed9</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5000</Address>
+    <Address>$86D7</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <ColourRAMFile>NEMESISTHEWARLOCK-CRAM-50A0</ColourRAMFile>
+  <ColourRAMStartAddress>$50A0</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Nemesis the Warlock.tap</SourceFile>
+  <SourceFileSHA1>e94ff4ed3fc68ae12cdf258b82c5e75713b4ef1a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x86D7 "AlternativeFormats\PRGs\Uncrunched\Nemesis the Warlock.prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $50a0 lda #$35 sta $01 jsr $5000 dec $d030" -x "inc $d020" -o "Nemesis the Warlock.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $5000 which:
+  1. Turns off interrupts from the two CIA chips and acks any pending CIA interrupts
+  2. Sets the CIA #1 and CIA #2 Timer B values ($DC06/07 and $DD06/07) to $FFFF
+  3. Sets the CIA #1 and CIA #2 Timer B control registers to $81
+  4. Sets up the correct screen RAM and bitmap settings to display the loading screen, which was still in memory after the original game had loaded (the colour RAM is loaded for this to display correctly)
+  5. Waits for any key or the fire button on either joystick to enter the game
+  
+  Note: the code used in steps 2-4 was copied whilst the original game was being loaded. To do this, a breakpoint is set at $815A and when hit, the code in memory range $815A to $8189 is dumped.</Notes>
+</Metadata>

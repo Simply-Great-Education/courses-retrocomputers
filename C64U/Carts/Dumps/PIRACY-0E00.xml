@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>PIRACY-0E00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8d77cfec968a0bdb88ecb32a505e20d4f1283d8d</DumpFileSHA1>
+  <SimplifiedName>Piracy</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0E00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Piracy (19xx)(Ace Games).d64</SourceFile>
+  <SourceFileSHA1>18c4983a41a60260ebafbc65ca3bf1758182dd62</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0E00 "PIRACY-0E00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Piracy.prg"</ExomizerCommand>
+</Metadata>

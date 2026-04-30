@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>SKATEBOARDJOUST-0400</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e32089dfb02962c5d0a33646ae84bfc3542b3442</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Skateboard Joust.tap</SourceFile>
+  <SourceFileSHA1>9d75f4a51c65b8bfbabe459426dc98855df01852</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0400 "SKATEBOARDJOUST-0400" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Skateboard Joust.prg"</ExomizerCommand>
+</Metadata>

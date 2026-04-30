@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>SHEEPOIDDX-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7c829f64996735a70e72569528f4ef60a26d00ac</DumpFileSHA1>
+  <SimplifiedName>Sheepoid DX (Psytronik - 2013)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>147</SidLength>
+  <SourceFile>Sheepoid DX.tap</SourceFile>
+  <SourceFileSHA1>16690077d58584a7b08f92a6481246571e6c91ee</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "SHEEPOIDDX-4000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Sheepoid DX (Psytronik - 2013).prg"</ExomizerCommand>
+  <Notes>The game should be dumped at the second break at $4000 to skip the secondary decompression step.</Notes>
+</Metadata>

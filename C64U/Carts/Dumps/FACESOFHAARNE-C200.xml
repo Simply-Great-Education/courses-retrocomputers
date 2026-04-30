@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>FACESOFHAARNE-C200</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0e8b6888496415298403435aefc8b141e688863c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C200</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Faces of Haarne.tap</SourceFile>
+  <SourceFileSHA1>6a1d17af96e0ba7dce7b167545eb977eb190b37b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC200 "FACESOFHAARNE-C200" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Faces of Haarne.prg"</ExomizerCommand>
+</Metadata>

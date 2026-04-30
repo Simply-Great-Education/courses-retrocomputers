@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>WORLDSERIESBASEBALL-0E00-0812</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4a7a2f031993b8ba2e3751cf349c4f6f0c68bf88</DumpFileSHA1>
+  <SimplifiedName>World Series Baseball</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0E00</Address>
+    <Address>$0812</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>World Series Baseball (Imagine).tap</SourceFile>
+  <SourceFileSHA1>9538eb19f6de9b51d6e751043524a358cd431f9c</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0812 "WORLDSERIESBASEBALL-0E00-0812" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0e00 dec $d030" -x "inc $d020" -o "World Series Baseball (J1).prg"</ExomizerCommand>
+  <Notes>Added a routine at $0E00 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

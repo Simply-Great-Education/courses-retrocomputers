@@ -1,0 +1,15 @@
+Expand was released on 27 June 2020.
+
+
+Bonzai was founded in August 1988.
+
+Check out more of their releases at https://csdb.dk/group/?id=631
+
+
+Distributed with the Commodore 64 Ultimate with permission from Trap/Bonzai.
+
+
+
+Step 1: select "RunMeFirst.cfg" and select Load Settings, then select Ok.
+
+Step 2: select "Expand - Side 1.d64" and select Run Disk.

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>UGH-6600</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c43bdcac383e0e673529882a8689b2e330a75bac</DumpFileSHA1>
+  <SimplifiedName>Ugh!</SimplifiedName>
+  <JumpAddresses>
+    <Address>$6600</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Ugh! (Softek).tap</SourceFile>
+  <SourceFileSHA1>bd2bbdaf49f141d335b76ec9298186caef22907f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x6600 "UGH-6600" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Ugh!.prg"</ExomizerCommand>
+</Metadata>

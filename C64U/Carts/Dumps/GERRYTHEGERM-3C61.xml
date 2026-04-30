@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>GERRYTHEGERM-3C61</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>51d7035ab47b67caa4a43eb831648c5511c8d2cb</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3C61</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Gerry the Germ Goes Body Poppin'.tap</SourceFile>
+  <SourceFileSHA1>f10d1f84b67e67bc1f291a8a24c4fedd4be930d0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3C61 "GERRYTHEGERM-3C61" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Gerry the Germ Goes Body Poppin'.prg"</ExomizerCommand>
+</Metadata>

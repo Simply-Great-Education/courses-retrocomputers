@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>HIGHWAYENCOUNTER-8700</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5948acd2408017e532a80c14413439d9af36fb16</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8700</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Highway Encounter.tap</SourceFile>
+  <SourceFileSHA1>5a275c26cf0ab783a5b66ad026f922aaa7fccda2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8700 "HIGHWAYENCOUNTER-8700" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Highway Encounter.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

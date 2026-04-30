@@ -1,0 +1,115 @@
+6th June 2182, Mars
+
+The Space Station Factory orbiting the planet is undergoing an unprecedented mutiny.
+The main computer of the space station UNSS ASAMI has gone rogue during decommissioning and
+gained control of the guardian droids.
+
+After winning a short battle with the UN army dislocated on Mars, the rebellious mainframe is now
+pointing the station towards earth with its load of uncontained radioactive material.
+
+You are the android L-3573-R, the first of a new generation of guardian droids independent from a
+central AI. Given your strengths, you are the only hope to stop this threat and figure out what
+happened to the station.
+
+GOOD LUCK!
+
+
+FEATURES
+- An entire space station to explore
+- 60+ rooms full of Metroid Vania action
+- Upgradable weapon, special powers, map and inventory
+- 11 tracks OST
+- THEC64 (Maxi and mini) compatibility
+
+
+A NOTE FROM THE DEVELOPER
+
+Welcome to Lester!
+
+This game takes inspiration from modern MSX Metroid Vania's like Ghost / Minighost (which is clearly
+the most direct inspiration for it) and the old Konami's productions like The maze of Galious.
+
+Lester is my first release for the Commodore 64. Actually this is my hello world project started
+fiddling with a TRSE tutorial which then, in a three year arc, became a graphic adventure engine, a
+Zelda-like engine, a single screen platform engine, an attempt to convert Minighost and then a
+standalone game. It's been quite a long and twisty road... But here it is!
+
+I hope you enjoy playing it as much as I enjoyed making it.
+
+
+
+CONTROLS
+
+The game is played with a joystick plugged in port 2.
+
+JOY UP: Jump
+JOY DOWN: Descend Stairs - Enter through doors - Access terminals
+JOY LEFT/RIGHT: Moves left/right
+TAP FIRE BUTTON: Fire weapon
+HOLD FIRE BUTTON AND RELEASE: Activate special power
+P KEY: Pause
+
+
+THE PANEL
+LIVES: number of tries Lester has to complete the mission. Once you loose them all you can still
+restart from the first room keeping all your equipment.
+HP: Your energy.
+XP: Increases by one every time you kill an enemy or you dare to wake up a sleeping drone. Once
+you reach the maximum XP you'll be rewarded with an extra HP.
+COINS: Number of coins collected / Maximum number of coins collectable
+SPECIAL POWER SLOT: Special power currently equipped.
+
+
+THE STATION
+
+You'll start your mission on the upper left bridge. The station was going through decommissioning at
+the moment of the incident. The last updates on the status of the work confirm that you may find
+uncontained radioactive fuel in the lower part and some rooms not covered by auxiliary power.
+
+During your mission to regain the control of the station you'll also find some objects with various
+functions.
+
+BARRELS: Scattered through the station, they hide useful items and a lot of coins.
+TERMINALS: Use them to save a checkpoint, view a map of the station, restore health and
+upgrade your weapon spending your coins. You can collect coins killing enemies and
+destroying barrels.
+TRIGGERS: Activate them to open new passages inside the station.
+SPECIAL POWERS
+
+Other than coins, you can gain also some useful extra powers by shooting to enemies.
+EMP: A single pulse that can pass through walls and destroys everything in the line of fire.
+Armoured droids are not affected.
+BOMB: Destroys everything visible on the screen. Armoured droids are not affected.
+SHIELD: Temporary invulnerability, even from armoured droids.
+
+You can carry only one special power at a time, use them wisely!
+
+
+ITEMS
+
+You can achieve permanent upgrades and more coins shooting to the barrels disseminated through
+the station.
+
+SMALL AND BIG COINS: Spend them when connected to terminals to restore your hp and
+upgrade your weapon. One big coin counts as 5 small coins.
+PASS: Gives you access to the same numbered area
+BATTERY: Increases your maximum HP
+WALLET: Doubles your maximum amount of collectable coins.
+INFRARED: Allows you to see through dark areas
+RADIOACTIVE SHIELD: Protects you from radioactive liquids
+
+
+
+SYSTEM REQUIREMENTS AND RELEASE NOTES
+A Commodore 64/128 (PAL or NTSC)
+A Joystick plugged in port 2
+Supports THEC64 (Maxi and Mini), VICE, and FPGA solutions
+
+
+
+CREDITS
+Design, Code, Gfx and Sound by Knifegrinder.
+Thanks to Nicolaas Ervik Groeneboom and Andy Hewitt.
+
+
+Distributed with the Commodore 64 Ultimate with permission from Knifegrinder.

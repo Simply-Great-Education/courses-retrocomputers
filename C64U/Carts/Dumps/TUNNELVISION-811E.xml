@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>TUNNELVISION-811E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7ce7070b44ea0b4525ba5c73db9eb05e9c2eaec9</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$811E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Tunnel Vision.tap</SourceFile>
+  <SourceFileSHA1>4be39164142096addef20fe9b82b187e7d51e84d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x811E "TUNNELVISION-811E" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Tunnel Vision.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>NEMESIS-168B</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>49443042076adcdb800e060796c449a9f6b8f352</DumpFileSHA1>
+  <SimplifiedName>Nemesis</SimplifiedName>
+  <JumpAddresses>
+    <Address>$168B</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>191</SidLength>
+  <SourceFile>Nemesis (Version 2).tap</SourceFile>
+  <SourceFileSHA1>b2a12a84f772f822f71d324b7af4ba3c960811b5</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x168B "NEMESIS-168B" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Nemesis.prg"</ExomizerCommand>
+  <Notes>Although the TAP dump file used does not include loading music, the version included in Konami's Arcade Collection compilation does, so it has been used here (Ocean Loader #4 by Jonathan Dunn).
+  
+  The reason the dump from Konami's Arcade Collection wasn't used is because it's frozen. </Notes>
+</Metadata>

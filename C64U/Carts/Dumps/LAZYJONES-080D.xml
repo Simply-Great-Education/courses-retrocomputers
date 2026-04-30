@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>LAZYJONES-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>df605de9f50e4ed8bc4153bbd2c114965ab79a0d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Lazy Jones.tap</SourceFile>
+  <SourceFileSHA1>c0d3d9e8651ea395d658b03550a4f2b40e8d020e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "LAZYJONES-080D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Lazy Jones.prg"</ExomizerCommand>
+</Metadata>

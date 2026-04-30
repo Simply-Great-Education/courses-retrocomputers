@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>TOMAHAWK-0460</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>52ce4fb175873340a83f0cc383f0ed4943782dca</DumpFileSHA1>
+  <SimplifiedName>Tomahawk</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0460</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Tomahawk (Version 2a).tap</SourceFile>
+  <SourceFileSHA1>16a4b2758e45c8b7e081d315e66285351c9d2c73</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0460 "TOMAHAWK-0460" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Tomahawk.prg"</ExomizerCommand>
+</Metadata>

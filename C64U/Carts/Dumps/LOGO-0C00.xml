@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>LOGO-0C00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>76590d8d3fd70d53d48cd58fe4c7236dec305d79</DumpFileSHA1>
+  <SimplifiedName>Logo</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0C00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Logo [PAL].g64</SourceFile>
+  <SourceFileSHA1>da02fda7021a075e93ea64e33a75ff8a917eebab</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0C00 "LOGO-0C00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Logo (J1).prg"</ExomizerCommand>
+</Metadata>

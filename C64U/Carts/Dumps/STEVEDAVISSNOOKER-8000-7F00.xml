@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>STEVEDAVISSNOOKER-8000-7F00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0a417a327fc07fbd2703c0df267af930482861ac</DumpFileSHA1>
+  <SimplifiedName>Steve Davis Snooker</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8000</Address>
+    <Address>$7F00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>STEVEDAVISSNOOKER-CRAM-8100</ColourRAMFile>
+  <ColourRAMStartAddress>$8100</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>Steve Davis Snooker (Version 2).tap</SourceFile>
+  <SourceFileSHA1>ad8ab7eefc04ecaffbb861a6af22f61f967b4b92</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7F00 "AlternativeFormats\PRGs\Uncrunched\Steve Davis Snooker.prg,0x0400,0x00EC" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $8100 lda #$37 sta $01 jsr $8000 dec $d030" -x "inc $d020" -o "Steve Davis Snooker.prg"</ExomizerCommand>
+  <Notes>Added a routine at $8000 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

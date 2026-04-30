@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MUTANTS-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>327070eb0326b4e71a556651a6fcaa6444f778ba</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Mutants.tap</SourceFile>
+  <SourceFileSHA1>3d5fcf1620918f0440eab7f84102d21dc044d84f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "MUTANTS-1000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Mutants.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>PSYCHOPIGSUXB-0FA3</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0df8c2c013e2274887412aa0d5781442b8220417</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0FA3</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Psycho Pigs UXB.tap</SourceFile>
+  <SourceFileSHA1>997bc54a40bf5d3d76e6f71a03c30463047c95e6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0FA3 "PSYCHOPIGSUXB-0FA3" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Psycho Pigs UXB.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

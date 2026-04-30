@@ -1,0 +1,19 @@
+﻿<Metadata>
+  <DumpFile>KNIGHTMARE-CDE0-CD00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9c648b5f03795f6973fa7c07a92ab4e617095c32</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CDE0</Address>
+    <Address>$CD00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Knightmare.tap</SourceFile>
+  <SourceFileSHA1>01a1e5084e3d286e8efb07925cc7be0104467664</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCD00 "KNIGHTMARE-CDE0-CD00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $cde0 dec $d030" -x "inc $d020" -o "Knightmare.prg"</ExomizerCommand>
+  <Notes>To allow the dump to start at $0400, the following changes were made:
+  
+  1. Added an init routine at $CDE0 which copies 512 bytes of data from $CE00 down to $0200. It then jumps to the entry point at $CD00 (it couldn't use RTS because of the copy overwriting the boot code).  
+  2. The init routine originally found at $0012 has been moved to $3F80, so the JMP $0012 instruction at $CD85 has been patched to be JMP $3F80 instead.</Notes>
+</Metadata>

@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>THEQUESTFORTHEGOLDENEGGCUP-8E14</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e153053bf63a99eb8f616caa5be0e2b4a455fdbb</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8E14</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <SourceFile>Quest for the Golden Eggcup, The.tap</SourceFile>
+  <SourceFileSHA1>d84cb3f3e5d03cdf0b436fd84875e474b86e7770</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8E14 "THEQUESTFORTHEGOLDENEGGCUP-8E14" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Quest for the Golden Eggcup, The.prg"</ExomizerCommand>
+</Metadata>

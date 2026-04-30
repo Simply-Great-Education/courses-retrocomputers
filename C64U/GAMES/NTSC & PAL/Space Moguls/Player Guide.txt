@@ -1,0 +1,327 @@
+Official Space Moguls Players Guide
+
+This document is a strategy guide intended to complement the Space Moguls game manual. When you've got the hang of the game and want to get a deeper understanding of how to play the game this guide should answer most questions. If something is still unclear please reach out to @spacemoguls on X or SpaceMoguls on Reddit.com.
+
+This guide is a work in progress and will be updated over time as more sections are completed and future questions need answers.
+
+
+
+Starting a new game
+
+Keyboard
+There are two keyboard layouts. If you have enough joysticks for everyone participating there is no need to pay attention, but if not then choosing the best layout matters. If you are using a joystick in port 1 you must use the default keyboard layout.
+
+The default layout uses S, E, X and F. The alternate keyboard layout uses a more familiar W, A, S, D for movement.
+
+In-game music:
+Why would you want to turn off in-game music? Probably only if you want to talk during the Development Phase.
+
+Input Hints:
+There are keyboard and joystick information on a couple of screens, turn this off to make the screen a little less cluttered but you'll have to remember which keys to press!
+
+Grumplings Enabled:
+Grumplings can give you a significant advantage against AI players so disabling them can increase the challenge against them. It can also be useful in situations where you want to play the game with a little bit less randomness.
+
+Planet Selection
+If you're just getting started Alia Terra would be a good balanced choice. Each planet have slightly different production, distribution of land and rivers, see the section about Planets. Even the amount of fog varies between the planets.
+
+Character Select
+Keyboard players are locked to each slot (see keyboard guide on-screen), but joystick players can select any available slot by pressing left or right while the cursor is on the "JOYSTICK" line. Make sure not to select start for any player until all the players have joined the game or the planet will start loading!
+
+
+A guide for new players
+
+If you have ever played M.U.L.E., you probably don't need to read this chapter. The game flow of Space Moguls is not different to M.U.L.E., so you will feel right at home.
+
+Starting a new game as a beginner
+
+1. At first, start with the "Alia Terra" Planet, then later try out the other planets
+2. To get familiar with the game flow, restrict the number of game rounds to "6" in the beginning. Later on you can increase to 10 (developer recommended), 12 (like M.U.L.E.) or even 16 (only way to colonize the whole planet, i.e. all land plots)
+3. It doesn't matter which character you chose - they are all equal gameplay-wise, just look differently.
+4. When playing against the AIs, do not turn off the "Grumplings" option the start menu
+
+The basics of the phases of each round
+
+The basic structure of each Space Moguls game round is like this; with the exception of the very last game round, which does not have an Auction Phase and statistics anymore but directly concludes with the winner's ceremony.
+
+1. Land Grant
+Each player selects a land plot on the planet. The land plot cursor moves clockwise from inner to outer circles. Just press fire when you want to own the highlighted plot. Be quick!
+
+2. Land Auction (optional, happens randomly)
+Sometimes, a spare plot of land is sold to the players. If you can afford it, you should get it. Don't forget to keep aside enough money to by droids and equipment!
+
+3. Action Phase
+Each player in turn can roam the planet. Sometimes, something unexpected happens first - read the scroll text to see what happened. After pressing fire, you find yourself in the town. There, you can buy a droid, then equip it for one of the five commodities, indicated by their respective icons. With the equipped droid, you leave town and find yourself on the planet surface. Move your droid to the plot and press fire to install it. After that, look out for very small white or black moving pixels. These are the Grumplings - approach them, and press fire a little before you reach them to catch them. Usually, catching a Grumpling is a good thing, but sometimes you can have bad luck and get stolen something. Other things you can do in the Action Phase is go to the land office and assay land (to find out its production properties), or end your game round by going into the pub (and winning some money).
+
+4. Production Phase
+When all four players have concluded their action phase, the production starts. Unexpected events can happen here, shifting the fortunes of the production. At the end of the phase, players can review their production, and press fire finally to move on to the Auction Phase.
+
+5. Auction Phase
+For each of the five commodities, there is an auction. It starts with a visualisation of the production phase. Some commodities can spoil, which is also shown here. The most important thing to watch out for is a dotted line for each player. It is either white and within the production bar, then everything is fine (the player has enough of this commodity). Or it is red and above the production bar - this is bad, it means that you have a shortage of this commodity. You have to estimate the size of the shortage visually.
+
+After this, the buy/sell selection starts. If you want to buy, press down (default). If you want to sell, press up, and your character picture moves to the top. After the selection is done, all four players start moving at once (the AIs with a slight delay). Move up to buy, move down to sell. The current buy/sell prices, driven by the players, are visible as horizontal lines in the auction screen. When both lines meet, the actual trading starts, indicated by a blinking of the player pictures. At most times, if nothing special has happened in the Production phase, players can also sell to the market, or buy from the market.
+
+6. Game Round Statistics
+The ranking of the four players is shown, and details on how they achieved it (money and assets)
+
+There, that's it. Repeat 6, 10, 12, 16 times... Depending on what number of game rounds you choose in the start menu.
+
+Beginner's tips for each game phase
+
+1. Land Grant
+   - When starting the game, go for plots in this order; consult the planet overview chapter to be able to identify them: 1. Food 2. Energy 3. Materials 4. Ore 5. Rare
+   - When your basic needs (food, energy, materials, ore) are fulfilled, start land assays to find plots with the "rare" commodity
+   - When you play against AIs, you always get the plot you want. When you play against humans... Be the quickest!
+
+2. Land Auction
+   - Quickly calculate the money you need for droids and equipment to see if you can afford the land or not. Usually, if you have the money, buying a plot of land is a good choice. But spending too much on it is not a good idea either, because you lose one or two game rounds in coughing up the money you need to buy droids and equipment to make use of the plot...
+
+3. Action Phase
+   - If you don't know what commodity you should install on a plot, do a land assay on it at the beginning of your turn
+   - You leave town either to the right or left (whatever is nearer)
+   - Avoid walking near to / through the fog of war, especially for Grumpling hunting. This slows you down too much.
+
+4. Auction Phase
+   - Plan ahead. Do not buy/sell too much if you already know that you will need a commodity (or money!) further down the auction phase. This is especially critical for the food commodity. If you don't have enough food in the next game round, this may be the beginning of a vicious downwards spiral.
+   - Don't sell all of your surplus, always keep a bit in reserve for bad times (bad random events)
+
+
+Speeding up the game
+
+Experienced Space Moguls players may want to speed up the game, especially when not playing against humans, but against the AIs. Here are the shortcuts to achieve this:
+
+Land Grant
+If playing with AI during the land grant, press any of the land cell select keys or fire after all human players have chosen their cells to speed up the cursor while the AI picks their cells!
+
+Development Phase
+When AI players are taking their turn in the Development Phase press fire to speed up the action.
+
+To exit the town, walk to either right or left edge of the screen to return to the map
+
+Trading
+When trading, during the buyer or seller selection and during the actual trading players can choose to back out, walk to the top for sellers or the bottom for buyers, then release the joystick and push away from the trading floor. (Sellers would tap up, buyers tap down).
+
+Round Update
+During the Round Update screen press fire to speed up the current player walking into position.
+
+
+Creating a secure settlement
+
+Food is a critical Item in the game. You don't need much but if you're below 3 in the early game or 4 in the late game you will lose a significant amount of time.
+
+Cells that include river will produce 40% more food, and 40% less of everything else so a safe bet is to secure a plains or lake cell with a river flowing through it. You can't see the river on lake cells but check the neighbouring cells for a clue.
+
+Normally you'd be fine with one or two cells producing Food Items so don't go overboard!
+
+After you've secured your food supply, other critical Items are Materials, Energy and Ore. Each droid will require one Material and the droid equipment will require additional Material to purchase. The exceptions are Material equipment which require no Material to equip, and Rare which requires three Material to equip.
+
+Each installed droid will require one Energy Item per round to produce at full capacity, except for Energy droids that produces their own energy. If you enter the Production Phase with zero Energy only your Energy droids will produce items.
+
+The Droid Depot starts out with 16 droids, but once depleted you will need two Ore Items to manufacture each new Droid. Droids will be depleted in about 3-4 turns depending on play so keep an eye out for opportunities to mine Ore.
+
+Each player starts out with some Material and Energy Items, but no Ore.
+
+One good strategy is to start producing a critical item before other players, forcing the other players to pay a higher price for your items. This may result in having to pay other players a high price for their surplus items, but thinking about the prices can put you at an early advantage!
+
+Producing Rare items can lead to good returns, but be sure to check with the Land Office if it is worth installing a Droid with Rare extraction equipment in a given land cell.
+
+
+Land Grant
+
+Select the next Land Cell in the Land Grant carefully, for detailed production probabilities for each land type for each planet, study the charts in the Planets section.
+
+Selecting a Land Cell neighbouring other owned Land Cells will increase production in both, and increasing with each additional neighbour. Rare production is excluded from this bonus but will count towards other Land Cells.
+
+
+Trading
+
+Sell High Buy Low
+Avoid selling items below the middle market price point unless you need cash! Items will count towards the total value, your score, at that price. If you have cash to spare, consider buying items from other players below middle market price to gain an advantage in the asset value rating. Of course if you later decide to sell that item at an even lower price you're lost the difference.
+
+AI players Backing Out
+When trading with AI players they may appear indecisive when a player backs out of trading by pushing back on the joystick when outside of the trading floor. What happens is that the AI player sees that there is no one to buy from or sell to and if not willing to sell at market price the AI will also decide to back out of trading.
+
+
+About the currency
+
+Due to space regulations the only legal tender outside of the surface of earth is Interstellar Cash. It has no monetary value on earth.
+
+
+Scoring
+
+The rank of each player is based on the total value of cash and assets. The value of assets include:
+- Each owned land cell is worth 300 cash
+- Each owned Item is valued at the average current market price (the middle of the top and bottom trading price)
+- Installed droids are valued at the town cash price for one droid plus the town cash price for the equipment.
+- Ore and Material used to construct the droids and equipment for installed droids do not count towards the total value.
+
+The value of items change each round as the stock in the store changes, an Rare Items also have a random element to the pricing.
+
+In addition to the ranking score there is also a hidden rating score, the result is shown as the third row on the podium screen. Players earn rating points for dramatic events like running low on Food or Energy, events or actions such as catching Grumplings.
+
+
+About the characters
+
+All characters enter the game on an equal footing but each one is also uniquely representative of their species. Here are some notes about each one:
+
+Hooman: Your typical plain non-mutated non-mechanized self-aware biological biped.
+
+Robot: The only participant that was designed by mechanical engineers
+
+Etlee: An action movie star equally capable to star in a leading role in Kung Fu movies or a remake of The Extra Terrestrial.
+
+Oneleg: One of the snake people who started walking upright in order to improve project management methodologies.
+
+Armwalker: Evolved from early office workers who had no use for legs and started a brawling culture of arm wrestlers.
+
+Octony: Contrary to Armwalker, evolved from mermaids who turned landbased and had significant use of legs to the point of growing eight of them!
+
+Bluejay: Blue haired denizen of planet Gir, often accompanied by a Black Cat.
+
+Hoedi: Mysterious hooded character of species unknown, some speculate a frog, often travelling with Bluejay
+
+
+Planets
+
+There are four planets to choose from: Alia Terra, Mars, Winternus and Planet 46C. Each planet plays a little bit different
+
+The charts below shows the distribution of items in each type of land. Each chart is 8 slots wide, where the leftmost slot indicates how frequent production of 1 item per cell is and the rightmost how frequent the production 8 items per cell is.
+
+To know the accurate production for a given land cell in the game visit the Land Office during the Development Phase.
+
+Alia Terra - Other Earth
+A planet that looks a lot like Earth before humans appeared. This planet has a fair distribution of land types.
+
+[Charts show production distributions for Plains, Forest, Desert, Mountains, Steppe, Marsh, Lake]
+
+Mars
+Uninhabitable until an excavation discovered an underground alien terraforming mechanism. The planet is abundant in mountain and desert cells.
+
+[Charts show production distributions for Plains, Forest, Desert, Mountains, Steppe, Marsh, Lake]
+
+Winternus
+A cold but otherwise most heartwarming spot in the known universe.
+
+[Charts show production distributions for Plains, Forest, Desert, Mountains, Steppe, Marsh, Lake]
+
+Planet 46C
+Everything on this planet is a pun, oversaturated and abstract. The fog is covering much of the planet but clears up fast.
+
+[Charts show production distributions for Planes, Forest, Dessert, Towers, Steps, Swirl, Lake]
+
+
+
+
+Winning Strategies
+
+Strategies from the team and more
+
+Planning ahead from start
+By Carl-Henrik Skårstedt, developer
+
+When the game starts I like to count the number of mountains, deserts, forests and river cells to get an idea what the most constrained item is going to be. Food is a safe Item to start the game with but maybe Ore or Energy will pay out later in the game? And maybe if your buddy is having a hard time, give that person a good deal on your surplus items once in a while? They might remember it when you're out of Materials in the end game!
+
+Courage for the material gap
+By Christian A. Schiller, Multiple Use Test Element
+
+In the thirty-something tournaments I have played during the game's development time, I found this strategy to be the most likely to win against three AIs. The trick is to simply omit getting any plots to produce materials. The AIs produce it like crazy anyway, so I have never experienced a shortage of materials in any game. This way I free up my plot hunts and droid resources to focus on (aside from food and energy) ore and rare plots. The production of 1-2 ore/rare plots more is well worth the slight jitters thinking about a shortage of materials. But as I said, with 3 AIs as opponents this never happened to me (yet). Food and energy are much more critical commodities, so I would not recommend the gap strategy with these. And it goes without saying that human players are less predictable...
+
+Failure can sometimes be a good thing
+By Louie Dimovski
+
+If you have found yourself failing to produce a sufficient amount of one type of resource, this can often open up an opportunity to purchase those items at the Trading Place at below market prices when all your opponents have excess amounts of that item. If you find that all 3 AI players are participating as sellers then you can take advantage of this oversupply by simply positioning your buy price at way below market value and just watch those AI players rushing down to offload their inventory in order to secure some precious cash flow.
+
+Keep an eye on resources at all times
+By Carl-Henrik Skårstedt, developer
+
+Trading is your best chance to keep track of your Item levels. If you're not producing enough of a certain item consider buying a few extra just in case the Market is flooded next turn or the Market runs out of stock. It is also handy to have a couple of extra Material Items around in case you stumble onto a Rare producing cell which requires extra Material Items to equip a Droid for.
+
+Time is money - but who needs money?!
+By Christian A. Schiller, Multiple Use Test Element
+
+If you are certain that you are not strained on money in the next game round, use up all your free time to assay land plots to find the highest-value ore and rare plots. This will pay you back many times the money you would win by going in the pub early. Have I mentioned that land assays are a great thing? It only costs a few seconds to go into the land office at the beginning of your turn to assay a plot you just got in land grant or land auction. That way, you can direct your droids and equipment usage in an optimal way. Of course you should only do that if you are not constrained in time (low on food, or "much to do" in this turn).
+
+Aim high, head for the mountains
+By Louie Dimovski
+
+Finding a rare item early in the game can set you up with quite an advantage. Gain ascendency with this high risk / high reward strategy when playing on Alia Terra or Mars by grabbing a Mountain land cell. But before you equip your droid, visit the Land Office to analyse the land cell to confirm that it does contain rare resources. If it does, don't over equip your droid, one ore item should suffice.
+
+Land Grant Auctions are to be won at all costs
+By Louie Dimovski
+
+Land grant auctions are invaluable where they occur in early rounds and should be won at all costs. Obtaining additional land cells gives you the advantage of having greater productivity for the remainder of the game, and as long as you manage your cash flow correctly, will provide you with a massive competitive edge in longer games. Last thing your really want to do is handover this advantage to your opponents.
+
+
+Setting up the hardware
+
+There are plenty of options for playing the game with four players even if the Commodore 64 only comes with two Joystick ports.
+
+The simplest four player setup is to plug in two joysticks and let two players use the keyboard. In order to get a little more room between the keys consider letting keyboard players pick slot 1 and 4 first and then join with the joysticks for slot 2 and 3.
+
+If you are lucky enough to own a 4-Player Adapter or an Inception adapter just plug in the joysticks into the additional ports. Note that only joystick 1-4 is used with the Inception adapter.
+
+If you have access to a SuperPad64 and 4 spare SNES controllers that will also work, again only controller 1-4 are used.
+
+Confirmed physical drives: 1541, 1541-II, 1571 and Oceanic (Oceanic tested w/JiffyDos installed)
+
+Confirmed emulated drives: SD2IEC firmware 0.8 or higher
+
+EasyFlash version tested with EasyFlash and Ultimate II+
+
+
+Playing the game on different hardware
+
+We all love to play on real Commodore computers, but sometimes it is just much more convenient to enjoy games on other devices.
+
+C64 Mini
+The easiest way to run the d64 version is to rename the file SpaceMoguls_AD.d64, the EasyFlash version will work as is.
+
+Be sure to run the game in the native frame rate, so if you have a European or PAL C64 Mini avoid trying to force the game to run in NTSC and if you have an American or NTSC C64 Mini avoid running the game in PAL.
+
+There is no obvious support for 4 Joysticks at once on a C64 Mini, so a USB hub and supported keyboard is required for playing 4 players simultaneously.
+
+RetroPie / Combian64
+There are two steps to connecting up to four controllers to RetroPie and then to the Vice emulator. For more details about adding controllers to RetroPie see this link:
+https://github.com/retropie/retropie-setup/wiki/Xbox-360-Controller and find more controller types on the bottom right of the page.
+
+At the moment Combian64 testing has not panned out. This section will be updated when the issue has been resolved, and suggestions are welcome.
+
+To enable more than two physical joysticks under Vice: (version 3.1 as of this writing) Start the emulator and then press the F12 key on your keyboard.
+
+Cursor down and select the Machine Settings menu entry. Make sure in "Joyport Settings" both Userport joystick adapter entries are set to "Joystick".
+
+Press the backspace key to go back to the Machine Settings menu. Key down to the Joystick Settings menu, and make sure Userport Joystick adapter is checked. (It should be by default)
+
+Userport joystick adapter type CGA/Protovision userport adapter.
+
+Using backspace, return to Machine Settings, and key down to Userport joystick 1 mapping
+
+Press the return key to start button polling for one of your physical or Bluetooth attached joysticks or gamepads.
+
+Once you've mapped, up / down / left / right and the fire button, press the backspace button and do the same for Userport joystick 2. Once these are set, you may backspace back to the Vice c64 main menu, head down to 'Settings Management' and save your settings.
+
+
+Video and Content Policy
+
+We absolutely love what fan artists and video content creators, youtubers, and streamers are doing out there! The following information is provided to help answer any questions regarding art and video creation rights:
+
+You're welcome to create videos of Space Moguls and also monetise those videos if you want. This includes videos in the style of Let's Plays, Speed Runs, Reviews, Tutorials, Countdowns, Commentary, etc.
+
+The Space Moguls team permits you to create, publish, and stream videos and art, either free or ad-supported, by using captured or streamed video or screenshots from Space Moguls.
+
+You do not need to request written permission to create such content. In addition you are permitted to capture images for printed material without royalties, attribution for the game is welcome. Reach out to @spacemoguls for specific requests.
+
+
+Acknowledgements
+
+This guide was written because of the many questions and suggestions towards the manual submitted.
+
+Contributors include:
+- Lobo
+- Christian A. Schiller / World of M.U.L.E.
+- Louie Dimovski
+- Chad Essley
+- Carl-Henrik Skarstedt
+- All the people who helped test the game and got confused at any point including Yacht Club Games.
+
+https://protovision.games

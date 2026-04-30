@@ -1,0 +1,24 @@
+﻿<Metadata>
+  <DumpFile>10THFRAME-0757-0E7A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ca65c004585afa1e709306d06b6be9b4351e0222</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0757</Address>
+    <Address>$0E7A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>10th Frame.tap</SourceFile>
+  <SourceFileSHA1>10b594e468ee7b4542c2972e149cf09995abd910</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0E7A "10THFRAME-0757-0E7A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0757 dec $d030" -x "inc $d020" -o "10th Frame.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0757 to copy the colour RAM data from $6400 (where it was present in the original game) and display the loading screen. It then waits for any key or the fire button on either joystick to enter the game.
+  
+  Also removed the protection which checked for a special dongle plugged into the cassette port, or the play, record, fast forward or rewind buttons on the datasette being pressed by checking the value in the processor port ($01):
+  
+  1. $162B, $17D0 and $1E3D were changed from LDA #$10 ($A9, $10) to LDA #$00 ($A9, $00)
+  2. $0EEC, $11CA, $1C5A, $2C85 and $3141 were changed from LDA $01 ($A5, $01) to LDA #$00 ($A9, $00)
+  3. $2BB4 was changed from LDY #$01 ($A0, $01) to LDY #$09 ($A0, $09)
+  4. $2BB6 was changed from LDA #$08 ($A9, $08) to LDA #$00 ($A9, $00)</Notes>
+</Metadata>

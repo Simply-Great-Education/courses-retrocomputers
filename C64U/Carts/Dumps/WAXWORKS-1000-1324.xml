@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>WAXWORKS-1000-1324</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>63e7b921a1ad38de48999fac5a86c948fb2ae228</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+    <Address>$1324</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Waxworks.tap</SourceFile>
+  <SourceFileSHA1>7b4cc60b1ff4606a65ffe1a6c56c6b59f09aaf6d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1324 "WAXWORKS-1000-1324" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $1000 dec $d030" -x "inc $d020" -o "Waxworks.prg"</ExomizerCommand>
+  <Notes>Added a routine at $1000 which copies the colour RAM data from $03BE (where it was present in the original game) and displays the loading screen. It then waits for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

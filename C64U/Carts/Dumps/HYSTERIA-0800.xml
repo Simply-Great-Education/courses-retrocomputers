@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>HYSTERIA-0800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cec88fb71a3259ee96c8442ee806b8c3a975fe93</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0800</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Hysteria.tap</SourceFile>
+  <SourceFileSHA1>b32d438c75e42ebf7b271173ce95ec840e7858fb</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0800 "HYSTERIA-0800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Hysteria.prg"</ExomizerCommand>
+</Metadata>

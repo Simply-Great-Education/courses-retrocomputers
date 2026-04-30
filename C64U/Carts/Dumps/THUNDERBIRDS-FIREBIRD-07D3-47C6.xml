@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>THUNDERBIRDS-FIREBIRD-07D3-47C6</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9a7884c73dd169d6ed1ec14176d1c2d4bc7a93ba</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$07D3</Address>
+    <Address>$47C6</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Thunderbirds (Firebird).tap</SourceFile>
+  <SourceFileSHA1>e2532a50041e3f282aa9466373dab5a1f22c736a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x47C6 "THUNDERBIRDS-FIREBIRD-07D3-47C6" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 jsr $07d3 dec $d030" -x "inc $d020" -o "Thunderbirds (Firebird).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $07D3 to setup the correct VICII display settings</Notes>
+</Metadata>

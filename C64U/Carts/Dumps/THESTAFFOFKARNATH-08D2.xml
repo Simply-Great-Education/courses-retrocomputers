@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>THESTAFFOFKARNATH-08D2</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6ffbd85ab82d1182ec43edb39ca3522e84ccbdf6</DumpFileSHA1>
+  <SimplifiedName>Staff of Karnath, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$08D2</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>Classic</RasterBarType>
+  <SidLength>49</SidLength>
+  <SourceFile>Staff of Karnath The (Version 2).tap</SourceFile>
+  <SourceFileSHA1>29bb0448a59c80904c68f487355b6c0859ff8c20</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x08D2 "THESTAFFOFKARNATH-08D2" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Staff of Karnath, The.prg"</ExomizerCommand>
+</Metadata>

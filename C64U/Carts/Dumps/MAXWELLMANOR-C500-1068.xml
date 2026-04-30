@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>MAXWELLMANOR-C500-1068</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>997b9e06c8f36c34a14e81997462a1319d6e60c8</DumpFileSHA1>
+  <SimplifiedName>Maxwell Manor</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C500</Address>
+    <Address>$1068</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Maxwell Manor [NTSC].g64</SourceFile>
+  <SourceFileSHA1>e0409f419fcf752c2e2b35d6e655fbd1270b80ef</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1068 "MAXWELLMANOR-C500-1068" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c500 dec $d030" -x "inc $d020" -o "Maxwell Manor (J1).prg"</ExomizerCommand>
+  <Notes>This game has a BASIC loading screen which uses a SYS command to start the game when it has finished loading. Therefore the following steps were taken to use this:
+  1. The LOAD "MAX.BIN",8,1 instruction on line 130 was changed to SYS 50688 ($C600).
+  2. A new routine was placed at $C500 which sets up the correct VICII settings and necessary BASIC pointers and runs the loading screen program.
+  3. A new routine was placed at $C600 which waits for any key or the fire button on either joystick to enter the game.
+  4. Because of its use of the raster IRQ, this game is particularly sensitive to timing when starting up. Therefore, this routine also syncs itself to a number of VBLANKS before calling IOINIT ($FDA3) and then finally by jumping to $1068. This prevents the game from sometimes locking up during startup on a PAL machine.</Notes>
+</Metadata>

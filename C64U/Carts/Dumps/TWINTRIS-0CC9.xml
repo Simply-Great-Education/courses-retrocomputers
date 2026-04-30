@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>TWINTRIS-0CC9</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6cc708da230977c3eb76cc9c8179eb69e288b1dc</DumpFileSHA1>
+  <SimplifiedName>Twintris</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0CC9</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Twintris (Megastyle).d64</SourceFile>
+  <SourceFileSHA1>0dc35680a0122febdd70cff565277db8e4ba657f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0CC9 "TWINTRIS-0CC9" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Twintris.prg"</ExomizerCommand>
+</Metadata>

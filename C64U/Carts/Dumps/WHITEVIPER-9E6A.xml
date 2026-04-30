@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>WHITEVIPER-9E6A</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4bfcb8f994d2ad765d4aaddd037c0ad7f539aea2</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9E6A</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>White Viper.tap</SourceFile>
+  <SourceFileSHA1>9ad9c59400f53e51da1f0286cb7e9db6a9fdfc69</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9E6A "WHITEVIPER-9E6A" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "White Viper (J1).prg"</ExomizerCommand>
+</Metadata>

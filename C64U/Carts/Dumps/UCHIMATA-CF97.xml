@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>UCHIMATA-CF97</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1277fd20c5710c1e7ace4039ebea220086b13e03</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CF97</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Uchi Mata.tap</SourceFile>
+  <SourceFileSHA1>a284e6bdf3193a2a22dd4d309bd7af0c29fa2483</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xCF97 "UCHIMATA-CF97" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Uchi Mata (J1).prg"</ExomizerCommand>
+</Metadata>

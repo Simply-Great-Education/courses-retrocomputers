@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>MONTECARLOCASINO-082F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8241febcb030f30c993bb75bc9c67fcc9e68418b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$082F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Monte Carlo Casino.tap</SourceFile>
+  <SourceFileSHA1>ebd82b7fbc07fa94252bb928262919c669098cc1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x082F "MONTECARLOCASINO-082F" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Monte Carlo Casino.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,34 @@
+THE STORY SO FAR
+
+35 years later - the Evil Emperor has again risen to power. Only one man can save the day, and we all know who. Bruce's long-time foes, the green Yamo and the black Ninja has been recruited once more, and they are as always hell-bent on foiling any progress Bruce might make in his attempt to overthrow the Evil Emperor.
+
+
+CONTENTS
+
+- RETURN OF FURY + - a bug-fixed and enhanced version of Return of Fury.
+- A version with alternative sprites by TIX.
+- No intros.
+- Selectable character colours.
+- Easy / Hard modes.
+- Competition mode.
+- Trainers - weak, not like water.
+- 3 player action using a 4 player adapter.
+- The amazing loader picture by Rune Spaans set to a haunting, previously unused tune by Anders Rodahl (aka. Rage) from 1993.
+
+
+Note: In-game: RUN/STOP to pause. RESTORE to go back to title.
+
+
+
+BRUCE LEE - RETURN OF FURY+ (2019, Rebel Android)
+
+Maps, additional code and music: Vidar "dmx" Bang
+Title logo: Chris "Flow TnT" Persad
+Alternative sprite set: Konstantinos "TIX" Giamalidis
+Loading picture: Rune "Sparkler" Spaans
+Loading picture music: Anders "Rage" Rodahl
+
+
+https://rebel-android.itch.io/bruce-lee-duology
+
+Distributed with the Commodore 64 Ultimate with permission from Vidar "dmx" Bang.

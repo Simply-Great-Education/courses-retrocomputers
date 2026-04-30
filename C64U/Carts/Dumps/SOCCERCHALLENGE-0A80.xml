@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>SOCCERCHALLENGE-0A80</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>49ba719da26853f2d83333d1236ca2d9c35cec2d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0A80</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Soccer Challenge.tap</SourceFile>
+  <SourceFileSHA1>a9405831fd5194dba35f60c55b215054009a62a0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0A80 "SOCCERCHALLENGE-0A80" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Soccer Challenge.prg"</ExomizerCommand>
+  <Notes>As the original game is frozen, the breakpoint to use for dumping is actually $603A.</Notes>
+</Metadata>

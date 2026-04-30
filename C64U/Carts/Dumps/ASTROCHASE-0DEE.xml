@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ASTROCHASE-0DEE</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>d74de4d7e3ead283e29a414a62bac9ce0e2b4ada</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0DEE</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Astro Chase.tap</SourceFile>
+  <SourceFileSHA1>555d9633efbc9d366019bf6203f9a81227fbf745</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0DEE "ASTROCHASE-0DEE" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Astro Chase.prg"</ExomizerCommand>
+</Metadata>

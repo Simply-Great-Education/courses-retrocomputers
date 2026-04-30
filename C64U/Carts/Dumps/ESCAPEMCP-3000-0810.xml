@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>ESCAPEMCP-3000-0810</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>95eced93679994e47ad3baf3cb5f6942e9f8190f</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3000</Address>
+    <Address>$0810</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Escape MCP (New Version).tap</SourceFile>
+  <SourceFileSHA1>a8b210cbcae959344ef0b2019218fcd9c1b1e2a4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0810 "ESCAPEMCP-3000-0810" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $3000 dec $d030" -x "inc $d020" -o "Escape MCP (New Version).prg"</ExomizerCommand>
+  <Notes>Added an init routine at $3000 which copies 256 bytes of data from $3010 down to $0300 so that the dump can start at $0400.
+  It then jumps to the entry point at $0810 (it couldn't use RTS because of the copy overwriting the boot code).</Notes>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>WILDFIRE-1F40</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fa19976a62b07c5483f4e258dd87d60ca618e79d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1F40</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Wildfire.tap</SourceFile>
+  <SourceFileSHA1>596ca5efa16f51f68bd76994926fa62209a4cc7f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1F40 "WILDFIRE-1F40" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Wildfire.prg"</ExomizerCommand>
+  <Notes>Made the following changes to allow joystick button in port two to start the game, not just up or down:
+  1. Patched the JSR $215F instruction at $3628 to be JSR $4000 instead
+  2. Added a small routine at $4000 to check the fire button in port 2 - if pressed, then it JMPs to $363A, which causes the game to start just as if up or down was pressed. If not pressed, the routine then JMPs to $215F to carry on the normal code flow.</Notes>
+</Metadata>

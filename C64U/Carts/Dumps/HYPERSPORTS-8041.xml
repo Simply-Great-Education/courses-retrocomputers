@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>HYPERSPORTS-8041</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>06b1d45da19f1da3d0eb81ff7668a4ae93937307</DumpFileSHA1>
+  <SimplifiedName>Hyper Sports</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8041</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>253</SidLength>
+  <SourceFile>Hyper Sports (Version 3).tap</SourceFile>
+  <SourceFileSHA1>f6c4e6ce936e3d710064c88945f2a613b24a7bf4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8041 "HYPERSPORTS-8041" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Hyper Sports.prg"</ExomizerCommand>
+  <Notes>As the original did not have a loading screen, the one included was converted from the Spectrum version by DATA-LAND of Technische Maschinenfabrik (https://csdb.dk/scener/?id=4845).</Notes>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>POLARPIERRE-3D80</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1246ab3f5545c92446d1cd290236670aad3fd754</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$3D80</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Polar Pierre.tap</SourceFile>
+  <SourceFileSHA1>5617804d0d9593355108c7d95c09b1f1b24a1d86</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3D80 "POLARPIERRE-3D80" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Polar Pierre (J1).prg"</ExomizerCommand>
+</Metadata>

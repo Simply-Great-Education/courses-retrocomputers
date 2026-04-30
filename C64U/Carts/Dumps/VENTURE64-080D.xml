@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>VENTURE64-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>43105791132f33eb4a46862905cba0d832e038e1</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Venture64 (Donnie Russell II - 2022).prg</SourceFile>
+  <SourceFileSHA1>b2981846bbed3763a7ecdd84f35dce4bdfcde2f4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "VENTURE64-080D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Venture64 (Donnie Russell II - 2022).prg"</ExomizerCommand>
+</Metadata>

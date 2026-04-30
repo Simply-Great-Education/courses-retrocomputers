@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>KONGSPUTNIKWORLD-4800</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e1b6ab51a093342d6513bb29e1afb815eacbb6b2</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4800</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Kong (Sputnik World - 2021).prg</SourceFile>
+  <SourceFileSHA1>a9e2c26d82aa00f637b9cd3ba2bd07c8bedbc4c2</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "KONGSPUTNIKWORLD-4800" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Kong (Sputnik World - 2021).prg"</ExomizerCommand>
+</Metadata>

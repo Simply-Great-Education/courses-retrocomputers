@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>PIPEMANIA-800F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>60e8dbbfa4ffe7b99c20cb1d43326be0771a71dd</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$800F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Pipe Mania.tap</SourceFile>
+  <SourceFileSHA1>b4333354dbd1349f7db1cd45350d09e8f58e6c5f</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x800F "PIPEMANIA-800F" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Pipe Mania.prg"</ExomizerCommand>
+  <Notes>NOP'd out the JSR $9BBC at $80D2 to skip a redundant disk access routine, allowing the game to start more quickly.</Notes>
+</Metadata>

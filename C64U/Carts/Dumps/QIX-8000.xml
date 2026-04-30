@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>QIX-8000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>560bbac1fe3c2e3d7e5bb506b658e8732069f564</DumpFileSHA1>
+  <SimplifiedName>Qix</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Qix [NTSC].g64</SourceFile>
+  <SourceFileSHA1>fe98c8942dc26435446222556647bc08c6ad1760</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8000 "QIX-8000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Qix.prg"</ExomizerCommand>
+  <Notes>1. Patched $C2E0 to RTS ($60) to prevent trying to reload the title screen from disk after the instructions are shown
+  2. Changed the JMP instruction at $8084 to jump to $8072 instead of $8055 to prevent trying to show the title screen again. This causes the instructions to be displayed again.
+  3. Patched the JSR $C61E instruction at $C001 to be JMP $C00A instead to skip the display and wipe of the title screen which is no longer in memory
+  4. Changed the JMP instructions at $160F and $8D86 to jump to $4010 instead of $1B97 after the game over message is displayed
+  5. Added a small routine at $4010 to wait for the fire button in port 2 to be pressed. Once pressed, it jumps to $8178 to prevent trying to reload the title screen from disk. This causes the game to simply restart in the previously selected mode (i.e. 1 player, 2 player or practice).
+  6. NOP'd out the JSR call at $166B to remove long delay after level completed music has finished playing
+  7. NOP'd out the JSR call at $1682 to remove disk check</Notes>
+</Metadata>

@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>LITTLESARASISTER2-0803</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>ec3efa82c029b6eb6c2240b9d9c44ebc82cfd324</DumpFileSHA1>
+  <SimplifiedName>Little Sara Sister 2 (Ice Team - 2013)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0803</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>165</SidLength>
+  <SourceFile>Little Sara Sister Trilogy.tap</SourceFile>
+  <SourceFileSHA1>76eb504261247e1ce847565482cec5f3bda49e0d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0803 "LITTLESARASISTER2-0803" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Little Sara Sister 2 (Ice Team - 2013).prg"</ExomizerCommand>
+  <Notes>Changed the JMP $0803 instruction at $0905 to be JMP $2912 instead to skip the trainer menu</Notes>
+</Metadata>

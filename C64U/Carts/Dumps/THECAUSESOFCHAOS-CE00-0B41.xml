@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>THECAUSESOFCHAOS-CE00-0B41</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>20169a2d0b6e8e568ecd66fedc1e16c8a3278f47</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CE00</Address>
+    <Address>$0B41</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>THECAUSESOFCHAOS-CRAM-D800</ColourRAMFile>
+  <ColourRAMStartAddress>$D800</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Causes of Chaos, The.tap</SourceFile>
+  <SourceFileSHA1>81e31ea2978241fe5c748885d0c4f8e46a38a2db</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0B41 "AlternativeFormats\PRGs\Uncrunched\Causes of Chaos, The.prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$34 sta $01 jsr $d800 lda #$37 sta $01 jsr $ce00 dec $d030" -x "inc $d020" -o "Causes of Chaos, The.prg"</ExomizerCommand>
+  <Notes>Added a routine at $CE00 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game. Once displayed, it sets up the default VICII settings before starting the game.</Notes>
+</Metadata>

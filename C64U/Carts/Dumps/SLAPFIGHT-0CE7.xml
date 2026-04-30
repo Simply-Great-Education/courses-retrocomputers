@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>SLAPFIGHT-0CE7</DumpFile>
+  <DumpFileLoadAddress>$0334</DumpFileLoadAddress>
+  <DumpFileSHA1>fec88c484e8a7162c81eedf05b33ae3056a9ba77</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0CE7</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>169</SidLength>
+  <SourceFile>Slap Fight.tap</SourceFile>
+  <SourceFileSHA1>2da416126b073892bfac8f2f3dd7fc9d405437ef</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0CE7 "SLAPFIGHT-0CE7" -Di_table_addr=0x02 -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Slap Fight.prg"</ExomizerCommand>
+</Metadata>

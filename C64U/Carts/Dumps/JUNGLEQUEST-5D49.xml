@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>JUNGLEQUEST-5D49</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0d260e6c7e4a4de4ccc3c71638a9dfae04c96393</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$5D49</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Jungle Quest.tap</SourceFile>
+  <SourceFileSHA1>fa34822daa9612113ceebc0a4f8591decc5f4f25</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5D49 "JUNGLEQUEST-5D49" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Jungle Quest.prg"</ExomizerCommand>
+</Metadata>

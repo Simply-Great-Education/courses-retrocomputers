@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>HOUSEOFUSHER-CD00-38CD</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>1ce8663e310b5476a7506e263a6675f41078d04e</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$CD00</Address>
+    <Address>$38CD</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>House of Usher.tap</SourceFile>
+  <SourceFileSHA1>b1939534dae03a4dd3f56678528cd3bb2f8f296d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x38CD "HOUSEOFUSHER-CD00-38CD" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $cd00 dec $d030" -x "inc $d020" -o "House of Usher.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $CD00 which copies 512 bytes of data from $CD20 down to $0200 so that the dump can start at $0400.
+  It then jumps to the entry point at $38CD (it couldn't use RTS because of the copy overwriting the boot code).</Notes>
+</Metadata>

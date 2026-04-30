@@ -1,0 +1,21 @@
+﻿<Metadata>
+  <DumpFile>THECAPTIVE-0400-10B0</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>8ca5601b3efb6148bb26cc290d755fdc3defe48a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$10B0</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>THECAPTIVE-CRAM-0490</ColourRAMFile>
+  <ColourRAMStartAddress>$0490</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Captive, The.tap</SourceFile>
+  <SourceFileSHA1>1427ab6aa8c542669bca49bfba778c574dc3dbfa</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x10B0 "AlternativeFormats\PRGs\Uncrunched\Captive, The.prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $0490 lda #$37 sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "Captive, The.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0400 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.
+  It then sets the correct VICII settings before starting the game.</Notes>
+</Metadata>

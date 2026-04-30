@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>RAID2000-7100-3934</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2ca6d11190834dc66675784352f68b5e4596de9c</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7100</Address>
+    <Address>$3934</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Raid 2000.tap</SourceFile>
+  <SourceFileSHA1>ac8ba9c5e6c3a0d8c9d823e2051cdc3d8269a2c3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x3934 "RAID2000-7100-3934" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $7100 dec $d030" -x "inc $d020" -o "Raid 2000.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $7100 which copies 512 bytes of data from $7120 down to $0100 so that the dump can start at $0400.
+  It then sets the stack pointer to $ED and jumps to the entry point at $3934 (it couldn't use RTS because of the copy overwriting the stack).</Notes>
+</Metadata>

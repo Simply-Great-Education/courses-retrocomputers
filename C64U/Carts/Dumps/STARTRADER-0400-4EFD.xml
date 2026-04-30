@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>STARTRADER-0400-4EFD</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0174dfa5e8772b4ffd9d0ae19f58ad9c8c823c9a</DumpFileSHA1>
+  <SimplifiedName>Star Trader</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$4EFD</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Star Trader (Bug-Byte).tap</SourceFile>
+  <SourceFileSHA1>ec65d4a2b36b24b94a76865ae3bd25a1372ee286</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4EFD "STARTRADER-0400-4EFD" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Star Trader.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 which copies 256 bytes of data from $0420 down to $0000 so that the dump can start at $0400. This allows the game to run correctly.</Notes>
+</Metadata>

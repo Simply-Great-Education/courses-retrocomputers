@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>THEHUMANRACE-0E74</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e772cb19d87de98af3e094426b7618fa4a5ddb7b</DumpFileSHA1>
+  <SimplifiedName>Human Race, The</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0E74</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Human Race The.tap</SourceFile>
+  <SourceFileSHA1>4d96b7583eea7f595501fadf4ae70214651cb2da</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0E74 "THEHUMANRACE-0E74" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Human Race, The.prg"</ExomizerCommand>
+</Metadata>

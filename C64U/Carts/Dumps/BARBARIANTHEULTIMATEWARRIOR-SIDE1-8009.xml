@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>BARBARIANTHEULTIMATEWARRIOR-SIDE1-8009</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>0ae65c3caac9e330fba0cffa053793ee5f8a113d</DumpFileSHA1>
+  <SimplifiedName>Barbarian - The Ultimate Warrior (Side 1)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8009</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>BARBARIANTHEULTIMATEWARRIOR-SIDE1-CRAM-A840</ColourRAMFile>
+  <ColourRAMStartAddress>$A840</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Barbarian (Palace) (Side 1).tap</SourceFile>
+  <SourceFileSHA1>ecdb3e35043aebf5e4592528a84f865622d06dc0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8009 "AlternativeFormats\PRGs\Uncrunched\Barbarian - The Ultimate Warrior (Side 1).prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $a840 lda #$37 sta $01 dec $d030" -x "inc $d020" -o "Barbarian - The Ultimate Warrior (Side 1).prg"</ExomizerCommand>
+  <Notes>Inserted byte packed colour RAM data (512 bytes) to dump file at $A840 to restore before starting the game.</Notes>
+</Metadata>

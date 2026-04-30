@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>MOONTORC-0400-0900</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>244f8bb37483d0fe5a79b42d69ff5eeeb365f3ba</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$0900</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <ColourRAMFile>MOONTORC-CRAM-0480</ColourRAMFile>
+  <ColourRAMStartAddress>$0480</ColourRAMStartAddress>
+  <ColourRAMPreserveMemory>0</ColourRAMPreserveMemory>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Moontorc.tap</SourceFile>
+  <SourceFileSHA1>ace60f37d746b562e80e6fd09b5330a6f0c5490b</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0900 "AlternativeFormats\PRGs\Uncrunched\Moontorc.prg,0x0400,0x00EC" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 jsr $0480 lda #$37 sta $01 jsr $0400 dec $d030" -x "inc $d020" -o "Moontorc.prg"</ExomizerCommand>
+  <Notes>Added a routine at $0400 to display the loading screen (the colour RAM is loaded for this to display correctly) and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>MINDTRAP-C000-0850</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6f52ebbe6008b961789be181d682eb9016c2746a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$0850</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Mindtrap.tap</SourceFile>
+  <SourceFileSHA1>0c59f3d448564d571cb78a880d004dd44c8369a7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0850 "MINDTRAP-C000-0850" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c000 dec $d030" -x "inc $d020" -o "Mindtrap.prg"</ExomizerCommand>
+  <Notes>Added a routine at $C000 to display the loading screen and wait for any key or the fire button on either joystick to enter the game.</Notes>
+</Metadata>

@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>REDLED-7800-4A00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4b891e6e511cb9de88b078776689127616d8ba98</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7800</Address>
+    <Address>$4A00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Red LED.tap</SourceFile>
+  <SourceFileSHA1>e503401c5fdf630dddc662fa3a760ec0819ae5c6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4A00 "REDLED-7800-4A00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $7800 dec $d030" -x "inc $d020" -o "Red LED.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $7800 to turn off interrupts from the two CIA chips and ack any pending CIA interrupts to allow the game to run correctly.</Notes>
+</Metadata>

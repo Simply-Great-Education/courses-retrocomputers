@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>THRESHOLD-8009</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5be28cf21db0f403469d71d24a480f44bb0e1c40</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$8009</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Threshold.d64</SourceFile>
+  <SourceFileSHA1>3e552d1d3b8aaf5e14ba2fcbef964553b186a4ac</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8009 "THRESHOLD-8009" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Threshold (J1).prg"</ExomizerCommand>
+  <Notes>NOP'd out the JSR $A137 call at $A133 to remove highscore disk loading and saving.</Notes>
+</Metadata>

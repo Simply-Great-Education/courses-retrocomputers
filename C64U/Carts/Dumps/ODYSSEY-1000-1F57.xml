@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>ODYSSEY-1000-1F57</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>273e97150b1aa7e279c4b669879250baaf9191fd</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+    <Address>$1F57</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Odyssey.tap</SourceFile>
+  <SourceFileSHA1>5466f478713122edd917c556a15f6bf22e74f5b3</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1F57 "ODYSSEY-1000-1F57" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $1000 dec $d030" -x "inc $d020" -o "Odyssey.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC loading screen loaded at $0801. Therefore an init routine has been added at $1000 which:
+  1. Sets up the correct VICII settings and necessary BASIC pointers.
+  2. Executes the RUN command to display the loading screen.
+  
+  Note: Line 205 in the BASIC instructions program was changed from SYS 8000 to SYS 8023 to skip the loading of the game from tape as it's already in memory.</Notes>
+</Metadata>

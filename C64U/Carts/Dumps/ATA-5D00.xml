@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>ATA-5D00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>e4a04ac11020a1b162efeee342df712e6a34931c</DumpFileSHA1>
+  <SimplifiedName>ATA</SimplifiedName>
+  <JumpAddresses>
+    <Address>$5D00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>ATA (Commodore Format PowerPack #33).tap</SourceFile>
+  <SourceFileSHA1>e0a543231397106fb509fbad3d67480f2c0d49a4</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5D00 "ATA-5D00" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "ATA.prg"</ExomizerCommand>
+  <Notes>As the original game is frozen, the breakpoint to use for dumping is actually $5DA3.</Notes>
+</Metadata>

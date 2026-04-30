@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>CITYATTAK-C000-5208</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>5e09d2c1257a442ba1352dc324322eabf16e0e6b</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$C000</Address>
+    <Address>$5208</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Cityattak!.tap</SourceFile>
+  <SourceFileSHA1>37c9cded5dac77ce3644395eff4b940867fd44b6</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5208 "CITYATTAK-C000-5208" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $c000 dec $d030" -x "inc $d020" -o "Cityattak!.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC loading screen which uses a SYS command to start the machine code loader when the space bar is pressed. Therefore, a belt-and-braces BASIC init routine has been added at $C000 which initalises all key BASIC values and pointers before calling the RUN command.
+  
+  Line number 205 in the BASIC loading screen program has also been changed from SYS 8000 to SYS 8038, so as to start the game immediately as it's already loaded into memory.</Notes>
+</Metadata>

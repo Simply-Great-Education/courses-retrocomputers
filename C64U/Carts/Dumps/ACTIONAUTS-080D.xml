@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>ACTIONAUTS-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>dd8586da64676167948ea2f78382f9c4676d5914</DumpFileSHA1>
+  <SimplifiedName>Actionauts</SimplifiedName>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Actionauts (Loadstar #21 - Side 2).d64</SourceFile>
+  <SourceFileSHA1>519c3a956126f56e8f88be6a97883d5abc1efeac</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "ACTIONAUTS-080D" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Actionauts.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>ZETA7-0400-7730</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>17d39418ce74ea058b1034c1f8b366a0fdc9dc64</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0400</Address>
+    <Address>$7730</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Zeta-7.tap</SourceFile>
+  <SourceFileSHA1>fff4783a446946cc8d80142719c85618e3eada09</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7730 "ZETA7-0400-7730" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $0400 dec $d030" -x "inc $d020" -o "Zeta-7.prg"</ExomizerCommand>
+  <Notes>Added an init routine at $0400 which sets the magic value of $80 at $291 to allow the game to run properly.</Notes>
+</Metadata>

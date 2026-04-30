@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>HELLGATE-5000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>31db3ce6d40605a04bff59ac7fa5ea97104c74f8</DumpFileSHA1>
+  <SimplifiedName>Hellgate</SimplifiedName>
+  <JumpAddresses>
+    <Address>$5000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Hellgate (Version 2).tap</SourceFile>
+  <SourceFileSHA1>20bb93b7c2b1fb8f30cbbd249ed7c43a2ac790c0</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x5000 "HELLGATE-5000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Hellgate.prg"</ExomizerCommand>
+</Metadata>

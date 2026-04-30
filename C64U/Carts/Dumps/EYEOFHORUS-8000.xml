@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>EYEOFHORUS-8000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>7bc017dfc8508a03550f76c8279d1caacdd04e33</DumpFileSHA1>
+  <SimplifiedName>Eye of Horus</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$36</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Eye of Horus (Prism Leisure).d64</SourceFile>
+  <SourceFileSHA1>7a88f52da7c8f20c4d468a4441569fe5862aaa28</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8000 "EYEOFHORUS-8000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$36 sta $01 dec $d030" -x "inc $d020" -o "Eye of Horus.prg"</ExomizerCommand>
+</Metadata>

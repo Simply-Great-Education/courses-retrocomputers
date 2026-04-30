@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>LUNARLANDER-DEFIANCESTUDIOS-080F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9cc88b01aa397c7a50fc54b60b2f5541e71a3300</DumpFileSHA1>
+  <SimplifiedName>Lunar Lander (Defiance Studios - 2017)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$080F</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Lunar Lander (Defiance Studios).d64</SourceFile>
+  <SourceFileSHA1>dba3a05c1de8b30b17439b5c3013e6897eb0b256</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "LUNARLANDER-DEFIANCESTUDIOS-080F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Lunar Lander (Defiance Studios - 2017).prg"</ExomizerCommand>
+</Metadata>

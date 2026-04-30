@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>KNOORKIE-C100</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>a0c12f4709be04e48f0740225172132d8f2895ab</DumpFileSHA1>
+  <SimplifiedName>Knoorkie</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C100</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Knoorkie (English).d64</SourceFile>
+  <SourceFileSHA1>c8f0bb5a2eec67a50749921237071bdc123db842</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC100 "KNOORKIE-C100" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Knoorkie.prg"</ExomizerCommand>
+</Metadata>

@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>STARRAY-1000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9f304be82777e32e9c6682262e1a159e08b2e305</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Starray.tap</SourceFile>
+  <SourceFileSHA1>7852065cb3d5343915bc3476c28e33541b2c076e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x1000 "STARRAY-1000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Starray.prg"</ExomizerCommand>
+</Metadata>

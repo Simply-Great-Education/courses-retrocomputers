@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>STRIKERINTHECRYPTSOFTROGAN-140C</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>cdfbe44c62fd5f25c504fbc874999986e34ee550</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$140C</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Striker in the Crypts of Trogan.tap</SourceFile>
+  <SourceFileSHA1>766a6086a6ff9cbe5fa9608759d354ab13ce8296</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x140C "STRIKERINTHECRYPTSOFTROGAN-140C" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Striker in the Crypts of Trogan.prg"</ExomizerCommand>
+</Metadata>

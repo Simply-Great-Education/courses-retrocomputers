@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>PSYCHOHOPPER-0880</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4bfce312d5944001f50e9d3129b3657089a4bf60</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0880</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>130</SidLength>
+  <SourceFile>Psycho Hopper.tap</SourceFile>
+  <SourceFileSHA1>f0fad53719f8a897a6d4e7c1fe7dc9b112516abc</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0880 "PSYCHOHOPPER-0880" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Psycho Hopper.prg"</ExomizerCommand>
+</Metadata>

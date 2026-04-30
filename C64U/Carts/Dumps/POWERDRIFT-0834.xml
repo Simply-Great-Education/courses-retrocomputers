@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>POWERDRIFT-0834</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>22cef3dd36e96edceb3d1763f011df5777fe72de</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0834</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>121</SidLength>
+  <SourceFile>Power Drift.tap</SourceFile>
+  <SourceFileSHA1>dde53997eb9f880e77ccf3f0f9d611f73079b249</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0834 "POWERDRIFT-0834" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Power Drift.prg"</ExomizerCommand>
+</Metadata>

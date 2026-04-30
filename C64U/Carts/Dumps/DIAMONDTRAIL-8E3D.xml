@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>DIAMONDTRAIL-8E3D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fe6d2b02369521bc97e11f9a60f697bf0e315f2d</DumpFileSHA1>
+  <SimplifiedName>Diamond Trail</SimplifiedName>
+  <JumpAddresses>
+    <Address>$8E3D</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Diamond Trail (Gilsoft).tap</SourceFile>
+  <SourceFileSHA1>78a604f1d6111ca0245425bd3a880d4e1d8cd7b8</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x8E3D "DIAMONDTRAIL-8E3D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Diamond Trail.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

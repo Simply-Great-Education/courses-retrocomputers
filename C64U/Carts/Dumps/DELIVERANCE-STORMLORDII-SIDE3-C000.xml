@@ -1,0 +1,23 @@
+﻿<Metadata>
+  <DumpFile>DELIVERANCE-STORMLORDII-SIDE3-C000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>949fbfdb8c80fd5ab76b006cbdcfc0df3e7be795</DumpFileSHA1>
+  <SimplifiedName>Deliverance - Stormlord II (Levels 5 and 6)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$C000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$35</MemoryConfig>
+  <RasterBarType>FreeLoad</RasterBarType>
+  <SidLength>537</SidLength>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Deliverance (Hewson) (Side 3).tap</SourceFile>
+  <SourceFileSHA1>d5cb61546d5709c30193efbd077cce88dd76f3ec</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0xC000 "DELIVERANCE-STORMLORDII-SIDE3-C000" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$35 sta $01 dec $d030" -x "inc $d020" -o "Deliverance - Stormlord II (Levels 5 and 6) (J1).prg"</ExomizerCommand>
+  <Notes>Made the following changes:
+  1. NOP'd out the JSR $C142 at $C08F to remove the score code entry needed to start the game (the score code is provided at the end of level four)
+  2. Set $3289 to $10 to give 16 fairies (this has to be done because this number would ordinarily be derived from the entered score code)
+  
+  Note: unlike side 2, there was no need to set the number of lives held at $3288 as it already had the default value of $08.</Notes>
+</Metadata>

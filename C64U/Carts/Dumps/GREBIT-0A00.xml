@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>GREBIT-0A00</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c73267096110caf4d4ba90e433f58e70ab473d0d</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0A00</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Grebit.tap</SourceFile>
+  <SourceFileSHA1>687b2e853a244fa5c6d7c0ea6150070b6a8aa0d7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0A00 "GREBIT-0A00" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Grebit (J1).prg"</ExomizerCommand>
+</Metadata>

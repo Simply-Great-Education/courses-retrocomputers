@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>GIANTSREVENGE-7AD3</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>c18b13c6cd8e4adf5e1d25262c7ffa314b549ec5</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$7AD3</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Giant's Revenge.tap</SourceFile>
+  <SourceFileSHA1>665d6e324f82b970d5a1a21cc7bc03d92d12eade</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x7AD3 "GIANTSREVENGE-7AD3" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Giant's Revenge.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the Spectrum version</Notes>
+</Metadata>

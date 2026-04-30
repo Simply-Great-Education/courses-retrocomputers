@@ -1,0 +1,30 @@
+Hello!
+
+The Tuneful Eight is a demo that was created for Evoke in 2019. It utilises eight SID chips.
+See here: https://youtu.be/SwN7anqqDP8
+
+Prior to loading the .prg file, the .cfg file should be loaded. This switches the settings such that 8 SIDs appear at the correct addresses in the memory map of the U64. In addition it sets the Audio Mixer correctly.
+
+Have fun!
+
+
+Credits:
+Code : Sokrates of The Tuneful Eight
+Music: LMan of Censor Design,
+         Maniacs of Noise,
+         MultiStyle Labs,
+         Oxyron, Performers,
+         Remix64.com,
+         The Tuneful Eight
+GFX  : Joe of Artstate,
+         EXclusive ON,
+         The Tuneful Eight,
+         Wrath Designs
+Test : Marty of C64 All Stars,
+         Granddaddy Coding Seniors,
+         Radwar, The Light Circle,
+         The Tuneful Eight
+Help : andi6510 of The Tuneful Eight
+       Gideon of The Tuneful Eight
+       markusC64 of The Tuneful Eight
+

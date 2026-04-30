@@ -1,0 +1,18 @@
+﻿<Metadata>
+  <DumpFile>RUNFORGOLD-9F35</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>9ffe1d1fade83a4d55225660102faeff907b960a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$9F35</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <RasterBarType>None</RasterBarType>
+  <SidLength>144</SidLength>
+  <SourceFile>Run for Gold.tap</SourceFile>
+  <SourceFileSHA1>ddafd5e46265c1486ba9321aaedbfe5999597b5d</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x9F35 "RUNFORGOLD-9F35" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Run for Gold.prg"</ExomizerCommand>
+  <Notes>The loading screen is from the original Hill MacGibbon release</Notes>
+</Metadata>

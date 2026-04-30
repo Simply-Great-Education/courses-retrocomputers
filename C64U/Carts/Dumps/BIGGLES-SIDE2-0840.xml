@@ -1,0 +1,17 @@
+﻿<Metadata>
+  <DumpFile>BIGGLES-SIDE2-0840</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>2f6e31511696b7ee97c64096bb2daeb8c5c91237</DumpFileSHA1>
+  <SimplifiedName>Biggles (Side 2)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$0840</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Biggles (Mirrorsoft) (Side 2).tap</SourceFile>
+  <SourceFileSHA1>cef28107822f66cb197b040d9a3781abaad1b5bf</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0840 "BIGGLES-SIDE2-0840" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Biggles (Side 2).prg"</ExomizerCommand>
+  <Notes>Patched $0938 from JMP $088A to JMP $08F4 to skip clearance code entry.</Notes>
+</Metadata>

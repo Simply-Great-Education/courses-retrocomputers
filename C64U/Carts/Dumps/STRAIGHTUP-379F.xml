@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>STRAIGHTUP-379F</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>fd2a6364eff4a9039d2ddcf89dd74a5ee82b1d81</DumpFileSHA1>
+  <SimplifiedName>Straight Up (Dr. Wuro Industries - 2021)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$379F</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Straight Up (Dr. Wuro Industries).d64</SourceFile>
+  <SourceFileSHA1>39ae2d37cb662f147c2154e7caea5a9eb47f3e8a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x379F "STRAIGHTUP-379F" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Straight Up (Dr. Wuro Industries - 2021) (J1).prg"</ExomizerCommand>
+</Metadata>

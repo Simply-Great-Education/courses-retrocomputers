@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>STARCOMMANDO-0E56</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>37ccc773ab815d3cacd6f0a98b60e48a7137cffa</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$0E56</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <PrimaryControlType>JoystickPort1</PrimaryControlType>
+  <SourceFile>Star Commando.tap</SourceFile>
+  <SourceFileSHA1>607db93dcd250e0fe6d66db7d1bc49a7ed79a8d1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x0E56 "STARCOMMANDO-0E56" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Star Commando (J1).prg"</ExomizerCommand>
+</Metadata>

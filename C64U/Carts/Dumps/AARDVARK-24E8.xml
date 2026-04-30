@@ -1,0 +1,14 @@
+﻿<Metadata>
+  <DumpFile>AARDVARK-24E8</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>6c3c0eac9d6a9925789940b861b94ff0a78c5711</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$24E8</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <SourceFile>Aardvark.tap</SourceFile>
+  <SourceFileSHA1>0ceac88839345e7128f0603a02978058e473da9e</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "AARDVARK-24E8" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Aardvark.prg"</ExomizerCommand>
+</Metadata>

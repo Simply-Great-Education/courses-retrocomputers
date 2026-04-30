@@ -1,0 +1,16 @@
+﻿<Metadata>
+  <DumpFile>BUCKROGERS-080D</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>74a986ed7d983efae1a90362cb2ffa3ca27aca84</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$080D</Address>
+  </JumpAddresses>
+  <UseBasicRun>1</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Buck Rogers.tap</SourceFile>
+  <SourceFileSHA1>4ec90af3f321d96ab862ca32fee4cad9f484ed69</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx basic,$0801,$ffff "BUCKROGERS-080D" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Buck Rogers.prg"</ExomizerCommand>
+  <Notes>As the original did not have a loading screen, the one included was converted from the Spectrum version by DATA-LAND of Technische Maschinenfabrik (https://csdb.dk/scener/?id=4845).</Notes>
+</Metadata>

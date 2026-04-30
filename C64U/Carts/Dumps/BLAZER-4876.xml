@@ -1,0 +1,15 @@
+﻿<Metadata>
+  <DumpFile>BLAZER-4876</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>184d70545f8f9b0b0bd725dd01d60c60f1a4779a</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$4876</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenBorderColour>0</LoadingScreenBorderColour>
+  <SourceFile>Blazer.tap</SourceFile>
+  <SourceFileSHA1>f58939114eb5d961258624a99a858501202a59b7</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4876 "BLAZER-4876" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 dec $d030" -x "inc $d020" -o "Blazer.prg"</ExomizerCommand>
+</Metadata>

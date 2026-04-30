@@ -1,0 +1,20 @@
+﻿<Metadata>
+  <DumpFile>WARP-1543-164E</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>deb778e173ead1e02b957c4a2b313fb47c263be3</DumpFileSHA1>
+  <SimplifiedName>Warp (Creative Software)</SimplifiedName>
+  <JumpAddresses>
+    <Address>$1543</Address>
+    <Address>$164E</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>0</InterruptsEnabled>
+  <MemoryConfig>$3E</MemoryConfig>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>Warp (Creative Software) [NTSC].d64</SourceFile>
+  <SourceFileSHA1>4ed2c26505ada12f4327d8c3aff5b2beb0522cb1</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x164E "WARP-1543-164E" -Di_irq_exit=0 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 lda #$3e sta $01 jsr $1543 dec $d030" -x "inc $d020" -o "Warp (Creative Software).prg"</ExomizerCommand>
+  <Notes>The routine at $1543 displays the loading screen. However, to avoid calling the disk loading routines after this is displayed, the following changes were made:
+  1. The JSR $13B0 instruction at $162B was changed to JMP $1000 instead
+  2. Added a routine at $1000 which waits for any key or the fire button on either joystick to enter the game</Notes>
+</Metadata>

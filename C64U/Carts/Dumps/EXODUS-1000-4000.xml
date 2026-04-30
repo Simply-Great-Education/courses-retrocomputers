@@ -1,0 +1,28 @@
+﻿<Metadata>
+  <DumpFile>EXODUS-1000-4000</DumpFile>
+  <DumpFileLoadAddress>$0400</DumpFileLoadAddress>
+  <DumpFileSHA1>4ec53856a6ae9de44805dffa78ce6a430819e404</DumpFileSHA1>
+  <JumpAddresses>
+    <Address>$1000</Address>
+    <Address>$4000</Address>
+  </JumpAddresses>
+  <UseBasicRun>0</UseBasicRun>
+  <InterruptsEnabled>1</InterruptsEnabled>
+  <MemoryConfig>$37</MemoryConfig>
+  <LoadingScreenInDump>1</LoadingScreenInDump>
+  <SourceFile>Exodus.tap</SourceFile>
+  <SourceFileSHA1>fdd4b9f714e1e2e2ac2670767ce8c7e4b4021d2a</SourceFileSHA1>
+  <ExomizerCommand>exomizer sfx 0x4000 "EXODUS-1000-4000" -Di_irq_exit=1 -s "inc $d030 lsr $d011" -f "w1: bit $d011 bpl w1 w2: bit $d011 bmi w2 jsr $fda3 rol $d011 jsr $1000 dec $d030" -x "inc $d020" -o "Exodus.prg"</ExomizerCommand>
+  <Notes>This game has a BASIC loading screen which uses a SYS command to start the game when it has finished loading. Therefore the following steps were taken to use this:
+  1. Line 100 in the BASIC program was changed from F=1:LOAD to just F=3. This prevents the BASIC program from loading the game files from tape.
+  2. The SYS 16384 instruction on line 130 was changed to SYS 4532 ($1100).
+  3. A new routine was placed at $1000 which sets up the correct VICII settings and necessary BASIC pointers and runs the loading screen program.
+  4. A new routine was placed at $1100 which waits for any key or the fire button on either joystick to enter the game by jumping to $4000.
+
+  Also zeroed out the following memory ranges as they contained an unnecessary repeating memory block:
+  
+  $0A60 - $3DFF
+  $6570 - $7AFF
+  $A000 - $BFFF
+  $CBF0 - $CFFF</Notes>
+</Metadata>
