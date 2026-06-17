@@ -18,3 +18,28 @@
  Critical Settings ChecklistTTL Voltage Compatibility: The PET outputs raw 5V TTL logic levels. The RGBtoHDMI Pi Zero setup is natively a 3.3V logic device. Ensure your version of the RGBtoHDMI hat contains a TTL buffer board/chip (like the 6-bit or 12-bit TTL buffering editions) to prevent frying the Raspberry Pi GPIO pins.
  
  Profile Selection: Once powered on, open the RGBtoHDMI software menu. Load the Commodore PET configuration sub-profile. It will adjust the clock and pixel timings automatically so that your image stays centered without rolling.
+
+
+### RGBtoHDMI 12-Way Header Wiring Matrix
+
+| Pin | Signal Function | Target Connection (PET 2001) |
+| :--- | :--- | :--- |
+| **1** | +5V Power Input | *Leave Disconnected* (Draw 5V from Datasette port) |
+| **2** | +5V Power Input | *Leave Disconnected* |
+| **3** | Ground (GND) | User Port Pin 1 or A (GND) |
+| **4** | Ground (GND) | *Optional Ground Tap* |
+| **5** | Red Data Bit | *Unused* |
+| **6** | Blue Data Bit | *Unused* |
+| **7** | Green Data Bit 1 | *Unused* |
+| **8** | Horizontal Sync (HSYNC) | User Port Pin 10 (H-Sync) |
+| **9** | Green Data Bit 3 (Mono) | User Port Pin 2 (Video Data) |
+| **10**| Vertical Sync (VSYNC) | User Port Pin 9 (V-Sync) |
+| **11**| Green Data Bit 2 | *Unused* |
+| **12**| Ground (GND) | *Unused* |
+
+      ┌───[ KEYWAY NOTCH ]───┐
+      │  (2)  (4)  (6)  (8) (10) (12) │
+      │  [·]  [·]  [·]  [·]  [·]  [·] │
+(▲)   │  [·]  [·]  [·]  [·]  [·]  [·] │
+      │  (1)  (3)  (5)  (7)  (9) (11) │
+      └───────────────────────┘
