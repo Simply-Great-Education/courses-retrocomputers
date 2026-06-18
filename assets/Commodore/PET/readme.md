@@ -14,6 +14,13 @@
 | **User Port Pin 9** | Vertical Sync | Pin 10 (VSYNC) | Blue |
 | **User Port Pin 1 or A**| Signal Ground | Pin 3 (GND) | Black |
 
+* Pin 1: Video (Traced back to Pin 6 of the E9 IC)
+* Pin 2: Ground (0V)
+* Pin 3: Vertical Drive (Traced back to Pin 11 of the D8 IC)
+* Pin 4: Ground (0V)
+* Pin 5: Horizontal Drive (Traced back to Pin 2 of the C5 IC) [1]
+
+
 
  Critical Settings ChecklistTTL Voltage Compatibility: The PET outputs raw 5V TTL logic levels. The RGBtoHDMI Pi Zero setup is natively a 3.3V logic device. Ensure your version of the RGBtoHDMI hat contains a TTL buffer board/chip (like the 6-bit or 12-bit TTL buffering editions) to prevent frying the Raspberry Pi GPIO pins.
  
